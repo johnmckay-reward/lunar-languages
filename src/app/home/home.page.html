@@ -1,4 +1,4 @@
-<ion-header class="ion-no-border">
+<ion-header class="ion-no-border" *ngIf="!showWelcomeScreen">
   <ion-toolbar>
     <ion-title color="primary" class="ion-text-center">Lunar Languages</ion-title>
     <ion-buttons slot="end">
@@ -10,7 +10,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" *ngIf="!showWelcomeScreen">
 
   <div class="display-wrapper ion-padding">
     <div class="glass-panel ion-padding ion-text-center">
@@ -132,3 +132,23 @@
   <div class="spacer-bottom"></div>
 
 </ion-content>
+
+<!-- WELCOME SCREEN OVERLAY -->
+<div class="welcome-overlay" *ngIf="showWelcomeScreen">
+  <div class="welcome-content">
+    <div class="ion-text-center ion-margin-bottom">
+      <h1 class="welcome-title">Lunar Languages</h1>
+      <p class="welcome-subtitle">Choose your destination</p>
+    </div>
+
+    <div class="language-grid">
+      <div
+        class="language-card"
+        *ngFor="let lang of availableLanguages"
+        (click)="selectInitialLanguage(lang.code)">
+        <div class="flag">{{ lang.flag }}</div>
+        <div class="name">{{ lang.name }}</div>
+      </div>
+    </div>
+  </div>
+</div>

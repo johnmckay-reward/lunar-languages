@@ -173,7 +173,7 @@ ion-col {
   margin-bottom: 12px;
   border-radius: 16px;
   --background: var(--ion-color-light);
-  
+
   ion-label {
     margin: 16px;
   }
@@ -196,5 +196,83 @@ ion-col {
     font-size: 0.9rem;
     color: var(--ion-color-medium);
     font-style: italic;
+  }
+}
+
+/* =========================================
+   4. WELCOME SCREEN
+   ========================================= */
+
+.welcome-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--ion-background-color);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.welcome-content {
+  width: 100%;
+  max-width: 400px;
+}
+
+.welcome-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--ion-color-primary);
+  margin-bottom: 8px;
+  letter-spacing: -1px;
+}
+
+.welcome-subtitle {
+  font-size: 1.1rem;
+  color: var(--ion-color-medium);
+  margin-top: 0;
+}
+
+.language-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.language-card {
+  background: var(--ion-card-background);
+  border-radius: 20px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  border: 1px solid rgba(0,0,0,0.05);
+
+  &:active {
+    transform: scale(0.96);
+  }
+
+  .flag {
+    font-size: 3rem;
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  .name {
+    font-weight: 600;
+    color: var(--ion-color-dark);
+    font-size: 1rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .language-card {
+    border: 1px solid rgba(255,255,255,0.05);
+    background: var(--ion-color-step-50);
   }
 }

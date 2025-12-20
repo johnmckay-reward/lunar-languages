@@ -38,6 +38,7 @@ export interface CombinationMap {
 })
 export class DataService {
 
+  private readonly STORAGE_KEY = 'lunar_language';
   private currentTranslations: any = {};
   private languageLoaded = new BehaviorSubject<boolean>(false);
   private currentLanguage = new BehaviorSubject<LanguageInfo | null>(null);
@@ -179,6 +180,14 @@ export class DataService {
   };
 
   constructor(private http: HttpClient) { }
+
+  saveLanguagePreference(code: string) {
+    localStorage.setItem(this.STORAGE_KEY, code);
+  }
+
+  getSavedLanguage(): string | null {
+    return localStorage.getItem(this.STORAGE_KEY);
+  }
 
   getLanguages(): LanguageInfo[] {
     return this.supportedLanguages;

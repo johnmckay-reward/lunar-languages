@@ -35,6 +35,7 @@ export class HomePage implements OnInit {
   displayPhonetic: string = 'Nǐ hǎo';
 
   isModalOpen = false;
+  showWelcomeScreen = false;
 
   @ViewChild(IonContent) content!: IonContent;
 
@@ -53,7 +54,16 @@ export class HomePage implements OnInit {
       this.currentLanguage = lang;
     });
 
-    this.dataService.loadLanguage('zh').subscribe(() => {
+    const savedLang = this.dataService.getSavedLanguage();
+    if (savedLang) {
+      this.loadLanguage(savedLang);
+    } else {
+      this.showWelcomeScreen = true;
+    }
+  }
+
+  loadLanguage(code: string) {
+    this.dataService.loadLanguage(code).subscribe(() => {
       this.loadData();
 
       // Auto-select first starter
@@ -61,6 +71,16 @@ export class HomePage implements OnInit {
         this.selectStarter(this.starters[0]);
       }
     });
+  }
+
+  selectInitialLanguage(code: string) {
+    this.dataService.saveLanguagePreference(code);
+    this.showWelcomeScreen = false;
+    this.loadLanguage(code);
+  }
+
+  get availableLanguages() {
+    return this.dataService.getLanguages();
   }
 
   async openLanguageSelector() {
@@ -88,19 +108,8 @@ export class HomePage implements OnInit {
   }
 
   changeLanguage(code: string) {
-    this.dataService.loadLanguage(code).subscribe(() => {
-      this.loadData();
-      // Refresh current display if something is selected
-      if (this.selectedStarter) {
-        this.selectStarter(this.selectedStarter);
-        if (this.selectedNoun) {
-          this.selectNoun(this.selectedNoun);
-        }
-      } else {
-        // If nothing selected, maybe reset to Hello?
-        // Or just refresh the essentials list which happens in loadData
-      }
-    });
+    this.dataService.saveLanguagePreference(code);
+    this.loadLanguage(code);
   }
 
   loadData() {
