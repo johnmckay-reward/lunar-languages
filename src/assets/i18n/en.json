@@ -2,10 +2,20 @@
   "essentials": {
     "hello": { "text": "Hello", "phonetic": "", "audio": "" },
     "thanks": { "text": "Thank you", "phonetic": "", "audio": "" },
+    "goodbye": { "text": "Goodbye", "phonetic": "", "audio": "" },
+    "good_morning": { "text": "Good morning", "phonetic": "", "audio": "" },
+    "good_evening": { "text": "Good evening", "phonetic": "", "audio": "" },
     "bathroom": { "text": "Where is the bathroom?", "phonetic": "", "audio": "" },
     "yes": { "text": "Yes", "phonetic": "", "audio": "" },
     "no": { "text": "No", "phonetic": "", "audio": "" },
-    "sorry": { "text": "Excuse me / Sorry", "phonetic": "", "audio": "" }
+    "sorry": { "text": "Excuse me / Sorry", "phonetic": "", "audio": "" },
+    "no_understand": { "text": "I don't understand", "phonetic": "", "audio": "" },
+    "speak_english": { "text": "Do you speak English?", "phonetic": "", "audio": "" },
+    "help": { "text": "Help!", "phonetic": "", "audio": "" },
+    "delicious": { "text": "Delicious!", "phonetic": "", "audio": "" },
+    "cheers": { "text": "Cheers!", "phonetic": "", "audio": "" },
+    "wifi_pass": { "text": "WiFi Password?", "phonetic": "", "audio": "" },
+    "slowly": { "text": "Please speak slowly", "phonetic": "", "audio": "" }
   },
   "combinations": {
     "where_station": { "text": "Where is the train station?", "phonetic": "", "audio": "" },

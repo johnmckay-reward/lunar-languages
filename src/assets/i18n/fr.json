@@ -2,10 +2,20 @@
   "essentials": {
     "hello": { "text": "Bonjour", "phonetic": "bon-ZHOOR", "audio": "" },
     "thanks": { "text": "Merci", "phonetic": "mehr-SEE", "audio": "" },
+    "goodbye": { "text": "Au revoir", "phonetic": "oh ruh-VWAR", "audio": "" },
+    "good_morning": { "text": "Bonjour", "phonetic": "bon-ZHOOR", "audio": "" },
+    "good_evening": { "text": "Bonsoir", "phonetic": "bon-SWAHR", "audio": "" },
     "bathroom": { "text": "Où sont les toilettes ?", "phonetic": "oo sohn lay twa-LET?", "audio": "" },
     "yes": { "text": "Oui", "phonetic": "Wee", "audio": "" },
     "no": { "text": "Non", "phonetic": "Nohn", "audio": "" },
-    "sorry": { "text": "Pardon / Excusez-moi", "phonetic": "par-DOHN / ex-kew-zay MWA", "audio": "" }
+    "sorry": { "text": "Pardon / Excusez-moi", "phonetic": "par-DOHN / ex-kew-zay MWA", "audio": "" },
+    "no_understand": { "text": "Je ne comprends pas", "phonetic": "zhuh nuh kom-prahn pah", "audio": "" },
+    "speak_english": { "text": "Parlez-vous anglais ?", "phonetic": "par-lay voo ahn-GLAY?", "audio": "" },
+    "help": { "text": "Aidez-moi !", "phonetic": "ay-day MWA!", "audio": "" },
+    "delicious": { "text": "Délicieux !", "phonetic": "day-lee-SYUH!", "audio": "" },
+    "cheers": { "text": "Santé !", "phonetic": "sahn-TAY!", "audio": "" },
+    "wifi_pass": { "text": "Mot de passe WiFi ?", "phonetic": "moh duh pahs WiFi?", "audio": "" },
+    "slowly": { "text": "Parlez plus lentement, s'il vous plaît", "phonetic": "par-lay plew lahnt-mahn", "audio": "" }
   },
   "combinations": {
     "where_station": { "text": "Où est la gare ?", "phonetic": "oo eh lah gar?", "audio": "" },

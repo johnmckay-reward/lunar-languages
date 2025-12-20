@@ -2,10 +2,20 @@
   "essentials": {
     "hello": { "text": "こんにちは", "phonetic": "Kon-nee-chee-wah", "audio": "" },
     "thanks": { "text": "ありがとう", "phonetic": "Ah-ree-gah-toh", "audio": "" },
+    "goodbye": { "text": "さようなら", "phonetic": "Sah-yoh-nah-rah", "audio": "" },
+    "good_morning": { "text": "おはようございます", "phonetic": "Oh-hah-yoh go-zai-mass", "audio": "" },
+    "good_evening": { "text": "こんばんは", "phonetic": "Kon-ban-wah", "audio": "" },
     "bathroom": { "text": "トイレはどこですか？", "phonetic": "Toy-reh wa doh-koh dess kah?", "audio": "" },
     "yes": { "text": "はい", "phonetic": "Hi", "audio": "" },
     "no": { "text": "いいえ", "phonetic": "Ee-eh", "audio": "" },
-    "sorry": { "text": "すみません", "phonetic": "Soo-mee-mah-sen", "audio": "" }
+    "sorry": { "text": "すみません", "phonetic": "Soo-mee-mah-sen", "audio": "" },
+    "no_understand": { "text": "分かりません", "phonetic": "Wah-kah-ree-mah-sen", "audio": "" },
+    "speak_english": { "text": "英語を話せますか？", "phonetic": "Ey-go oh hah-nah-seh-mass kah?", "audio": "" },
+    "help": { "text": "助けて！", "phonetic": "Tah-soo-keh-teh!", "audio": "" },
+    "delicious": { "text": "美味しい！", "phonetic": "Oh-ee-shee!", "audio": "" },
+    "cheers": { "text": "乾杯！", "phonetic": "Kan-pie!", "audio": "" },
+    "wifi_pass": { "text": "WiFiのパスワードは？", "phonetic": "WiFi no pah-soo-wah-doh wa?", "audio": "" },
+    "slowly": { "text": "もっとゆっくり話してください", "phonetic": "Motto yook-koo-ree hah-nah-she-teh koo-dah-sigh", "audio": "" }
   },
   "combinations": {
     "where_station": { "text": "駅はどこですか？", "phonetic": "Eh-key wa doh-koh dess kah?", "audio": "" },

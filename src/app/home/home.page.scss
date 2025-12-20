@@ -44,6 +44,20 @@
   -webkit-overflow-scrolling: touch;
 }
 
+/* A 2-row grid that scrolls horizontally */
+.scroll-grid-2-rows {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-auto-flow: column;
+  grid-auto-columns: max-content; /* CRITICAL: Ensures chips expand to fit text */
+  /* Hide scrollbar */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 /* =========================================
    3. COMPONENT STYLING
    ========================================= */
@@ -150,5 +164,37 @@ ion-col {
     color: var(--ion-color-medium);
     font-style: italic;
     line-height: 1.4;
+  }
+}
+/* Modal Styles */
+.phrase-item {
+  --padding-start: 0;
+  --inner-padding-end: 0;
+  margin-bottom: 12px;
+  border-radius: 16px;
+  --background: var(--ion-color-light);
+  
+  ion-label {
+    margin: 16px;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--ion-color-dark);
+    margin-bottom: 4px;
+  }
+
+  .native-text {
+    font-size: 1.2rem;
+    color: var(--ion-color-primary);
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+
+  .phonetic-text {
+    font-size: 0.9rem;
+    color: var(--ion-color-medium);
+    font-style: italic;
   }
 }

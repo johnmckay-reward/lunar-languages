@@ -33,12 +33,18 @@ export class HomePage implements OnInit {
   displayNative: string = '你好';
   displayPhonetic: string = 'Nǐ hǎo';
 
+  isModalOpen = false;
+
   @ViewChild(IonContent) content!: IonContent;
 
   constructor(
     private dataService: DataService,
     private actionSheetCtrl: ActionSheetController
   ) {}
+
+  setModalOpen(isOpen: boolean) {
+    this.isModalOpen = isOpen;
+  }
 
   ngOnInit() {
     // Subscribe to language changes
@@ -168,6 +174,9 @@ export class HomePage implements OnInit {
       this.displayNative = phrase.translation.text;
       this.displayPhonetic = phrase.translation.phonetic;
     }
+
+    this.setModalOpen(false);
+    this.content.scrollToTop(500);
   }
 
   updateDisplay() {

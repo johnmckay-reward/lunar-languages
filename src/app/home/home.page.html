@@ -43,18 +43,36 @@
   </div>
 
   <div class="ion-padding-start ion-padding-end ion-margin-bottom">
-    <p class="section-label">Quick Phrases</p>
-
-    <div class="scroll-horizontal">
-      <ion-chip
-        *ngFor="let item of essentials"
-        outline="true"
-        color="secondary"
-        (click)="selectEssential(item)">
-        <ion-label>{{ item.english }}</ion-label>
-      </ion-chip>
-    </div>
+    <ion-button expand="block" color="secondary" shape="round" class="ion-margin-top" (click)="setModalOpen(true)">
+      <ion-icon name="flash" slot="start"></ion-icon>
+      Quick Phrases
+    </ion-button>
   </div>
+
+  <ion-modal [isOpen]="isModalOpen" (didDismiss)="setModalOpen(false)">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Quick Phrases</ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="setModalOpen(false)">Close</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <ion-list lines="none">
+          <ion-item *ngFor="let item of essentials" (click)="selectEssential(item)" button detail="false" class="phrase-item">
+            <ion-label>
+              <h2>{{ item.english }}</h2>
+              <p *ngIf="item.translation" class="native-text">{{ item.translation.text }}</p>
+              <p *ngIf="item.translation" class="phonetic-text">{{ item.translation.phonetic }}</p>
+            </ion-label>
+            <ion-icon name="chevron-forward" slot="end" color="medium"></ion-icon>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
 
   <div class="ion-padding-start ion-padding-end">
     <p class="section-label">1. Start Sentence</p>

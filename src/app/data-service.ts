@@ -81,10 +81,20 @@ export class DataService {
   private essentials: Phrase[] = [
     { id: 'hello', type: 'essential', english: 'Hello' },
     { id: 'thanks', type: 'essential', english: 'Thank you' },
+    { id: 'goodbye', type: 'essential', english: 'Goodbye' },
+    { id: 'good_morning', type: 'essential', english: 'Good morning' },
+    { id: 'good_evening', type: 'essential', english: 'Good evening' },
     { id: 'bathroom', type: 'essential', english: 'Where is the bathroom?' },
     { id: 'yes', type: 'essential', english: 'Yes' },
     { id: 'no', type: 'essential', english: 'No' },
-    { id: 'sorry', type: 'essential', english: 'Excuse me / Sorry' }
+    { id: 'sorry', type: 'essential', english: 'Excuse me / Sorry' },
+    { id: 'no_understand', type: 'essential', english: 'I don\'t understand' },
+    { id: 'speak_english', type: 'essential', english: 'Do you speak English?' },
+    { id: 'help', type: 'essential', english: 'Help!' },
+    { id: 'delicious', type: 'essential', english: 'Delicious!' },
+    { id: 'cheers', type: 'essential', english: 'Cheers!' },
+    { id: 'wifi_pass', type: 'essential', english: 'WiFi Password?' },
+    { id: 'slowly', type: 'essential', english: 'Please speak slowly' }
   ];
 
   // ============================================================

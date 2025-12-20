@@ -2,10 +2,20 @@
   "essentials": {
     "hello": { "text": "你好", "phonetic": "Nǐ hǎo", "audio": "" },
     "thanks": { "text": "谢谢", "phonetic": "Xièxiè", "audio": "" },
+    "goodbye": { "text": "再见", "phonetic": "Zàijiàn", "audio": "" },
+    "good_morning": { "text": "早上好", "phonetic": "Zǎoshang hǎo", "audio": "" },
+    "good_evening": { "text": "晚上好", "phonetic": "Wǎnshàng hǎo", "audio": "" },
     "bathroom": { "text": "洗手间在哪里？", "phonetic": "Xǐshǒujiān zài nǎli?", "audio": "" },
     "yes": { "text": "是 / 对", "phonetic": "Shì / Duì", "audio": "" },
     "no": { "text": "不", "phonetic": "Bù", "audio": "" },
-    "sorry": { "text": "不好意思", "phonetic": "Bù hǎoyìsi", "audio": "" }
+    "sorry": { "text": "不好意思", "phonetic": "Bù hǎoyìsi", "audio": "" },
+    "no_understand": { "text": "我听不懂", "phonetic": "Wǒ tīng bù dǒng", "audio": "" },
+    "speak_english": { "text": "你会说英语吗？", "phonetic": "Nǐ huì shuō yīngyǔ ma?", "audio": "" },
+    "help": { "text": "帮帮我!", "phonetic": "Bāng bāng wǒ!", "audio": "" },
+    "delicious": { "text": "好吃!", "phonetic": "Hǎochī!", "audio": "" },
+    "cheers": { "text": "干杯!", "phonetic": "Gānbēi!", "audio": "" },
+    "wifi_pass": { "text": "WiFi密码？", "phonetic": "WiFi mìmǎ?", "audio": "" },
+    "slowly": { "text": "请说慢一点", "phonetic": "Qǐng shuō màn yīdiǎn", "audio": "" }
   },
   "combinations": {
     "where_station": { "text": "火车站在哪里？", "phonetic": "Huǒchē zhàn zài nǎli?", "audio": "" },

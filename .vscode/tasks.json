@@ -1,0 +1,12 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "append_styles",
+			"type": "shell",
+			"command": "echo \"/* Modal Styles */\n.phrase-item {\n  --padding-start: 0;\n  --inner-padding-end: 0;\n  margin-bottom: 12px;\n  border-radius: 16px;\n  --background: var(--ion-color-light);\n  \n  ion-label {\n    margin: 16px;\n  }\n\n  h2 {\n    font-weight: 700;\n    font-size: 1.1rem;\n    color: var(--ion-color-dark);\n    margin-bottom: 4px;\n  }\n\n  .native-text {\n    font-size: 1.2rem;\n    color: var(--ion-color-primary);\n    font-weight: 600;\n    margin-bottom: 2px;\n  }\n\n  .phonetic-text {\n    font-size: 0.9rem;\n    color: var(--ion-color-medium);\n    font-style: italic;\n  }\n}\" >> /Users/johnmckay/Code/lunar-languages/src/app/home/home.page.scss",
+			"args": [],
+			"group": "build"
+		}
+	]
+}

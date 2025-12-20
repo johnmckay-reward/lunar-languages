@@ -2,10 +2,20 @@
   "essentials": {
     "hello": { "text": "Hallo", "phonetic": "HA-loh", "audio": "" },
     "thanks": { "text": "Danke", "phonetic": "DAN-kuh", "audio": "" },
+    "goodbye": { "text": "Auf Wiedersehen", "phonetic": "owf VEE-der-zayn", "audio": "" },
+    "good_morning": { "text": "Guten Morgen", "phonetic": "GOO-ten MOR-gen", "audio": "" },
+    "good_evening": { "text": "Guten Abend", "phonetic": "GOO-ten AH-bent", "audio": "" },
     "bathroom": { "text": "Wo ist die Toilette?", "phonetic": "voh ist dee toy-LET-uh?", "audio": "" },
     "yes": { "text": "Ja", "phonetic": "Yah", "audio": "" },
     "no": { "text": "Nein", "phonetic": "Nine", "audio": "" },
-    "sorry": { "text": "Entschuldigung", "phonetic": "ent-SHOOL-dee-gung", "audio": "" }
+    "sorry": { "text": "Entschuldigung", "phonetic": "ent-SHOOL-dee-gung", "audio": "" },
+    "no_understand": { "text": "Ich verstehe nicht", "phonetic": "ich fer-SHTAY-uh nicht", "audio": "" },
+    "speak_english": { "text": "Sprechen Sie Englisch?", "phonetic": "SHPREH-khen zee ENG-lish?", "audio": "" },
+    "help": { "text": "Hilfe!", "phonetic": "HIL-fuh!", "audio": "" },
+    "delicious": { "text": "Lecker!", "phonetic": "LEH-ker!", "audio": "" },
+    "cheers": { "text": "Prost!", "phonetic": "Prohst!", "audio": "" },
+    "wifi_pass": { "text": "WLAN-Passwort?", "phonetic": "VAY-lahn pass-vort?", "audio": "" },
+    "slowly": { "text": "Bitte sprechen Sie langsamer", "phonetic": "BIT-uh SHPREH-khen zee LANG-zah-mer", "audio": "" }
   },
   "combinations": {
     "where_station": { "text": "Wo ist der Bahnhof?", "phonetic": "voh ist dair BAHN-hof?", "audio": "" },
