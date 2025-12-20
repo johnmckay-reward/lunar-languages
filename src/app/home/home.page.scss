@@ -3,10 +3,11 @@
    ========================================= */
 
 .display-wrapper {
-  background: radial-gradient(
-    circle at 50% 30%,
-    rgba(92, 107, 192, 0.15) 0%,
-    transparent 70%
+  /* More subtle, premium gradient */
+  background: linear-gradient(
+    180deg,
+    rgba(92, 107, 192, 0.08) 0%,
+    rgba(92, 107, 192, 0.02) 100%
   );
 
   padding-top: 20px;
@@ -18,10 +19,10 @@
 
 @media (prefers-color-scheme: dark) {
   .display-wrapper {
-    background: radial-gradient(
-      circle at 50% 30%,
-      rgba(92, 107, 192, 0.1) 0%,
-      transparent 70%
+    background: linear-gradient(
+      180deg,
+      rgba(92, 107, 192, 0.15) 0%,
+      rgba(92, 107, 192, 0.05) 100%
     );
   }
 }

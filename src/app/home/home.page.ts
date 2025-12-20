@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActionSheetController, IonContent } from '@ionic/angular';
+import { Haptics, ImpactStyle } from '@capacitor/haptics';
 import { DataService, Phrase, LanguageInfo } from '../data-service';
 
 @Component({
@@ -74,6 +75,7 @@ export class HomePage implements OnInit {
   }
 
   selectInitialLanguage(code: string) {
+    Haptics.impact({ style: ImpactStyle.Medium });
     this.dataService.saveLanguagePreference(code);
     this.showWelcomeScreen = false;
     this.loadLanguage(code);
@@ -108,6 +110,7 @@ export class HomePage implements OnInit {
   }
 
   changeLanguage(code: string) {
+    Haptics.impact({ style: ImpactStyle.Medium });
     this.dataService.saveLanguagePreference(code);
     this.loadLanguage(code);
   }
@@ -152,11 +155,13 @@ export class HomePage implements OnInit {
   // ============================================
 
   filterNouns(category: string) {
+    Haptics.impact({ style: ImpactStyle.Light });
     this.selectedCategory = category;
     this.updateVisibleNouns(); // Re-run filter
   }
 
   selectStarter(starter: Phrase) {
+    Haptics.impact({ style: ImpactStyle.Light });
     this.selectedStarter = starter;
     this.selectedNoun = null;
 
@@ -168,12 +173,14 @@ export class HomePage implements OnInit {
   }
 
   selectNoun(noun: Phrase) {
+    Haptics.impact({ style: ImpactStyle.Light });
     this.content.scrollToTop(500);
     this.selectedNoun = noun;
     this.updateDisplay();
   }
 
   selectEssential(phrase: Phrase) {
+    Haptics.impact({ style: ImpactStyle.Medium });
     this.selectedStarter = null;
     this.selectedNoun = null;
     this.currentAudioId = phrase.id;
@@ -215,6 +222,8 @@ export class HomePage implements OnInit {
 
   playAudio(speed: number = 1.0) {
     if (!this.currentLanguage || !this.currentAudioId) return;
+
+    Haptics.impact({ style: ImpactStyle.Light });
 
     const path = `assets/audio/${this.currentLanguage.code}/${this.currentAudioId}.mp3`;
     const audio = new Audio(path);

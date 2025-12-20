@@ -197,15 +197,16 @@ ion-toolbar {
 /* Upgraded to "Card" style */
 .builder-btn {
   /* White card look */
-  --background: #ffffff;
-  --color: var(--ion-color-primary);
+  background: #ffffff;
+  color: var(--ion-color-primary);
 
   /* Softer, larger radius */
-  --border-radius: 20px;
+  border-radius: 20px;
 
   /* A distinct, premium shadow */
-  --box-shadow: 0 8px 20px rgba(15, 28, 63, 0.08);
+  box-shadow: 0 8px 20px rgba(15, 28, 63, 0.08);
 
+  font-family: var(--ion-font-family);
   font-weight: 700;
   font-size: 1.1rem;
   height: 85px; /* Taller */
@@ -213,6 +214,7 @@ ion-toolbar {
   margin: 0;
   text-transform: none;
   letter-spacing: -0.5px;
+  cursor: pointer;
 
   /* Subtle border for crispness */
   border: 1px solid rgba(0,0,0,0.03);
@@ -222,18 +224,18 @@ ion-toolbar {
 /* Dark mode builder buttons */
 @media (prefers-color-scheme: dark) {
   .builder-btn {
-    --background: var(--ion-color-step-100);
-    --color: #ffffff;
-    --box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    background: var(--ion-color-step-100);
+    color: #ffffff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     border: 1px solid rgba(255, 255, 255, 0.05);
   }
 }
 
 /* Active State for Nouns */
 .builder-btn.active {
-  --background: var(--ion-color-secondary);
-  --color: #ffffff;
-  --box-shadow: 0 10px 25px rgba(92, 107, 192, 0.5); /* Glowing shadow */
+  background: var(--ion-color-secondary);
+  color: #ffffff;
+  box-shadow: 0 10px 25px rgba(92, 107, 192, 0.5); /* Glowing shadow */
   transform: translateY(-4px); /* Lift up */
   border: none;
 }
