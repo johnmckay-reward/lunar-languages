@@ -1,20 +1,100 @@
-<ion-header [translucent]="true">
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title color="primary" class="ion-text-center">Lunar Languages</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="primary">
+        <ion-icon name="settings-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="display-wrapper ion-padding">
+    <div class="glass-panel ion-padding ion-text-center">
+
+      <p class="ion-text-uppercase ion-text-small text-muted ion-no-margin">
+        {{ displayEnglish }}
+      </p>
+
+      <h1 class="text-hero-native">{{ displayNative }}</h1>
+
+      <p class="text-phonetic">{{ displayPhonetic }}</p>
+
+      <div class="ion-margin-top">
+        <ion-button
+          fill="outline"
+          shape="round"
+          color="secondary"
+          size="small"
+          (click)="playAudio()">
+          <ion-icon name="volume-high" slot="start"></ion-icon>
+          Listen
+        </ion-button>
+      </div>
+
+    </div>
   </div>
+
+  <div class="ion-padding-start ion-padding-end ion-margin-bottom">
+    <p class="section-label">Quick Phrases</p>
+
+    <div class="scroll-horizontal">
+      <ion-chip
+        *ngFor="let item of essentials"
+        outline="true"
+        color="secondary"
+        (click)="selectEssential(item)">
+        <ion-label>{{ item.english }}</ion-label>
+      </ion-chip>
+    </div>
+  </div>
+
+  <div class="ion-padding-start ion-padding-end">
+    <p class="section-label">1. Start Sentence</p>
+
+    <div class="scroll-horizontal">
+      <div
+        *ngFor="let starter of starters"
+        class="starter-card"
+        [class.active]="selectedStarter?.id === starter.id"
+        (click)="selectStarter(starter)">
+        {{ starter.english }}
+      </div>
+    </div>
+  </div>
+
+  <div class="ion-padding-start ion-padding-end ion-margin-top">
+
+    <div class="scroll-horizontal ion-margin-bottom">
+      <ion-chip
+        *ngFor="let cat of categories"
+        [color]="selectedCategory === cat ? 'primary' : 'medium'"
+        [outline]="selectedCategory !== cat"
+        (click)="filterNouns(cat)">
+        <ion-label>{{ cat }}</ion-label>
+      </ion-chip>
+    </div>
+
+    <p class="section-label">2. Select Object</p>
+
+    <ion-grid class="ion-no-padding">
+      <ion-row>
+        <ion-col size="6" size-md="4" *ngFor="let noun of visibleNouns">
+          <button
+            class="builder-btn"
+            [class.active]="selectedNoun?.id === noun.id"
+            (click)="selectNoun(noun)">
+            {{ noun.english }}
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <div class="ion-padding-bottom ion-margin-bottom"></div>
+  </div>
+
+  <div class="spacer-bottom"></div>
+
 </ion-content>
