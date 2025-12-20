@@ -73,6 +73,36 @@ export class DataService {
       name: 'Japanese',
       flag: '🇯🇵',
       phoneticGuide: 'Japanese syllables are equal length. Vowels are pure (ah, ee, oo, eh, oh). No stress accents.'
+    },
+    {
+      code: 'it',
+      name: 'Italian',
+      flag: '🇮🇹',
+      phoneticGuide: 'Italian is rhythmic and melodic. Vowels are clear and open. Double consonants are pronounced longer.'
+    },
+    {
+      code: 'pt',
+      name: 'Portuguese',
+      flag: '🇵🇹',
+      phoneticGuide: 'Portuguese is nasal and smooth. Vowels can be open or closed. "S" at the end of words often sounds like "sh".'
+    },
+    {
+      code: 'uk',
+      name: 'Ukrainian',
+      flag: '🇺🇦',
+      phoneticGuide: 'Ukrainian is melodic. "H" is soft (like hotel). "Y" is like "i" in bit. Stress is dynamic.'
+    },
+    {
+      code: 'ru',
+      name: 'Russian',
+      flag: '🇷🇺',
+      phoneticGuide: 'Russian is stress-timed. Unstressed "o" sounds like "a". Consonants can be hard or soft.'
+    },
+    {
+      code: 'pl',
+      name: 'Polish',
+      flag: '🇵🇱',
+      phoneticGuide: 'Polish has complex consonant clusters. "Sz" is like "sh", "cz" like "ch". Stress is usually on the second-to-last syllable.'
     }
   ];
 
