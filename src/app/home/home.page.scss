@@ -212,14 +212,17 @@ ion-col {
   background: var(--ion-background-color);
   z-index: 9999;
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Changed from center to allow scrolling from top */
   justify-content: center;
   padding: 20px;
+  overflow-y: auto; /* Enable vertical scrolling */
 }
 
 .welcome-content {
   width: 100%;
   max-width: 400px;
+  margin-top: 40px; /* Add some top margin since we align flex-start */
+  margin-bottom: 40px; /* Add bottom margin for scrolling space */
 }
 
 .welcome-title {
