@@ -2,8 +2,9 @@
   <ion-toolbar>
     <ion-title color="primary" class="ion-text-center">Lunar Languages</ion-title>
     <ion-buttons slot="end">
-      <ion-button color="primary">
-        <ion-icon name="settings-outline"></ion-icon>
+      <ion-button color="primary" (click)="openLanguageSelector()">
+        <span *ngIf="currentLanguage" style="font-size: 1.5rem; margin-right: 4px;">{{ currentLanguage.flag }}</span>
+        <ion-icon name="globe-outline" *ngIf="!currentLanguage"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
@@ -21,6 +22,10 @@
       <h1 class="text-hero-native">{{ displayNative }}</h1>
 
       <p class="text-phonetic">{{ displayPhonetic }}</p>
+
+      <div class="phonetic-guide-box" *ngIf="currentLanguage">
+        <p>{{ currentLanguage.phoneticGuide }}</p>
+      </div>
 
       <div class="ion-margin-top">
         <ion-button
@@ -77,7 +82,7 @@
       </ion-chip>
     </div>
 
-    <p class="section-label">2. Select Object</p>
+    <p class="section-label">2. Complete Phrase</p>
 
     <ion-grid class="ion-no-padding">
       <ion-row>

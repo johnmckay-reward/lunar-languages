@@ -1,6 +1,7 @@
 {
   "essentials": {
     "hello": { "text": "你好", "phonetic": "Nǐ hǎo", "audio": "" },
+    "thanks": { "text": "谢谢", "phonetic": "Xièxiè", "audio": "" },
     "bathroom": { "text": "洗手间在哪里？", "phonetic": "Xǐshǒujiān zài nǎli?", "audio": "" },
     "yes": { "text": "是 / 对", "phonetic": "Shì / Duì", "audio": "" },
     "no": { "text": "不", "phonetic": "Bù", "audio": "" },

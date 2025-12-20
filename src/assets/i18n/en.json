@@ -1,6 +1,7 @@
 {
   "essentials": {
     "hello": { "text": "Hello", "phonetic": "", "audio": "" },
+    "thanks": { "text": "Thank you", "phonetic": "", "audio": "" },
     "bathroom": { "text": "Where is the bathroom?", "phonetic": "", "audio": "" },
     "yes": { "text": "Yes", "phonetic": "", "audio": "" },
     "no": { "text": "No", "phonetic": "", "audio": "" },

@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { DataService, Phrase } from '../data-service';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ActionSheetController, IonContent } from '@ionic/angular';
+import { DataService, Phrase, LanguageInfo } from '../data-service';
 
 @Component({
   selector: 'app-home',
@@ -25,21 +26,72 @@ export class HomePage implements OnInit {
   selectedStarter: Phrase | null = null;
   selectedNoun: Phrase | null = null;
   selectedCategory: string = 'All';
+  currentLanguage: LanguageInfo | null = null;
 
   // --- Display State ---
   displayEnglish: string = 'Hello';
   displayNative: string = '你好';
   displayPhonetic: string = 'Nǐ hǎo';
 
-  constructor(private dataService: DataService) {}
+  @ViewChild(IonContent) content!: IonContent;
+
+  constructor(
+    private dataService: DataService,
+    private actionSheetCtrl: ActionSheetController
+  ) {}
 
   ngOnInit() {
+    // Subscribe to language changes
+    this.dataService.getCurrentLanguage().subscribe(lang => {
+      this.currentLanguage = lang;
+    });
+
     this.dataService.loadLanguage('zh').subscribe(() => {
       this.loadData();
 
       // Auto-select first starter
       if (this.starters.length > 0) {
         this.selectStarter(this.starters[0]);
+      }
+    });
+  }
+
+  async openLanguageSelector() {
+    const languages = this.dataService.getLanguages();
+
+    const buttons = languages.map(lang => ({
+      text: `${lang.flag}  ${lang.name}`,
+      handler: () => {
+        this.changeLanguage(lang.code);
+      }
+    }));
+
+    const actionSheet = await this.actionSheetCtrl.create({
+      header: 'Select Language',
+      buttons: [
+        ...buttons,
+        {
+          text: 'Cancel',
+          role: 'cancel'
+        }
+      ]
+    });
+
+    await actionSheet.present();
+  }
+
+  changeLanguage(code: string) {
+    this.dataService.loadLanguage(code).subscribe(() => {
+      this.loadData();
+      // Refresh current display if something is selected
+      if (this.selectedStarter) {
+        this.selectStarter(this.selectedStarter);
+        if (this.selectedNoun) {
+          this.selectNoun(this.selectedNoun);
+        }
+      } else {
+        // If nothing selected, maybe reset to Hello?
+        // Or just refresh the essentials list which happens in loadData
       }
     });
   }
@@ -100,6 +152,7 @@ export class HomePage implements OnInit {
   }
 
   selectNoun(noun: Phrase) {
+    this.content.scrollToTop(500);
     this.selectedNoun = noun;
     this.updateDisplay();
   }

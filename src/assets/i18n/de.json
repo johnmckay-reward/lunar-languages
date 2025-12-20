@@ -1,6 +1,7 @@
 {
   "essentials": {
     "hello": { "text": "Hallo", "phonetic": "HA-loh", "audio": "" },
+    "thanks": { "text": "Danke", "phonetic": "DAN-kuh", "audio": "" },
     "bathroom": { "text": "Wo ist die Toilette?", "phonetic": "voh ist dee toy-LET-uh?", "audio": "" },
     "yes": { "text": "Ja", "phonetic": "Yah", "audio": "" },
     "no": { "text": "Nein", "phonetic": "Nine", "audio": "" },

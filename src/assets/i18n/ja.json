@@ -1,6 +1,7 @@
 {
   "essentials": {
     "hello": { "text": "こんにちは", "phonetic": "Kon-nee-chee-wah", "audio": "" },
+    "thanks": { "text": "ありがとう", "phonetic": "Ah-ree-gah-toh", "audio": "" },
     "bathroom": { "text": "トイレはどこですか？", "phonetic": "Toy-reh wa doh-koh dess kah?", "audio": "" },
     "yes": { "text": "はい", "phonetic": "Hi", "audio": "" },
     "no": { "text": "いいえ", "phonetic": "Ee-eh", "audio": "" },

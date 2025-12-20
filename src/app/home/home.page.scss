@@ -129,3 +129,26 @@ ion-col {
   height: 100px;
   width: 100%;
 }
+
+.text-phonetic {
+  font-size: 1.2rem;
+  color: var(--ion-color-medium);
+  margin: 0;
+}
+
+.phonetic-guide-box {
+  margin-top: 16px;
+  padding: 8px 12px;
+  background: rgba(var(--ion-color-primary-rgb), 0.08);
+  border-radius: 12px;
+  display: inline-block;
+  max-width: 90%;
+
+  p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--ion-color-medium);
+    font-style: italic;
+    line-height: 1.4;
+  }
+}

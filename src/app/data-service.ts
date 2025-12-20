@@ -11,6 +11,13 @@ export interface Translation {
   audio?: string;
 }
 
+export interface LanguageInfo {
+  code: string;
+  name: string;
+  flag: string;
+  phoneticGuide: string;
+}
+
 export interface Phrase {
   id: string;
   type: 'essential' | 'starter' | 'noun';
@@ -33,6 +40,40 @@ export class DataService {
 
   private currentTranslations: any = {};
   private languageLoaded = new BehaviorSubject<boolean>(false);
+  private currentLanguage = new BehaviorSubject<LanguageInfo | null>(null);
+
+  private supportedLanguages: LanguageInfo[] = [
+    {
+      code: 'zh',
+      name: 'Mandarin',
+      flag: '🇨🇳',
+      phoneticGuide: 'Mandarin uses tones. Pay attention to the rising and falling marks (ā, á, ǎ, à) as they change the meaning.'
+    },
+    {
+      code: 'es',
+      name: 'Spanish',
+      flag: '🇪🇸',
+      phoneticGuide: 'Spanish vowels are short and crisp (a, e, i, o, u). The "r" is often rolled.'
+    },
+    {
+      code: 'fr',
+      name: 'French',
+      flag: '🇫🇷',
+      phoneticGuide: 'French flows smoothly. Many final consonants are silent. "R" is pronounced in the back of the throat.'
+    },
+    {
+      code: 'de',
+      name: 'German',
+      flag: '🇩🇪',
+      phoneticGuide: 'German is phonetic but crisp. "W" sounds like English "V". "V" sounds like English "F".'
+    },
+    {
+      code: 'ja',
+      name: 'Japanese',
+      flag: '🇯🇵',
+      phoneticGuide: 'Japanese syllables are equal length. Vowels are pure (ah, ee, oo, eh, oh). No stress accents.'
+    }
+  ];
 
   // ============================================================
   // 1. ESSENTIALS (Standalone phrases - Always available)
@@ -129,8 +170,21 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
 
+  getLanguages(): LanguageInfo[] {
+    return this.supportedLanguages;
+  }
+
+  getCurrentLanguage(): Observable<LanguageInfo | null> {
+    return this.currentLanguage.asObservable();
+  }
+
   loadLanguage(lang: string): Observable<any> {
     this.languageLoaded.next(false);
+    const selectedLang = this.supportedLanguages.find(l => l.code === lang);
+    if (selectedLang) {
+      this.currentLanguage.next(selectedLang);
+    }
+
     return this.http.get(`assets/i18n/${lang}.json`).pipe(
       tap(data => {
         this.currentTranslations = data;
