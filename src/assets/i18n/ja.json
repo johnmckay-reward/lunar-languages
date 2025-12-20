@@ -1,0 +1,33 @@
+{
+  "essentials": {
+    "hello": { "text": "こんにちは", "phonetic": "Kon-nee-chee-wah", "audio": "" },
+    "bathroom": { "text": "トイレはどこですか？", "phonetic": "Toy-reh wa doh-koh dess kah?", "audio": "" },
+    "yes": { "text": "はい", "phonetic": "Hi", "audio": "" },
+    "no": { "text": "いいえ", "phonetic": "Ee-eh", "audio": "" },
+    "sorry": { "text": "すみません", "phonetic": "Soo-mee-mah-sen", "audio": "" }
+  },
+  "combinations": {
+    "where_station": { "text": "駅はどこですか？", "phonetic": "Eh-key wa doh-koh dess kah?", "audio": "" },
+    "where_airport": { "text": "空港はどこですか？", "phonetic": "Koo-koh wa doh-koh dess kah?", "audio": "" },
+    "where_ticket": { "text": "どこで切符を買えますか？", "phonetic": "Doh-koh deh keep-poo oh kah-eh-mass kah?", "audio": "" },
+    "where_taxi": { "text": "タクシー乗り場はどこですか？", "phonetic": "Tah-koo-she no-ree-bah wa doh-koh dess kah?", "audio": "" },
+    "where_atm": { "text": "ATMはどこですか？", "phonetic": "Eh-tee-em wa doh-koh dess kah?", "audio": "" },
+    "where_pharmacy": { "text": "薬局はどこですか？", "phonetic": "Yak-kyoku wa doh-koh dess kah?", "audio": "" },
+    "where_doctor": { "text": "病院はどこですか？", "phonetic": "Byo-in wa doh-koh dess kah?", "audio": "" },
+    "like_ticket": { "text": "切符をください。", "phonetic": "Keep-poo oh koo-dah-sigh.", "audio": "" },
+    "like_taxi": { "text": "タクシーをお願いします。", "phonetic": "Tah-koo-she oh oh-neh-guy-she-mass.", "audio": "" },
+    "like_water": { "text": "お水をください。", "phonetic": "Oh-mee-zoo oh koo-dah-sigh.", "audio": "" },
+    "like_coffee": { "text": "コーヒーをください。", "phonetic": "Koh-hee oh koo-dah-sigh.", "audio": "" },
+    "like_menu": { "text": "メニューをください。", "phonetic": "Men-yoo oh koo-dah-sigh.", "audio": "" },
+    "like_bill": { "text": "お会計をお願いします。", "phonetic": "Oh-kah-ee-kay oh oh-neh-guy-she-mass.", "audio": "" },
+    "have_wifi": { "text": "WiFiはありますか？", "phonetic": "Wy-fy wa ah-ree-mass kah?", "audio": "" },
+    "have_room": { "text": "空いている部屋はありますか？", "phonetic": "Ah-ee-teh-roo heh-yah wa ah-ree-mass kah?", "audio": "" },
+    "have_charger": { "text": "充電器はありますか？", "phonetic": "Joo-den-key wa ah-ree-mass kah?", "audio": "" },
+    "have_menu": { "text": "英語のメニューはありますか？", "phonetic": "Eh-go no men-yoo wa ah-ree-mass kah?", "audio": "" },
+    "cost_ticket": { "text": "切符はいくらですか？", "phonetic": "Keep-poo wa ee-koo-rah dess kah?", "audio": "" },
+    "cost_taxi": { "text": "タクシー代はいくらですか？", "phonetic": "Tah-koo-she dai wa ee-koo-rah dess kah?", "audio": "" },
+    "cost_room": { "text": "部屋代はいくらですか？", "phonetic": "Heh-yah dai wa ee-koo-rah dess kah?", "audio": "" },
+    "cost_coffee": { "text": "コーヒーはいくらですか？", "phonetic": "Koh-hee wa ee-koo-rah dess kah?", "audio": "" },
+    "allergic_peanuts": { "text": "私はピーナッツアレルギーです。", "phonetic": "Wah-tah-she wa pee-na-tsu ah-reh-roo-gee dess.", "audio": "" }
+  }
+}

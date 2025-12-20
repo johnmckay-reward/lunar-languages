@@ -1,33 +1,28 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { BehaviorSubject, Observable } from 'rxjs';
+import { tap } from 'rxjs/operators';
 
 // --- INTERFACES ---
 
 export interface Translation {
-  text: string;      // The native script (e.g., "你好")
-  phonetic: string;  // Pronunciation guide (e.g., "Nǐ hǎo")
-  audio?: string;    // Path to audio file (optional for now)
+  text: string;
+  phonetic: string;
+  audio?: string;
 }
 
 export interface Phrase {
   id: string;
   type: 'essential' | 'starter' | 'noun';
-  category?: string; // Only for Nouns (e.g., 'Transport', 'Food')
-  english: string;   // Display label
-  // Essentials have direct translations. Starters/Nouns rely on the Combination Map.
-  translations?: {
-    mandarin?: Translation;
-    spanish?: Translation;
-    // Add other languages here
-  };
+  category?: string;
+  english: string;
+  translation?: Translation;
 }
 
-// The Master Dictionary for Sentence Building
 export interface CombinationMap {
   [key: string]: {
     english: string;
-    mandarin?: Translation;
-    spanish?: Translation;
-    // Add other languages here
+    translation?: Translation;
   };
 }
 
@@ -36,52 +31,19 @@ export interface CombinationMap {
 })
 export class DataService {
 
+  private currentTranslations: any = {};
+  private languageLoaded = new BehaviorSubject<boolean>(false);
+
   // ============================================================
   // 1. ESSENTIALS (Standalone phrases - Always available)
   // ============================================================
   private essentials: Phrase[] = [
-    {
-      id: 'hello', type: 'essential', english: 'Hello',
-      translations: {
-        mandarin: { text: '你好', phonetic: 'Nǐ hǎo' },
-        spanish: { text: 'Hola', phonetic: 'OH-lah' }
-      }
-    },
-    {
-      id: 'thanks', type: 'essential', english: 'Thank you',
-      translations: {
-        mandarin: { text: '谢谢', phonetic: 'Xièxiè' },
-        spanish: { text: 'Gracias', phonetic: 'GRAH-see-ahs' }
-      }
-    },
-    {
-      id: 'bathroom', type: 'essential', english: 'Where is the bathroom?',
-      translations: {
-        mandarin: { text: '洗手间在哪里？', phonetic: 'Xǐshǒujiān zài nǎlǐ?' },
-        spanish: { text: '¿Dónde está el baño?', phonetic: 'DON-deh es-TA el BAN-yo' }
-      }
-    },
-    {
-      id: 'yes', type: 'essential', english: 'Yes',
-      translations: {
-        mandarin: { text: '是', phonetic: 'Shì' },
-        spanish: { text: 'Sí', phonetic: 'See' }
-      }
-    },
-    {
-      id: 'no', type: 'essential', english: 'No',
-      translations: {
-        mandarin: { text: '不', phonetic: 'Bù' },
-        spanish: { text: 'No', phonetic: 'Noh' }
-      }
-    },
-    {
-      id: 'sorry', type: 'essential', english: 'Excuse me / Sorry',
-      translations: {
-        mandarin: { text: '不好意思', phonetic: 'Bù hǎoyìsi' },
-        spanish: { text: 'Perdón', phonetic: 'Pehr-DON' }
-      }
-    }
+    { id: 'hello', type: 'essential', english: 'Hello' },
+    { id: 'thanks', type: 'essential', english: 'Thank you' },
+    { id: 'bathroom', type: 'essential', english: 'Where is the bathroom?' },
+    { id: 'yes', type: 'essential', english: 'Yes' },
+    { id: 'no', type: 'essential', english: 'No' },
+    { id: 'sorry', type: 'essential', english: 'Excuse me / Sorry' }
   ];
 
   // ============================================================
@@ -130,13 +92,9 @@ export class DataService {
   // 4. COMBINATIONS (The Sentence Lookup Logic)
   // Format: "starterId_nounId"
   // ============================================================
-  private combinations: CombinationMap = {
+  private combinations: { [key: string]: { english: string } } = {
     // --- WHERE IS...? ---
-    'where_station': {
-      english: 'Where is the train station?',
-      mandarin: { text: '火车站在哪里？', phonetic: 'Huǒchē zhàn zài nǎlǐ?' },
-      spanish: { text: '¿Dónde está la estación de tren?', phonetic: '...' }
-    },
+    'where_station': { english: 'Where is the train station?' },
     'where_airport': { english: 'Where is the airport?' },
     'where_ticket': { english: 'Where can I buy a ticket?' }, // Context adjusted
     'where_taxi': { english: 'Where is the taxi stand?' },
@@ -165,20 +123,34 @@ export class DataService {
     'cost_coffee': { english: 'How much is a coffee?' },
 
     // --- I AM ALLERGIC TO... ---
-    'allergic_peanuts': {
-      english: 'I am allergic to peanuts.',
-      mandarin: { text: '我对花生过敏', phonetic: 'Wǒ duì huāshēng guòmǐn' }
-    },
+    'allergic_peanuts': { english: 'I am allergic to peanuts.' },
     // Add other allergies here if you add nouns for seafood, etc.
   };
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+
+  loadLanguage(lang: string): Observable<any> {
+    this.languageLoaded.next(false);
+    return this.http.get(`assets/i18n/${lang}.json`).pipe(
+      tap(data => {
+        this.currentTranslations = data;
+        this.languageLoaded.next(true);
+      })
+    );
+  }
+
+  get isLanguageLoaded() {
+    return this.languageLoaded.asObservable();
+  }
 
   /**
    * Get Essentials (Power Phrases)
    */
-  getEssentials() {
-    return this.essentials;
+  getEssentials(): Phrase[] {
+    return this.essentials.map(item => ({
+      ...item,
+      translation: this.currentTranslations.essentials?.[item.id]
+    }));
   }
 
   /**
@@ -213,15 +185,19 @@ export class DataService {
   getSentence(starterId: string, nounId: string) {
     const key = `${starterId}_${nounId}`;
     const combo = this.combinations[key];
+    const translation = this.currentTranslations.combinations?.[key];
 
     if (combo) {
-      return combo;
+      return {
+        english: combo.english,
+        translation: translation || { text: '...', phonetic: '...' }
+      };
     } else {
       // Fallback if we haven't defined a combination yet
       // This helps you spot missing data during development
       return {
         english: `[MISSING: ${key}]`,
-        mandarin: { text: '...', phonetic: '...' }
+        translation: { text: '...', phonetic: '...' }
       };
     }
   }

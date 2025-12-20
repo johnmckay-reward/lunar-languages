@@ -34,12 +34,14 @@ export class HomePage implements OnInit {
   constructor(private dataService: DataService) {}
 
   ngOnInit() {
-    this.loadData();
+    this.dataService.loadLanguage('zh').subscribe(() => {
+      this.loadData();
 
-    // Auto-select first starter
-    if (this.starters.length > 0) {
-      this.selectStarter(this.starters[0]);
-    }
+      // Auto-select first starter
+      if (this.starters.length > 0) {
+        this.selectStarter(this.starters[0]);
+      }
+    });
   }
 
   loadData() {
@@ -109,9 +111,9 @@ export class HomePage implements OnInit {
     // (Optional: this.visibleNouns = [] if you want to hide the grid entirely)
 
     this.displayEnglish = phrase.english;
-    if (phrase.translations && phrase.translations.mandarin) {
-      this.displayNative = phrase.translations.mandarin.text;
-      this.displayPhonetic = phrase.translations.mandarin.phonetic;
+    if (phrase.translation) {
+      this.displayNative = phrase.translation.text;
+      this.displayPhonetic = phrase.translation.phonetic;
     }
   }
 
@@ -122,9 +124,9 @@ export class HomePage implements OnInit {
       const combo = this.dataService.getSentence(this.selectedStarter.id, this.selectedNoun.id);
       this.displayEnglish = combo.english;
 
-      if (combo.mandarin) {
-        this.displayNative = combo.mandarin.text;
-        this.displayPhonetic = combo.mandarin.phonetic;
+      if (combo.translation) {
+        this.displayNative = combo.translation.text;
+        this.displayPhonetic = combo.translation.phonetic;
       } else {
         this.displayNative = 'Translation pending...';
         this.displayPhonetic = '---';

@@ -1,0 +1,33 @@
+{
+  "essentials": {
+    "hello": { "text": "Hallo", "phonetic": "HA-loh", "audio": "" },
+    "bathroom": { "text": "Wo ist die Toilette?", "phonetic": "voh ist dee toy-LET-uh?", "audio": "" },
+    "yes": { "text": "Ja", "phonetic": "Yah", "audio": "" },
+    "no": { "text": "Nein", "phonetic": "Nine", "audio": "" },
+    "sorry": { "text": "Entschuldigung", "phonetic": "ent-SHOOL-dee-gung", "audio": "" }
+  },
+  "combinations": {
+    "where_station": { "text": "Wo ist der Bahnhof?", "phonetic": "voh ist dair BAHN-hof?", "audio": "" },
+    "where_airport": { "text": "Wo ist der Flughafen?", "phonetic": "voh ist dair FLOOG-hah-fen?", "audio": "" },
+    "where_ticket": { "text": "Wo kann ich ein Ticket kaufen?", "phonetic": "voh kahn ich ine TIK-et kow-fen?", "audio": "" },
+    "where_taxi": { "text": "Wo ist der Taxistand?", "phonetic": "voh ist dair TAK-see-shtand?", "audio": "" },
+    "where_atm": { "text": "Wo ist ein Geldautomat?", "phonetic": "voh ist ine GELT-ow-toh-mat?", "audio": "" },
+    "where_pharmacy": { "text": "Wo ist eine Apotheke?", "phonetic": "voh ist eye-nuh ah-poh-TAY-kuh?", "audio": "" },
+    "where_doctor": { "text": "Wo ist ein Arzt?", "phonetic": "voh ist ine Artst?", "audio": "" },
+    "like_ticket": { "text": "Ich hätte gern ein Ticket, bitte.", "phonetic": "ich HET-uh gairn ine TIK-et, BIT-uh.", "audio": "" },
+    "like_taxi": { "text": "Ich hätte gern ein Taxi, bitte.", "phonetic": "ich HET-uh gairn ine TAK-see, BIT-uh.", "audio": "" },
+    "like_water": { "text": "Ich hätte gern etwas Wasser.", "phonetic": "ich HET-uh gairn et-vas VAS-er.", "audio": "" },
+    "like_coffee": { "text": "Ich hätte gern einen Kaffee.", "phonetic": "ich HET-uh gairn eye-nen KA-fay.", "audio": "" },
+    "like_menu": { "text": "Die Speisekarte, bitte.", "phonetic": "dee SHPY-ze-kar-tuh, BIT-uh.", "audio": "" },
+    "like_bill": { "text": "Die Rechnung, bitte.", "phonetic": "dee REKH-nung, BIT-uh.", "audio": "" },
+    "have_wifi": { "text": "Haben Sie WLAN?", "phonetic": "HA-ben zee VAY-lahn?", "audio": "" },
+    "have_room": { "text": "Haben Sie ein Zimmer frei?", "phonetic": "HA-ben zee ine TSIM-er fry?", "audio": "" },
+    "have_charger": { "text": "Haben Sie ein Ladegerät?", "phonetic": "HA-ben zee ine LAH-deh-ge-rayt?", "audio": "" },
+    "have_menu": { "text": "Haben Sie eine Karte auf Englisch?", "phonetic": "HA-ben zee eye-nuh KAR-tuh owf ENG-lish?", "audio": "" },
+    "cost_ticket": { "text": "Wie viel kostet ein Ticket?", "phonetic": "vee feel KOS-tet ine TIK-et?", "audio": "" },
+    "cost_taxi": { "text": "Wie viel kostet das Taxi?", "phonetic": "vee feel KOS-tet das TAK-see?", "audio": "" },
+    "cost_room": { "text": "Wie viel kostet das Zimmer?", "phonetic": "vee feel KOS-tet das TSIM-er?", "audio": "" },
+    "cost_coffee": { "text": "Wie viel kostet ein Kaffee?", "phonetic": "vee feel KOS-tet ine KA-fay?", "audio": "" },
+    "allergic_peanuts": { "text": "Ich bin allergisch gegen Erdnüsse.", "phonetic": "ich bin ah-LER-gish gay-gen ERD-noos-uh.", "audio": "" }
+  }
+}

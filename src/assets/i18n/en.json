@@ -1,0 +1,33 @@
+{
+  "essentials": {
+    "hello": { "text": "Hello", "phonetic": "", "audio": "" },
+    "bathroom": { "text": "Where is the bathroom?", "phonetic": "", "audio": "" },
+    "yes": { "text": "Yes", "phonetic": "", "audio": "" },
+    "no": { "text": "No", "phonetic": "", "audio": "" },
+    "sorry": { "text": "Excuse me / Sorry", "phonetic": "", "audio": "" }
+  },
+  "combinations": {
+    "where_station": { "text": "Where is the train station?", "phonetic": "", "audio": "" },
+    "where_airport": { "text": "Where is the airport?", "phonetic": "", "audio": "" },
+    "where_ticket": { "text": "Where can I buy a ticket?", "phonetic": "", "audio": "" },
+    "where_taxi": { "text": "Where is the taxi stand?", "phonetic": "", "audio": "" },
+    "where_atm": { "text": "Where is the ATM?", "phonetic": "", "audio": "" },
+    "where_pharmacy": { "text": "Where is the pharmacy?", "phonetic": "", "audio": "" },
+    "where_doctor": { "text": "Where is a doctor?", "phonetic": "", "audio": "" },
+    "like_ticket": { "text": "I would like a ticket please.", "phonetic": "", "audio": "" },
+    "like_taxi": { "text": "I would like a taxi please.", "phonetic": "", "audio": "" },
+    "like_water": { "text": "I would like some water.", "phonetic": "", "audio": "" },
+    "like_coffee": { "text": "I would like a coffee.", "phonetic": "", "audio": "" },
+    "like_menu": { "text": "I would like the menu please.", "phonetic": "", "audio": "" },
+    "like_bill": { "text": "I would like the bill please.", "phonetic": "", "audio": "" },
+    "have_wifi": { "text": "Do you have WiFi?", "phonetic": "", "audio": "" },
+    "have_room": { "text": "Do you have a room available?", "phonetic": "", "audio": "" },
+    "have_charger": { "text": "Do you have a charger?", "phonetic": "", "audio": "" },
+    "have_menu": { "text": "Do you have a menu in English?", "phonetic": "", "audio": "" },
+    "cost_ticket": { "text": "How much is a ticket?", "phonetic": "", "audio": "" },
+    "cost_taxi": { "text": "How much is the taxi?", "phonetic": "", "audio": "" },
+    "cost_room": { "text": "How much is the room?", "phonetic": "", "audio": "" },
+    "cost_coffee": { "text": "How much is a coffee?", "phonetic": "", "audio": "" },
+    "allergic_peanuts": { "text": "I am allergic to peanuts.", "phonetic": "", "audio": "" }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "essentials": {
+    "hello": { "text": "Hola", "phonetic": "OH-lah", "audio": "" },
+    "bathroom": { "text": "¿Dónde está el baño?", "phonetic": "DON-deh ehs-TAH el BAHN-yoh?", "audio": "" },
+    "yes": { "text": "Sí", "phonetic": "See", "audio": "" },
+    "no": { "text": "No", "phonetic": "Noh", "audio": "" },
+    "sorry": { "text": "Disculpe / Perdón", "phonetic": "Dees-KOOL-peh / Pehr-DON", "audio": "" }
+  },
+  "combinations": {
+    "where_station": { "text": "¿Dónde está la estación de tren?", "phonetic": "DON-deh ehs-TAH lah ehs-tah-SYON deh tren?", "audio": "" },
+    "where_airport": { "text": "¿Dónde está el aeropuerto?", "phonetic": "DON-deh ehs-TAH el ah-eh-roh-PWER-toh?", "audio": "" },
+    "where_ticket": { "text": "¿Dónde puedo comprar un boleto?", "phonetic": "DON-deh PWEH-doh com-PRAR oon boh-LEH-toh?", "audio": "" },
+    "where_taxi": { "text": "¿Dónde está la parada de taxis?", "phonetic": "DON-deh ehs-TAH lah pah-RAH-dah deh TAK-sees?", "audio": "" },
+    "where_atm": { "text": "¿Dónde hay un cajero automático?", "phonetic": "DON-deh eye oon kah-HEH-roh ow-toh-MAH-tee-koh?", "audio": "" },
+    "where_pharmacy": { "text": "¿Dónde hay una farmacia?", "phonetic": "DON-deh eye OO-nah far-MAH-syah?", "audio": "" },
+    "where_doctor": { "text": "¿Dónde hay un médico?", "phonetic": "DON-deh eye oon MEH-dee-koh?", "audio": "" },
+    "like_ticket": { "text": "Quisiera un boleto, por favor.", "phonetic": "kee-SYEH-rah oon boh-LEH-toh, por fah-VOR.", "audio": "" },
+    "like_taxi": { "text": "Quisiera un taxi, por favor.", "phonetic": "kee-SYEH-rah oon TAK-see, por fah-VOR.", "audio": "" },
+    "like_water": { "text": "Quisiera agua, por favor.", "phonetic": "kee-SYEH-rah AH-gwah, por fah-VOR.", "audio": "" },
+    "like_coffee": { "text": "Quisiera un café.", "phonetic": "kee-SYEH-rah oon kah-FEH.", "audio": "" },
+    "like_menu": { "text": "Quisiera el menú, por favor.", "phonetic": "kee-SYEH-rah el meh-NOO, por fah-VOR.", "audio": "" },
+    "like_bill": { "text": "La cuenta, por favor.", "phonetic": "Lah KWEN-tah, por fah-VOR.", "audio": "" },
+    "have_wifi": { "text": "¿Tienen WiFi?", "phonetic": "TYEH-nehn WYE-fye?", "audio": "" },
+    "have_room": { "text": "¿Tienen una habitación disponible?", "phonetic": "TYEH-nehn OO-nah ah-bee-tah-SYON dees-poh-NEE-bleh?", "audio": "" },
+    "have_charger": { "text": "¿Tiene un cargador?", "phonetic": "TYEH-neh oon car-gah-DOR?", "audio": "" },
+    "have_menu": { "text": "¿Tiene un menú en inglés?", "phonetic": "TYEH-neh oon meh-NOO ehn een-GLEHS?", "audio": "" },
+    "cost_ticket": { "text": "¿Cuánto cuesta un boleto?", "phonetic": "KWAN-toh KWEHS-tah oon boh-LEH-toh?", "audio": "" },
+    "cost_taxi": { "text": "¿Cuánto cuesta el taxi?", "phonetic": "KWAN-toh KWEHS-tah el TAK-see?", "audio": "" },
+    "cost_room": { "text": "¿Cuánto cuesta la habitación?", "phonetic": "KWAN-toh KWEHS-tah lah ah-bee-tah-SYON?", "audio": "" },
+    "cost_coffee": { "text": "¿Cuánto cuesta un café?", "phonetic": "KWAN-toh KWEHS-tah oon kah-FEH?", "audio": "" },
+    "allergic_peanuts": { "text": "Soy alérgico a los cacahuates.", "phonetic": "Soy ah-LEHR-hee-koh ah los kah-kah-WAH-tehs.", "audio": "" }
+  }
+}
