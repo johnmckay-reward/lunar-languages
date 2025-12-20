@@ -27,6 +27,7 @@ export class HomePage implements OnInit {
   selectedNoun: Phrase | null = null;
   selectedCategory: string = 'All';
   currentLanguage: LanguageInfo | null = null;
+  currentAudioId: string | null = null;
 
   // --- Display State ---
   displayEnglish: string = 'Hello';
@@ -166,6 +167,7 @@ export class HomePage implements OnInit {
   selectEssential(phrase: Phrase) {
     this.selectedStarter = null;
     this.selectedNoun = null;
+    this.currentAudioId = phrase.id;
     // Clear the grid or leave it as is? Let's leave it but visually deselect
     // (Optional: this.visibleNouns = [] if you want to hide the grid entirely)
 
@@ -185,6 +187,7 @@ export class HomePage implements OnInit {
     if (this.selectedNoun) {
       const combo = this.dataService.getSentence(this.selectedStarter.id, this.selectedNoun.id);
       this.displayEnglish = combo.english;
+      this.currentAudioId = `${this.selectedStarter.id}_${this.selectedNoun.id}`;
 
       if (combo.translation) {
         this.displayNative = combo.translation.text;
@@ -197,10 +200,16 @@ export class HomePage implements OnInit {
       this.displayEnglish = this.selectedStarter.english;
       this.displayNative = '...';
       this.displayPhonetic = '';
+      this.currentAudioId = null;
     }
   }
 
-  playAudio() {
-    console.log('Playing:', this.displayNative);
+  playAudio(speed: number = 1.0) {
+    if (!this.currentLanguage || !this.currentAudioId) return;
+
+    const path = `assets/audio/${this.currentLanguage.code}/${this.currentAudioId}.mp3`;
+    const audio = new Audio(path);
+    audio.playbackRate = speed;
+    audio.play().catch(e => console.error('Error playing audio:', e));
   }
 }

@@ -33,9 +33,20 @@
           shape="round"
           color="secondary"
           size="small"
-          (click)="playAudio()">
+          (click)="playAudio(1.0)">
           <ion-icon name="volume-high" slot="start"></ion-icon>
           Listen
+        </ion-button>
+
+        <ion-button
+          fill="outline"
+          shape="round"
+          color="secondary"
+          size="small"
+          class="ion-margin-start"
+          (click)="playAudio(0.6)">
+          <ion-icon name="hourglass-outline" slot="start"></ion-icon>
+          Slow
         </ion-button>
       </div>
 
