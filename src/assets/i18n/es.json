@@ -8,7 +8,7 @@
     "bathroom": { "text": "¿Dónde está el baño?", "phonetic": "DON-deh ehs-TAH el BAHN-yoh?" },
     "yes": { "text": "Sí", "phonetic": "See" },
     "no": { "text": "No", "phonetic": "Noh" },
-    "sorry": { "text": "Disculpe / Perdón", "phonetic": "Dees-KOOL-peh / Pehr-DON" },
+    "sorry": { "text": "Perdón", "phonetic": "Pehr-DON" },
     "no_understand": { "text": "No entiendo", "phonetic": "Noh en-TYEN-doh" },
     "speak_english": { "text": "¿Habla inglés?", "phonetic": "AH-blah een-GLEHS?" },
     "help": { "text": "¡Ayuda!", "phonetic": "ah-YOO-dah!" },

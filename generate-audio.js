@@ -9,17 +9,28 @@ const inquirer = require('inquirer').default;
 const I18N_DIR = path.join(__dirname, 'src/assets/i18n');
 const AUDIO_DIR = path.join(__dirname, 'src/assets/audio');
 const RETRY_LIMIT = 2;
-const SIMILARITY_THRESHOLD = 85;
+const SIMILARITY_THRESHOLD = 80;
 
-const openai = new OpenAI({
-  apiKey: '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',
-});
+// OpenAI Pricing (Approximate for TTS-1-HD)
+const PRICE_PER_1K_CHARS = 0.030;
+
+const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+
+// --- STATE TRACKING ---
+const stats = {
+  success: 0,
+  failed: 0,
+  skipped: 0,
+  totalCost: 0
+};
 
 // --- HELPER FUNCTIONS ---
 
 function normalizeText(text) {
   return text.toLowerCase()
-    .replace(/[.,/#!$%^&*;:{}=\-_`~()]/g, "")
+    .replace(/[¡¿]/g, "")
+    .replace(/[.,/#!$%^&*;:{}=\-_`~()"?]/g, "")
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
     .replace(/\s{2,}/g, " ")
     .trim();
 }
@@ -34,31 +45,34 @@ function calculateSimilarity(original, transcribed) {
   return (1 - distance / maxLength) * 100;
 }
 
-// Reads JSON and returns a flat array of all processable items
 function getTranslationEntries(filename) {
   const filePath = path.join(I18N_DIR, filename);
   const langCode = path.basename(filename, '.json');
-  const content = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-  const items = [];
 
-  const extract = (sectionName, sectionData) => {
-    if (!sectionData) return;
-    for (const [key, data] of Object.entries(sectionData)) {
-      if (data.text) {
-        items.push({
-          id: `${sectionName}.${key}`, // Unique ID for menu
-          text: data.text,
-          langCode: langCode,
-          outputPath: path.join(AUDIO_DIR, langCode, `${key}.mp3`),
-          fileName: filename
-        });
+  try {
+    const content = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    const items = [];
+    const extract = (sectionName, sectionData) => {
+      if (!sectionData) return;
+      for (const [key, data] of Object.entries(sectionData)) {
+        if (data.text) {
+          items.push({
+            id: `${sectionName}.${key}`,
+            text: data.text,
+            langCode: langCode,
+            outputPath: path.join(AUDIO_DIR, langCode, `${key}.mp3`),
+            fileName: filename
+          });
+        }
       }
-    }
-  };
-
-  extract('essentials', content.essentials);
-  extract('combinations', content.combinations);
-  return items;
+    };
+    extract('essentials', content.essentials);
+    extract('combinations', content.combinations);
+    return items;
+  } catch (err) {
+    console.error(`Error reading ${filename}:`, err.message);
+    return [];
+  }
 }
 
 async function verifyAudio(filePath, originalText, langCode) {
@@ -68,23 +82,23 @@ async function verifyAudio(filePath, originalText, langCode) {
       model: "whisper-1",
       language: langCode,
     });
-    const score = calculateSimilarity(originalText, transcription.text);
-    return { score, transcribedText: transcription.text };
+    return { score: calculateSimilarity(originalText, transcription.text), transcribedText: transcription.text };
   } catch (error) {
     return { score: 0, transcribedText: "" };
   }
 }
 
-async function generateAudio(item, attempt = 1) {
+async function generateAudio(item, voice, attempt = 1) {
   try {
-    // Ensure directory exists
     const dir = path.dirname(item.outputPath);
     if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 
-    console.log(`   🎤 Generating: ${path.basename(item.outputPath)}...`);
+    console.log(`\n🔹 [${item.langCode.toUpperCase()}] ${item.id}`);
+    console.log(`   🎤 Generating...`);
+
     const mp3 = await openai.audio.speech.create({
       model: "tts-1-hd",
-      voice: "echo",
+      voice: voice,
       input: item.text
     });
 
@@ -96,26 +110,78 @@ async function generateAudio(item, attempt = 1) {
 
     if (score < SIMILARITY_THRESHOLD) {
       console.warn(`   ⚠️ Mismatch (${score.toFixed(0)}%): Expected "${item.text}" vs Heard "${transcribedText}"`);
+
       if (attempt <= RETRY_LIMIT) {
-        console.log(`   🔄 Retrying (Attempt ${attempt + 1})...`);
-        return generateAudio(item, attempt + 1);
+        console.log(`   🔄 Retrying (Attempt ${attempt + 1}/${RETRY_LIMIT + 1})...`);
+        return generateAudio(item, voice, attempt + 1);
       } else {
-        console.error(`   ❌ FAILED: ${path.basename(item.outputPath)}`);
+        console.error(`   ❌ FAILED: Deleting invalid file.`);
+        try { await fs.promises.unlink(item.outputPath); } catch (e) {}
+        stats.failed++;
       }
     } else {
       console.log(`   ✅ Verified (${score.toFixed(0)}%)`);
+      stats.success++;
     }
   } catch (error) {
     console.error(`   ❌ Error: ${error.message}`);
+    stats.failed++;
   }
 }
 
 // --- LOGIC FLOWS ---
 
+async function processQueue(queue) {
+  if (queue.length === 0) {
+    console.log("No items to process.");
+    return;
+  }
+
+  // 1. Calculate Est Cost
+  const totalChars = queue.reduce((sum, item) => sum + item.text.length, 0);
+  const estCost = (totalChars / 1000) * PRICE_PER_1K_CHARS;
+
+  console.log(`\n💰 ESTIMATE:`);
+  console.log(`   Items: ${queue.length}`);
+  console.log(`   Chars: ${totalChars}`);
+  console.log(`   Cost:  ~$${estCost.toFixed(4)} (TTS-HD only)`);
+
+  // 2. Select Voice
+  const { voice } = await inquirer.prompt([{
+    type: 'list',
+    name: 'voice',
+    message: 'Select a voice:',
+    choices: ['echo', 'alloy', 'fable', 'onyx', 'nova', 'shimmer'],
+    default: 'echo'
+  }]);
+
+  // 3. Confirm
+  const { proceed } = await inquirer.prompt([{
+    type: 'confirm', name: 'proceed', message: 'Ready to start?', default: true
+  }]);
+
+  if (!proceed) return;
+
+  console.log("\n🚀 Starting generation...");
+  const startTime = Date.now();
+
+  for (const item of queue) {
+    await generateAudio(item, voice);
+  }
+
+  const duration = ((Date.now() - startTime) / 1000).toFixed(1);
+
+  // 4. Summary Report
+  console.log(`\n════════════════════════════════════════`);
+  console.log(` 🎉 OPERATION COMPLETE (${duration}s)`);
+  console.log(`════════════════════════════════════════`);
+  console.log(` ✅ Success: ${stats.success}`);
+  console.log(` ❌ Failed:  ${stats.failed}`);
+  console.log(`════════════════════════════════════════\n`);
+}
+
 async function analyzeMissing(filesToProcess) {
   console.log(`\n🔍 Analyzing audio coverage...\n`);
-
-  let totalMissing = 0;
   let itemsToGenerate = [];
 
   for (const file of filesToProcess) {
@@ -123,36 +189,29 @@ async function analyzeMissing(filesToProcess) {
     const missingItems = items.filter(item => !fs.existsSync(item.outputPath));
 
     if (missingItems.length > 0) {
-      console.log(`❌ ${path.basename(file, '.json').toUpperCase()}: ${missingItems.length} missing files.`);
+      const langName = path.basename(file, '.json').toUpperCase();
+      console.log(`❌ ${langName}: ${missingItems.length} missing files.`);
+      missingItems.forEach(m => console.log(`      - ${m.id}`));
+      console.log('');
       itemsToGenerate = itemsToGenerate.concat(missingItems);
-      totalMissing += missingItems.length;
     } else {
       console.log(`✅ ${path.basename(file, '.json').toUpperCase()}: All audio present.`);
     }
   }
 
-  if (totalMissing === 0) {
-    console.log("\n✨ Everything looks perfect! No missing audio files.");
-    return;
-  }
-
-  const { fix } = await inquirer.prompt([{
-    type: 'confirm', name: 'fix', message: `Found ${totalMissing} missing files. Generate them now?`, default: true
-  }]);
-
-  if (fix) {
-    console.log("\n🚀 Starting generation...");
-    for (const item of itemsToGenerate) {
-      await generateAudio(item);
-    }
-    console.log("\n🎉 Done!");
+  if (itemsToGenerate.length > 0) {
+    const { fix } = await inquirer.prompt([{
+      type: 'confirm', name: 'fix', message: `Generate ${itemsToGenerate.length} missing files now?`, default: true
+    }]);
+    if (fix) await processQueue(itemsToGenerate);
+  } else {
+    console.log("\n✨ Everything looks perfect!");
   }
 }
 
 async function processStandard(filesToProcess) {
   const finalQueue = [];
 
-  // Loop through each selected language file to build the queue
   for (const file of filesToProcess) {
     const langName = path.basename(file, '.json').toUpperCase();
     const allItems = getTranslationEntries(file);
@@ -175,9 +234,9 @@ async function processStandard(filesToProcess) {
       const { selectedItems } = await inquirer.prompt([{
         type: 'checkbox',
         name: 'selectedItems',
-        message: `Select items for ${langName} (Space to toggle):`,
+        message: `Select items for ${langName}:`,
         choices: allItems.map(item => ({
-          name: `${item.id} ("${item.text.substring(0, 30)}...")`, // Show key + snippet
+          name: `${item.id} ("${item.text.substring(0, 30)}...")`,
           value: item
         })),
         pageSize: 15,
@@ -187,17 +246,7 @@ async function processStandard(filesToProcess) {
     }
   }
 
-  // Execution Phase
-  if (finalQueue.length > 0) {
-    console.log(`\n🚀 Starting generation for ${finalQueue.length} items...`);
-    for (const item of finalQueue) {
-      console.log(`\n🔹 [${item.langCode.toUpperCase()}] Key: ${item.id}`);
-      await generateAudio(item);
-    }
-    console.log("\n🎉 Queue complete!");
-  } else {
-    console.log("No items selected.");
-  }
+  await processQueue(finalQueue);
 }
 
 // --- MAIN MENU ---
@@ -208,7 +257,7 @@ async function main() {
   const allFiles = fs.readdirSync(I18N_DIR)
     .filter(file => path.extname(file) === '.json' && file !== 'en.json');
 
-  if (allFiles.length === 0) { console.log("❌ No files found."); return; }
+  if (allFiles.length === 0) { console.log("❌ No translation files found."); return; }
 
   // 1. Mode Selection
   const { mode } = await inquirer.prompt([{
@@ -246,7 +295,7 @@ async function main() {
     filesToProcess = selected;
   }
 
-  // 3. Execute Logic
+  // 3. Execute
   if (mode === 'analyze') {
     await analyzeMissing(filesToProcess);
   } else {
