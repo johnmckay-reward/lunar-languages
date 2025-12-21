@@ -1,9 +1,21 @@
 {
   "essentials": {
-    "hello": { "text": "Hola", "phonetic": "OH-lah" },
-    "thanks": { "text": "Gracias", "phonetic": "GRAH-see-ahs" },
-    "goodbye": { "text": "Adiós", "phonetic": "ah-DYOS" },
-    "good_morning": { "text": "Buenos días", "phonetic": "BWEH-nos DEE-ahs" },
+    "hello": {
+      "text": "Hola",
+      "phonetic": "OH-lah"
+    },
+    "thanks": {
+      "text": "Gracias",
+      "phonetic": "GRAH-see-ahs"
+    },
+    "goodbye": {
+      "text": "Adiós",
+      "phonetic": "ah-DYOS"
+    },
+    "good_morning": {
+      "text": "Buenos días",
+      "phonetic": "BWEH-nos DEE-ahs"
+    },
     "good_evening": {
       "text": "Buenas noches",
       "phonetic": "BWEH-nas NO-chehs"
@@ -12,17 +24,38 @@
       "text": "¿Dónde está el baño?",
       "phonetic": "DON-deh ehs-TAH el BAHN-yoh?"
     },
-    "yes": { "text": "Sí", "phonetic": "See" },
-    "no": { "text": "No", "phonetic": "Noh" },
-    "sorry": { "text": "Perdón", "phonetic": "Pehr-DON" },
-    "no_understand": { "text": "No entiendo", "phonetic": "Noh en-TYEN-doh" },
+    "yes": {
+      "text": "Sí",
+      "phonetic": "See"
+    },
+    "no": {
+      "text": "No",
+      "phonetic": "Noh"
+    },
+    "sorry": {
+      "text": "Perdón",
+      "phonetic": "Pehr-DON"
+    },
+    "no_understand": {
+      "text": "No entiendo",
+      "phonetic": "Noh en-TYEN-doh"
+    },
     "speak_english": {
       "text": "¿Habla inglés?",
       "phonetic": "AH-blah een-GLEHS?"
     },
-    "help": { "text": "¡Socorro!", "phonetic": "so-KOR-ro" },
-    "delicious": { "text": "¡Delicioso!", "phonetic": "deh-lee-SYO-soh!" },
-    "cheers": { "text": "¡Salud!", "phonetic": "sah-LOOD!" },
+    "help": {
+      "text": "¡Socorro!",
+      "phonetic": "so-KOR-ro"
+    },
+    "delicious": {
+      "text": "¡Delicioso!",
+      "phonetic": "deh-lee-SYO-soh!"
+    },
+    "cheers": {
+      "text": "¡Salud!",
+      "phonetic": "sah-LOOD!"
+    },
     "wifi_pass": {
       "text": "¿Contraseña del WiFi?",
       "phonetic": "kon-trah-SEH-nyah del WiFi?"
@@ -85,7 +118,10 @@
       "text": "La cuenta, por favor.",
       "phonetic": "Lah KWEN-tah, por fah-VOR."
     },
-    "have_wifi": { "text": "¿Tienen WiFi?", "phonetic": "TYEH-nehn WYE-fye?" },
+    "have_wifi": {
+      "text": "¿Tienen WiFi?",
+      "phonetic": "TYEH-nehn WYE-fye?"
+    },
     "have_room": {
       "text": "¿Tienen una habitación disponible?",
       "phonetic": "TYEH-nehn OO-nah ah-bee-tah-SYON dees-poh-NEE-bleh?"
@@ -117,6 +153,406 @@
     "allergic_peanuts": {
       "text": "Soy alérgico a los cacahuates.",
       "phonetic": "Soy ah-LEHR-hee-koh ah los kah-kah-WAH-tehs."
+    },
+    "table_for_two": {
+      "text": "[ES TODO: A table for two, please.]",
+      "phonetic": "..."
+    },
+    "table_for_four": {
+      "text": "[ES TODO: A table for four, please.]",
+      "phonetic": "..."
+    },
+    "reservation_name": {
+      "text": "[ES TODO: I have a reservation under the name...]",
+      "phonetic": "..."
+    },
+    "order_water": {
+      "text": "[ES TODO: Can I have some water, please?]",
+      "phonetic": "..."
+    },
+    "order_tea": {
+      "text": "[ES TODO: I would like tea, please.]",
+      "phonetic": "..."
+    },
+    "order_beer": {
+      "text": "[ES TODO: Can I have a beer?]",
+      "phonetic": "..."
+    },
+    "order_wine": {
+      "text": "[ES TODO: A glass of wine, please.]",
+      "phonetic": "..."
+    },
+    "order_bread": {
+      "text": "[ES TODO: Can I have some bread?]",
+      "phonetic": "..."
+    },
+    "order_dessert": {
+      "text": "[ES TODO: What desserts do you have?]",
+      "phonetic": "..."
+    },
+    "recommend_dish": {
+      "text": "[ES TODO: What do you recommend?]",
+      "phonetic": "..."
+    },
+    "spicy_food": {
+      "text": "[ES TODO: Is this spicy?]",
+      "phonetic": "..."
+    },
+    "contains_meat": {
+      "text": "[ES TODO: Does this contain meat?]",
+      "phonetic": "..."
+    },
+    "contains_dairy": {
+      "text": "[ES TODO: Does this have dairy?]",
+      "phonetic": "..."
+    },
+    "contains_gluten": {
+      "text": "[ES TODO: Is this gluten-free?]",
+      "phonetic": "..."
+    },
+    "vegetarian_options": {
+      "text": "[ES TODO: Do you have vegetarian options?]",
+      "phonetic": "..."
+    },
+    "vegan_options": {
+      "text": "[ES TODO: Do you have vegan options?]",
+      "phonetic": "..."
+    },
+    "allergic_dairy": {
+      "text": "[ES TODO: I am allergic to dairy.]",
+      "phonetic": "..."
+    },
+    "allergic_shellfish": {
+      "text": "[ES TODO: I am allergic to shellfish.]",
+      "phonetic": "..."
+    },
+    "allergic_nuts": {
+      "text": "[ES TODO: I am allergic to nuts.]",
+      "phonetic": "..."
+    },
+    "no_sugar": {
+      "text": "[ES TODO: No sugar, please.]",
+      "phonetic": "..."
+    },
+    "no_salt": {
+      "text": "[ES TODO: No salt, please.]",
+      "phonetic": "..."
+    },
+    "more_napkins": {
+      "text": "[ES TODO: Can I have more napkins?]",
+      "phonetic": "..."
+    },
+    "fork_knife": {
+      "text": "[ES TODO: Can I have a fork and knife?]",
+      "phonetic": "..."
+    },
+    "chopsticks": {
+      "text": "[ES TODO: Can I have chopsticks?]",
+      "phonetic": "..."
+    },
+    "takeaway": {
+      "text": "[ES TODO: Can I get this to go?]",
+      "phonetic": "..."
+    },
+    "separate_bills": {
+      "text": "[ES TODO: Can we have separate bills?]",
+      "phonetic": "..."
+    },
+    "bus_to_downtown": {
+      "text": "[ES TODO: Which bus goes to downtown?]",
+      "phonetic": "..."
+    },
+    "train_schedule": {
+      "text": "[ES TODO: What time does the train leave?]",
+      "phonetic": "..."
+    },
+    "next_train": {
+      "text": "[ES TODO: When is the next train?]",
+      "phonetic": "..."
+    },
+    "last_train": {
+      "text": "[ES TODO: When is the last train?]",
+      "phonetic": "..."
+    },
+    "ticket_return": {
+      "text": "[ES TODO: A return ticket, please.]",
+      "phonetic": "..."
+    },
+    "ticket_one_way": {
+      "text": "[ES TODO: A one-way ticket, please.]",
+      "phonetic": "..."
+    },
+    "how_long_journey": {
+      "text": "[ES TODO: How long is the journey?]",
+      "phonetic": "..."
+    },
+    "which_platform": {
+      "text": "[ES TODO: Which platform?]",
+      "phonetic": "..."
+    },
+    "validate_ticket": {
+      "text": "[ES TODO: Where do I validate my ticket?]",
+      "phonetic": "..."
+    },
+    "miss_my_stop": {
+      "text": "[ES TODO: I missed my stop.]",
+      "phonetic": "..."
+    },
+    "get_off_here": {
+      "text": "[ES TODO: I need to get off here.]",
+      "phonetic": "..."
+    },
+    "directions_museum": {
+      "text": "[ES TODO: How do I get to the museum?]",
+      "phonetic": "..."
+    },
+    "directions_hotel": {
+      "text": "[ES TODO: How do I get to this hotel?]",
+      "phonetic": "..."
+    },
+    "how_far": {
+      "text": "[ES TODO: How far is it?]",
+      "phonetic": "..."
+    },
+    "walking_distance": {
+      "text": "[ES TODO: Is it walking distance?]",
+      "phonetic": "..."
+    },
+    "turn_left": {
+      "text": "[ES TODO: Turn left.]",
+      "phonetic": "..."
+    },
+    "turn_right": {
+      "text": "[ES TODO: Turn right.]",
+      "phonetic": "..."
+    },
+    "straight_ahead": {
+      "text": "[ES TODO: Go straight ahead.]",
+      "phonetic": "..."
+    },
+    "taxi_to_airport": {
+      "text": "[ES TODO: Can you take me to the airport?]",
+      "phonetic": "..."
+    },
+    "uber_available": {
+      "text": "[ES TODO: Is Uber available here?]",
+      "phonetic": "..."
+    },
+    "check_in": {
+      "text": "[ES TODO: I would like to check in.]",
+      "phonetic": "..."
+    },
+    "check_out": {
+      "text": "[ES TODO: I would like to check out.]",
+      "phonetic": "..."
+    },
+    "key_card": {
+      "text": "[ES TODO: My key card is not working.]",
+      "phonetic": "..."
+    },
+    "room_number": {
+      "text": "[ES TODO: What is my room number?]",
+      "phonetic": "..."
+    },
+    "breakfast_included": {
+      "text": "[ES TODO: Is breakfast included?]",
+      "phonetic": "..."
+    },
+    "breakfast_time": {
+      "text": "[ES TODO: What time is breakfast?]",
+      "phonetic": "..."
+    },
+    "wifi_password": {
+      "text": "[ES TODO: What is the WiFi password?]",
+      "phonetic": "..."
+    },
+    "extra_towels": {
+      "text": "[ES TODO: Can I have extra towels?]",
+      "phonetic": "..."
+    },
+    "extra_pillows": {
+      "text": "[ES TODO: Can I have extra pillows?]",
+      "phonetic": "..."
+    },
+    "extra_blanket": {
+      "text": "[ES TODO: Can I have an extra blanket?]",
+      "phonetic": "..."
+    },
+    "room_cleaning": {
+      "text": "[ES TODO: Can you clean my room?]",
+      "phonetic": "..."
+    },
+    "do_not_disturb": {
+      "text": "[ES TODO: Please do not disturb.]",
+      "phonetic": "..."
+    },
+    "wake_up_call": {
+      "text": "[ES TODO: Can I have a wake-up call at 7 AM?]",
+      "phonetic": "..."
+    },
+    "late_checkout": {
+      "text": "[ES TODO: Can I have a late checkout?]",
+      "phonetic": "..."
+    },
+    "extend_stay": {
+      "text": "[ES TODO: Can I extend my stay?]",
+      "phonetic": "..."
+    },
+    "air_conditioning_broken": {
+      "text": "[ES TODO: The air conditioning is not working.]",
+      "phonetic": "..."
+    },
+    "toilet_broken": {
+      "text": "[ES TODO: The toilet is broken.]",
+      "phonetic": "..."
+    },
+    "no_hot_water": {
+      "text": "[ES TODO: There is no hot water.]",
+      "phonetic": "..."
+    },
+    "room_too_cold": {
+      "text": "[ES TODO: The room is too cold.]",
+      "phonetic": "..."
+    },
+    "room_too_hot": {
+      "text": "[ES TODO: The room is too hot.]",
+      "phonetic": "..."
+    },
+    "how_much_this": {
+      "text": "[ES TODO: How much is this?]",
+      "phonetic": "..."
+    },
+    "too_expensive": {
+      "text": "[ES TODO: That's too expensive.]",
+      "phonetic": "..."
+    },
+    "discount": {
+      "text": "[ES TODO: Do you have a discount?]",
+      "phonetic": "..."
+    },
+    "accept_cards": {
+      "text": "[ES TODO: Do you accept credit cards?]",
+      "phonetic": "..."
+    },
+    "pay_cash": {
+      "text": "[ES TODO: Can I pay with cash?]",
+      "phonetic": "..."
+    },
+    "receipt_please": {
+      "text": "[ES TODO: Can I have a receipt?]",
+      "phonetic": "..."
+    },
+    "try_this_on": {
+      "text": "[ES TODO: Can I try this on?]",
+      "phonetic": "..."
+    },
+    "fitting_room": {
+      "text": "[ES TODO: Where is the fitting room?]",
+      "phonetic": "..."
+    },
+    "size_small": {
+      "text": "[ES TODO: Do you have this in small?]",
+      "phonetic": "..."
+    },
+    "size_medium": {
+      "text": "[ES TODO: Do you have this in medium?]",
+      "phonetic": "..."
+    },
+    "size_large": {
+      "text": "[ES TODO: Do you have this in large?]",
+      "phonetic": "..."
+    },
+    "different_color": {
+      "text": "[ES TODO: Do you have this in a different color?]",
+      "phonetic": "..."
+    },
+    "return_this": {
+      "text": "[ES TODO: Can I return this?]",
+      "phonetic": "..."
+    },
+    "exchange_this": {
+      "text": "[ES TODO: Can I exchange this?]",
+      "phonetic": "..."
+    },
+    "gift_wrap": {
+      "text": "[ES TODO: Can you gift wrap this?]",
+      "phonetic": "..."
+    },
+    "need_doctor": {
+      "text": "[ES TODO: I need a doctor.]",
+      "phonetic": "..."
+    },
+    "need_ambulance": {
+      "text": "[ES TODO: I need an ambulance.]",
+      "phonetic": "..."
+    },
+    "call_police": {
+      "text": "[ES TODO: Please call the police.]",
+      "phonetic": "..."
+    },
+    "been_robbed": {
+      "text": "[ES TODO: I have been robbed.]",
+      "phonetic": "..."
+    },
+    "lost_passport": {
+      "text": "[ES TODO: I lost my passport.]",
+      "phonetic": "..."
+    },
+    "lost_wallet": {
+      "text": "[ES TODO: I lost my wallet.]",
+      "phonetic": "..."
+    },
+    "lost_phone": {
+      "text": "[ES TODO: I lost my phone.]",
+      "phonetic": "..."
+    },
+    "feeling_sick": {
+      "text": "[ES TODO: I am feeling sick.]",
+      "phonetic": "..."
+    },
+    "have_fever": {
+      "text": "[ES TODO: I have a fever.]",
+      "phonetic": "..."
+    },
+    "have_pain": {
+      "text": "[ES TODO: I am in pain.]",
+      "phonetic": "..."
+    },
+    "allergic_reaction": {
+      "text": "[ES TODO: I am having an allergic reaction.]",
+      "phonetic": "..."
+    },
+    "need_medication": {
+      "text": "[ES TODO: I need medication.]",
+      "phonetic": "..."
+    },
+    "prescription": {
+      "text": "[ES TODO: I have a prescription.]",
+      "phonetic": "..."
+    },
+    "embassy_location": {
+      "text": "[ES TODO: Where is my country's embassy?]",
+      "phonetic": "..."
+    },
+    "emergency_contact": {
+      "text": "[ES TODO: Please contact my emergency contact.]",
+      "phonetic": "..."
+    },
+    "where_from": {
+      "text": "[ES TODO: Where are you from?]",
+      "phonetic": "..."
+    },
+    "nice_meet_you": {
+      "text": "[ES TODO: Nice to meet you.]",
+      "phonetic": "..."
+    },
+    "speak_little": {
+      "text": "[ES TODO: I speak a little...]",
+      "phonetic": "..."
+    },
+    "how_are_you": {
+      "text": "[ES TODO: How are you?]",
+      "phonetic": "..."
     }
   }
 }

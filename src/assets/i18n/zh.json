@@ -1,27 +1,69 @@
 {
   "essentials": {
-    "hello": { "text": "你好", "phonetic": "Nǐ hǎo" },
-    "thanks": { "text": "谢谢", "phonetic": "Xièxiè" },
-    "goodbye": { "text": "再见", "phonetic": "Zàijiàn" },
-    "good_morning": { "text": "早上好", "phonetic": "Zǎoshang hǎo" },
-    "good_evening": { "text": "晚上好", "phonetic": "Wǎnshàng hǎo" },
+    "hello": {
+      "text": "你好",
+      "phonetic": "Nǐ hǎo"
+    },
+    "thanks": {
+      "text": "谢谢",
+      "phonetic": "Xièxiè"
+    },
+    "goodbye": {
+      "text": "再见",
+      "phonetic": "Zàijiàn"
+    },
+    "good_morning": {
+      "text": "早上好",
+      "phonetic": "Zǎoshang hǎo"
+    },
+    "good_evening": {
+      "text": "晚上好",
+      "phonetic": "Wǎnshàng hǎo"
+    },
     "bathroom": {
       "text": "洗手间在哪里？",
       "phonetic": "Xǐshǒujiān zài nǎli?"
     },
-    "yes": { "text": "当然是正确的", "phonetic": "dāngrán shì zhèngquè de" },
-    "no": { "text": "不", "phonetic": "Bù" },
-    "sorry": { "text": "不好意思", "phonetic": "Bù hǎoyìsi" },
-    "no_understand": { "text": "我无法理解", "phonetic": "Wǒ wúfǎ lǐjiě" },
+    "yes": {
+      "text": "当然是正确的",
+      "phonetic": "dāngrán shì zhèngquè de"
+    },
+    "no": {
+      "text": "不",
+      "phonetic": "Bù"
+    },
+    "sorry": {
+      "text": "不好意思",
+      "phonetic": "Bù hǎoyìsi"
+    },
+    "no_understand": {
+      "text": "我无法理解",
+      "phonetic": "Wǒ wúfǎ lǐjiě"
+    },
     "speak_english": {
       "text": "你会说英语吗？",
       "phonetic": "Nǐ huì shuō yīngyǔ ma?"
     },
-    "help": { "text": "帮帮我!", "phonetic": "Bāng bāng wǒ!" },
-    "delicious": { "text": "好吃!", "phonetic": "Hǎochī!" },
-    "cheers": { "text": "干杯!", "phonetic": "Gānbēi!" },
-    "wifi_pass": { "text": "无线路由器密码是什么？", "phonetic": "Wúxiàn lùyóuqì mìmǎ shì shénme?" },
-    "slowly": { "text": "请说慢一点", "phonetic": "Qǐng shuō màn yīdiǎn" }
+    "help": {
+      "text": "帮帮我!",
+      "phonetic": "Bāng bāng wǒ!"
+    },
+    "delicious": {
+      "text": "好吃!",
+      "phonetic": "Hǎochī!"
+    },
+    "cheers": {
+      "text": "干杯!",
+      "phonetic": "Gānbēi!"
+    },
+    "wifi_pass": {
+      "text": "无线路由器密码是什么？",
+      "phonetic": "Wúxiàn lùyóuqì mìmǎ shì shénme?"
+    },
+    "slowly": {
+      "text": "请说慢一点",
+      "phonetic": "Qǐng shuō màn yīdiǎn"
+    }
   },
   "combinations": {
     "where_station": {
@@ -40,12 +82,18 @@
       "text": "出租车站在哪里？",
       "phonetic": "Chūzūchē zhàn zài nǎli?"
     },
-    "where_atm": { "text": "提款机在什么地方？", "phonetic": "tí kuǎn jī zài shén me dì fang?" },
+    "where_atm": {
+      "text": "提款机在什么地方？",
+      "phonetic": "tí kuǎn jī zài shén me dì fang?"
+    },
     "where_pharmacy": {
       "text": "药店在哪里？",
       "phonetic": "Yàodiàn zài nǎli?"
     },
-    "where_doctor": { "text": "这个地方有医生吗？", "phonetic": "Zhège dìfāng yǒu yīshēng ma?" },
+    "where_doctor": {
+      "text": "这个地方有医生吗？",
+      "phonetic": "Zhège dìfāng yǒu yīshēng ma?"
+    },
     "like_ticket": {
       "text": "我想要一张票。",
       "phonetic": "Wǒ xiǎng yào yī zhāng piào."
@@ -62,9 +110,18 @@
       "text": "我想要一杯咖啡。",
       "phonetic": "Wǒ xiǎng yào yī bēi kāfēi."
     },
-    "like_menu": { "text": "请给我菜单。", "phonetic": "Qǐng gěi wǒ càidān." },
-    "like_bill": { "text": "买单，谢谢。", "phonetic": "Mǎidān, xièxie." },
-    "have_wifi": { "text": "请问这里提供无线网络吗？", "phonetic": "Qǐng wèn zhè lǐ tí gōng wú xiàn wǎng luò ma?" },
+    "like_menu": {
+      "text": "请给我菜单。",
+      "phonetic": "Qǐng gěi wǒ càidān."
+    },
+    "like_bill": {
+      "text": "买单，谢谢。",
+      "phonetic": "Mǎidān, xièxie."
+    },
+    "have_wifi": {
+      "text": "请问这里提供无线网络吗？",
+      "phonetic": "Qǐng wèn zhè lǐ tí gōng wú xiàn wǎng luò ma?"
+    },
     "have_room": {
       "text": "请问，你们这里还有空房间吗？",
       "phonetic": "Qǐngwèn, nǐmen zhèlǐ hái yǒu kōng fángjiān ma?"
@@ -96,6 +153,406 @@
     "allergic_peanuts": {
       "text": "我对花生过敏。",
       "phonetic": "Wǒ duì huāshēng guòmǐn."
+    },
+    "table_for_two": {
+      "text": "[ZH TODO: A table for two, please.]",
+      "phonetic": "..."
+    },
+    "table_for_four": {
+      "text": "[ZH TODO: A table for four, please.]",
+      "phonetic": "..."
+    },
+    "reservation_name": {
+      "text": "[ZH TODO: I have a reservation under the name...]",
+      "phonetic": "..."
+    },
+    "order_water": {
+      "text": "[ZH TODO: Can I have some water, please?]",
+      "phonetic": "..."
+    },
+    "order_tea": {
+      "text": "[ZH TODO: I would like tea, please.]",
+      "phonetic": "..."
+    },
+    "order_beer": {
+      "text": "[ZH TODO: Can I have a beer?]",
+      "phonetic": "..."
+    },
+    "order_wine": {
+      "text": "[ZH TODO: A glass of wine, please.]",
+      "phonetic": "..."
+    },
+    "order_bread": {
+      "text": "[ZH TODO: Can I have some bread?]",
+      "phonetic": "..."
+    },
+    "order_dessert": {
+      "text": "[ZH TODO: What desserts do you have?]",
+      "phonetic": "..."
+    },
+    "recommend_dish": {
+      "text": "[ZH TODO: What do you recommend?]",
+      "phonetic": "..."
+    },
+    "spicy_food": {
+      "text": "[ZH TODO: Is this spicy?]",
+      "phonetic": "..."
+    },
+    "contains_meat": {
+      "text": "[ZH TODO: Does this contain meat?]",
+      "phonetic": "..."
+    },
+    "contains_dairy": {
+      "text": "[ZH TODO: Does this have dairy?]",
+      "phonetic": "..."
+    },
+    "contains_gluten": {
+      "text": "[ZH TODO: Is this gluten-free?]",
+      "phonetic": "..."
+    },
+    "vegetarian_options": {
+      "text": "[ZH TODO: Do you have vegetarian options?]",
+      "phonetic": "..."
+    },
+    "vegan_options": {
+      "text": "[ZH TODO: Do you have vegan options?]",
+      "phonetic": "..."
+    },
+    "allergic_dairy": {
+      "text": "[ZH TODO: I am allergic to dairy.]",
+      "phonetic": "..."
+    },
+    "allergic_shellfish": {
+      "text": "[ZH TODO: I am allergic to shellfish.]",
+      "phonetic": "..."
+    },
+    "allergic_nuts": {
+      "text": "[ZH TODO: I am allergic to nuts.]",
+      "phonetic": "..."
+    },
+    "no_sugar": {
+      "text": "[ZH TODO: No sugar, please.]",
+      "phonetic": "..."
+    },
+    "no_salt": {
+      "text": "[ZH TODO: No salt, please.]",
+      "phonetic": "..."
+    },
+    "more_napkins": {
+      "text": "[ZH TODO: Can I have more napkins?]",
+      "phonetic": "..."
+    },
+    "fork_knife": {
+      "text": "[ZH TODO: Can I have a fork and knife?]",
+      "phonetic": "..."
+    },
+    "chopsticks": {
+      "text": "[ZH TODO: Can I have chopsticks?]",
+      "phonetic": "..."
+    },
+    "takeaway": {
+      "text": "[ZH TODO: Can I get this to go?]",
+      "phonetic": "..."
+    },
+    "separate_bills": {
+      "text": "[ZH TODO: Can we have separate bills?]",
+      "phonetic": "..."
+    },
+    "bus_to_downtown": {
+      "text": "[ZH TODO: Which bus goes to downtown?]",
+      "phonetic": "..."
+    },
+    "train_schedule": {
+      "text": "[ZH TODO: What time does the train leave?]",
+      "phonetic": "..."
+    },
+    "next_train": {
+      "text": "[ZH TODO: When is the next train?]",
+      "phonetic": "..."
+    },
+    "last_train": {
+      "text": "[ZH TODO: When is the last train?]",
+      "phonetic": "..."
+    },
+    "ticket_return": {
+      "text": "[ZH TODO: A return ticket, please.]",
+      "phonetic": "..."
+    },
+    "ticket_one_way": {
+      "text": "[ZH TODO: A one-way ticket, please.]",
+      "phonetic": "..."
+    },
+    "how_long_journey": {
+      "text": "[ZH TODO: How long is the journey?]",
+      "phonetic": "..."
+    },
+    "which_platform": {
+      "text": "[ZH TODO: Which platform?]",
+      "phonetic": "..."
+    },
+    "validate_ticket": {
+      "text": "[ZH TODO: Where do I validate my ticket?]",
+      "phonetic": "..."
+    },
+    "miss_my_stop": {
+      "text": "[ZH TODO: I missed my stop.]",
+      "phonetic": "..."
+    },
+    "get_off_here": {
+      "text": "[ZH TODO: I need to get off here.]",
+      "phonetic": "..."
+    },
+    "directions_museum": {
+      "text": "[ZH TODO: How do I get to the museum?]",
+      "phonetic": "..."
+    },
+    "directions_hotel": {
+      "text": "[ZH TODO: How do I get to this hotel?]",
+      "phonetic": "..."
+    },
+    "how_far": {
+      "text": "[ZH TODO: How far is it?]",
+      "phonetic": "..."
+    },
+    "walking_distance": {
+      "text": "[ZH TODO: Is it walking distance?]",
+      "phonetic": "..."
+    },
+    "turn_left": {
+      "text": "[ZH TODO: Turn left.]",
+      "phonetic": "..."
+    },
+    "turn_right": {
+      "text": "[ZH TODO: Turn right.]",
+      "phonetic": "..."
+    },
+    "straight_ahead": {
+      "text": "[ZH TODO: Go straight ahead.]",
+      "phonetic": "..."
+    },
+    "taxi_to_airport": {
+      "text": "[ZH TODO: Can you take me to the airport?]",
+      "phonetic": "..."
+    },
+    "uber_available": {
+      "text": "[ZH TODO: Is Uber available here?]",
+      "phonetic": "..."
+    },
+    "check_in": {
+      "text": "[ZH TODO: I would like to check in.]",
+      "phonetic": "..."
+    },
+    "check_out": {
+      "text": "[ZH TODO: I would like to check out.]",
+      "phonetic": "..."
+    },
+    "key_card": {
+      "text": "[ZH TODO: My key card is not working.]",
+      "phonetic": "..."
+    },
+    "room_number": {
+      "text": "[ZH TODO: What is my room number?]",
+      "phonetic": "..."
+    },
+    "breakfast_included": {
+      "text": "[ZH TODO: Is breakfast included?]",
+      "phonetic": "..."
+    },
+    "breakfast_time": {
+      "text": "[ZH TODO: What time is breakfast?]",
+      "phonetic": "..."
+    },
+    "wifi_password": {
+      "text": "[ZH TODO: What is the WiFi password?]",
+      "phonetic": "..."
+    },
+    "extra_towels": {
+      "text": "[ZH TODO: Can I have extra towels?]",
+      "phonetic": "..."
+    },
+    "extra_pillows": {
+      "text": "[ZH TODO: Can I have extra pillows?]",
+      "phonetic": "..."
+    },
+    "extra_blanket": {
+      "text": "[ZH TODO: Can I have an extra blanket?]",
+      "phonetic": "..."
+    },
+    "room_cleaning": {
+      "text": "[ZH TODO: Can you clean my room?]",
+      "phonetic": "..."
+    },
+    "do_not_disturb": {
+      "text": "[ZH TODO: Please do not disturb.]",
+      "phonetic": "..."
+    },
+    "wake_up_call": {
+      "text": "[ZH TODO: Can I have a wake-up call at 7 AM?]",
+      "phonetic": "..."
+    },
+    "late_checkout": {
+      "text": "[ZH TODO: Can I have a late checkout?]",
+      "phonetic": "..."
+    },
+    "extend_stay": {
+      "text": "[ZH TODO: Can I extend my stay?]",
+      "phonetic": "..."
+    },
+    "air_conditioning_broken": {
+      "text": "[ZH TODO: The air conditioning is not working.]",
+      "phonetic": "..."
+    },
+    "toilet_broken": {
+      "text": "[ZH TODO: The toilet is broken.]",
+      "phonetic": "..."
+    },
+    "no_hot_water": {
+      "text": "[ZH TODO: There is no hot water.]",
+      "phonetic": "..."
+    },
+    "room_too_cold": {
+      "text": "[ZH TODO: The room is too cold.]",
+      "phonetic": "..."
+    },
+    "room_too_hot": {
+      "text": "[ZH TODO: The room is too hot.]",
+      "phonetic": "..."
+    },
+    "how_much_this": {
+      "text": "[ZH TODO: How much is this?]",
+      "phonetic": "..."
+    },
+    "too_expensive": {
+      "text": "[ZH TODO: That's too expensive.]",
+      "phonetic": "..."
+    },
+    "discount": {
+      "text": "[ZH TODO: Do you have a discount?]",
+      "phonetic": "..."
+    },
+    "accept_cards": {
+      "text": "[ZH TODO: Do you accept credit cards?]",
+      "phonetic": "..."
+    },
+    "pay_cash": {
+      "text": "[ZH TODO: Can I pay with cash?]",
+      "phonetic": "..."
+    },
+    "receipt_please": {
+      "text": "[ZH TODO: Can I have a receipt?]",
+      "phonetic": "..."
+    },
+    "try_this_on": {
+      "text": "[ZH TODO: Can I try this on?]",
+      "phonetic": "..."
+    },
+    "fitting_room": {
+      "text": "[ZH TODO: Where is the fitting room?]",
+      "phonetic": "..."
+    },
+    "size_small": {
+      "text": "[ZH TODO: Do you have this in small?]",
+      "phonetic": "..."
+    },
+    "size_medium": {
+      "text": "[ZH TODO: Do you have this in medium?]",
+      "phonetic": "..."
+    },
+    "size_large": {
+      "text": "[ZH TODO: Do you have this in large?]",
+      "phonetic": "..."
+    },
+    "different_color": {
+      "text": "[ZH TODO: Do you have this in a different color?]",
+      "phonetic": "..."
+    },
+    "return_this": {
+      "text": "[ZH TODO: Can I return this?]",
+      "phonetic": "..."
+    },
+    "exchange_this": {
+      "text": "[ZH TODO: Can I exchange this?]",
+      "phonetic": "..."
+    },
+    "gift_wrap": {
+      "text": "[ZH TODO: Can you gift wrap this?]",
+      "phonetic": "..."
+    },
+    "need_doctor": {
+      "text": "[ZH TODO: I need a doctor.]",
+      "phonetic": "..."
+    },
+    "need_ambulance": {
+      "text": "[ZH TODO: I need an ambulance.]",
+      "phonetic": "..."
+    },
+    "call_police": {
+      "text": "[ZH TODO: Please call the police.]",
+      "phonetic": "..."
+    },
+    "been_robbed": {
+      "text": "[ZH TODO: I have been robbed.]",
+      "phonetic": "..."
+    },
+    "lost_passport": {
+      "text": "[ZH TODO: I lost my passport.]",
+      "phonetic": "..."
+    },
+    "lost_wallet": {
+      "text": "[ZH TODO: I lost my wallet.]",
+      "phonetic": "..."
+    },
+    "lost_phone": {
+      "text": "[ZH TODO: I lost my phone.]",
+      "phonetic": "..."
+    },
+    "feeling_sick": {
+      "text": "[ZH TODO: I am feeling sick.]",
+      "phonetic": "..."
+    },
+    "have_fever": {
+      "text": "[ZH TODO: I have a fever.]",
+      "phonetic": "..."
+    },
+    "have_pain": {
+      "text": "[ZH TODO: I am in pain.]",
+      "phonetic": "..."
+    },
+    "allergic_reaction": {
+      "text": "[ZH TODO: I am having an allergic reaction.]",
+      "phonetic": "..."
+    },
+    "need_medication": {
+      "text": "[ZH TODO: I need medication.]",
+      "phonetic": "..."
+    },
+    "prescription": {
+      "text": "[ZH TODO: I have a prescription.]",
+      "phonetic": "..."
+    },
+    "embassy_location": {
+      "text": "[ZH TODO: Where is my country's embassy?]",
+      "phonetic": "..."
+    },
+    "emergency_contact": {
+      "text": "[ZH TODO: Please contact my emergency contact.]",
+      "phonetic": "..."
+    },
+    "where_from": {
+      "text": "[ZH TODO: Where are you from?]",
+      "phonetic": "..."
+    },
+    "nice_meet_you": {
+      "text": "[ZH TODO: Nice to meet you.]",
+      "phonetic": "..."
+    },
+    "speak_little": {
+      "text": "[ZH TODO: I speak a little...]",
+      "phonetic": "..."
+    },
+    "how_are_you": {
+      "text": "[ZH TODO: How are you?]",
+      "phonetic": "..."
     }
   }
 }

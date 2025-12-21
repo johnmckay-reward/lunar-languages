@@ -1,44 +1,558 @@
 {
   "essentials": {
-    "hello": { "text": "Hello", "phonetic": "" },
-    "thanks": { "text": "Thank you", "phonetic": "" },
-    "goodbye": { "text": "Goodbye", "phonetic": "" },
-    "good_morning": { "text": "Good morning", "phonetic": "" },
-    "good_evening": { "text": "Good evening", "phonetic": "" },
-    "bathroom": { "text": "Where is the bathroom?", "phonetic": "" },
-    "yes": { "text": "Yes", "phonetic": "" },
-    "no": { "text": "No", "phonetic": "" },
-    "sorry": { "text": "Excuse me / Sorry", "phonetic": "" },
-    "no_understand": { "text": "I don't understand", "phonetic": "" },
-    "speak_english": { "text": "Do you speak English?", "phonetic": "" },
-    "help": { "text": "Help!", "phonetic": "" },
-    "delicious": { "text": "Delicious!", "phonetic": "" },
-    "cheers": { "text": "Cheers!", "phonetic": "" },
-    "wifi_pass": { "text": "WiFi Password?", "phonetic": "" },
-    "slowly": { "text": "Please speak slowly", "phonetic": "" }
+    "hello": {
+      "text": "Hello",
+      "phonetic": ""
+    },
+    "thanks": {
+      "text": "Thank you",
+      "phonetic": ""
+    },
+    "goodbye": {
+      "text": "Goodbye",
+      "phonetic": ""
+    },
+    "good_morning": {
+      "text": "Good morning",
+      "phonetic": ""
+    },
+    "good_evening": {
+      "text": "Good evening",
+      "phonetic": ""
+    },
+    "bathroom": {
+      "text": "Where is the bathroom?",
+      "phonetic": ""
+    },
+    "yes": {
+      "text": "Yes",
+      "phonetic": ""
+    },
+    "no": {
+      "text": "No",
+      "phonetic": ""
+    },
+    "sorry": {
+      "text": "Excuse me / Sorry",
+      "phonetic": ""
+    },
+    "no_understand": {
+      "text": "I don't understand",
+      "phonetic": ""
+    },
+    "speak_english": {
+      "text": "Do you speak English?",
+      "phonetic": ""
+    },
+    "help": {
+      "text": "Help!",
+      "phonetic": ""
+    },
+    "delicious": {
+      "text": "Delicious!",
+      "phonetic": ""
+    },
+    "cheers": {
+      "text": "Cheers!",
+      "phonetic": ""
+    },
+    "wifi_pass": {
+      "text": "WiFi Password?",
+      "phonetic": ""
+    },
+    "slowly": {
+      "text": "Please speak slowly",
+      "phonetic": ""
+    }
   },
   "combinations": {
-    "where_station": { "text": "Where is the train station?", "phonetic": "" },
-    "where_airport": { "text": "Where is the airport?", "phonetic": "" },
-    "where_ticket": { "text": "Where can I buy a ticket?", "phonetic": "" },
-    "where_taxi": { "text": "Where is the taxi stand?", "phonetic": "" },
-    "where_atm": { "text": "Where is the ATM?", "phonetic": "" },
-    "where_pharmacy": { "text": "Where is the pharmacy?", "phonetic": "" },
-    "where_doctor": { "text": "Where is a doctor?", "phonetic": "" },
-    "like_ticket": { "text": "I would like a ticket please.", "phonetic": "" },
-    "like_taxi": { "text": "I would like a taxi please.", "phonetic": "" },
-    "like_water": { "text": "I would like some water.", "phonetic": "" },
-    "like_coffee": { "text": "I would like a coffee.", "phonetic": "" },
-    "like_menu": { "text": "I would like the menu please.", "phonetic": "" },
-    "like_bill": { "text": "I would like the bill please.", "phonetic": "" },
-    "have_wifi": { "text": "Do you have WiFi?", "phonetic": "" },
-    "have_room": { "text": "Do you have a room available?", "phonetic": "" },
-    "have_charger": { "text": "Do you have a charger?", "phonetic": "" },
-    "have_menu": { "text": "Do you have a menu in English?", "phonetic": "" },
-    "cost_ticket": { "text": "How much is a ticket?", "phonetic": "" },
-    "cost_taxi": { "text": "How much is the taxi?", "phonetic": "" },
-    "cost_room": { "text": "How much is the room?", "phonetic": "" },
-    "cost_coffee": { "text": "How much is a coffee?", "phonetic": "" },
-    "allergic_peanuts": { "text": "I am allergic to peanuts.", "phonetic": "" }
+    "where_station": {
+      "text": "Where is the train station?",
+      "phonetic": ""
+    },
+    "where_airport": {
+      "text": "Where is the airport?",
+      "phonetic": ""
+    },
+    "where_ticket": {
+      "text": "Where can I buy a ticket?",
+      "phonetic": ""
+    },
+    "where_taxi": {
+      "text": "Where is the taxi stand?",
+      "phonetic": ""
+    },
+    "where_atm": {
+      "text": "Where is the ATM?",
+      "phonetic": ""
+    },
+    "where_pharmacy": {
+      "text": "Where is the pharmacy?",
+      "phonetic": ""
+    },
+    "where_doctor": {
+      "text": "Where is a doctor?",
+      "phonetic": ""
+    },
+    "like_ticket": {
+      "text": "I would like a ticket please.",
+      "phonetic": ""
+    },
+    "like_taxi": {
+      "text": "I would like a taxi please.",
+      "phonetic": ""
+    },
+    "like_water": {
+      "text": "I would like some water.",
+      "phonetic": ""
+    },
+    "like_coffee": {
+      "text": "I would like a coffee.",
+      "phonetic": ""
+    },
+    "like_menu": {
+      "text": "I would like the menu please.",
+      "phonetic": ""
+    },
+    "like_bill": {
+      "text": "I would like the bill please.",
+      "phonetic": ""
+    },
+    "have_wifi": {
+      "text": "Do you have WiFi?",
+      "phonetic": ""
+    },
+    "have_room": {
+      "text": "Do you have a room available?",
+      "phonetic": ""
+    },
+    "have_charger": {
+      "text": "Do you have a charger?",
+      "phonetic": ""
+    },
+    "have_menu": {
+      "text": "Do you have a menu in English?",
+      "phonetic": ""
+    },
+    "cost_ticket": {
+      "text": "How much is a ticket?",
+      "phonetic": ""
+    },
+    "cost_taxi": {
+      "text": "How much is the taxi?",
+      "phonetic": ""
+    },
+    "cost_room": {
+      "text": "How much is the room?",
+      "phonetic": ""
+    },
+    "cost_coffee": {
+      "text": "How much is a coffee?",
+      "phonetic": ""
+    },
+    "allergic_peanuts": {
+      "text": "I am allergic to peanuts.",
+      "phonetic": ""
+    },
+    "table_for_two": {
+      "text": "A table for two, please.",
+      "phonetic": ""
+    },
+    "table_for_four": {
+      "text": "A table for four, please.",
+      "phonetic": ""
+    },
+    "reservation_name": {
+      "text": "I have a reservation under the name...",
+      "phonetic": ""
+    },
+    "order_water": {
+      "text": "Can I have some water, please?",
+      "phonetic": ""
+    },
+    "order_tea": {
+      "text": "I would like tea, please.",
+      "phonetic": ""
+    },
+    "order_beer": {
+      "text": "Can I have a beer?",
+      "phonetic": ""
+    },
+    "order_wine": {
+      "text": "A glass of wine, please.",
+      "phonetic": ""
+    },
+    "order_bread": {
+      "text": "Can I have some bread?",
+      "phonetic": ""
+    },
+    "order_dessert": {
+      "text": "What desserts do you have?",
+      "phonetic": ""
+    },
+    "recommend_dish": {
+      "text": "What do you recommend?",
+      "phonetic": ""
+    },
+    "spicy_food": {
+      "text": "Is this spicy?",
+      "phonetic": ""
+    },
+    "contains_meat": {
+      "text": "Does this contain meat?",
+      "phonetic": ""
+    },
+    "contains_dairy": {
+      "text": "Does this have dairy?",
+      "phonetic": ""
+    },
+    "contains_gluten": {
+      "text": "Is this gluten-free?",
+      "phonetic": ""
+    },
+    "vegetarian_options": {
+      "text": "Do you have vegetarian options?",
+      "phonetic": ""
+    },
+    "vegan_options": {
+      "text": "Do you have vegan options?",
+      "phonetic": ""
+    },
+    "allergic_dairy": {
+      "text": "I am allergic to dairy.",
+      "phonetic": ""
+    },
+    "allergic_shellfish": {
+      "text": "I am allergic to shellfish.",
+      "phonetic": ""
+    },
+    "allergic_nuts": {
+      "text": "I am allergic to nuts.",
+      "phonetic": ""
+    },
+    "no_sugar": {
+      "text": "No sugar, please.",
+      "phonetic": ""
+    },
+    "no_salt": {
+      "text": "No salt, please.",
+      "phonetic": ""
+    },
+    "more_napkins": {
+      "text": "Can I have more napkins?",
+      "phonetic": ""
+    },
+    "fork_knife": {
+      "text": "Can I have a fork and knife?",
+      "phonetic": ""
+    },
+    "chopsticks": {
+      "text": "Can I have chopsticks?",
+      "phonetic": ""
+    },
+    "takeaway": {
+      "text": "Can I get this to go?",
+      "phonetic": ""
+    },
+    "separate_bills": {
+      "text": "Can we have separate bills?",
+      "phonetic": ""
+    },
+    "bus_to_downtown": {
+      "text": "Which bus goes to downtown?",
+      "phonetic": ""
+    },
+    "train_schedule": {
+      "text": "What time does the train leave?",
+      "phonetic": ""
+    },
+    "next_train": {
+      "text": "When is the next train?",
+      "phonetic": ""
+    },
+    "last_train": {
+      "text": "When is the last train?",
+      "phonetic": ""
+    },
+    "ticket_return": {
+      "text": "A return ticket, please.",
+      "phonetic": ""
+    },
+    "ticket_one_way": {
+      "text": "A one-way ticket, please.",
+      "phonetic": ""
+    },
+    "how_long_journey": {
+      "text": "How long is the journey?",
+      "phonetic": ""
+    },
+    "which_platform": {
+      "text": "Which platform?",
+      "phonetic": ""
+    },
+    "validate_ticket": {
+      "text": "Where do I validate my ticket?",
+      "phonetic": ""
+    },
+    "miss_my_stop": {
+      "text": "I missed my stop.",
+      "phonetic": ""
+    },
+    "get_off_here": {
+      "text": "I need to get off here.",
+      "phonetic": ""
+    },
+    "directions_museum": {
+      "text": "How do I get to the museum?",
+      "phonetic": ""
+    },
+    "directions_hotel": {
+      "text": "How do I get to this hotel?",
+      "phonetic": ""
+    },
+    "how_far": {
+      "text": "How far is it?",
+      "phonetic": ""
+    },
+    "walking_distance": {
+      "text": "Is it walking distance?",
+      "phonetic": ""
+    },
+    "turn_left": {
+      "text": "Turn left.",
+      "phonetic": ""
+    },
+    "turn_right": {
+      "text": "Turn right.",
+      "phonetic": ""
+    },
+    "straight_ahead": {
+      "text": "Go straight ahead.",
+      "phonetic": ""
+    },
+    "taxi_to_airport": {
+      "text": "Can you take me to the airport?",
+      "phonetic": ""
+    },
+    "uber_available": {
+      "text": "Is Uber available here?",
+      "phonetic": ""
+    },
+    "check_in": {
+      "text": "I would like to check in.",
+      "phonetic": ""
+    },
+    "check_out": {
+      "text": "I would like to check out.",
+      "phonetic": ""
+    },
+    "key_card": {
+      "text": "My key card is not working.",
+      "phonetic": ""
+    },
+    "room_number": {
+      "text": "What is my room number?",
+      "phonetic": ""
+    },
+    "breakfast_included": {
+      "text": "Is breakfast included?",
+      "phonetic": ""
+    },
+    "breakfast_time": {
+      "text": "What time is breakfast?",
+      "phonetic": ""
+    },
+    "wifi_password": {
+      "text": "What is the WiFi password?",
+      "phonetic": ""
+    },
+    "extra_towels": {
+      "text": "Can I have extra towels?",
+      "phonetic": ""
+    },
+    "extra_pillows": {
+      "text": "Can I have extra pillows?",
+      "phonetic": ""
+    },
+    "extra_blanket": {
+      "text": "Can I have an extra blanket?",
+      "phonetic": ""
+    },
+    "room_cleaning": {
+      "text": "Can you clean my room?",
+      "phonetic": ""
+    },
+    "do_not_disturb": {
+      "text": "Please do not disturb.",
+      "phonetic": ""
+    },
+    "wake_up_call": {
+      "text": "Can I have a wake-up call at 7 AM?",
+      "phonetic": ""
+    },
+    "late_checkout": {
+      "text": "Can I have a late checkout?",
+      "phonetic": ""
+    },
+    "extend_stay": {
+      "text": "Can I extend my stay?",
+      "phonetic": ""
+    },
+    "air_conditioning_broken": {
+      "text": "The air conditioning is not working.",
+      "phonetic": ""
+    },
+    "toilet_broken": {
+      "text": "The toilet is broken.",
+      "phonetic": ""
+    },
+    "no_hot_water": {
+      "text": "There is no hot water.",
+      "phonetic": ""
+    },
+    "room_too_cold": {
+      "text": "The room is too cold.",
+      "phonetic": ""
+    },
+    "room_too_hot": {
+      "text": "The room is too hot.",
+      "phonetic": ""
+    },
+    "how_much_this": {
+      "text": "How much is this?",
+      "phonetic": ""
+    },
+    "too_expensive": {
+      "text": "That's too expensive.",
+      "phonetic": ""
+    },
+    "discount": {
+      "text": "Do you have a discount?",
+      "phonetic": ""
+    },
+    "accept_cards": {
+      "text": "Do you accept credit cards?",
+      "phonetic": ""
+    },
+    "pay_cash": {
+      "text": "Can I pay with cash?",
+      "phonetic": ""
+    },
+    "receipt_please": {
+      "text": "Can I have a receipt?",
+      "phonetic": ""
+    },
+    "try_this_on": {
+      "text": "Can I try this on?",
+      "phonetic": ""
+    },
+    "fitting_room": {
+      "text": "Where is the fitting room?",
+      "phonetic": ""
+    },
+    "size_small": {
+      "text": "Do you have this in small?",
+      "phonetic": ""
+    },
+    "size_medium": {
+      "text": "Do you have this in medium?",
+      "phonetic": ""
+    },
+    "size_large": {
+      "text": "Do you have this in large?",
+      "phonetic": ""
+    },
+    "different_color": {
+      "text": "Do you have this in a different color?",
+      "phonetic": ""
+    },
+    "return_this": {
+      "text": "Can I return this?",
+      "phonetic": ""
+    },
+    "exchange_this": {
+      "text": "Can I exchange this?",
+      "phonetic": ""
+    },
+    "gift_wrap": {
+      "text": "Can you gift wrap this?",
+      "phonetic": ""
+    },
+    "need_doctor": {
+      "text": "I need a doctor.",
+      "phonetic": ""
+    },
+    "need_ambulance": {
+      "text": "I need an ambulance.",
+      "phonetic": ""
+    },
+    "call_police": {
+      "text": "Please call the police.",
+      "phonetic": ""
+    },
+    "been_robbed": {
+      "text": "I have been robbed.",
+      "phonetic": ""
+    },
+    "lost_passport": {
+      "text": "I lost my passport.",
+      "phonetic": ""
+    },
+    "lost_wallet": {
+      "text": "I lost my wallet.",
+      "phonetic": ""
+    },
+    "lost_phone": {
+      "text": "I lost my phone.",
+      "phonetic": ""
+    },
+    "feeling_sick": {
+      "text": "I am feeling sick.",
+      "phonetic": ""
+    },
+    "have_fever": {
+      "text": "I have a fever.",
+      "phonetic": ""
+    },
+    "have_pain": {
+      "text": "I am in pain.",
+      "phonetic": ""
+    },
+    "allergic_reaction": {
+      "text": "I am having an allergic reaction.",
+      "phonetic": ""
+    },
+    "need_medication": {
+      "text": "I need medication.",
+      "phonetic": ""
+    },
+    "prescription": {
+      "text": "I have a prescription.",
+      "phonetic": ""
+    },
+    "embassy_location": {
+      "text": "Where is my country's embassy?",
+      "phonetic": ""
+    },
+    "emergency_contact": {
+      "text": "Please contact my emergency contact.",
+      "phonetic": ""
+    },
+    "where_from": {
+      "text": "Where are you from?",
+      "phonetic": ""
+    },
+    "nice_meet_you": {
+      "text": "Nice to meet you.",
+      "phonetic": ""
+    },
+    "speak_little": {
+      "text": "I speak a little...",
+      "phonetic": ""
+    },
+    "how_are_you": {
+      "text": "How are you?",
+      "phonetic": ""
+    }
   }
 }

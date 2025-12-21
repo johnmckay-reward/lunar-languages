@@ -1,8 +1,17 @@
 {
   "essentials": {
-    "hello": { "text": "Привет", "phonetic": "Pree-VYET" },
-    "thanks": { "text": "Спасибо", "phonetic": "Spah-SEE-bah" },
-    "goodbye": { "text": "До свидания", "phonetic": "Dah svee-DAH-nyah" },
+    "hello": {
+      "text": "Привет",
+      "phonetic": "Pree-VYET"
+    },
+    "thanks": {
+      "text": "Спасибо",
+      "phonetic": "Spah-SEE-bah"
+    },
+    "goodbye": {
+      "text": "До свидания",
+      "phonetic": "Dah svee-DAH-nyah"
+    },
     "good_morning": {
       "text": "Доброе утро",
       "phonetic": "DOH-bray-eh OO-trah"
@@ -11,10 +20,22 @@
       "text": "Добрый вечер",
       "phonetic": "DOH-bryy VYEH-cher"
     },
-    "bathroom": { "text": "Где туалет?", "phonetic": "Gdyeh too-ah-LYET?" },
-    "yes": { "text": "Да", "phonetic": "Dah" },
-    "no": { "text": "Нет", "phonetic": "Nyet" },
-    "sorry": { "text": "Извините", "phonetic": "Eez-vee-NEE-tyeh" },
+    "bathroom": {
+      "text": "Где туалет?",
+      "phonetic": "Gdyeh too-ah-LYET?"
+    },
+    "yes": {
+      "text": "Да",
+      "phonetic": "Dah"
+    },
+    "no": {
+      "text": "Нет",
+      "phonetic": "Nyet"
+    },
+    "sorry": {
+      "text": "Извините",
+      "phonetic": "Eez-vee-NEE-tyeh"
+    },
     "no_understand": {
       "text": "Я не понимаю",
       "phonetic": "Ya nyeh pah-nee-MAH-yoo"
@@ -23,17 +44,32 @@
       "text": "Вы говорите по-английски?",
       "phonetic": "Vy gah-vah-REE-tyeh pah-an-GLEEY-skee?"
     },
-    "help": { "text": "Помогите!", "phonetic": "Pah-mah-GEE-tyeh!" },
-    "delicious": { "text": "Вкусно!", "phonetic": "VKOOS-nah!" },
-    "cheers": { "text": "За здоровье!", "phonetic": "Zah zdah-ROHV-yeh!" },
-    "wifi_pass": { "text": "Пароль от WiFi?", "phonetic": "Pah-ROHL ot WiFi?" },
+    "help": {
+      "text": "Помогите!",
+      "phonetic": "Pah-mah-GEE-tyeh!"
+    },
+    "delicious": {
+      "text": "Вкусно!",
+      "phonetic": "VKOOS-nah!"
+    },
+    "cheers": {
+      "text": "За здоровье!",
+      "phonetic": "Zah zdah-ROHV-yeh!"
+    },
+    "wifi_pass": {
+      "text": "Пароль от WiFi?",
+      "phonetic": "Pah-ROHL ot WiFi?"
+    },
     "slowly": {
       "text": "Говорите медленнее, пожалуйста",
       "phonetic": "Gah-vah-REE-tyeh MYED-lyeh-nyeh-yeh, pah-ZHAH-loo-stah"
     }
   },
   "combinations": {
-    "where_station": { "text": "Где вокзал?", "phonetic": "Gdyeh vahk-ZAHL?" },
+    "where_station": {
+      "text": "Где вокзал?",
+      "phonetic": "Gdyeh vahk-ZAHL?"
+    },
     "where_airport": {
       "text": "Где находится аэропорт?",
       "phonetic": "Gde nakhoditsya aeroport?"
@@ -46,12 +82,18 @@
       "text": "Где стоянка такси?",
       "phonetic": "Gdyeh stah-YAN-kah tahk-SEE?"
     },
-    "where_atm": { "text": "Где банкомат?", "phonetic": "Gdyeh ban-kah-MAT?" },
+    "where_atm": {
+      "text": "Где банкомат?",
+      "phonetic": "Gdyeh ban-kah-MAT?"
+    },
     "where_pharmacy": {
       "text": "Где аптека?",
       "phonetic": "Gdyeh ahp-TYEH-kah?"
     },
-    "where_doctor": { "text": "Можете сказать, где находится доктор?", "phonetic": "Mozhete skazat', gde nakhoditsya doktor?" },
+    "where_doctor": {
+      "text": "Можете сказать, где находится доктор?",
+      "phonetic": "Mozhete skazat', gde nakhoditsya doktor?"
+    },
     "like_ticket": {
       "text": "Я хотел бы билет, пожалуйста.",
       "phonetic": "Ya khah-TYEL by bee-LYET, pah-ZHAH-loo-stah."
@@ -111,6 +153,406 @@
     "allergic_peanuts": {
       "text": "У меня аллергия на арахис.",
       "phonetic": "Oo mye-NYA ah-lyer-GHEE-yah nah ah-RAH-khees."
+    },
+    "table_for_two": {
+      "text": "[RU TODO: A table for two, please.]",
+      "phonetic": "..."
+    },
+    "table_for_four": {
+      "text": "[RU TODO: A table for four, please.]",
+      "phonetic": "..."
+    },
+    "reservation_name": {
+      "text": "[RU TODO: I have a reservation under the name...]",
+      "phonetic": "..."
+    },
+    "order_water": {
+      "text": "[RU TODO: Can I have some water, please?]",
+      "phonetic": "..."
+    },
+    "order_tea": {
+      "text": "[RU TODO: I would like tea, please.]",
+      "phonetic": "..."
+    },
+    "order_beer": {
+      "text": "[RU TODO: Can I have a beer?]",
+      "phonetic": "..."
+    },
+    "order_wine": {
+      "text": "[RU TODO: A glass of wine, please.]",
+      "phonetic": "..."
+    },
+    "order_bread": {
+      "text": "[RU TODO: Can I have some bread?]",
+      "phonetic": "..."
+    },
+    "order_dessert": {
+      "text": "[RU TODO: What desserts do you have?]",
+      "phonetic": "..."
+    },
+    "recommend_dish": {
+      "text": "[RU TODO: What do you recommend?]",
+      "phonetic": "..."
+    },
+    "spicy_food": {
+      "text": "[RU TODO: Is this spicy?]",
+      "phonetic": "..."
+    },
+    "contains_meat": {
+      "text": "[RU TODO: Does this contain meat?]",
+      "phonetic": "..."
+    },
+    "contains_dairy": {
+      "text": "[RU TODO: Does this have dairy?]",
+      "phonetic": "..."
+    },
+    "contains_gluten": {
+      "text": "[RU TODO: Is this gluten-free?]",
+      "phonetic": "..."
+    },
+    "vegetarian_options": {
+      "text": "[RU TODO: Do you have vegetarian options?]",
+      "phonetic": "..."
+    },
+    "vegan_options": {
+      "text": "[RU TODO: Do you have vegan options?]",
+      "phonetic": "..."
+    },
+    "allergic_dairy": {
+      "text": "[RU TODO: I am allergic to dairy.]",
+      "phonetic": "..."
+    },
+    "allergic_shellfish": {
+      "text": "[RU TODO: I am allergic to shellfish.]",
+      "phonetic": "..."
+    },
+    "allergic_nuts": {
+      "text": "[RU TODO: I am allergic to nuts.]",
+      "phonetic": "..."
+    },
+    "no_sugar": {
+      "text": "[RU TODO: No sugar, please.]",
+      "phonetic": "..."
+    },
+    "no_salt": {
+      "text": "[RU TODO: No salt, please.]",
+      "phonetic": "..."
+    },
+    "more_napkins": {
+      "text": "[RU TODO: Can I have more napkins?]",
+      "phonetic": "..."
+    },
+    "fork_knife": {
+      "text": "[RU TODO: Can I have a fork and knife?]",
+      "phonetic": "..."
+    },
+    "chopsticks": {
+      "text": "[RU TODO: Can I have chopsticks?]",
+      "phonetic": "..."
+    },
+    "takeaway": {
+      "text": "[RU TODO: Can I get this to go?]",
+      "phonetic": "..."
+    },
+    "separate_bills": {
+      "text": "[RU TODO: Can we have separate bills?]",
+      "phonetic": "..."
+    },
+    "bus_to_downtown": {
+      "text": "[RU TODO: Which bus goes to downtown?]",
+      "phonetic": "..."
+    },
+    "train_schedule": {
+      "text": "[RU TODO: What time does the train leave?]",
+      "phonetic": "..."
+    },
+    "next_train": {
+      "text": "[RU TODO: When is the next train?]",
+      "phonetic": "..."
+    },
+    "last_train": {
+      "text": "[RU TODO: When is the last train?]",
+      "phonetic": "..."
+    },
+    "ticket_return": {
+      "text": "[RU TODO: A return ticket, please.]",
+      "phonetic": "..."
+    },
+    "ticket_one_way": {
+      "text": "[RU TODO: A one-way ticket, please.]",
+      "phonetic": "..."
+    },
+    "how_long_journey": {
+      "text": "[RU TODO: How long is the journey?]",
+      "phonetic": "..."
+    },
+    "which_platform": {
+      "text": "[RU TODO: Which platform?]",
+      "phonetic": "..."
+    },
+    "validate_ticket": {
+      "text": "[RU TODO: Where do I validate my ticket?]",
+      "phonetic": "..."
+    },
+    "miss_my_stop": {
+      "text": "[RU TODO: I missed my stop.]",
+      "phonetic": "..."
+    },
+    "get_off_here": {
+      "text": "[RU TODO: I need to get off here.]",
+      "phonetic": "..."
+    },
+    "directions_museum": {
+      "text": "[RU TODO: How do I get to the museum?]",
+      "phonetic": "..."
+    },
+    "directions_hotel": {
+      "text": "[RU TODO: How do I get to this hotel?]",
+      "phonetic": "..."
+    },
+    "how_far": {
+      "text": "[RU TODO: How far is it?]",
+      "phonetic": "..."
+    },
+    "walking_distance": {
+      "text": "[RU TODO: Is it walking distance?]",
+      "phonetic": "..."
+    },
+    "turn_left": {
+      "text": "[RU TODO: Turn left.]",
+      "phonetic": "..."
+    },
+    "turn_right": {
+      "text": "[RU TODO: Turn right.]",
+      "phonetic": "..."
+    },
+    "straight_ahead": {
+      "text": "[RU TODO: Go straight ahead.]",
+      "phonetic": "..."
+    },
+    "taxi_to_airport": {
+      "text": "[RU TODO: Can you take me to the airport?]",
+      "phonetic": "..."
+    },
+    "uber_available": {
+      "text": "[RU TODO: Is Uber available here?]",
+      "phonetic": "..."
+    },
+    "check_in": {
+      "text": "[RU TODO: I would like to check in.]",
+      "phonetic": "..."
+    },
+    "check_out": {
+      "text": "[RU TODO: I would like to check out.]",
+      "phonetic": "..."
+    },
+    "key_card": {
+      "text": "[RU TODO: My key card is not working.]",
+      "phonetic": "..."
+    },
+    "room_number": {
+      "text": "[RU TODO: What is my room number?]",
+      "phonetic": "..."
+    },
+    "breakfast_included": {
+      "text": "[RU TODO: Is breakfast included?]",
+      "phonetic": "..."
+    },
+    "breakfast_time": {
+      "text": "[RU TODO: What time is breakfast?]",
+      "phonetic": "..."
+    },
+    "wifi_password": {
+      "text": "[RU TODO: What is the WiFi password?]",
+      "phonetic": "..."
+    },
+    "extra_towels": {
+      "text": "[RU TODO: Can I have extra towels?]",
+      "phonetic": "..."
+    },
+    "extra_pillows": {
+      "text": "[RU TODO: Can I have extra pillows?]",
+      "phonetic": "..."
+    },
+    "extra_blanket": {
+      "text": "[RU TODO: Can I have an extra blanket?]",
+      "phonetic": "..."
+    },
+    "room_cleaning": {
+      "text": "[RU TODO: Can you clean my room?]",
+      "phonetic": "..."
+    },
+    "do_not_disturb": {
+      "text": "[RU TODO: Please do not disturb.]",
+      "phonetic": "..."
+    },
+    "wake_up_call": {
+      "text": "[RU TODO: Can I have a wake-up call at 7 AM?]",
+      "phonetic": "..."
+    },
+    "late_checkout": {
+      "text": "[RU TODO: Can I have a late checkout?]",
+      "phonetic": "..."
+    },
+    "extend_stay": {
+      "text": "[RU TODO: Can I extend my stay?]",
+      "phonetic": "..."
+    },
+    "air_conditioning_broken": {
+      "text": "[RU TODO: The air conditioning is not working.]",
+      "phonetic": "..."
+    },
+    "toilet_broken": {
+      "text": "[RU TODO: The toilet is broken.]",
+      "phonetic": "..."
+    },
+    "no_hot_water": {
+      "text": "[RU TODO: There is no hot water.]",
+      "phonetic": "..."
+    },
+    "room_too_cold": {
+      "text": "[RU TODO: The room is too cold.]",
+      "phonetic": "..."
+    },
+    "room_too_hot": {
+      "text": "[RU TODO: The room is too hot.]",
+      "phonetic": "..."
+    },
+    "how_much_this": {
+      "text": "[RU TODO: How much is this?]",
+      "phonetic": "..."
+    },
+    "too_expensive": {
+      "text": "[RU TODO: That's too expensive.]",
+      "phonetic": "..."
+    },
+    "discount": {
+      "text": "[RU TODO: Do you have a discount?]",
+      "phonetic": "..."
+    },
+    "accept_cards": {
+      "text": "[RU TODO: Do you accept credit cards?]",
+      "phonetic": "..."
+    },
+    "pay_cash": {
+      "text": "[RU TODO: Can I pay with cash?]",
+      "phonetic": "..."
+    },
+    "receipt_please": {
+      "text": "[RU TODO: Can I have a receipt?]",
+      "phonetic": "..."
+    },
+    "try_this_on": {
+      "text": "[RU TODO: Can I try this on?]",
+      "phonetic": "..."
+    },
+    "fitting_room": {
+      "text": "[RU TODO: Where is the fitting room?]",
+      "phonetic": "..."
+    },
+    "size_small": {
+      "text": "[RU TODO: Do you have this in small?]",
+      "phonetic": "..."
+    },
+    "size_medium": {
+      "text": "[RU TODO: Do you have this in medium?]",
+      "phonetic": "..."
+    },
+    "size_large": {
+      "text": "[RU TODO: Do you have this in large?]",
+      "phonetic": "..."
+    },
+    "different_color": {
+      "text": "[RU TODO: Do you have this in a different color?]",
+      "phonetic": "..."
+    },
+    "return_this": {
+      "text": "[RU TODO: Can I return this?]",
+      "phonetic": "..."
+    },
+    "exchange_this": {
+      "text": "[RU TODO: Can I exchange this?]",
+      "phonetic": "..."
+    },
+    "gift_wrap": {
+      "text": "[RU TODO: Can you gift wrap this?]",
+      "phonetic": "..."
+    },
+    "need_doctor": {
+      "text": "[RU TODO: I need a doctor.]",
+      "phonetic": "..."
+    },
+    "need_ambulance": {
+      "text": "[RU TODO: I need an ambulance.]",
+      "phonetic": "..."
+    },
+    "call_police": {
+      "text": "[RU TODO: Please call the police.]",
+      "phonetic": "..."
+    },
+    "been_robbed": {
+      "text": "[RU TODO: I have been robbed.]",
+      "phonetic": "..."
+    },
+    "lost_passport": {
+      "text": "[RU TODO: I lost my passport.]",
+      "phonetic": "..."
+    },
+    "lost_wallet": {
+      "text": "[RU TODO: I lost my wallet.]",
+      "phonetic": "..."
+    },
+    "lost_phone": {
+      "text": "[RU TODO: I lost my phone.]",
+      "phonetic": "..."
+    },
+    "feeling_sick": {
+      "text": "[RU TODO: I am feeling sick.]",
+      "phonetic": "..."
+    },
+    "have_fever": {
+      "text": "[RU TODO: I have a fever.]",
+      "phonetic": "..."
+    },
+    "have_pain": {
+      "text": "[RU TODO: I am in pain.]",
+      "phonetic": "..."
+    },
+    "allergic_reaction": {
+      "text": "[RU TODO: I am having an allergic reaction.]",
+      "phonetic": "..."
+    },
+    "need_medication": {
+      "text": "[RU TODO: I need medication.]",
+      "phonetic": "..."
+    },
+    "prescription": {
+      "text": "[RU TODO: I have a prescription.]",
+      "phonetic": "..."
+    },
+    "embassy_location": {
+      "text": "[RU TODO: Where is my country's embassy?]",
+      "phonetic": "..."
+    },
+    "emergency_contact": {
+      "text": "[RU TODO: Please contact my emergency contact.]",
+      "phonetic": "..."
+    },
+    "where_from": {
+      "text": "[RU TODO: Where are you from?]",
+      "phonetic": "..."
+    },
+    "nice_meet_you": {
+      "text": "[RU TODO: Nice to meet you.]",
+      "phonetic": "..."
+    },
+    "speak_little": {
+      "text": "[RU TODO: I speak a little...]",
+      "phonetic": "..."
+    },
+    "how_are_you": {
+      "text": "[RU TODO: How are you?]",
+      "phonetic": "..."
     }
   }
 }
