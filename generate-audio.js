@@ -13,7 +13,7 @@ const RETRY_LIMIT = 2;
 const SIMILARITY_THRESHOLD = 85;
 const ENABLE_AI_REPAIR = true;
 
-const PRICE_PER_1K_CHARS = 0.030;
+const PRICE_PER_1K_CHARS = 0.030; // approx model pricing
 
 // 🗣️ SMART VOICE MAPPING
 const VOICE_MAP = {
@@ -28,6 +28,7 @@ const stats = { success: 0, failed: 0, repaired: 0 };
 // --- HELPER FUNCTIONS ---
 
 function normalizeText(text) {
+  if (!text) return "";
   return text.toLowerCase()
     .replace(/[¡¿]/g, "")
     .replace(/[.,/#!$%^&*;:{}=\-_`~()"?]/g, "")
@@ -48,9 +49,11 @@ function calculateSimilarity(original, transcribed) {
   const normOriginal = normalizeText(original);
   const normTranscribed = normalizeText(transcribed);
 
+  // 1. Direct comparison
   const standardScore = getScore(normOriginal, normTranscribed);
   if (standardScore >= SIMILARITY_THRESHOLD) return standardScore;
 
+  // 2. Squash comparison (ignoring spaces) useful for languages like Japanese/Chinese
   const squashOriginal = normOriginal.replace(/\s+/g, '');
   const squashTranscribed = normTranscribed.replace(/\s+/g, '');
   const squashScore = getScore(squashOriginal, squashTranscribed);
@@ -65,6 +68,7 @@ function updateSourceFile(fileName, section, key, newText, newPhonetic) {
     let fileContent = fs.readFileSync(filePath, 'utf8');
 
     const replaceInKeyBlock = (content, targetKey, field, newValue) => {
+      // Regex looks for "key": { ... "field": "OLD_VALUE" ... }
       const regex = new RegExp(
         `("${targetKey}"\\s*:\\s*\\{[^}]*?"${field}"\\s*:\\s*")([^"]*)(")`,
         's'
@@ -73,7 +77,11 @@ function updateSourceFile(fileName, section, key, newText, newPhonetic) {
     };
 
     let updatedContent = replaceInKeyBlock(fileContent, key, 'text', newText);
-    updatedContent = replaceInKeyBlock(updatedContent, key, 'phonetic', newPhonetic);
+
+    // Only update phonetic if provided
+    if (newPhonetic) {
+      updatedContent = replaceInKeyBlock(updatedContent, key, 'phonetic', newPhonetic);
+    }
 
     if (fileContent !== updatedContent) {
       fs.writeFileSync(filePath, updatedContent, 'utf8');
@@ -89,9 +97,12 @@ function updateSourceFile(fileName, section, key, newText, newPhonetic) {
   }
 }
 
-// 🤖 AI REPAIR LOGIC (Strict Mode)
-async function repairPhraseWithAI(item, currentText, langCode) {
-  console.log(`      🤖 Asking AI to rephrase "${currentText}"...`);
+// 🤖 AI REPAIR LOGIC (OPTIMIZED & CONTEXT AWARE)
+async function repairPhraseWithAI(item, currentText, failedTranscription, langCode) {
+  console.log(`      🤖 AI Doctor analyzing failure...`);
+  console.log(`         Expected: "${currentText}"`);
+  console.log(`         Heard:    "${failedTranscription}"`);
+
   try {
     const completion = await openai.chat.completions.create({
       model: "gpt-4o",
@@ -99,20 +110,29 @@ async function repairPhraseWithAI(item, currentText, langCode) {
       messages: [
         {
           role: "system",
-          content: `You are a linguistic expert helper for a TTS (Text-to-Speech) system.
+          content: `You are a linguistic engineer fixing TTS (Text-to-Speech) failures.
 
-          Context: A phrase in language '${langCode}' failed verification (the AI voice wasn't understood by the AI listener).
+          CONTEXT:
+          We tried to generate audio for a phrase in '${langCode}', but the verification AI misheard it.
 
-          Goal: Suggest an alternative phrasing *IN THE SAME LANGUAGE (${langCode})* that is clearer, more formal, or phonetically distinct, while keeping the exact same meaning.
+          YOUR GOAL:
+          Rewrite the phrase in '${langCode}' so it is phonetically distinct and harder to misinterpret, while keeping the EXACT same meaning.
 
-          STRICT RULES:
-          1. The "text" field MUST be in '${langCode}'. Do NOT use English (unless '${langCode}' is 'en').
-          2. Do not change the meaning.
-          3. Provide a new phonetic guide.
+          GUIDELINES:
+          1. Analyze the discrepancy between 'Original' and 'Heard'.
+          2. Avoid very short (1-2 syllable) words if possible; they are prone to failure. Prefer articulate synonyms.
+          3. Do NOT change the language. The result must be '${langCode}'.
+          4. If the error is minor, maybe just changing punctuation or spelling (if language allows) helps.
 
-          Return JSON: { "text": "New Phrase (in ${langCode})", "phonetic": "Phon-ET-ic" }`
+          Return JSON: { "text": "New Robust Phrase", "phonetic": "Optional Phonetic Guide" }`
         },
-        { role: "user", content: `The failing phrase is: "${currentText}". Fix it.` }
+        {
+          role: "user",
+          content: `Original Text: "${currentText}"
+          What AI Heard: "${failedTranscription}"
+
+          Fix this.`
+        }
       ]
     });
     return JSON.parse(completion.choices[0].message.content);
@@ -129,8 +149,14 @@ async function verifyAudio(filePath, originalText, langCode) {
       model: "whisper-1",
       language: langCode,
     });
-    return { score: calculateSimilarity(originalText, transcription.text), transcribedText: transcription.text };
+
+    const cleanTranscribed = transcription.text || "";
+    return {
+      score: calculateSimilarity(originalText, cleanTranscribed),
+      transcribedText: cleanTranscribed
+    };
   } catch (error) {
+    console.error(`      Verify Error: ${error.message}`);
     return { score: 0, transcribedText: "" };
   }
 }
@@ -145,7 +171,7 @@ async function generateAudio(item, attempt = 1) {
     if (attempt === 1) console.log(`\n🔹 [${item.langCode.toUpperCase()}] ${item.id} (Voice: ${voice})`);
 
     // 1. Generate
-    if (attempt === 1) console.log(`   🎤 Generating...`);
+    if (attempt === 1) process.stdout.write(`   🎤 Generating... `);
     const mp3 = await openai.audio.speech.create({
       model: "tts-1-hd",
       voice: voice,
@@ -154,13 +180,10 @@ async function generateAudio(item, attempt = 1) {
     await fs.promises.writeFile(item.outputPath, Buffer.from(await mp3.arrayBuffer()));
 
     // 2. Verify
-    process.stdout.write(`   👂 Verifying... `);
     const { score, transcribedText } = await verifyAudio(item.outputPath, item.text, item.langCode);
 
     if (score < SIMILARITY_THRESHOLD) {
       console.log(`⚠️  Mismatch (${score.toFixed(0)}%)`);
-      console.log(`      Exp: "${item.text}"`);
-      console.log(`      Got: "${transcribedText}"`);
 
       // A. Standard Retry
       if (attempt <= RETRY_LIMIT) {
@@ -168,15 +191,16 @@ async function generateAudio(item, attempt = 1) {
         return generateAudio(item, attempt + 1);
       }
 
-      // B. AI Repair (TRANSACTION SAFE)
+      // B. AI Repair (With Context!)
       else if (ENABLE_AI_REPAIR) {
         console.log(`   🛑 All retries failed.`);
 
-        const correction = await repairPhraseWithAI(item, item.text, item.langCode);
+        // Pass the bad transcription so the AI knows what went wrong
+        const correction = await repairPhraseWithAI(item, item.text, transcribedText, item.langCode);
 
         if (correction && correction.text) {
           console.log(`      ✨ AI Suggestion: "${correction.text}"`);
-          console.log(`      🧪 Testing suggestion before saving...`);
+          console.log(`      🧪 Testing suggestion...`);
 
           // --- TEST RUN START ---
           try {
@@ -239,10 +263,12 @@ function getTranslationEntries(filename) {
   try {
     const content = JSON.parse(fs.readFileSync(filePath, 'utf8'));
     const items = [];
+
+    // Recursive function to handle nested structures if your JSON grows
     const extract = (sectionName, sectionData) => {
       if (!sectionData) return;
       for (const [key, data] of Object.entries(sectionData)) {
-        if (data.text) {
+        if (data && typeof data === 'object' && data.text) {
           items.push({
             id: `${sectionName}.${key}`,
             text: data.text,
@@ -253,8 +279,11 @@ function getTranslationEntries(filename) {
         }
       }
     };
-    extract('essentials', content.essentials);
-    extract('combinations', content.combinations);
+
+    // Customize these keys based on your JSON structure
+    if(content.essentials) extract('essentials', content.essentials);
+    if(content.combinations) extract('combinations', content.combinations);
+
     return items;
   } catch (err) { return []; }
 }
@@ -265,7 +294,7 @@ async function processQueue(queue) {
   const totalChars = queue.reduce((sum, item) => sum + item.text.length, 0);
   console.log(`\n💰 ESTIMATE: ${queue.length} items (~$${((totalChars/1000)*PRICE_PER_1K_CHARS).toFixed(4)})`);
 
-  const { proceed } = await inquirer.prompt([{ type: 'confirm', name: 'proceed', message: 'Start?', default: true }]);
+  const { proceed } = await inquirer.prompt([{ type: 'confirm', name: 'proceed', message: 'Start generation?', default: true }]);
   if (!proceed) return;
 
   const startTime = Date.now();
@@ -281,34 +310,43 @@ async function processQueue(queue) {
 
 async function main() {
   if (!fs.existsSync(AUDIO_DIR)) fs.mkdirSync(AUDIO_DIR, { recursive: true });
+
+  // Filter out non-JSON and usually English (source) files if necessary
   const allFiles = fs.readdirSync(I18N_DIR).filter(f => f.endsWith('.json') && f !== 'en.json');
-  if (allFiles.length === 0) return console.log("No files found.");
+
+  if (allFiles.length === 0) return console.log("No translation files found in src/assets/i18n.");
 
   const { mode } = await inquirer.prompt([{
-    type: 'list', name: 'mode', message: 'Task:',
-    choices: [ { name: '🔍 Analyze Coverage', value: 'analyze' }, { name: '🎤 Generate Audio', value: 'standard' } ]
+    type: 'list', name: 'mode', message: 'Select Task:',
+    choices: [
+      { name: '🔍 Analyze Coverage (Find missing files)', value: 'analyze' },
+      { name: '🎤 Generate Audio (Select specific)', value: 'standard' }
+    ]
   }]);
 
   let queue = [];
 
   if (mode === 'analyze') {
     for (const file of allFiles) {
-      const missing = getTranslationEntries(file).filter(i => !fs.existsSync(i.outputPath));
+      const entries = getTranslationEntries(file);
+      const missing = entries.filter(i => !fs.existsSync(i.outputPath));
+
       if (missing.length) {
-        console.log(`❌ ${path.basename(file, '.json').toUpperCase()}: ${missing.length} missing.`);
+        console.log(`❌ ${path.basename(file, '.json').toUpperCase()}: ${missing.length} missing audio files.`);
         queue.push(...missing);
       } else {
-        console.log(`✅ ${path.basename(file, '.json').toUpperCase()}: Complete.`);
+        console.log(`✅ ${path.basename(file, '.json').toUpperCase()}: 100% Coverage.`);
       }
     }
+
     if (queue.length > 0) {
-      const { fix } = await inquirer.prompt([{ type: 'confirm', name: 'fix', message: 'Generate missing?', default: true }]);
+      const { fix } = await inquirer.prompt([{ type: 'confirm', name: 'fix', message: `Generate ${queue.length} missing files now?`, default: true }]);
       if (fix) await processQueue(queue);
     }
   } else {
     const { selectionType } = await inquirer.prompt([{
       type: 'list', name: 'selectionType', message: 'Scope:',
-      choices: [{name: 'All Languages', value: 'all'}, {name: 'Select Languages', value: 'select'}]
+      choices: [{name: 'All Languages', value: 'all'}, {name: 'Select Specific Languages', value: 'select'}]
     }]);
 
     let selectedFiles = allFiles;
@@ -324,7 +362,7 @@ async function main() {
       const items = getTranslationEntries(file);
       const { scope } = await inquirer.prompt([{
         type: 'list', name: 'scope', message: `For ${path.basename(file, '.json').toUpperCase()}:`,
-        choices: [{name: 'All Items', value: 'all'}, {name: 'Pick Items', value: 'pick'}]
+        choices: [{name: 'All Items', value: 'all'}, {name: 'Pick Specific Items', value: 'pick'}]
       }]);
 
       if (scope === 'all') queue.push(...items);
