@@ -1,17 +1,41 @@
 {
   "essentials": {
-    "hello": { "text": "Bonjour", "phonetic": "bon-ZHOOR" },
-    "thanks": { "text": "Merci", "phonetic": "mehr-SEE" },
-    "goodbye": { "text": "Au revoir", "phonetic": "oh ruh-VWAR" },
-    "good_morning": { "text": "Bonjour", "phonetic": "bon-ZHOOR" },
-    "good_evening": { "text": "Bonsoir", "phonetic": "bon-SWAHR" },
+    "hello": {
+      "text": "Bonjour",
+      "phonetic": "bon-ZHOOR"
+    },
+    "thanks": {
+      "text": "Merci",
+      "phonetic": "mehr-SEE"
+    },
+    "goodbye": {
+      "text": "Au revoir",
+      "phonetic": "oh ruh-VWAR"
+    },
+    "good_morning": {
+      "text": "Bonjour",
+      "phonetic": "bon-ZHOOR"
+    },
+    "good_evening": {
+      "text": "Bonsoir",
+      "phonetic": "bon-SWAHR"
+    },
     "bathroom": {
       "text": "Où sont les toilettes ?",
       "phonetic": "oo sohn lay twa-LET?"
     },
-    "yes": { "text": "Oui", "phonetic": "Wee" },
-    "no": { "text": "Non", "phonetic": "Nohn" },
-    "sorry": { "text": "Excusez-moi", "phonetic": "ex-kew-zay MWA" },
+    "yes": {
+      "text": "Oui",
+      "phonetic": "Wee"
+    },
+    "no": {
+      "text": "Non",
+      "phonetic": "Nohn"
+    },
+    "sorry": {
+      "text": "Excusez-moi",
+      "phonetic": "ex-kew-zay MWA"
+    },
     "no_understand": {
       "text": "Je ne comprends pas",
       "phonetic": "zhuh nuh kom-prahn pah"
@@ -20,9 +44,18 @@
       "text": "Parlez-vous anglais ?",
       "phonetic": "par-lay voo ahn-GLAY?"
     },
-    "help": { "text": "Je vous en prie, aidez-moi s'il vous plaît !", "phonetic": "ʒə vuz ɑ̃ pri, ed-e mwa sil vu plɛ !" },
-    "delicious": { "text": "Délicieux !", "phonetic": "day-lee-SYUH!" },
-    "cheers": { "text": "Santé!", "phonetic": "sahn-TAY!" },
+    "help": {
+      "text": "Je vous en prie, aidez-moi s'il vous plaît !",
+      "phonetic": "ʒə vuz ɑ̃ pri, ed-e mwa sil vu plɛ !"
+    },
+    "delicious": {
+      "text": "Délicieux !",
+      "phonetic": "day-lee-SYUH!"
+    },
+    "cheers": {
+      "text": "Santé!",
+      "phonetic": "sahn-TAY!"
+    },
     "wifi_pass": {
       "text": "Mot de passe WiFi ?",
       "phonetic": "moh duh pahs WiFi?"
@@ -120,6 +153,406 @@
     "allergic_peanuts": {
       "text": "Je suis sensible aux cacahuètes.",
       "phonetic": "ʒə sɥi sɑ̃sibl o kakaˈwɛt"
+    },
+    "table_for_two": {
+      "text": "[FR TODO: A table for two, please.]",
+      "phonetic": "..."
+    },
+    "table_for_four": {
+      "text": "[FR TODO: A table for four, please.]",
+      "phonetic": "..."
+    },
+    "reservation_name": {
+      "text": "[FR TODO: I have a reservation under the name...]",
+      "phonetic": "..."
+    },
+    "order_water": {
+      "text": "[FR TODO: Can I have some water, please?]",
+      "phonetic": "..."
+    },
+    "order_tea": {
+      "text": "[FR TODO: I would like tea, please.]",
+      "phonetic": "..."
+    },
+    "order_beer": {
+      "text": "[FR TODO: Can I have a beer?]",
+      "phonetic": "..."
+    },
+    "order_wine": {
+      "text": "[FR TODO: A glass of wine, please.]",
+      "phonetic": "..."
+    },
+    "order_bread": {
+      "text": "[FR TODO: Can I have some bread?]",
+      "phonetic": "..."
+    },
+    "order_dessert": {
+      "text": "[FR TODO: What desserts do you have?]",
+      "phonetic": "..."
+    },
+    "recommend_dish": {
+      "text": "[FR TODO: What do you recommend?]",
+      "phonetic": "..."
+    },
+    "spicy_food": {
+      "text": "[FR TODO: Is this spicy?]",
+      "phonetic": "..."
+    },
+    "contains_meat": {
+      "text": "[FR TODO: Does this contain meat?]",
+      "phonetic": "..."
+    },
+    "contains_dairy": {
+      "text": "[FR TODO: Does this have dairy?]",
+      "phonetic": "..."
+    },
+    "contains_gluten": {
+      "text": "[FR TODO: Is this gluten-free?]",
+      "phonetic": "..."
+    },
+    "vegetarian_options": {
+      "text": "[FR TODO: Do you have vegetarian options?]",
+      "phonetic": "..."
+    },
+    "vegan_options": {
+      "text": "[FR TODO: Do you have vegan options?]",
+      "phonetic": "..."
+    },
+    "allergic_dairy": {
+      "text": "[FR TODO: I am allergic to dairy.]",
+      "phonetic": "..."
+    },
+    "allergic_shellfish": {
+      "text": "[FR TODO: I am allergic to shellfish.]",
+      "phonetic": "..."
+    },
+    "allergic_nuts": {
+      "text": "[FR TODO: I am allergic to nuts.]",
+      "phonetic": "..."
+    },
+    "no_sugar": {
+      "text": "[FR TODO: No sugar, please.]",
+      "phonetic": "..."
+    },
+    "no_salt": {
+      "text": "[FR TODO: No salt, please.]",
+      "phonetic": "..."
+    },
+    "more_napkins": {
+      "text": "[FR TODO: Can I have more napkins?]",
+      "phonetic": "..."
+    },
+    "fork_knife": {
+      "text": "[FR TODO: Can I have a fork and knife?]",
+      "phonetic": "..."
+    },
+    "chopsticks": {
+      "text": "[FR TODO: Can I have chopsticks?]",
+      "phonetic": "..."
+    },
+    "takeaway": {
+      "text": "[FR TODO: Can I get this to go?]",
+      "phonetic": "..."
+    },
+    "separate_bills": {
+      "text": "[FR TODO: Can we have separate bills?]",
+      "phonetic": "..."
+    },
+    "bus_to_downtown": {
+      "text": "[FR TODO: Which bus goes to downtown?]",
+      "phonetic": "..."
+    },
+    "train_schedule": {
+      "text": "[FR TODO: What time does the train leave?]",
+      "phonetic": "..."
+    },
+    "next_train": {
+      "text": "[FR TODO: When is the next train?]",
+      "phonetic": "..."
+    },
+    "last_train": {
+      "text": "[FR TODO: When is the last train?]",
+      "phonetic": "..."
+    },
+    "ticket_return": {
+      "text": "[FR TODO: A return ticket, please.]",
+      "phonetic": "..."
+    },
+    "ticket_one_way": {
+      "text": "[FR TODO: A one-way ticket, please.]",
+      "phonetic": "..."
+    },
+    "how_long_journey": {
+      "text": "[FR TODO: How long is the journey?]",
+      "phonetic": "..."
+    },
+    "which_platform": {
+      "text": "[FR TODO: Which platform?]",
+      "phonetic": "..."
+    },
+    "validate_ticket": {
+      "text": "[FR TODO: Where do I validate my ticket?]",
+      "phonetic": "..."
+    },
+    "miss_my_stop": {
+      "text": "[FR TODO: I missed my stop.]",
+      "phonetic": "..."
+    },
+    "get_off_here": {
+      "text": "[FR TODO: I need to get off here.]",
+      "phonetic": "..."
+    },
+    "directions_museum": {
+      "text": "[FR TODO: How do I get to the museum?]",
+      "phonetic": "..."
+    },
+    "directions_hotel": {
+      "text": "[FR TODO: How do I get to this hotel?]",
+      "phonetic": "..."
+    },
+    "how_far": {
+      "text": "[FR TODO: How far is it?]",
+      "phonetic": "..."
+    },
+    "walking_distance": {
+      "text": "[FR TODO: Is it walking distance?]",
+      "phonetic": "..."
+    },
+    "turn_left": {
+      "text": "[FR TODO: Turn left.]",
+      "phonetic": "..."
+    },
+    "turn_right": {
+      "text": "[FR TODO: Turn right.]",
+      "phonetic": "..."
+    },
+    "straight_ahead": {
+      "text": "[FR TODO: Go straight ahead.]",
+      "phonetic": "..."
+    },
+    "taxi_to_airport": {
+      "text": "[FR TODO: Can you take me to the airport?]",
+      "phonetic": "..."
+    },
+    "uber_available": {
+      "text": "[FR TODO: Is Uber available here?]",
+      "phonetic": "..."
+    },
+    "check_in": {
+      "text": "[FR TODO: I would like to check in.]",
+      "phonetic": "..."
+    },
+    "check_out": {
+      "text": "[FR TODO: I would like to check out.]",
+      "phonetic": "..."
+    },
+    "key_card": {
+      "text": "[FR TODO: My key card is not working.]",
+      "phonetic": "..."
+    },
+    "room_number": {
+      "text": "[FR TODO: What is my room number?]",
+      "phonetic": "..."
+    },
+    "breakfast_included": {
+      "text": "[FR TODO: Is breakfast included?]",
+      "phonetic": "..."
+    },
+    "breakfast_time": {
+      "text": "[FR TODO: What time is breakfast?]",
+      "phonetic": "..."
+    },
+    "wifi_password": {
+      "text": "[FR TODO: What is the WiFi password?]",
+      "phonetic": "..."
+    },
+    "extra_towels": {
+      "text": "[FR TODO: Can I have extra towels?]",
+      "phonetic": "..."
+    },
+    "extra_pillows": {
+      "text": "[FR TODO: Can I have extra pillows?]",
+      "phonetic": "..."
+    },
+    "extra_blanket": {
+      "text": "[FR TODO: Can I have an extra blanket?]",
+      "phonetic": "..."
+    },
+    "room_cleaning": {
+      "text": "[FR TODO: Can you clean my room?]",
+      "phonetic": "..."
+    },
+    "do_not_disturb": {
+      "text": "[FR TODO: Please do not disturb.]",
+      "phonetic": "..."
+    },
+    "wake_up_call": {
+      "text": "[FR TODO: Can I have a wake-up call at 7 AM?]",
+      "phonetic": "..."
+    },
+    "late_checkout": {
+      "text": "[FR TODO: Can I have a late checkout?]",
+      "phonetic": "..."
+    },
+    "extend_stay": {
+      "text": "[FR TODO: Can I extend my stay?]",
+      "phonetic": "..."
+    },
+    "air_conditioning_broken": {
+      "text": "[FR TODO: The air conditioning is not working.]",
+      "phonetic": "..."
+    },
+    "toilet_broken": {
+      "text": "[FR TODO: The toilet is broken.]",
+      "phonetic": "..."
+    },
+    "no_hot_water": {
+      "text": "[FR TODO: There is no hot water.]",
+      "phonetic": "..."
+    },
+    "room_too_cold": {
+      "text": "[FR TODO: The room is too cold.]",
+      "phonetic": "..."
+    },
+    "room_too_hot": {
+      "text": "[FR TODO: The room is too hot.]",
+      "phonetic": "..."
+    },
+    "how_much_this": {
+      "text": "[FR TODO: How much is this?]",
+      "phonetic": "..."
+    },
+    "too_expensive": {
+      "text": "[FR TODO: That's too expensive.]",
+      "phonetic": "..."
+    },
+    "discount": {
+      "text": "[FR TODO: Do you have a discount?]",
+      "phonetic": "..."
+    },
+    "accept_cards": {
+      "text": "[FR TODO: Do you accept credit cards?]",
+      "phonetic": "..."
+    },
+    "pay_cash": {
+      "text": "[FR TODO: Can I pay with cash?]",
+      "phonetic": "..."
+    },
+    "receipt_please": {
+      "text": "[FR TODO: Can I have a receipt?]",
+      "phonetic": "..."
+    },
+    "try_this_on": {
+      "text": "[FR TODO: Can I try this on?]",
+      "phonetic": "..."
+    },
+    "fitting_room": {
+      "text": "[FR TODO: Where is the fitting room?]",
+      "phonetic": "..."
+    },
+    "size_small": {
+      "text": "[FR TODO: Do you have this in small?]",
+      "phonetic": "..."
+    },
+    "size_medium": {
+      "text": "[FR TODO: Do you have this in medium?]",
+      "phonetic": "..."
+    },
+    "size_large": {
+      "text": "[FR TODO: Do you have this in large?]",
+      "phonetic": "..."
+    },
+    "different_color": {
+      "text": "[FR TODO: Do you have this in a different color?]",
+      "phonetic": "..."
+    },
+    "return_this": {
+      "text": "[FR TODO: Can I return this?]",
+      "phonetic": "..."
+    },
+    "exchange_this": {
+      "text": "[FR TODO: Can I exchange this?]",
+      "phonetic": "..."
+    },
+    "gift_wrap": {
+      "text": "[FR TODO: Can you gift wrap this?]",
+      "phonetic": "..."
+    },
+    "need_doctor": {
+      "text": "[FR TODO: I need a doctor.]",
+      "phonetic": "..."
+    },
+    "need_ambulance": {
+      "text": "[FR TODO: I need an ambulance.]",
+      "phonetic": "..."
+    },
+    "call_police": {
+      "text": "[FR TODO: Please call the police.]",
+      "phonetic": "..."
+    },
+    "been_robbed": {
+      "text": "[FR TODO: I have been robbed.]",
+      "phonetic": "..."
+    },
+    "lost_passport": {
+      "text": "[FR TODO: I lost my passport.]",
+      "phonetic": "..."
+    },
+    "lost_wallet": {
+      "text": "[FR TODO: I lost my wallet.]",
+      "phonetic": "..."
+    },
+    "lost_phone": {
+      "text": "[FR TODO: I lost my phone.]",
+      "phonetic": "..."
+    },
+    "feeling_sick": {
+      "text": "[FR TODO: I am feeling sick.]",
+      "phonetic": "..."
+    },
+    "have_fever": {
+      "text": "[FR TODO: I have a fever.]",
+      "phonetic": "..."
+    },
+    "have_pain": {
+      "text": "[FR TODO: I am in pain.]",
+      "phonetic": "..."
+    },
+    "allergic_reaction": {
+      "text": "[FR TODO: I am having an allergic reaction.]",
+      "phonetic": "..."
+    },
+    "need_medication": {
+      "text": "[FR TODO: I need medication.]",
+      "phonetic": "..."
+    },
+    "prescription": {
+      "text": "[FR TODO: I have a prescription.]",
+      "phonetic": "..."
+    },
+    "embassy_location": {
+      "text": "[FR TODO: Where is my country's embassy?]",
+      "phonetic": "..."
+    },
+    "emergency_contact": {
+      "text": "[FR TODO: Please contact my emergency contact.]",
+      "phonetic": "..."
+    },
+    "where_from": {
+      "text": "[FR TODO: Where are you from?]",
+      "phonetic": "..."
+    },
+    "nice_meet_you": {
+      "text": "[FR TODO: Nice to meet you.]",
+      "phonetic": "..."
+    },
+    "speak_little": {
+      "text": "[FR TODO: I speak a little...]",
+      "phonetic": "..."
+    },
+    "how_are_you": {
+      "text": "[FR TODO: How are you?]",
+      "phonetic": "..."
     }
   }
 }
