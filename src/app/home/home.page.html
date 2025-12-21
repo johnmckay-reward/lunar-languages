@@ -100,17 +100,7 @@
     </div>
   </div>
 
-  <div class="ion-padding-start ion-padding-end ion-margin-top">
-
-    <div class="scroll-horizontal ion-margin-bottom">
-      <ion-chip
-        *ngFor="let cat of categories"
-        [color]="selectedCategory === cat ? 'primary' : 'medium'"
-        [outline]="selectedCategory !== cat"
-        (click)="filterNouns(cat)">
-        <ion-label>{{ cat }}</ion-label>
-      </ion-chip>
-    </div>
+  <div class="ion-padding-start ion-padding-end ion-margin-top" *ngIf="selectedStarter" id="complete-phrase-section">
 
     <p class="section-label">2. Complete Phrase</p>
 

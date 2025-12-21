@@ -97,20 +97,17 @@
   }
 }
 
-/* --- CATEGORY CHIPS (Fixing the Tiny Circles) --- */
+/* --- CATEGORY CHIPS (Removed) --- */
+/*
 ion-chip {
-  /* CRITICAL FIX: prevents the chip from being crushed */
   flex-shrink: 0;
-
   height: 36px;
   font-size: 0.9rem;
-  padding-inline: 16px; /* Internal breathing room */
-  margin: 0; /* Handled by scroll-horizontal gap */
-
+  padding-inline: 16px;
+  margin: 0;
   --background: rgba(var(--ion-color-secondary-rgb), 0.1);
   --color: var(--ion-text-color);
 
-  /* Ensure text is always readable */
   ion-label {
     overflow: visible;
     white-space: nowrap;
@@ -122,6 +119,7 @@ ion-chip[color="primary"] {
   --color: white;
   font-weight: 600;
 }
+*/
 
 /* =========================================
    4. LAYOUT & GRID

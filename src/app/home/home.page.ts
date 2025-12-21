@@ -21,12 +21,9 @@ export class HomePage implements OnInit {
   // This is what we actually show on screen (Filtered)
   visibleNouns: Phrase[] = [];
 
-  categories: string[] = [];
-
   // --- Selection State ---
   selectedStarter: Phrase | null = null;
   selectedNoun: Phrase | null = null;
-  selectedCategory: string = 'All';
   currentLanguage: LanguageInfo | null = null;
   currentAudioId: string | null = null;
 
@@ -66,11 +63,6 @@ export class HomePage implements OnInit {
   loadLanguage(code: string) {
     this.dataService.loadLanguage(code).subscribe(() => {
       this.loadData();
-
-      // Auto-select first starter
-      if (this.starters.length > 0) {
-        this.selectStarter(this.starters[0]);
-      }
     });
   }
 
@@ -121,10 +113,6 @@ export class HomePage implements OnInit {
 
     // Load ALL nouns once into memory
     this.allNouns = this.dataService.getNouns();
-
-    // Setup categories
-    const serviceCats = this.dataService.getCategories();
-    this.categories = ['All', ...serviceCats.filter(cat => cat !== undefined)];
   }
 
   // ============================================
@@ -134,31 +122,20 @@ export class HomePage implements OnInit {
   /**
    * Refreshes the grid based on:
    * 1. The selected Starter (Where is vs. I am allergic)
-   * 2. The selected Category Chip (Food vs. Tech)
    */
   updateVisibleNouns() {
     if (!this.selectedStarter) return;
 
     this.visibleNouns = this.allNouns.filter(noun => {
-      // 1. Check Category Filter
-      const matchesCategory = this.selectedCategory === 'All' || noun.category === this.selectedCategory;
-
-      // 2. Check Logic Validity (Does "Starter + Noun" exist?)
+      // Check Logic Validity (Does "Starter + Noun" exist?)
       const isValid = this.dataService.isValidCombination(this.selectedStarter!.id, noun.id);
-
-      return matchesCategory && isValid;
+      return isValid;
     });
   }
 
   // ============================================
   // USER ACTIONS
   // ============================================
-
-  filterNouns(category: string) {
-    Haptics.impact({ style: ImpactStyle.Light });
-    this.selectedCategory = category;
-    this.updateVisibleNouns(); // Re-run filter
-  }
 
   selectStarter(starter: Phrase) {
     Haptics.impact({ style: ImpactStyle.Light });
@@ -170,6 +147,14 @@ export class HomePage implements OnInit {
     this.updateVisibleNouns();
 
     this.updateDisplay();
+
+    // Smooth scroll to the complete phrase section
+    setTimeout(() => {
+      const element = document.getElementById('complete-phrase-section');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 100);
   }
 
   selectNoun(noun: Phrase) {
