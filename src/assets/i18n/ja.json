@@ -25,7 +25,7 @@
     },
     "help": { "text": "助けて！", "phonetic": "Tah-soo-keh-teh!" },
     "delicious": { "text": "美味しい！", "phonetic": "Oh-ee-shee!" },
-    "cheers": { "text": "乾杯！", "phonetic": "Kan-pie!" },
+    "cheers": { "text": "お祝いの乾杯をしましょう！", "phonetic": "O-i-wa-i no Kan-pai o shi-ma-sho-u" },
     "wifi_pass": {
       "text": "WiFiのパスワードは？",
       "phonetic": "WiFi no pah-soo-wah-doh wa?"

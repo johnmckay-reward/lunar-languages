@@ -9,27 +9,17 @@ const inquirer = require('inquirer').default;
 const I18N_DIR = path.join(__dirname, 'src/assets/i18n');
 const AUDIO_DIR = path.join(__dirname, 'src/assets/audio');
 
-const RETRY_LIMIT = 2;         // Retries for the SAME text before giving up
+const RETRY_LIMIT = 2;
 const SIMILARITY_THRESHOLD = 85;
-const ENABLE_AI_REPAIR = true; // Set to false if you don't want GPT-4 modifying your JSON
+const ENABLE_AI_REPAIR = true;
 
-// OpenAI Pricing (Approximate for TTS-1-HD)
 const PRICE_PER_1K_CHARS = 0.030;
 
-// 🗣️ SMART VOICE MAPPING (Fully Expanded)
+// 🗣️ SMART VOICE MAPPING
 const VOICE_MAP = {
-  de: 'onyx',    // German: Deep & Authoritative
-  en: 'echo',    // English: Warm & Neutral
-  es: 'alloy',   // Spanish: Bright & Clear
-  fr: 'nova',    // French: Elegant & Natural
-  it: 'shimmer', // Italian: Expressive
-  ja: 'alloy',   // Japanese: Clear & Precise
-  pl: 'alloy',   // Polish: Good articulation
-  pt: 'fable',   // Portuguese: Steady & Narrative
-  ru: 'onyx',    // Russian: Serious & Grounded
-  uk: 'nova',    // Ukrainian: Clear & Direct
-  zh: 'shimmer', // Chinese: Handles tones reasonably well
-  default: 'echo'
+  de: 'onyx',    en: 'echo',    es: 'alloy',   fr: 'nova',    it: 'shimmer',
+  ja: 'alloy',   pl: 'alloy',   pt: 'fable',   ru: 'onyx',    uk: 'nova',
+  zh: 'shimmer', default: 'echo'
 };
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
@@ -58,11 +48,9 @@ function calculateSimilarity(original, transcribed) {
   const normOriginal = normalizeText(original);
   const normTranscribed = normalizeText(transcribed);
 
-  // 1. Standard Check
   const standardScore = getScore(normOriginal, normTranscribed);
   if (standardScore >= SIMILARITY_THRESHOLD) return standardScore;
 
-  // 2. Squash Check (removes all spaces)
   const squashOriginal = normOriginal.replace(/\s+/g, '');
   const squashTranscribed = normTranscribed.replace(/\s+/g, '');
   const squashScore = getScore(squashOriginal, squashTranscribed);
@@ -70,30 +58,40 @@ function calculateSimilarity(original, transcribed) {
   return Math.max(standardScore, squashScore);
 }
 
-// 🛠️ WRITES CHANGES TO DISK
+// 🩹 SURGICAL UPDATE (Regex-based)
 function updateSourceFile(fileName, section, key, newText, newPhonetic) {
   const filePath = path.join(I18N_DIR, fileName);
   try {
-    const content = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    let fileContent = fs.readFileSync(filePath, 'utf8');
 
-    if (content[section] && content[section][key]) {
-      content[section][key].text = newText;
-      content[section][key].phonetic = newPhonetic;
+    const replaceInKeyBlock = (content, targetKey, field, newValue) => {
+      const regex = new RegExp(
+        `("${targetKey}"\\s*:\\s*\\{[^}]*?"${field}"\\s*:\\s*")([^"]*)(")`,
+        's'
+      );
+      return content.replace(regex, `$1${newValue}$3`);
+    };
 
-      fs.writeFileSync(filePath, JSON.stringify(content, null, 2), 'utf8');
+    let updatedContent = replaceInKeyBlock(fileContent, key, 'text', newText);
+    updatedContent = replaceInKeyBlock(updatedContent, key, 'phonetic', newPhonetic);
+
+    if (fileContent !== updatedContent) {
+      fs.writeFileSync(filePath, updatedContent, 'utf8');
       console.log(`      💾 Source JSON updated: ${fileName}`);
       return true;
+    } else {
+      console.warn(`      ⚠️  Could not locate key "${key}" to update.`);
+      return false;
     }
   } catch (err) {
     console.error(`      ❌ Failed to update JSON: ${err.message}`);
+    return false;
   }
-  return false;
 }
 
-// 🤖 AI REPAIR LOGIC
+// 🤖 AI REPAIR LOGIC (Strict Mode)
 async function repairPhraseWithAI(item, currentText, langCode) {
   console.log(`      🤖 Asking AI to rephrase "${currentText}"...`);
-
   try {
     const completion = await openai.chat.completions.create({
       model: "gpt-4o",
@@ -101,24 +99,23 @@ async function repairPhraseWithAI(item, currentText, langCode) {
       messages: [
         {
           role: "system",
-          content: `You are a linguistic expert. A phrase in language '${langCode}' is failing audio verification (TTS vs Whisper).
+          content: `You are a linguistic expert helper for a TTS (Text-to-Speech) system.
 
-          Your goal: Provide an alternative phrasing that:
-          1. Retains the EXACT same meaning.
-          2. Is more "standard" or phonetically distinct so AI hears it clearly.
-          3. Provide a phonetic pronunciation guide for English speakers.
+          Context: A phrase in language '${langCode}' failed verification (the AI voice wasn't understood by the AI listener).
 
-          Return JSON format: { "text": "New Phrase", "phonetic": "Phon-ET-ic" }`
+          Goal: Suggest an alternative phrasing *IN THE SAME LANGUAGE (${langCode})* that is clearer, more formal, or phonetically distinct, while keeping the exact same meaning.
+
+          STRICT RULES:
+          1. The "text" field MUST be in '${langCode}'. Do NOT use English (unless '${langCode}' is 'en').
+          2. Do not change the meaning.
+          3. Provide a new phonetic guide.
+
+          Return JSON: { "text": "New Phrase (in ${langCode})", "phonetic": "Phon-ET-ic" }`
         },
-        {
-          role: "user",
-          content: `The failing phrase is: "${currentText}". Fix it.`
-        }
+        { role: "user", content: `The failing phrase is: "${currentText}". Fix it.` }
       ]
     });
-
-    const result = JSON.parse(completion.choices[0].message.content);
-    return result;
+    return JSON.parse(completion.choices[0].message.content);
   } catch (error) {
     console.error(`      ❌ AI Repair failed: ${error.message}`);
     return null;
@@ -138,28 +135,23 @@ async function verifyAudio(filePath, originalText, langCode) {
   }
 }
 
-async function generateAudio(item, attempt = 1, isRepair = false) {
+async function generateAudio(item, attempt = 1) {
   const voice = VOICE_MAP[item.langCode] || VOICE_MAP.default;
 
   try {
     const dir = path.dirname(item.outputPath);
     if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 
-    if (!isRepair && attempt === 1) {
-      console.log(`\n🔹 [${item.langCode.toUpperCase()}] ${item.id} (Voice: ${voice})`);
-    } else if (isRepair) {
-       console.log(`   🛠️  Generating repaired version...`);
-    }
+    if (attempt === 1) console.log(`\n🔹 [${item.langCode.toUpperCase()}] ${item.id} (Voice: ${voice})`);
 
     // 1. Generate
+    if (attempt === 1) console.log(`   🎤 Generating...`);
     const mp3 = await openai.audio.speech.create({
       model: "tts-1-hd",
       voice: voice,
       input: item.text
     });
-
-    const buffer = Buffer.from(await mp3.arrayBuffer());
-    await fs.promises.writeFile(item.outputPath, buffer);
+    await fs.promises.writeFile(item.outputPath, Buffer.from(await mp3.arrayBuffer()));
 
     // 2. Verify
     process.stdout.write(`   👂 Verifying... `);
@@ -173,36 +165,62 @@ async function generateAudio(item, attempt = 1, isRepair = false) {
       // A. Standard Retry
       if (attempt <= RETRY_LIMIT) {
         console.log(`      🔄 Retrying (Attempt ${attempt + 1}/${RETRY_LIMIT + 1})...`);
-        return generateAudio(item, attempt + 1, isRepair);
+        return generateAudio(item, attempt + 1);
       }
 
-      // B. AI Repair (If enabled)
-      else if (ENABLE_AI_REPAIR && !isRepair) {
+      // B. AI Repair (TRANSACTION SAFE)
+      else if (ENABLE_AI_REPAIR) {
         console.log(`   🛑 All retries failed.`);
 
         const correction = await repairPhraseWithAI(item, item.text, item.langCode);
 
         if (correction && correction.text) {
           console.log(`      ✨ AI Suggestion: "${correction.text}"`);
+          console.log(`      🧪 Testing suggestion before saving...`);
 
-          const section = item.id.split('.')[0];
-          const key = item.id.split('.')[1];
+          // --- TEST RUN START ---
+          try {
+            // 1. Generate Audio for Suggestion
+            const testMp3 = await openai.audio.speech.create({
+              model: "tts-1-hd", voice: voice, input: correction.text
+            });
+            await fs.promises.writeFile(item.outputPath, Buffer.from(await testMp3.arrayBuffer()));
 
-          const saved = updateSourceFile(item.fileName, section, key, correction.text, correction.phonetic);
+            // 2. Verify Suggestion
+            const testResult = await verifyAudio(item.outputPath, correction.text, item.langCode);
 
-          if (saved) {
-            item.text = correction.text; // Update memory
-            stats.repaired++;
-            return generateAudio(item, 1, true); // Restart with new text
+            // 3. DECISION MOMENT
+            if (testResult.score >= SIMILARITY_THRESHOLD) {
+              console.log(`      ✅ Suggestion Verified (${testResult.score.toFixed(0)}%)! Committing changes...`);
+
+              const section = item.id.split('.')[0];
+              const key = item.id.split('.')[1];
+              updateSourceFile(item.fileName, section, key, correction.text, correction.phonetic);
+
+              stats.repaired++;
+            } else {
+              console.warn(`      ❌ Suggestion also failed verification (${testResult.score.toFixed(0)}%).`);
+              console.warn(`         Reverting: JSON NOT updated. File deleted.`);
+              await fs.promises.unlink(item.outputPath);
+              stats.failed++;
+            }
+          } catch (testErr) {
+            console.error(`      ❌ Error during test run: ${testErr.message}`);
+            stats.failed++;
           }
+          // --- TEST RUN END ---
+
+        } else {
+            console.error(`      ❌ FAILED: No AI suggestion available. Deleting file.`);
+            try { await fs.promises.unlink(item.outputPath); } catch (e) {}
+            stats.failed++;
         }
+      } else {
+        // C. Ultimate Failure
+        console.error(`      ❌ FAILED: Deleting file.`);
+        try { await fs.promises.unlink(item.outputPath); } catch (e) {}
+        stats.failed++;
       }
-
-      // C. Ultimate Failure
-      console.error(`      ❌ FAILED: Deleting file.`);
-      try { await fs.promises.unlink(item.outputPath); } catch (e) {}
-      stats.failed++;
-
     } else {
       console.log(`✅ Verified`);
       stats.success++;
