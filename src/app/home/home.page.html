@@ -15,19 +15,30 @@
   <div class="display-wrapper ion-padding">
     <div class="glass-panel ion-padding ion-text-center">
 
-      <p class="ion-text-uppercase ion-text-small text-muted ion-no-margin">
-        {{ displayEnglish }}
-      </p>
+      <ng-container *ngIf="displayNative; else placeholder">
+        <p class="ion-text-uppercase ion-text-small text-muted ion-no-margin">
+          {{ displayEnglish }}
+        </p>
 
-      <h1 class="text-hero-native">{{ displayNative }}</h1>
+        <h1 class="text-hero-native">{{ displayNative }}</h1>
 
-      <p class="text-phonetic">{{ displayPhonetic }}</p>
+        <p class="text-phonetic">{{ displayPhonetic }}</p>
+      </ng-container>
+
+      <ng-template #placeholder>
+        <div class="placeholder-content ion-padding-top ion-padding-bottom">
+          <ion-icon name="chatbubbles-outline" style="font-size: 48px; color: var(--ion-color-medium); opacity: 0.4;"></ion-icon>
+          <p class="ion-text-muted ion-margin-top" style="font-size: 0.9rem;">
+            Select an option below to start
+          </p>
+        </div>
+      </ng-template>
 
       <div class="phonetic-guide-box" *ngIf="currentLanguage">
         <p>{{ currentLanguage.phoneticGuide }}</p>
       </div>
 
-      <div class="ion-margin-top">
+      <div class="ion-margin-top" *ngIf="currentAudioId">
         <ion-button
           fill="solid"
           shape="round"

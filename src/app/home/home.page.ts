@@ -28,9 +28,9 @@ export class HomePage implements OnInit {
   currentAudioId: string | null = null;
 
   // --- Display State ---
-  displayEnglish: string = 'Hello';
-  displayNative: string = '你好';
-  displayPhonetic: string = 'Nǐ hǎo';
+  displayEnglish: string = '';
+  displayNative: string = '';
+  displayPhonetic: string = '';
 
   isModalOpen = false;
   showWelcomeScreen = false;
