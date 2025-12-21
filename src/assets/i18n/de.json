@@ -14,7 +14,7 @@
     "help": { "text": "Hilfe!", "phonetic": "HIL-fuh!" },
     "delicious": { "text": "Lecker!", "phonetic": "LEH-ker!" },
     "cheers": { "text": "Prost!", "phonetic": "Prohst!" },
-    "wifi_pass": { "text": "WLAN-Passwort?", "phonetic": "VAY-lahn pass-vort?" },
+    "wifi_pass": { "text": "Internet-Passwort?", "phonetic": "IN-ter-net pass-vort?" },
     "slowly": { "text": "Bitte sprechen Sie langsamer", "phonetic": "BIT-uh SHPREH-khen zee LANG-zah-mer" }
   },
   "combinations": {
@@ -31,7 +31,7 @@
     "like_coffee": { "text": "Ich hätte gern einen Kaffee.", "phonetic": "ich HET-uh gairn eye-nen KA-fay." },
     "like_menu": { "text": "Die Speisekarte, bitte.", "phonetic": "dee SHPY-ze-kar-tuh, BIT-uh." },
     "like_bill": { "text": "Die Rechnung, bitte.", "phonetic": "dee REKH-nung, BIT-uh." },
-    "have_wifi": { "text": "Haben Sie WLAN?", "phonetic": "HA-ben zee VAY-lahn?" },
+    "have_wifi": { "text": "Haben Sie Internet?", "phonetic": "HA-ben zee IN-ter-net?" },
     "have_room": { "text": "Haben Sie ein Zimmer frei?", "phonetic": "HA-ben zee ine TSIM-er fry?" },
     "have_charger": { "text": "Haben Sie ein Ladegerät?", "phonetic": "HA-ben zee ine LAH-deh-ge-rayt?" },
     "have_menu": { "text": "Haben Sie eine Karte auf Englisch?", "phonetic": "HA-ben zee eye-nuh KAR-tuh owf ENG-lish?" },
