@@ -5,40 +5,115 @@
     "goodbye": { "text": "Adeus", "phonetic": "ah-DEH-oosh" },
     "good_morning": { "text": "Bom dia", "phonetic": "bom DEE-ah" },
     "good_evening": { "text": "Boa noite", "phonetic": "BOH-ah NOY-teh" },
-    "bathroom": { "text": "Onde fica a casa de banho?", "phonetic": "ON-deh FEE-kah ah KAH-zah deh BAHN-yoo?" },
+    "bathroom": {
+      "text": "Onde fica a casa de banho?",
+      "phonetic": "ON-deh FEE-kah ah KAH-zah deh BAHN-yoo?"
+    },
     "yes": { "text": "Sim", "phonetic": "Seem" },
     "no": { "text": "Não", "phonetic": "Now" },
     "sorry": { "text": "Desculpe", "phonetic": "des-KOOL-peh" },
     "no_understand": { "text": "Não entendo", "phonetic": "now en-TEN-doo" },
-    "speak_english": { "text": "Fala inglês?", "phonetic": "FAH-lah een-GLEHSH?" },
+    "speak_english": {
+      "text": "Fala inglês?",
+      "phonetic": "FAH-lah een-GLEHSH?"
+    },
     "help": { "text": "Ajuda!", "phonetic": "ah-ZHOO-dah!" },
     "delicious": { "text": "Delicioso!", "phonetic": "deh-lee-SYOH-zoo!" },
     "cheers": { "text": "Saúde!", "phonetic": "sah-OO-deh!" },
-    "wifi_pass": { "text": "Password do WiFi?", "phonetic": "PASS-word doo WiFi?" },
-    "slowly": { "text": "Fale mais devagar, por favor", "phonetic": "FAH-leh mys deh-vah-GAR, poor fah-VOR" }
+    "wifi_pass": {
+      "text": "Password do WiFi?",
+      "phonetic": "PASS-word doo WiFi?"
+    },
+    "slowly": {
+      "text": "Fale mais devagar, por favor",
+      "phonetic": "FAH-leh mys deh-vah-GAR, poor fah-VOR"
+    }
   },
   "combinations": {
-    "where_station": { "text": "Onde fica a estação?", "phonetic": "ON-deh FEE-kah ah es-tah-SOWN?" },
-    "where_airport": { "text": "Onde fica o aeroporto?", "phonetic": "ON-deh FEE-kah oo ah-eh-roh-POR-too?" },
-    "where_ticket": { "text": "Onde posso comprar um bilhete?", "phonetic": "ON-deh POS-soo kom-PRAR oom beel-YEH-teh?" },
-    "where_taxi": { "text": "Onde fica a praça de táxis?", "phonetic": "ON-deh FEE-kah ah PRAH-sah deh TAK-seesh?" },
-    "where_atm": { "text": "Onde fica o multibanco?", "phonetic": "ON-deh FEE-kah oo mool-tee-BAN-koo?" },
-    "where_pharmacy": { "text": "Onde fica a farmácia?", "phonetic": "ON-deh FEE-kah ah far-MAH-syah?" },
-    "where_doctor": { "text": "Onde fica um médico?", "phonetic": "ON-deh FEE-kah oom MEH-dee-koo?" },
-    "like_ticket": { "text": "Queria um bilhete, por favor.", "phonetic": "keh-REE-ah oom beel-YEH-teh, poor fah-VOR." },
-    "like_taxi": { "text": "Queria um táxi, por favor.", "phonetic": "keh-REE-ah oom TAK-see, poor fah-VOR." },
-    "like_water": { "text": "Queria água, por favor.", "phonetic": "keh-REE-ah AH-gwah, poor fah-VOR." },
-    "like_coffee": { "text": "Queria um café.", "phonetic": "keh-REE-ah oom kah-FEH." },
-    "like_menu": { "text": "Queria o menu, por favor.", "phonetic": "keh-REE-ah oo meh-NOO, poor fah-VOR." },
-    "like_bill": { "text": "A conta, por favor.", "phonetic": "ah KON-tah, poor fah-VOR." },
+    "where_station": {
+      "text": "Onde fica a estação?",
+      "phonetic": "ON-deh FEE-kah ah es-tah-SOWN?"
+    },
+    "where_airport": {
+      "text": "Onde fica o aeroporto?",
+      "phonetic": "ON-deh FEE-kah oo ah-eh-roh-POR-too?"
+    },
+    "where_ticket": {
+      "text": "Onde posso comprar um bilhete?",
+      "phonetic": "ON-deh POS-soo kom-PRAR oom beel-YEH-teh?"
+    },
+    "where_taxi": {
+      "text": "Onde fica a praça de táxis?",
+      "phonetic": "ON-deh FEE-kah ah PRAH-sah deh TAK-seesh?"
+    },
+    "where_atm": {
+      "text": "Onde fica o multibanco?",
+      "phonetic": "ON-deh FEE-kah oo mool-tee-BAN-koo?"
+    },
+    "where_pharmacy": {
+      "text": "Onde fica a farmácia?",
+      "phonetic": "ON-deh FEE-kah ah far-MAH-syah?"
+    },
+    "where_doctor": {
+      "text": "Onde fica um médico?",
+      "phonetic": "ON-deh FEE-kah oom MEH-dee-koo?"
+    },
+    "like_ticket": {
+      "text": "Queria um bilhete, por favor.",
+      "phonetic": "keh-REE-ah oom beel-YEH-teh, poor fah-VOR."
+    },
+    "like_taxi": {
+      "text": "Queria um táxi, por favor.",
+      "phonetic": "keh-REE-ah oom TAK-see, poor fah-VOR."
+    },
+    "like_water": {
+      "text": "Queria água, por favor.",
+      "phonetic": "keh-REE-ah AH-gwah, poor fah-VOR."
+    },
+    "like_coffee": {
+      "text": "Queria um café.",
+      "phonetic": "keh-REE-ah oom kah-FEH."
+    },
+    "like_menu": {
+      "text": "Queria o menu, por favor.",
+      "phonetic": "keh-REE-ah oo meh-NOO, poor fah-VOR."
+    },
+    "like_bill": {
+      "text": "A conta, por favor.",
+      "phonetic": "ah KON-tah, poor fah-VOR."
+    },
     "have_wifi": { "text": "Tem WiFi?", "phonetic": "teng WiFi?" },
-    "have_room": { "text": "Tem um quarto livre?", "phonetic": "teng oom KWAR-too LEE-vreh?" },
-    "have_charger": { "text": "Tem um carregador?", "phonetic": "teng oom kah-reh-gah-DOR?" },
-    "have_menu": { "text": "Tem um menu em inglês?", "phonetic": "teng oom meh-NOO em een-GLEHSH?" },
-    "cost_ticket": { "text": "Quanto custa um bilhete?", "phonetic": "KWAN-too KOOSH-tah oom beel-YEH-teh?" },
-    "cost_taxi": { "text": "Quanto custa o táxi?", "phonetic": "KWAN-too KOOSH-tah oo TAK-see?" },
-    "cost_room": { "text": "Quanto custa o quarto?", "phonetic": "KWAN-too KOOSH-tah oo KWAR-too?" },
-    "cost_coffee": { "text": "Quanto custa um café?", "phonetic": "KWAN-too KOOSH-tah oom kah-FEH?" },
-    "allergic_peanuts": { "text": "Sou alérgico a amendoins.", "phonetic": "soh ah-LEHR-jee-koo ah ah-men-DOH-eens." }
+    "have_room": {
+      "text": "Tem um quarto livre?",
+      "phonetic": "teng oom KWAR-too LEE-vreh?"
+    },
+    "have_charger": {
+      "text": "Tem um carregador?",
+      "phonetic": "teng oom kah-reh-gah-DOR?"
+    },
+    "have_menu": {
+      "text": "Tem um menu em inglês?",
+      "phonetic": "teng oom meh-NOO em een-GLEHSH?"
+    },
+    "cost_ticket": {
+      "text": "Quanto custa um bilhete?",
+      "phonetic": "KWAN-too KOOSH-tah oom beel-YEH-teh?"
+    },
+    "cost_taxi": {
+      "text": "Quanto custa o táxi?",
+      "phonetic": "KWAN-too KOOSH-tah oo TAK-see?"
+    },
+    "cost_room": {
+      "text": "Quanto custa o quarto?",
+      "phonetic": "KWAN-too KOOSH-tah oo KWAR-too?"
+    },
+    "cost_coffee": {
+      "text": "Quanto custa um café?",
+      "phonetic": "KWAN-too KOOSH-tah oom kah-FEH?"
+    },
+    "allergic_peanuts": {
+      "text": "Sou alérgico a amendoins.",
+      "phonetic": "soh ah-LEHR-jee-koo ah ah-men-DOH-eens."
+    }
   }
 }
