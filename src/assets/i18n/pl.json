@@ -13,7 +13,7 @@
       "phonetic": "Gdjeh yest wah-ZHEN-kah?"
     },
     "yes": { "text": "Tak", "phonetic": "Tak" },
-    "no": { "text": "Nie", "phonetic": "Nyeh" },
+    "no": { "text": "Niestety", "phonetic": "nyeh-steh-ty" },
     "sorry": { "text": "Przepraszam", "phonetic": "Psheh-PRAH-sham" },
     "no_understand": {
       "text": "Nie rozumiem",
@@ -23,7 +23,7 @@
       "text": "Czy mówisz po angielsku?",
       "phonetic": "Chy MOO-vish poh an-GYEL-skoo?"
     },
-    "help": { "text": "Pomocy!", "phonetic": "Poh-MOH-tsy!" },
+    "help": { "text": "Proszę o pomoc!", "phonetic": "Proh-sheh oh po-mots" },
     "delicious": { "text": "Pyszne!", "phonetic": "PYSH-neh!" },
     "cheers": { "text": "Na zdrowie!", "phonetic": "Nah ZDROH-vyeh!" },
     "wifi_pass": { "text": "Hasło do WiFi?", "phonetic": "HAS-woh doh WiFi?" },
@@ -107,8 +107,8 @@
       "phonetic": "EE-leh kosh-TOO-yeh tak-SOOV-kah?"
     },
     "cost_room": {
-      "text": "Ile kosztuje pokój?",
-      "phonetic": "EE-leh kosh-TOO-yeh POH-kooy?"
+      "text": "Jaka jest cena za wynajęcie pokoju?",
+      "phonetic": "Yah-kah yest tseh-nah zah vyn-ah-yen-tyeh po-koh-yu?"
     },
     "cost_coffee": {
       "text": "Ile kosztuje kawa?",

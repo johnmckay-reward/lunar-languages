@@ -90,16 +90,16 @@
       "phonetic": "ah-VEH-teh eel WiFi?"
     },
     "have_room": {
-      "text": "Avete una camera libera?",
-      "phonetic": "ah-VEH-teh OO-nah KAH-meh-rah LEE-beh-rah?"
+      "text": "Possegui una stanza disponibile?",
+      "phonetic": "Pos-se-gui u-na stan-za di-spo-ni-bi-le?"
     },
     "have_charger": {
       "text": "Ha un caricabatterie?",
       "phonetic": "ah oon kah-ree-kah-bat-TEH-ryeh?"
     },
     "have_menu": {
-      "text": "Ha un menù in inglese?",
-      "phonetic": "ah oon meh-NOO een een-GLEH-zeh?"
+      "text": "Dispone di un menù in inglese?",
+      "phonetic": "Dispoh-neh dee oon meh-noo een een-gleh-zeh?"
     },
     "cost_ticket": {
       "text": "Quanto costa un biglietto?",

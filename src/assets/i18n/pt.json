@@ -9,7 +9,7 @@
       "text": "Onde fica a casa de banho?",
       "phonetic": "ON-deh FEE-kah ah KAH-zah deh BAHN-yoo?"
     },
-    "yes": { "text": "Sim", "phonetic": "Seem" },
+    "yes": { "text": "Certamente", "phonetic": "ser-tah-men-teh" },
     "no": { "text": "Não", "phonetic": "Now" },
     "sorry": { "text": "Desculpe", "phonetic": "des-KOOL-peh" },
     "no_understand": { "text": "Não entendo", "phonetic": "now en-TEN-doo" },
@@ -17,7 +17,7 @@
       "text": "Fala inglês?",
       "phonetic": "FAH-lah een-GLEHSH?"
     },
-    "help": { "text": "Ajuda!", "phonetic": "ah-ZHOO-dah!" },
+    "help": { "text": "Socorro!", "phonetic": "so-KOR-ro" },
     "delicious": { "text": "Delicioso!", "phonetic": "deh-lee-SYOH-zoo!" },
     "cheers": { "text": "Saúde!", "phonetic": "sah-OO-deh!" },
     "wifi_pass": {
@@ -88,12 +88,12 @@
       "phonetic": "teng oom KWAR-too LEE-vreh?"
     },
     "have_charger": {
-      "text": "Tem um carregador?",
-      "phonetic": "teng oom kah-reh-gah-DOR?"
+      "text": "Você tem um carregador?",
+      "phonetic": "Vo-sê tem um ka-rre-ga-dor?"
     },
     "have_menu": {
-      "text": "Tem um menu em inglês?",
-      "phonetic": "teng oom meh-NOO em een-GLEHSH?"
+      "text": "Existe um cardápio em inglês?",
+      "phonetic": "Eh-zis-che oon car-dah-pi-u em inglays?"
     },
     "cost_ticket": {
       "text": "Quanto custa um bilhete?",

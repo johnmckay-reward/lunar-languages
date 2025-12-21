@@ -35,8 +35,8 @@
   "combinations": {
     "where_station": { "text": "Где вокзал?", "phonetic": "Gdyeh vahk-ZAHL?" },
     "where_airport": {
-      "text": "Где аэропорт?",
-      "phonetic": "Gdyeh ah-eh-rah-PORT?"
+      "text": "Где находится аэропорт?",
+      "phonetic": "Gde nakhoditsya aeroport?"
     },
     "where_ticket": {
       "text": "Где можно купить билет?",
@@ -51,7 +51,7 @@
       "text": "Где аптека?",
       "phonetic": "Gdyeh ahp-TYEH-kah?"
     },
-    "where_doctor": { "text": "Где врач?", "phonetic": "Gdyeh vrach?" },
+    "where_doctor": { "text": "Можете сказать, где находится доктор?", "phonetic": "Mozhete skazat', gde nakhoditsya doktor?" },
     "like_ticket": {
       "text": "Я хотел бы билет, пожалуйста.",
       "phonetic": "Ya khah-TYEL by bee-LYET, pah-ZHAH-loo-stah."

@@ -23,7 +23,7 @@
       "text": "英語を話せますか？",
       "phonetic": "Ey-go oh hah-nah-seh-mass kah?"
     },
-    "help": { "text": "助けて！", "phonetic": "Tah-soo-keh-teh!" },
+    "help": { "text": "助けてください！", "phonetic": "たすけてください" },
     "delicious": { "text": "美味しい！", "phonetic": "Oh-ee-shee!" },
     "cheers": { "text": "お祝いの乾杯をしましょう！", "phonetic": "O-i-wa-i no Kan-pai o shi-ma-sho-u" },
     "wifi_pass": {
@@ -117,8 +117,8 @@
       "phonetic": "Heh-yah dai wa ee-koo-rah dess kah?"
     },
     "cost_coffee": {
-      "text": "コーヒーはいくらですか？",
-      "phonetic": "Koh-hee wa ee-koo-rah dess kah?"
+      "text": "コーヒーのお値段はどれくらいですか？",
+      "phonetic": "コーヒー の おねだん は どれ くらい です か？"
     },
     "allergic_peanuts": {
       "text": "私はピーナッツアレルギーです。",

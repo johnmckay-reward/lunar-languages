@@ -20,7 +20,7 @@
       "text": "Parlez-vous anglais ?",
       "phonetic": "par-lay voo ahn-GLAY?"
     },
-    "help": { "text": "Aidez-moi !", "phonetic": "ay-day MWA!" },
+    "help": { "text": "Je vous en prie, aidez-moi s'il vous plaît !", "phonetic": "ʒə vuz ɑ̃ pri, ed-e mwa sil vu plɛ !" },
     "delicious": { "text": "Délicieux !", "phonetic": "day-lee-SYUH!" },
     "cheers": { "text": "Santé!", "phonetic": "sahn-TAY!" },
     "wifi_pass": {
@@ -118,8 +118,8 @@
       "phonetic": "kom-BYEN koot uhn ka-FAY?"
     },
     "allergic_peanuts": {
-      "text": "Je suis allergique aux arachides.",
-      "phonetic": "zhuh swee ah-ler-ZHEEK oh ah-rah-SHEED."
+      "text": "Je suis sensible aux cacahuètes.",
+      "phonetic": "ʒə sɥi sɑ̃sibl o kakaˈwɛt"
     }
   }
 }

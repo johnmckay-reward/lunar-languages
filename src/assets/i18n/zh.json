@@ -9,7 +9,7 @@
       "text": "洗手间在哪里？",
       "phonetic": "Xǐshǒujiān zài nǎli?"
     },
-    "yes": { "text": "是 / 对", "phonetic": "Shì / Duì" },
+    "yes": { "text": "当然是正确的", "phonetic": "dāngrán shì zhèngquè de" },
     "no": { "text": "不", "phonetic": "Bù" },
     "sorry": { "text": "不好意思", "phonetic": "Bù hǎoyìsi" },
     "no_understand": { "text": "我听不懂", "phonetic": "Wǒ tīng bù dǒng" },
@@ -33,8 +33,8 @@
       "phonetic": "Jīchǎng zài nǎli?"
     },
     "where_ticket": {
-      "text": "哪里可以买票？",
-      "phonetic": "Nǎli kěyǐ mǎi piào?"
+      "text": "请问在哪里可以买到票？",
+      "phonetic": "Qǐng wèn zài nǎlǐ kěyǐ mǎidào piào?"
     },
     "where_taxi": {
       "text": "出租车站在哪里？",
@@ -45,7 +45,7 @@
       "text": "药店在哪里？",
       "phonetic": "Yàodiàn zài nǎli?"
     },
-    "where_doctor": { "text": "哪里有医生？", "phonetic": "Nǎli yǒu yīshēng?" },
+    "where_doctor": { "text": "这个地方有医生吗？", "phonetic": "Zhège dìfāng yǒu yīshēng ma?" },
     "like_ticket": {
       "text": "我想要一张票。",
       "phonetic": "Wǒ xiǎng yào yī zhāng piào."
@@ -64,10 +64,10 @@
     },
     "like_menu": { "text": "请给我菜单。", "phonetic": "Qǐng gěi wǒ càidān." },
     "like_bill": { "text": "买单，谢谢。", "phonetic": "Mǎidān, xièxie." },
-    "have_wifi": { "text": "你们有WiFi吗？", "phonetic": "Nǐmen yǒu WiFi ma?" },
+    "have_wifi": { "text": "请问这里提供无线网络吗？", "phonetic": "Qǐng wèn zhè lǐ tí gōng wú xiàn wǎng luò ma?" },
     "have_room": {
-      "text": "你们有空房间吗？",
-      "phonetic": "Nǐmen yǒu kòng fángjiān ma?"
+      "text": "请问，你们这里还有空房间吗？",
+      "phonetic": "Qǐngwèn, nǐmen zhèlǐ hái yǒu kōng fángjiān ma?"
     },
     "have_charger": {
       "text": "你有充电器吗？",
