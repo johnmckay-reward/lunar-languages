@@ -20,13 +20,13 @@
     "help": { "text": "帮帮我!", "phonetic": "Bāng bāng wǒ!" },
     "delicious": { "text": "好吃!", "phonetic": "Hǎochī!" },
     "cheers": { "text": "干杯!", "phonetic": "Gānbēi!" },
-    "wifi_pass": { "text": "WiFi密码？", "phonetic": "WiFi mìmǎ?" },
+    "wifi_pass": { "text": "无线路由器密码是什么？", "phonetic": "Wúxiàn lùyóuqì mìmǎ shì shénme?" },
     "slowly": { "text": "请说慢一点", "phonetic": "Qǐng shuō màn yīdiǎn" }
   },
   "combinations": {
     "where_station": {
-      "text": "火车站在哪里？",
-      "phonetic": "Huǒchē zhàn zài nǎli?"
+      "text": "请问火车站位置在哪儿？",
+      "phonetic": "Qǐng wèn huǒ chē zhàn wèi zhì zài nǎr?"
     },
     "where_airport": {
       "text": "机场在哪里？",

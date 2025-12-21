@@ -84,8 +84,8 @@
     },
     "have_wifi": { "text": "Tem internet sem fio?", "phonetic": "tẽ in-ter-nét sêñ fí-o" },
     "have_room": {
-      "text": "Tem um quarto livre?",
-      "phonetic": "teng oom KWAR-too LEE-vreh?"
+      "text": "Há um cômodo disponível?",
+      "phonetic": "Ah oon kô-moh-doo dis-pon-í-vel?"
     },
     "have_charger": {
       "text": "Você tem um carregador?",

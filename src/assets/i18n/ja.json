@@ -24,7 +24,7 @@
       "phonetic": "Ey-go oh hah-nah-seh-mass kah?"
     },
     "help": { "text": "助けてください！", "phonetic": "たすけてください" },
-    "delicious": { "text": "美味しい！", "phonetic": "Oh-ee-shee!" },
+    "delicious": { "text": "これは美味しいですね！", "phonetic": "Kore wa oishii desu ne!" },
     "cheers": { "text": "お祝いの乾杯をしましょう！", "phonetic": "O-i-wa-i no Kan-pai o shi-ma-sho-u" },
     "wifi_pass": {
       "text": "WiFiのパスワードは？",
@@ -65,8 +65,8 @@
       "phonetic": "Byo-in wa doh-koh dess kah?"
     },
     "like_ticket": {
-      "text": "切符をください。",
-      "phonetic": "Keep-poo oh koo-dah-sigh."
+      "text": "切符をお願いします。",
+      "phonetic": "きっぷをおねがいします。"
     },
     "like_taxi": {
       "text": "タクシーをお願いします。",
