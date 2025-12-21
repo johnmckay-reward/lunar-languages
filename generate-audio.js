@@ -46,14 +46,37 @@ function normalizeText(text) {
     .trim();
 }
 
-function calculateSimilarity(original, transcribed) {
-  const normOriginal = normalizeText(original);
-  const normTranscribed = normalizeText(transcribed);
-  if (normOriginal === normTranscribed) return 100;
-  const distance = levenshtein.get(normOriginal, normTranscribed);
-  const maxLength = Math.max(normOriginal.length, normTranscribed.length);
+// --- HELPER FUNCTIONS ---
+
+// 1. Calculates the raw percentage based on Levenshtein distance
+function getScore(str1, str2) {
+  if (str1 === str2) return 100;
+  const distance = levenshtein.get(str1, str2);
+  const maxLength = Math.max(str1.length, str2.length);
   if (maxLength === 0) return 100;
   return (1 - distance / maxLength) * 100;
+}
+
+// 2. The "Smart" Similarity Check
+function calculateSimilarity(original, transcribed) {
+  // A. Standard Normalization (keeps single spaces)
+  const normOriginal = normalizeText(original);
+  const normTranscribed = normalizeText(transcribed);
+
+  const standardScore = getScore(normOriginal, normTranscribed);
+
+  // If it passes immediately, great!
+  if (standardScore >= SIMILARITY_THRESHOLD) return standardScore;
+
+  // B. "Squash" Strategy (Removes ALL spaces)
+  // This fixes "Де туалет" vs "Дітуалет" or "l'hotel" vs "lhotel"
+  const squashOriginal = normOriginal.replace(/\s+/g, '');
+  const squashTranscribed = normTranscribed.replace(/\s+/g, '');
+
+  const squashScore = getScore(squashOriginal, squashTranscribed);
+
+  // Return the higher of the two scores
+  return Math.max(standardScore, squashScore);
 }
 
 function getTranslationEntries(filename) {
