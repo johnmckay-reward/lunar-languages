@@ -9,10 +9,22 @@ const inquirer = require('inquirer').default;
 const I18N_DIR = path.join(__dirname, 'src/assets/i18n');
 const AUDIO_DIR = path.join(__dirname, 'src/assets/audio');
 const RETRY_LIMIT = 2;
-const SIMILARITY_THRESHOLD = 80;
+const SIMILARITY_THRESHOLD = 85;
 
 // OpenAI Pricing (Approximate for TTS-1-HD)
 const PRICE_PER_1K_CHARS = 0.030;
+
+// 🗣️ SMART VOICE MAPPING
+// Automatically picks the best voice for the language tone
+const VOICE_MAP = {
+  es: 'alloy',   // Spanish: Bright & Clear
+  fr: 'nova',    // French: Elegant & Natural
+  de: 'onyx',    // German: Deep & Authoritative
+  it: 'shimmer', // Italian: Expressive
+  pt: 'fable',   // Portuguese: Steady & Neutral
+  en: 'echo',    // English: Warm (if needed)
+  default: 'echo' // Fallback
+};
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
@@ -20,7 +32,6 @@ const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 const stats = {
   success: 0,
   failed: 0,
-  skipped: 0,
   totalCost: 0
 };
 
@@ -88,12 +99,15 @@ async function verifyAudio(filePath, originalText, langCode) {
   }
 }
 
-async function generateAudio(item, voice, attempt = 1) {
+async function generateAudio(item, attempt = 1) {
+  // 1. Resolve Voice Automatically
+  const voice = VOICE_MAP[item.langCode] || VOICE_MAP.default;
+
   try {
     const dir = path.dirname(item.outputPath);
     if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 
-    console.log(`\n🔹 [${item.langCode.toUpperCase()}] ${item.id}`);
+    console.log(`\n🔹 [${item.langCode.toUpperCase()}] ${item.id} (Voice: ${voice})`);
     console.log(`   🎤 Generating...`);
 
     const mp3 = await openai.audio.speech.create({
@@ -113,7 +127,7 @@ async function generateAudio(item, voice, attempt = 1) {
 
       if (attempt <= RETRY_LIMIT) {
         console.log(`   🔄 Retrying (Attempt ${attempt + 1}/${RETRY_LIMIT + 1})...`);
-        return generateAudio(item, voice, attempt + 1);
+        return generateAudio(item, attempt + 1);
       } else {
         console.error(`   ❌ FAILED: Deleting invalid file.`);
         try { await fs.promises.unlink(item.outputPath); } catch (e) {}
@@ -144,18 +158,9 @@ async function processQueue(queue) {
   console.log(`\n💰 ESTIMATE:`);
   console.log(`   Items: ${queue.length}`);
   console.log(`   Chars: ${totalChars}`);
-  console.log(`   Cost:  ~$${estCost.toFixed(4)} (TTS-HD only)`);
+  console.log(`   Cost:  ~$${estCost.toFixed(4)} (TTS-HD)`);
 
-  // 2. Select Voice
-  const { voice } = await inquirer.prompt([{
-    type: 'list',
-    name: 'voice',
-    message: 'Select a voice:',
-    choices: ['echo', 'alloy', 'fable', 'onyx', 'nova', 'shimmer'],
-    default: 'echo'
-  }]);
-
-  // 3. Confirm
+  // 2. Confirm
   const { proceed } = await inquirer.prompt([{
     type: 'confirm', name: 'proceed', message: 'Ready to start?', default: true
   }]);
@@ -166,12 +171,13 @@ async function processQueue(queue) {
   const startTime = Date.now();
 
   for (const item of queue) {
-    await generateAudio(item, voice);
+    // Pass only item; generateAudio handles voice selection internally now
+    await generateAudio(item);
   }
 
   const duration = ((Date.now() - startTime) / 1000).toFixed(1);
 
-  // 4. Summary Report
+  // 3. Summary Report
   console.log(`\n════════════════════════════════════════`);
   console.log(` 🎉 OPERATION COMPLETE (${duration}s)`);
   console.log(`════════════════════════════════════════`);
