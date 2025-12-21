@@ -20,7 +20,7 @@
       "text": "¿Habla inglés?",
       "phonetic": "AH-blah een-GLEHS?"
     },
-    "help": { "text": "¡Ayuda!", "phonetic": "ah-YOO-dah!" },
+    "help": { "text": "¡Socorro!", "phonetic": "so-KOR-ro" },
     "delicious": { "text": "¡Delicioso!", "phonetic": "deh-lee-SYO-soh!" },
     "cheers": { "text": "¡Salud!", "phonetic": "sah-LOOD!" },
     "wifi_pass": {
@@ -42,8 +42,8 @@
       "phonetic": "DON-deh ehs-TAH el ah-eh-roh-PWER-toh?"
     },
     "where_ticket": {
-      "text": "¿Dónde puedo comprar un boleto?",
-      "phonetic": "DON-deh PWEH-doh com-PRAR oon boh-LEH-toh?"
+      "text": "¿En qué lugar puedo adquirir un boleto?",
+      "phonetic": "¿En qué lu-gar pue-do ad-qui-rir un bo-le-to?"
     },
     "where_taxi": {
       "text": "¿Dónde está la parada de taxis?",

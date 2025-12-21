@@ -16,8 +16,8 @@
     "no": { "text": "いいえ", "phonetic": "Ee-eh" },
     "sorry": { "text": "すみません", "phonetic": "Soo-mee-mah-sen" },
     "no_understand": {
-      "text": "分かりません",
-      "phonetic": "Wah-kah-ree-mah-sen"
+      "text": "理解できません",
+      "phonetic": "りかいできません"
     },
     "speak_english": {
       "text": "英語を話せますか？",
@@ -89,8 +89,8 @@
       "phonetic": "Oh-kah-ee-kay oh oh-neh-guy-she-mass."
     },
     "have_wifi": {
-      "text": "WiFiはありますか？",
-      "phonetic": "Wy-fy wa ah-ree-mass kah?"
+      "text": "ワイヤレスインターネットはありますか？",
+      "phonetic": "wireless internet wa arimasu ka?"
     },
     "have_room": {
       "text": "空いている部屋はありますか？",
@@ -105,8 +105,8 @@
       "phonetic": "Eh-go no men-yoo wa ah-ree-mass kah?"
     },
     "cost_ticket": {
-      "text": "切符はいくらですか？",
-      "phonetic": "Keep-poo wa ee-koo-rah dess kah?"
+      "text": "チケットはいくらですか？",
+      "phonetic": "chiketto wa ikura desu ka?"
     },
     "cost_taxi": {
       "text": "タクシー代はいくらですか？",

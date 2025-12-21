@@ -12,7 +12,7 @@
     "yes": { "text": "当然是正确的", "phonetic": "dāngrán shì zhèngquè de" },
     "no": { "text": "不", "phonetic": "Bù" },
     "sorry": { "text": "不好意思", "phonetic": "Bù hǎoyìsi" },
-    "no_understand": { "text": "我听不懂", "phonetic": "Wǒ tīng bù dǒng" },
+    "no_understand": { "text": "我无法理解", "phonetic": "Wǒ wúfǎ lǐjiě" },
     "speak_english": {
       "text": "你会说英语吗？",
       "phonetic": "Nǐ huì shuō yīngyǔ ma?"
@@ -70,8 +70,8 @@
       "phonetic": "Qǐngwèn, nǐmen zhèlǐ hái yǒu kōng fángjiān ma?"
     },
     "have_charger": {
-      "text": "你有充电器吗？",
-      "phonetic": "Nǐ yǒu chōngdiànqì ma?"
+      "text": "请问你有手机充电器吗？",
+      "phonetic": "Qǐngwèn nǐ yǒu shǒujī chōngdiànqì ma?"
     },
     "have_menu": {
       "text": "你有英文菜单吗？",

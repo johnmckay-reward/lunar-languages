@@ -21,7 +21,7 @@
       "phonetic": "PAR-lah een-GLEH-zeh?"
     },
     "help": { "text": "Aiuto!", "phonetic": "ah-YOO-toh!" },
-    "delicious": { "text": "Delizioso!", "phonetic": "deh-lee-TSYOH-zoh!" },
+    "delicious": { "text": "Assolutamente delizioso!", "phonetic": "As-so-lu-ta-men-te de-li-zio-so" },
     "cheers": { "text": "Salute!", "phonetic": "sah-LOO-teh!" },
     "wifi_pass": {
       "text": "Password del WiFi?",

@@ -76,7 +76,7 @@
       "text": "Рахунок, будь ласка.",
       "phonetic": "Rah-KHOO-nok, bood LAS-kah."
     },
-    "have_wifi": { "text": "У вас є WiFi?", "phonetic": "Oo vas yeh WiFi?" },
+    "have_wifi": { "text": "Чи маєте ви бездротовий інтернет?", "phonetic": "Chy mayete vy bezdrotovyy internet?" },
     "have_room": {
       "text": "У вас є вільна кімната?",
       "phonetic": "Oo vas yeh VIL-nah kim-NAH-tah?"
