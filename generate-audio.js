@@ -9,31 +9,31 @@ const inquirer = require('inquirer').default;
 const I18N_DIR = path.join(__dirname, 'src/assets/i18n');
 const AUDIO_DIR = path.join(__dirname, 'src/assets/audio');
 const RETRY_LIMIT = 2;
-const SIMILARITY_THRESHOLD = 80;
+const SIMILARITY_THRESHOLD = 85;
 
 // OpenAI Pricing (Approximate for TTS-1-HD)
 const PRICE_PER_1K_CHARS = 0.030;
 
 // 🗣️ SMART VOICE MAPPING
-// Automatically picks the best voice for the language tone
+// Optimized for local accents and intonation
 const VOICE_MAP = {
-  es: 'alloy',   // Spanish: Bright & Clear
-  fr: 'nova',    // French: Elegant & Natural
   de: 'onyx',    // German: Deep & Authoritative
-  it: 'shimmer', // Italian: Expressive
-  pt: 'fable',   // Portuguese: Steady & Neutral
-  en: 'echo',    // English: Warm (if needed)
-  default: 'echo' // Fallback
+  en: 'echo',    // English: Warm & Neutral
+  es: 'alloy',   // Spanish: Bright & Clear (Handles speed well)
+  fr: 'nova',    // French: Elegant & Natural
+  it: 'shimmer', // Italian: Expressive & Melodic
+  ja: 'alloy',   // Japanese: Neutral & Clear
+  pl: 'alloy',   // Polish: Clear articulation
+  pt: 'fable',   // Portuguese: Steady & Narrative
+  ru: 'onyx',    // Russian: Serious & Grounded
+  uk: 'nova',    // Ukrainian: Clear & Direct
+  zh: 'shimmer', // Chinese: Handles tones well
+  default: 'echo'
 };
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-// --- STATE TRACKING ---
-const stats = {
-  success: 0,
-  failed: 0,
-  totalCost: 0
-};
+const stats = { success: 0, failed: 0, totalCost: 0 };
 
 // --- HELPER FUNCTIONS ---
 
@@ -46,9 +46,7 @@ function normalizeText(text) {
     .trim();
 }
 
-// --- HELPER FUNCTIONS ---
-
-// 1. Calculates the raw percentage based on Levenshtein distance
+// Internal helper for raw score calculation
 function getScore(str1, str2) {
   if (str1 === str2) return 100;
   const distance = levenshtein.get(str1, str2);
@@ -57,25 +55,22 @@ function getScore(str1, str2) {
   return (1 - distance / maxLength) * 100;
 }
 
-// 2. The "Smart" Similarity Check
+// 🧠 "Smart" Similarity Check (Standard + Squash Strategy)
 function calculateSimilarity(original, transcribed) {
-  // A. Standard Normalization (keeps single spaces)
+  // A. Standard Normalization
   const normOriginal = normalizeText(original);
   const normTranscribed = normalizeText(transcribed);
 
   const standardScore = getScore(normOriginal, normTranscribed);
-
-  // If it passes immediately, great!
   if (standardScore >= SIMILARITY_THRESHOLD) return standardScore;
 
   // B. "Squash" Strategy (Removes ALL spaces)
-  // This fixes "Де туалет" vs "Дітуалет" or "l'hotel" vs "lhotel"
+  // Fixes concatenation issues like "Де туалет" -> "Дітуалет"
   const squashOriginal = normOriginal.replace(/\s+/g, '');
   const squashTranscribed = normTranscribed.replace(/\s+/g, '');
 
   const squashScore = getScore(squashOriginal, squashTranscribed);
 
-  // Return the higher of the two scores
   return Math.max(standardScore, squashScore);
 }
 
@@ -123,7 +118,6 @@ async function verifyAudio(filePath, originalText, langCode) {
 }
 
 async function generateAudio(item, attempt = 1) {
-  // 1. Resolve Voice Automatically
   const voice = VOICE_MAP[item.langCode] || VOICE_MAP.default;
 
   try {
@@ -174,7 +168,6 @@ async function processQueue(queue) {
     return;
   }
 
-  // 1. Calculate Est Cost
   const totalChars = queue.reduce((sum, item) => sum + item.text.length, 0);
   const estCost = (totalChars / 1000) * PRICE_PER_1K_CHARS;
 
@@ -183,7 +176,6 @@ async function processQueue(queue) {
   console.log(`   Chars: ${totalChars}`);
   console.log(`   Cost:  ~$${estCost.toFixed(4)} (TTS-HD)`);
 
-  // 2. Confirm
   const { proceed } = await inquirer.prompt([{
     type: 'confirm', name: 'proceed', message: 'Ready to start?', default: true
   }]);
@@ -194,13 +186,11 @@ async function processQueue(queue) {
   const startTime = Date.now();
 
   for (const item of queue) {
-    // Pass only item; generateAudio handles voice selection internally now
     await generateAudio(item);
   }
 
   const duration = ((Date.now() - startTime) / 1000).toFixed(1);
 
-  // 3. Summary Report
   console.log(`\n════════════════════════════════════════`);
   console.log(` 🎉 OPERATION COMPLETE (${duration}s)`);
   console.log(`════════════════════════════════════════`);
@@ -288,7 +278,6 @@ async function main() {
 
   if (allFiles.length === 0) { console.log("❌ No translation files found."); return; }
 
-  // 1. Mode Selection
   const { mode } = await inquirer.prompt([{
     type: 'list',
     name: 'mode',
@@ -299,7 +288,6 @@ async function main() {
     ]
   }]);
 
-  // 2. Language Selection
   let filesToProcess = [];
   const { selectionType } = await inquirer.prompt([{
     type: 'list',
@@ -324,7 +312,6 @@ async function main() {
     filesToProcess = selected;
   }
 
-  // 3. Execute
   if (mode === 'analyze') {
     await analyzeMissing(filesToProcess);
   } else {
