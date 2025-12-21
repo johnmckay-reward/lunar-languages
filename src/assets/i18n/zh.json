@@ -29,8 +29,8 @@
       "phonetic": "Qǐng wèn huǒ chē zhàn wèi zhì zài nǎr?"
     },
     "where_airport": {
-      "text": "机场在哪里？",
-      "phonetic": "Jīchǎng zài nǎli?"
+      "text": "飞机场在哪个地方？",
+      "phonetic": "Fēi jī chǎng zài nǎ gè dì fāng?"
     },
     "where_ticket": {
       "text": "请问在哪里可以买到票？",
@@ -40,7 +40,7 @@
       "text": "出租车站在哪里？",
       "phonetic": "Chūzūchē zhàn zài nǎli?"
     },
-    "where_atm": { "text": "取款机在哪里？", "phonetic": "Qǔkuǎnjī zài nǎli?" },
+    "where_atm": { "text": "提款机在什么地方？", "phonetic": "tí kuǎn jī zài shén me dì fang?" },
     "where_pharmacy": {
       "text": "药店在哪里？",
       "phonetic": "Yàodiàn zài nǎli?"

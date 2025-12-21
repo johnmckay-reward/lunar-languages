@@ -10,7 +10,7 @@ const I18N_DIR = path.join(__dirname, 'src/assets/i18n');
 const AUDIO_DIR = path.join(__dirname, 'src/assets/audio');
 
 const RETRY_LIMIT = 2;
-const SIMILARITY_THRESHOLD = 75;
+const SIMILARITY_THRESHOLD = 70;
 const ENABLE_AI_REPAIR = true;
 
 const PRICE_PER_1K_CHARS = 0.030; // approx model pricing
