@@ -63,6 +63,15 @@ export class HomePage implements OnInit {
   loadLanguage(code: string) {
     this.dataService.loadLanguage(code).subscribe(() => {
       this.loadData();
+
+      // Reset State
+      this.selectedNoun = null;
+      this.currentAudioId = null;
+
+      // Auto-select first starter
+      if (this.starters.length > 0) {
+        this.selectStarter(this.starters[0]);
+      }
     });
   }
 
