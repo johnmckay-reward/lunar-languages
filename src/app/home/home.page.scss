@@ -367,6 +367,11 @@ ion-col {
   padding: 4px 8px;
   border-radius: 6px;
   color: var(--ion-color-secondary-shade);
+
+  &.danger {
+    background: rgba(var(--ion-color-danger-rgb), 0.1);
+    color: var(--ion-color-danger);
+  }
 }
 
 /* Cultural Notes Modal */

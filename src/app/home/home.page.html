@@ -73,7 +73,7 @@
               <span class="listen-native">{{ item.text }}</span>
               <span class="listen-phonetic" *ngIf="item.phonetic">/ {{ item.phonetic }} /</span>
             </div>
-            <div class="listen-meaning">{{ item.meaning }}</div>
+            <div class="listen-meaning" [class.danger]="item.meaning.includes('Danger')">{{ item.meaning }}</div>
           </div>
         </div>
       </div>
@@ -104,7 +104,7 @@
     </div>
   </div>
 
-  <ion-modal [isOpen]="isModalOpen" (didDismiss)="setModalOpen(false)" [initialBreakpoint]="0.75" [breakpoints]="[0, 0.75]">
+  <ion-modal [isOpen]="isModalOpen" (didDismiss)="setModalOpen(false)" [initialBreakpoint]="0.75" [breakpoints]="[0, 0.75, 1]">
     <ng-template>
       <ion-header>
         <ion-toolbar>
@@ -129,7 +129,7 @@
     </ng-template>
   </ion-modal>
 
-  <ion-modal [isOpen]="isNotesModalOpen" (didDismiss)="setNotesModalOpen(false)" [initialBreakpoint]="0.75" [breakpoints]="[0, 0.75]">
+  <ion-modal [isOpen]="isNotesModalOpen" (didDismiss)="setNotesModalOpen(false)" [initialBreakpoint]="1" [breakpoints]="[0, 0.75, 1]">
     <ng-template>
       <ion-header>
         <ion-toolbar>
@@ -148,7 +148,7 @@
     </ng-template>
   </ion-modal>
 
-  <ion-modal [isOpen]="isNumbersModalOpen" (didDismiss)="setNumbersModalOpen(false)" [initialBreakpoint]="0.75" [breakpoints]="[0, 0.75]">
+  <ion-modal [isOpen]="isNumbersModalOpen" (didDismiss)="setNumbersModalOpen(false)" [initialBreakpoint]="1" [breakpoints]="[0, 0.75, 1]">
     <ng-template>
       <ion-header>
         <ion-toolbar>
