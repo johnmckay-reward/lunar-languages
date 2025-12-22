@@ -82,10 +82,39 @@
   </div>
 
   <div class="ion-padding-start ion-padding-end ion-margin-bottom">
-    <ion-button expand="block" color="secondary" shape="round" class="ion-margin-top" (click)="setModalOpen(true)">
-      <ion-icon name="flash" slot="start"></ion-icon>
-      Quick Phrases
-    </ion-button>
+    <ion-grid class="ion-no-padding">
+      <ion-row>
+        <ion-col>
+          <ion-button expand="block" color="secondary" shape="round" class="ion-margin-top" (click)="setModalOpen(true)">
+            <ion-icon name="flash" slot="start"></ion-icon>
+            Quick Phrases
+          </ion-button>
+        </ion-col>
+        <ion-col *ngIf="currentNotes.length > 0" size="auto">
+           <!-- Using size="auto" or just letting them share space.
+                If I want them 50/50, I should leave size unspecified on both cols.
+                But I want a gap. -->
+        </ion-col>
+      </ion-row>
+      <!-- Actually, let's just use two cols. If the second one is hidden, the first one takes full width?
+           No, ion-col defaults to equal width.
+           If I want the first one to be full width when the second is missing, I need to handle that.
+           But *ngIf on ion-col removes it from DOM, so the first one will take full width. Perfect.
+      -->
+    </ion-grid>
+
+    <!-- Let's retry the grid structure to be cleaner -->
+    <div style="display: flex; gap: 10px;">
+      <ion-button style="flex: 1;" expand="block" color="secondary" shape="round" class="ion-margin-top" (click)="setModalOpen(true)">
+        <ion-icon name="flash" slot="start"></ion-icon>
+        Quick Phrases
+      </ion-button>
+
+      <ion-button *ngIf="currentNotes.length > 0" style="flex: 1;" expand="block" color="tertiary" shape="round" class="ion-margin-top" (click)="setNotesModalOpen(true)">
+        <ion-icon name="book-outline" slot="start"></ion-icon>
+        Culture
+      </ion-button>
+    </div>
   </div>
 
   <ion-modal [isOpen]="isModalOpen" (didDismiss)="setModalOpen(false)" [initialBreakpoint]="0.75" [breakpoints]="[0, 0.75]">
@@ -109,6 +138,25 @@
             <ion-icon name="chevron-forward" slot="end" color="medium"></ion-icon>
           </ion-item>
         </ion-list>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+  <ion-modal [isOpen]="isNotesModalOpen" (didDismiss)="setNotesModalOpen(false)" [initialBreakpoint]="0.75" [breakpoints]="[0, 0.75]">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Cultural Notes</ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="setNotesModalOpen(false)">Close</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <div *ngFor="let note of currentNotes" class="note-card ion-margin-bottom">
+          <h3 class="note-title">{{ note.title }}</h3>
+          <p class="note-content">{{ note.content }}</p>
+        </div>
       </ion-content>
     </ng-template>
   </ion-modal>

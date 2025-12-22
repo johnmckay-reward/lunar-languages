@@ -2,6 +2,12 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActionSheetController, IonContent } from '@ionic/angular';
 import { Haptics, ImpactStyle } from '@capacitor/haptics';
 import { DataService, Phrase, LanguageInfo } from '../data-service';
+import * as culturalNotesData from '../cultural-notes.json';
+
+interface CulturalNote {
+  title: string;
+  content: string;
+}
 
 @Component({
   selector: 'app-home',
@@ -26,6 +32,7 @@ export class HomePage implements OnInit {
   selectedNoun: Phrase | null = null;
   currentLanguage: LanguageInfo | null = null;
   currentAudioId: string | null = null;
+  currentNotes: CulturalNote[] = [];
 
   // --- Display State ---
   displayEnglish: string = '';
@@ -33,6 +40,7 @@ export class HomePage implements OnInit {
   displayPhonetic: string = '';
 
   isModalOpen = false;
+  isNotesModalOpen = false;
   showWelcomeScreen = false;
 
   @ViewChild(IonContent) content!: IonContent;
@@ -44,6 +52,10 @@ export class HomePage implements OnInit {
 
   setModalOpen(isOpen: boolean) {
     this.isModalOpen = isOpen;
+  }
+
+  setNotesModalOpen(isOpen: boolean) {
+    this.isNotesModalOpen = isOpen;
   }
 
   ngOnInit() {
@@ -63,6 +75,9 @@ export class HomePage implements OnInit {
   loadLanguage(code: string) {
     this.dataService.loadLanguage(code).subscribe(() => {
       this.loadData();
+
+      // Load Notes
+      this.currentNotes = (culturalNotesData as any)[code] || (culturalNotesData as any).default?.[code] || [];
 
       // Reset State
       this.selectedNoun = null;

@@ -2,7 +2,23 @@
   "es": [
     {
       "title": "Dialect: Latin America vs. Spain",
-      "content": "The Spanish provided here leans towards Latin American (Mexican) usage. For example, 'Boleto' (Ticket) is used instead of the Spain-standard 'Billete', and 'Cacahuates' (Peanuts) instead of 'Cacahuetes'. However, it will be understood perfectly in Spain."
+      "content": "The Spanish provided here leans towards Latin American usage. For example, 'Boleto' (Ticket) is used instead of the Spain-standard 'Billete'. However, it is understood perfectly everywhere."
+    },
+    {
+      "title": "The Ambiguity of \"Ahorita\"",
+      "content": "You will hear 'Ahorita' (little now) constantly. Be warned: it is indefinite. It can mean 'right now', 'in 10 minutes', or 'eventually'. Context is key."
+    },
+    {
+      "title": "Social Manners: \"Buen Provecho\"",
+      "content": "It is polite to say 'Buen provecho' (Enjoy your meal) when entering a restaurant or walking past someone who is eating. It is a standard courtesy."
+    },
+    {
+      "title": "Polite \"What?\"",
+      "content": "In Mexico and parts of Latin America, saying '¿Qué?' (What?) can sound rude. It is much more polite to say '¿Mande?' (Command me?) or '¿Cómo?' when you didn't hear someone."
+    },
+    {
+      "title": "Getting the Bill",
+      "content": "In many Spanish-speaking cultures, it is considered rude to bring the bill before it is requested (it implies rushing you). You must signal the waiter and ask for 'La cuenta'."
     }
   ],
   "de": [
@@ -17,24 +33,28 @@
     {
       "title": "The Polite No",
       "content": "Germans are direct but polite. They often soften a refusal with the word 'Leider' (Unfortunately)."
+    },
+    {
+      "title": "Sunday Quiet",
+      "content": "Be aware that on Sundays (Ruhetag), almost all shops and supermarkets are closed. Restaurants usually remain open."
     }
   ],
   "fr": [
     {
-      "title": "\"Avec ceci ?\"",
-      "content": "Literally 'With this?', this is the standard phrase in every boulangerie or shop to ask if you want to buy more things."
+      "title": "The \"Bonjour\" Rule",
+      "content": "This is critical: You MUST say 'Bonjour' (or 'Bonsoir') immediately upon entering a shop. If you don't, you are considered invisible or rude, and service may suffer."
     },
     {
-      "title": "Stay or Go?",
-      "content": "You will often be asked 'Sur place ou à emporter ?' (On site or to take away?). Prices are sometimes higher if you sit down ('Sur place')."
+      "title": "\"Avec ceci ?\"",
+      "content": "Literally 'With this?', this is the standard phrase in every boulangerie or shop to ask if you want to buy more things."
     },
     {
       "title": "\"Voilà\"",
       "content": "French people use this constantly when handing you something (a menu, your change, your coffee). It signifies the completion of an action."
     },
     {
-      "title": "Sold Out",
-      "content": "If a bakery runs out of croissants, they won't usually say 'Sold out,' they will say 'C'est terminé' (It is finished)."
+      "title": "Water is Free",
+      "content": "You can always ask for a 'Carafe d'eau' (Jug of water) in a restaurant. It is tap water, perfectly safe, and free. 'Eau minérale' will cost you money."
     }
   ],
   "it": [
@@ -47,15 +67,19 @@
       "content": "The magic phrase of Italian service. You will hear it every time a waiter sets down a plate or gives you change. It roughly means 'Here is [item] for you.'"
     },
     {
-      "title": "Bancomat",
-      "content": "In Italy, people rarely say 'Credit Card'. They usually refer to the card machine or the debit card generically as 'Bancomat'."
+      "title": "Coperto",
+      "content": "Don't be surprised to see a 'Coperto' charge on your bill. It is a standard cover charge (usually €1-3 per person) for sitting down, bread, and silverware."
     },
     {
-      "title": "Directions",
-      "content": "'Sempre dritto' means 'Always straight', implying you should keep going straight for a while and not stop."
+      "title": "Coffee Rules",
+      "content": "Cappuccino is strictly a breakfast drink. Ordering one after 11 AM (especially after a meal) identifies you immediately as a tourist."
     }
   ],
   "ja": [
+    {
+      "title": "NO Tipping",
+      "content": "Tipping is not practiced in Japan and can be considered rude or confusing. The price is the price. If you leave money, they may run after you to return it."
+    },
     {
       "title": "Take Out",
       "content": "In Japan, they rarely say 'Take away.' You will likely be asked 'Tennai?' (Inside store) or 'Mochikaeri?' (Take home)."
@@ -67,10 +91,6 @@
     {
       "title": "Customizing Food",
       "content": "Use the suffix 'nuki' to remove an ingredient. For example, 'Wasabi-nuki' means 'Without Wasabi'."
-    },
-    {
-      "title": "Cash Only",
-      "content": "While improving, many ramen shops and ticket machines still say 'Genkin Nomi' (Cash Only)."
     }
   ],
   "pl": [
@@ -97,16 +117,16 @@
       "content": "In Portugal, you don't usually ask if they take 'card'. You ask for 'Multibanco', the specific name of their interbank network."
     },
     {
+      "title": "Couvert",
+      "content": "In restaurants, waiters bring appetizers (olives, bread, cheese) automatically. These are NOT free. If you eat them, you pay for them. If you don't want them, just leave them untouched."
+    },
+    {
       "title": "Sold Out",
       "content": "Similar to French, if a bakery runs out of items, they will simply say 'Acabou' (It ended)."
     },
     {
       "title": "Ingredients",
       "content": "When describing ingredients, Portuguese speakers often use the verb 'levar' (to take/carry). E.g., 'This dish takes peanuts.'"
-    },
-    {
-      "title": "Pronunciation",
-      "content": "European Portuguese speakers often 'eat' their vowels. For example, 'Esquerda' sounds like 'sh-KER-dah' and 'Temos' sounds like 'TEH-moosh'."
     }
   ],
   "ru": [
@@ -139,6 +159,10 @@
     {
       "title": "Take Away",
       "content": "Like other Slavic languages, takeout is referred to as taking the food 'Z soboyu' (with yourself)."
+    },
+    {
+      "title": "Politeness",
+      "content": "Ukrainians value politeness. Using 'Bud laska' (Please) and 'Dyakuyu' (Thank you) frequently is expected."
     }
   ],
   "zh": [
@@ -157,6 +181,10 @@
     {
       "title": "Sold Out",
       "content": "'Mai wan le' (Sold out) is definitive. You will hear this frequently for popular items."
+    },
+    {
+      "title": "No Tipping",
+      "content": "Like Japan, tipping is not part of the culture in Mainland China. It is not expected in restaurants or taxis."
     }
   ]
 }

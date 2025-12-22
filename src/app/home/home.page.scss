@@ -368,3 +368,25 @@ ion-col {
   border-radius: 6px;
   color: var(--ion-color-secondary-shade);
 }
+
+/* Cultural Notes Modal */
+.note-card {
+  background: var(--ion-color-light);
+  border-radius: 16px;
+  padding: 16px;
+  
+  .note-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--ion-color-dark);
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+
+  .note-content {
+    font-size: 1rem;
+    color: var(--ion-color-medium);
+    line-height: 1.5;
+    margin: 0;
+  }
+}
