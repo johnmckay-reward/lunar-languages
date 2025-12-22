@@ -1,17 +1,41 @@
 {
   "essentials": {
-    "hello": { "text": "Bonjour", "phonetic": "bon-ZHOOR" },
-    "thanks": { "text": "Merci", "phonetic": "mehr-SEE" },
-    "goodbye": { "text": "Au revoir", "phonetic": "oh ruh-VWAR" },
-    "good_morning": { "text": "Bonjour", "phonetic": "bon-ZHOOR" },
-    "good_evening": { "text": "Bonsoir", "phonetic": "bon-SWAHR" },
+    "hello": {
+      "text": "Bonjour",
+      "phonetic": "bon-ZHOOR"
+    },
+    "thanks": {
+      "text": "Merci",
+      "phonetic": "mehr-SEE"
+    },
+    "goodbye": {
+      "text": "Au revoir",
+      "phonetic": "oh ruh-VWAR"
+    },
+    "good_morning": {
+      "text": "Bonjour",
+      "phonetic": "bon-ZHOOR"
+    },
+    "good_evening": {
+      "text": "Bonsoir",
+      "phonetic": "bon-SWAHR"
+    },
     "bathroom": {
       "text": "Où sont les toilettes ?",
       "phonetic": "oo sohn lay twa-LET?"
     },
-    "yes": { "text": "Oui", "phonetic": "Wee" },
-    "no": { "text": "Non", "phonetic": "Nohn" },
-    "sorry": { "text": "Excusez-moi", "phonetic": "ex-kew-zay MWA" },
+    "yes": {
+      "text": "Oui",
+      "phonetic": "Wee"
+    },
+    "no": {
+      "text": "Non",
+      "phonetic": "Nohn"
+    },
+    "sorry": {
+      "text": "Excusez-moi",
+      "phonetic": "ex-kew-zay MWA"
+    },
     "no_understand": {
       "text": "Je ne comprends pas",
       "phonetic": "zhuh nuh kom-prahn pah"
@@ -24,8 +48,14 @@
       "text": "Je vous en prie, aidez-moi s'il vous plaît !",
       "phonetic": "ʒə vuz ɑ̃ pri, ed-e mwa sil vu plɛ !"
     },
-    "delicious": { "text": "Délicieux !", "phonetic": "day-lee-SYUH!" },
-    "cheers": { "text": "Santé!", "phonetic": "sahn-TAY!" },
+    "delicious": {
+      "text": "Délicieux !",
+      "phonetic": "day-lee-SYUH!"
+    },
+    "cheers": {
+      "text": "Santé!",
+      "phonetic": "sahn-TAY!"
+    },
     "wifi_pass": {
       "text": "Mot de passe WiFi ?",
       "phonetic": "moh duh pahs WiFi?"
@@ -266,15 +296,105 @@
       "text": "Je suis allergique aux fruits de mer.",
       "phonetic": "ʒə sɥi a-lair-ZHEEK o frwee duh mer"
     },
-    "where_coffee": { "text": "Où est un café ?", "phonetic": "Oo ay un kafay" },
-    "where_water": { "text": "Où puis-je acheter de l'eau ?", "phonetic": "Oo pweezh ashetay de lo" },
-    "like_seafood": { "text": "Je voudrais les fruits de mer.", "phonetic": "Zhuh voodray lay frwee duh mair" },
-    "like_vegetarian": { "text": "Je voudrais l'option végétarienne.", "phonetic": "Zhuh voodray lopsyon vejaytaryen" },
-    "have_water": { "text": "Avez-vous de l'eau ?", "phonetic": "Avay voo duh lo" },
-    "have_beer": { "text": "Avez-vous de la bière ?", "phonetic": "Avay voo duh la byair" },
-    "have_wine": { "text": "Avez-vous du vin ?", "phonetic": "Avay voo doo van" },
-    "cost_wifi": { "text": "Combien coûte le WiFi ?", "phonetic": "Kombyen koot luh WiFi" },
-    "cost_water": { "text": "Combien coûte l'eau ?", "phonetic": "Kombyen koot lo" },
-    "cost_seafood": { "text": "Combien coûtent les fruits de mer ?", "phonetic": "Kombyen koot lay frwee duh mair" }
+    "where_coffee": {
+      "text": "Où est un café ?",
+      "phonetic": "Oo ay un kafay"
+    },
+    "where_water": {
+      "text": "Où puis-je acheter de l'eau ?",
+      "phonetic": "Oo pweezh ashetay de lo"
+    },
+    "like_seafood": {
+      "text": "Je voudrais les fruits de mer.",
+      "phonetic": "Zhuh voodray lay frwee duh mair"
+    },
+    "like_vegetarian": {
+      "text": "Je voudrais l'option végétarienne.",
+      "phonetic": "Zhuh voodray lopsyon vejaytaryen"
+    },
+    "have_water": {
+      "text": "Avez-vous de l'eau ?",
+      "phonetic": "Avay voo duh lo"
+    },
+    "have_beer": {
+      "text": "Avez-vous de la bière ?",
+      "phonetic": "Avay voo duh la byair"
+    },
+    "have_wine": {
+      "text": "Avez-vous du vin ?",
+      "phonetic": "Avay voo doo van"
+    },
+    "cost_wifi": {
+      "text": "Combien coûte le WiFi ?",
+      "phonetic": "Kombyen koot luh WiFi"
+    },
+    "cost_water": {
+      "text": "Combien coûte l'eau ?",
+      "phonetic": "Kombyen koot lo"
+    },
+    "cost_seafood": {
+      "text": "Combien coûtent les fruits de mer ?",
+      "phonetic": "Kombyen koot lay frwee duh mair"
+    },
+    "where_bus": {
+      "text": "Où est le bus ?",
+      "phonetic": "Oo eh luh boos"
+    },
+    "where_entrance": {
+      "text": "Où est l'entrée ?",
+      "phonetic": "Oo eh lon-trey"
+    },
+    "where_exit": {
+      "text": "Où est la sortie ?",
+      "phonetic": "Oo eh lah sor-tee"
+    },
+    "where_key": {
+      "text": "Où est la clé ?",
+      "phonetic": "Oo eh lah klay"
+    },
+    "like_room": {
+      "text": "Je voudrais une chambre.",
+      "phonetic": "Zhuh voo-dray zoon sham-bruh"
+    },
+    "like_receipt": {
+      "text": "Je voudrais un reçu.",
+      "phonetic": "Zhuh voo-dray zun ruh-soo"
+    },
+    "like_ice": {
+      "text": "Je voudrais des glaçons.",
+      "phonetic": "Zhuh voo-dray day glah-son"
+    },
+    "have_map": {
+      "text": "Avez-vous une carte ?",
+      "phonetic": "Ah-vay voo zoon kart"
+    },
+    "have_sugar": {
+      "text": "Avez-vous du sucre ?",
+      "phonetic": "Ah-vay voo doo sook-ruh"
+    },
+    "cost_bus": {
+      "text": "Combien coûte le bus ?",
+      "phonetic": "Kom-byen koot luh boos"
+    },
+    "allergic_gluten": {
+      "text": "Je suis intolérant au gluten.",
+      "phonetic": "zhe swee ɛ̃tɔleʁɑ̃ o ɡlytɛn"
+    },
+    "allergic_dairy": {
+      "text": "Je suis allergique aux produits laitiers.",
+      "phonetic": "Zhuh swee zah-lair-zheek oh pro-dwee lay-tyay"
+    },
+    "allergic_nuts": {
+      "text": "Je suis allergique aux noix.",
+      "phonetic": "Zhuh swee zah-lair-zheek oh nwah"
+    },
+    "allergic_eggs": {
+      "text": "Je suis allergique aux œufs.",
+      "phonetic": "Zhuh swee zah-lair-zheek oh zoe"
+    },
+    "allergic_soy": {
+      "text": "Je suis allergique au soja.",
+      "phonetic": "Zhuh swee zah-lair-zheek oh so-zhah"
+    }
   }
 }

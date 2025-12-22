@@ -1,9 +1,21 @@
 {
   "essentials": {
-    "hello": { "text": "Hola", "phonetic": "OH-lah" },
-    "thanks": { "text": "Gracias", "phonetic": "GRAH-see-ahs" },
-    "goodbye": { "text": "Adiós", "phonetic": "ah-DYOS" },
-    "good_morning": { "text": "Buenos días", "phonetic": "BWEH-nos DEE-ahs" },
+    "hello": {
+      "text": "Hola",
+      "phonetic": "OH-lah"
+    },
+    "thanks": {
+      "text": "Gracias",
+      "phonetic": "GRAH-see-ahs"
+    },
+    "goodbye": {
+      "text": "Adiós",
+      "phonetic": "ah-DYOS"
+    },
+    "good_morning": {
+      "text": "Buenos días",
+      "phonetic": "BWEH-nos DEE-ahs"
+    },
     "good_evening": {
       "text": "Buenas noches",
       "phonetic": "BWEH-nas NO-chehs"
@@ -12,17 +24,38 @@
       "text": "¿Dónde está el baño?",
       "phonetic": "DON-deh ehs-TAH el BAHN-yoh?"
     },
-    "yes": { "text": "Sí", "phonetic": "See" },
-    "no": { "text": "No", "phonetic": "Noh" },
-    "sorry": { "text": "Perdón", "phonetic": "Pehr-DON" },
-    "no_understand": { "text": "No entiendo", "phonetic": "Noh en-TYEN-doh" },
+    "yes": {
+      "text": "Sí",
+      "phonetic": "See"
+    },
+    "no": {
+      "text": "No",
+      "phonetic": "Noh"
+    },
+    "sorry": {
+      "text": "Perdón",
+      "phonetic": "Pehr-DON"
+    },
+    "no_understand": {
+      "text": "No entiendo",
+      "phonetic": "Noh en-TYEN-doh"
+    },
     "speak_english": {
       "text": "¿Habla inglés?",
       "phonetic": "AH-blah een-GLEHS?"
     },
-    "help": { "text": "¡Socorro!", "phonetic": "so-KOR-ro" },
-    "delicious": { "text": "¡Delicioso!", "phonetic": "deh-lee-SYO-soh!" },
-    "cheers": { "text": "¡Salud!", "phonetic": "sah-LOOD!" },
+    "help": {
+      "text": "¡Socorro!",
+      "phonetic": "so-KOR-ro"
+    },
+    "delicious": {
+      "text": "¡Delicioso!",
+      "phonetic": "deh-lee-SYO-soh!"
+    },
+    "cheers": {
+      "text": "¡Salud!",
+      "phonetic": "sah-LOOD!"
+    },
     "wifi_pass": {
       "text": "¿Contraseña del WiFi?",
       "phonetic": "kon-trah-SEH-nyah del WiFi?"
@@ -211,7 +244,10 @@
       "text": "Quisiera una copa de vino, por favor.",
       "phonetic": "kee-SYEH-rah OO-nah KOH-pah deh VEE-no, por fah-VOR."
     },
-    "have_wifi": { "text": "¿Tienen WiFi?", "phonetic": "TYEH-nehn WYE-fye?" },
+    "have_wifi": {
+      "text": "¿Tienen WiFi?",
+      "phonetic": "TYEH-nehn WYE-fye?"
+    },
     "have_room": {
       "text": "¿Tienen una habitación disponible?",
       "phonetic": "TYEH-nehn OO-nah ah-bee-tah-SYON dees-poh-NEE-bleh?"
@@ -260,15 +296,105 @@
       "text": "Soy alérgico a los mariscos.",
       "phonetic": "Soy ah-LEHR-hee-koh ah los mah-REES-kos."
     },
-    "where_coffee": { "text": "¿Dónde hay una cafetería?", "phonetic": "Donde ay una cafeteria" },
-    "where_water": { "text": "¿Dónde puedo comprar agua?", "phonetic": "Donde pwedo komprar agwa" },
-    "like_seafood": { "text": "Quisiera los mariscos.", "phonetic": "Kisyera los mariskos" },
-    "like_vegetarian": { "text": "Quisiera la opción vegetariana.", "phonetic": "Kisyera la opsyon vehetaryana" },
-    "have_water": { "text": "¿Tienen agua?", "phonetic": "Tyenen agwa" },
-    "have_beer": { "text": "¿Tienen cerveza?", "phonetic": "Tyenen servesa" },
-    "have_wine": { "text": "¿Tienen vino?", "phonetic": "Tyenen bino" },
-    "cost_wifi": { "text": "¿Cuánto cuesta el WiFi?", "phonetic": "Kwanto kwesta el WiFi" },
-    "cost_water": { "text": "¿Cuánto cuesta el agua?", "phonetic": "Kwanto kwesta el agwa" },
-    "cost_seafood": { "text": "¿Cuánto cuestan los mariscos?", "phonetic": "Kwanto kwestan los mariskos" }
+    "where_coffee": {
+      "text": "¿Dónde hay una cafetería?",
+      "phonetic": "Donde ay una cafeteria"
+    },
+    "where_water": {
+      "text": "¿Dónde puedo comprar agua?",
+      "phonetic": "Donde pwedo komprar agwa"
+    },
+    "like_seafood": {
+      "text": "Quisiera los mariscos.",
+      "phonetic": "Kisyera los mariskos"
+    },
+    "like_vegetarian": {
+      "text": "Quisiera la opción vegetariana.",
+      "phonetic": "Kisyera la opsyon vehetaryana"
+    },
+    "have_water": {
+      "text": "¿Tienen agua?",
+      "phonetic": "Tyenen agwa"
+    },
+    "have_beer": {
+      "text": "¿Tienen cerveza?",
+      "phonetic": "Tyenen servesa"
+    },
+    "have_wine": {
+      "text": "¿Tienen vino?",
+      "phonetic": "Tyenen bino"
+    },
+    "cost_wifi": {
+      "text": "¿Cuánto cuesta el WiFi?",
+      "phonetic": "Kwanto kwesta el WiFi"
+    },
+    "cost_water": {
+      "text": "¿Cuánto cuesta el agua?",
+      "phonetic": "Kwanto kwesta el agwa"
+    },
+    "cost_seafood": {
+      "text": "¿Cuánto cuestan los mariscos?",
+      "phonetic": "Kwanto kwestan los mariskos"
+    },
+    "where_bus": {
+      "text": "¿Dónde está el autobús?",
+      "phonetic": "Dohn-deh ehs-tah el ow-toh-boos"
+    },
+    "where_entrance": {
+      "text": "¿Dónde está la entrada?",
+      "phonetic": "Dohn-deh ehs-tah lah en-trah-dah"
+    },
+    "where_exit": {
+      "text": "¿Dónde está la salida?",
+      "phonetic": "Dohn-deh ehs-tah lah sah-lee-dah"
+    },
+    "where_key": {
+      "text": "¿Dónde está la llave?",
+      "phonetic": "Dohn-deh ehs-tah lah yah-veh"
+    },
+    "like_room": {
+      "text": "Quisiera una habitación.",
+      "phonetic": "Kee-see-eh-rah oo-nah ah-bee-tah-see-ohn"
+    },
+    "like_receipt": {
+      "text": "Quisiera un recibo.",
+      "phonetic": "Kee-see-eh-rah oon reh-see-boh"
+    },
+    "like_ice": {
+      "text": "Quisiera un poco de hielo.",
+      "phonetic": "Kee-see-eh-rah oon poh-koh deh yeh-loh"
+    },
+    "have_map": {
+      "text": "¿Tiene un mapa?",
+      "phonetic": "Tee-eh-neh oon mah-pah"
+    },
+    "have_sugar": {
+      "text": "¿Tiene azúcar?",
+      "phonetic": "Tee-eh-neh ah-soo-kahr"
+    },
+    "cost_bus": {
+      "text": "¿Cuánto cuesta el autobús?",
+      "phonetic": "Kwahn-toh kwehs-tah el ow-toh-boos"
+    },
+    "allergic_gluten": {
+      "text": "Soy alérgico al gluten.",
+      "phonetic": "Soy ah-lehr-hee-koh al gloo-ten"
+    },
+    "allergic_dairy": {
+      "text": "Soy alérgico a los lácteos.",
+      "phonetic": "Soy ah-lehr-hee-koh ah lohs lak-teh-ohs"
+    },
+    "allergic_nuts": {
+      "text": "Soy alérgico a las nueces.",
+      "phonetic": "Soy ah-lehr-hee-koh ah lahs nweh-sehs"
+    },
+    "allergic_eggs": {
+      "text": "Soy alérgico a los huevos.",
+      "phonetic": "Soy ah-lehr-hee-koh ah lohs weh-vohs"
+    },
+    "allergic_soy": {
+      "text": "Soy alérgico a la soja.",
+      "phonetic": "Soy ah-lehr-hee-koh ah lah soh-hah"
+    }
   }
 }

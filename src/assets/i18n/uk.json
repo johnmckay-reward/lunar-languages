@@ -1,8 +1,17 @@
 {
   "essentials": {
-    "hello": { "text": "Привіт", "phonetic": "Pry-VEET" },
-    "thanks": { "text": "Дякую", "phonetic": "DYA-koo-yoo" },
-    "goodbye": { "text": "До побачення", "phonetic": "Doh poh-BAH-chen-nya" },
+    "hello": {
+      "text": "Привіт",
+      "phonetic": "Pry-VEET"
+    },
+    "thanks": {
+      "text": "Дякую",
+      "phonetic": "DYA-koo-yoo"
+    },
+    "goodbye": {
+      "text": "До побачення",
+      "phonetic": "Doh poh-BAH-chen-nya"
+    },
     "good_morning": {
       "text": "Доброго ранку",
       "phonetic": "DOH-bro-ho RAN-koo"
@@ -11,10 +20,22 @@
       "text": "Добрий вечір",
       "phonetic": "DOH-bryy VEH-cheer"
     },
-    "bathroom": { "text": "Де туалет?", "phonetic": "Deh too-ah-LET?" },
-    "yes": { "text": "Так", "phonetic": "Tak" },
-    "no": { "text": "Ні", "phonetic": "Nee" },
-    "sorry": { "text": "Вибачте", "phonetic": "VY-bach-teh" },
+    "bathroom": {
+      "text": "Де туалет?",
+      "phonetic": "Deh too-ah-LET?"
+    },
+    "yes": {
+      "text": "Так",
+      "phonetic": "Tak"
+    },
+    "no": {
+      "text": "Ні",
+      "phonetic": "Nee"
+    },
+    "sorry": {
+      "text": "Вибачте",
+      "phonetic": "VY-bach-teh"
+    },
     "no_understand": {
       "text": "Я не розумію",
       "phonetic": "Ya neh roh-zoo-MEE-yoo"
@@ -23,9 +44,18 @@
       "text": "Ви говорите англійською?",
       "phonetic": "Vy ho-VOH-ry-teh an-HLYY-skoh-yoo?"
     },
-    "help": { "text": "Допоможіть!", "phonetic": "Doh-poh-moh-ZHEET!" },
-    "delicious": { "text": "Смачно!", "phonetic": "SMACH-noh!" },
-    "cheers": { "text": "Будьмо!", "phonetic": "BOOD-moh!" },
+    "help": {
+      "text": "Допоможіть!",
+      "phonetic": "Doh-poh-moh-ZHEET!"
+    },
+    "delicious": {
+      "text": "Смачно!",
+      "phonetic": "SMACH-noh!"
+    },
+    "cheers": {
+      "text": "Будьмо!",
+      "phonetic": "BOOD-moh!"
+    },
     "wifi_pass": {
       "text": "Пароль від WiFi?",
       "phonetic": "Pah-ROL vid WiFi?"
@@ -35,7 +65,7 @@
       "phonetic": "Ho-voh-REET poh-vil-NEE-sheh, bood LAS-kah"
     }
   },
-"starters": {
+  "starters": {
     "where": {
       "listenFor": [
         {
@@ -138,7 +168,10 @@
     }
   },
   "combinations": {
-    "where_station": { "text": "Де вокзал?", "phonetic": "Deh vok-ZAL?" },
+    "where_station": {
+      "text": "Де вокзал?",
+      "phonetic": "Deh vok-ZAL?"
+    },
     "where_airport": {
       "text": "Де аеропорт?",
       "phonetic": "Deh ah-eh-roh-PORT?"
@@ -151,9 +184,18 @@
       "text": "Де стоянка таксі?",
       "phonetic": "Deh stoh-YAN-kah tak-SEE?"
     },
-    "where_atm": { "text": "Де банкомат?", "phonetic": "Deh ban-koh-MAT?" },
-    "where_pharmacy": { "text": "Де аптека?", "phonetic": "Deh ap-TEH-kah?" },
-    "where_doctor": { "text": "Де лікар?", "phonetic": "Deh LEE-kar?" },
+    "where_atm": {
+      "text": "Де банкомат?",
+      "phonetic": "Deh ban-koh-MAT?"
+    },
+    "where_pharmacy": {
+      "text": "Де аптека?",
+      "phonetic": "Deh ap-TEH-kah?"
+    },
+    "where_doctor": {
+      "text": "Де лікар?",
+      "phonetic": "Deh LEE-kar?"
+    },
     "where_restaurant": {
       "text": "Де хороший ресторан?",
       "phonetic": "Deh ho-ROH-shee res-toh-RAN?"
@@ -202,7 +244,10 @@
       "text": "Я хотів би келих вина, будь ласка.",
       "phonetic": "Ya kho-TIV by KE-lykh vee-NAH, bood LAS-kah."
     },
-    "have_wifi": { "text": "Чи маєте ви бездротовий інтернет?", "phonetic": "Chy mayete vy bezdrotovyy internet?" },
+    "have_wifi": {
+      "text": "Чи маєте ви бездротовий інтернет?",
+      "phonetic": "Chy mayete vy bezdrotovyy internet?"
+    },
     "have_room": {
       "text": "У вас є вільна кімната?",
       "phonetic": "Oo vas yeh VIL-nah kim-NAH-tah?"
@@ -251,15 +296,105 @@
       "text": "У мене алергія на морепродукти.",
       "phonetic": "Oo MEH-neh ah-ler-HEE-ya na moh-reh-proh-DOOK-ty."
     },
-    "where_coffee": { "text": "Де тут кав'ярня?", "phonetic": "De tut kavyarnya?" },
-    "where_water": { "text": "Де можна купити води?", "phonetic": "De mozhna kupyty vody?" },
-    "like_seafood": { "text": "Я хотів би морепродукти.", "phonetic": "Ya khotiv by moreprodukty." },
-    "like_vegetarian": { "text": "Я хотів би вегетаріанську страву.", "phonetic": "Ya khotiv by vegetarian'sku stravu." },
-    "have_water": { "text": "У вас є вода?", "phonetic": "U vas ye voda?" },
-    "have_beer": { "text": "У вас є пиво?", "phonetic": "U vas ye pyvo?" },
-    "have_wine": { "text": "У вас є вино?", "phonetic": "U vas ye vyno?" },
-    "cost_wifi": { "text": "Скільки коштує WiFi?", "phonetic": "Skil'ky koshtuye WiFi?" },
-    "cost_water": { "text": "Скільки коштує вода?", "phonetic": "Skil'ky koshtuye voda?" },
-    "cost_seafood": { "text": "Скільки коштують морепродукти?", "phonetic": "Skil'ky koshtuyut' moreprodukty?" }
+    "where_coffee": {
+      "text": "Де тут кав'ярня?",
+      "phonetic": "De tut kavyarnya?"
+    },
+    "where_water": {
+      "text": "Де можна купити води?",
+      "phonetic": "De mozhna kupyty vody?"
+    },
+    "like_seafood": {
+      "text": "Я хотів би морепродукти.",
+      "phonetic": "Ya khotiv by moreprodukty."
+    },
+    "like_vegetarian": {
+      "text": "Я хотів би вегетаріанську страву.",
+      "phonetic": "Ya khotiv by vegetarian'sku stravu."
+    },
+    "have_water": {
+      "text": "У вас є вода?",
+      "phonetic": "U vas ye voda?"
+    },
+    "have_beer": {
+      "text": "У вас є пиво?",
+      "phonetic": "U vas ye pyvo?"
+    },
+    "have_wine": {
+      "text": "У вас є вино?",
+      "phonetic": "U vas ye vyno?"
+    },
+    "cost_wifi": {
+      "text": "Скільки коштує WiFi?",
+      "phonetic": "Skil'ky koshtuye WiFi?"
+    },
+    "cost_water": {
+      "text": "Скільки коштує вода?",
+      "phonetic": "Skil'ky koshtuye voda?"
+    },
+    "cost_seafood": {
+      "text": "Скільки коштують морепродукти?",
+      "phonetic": "Skil'ky koshtuyut' moreprodukty?"
+    },
+    "where_bus": {
+      "text": "Де автобус?",
+      "phonetic": "De avtobus?"
+    },
+    "where_entrance": {
+      "text": "Де вхід?",
+      "phonetic": "De vkhid?"
+    },
+    "where_exit": {
+      "text": "Де вихід?",
+      "phonetic": "De vykhid?"
+    },
+    "where_key": {
+      "text": "Де ключ?",
+      "phonetic": "De klyuch?"
+    },
+    "like_room": {
+      "text": "Я хотів би кімнату.",
+      "phonetic": "Ya khotiv by kimnatu."
+    },
+    "like_receipt": {
+      "text": "Я хотів би чек.",
+      "phonetic": "Ya khotiv by chek."
+    },
+    "like_ice": {
+      "text": "Я хотів би льоду.",
+      "phonetic": "Ya khotiv by lodu."
+    },
+    "have_map": {
+      "text": "У вас є карта?",
+      "phonetic": "U vas ye karta?"
+    },
+    "have_sugar": {
+      "text": "У вас є цукор?",
+      "phonetic": "U vas ye tsukor?"
+    },
+    "cost_bus": {
+      "text": "Скільки коштує автобус?",
+      "phonetic": "Skilky koshtuye avtobus?"
+    },
+    "allergic_gluten": {
+      "text": "У мене алергія на глютен.",
+      "phonetic": "U mene alerhiya na hlyuten."
+    },
+    "allergic_dairy": {
+      "text": "У мене алергія на молочні продукти.",
+      "phonetic": "U mene alerhiya na molochni produkty."
+    },
+    "allergic_nuts": {
+      "text": "У мене алергія на горіхи.",
+      "phonetic": "U mene alerhiya na horikhy."
+    },
+    "allergic_eggs": {
+      "text": "У мене алергія на яйця.",
+      "phonetic": "U mene alerhiya na yaytsya."
+    },
+    "allergic_soy": {
+      "text": "У мене алергія на сою.",
+      "phonetic": "U mene alerhiya na soyu."
+    }
   }
 }

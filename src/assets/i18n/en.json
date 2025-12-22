@@ -1,80 +1,338 @@
 {
   "essentials": {
-    "hello": { "text": "Hello", "phonetic": "" },
-    "thanks": { "text": "Thank you", "phonetic": "" },
-    "goodbye": { "text": "Goodbye", "phonetic": "" },
-    "good_morning": { "text": "Good morning", "phonetic": "" },
-    "good_evening": { "text": "Good evening", "phonetic": "" },
-    "bathroom": { "text": "Where is the bathroom?", "phonetic": "" },
-    "yes": { "text": "Yes", "phonetic": "" },
-    "no": { "text": "No", "phonetic": "" },
-    "sorry": { "text": "Excuse me / Sorry", "phonetic": "" },
-    "no_understand": { "text": "I don't understand", "phonetic": "" },
-    "speak_english": { "text": "Do you speak English?", "phonetic": "" },
-    "help": { "text": "Help!", "phonetic": "" },
-    "delicious": { "text": "Delicious!", "phonetic": "" },
-    "cheers": { "text": "Cheers!", "phonetic": "" },
-    "wifi_pass": { "text": "WiFi Password?", "phonetic": "" },
-    "slowly": { "text": "Please speak slowly", "phonetic": "" }
+    "hello": {
+      "text": "Hello",
+      "phonetic": ""
+    },
+    "thanks": {
+      "text": "Thank you",
+      "phonetic": ""
+    },
+    "goodbye": {
+      "text": "Goodbye",
+      "phonetic": ""
+    },
+    "good_morning": {
+      "text": "Good morning",
+      "phonetic": ""
+    },
+    "good_evening": {
+      "text": "Good evening",
+      "phonetic": ""
+    },
+    "bathroom": {
+      "text": "Where is the bathroom?",
+      "phonetic": ""
+    },
+    "yes": {
+      "text": "Yes",
+      "phonetic": ""
+    },
+    "no": {
+      "text": "No",
+      "phonetic": ""
+    },
+    "sorry": {
+      "text": "Excuse me / Sorry",
+      "phonetic": ""
+    },
+    "no_understand": {
+      "text": "I don't understand",
+      "phonetic": ""
+    },
+    "speak_english": {
+      "text": "Do you speak English?",
+      "phonetic": ""
+    },
+    "help": {
+      "text": "Help!",
+      "phonetic": ""
+    },
+    "delicious": {
+      "text": "Delicious!",
+      "phonetic": ""
+    },
+    "cheers": {
+      "text": "Cheers!",
+      "phonetic": ""
+    },
+    "wifi_pass": {
+      "text": "WiFi Password?",
+      "phonetic": ""
+    },
+    "slowly": {
+      "text": "Please speak slowly",
+      "phonetic": ""
+    }
   },
   "starters": {
     "where": {
       "listenFor": [
-        { "text": "Left", "phonetic": "", "meaning": "Left" },
-        { "text": "Right", "phonetic": "", "meaning": "Right" },
-        { "text": "Straight", "phonetic": "", "meaning": "Straight" }
+        {
+          "text": "Left",
+          "phonetic": "",
+          "meaning": "Left"
+        },
+        {
+          "text": "Right",
+          "phonetic": "",
+          "meaning": "Right"
+        },
+        {
+          "text": "Straight",
+          "phonetic": "",
+          "meaning": "Straight"
+        }
       ]
     },
     "cost": {
       "listenFor": [
-        { "text": "Dollars", "phonetic": "", "meaning": "Dollars" },
-        { "text": "Expensive", "phonetic": "", "meaning": "Expensive" },
-        { "text": "Cheap", "phonetic": "", "meaning": "Cheap" }
+        {
+          "text": "Dollars",
+          "phonetic": "",
+          "meaning": "Dollars"
+        },
+        {
+          "text": "Expensive",
+          "phonetic": "",
+          "meaning": "Expensive"
+        },
+        {
+          "text": "Cheap",
+          "phonetic": "",
+          "meaning": "Cheap"
+        }
       ]
     }
   },
   "combinations": {
-    "where_station": { "text": "Where is the train station?", "phonetic": "" },
-    "where_airport": { "text": "Where is the airport?", "phonetic": "" },
-    "where_ticket": { "text": "Where can I buy a ticket?", "phonetic": "" },
-    "where_taxi": { "text": "Where is the taxi stand?", "phonetic": "" },
-    "where_atm": { "text": "Where is the ATM?", "phonetic": "" },
-    "where_pharmacy": { "text": "Where is the pharmacy?", "phonetic": "" },
-    "where_doctor": { "text": "Where is a doctor?", "phonetic": "" },
-    "where_restaurant": { "text": "Where is a good restaurant?", "phonetic": "" },
-    "where_hospital": { "text": "Where is the hospital?", "phonetic": "" },
-    "where_supermarket": { "text": "Where is the supermarket?", "phonetic": "" },
-    "where_beach": { "text": "Where is the beach?", "phonetic": "" },
-    "like_ticket": { "text": "I would like a ticket please.", "phonetic": "" },
-    "like_taxi": { "text": "I would like a taxi please.", "phonetic": "" },
-    "like_water": { "text": "I would like some water.", "phonetic": "" },
-    "like_coffee": { "text": "I would like a coffee.", "phonetic": "" },
-    "like_menu": { "text": "I would like the menu please.", "phonetic": "" },
-    "like_bill": { "text": "I would like the bill please.", "phonetic": "" },
-    "like_beer": { "text": "I would like a beer.", "phonetic": "" },
-    "like_wine": { "text": "I would like a glass of wine.", "phonetic": "" },
-    "have_wifi": { "text": "Do you have WiFi?", "phonetic": "" },
-    "have_room": { "text": "Do you have a room available?", "phonetic": "" },
-    "have_charger": { "text": "Do you have a charger?", "phonetic": "" },
-    "have_menu": { "text": "Do you have a menu in English?", "phonetic": "" },
-    "have_vegetarian": { "text": "Do you have any vegetarian options?", "phonetic": "" },
-    "cost_ticket": { "text": "How much is a ticket?", "phonetic": "" },
-    "cost_taxi": { "text": "How much is the taxi?", "phonetic": "" },
-    "cost_room": { "text": "How much is the room?", "phonetic": "" },
-    "cost_coffee": { "text": "How much is a coffee?", "phonetic": "" },
-    "cost_beer": { "text": "How much is a beer?", "phonetic": "" },
-    "cost_wine": { "text": "How much is a glass of wine?", "phonetic": "" },
-    "allergic_peanuts": { "text": "I am allergic to peanuts.", "phonetic": "" },
-    "allergic_seafood": { "text": "I am allergic to seafood.", "phonetic": "" },
-    "where_coffee": { "text": "Where is a coffee shop?", "phonetic": "" },
-    "where_water": { "text": "Where can I buy water?", "phonetic": "" },
-    "like_seafood": { "text": "I would like the seafood.", "phonetic": "" },
-    "like_vegetarian": { "text": "I would like the vegetarian option.", "phonetic": "" },
-    "have_water": { "text": "Do you have water?", "phonetic": "" },
-    "have_beer": { "text": "Do you have beer?", "phonetic": "" },
-    "have_wine": { "text": "Do you have wine?", "phonetic": "" },
-    "cost_wifi": { "text": "How much is the WiFi?", "phonetic": "" },
-    "cost_water": { "text": "How much is the water?", "phonetic": "" },
-    "cost_seafood": { "text": "How much is the seafood?", "phonetic": "" }
+    "where_station": {
+      "text": "Where is the train station?",
+      "phonetic": ""
+    },
+    "where_airport": {
+      "text": "Where is the airport?",
+      "phonetic": ""
+    },
+    "where_ticket": {
+      "text": "Where can I buy a ticket?",
+      "phonetic": ""
+    },
+    "where_taxi": {
+      "text": "Where is the taxi stand?",
+      "phonetic": ""
+    },
+    "where_atm": {
+      "text": "Where is the ATM?",
+      "phonetic": ""
+    },
+    "where_pharmacy": {
+      "text": "Where is the pharmacy?",
+      "phonetic": ""
+    },
+    "where_doctor": {
+      "text": "Where is a doctor?",
+      "phonetic": ""
+    },
+    "where_restaurant": {
+      "text": "Where is a good restaurant?",
+      "phonetic": ""
+    },
+    "where_hospital": {
+      "text": "Where is the hospital?",
+      "phonetic": ""
+    },
+    "where_supermarket": {
+      "text": "Where is the supermarket?",
+      "phonetic": ""
+    },
+    "where_beach": {
+      "text": "Where is the beach?",
+      "phonetic": ""
+    },
+    "like_ticket": {
+      "text": "I would like a ticket please.",
+      "phonetic": ""
+    },
+    "like_taxi": {
+      "text": "I would like a taxi please.",
+      "phonetic": ""
+    },
+    "like_water": {
+      "text": "I would like some water.",
+      "phonetic": ""
+    },
+    "like_coffee": {
+      "text": "I would like a coffee.",
+      "phonetic": ""
+    },
+    "like_menu": {
+      "text": "I would like the menu please.",
+      "phonetic": ""
+    },
+    "like_bill": {
+      "text": "I would like the bill please.",
+      "phonetic": ""
+    },
+    "like_beer": {
+      "text": "I would like a beer.",
+      "phonetic": ""
+    },
+    "like_wine": {
+      "text": "I would like a glass of wine.",
+      "phonetic": ""
+    },
+    "have_wifi": {
+      "text": "Do you have WiFi?",
+      "phonetic": ""
+    },
+    "have_room": {
+      "text": "Do you have a room available?",
+      "phonetic": ""
+    },
+    "have_charger": {
+      "text": "Do you have a charger?",
+      "phonetic": ""
+    },
+    "have_menu": {
+      "text": "Do you have a menu in English?",
+      "phonetic": ""
+    },
+    "have_vegetarian": {
+      "text": "Do you have any vegetarian options?",
+      "phonetic": ""
+    },
+    "cost_ticket": {
+      "text": "How much is a ticket?",
+      "phonetic": ""
+    },
+    "cost_taxi": {
+      "text": "How much is the taxi?",
+      "phonetic": ""
+    },
+    "cost_room": {
+      "text": "How much is the room?",
+      "phonetic": ""
+    },
+    "cost_coffee": {
+      "text": "How much is a coffee?",
+      "phonetic": ""
+    },
+    "cost_beer": {
+      "text": "How much is a beer?",
+      "phonetic": ""
+    },
+    "cost_wine": {
+      "text": "How much is a glass of wine?",
+      "phonetic": ""
+    },
+    "allergic_peanuts": {
+      "text": "I am allergic to peanuts.",
+      "phonetic": ""
+    },
+    "allergic_seafood": {
+      "text": "I am allergic to seafood.",
+      "phonetic": ""
+    },
+    "where_coffee": {
+      "text": "Where is a coffee shop?",
+      "phonetic": ""
+    },
+    "where_water": {
+      "text": "Where can I buy water?",
+      "phonetic": ""
+    },
+    "like_seafood": {
+      "text": "I would like the seafood.",
+      "phonetic": ""
+    },
+    "like_vegetarian": {
+      "text": "I would like the vegetarian option.",
+      "phonetic": ""
+    },
+    "have_water": {
+      "text": "Do you have water?",
+      "phonetic": ""
+    },
+    "have_beer": {
+      "text": "Do you have beer?",
+      "phonetic": ""
+    },
+    "have_wine": {
+      "text": "Do you have wine?",
+      "phonetic": ""
+    },
+    "cost_wifi": {
+      "text": "How much is the WiFi?",
+      "phonetic": ""
+    },
+    "cost_water": {
+      "text": "How much is the water?",
+      "phonetic": ""
+    },
+    "cost_seafood": {
+      "text": "How much is the seafood?",
+      "phonetic": ""
+    },
+    "where_bus": {
+      "text": "Where is the bus?",
+      "phonetic": ""
+    },
+    "where_entrance": {
+      "text": "Where is the entrance?",
+      "phonetic": ""
+    },
+    "where_exit": {
+      "text": "Where is the exit?",
+      "phonetic": ""
+    },
+    "where_key": {
+      "text": "Where is the key?",
+      "phonetic": ""
+    },
+    "like_room": {
+      "text": "I would like a room.",
+      "phonetic": ""
+    },
+    "like_receipt": {
+      "text": "I would like a receipt.",
+      "phonetic": ""
+    },
+    "like_ice": {
+      "text": "I would like some ice.",
+      "phonetic": ""
+    },
+    "have_map": {
+      "text": "Do you have a map?",
+      "phonetic": ""
+    },
+    "have_sugar": {
+      "text": "Do you have sugar?",
+      "phonetic": ""
+    },
+    "cost_bus": {
+      "text": "How much is the bus?",
+      "phonetic": ""
+    },
+    "allergic_gluten": {
+      "text": "I am allergic to gluten.",
+      "phonetic": ""
+    },
+    "allergic_dairy": {
+      "text": "I am allergic to dairy.",
+      "phonetic": ""
+    },
+    "allergic_nuts": {
+      "text": "I am allergic to nuts.",
+      "phonetic": ""
+    },
+    "allergic_eggs": {
+      "text": "I am allergic to eggs.",
+      "phonetic": ""
+    },
+    "allergic_soy": {
+      "text": "I am allergic to soy.",
+      "phonetic": ""
+    }
   }
 }

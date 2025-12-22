@@ -1,9 +1,21 @@
 {
   "essentials": {
-    "hello": { "text": "Cześć", "phonetic": "Cheshch" },
-    "thanks": { "text": "Dziękuję", "phonetic": "Jen-KOO-yeh" },
-    "goodbye": { "text": "Do widzenia", "phonetic": "Doh vee-DZEN-ya" },
-    "good_morning": { "text": "Dzień dobry", "phonetic": "Jen DOB-ry" },
+    "hello": {
+      "text": "Cześć",
+      "phonetic": "Cheshch"
+    },
+    "thanks": {
+      "text": "Dziękuję",
+      "phonetic": "Jen-KOO-yeh"
+    },
+    "goodbye": {
+      "text": "Do widzenia",
+      "phonetic": "Doh vee-DZEN-ya"
+    },
+    "good_morning": {
+      "text": "Dzień dobry",
+      "phonetic": "Jen DOB-ry"
+    },
     "good_evening": {
       "text": "Dobry wieczór",
       "phonetic": "DOB-ry VYEH-choor"
@@ -12,9 +24,18 @@
       "text": "Gdzie jest łazienka?",
       "phonetic": "Gdjeh yest wah-ZHEN-kah?"
     },
-    "yes": { "text": "Tak", "phonetic": "Tak" },
-    "no": { "text": "Niestety", "phonetic": "nyeh-steh-ty" },
-    "sorry": { "text": "Przepraszam", "phonetic": "Psheh-PRAH-sham" },
+    "yes": {
+      "text": "Tak",
+      "phonetic": "Tak"
+    },
+    "no": {
+      "text": "Niestety",
+      "phonetic": "nyeh-steh-ty"
+    },
+    "sorry": {
+      "text": "Przepraszam",
+      "phonetic": "Psheh-PRAH-sham"
+    },
     "no_understand": {
       "text": "Nie rozumiem",
       "phonetic": "Nyeh roh-ZOO-myem"
@@ -23,10 +44,22 @@
       "text": "Czy mówisz po angielsku?",
       "phonetic": "Chy MOO-vish poh an-GYEL-skoo?"
     },
-    "help": { "text": "Proszę o pomoc!", "phonetic": "Proh-sheh oh po-mots" },
-    "delicious": { "text": "Pyszne!", "phonetic": "PYSH-neh!" },
-    "cheers": { "text": "Na zdrowie!", "phonetic": "Nah ZDROH-vyeh!" },
-    "wifi_pass": { "text": "Hasło do WiFi?", "phonetic": "HAS-woh doh WiFi?" },
+    "help": {
+      "text": "Proszę o pomoc!",
+      "phonetic": "Proh-sheh oh po-mots"
+    },
+    "delicious": {
+      "text": "Pyszne!",
+      "phonetic": "PYSH-neh!"
+    },
+    "cheers": {
+      "text": "Na zdrowie!",
+      "phonetic": "Nah ZDROH-vyeh!"
+    },
+    "wifi_pass": {
+      "text": "Hasło do WiFi?",
+      "phonetic": "HAS-woh doh WiFi?"
+    },
     "slowly": {
       "text": "Proszę mówić wolniej",
       "phonetic": "PROH-sheh MOO-veech VOL-nyey"
@@ -211,7 +244,10 @@
       "text": "Poproszę kieliszek wina.",
       "phonetic": "Poh-PROH-sheh kyeh-LEE-shek VEE-nah."
     },
-    "have_wifi": { "text": "Czy jest WiFi?", "phonetic": "Chy yest WiFi?" },
+    "have_wifi": {
+      "text": "Czy jest WiFi?",
+      "phonetic": "Chy yest WiFi?"
+    },
     "have_room": {
       "text": "Czy jest wolny pokój?",
       "phonetic": "Chy yest VOL-ny POH-kooy?"
@@ -260,15 +296,105 @@
       "text": "Mam alergię na owoce morza.",
       "phonetic": "Mam ah-LER-gyeh nah oh-VO-tseh MOR-zhah."
     },
-    "where_coffee": { "text": "Gdzie jest kawiarnia?", "phonetic": "Gdzhye yest kavyarnya" },
-    "where_water": { "text": "Gdzie mogę kupić wodę?", "phonetic": "Gdzhye mogeh kupich vodeh" },
-    "like_seafood": { "text": "Poproszę owoce morza.", "phonetic": "Poprosheh ovotseh mozha" },
-    "like_vegetarian": { "text": "Poproszę opcję wegetariańską.", "phonetic": "Poprosheh opsyeh vegetaryanskom" },
-    "have_water": { "text": "Czy macie wodę?", "phonetic": "Chy machye vodeh" },
-    "have_beer": { "text": "Czy macie piwo?", "phonetic": "Chy machye pivo" },
-    "have_wine": { "text": "Czy macie wino?", "phonetic": "Chy machye vino" },
-    "cost_wifi": { "text": "Ile kosztuje WiFi?", "phonetic": "Eeleh koshtuyeh WiFi" },
-    "cost_water": { "text": "Ile kosztuje woda?", "phonetic": "Eeleh koshtuyeh voda" },
-    "cost_seafood": { "text": "Ile kosztują owoce morza?", "phonetic": "Eeleh koshtuyom ovotseh mozha" }
+    "where_coffee": {
+      "text": "Gdzie jest kawiarnia?",
+      "phonetic": "Gdzhye yest kavyarnya"
+    },
+    "where_water": {
+      "text": "Gdzie mogę kupić wodę?",
+      "phonetic": "Gdzhye mogeh kupich vodeh"
+    },
+    "like_seafood": {
+      "text": "Poproszę owoce morza.",
+      "phonetic": "Poprosheh ovotseh mozha"
+    },
+    "like_vegetarian": {
+      "text": "Poproszę opcję wegetariańską.",
+      "phonetic": "Poprosheh opsyeh vegetaryanskom"
+    },
+    "have_water": {
+      "text": "Czy macie wodę?",
+      "phonetic": "Chy machye vodeh"
+    },
+    "have_beer": {
+      "text": "Czy macie piwo?",
+      "phonetic": "Chy machye pivo"
+    },
+    "have_wine": {
+      "text": "Czy macie wino?",
+      "phonetic": "Chy machye vino"
+    },
+    "cost_wifi": {
+      "text": "Ile kosztuje WiFi?",
+      "phonetic": "Eeleh koshtuyeh WiFi"
+    },
+    "cost_water": {
+      "text": "Ile kosztuje woda?",
+      "phonetic": "Eeleh koshtuyeh voda"
+    },
+    "cost_seafood": {
+      "text": "Ile kosztują owoce morza?",
+      "phonetic": "Eeleh koshtuyom ovotseh mozha"
+    },
+    "where_bus": {
+      "text": "Gdzie jest autobus?",
+      "phonetic": "Gjeh yest ow-toh-boos"
+    },
+    "where_entrance": {
+      "text": "Gdzie jest wejście?",
+      "phonetic": "Gjeh yest vay-shche"
+    },
+    "where_exit": {
+      "text": "Gdzie jest wyjście?",
+      "phonetic": "Gjeh yest vy-shche"
+    },
+    "where_key": {
+      "text": "Gdzie jest klucz?",
+      "phonetic": "Gjeh yest kloo-ch"
+    },
+    "like_room": {
+      "text": "Chciałbym pokój.",
+      "phonetic": "Hchow-bym poh-kooy"
+    },
+    "like_receipt": {
+      "text": "Chciałbym paragon.",
+      "phonetic": "Hchow-bym pa-ra-gon"
+    },
+    "like_ice": {
+      "text": "Chciałbym lodu.",
+      "phonetic": "Hchow-bym lo-doo"
+    },
+    "have_map": {
+      "text": "Czy masz mapę?",
+      "phonetic": "Chy mash ma-peh"
+    },
+    "have_sugar": {
+      "text": "Czy masz cukier?",
+      "phonetic": "Chy mash tsoo-kyer"
+    },
+    "cost_bus": {
+      "text": "Ile kosztuje autobus?",
+      "phonetic": "Ee-leh kosh-too-yeh ow-toh-boos"
+    },
+    "allergic_gluten": {
+      "text": "Mam alergię na gluten.",
+      "phonetic": "Mam a-ler-gyeh na gloo-ten"
+    },
+    "allergic_dairy": {
+      "text": "Mam alergię na nabiał.",
+      "phonetic": "Mam a-ler-gyeh na na-byow"
+    },
+    "allergic_nuts": {
+      "text": "Mam alergię na orzechy.",
+      "phonetic": "Mam a-ler-gyeh na o-zheh-hy"
+    },
+    "allergic_eggs": {
+      "text": "Mam alergię na jajka.",
+      "phonetic": "Mam a-ler-gyeh na yay-ka"
+    },
+    "allergic_soy": {
+      "text": "Mam alergię na soję.",
+      "phonetic": "Mam a-ler-gyeh na so-yeh"
+    }
   }
 }

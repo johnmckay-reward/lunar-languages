@@ -1,29 +1,71 @@
 {
   "essentials": {
-    "hello": { "text": "你好", "phonetic": "Nǐ hǎo" },
-    "thanks": { "text": "谢谢", "phonetic": "Xièxiè" },
-    "goodbye": { "text": "再见", "phonetic": "Zàijiàn" },
-    "good_morning": { "text": "早上好", "phonetic": "Zǎoshang hǎo" },
-    "good_evening": { "text": "晚上好", "phonetic": "Wǎnshàng hǎo" },
+    "hello": {
+      "text": "你好",
+      "phonetic": "Nǐ hǎo"
+    },
+    "thanks": {
+      "text": "谢谢",
+      "phonetic": "Xièxiè"
+    },
+    "goodbye": {
+      "text": "再见",
+      "phonetic": "Zàijiàn"
+    },
+    "good_morning": {
+      "text": "早上好",
+      "phonetic": "Zǎoshang hǎo"
+    },
+    "good_evening": {
+      "text": "晚上好",
+      "phonetic": "Wǎnshàng hǎo"
+    },
     "bathroom": {
       "text": "洗手间在哪里？",
       "phonetic": "Xǐshǒujiān zài nǎli?"
     },
-    "yes": { "text": "当然是正确的", "phonetic": "dāngrán shì zhèngquè de" },
-    "no": { "text": "不", "phonetic": "Bù" },
-    "sorry": { "text": "不好意思", "phonetic": "Bù hǎoyìsi" },
-    "no_understand": { "text": "我无法理解", "phonetic": "Wǒ wúfǎ lǐjiě" },
+    "yes": {
+      "text": "当然是正确的",
+      "phonetic": "dāngrán shì zhèngquè de"
+    },
+    "no": {
+      "text": "不",
+      "phonetic": "Bù"
+    },
+    "sorry": {
+      "text": "不好意思",
+      "phonetic": "Bù hǎoyìsi"
+    },
+    "no_understand": {
+      "text": "我无法理解",
+      "phonetic": "Wǒ wúfǎ lǐjiě"
+    },
     "speak_english": {
       "text": "你会说英语吗？",
       "phonetic": "Nǐ huì shuō yīngyǔ ma?"
     },
-    "help": { "text": "帮帮我!", "phonetic": "Bāng bāng wǒ!" },
-    "delicious": { "text": "好吃!", "phonetic": "Hǎochī!" },
-    "cheers": { "text": "干杯!", "phonetic": "Gānbēi!" },
-    "wifi_pass": { "text": "无线路由器密码是什么？", "phonetic": "Wúxiàn lùyóuqì mìmǎ shì shénme?" },
-    "slowly": { "text": "请说慢一点", "phonetic": "Qǐng shuō màn yīdiǎn" }
+    "help": {
+      "text": "帮帮我!",
+      "phonetic": "Bāng bāng wǒ!"
+    },
+    "delicious": {
+      "text": "好吃!",
+      "phonetic": "Hǎochī!"
+    },
+    "cheers": {
+      "text": "干杯!",
+      "phonetic": "Gānbēi!"
+    },
+    "wifi_pass": {
+      "text": "无线路由器密码是什么？",
+      "phonetic": "Wúxiàn lùyóuqì mìmǎ shì shénme?"
+    },
+    "slowly": {
+      "text": "请说慢一点",
+      "phonetic": "Qǐng shuō màn yīdiǎn"
+    }
   },
-"starters": {
+  "starters": {
     "where": {
       "listenFor": [
         {
@@ -142,12 +184,18 @@
       "text": "出租车站在哪里？",
       "phonetic": "Chūzūchē zhàn zài nǎli?"
     },
-    "where_atm": { "text": "提款机在什么地方？", "phonetic": "tí kuǎn jī zài shén me dì fang?" },
+    "where_atm": {
+      "text": "提款机在什么地方？",
+      "phonetic": "tí kuǎn jī zài shén me dì fang?"
+    },
     "where_pharmacy": {
       "text": "药店在哪里？",
       "phonetic": "Yàodiàn zài nǎli?"
     },
-    "where_doctor": { "text": "这个地方有医生吗？", "phonetic": "Zhège dìfāng yǒu yīshēng ma?" },
+    "where_doctor": {
+      "text": "这个地方有医生吗？",
+      "phonetic": "Zhège dìfāng yǒu yīshēng ma?"
+    },
     "where_restaurant": {
       "text": "附近有好的餐馆吗？",
       "phonetic": "Fùjìn yǒu hǎo de cānguǎn ma?"
@@ -180,8 +228,14 @@
       "text": "我想要一杯咖啡。",
       "phonetic": "Wǒ xiǎng yào yī bēi kāfēi."
     },
-    "like_menu": { "text": "请给我菜单。", "phonetic": "Qǐng gěi wǒ càidān." },
-    "like_bill": { "text": "买单，谢谢。", "phonetic": "Mǎidān, xièxie." },
+    "like_menu": {
+      "text": "请给我菜单。",
+      "phonetic": "Qǐng gěi wǒ càidān."
+    },
+    "like_bill": {
+      "text": "买单，谢谢。",
+      "phonetic": "Mǎidān, xièxie."
+    },
     "like_beer": {
       "text": "请给我一杯啤酒。",
       "phonetic": "Qǐng gěi wǒ yì bēi píjiǔ."
@@ -190,7 +244,10 @@
       "text": "请给我一杯红酒。",
       "phonetic": "Qǐng gěi wǒ yì bēi hóngjiǔ."
     },
-    "have_wifi": { "text": "请问这里提供无线网络吗？", "phonetic": "Qǐng wèn zhè lǐ tí gōng wú xiàn wǎng luò ma?" },
+    "have_wifi": {
+      "text": "请问这里提供无线网络吗？",
+      "phonetic": "Qǐng wèn zhè lǐ tí gōng wú xiàn wǎng luò ma?"
+    },
     "have_room": {
       "text": "请问，你们这里还有空房间吗？",
       "phonetic": "Qǐngwèn, nǐmen zhèlǐ hái yǒu kōng fángjiān ma?"
@@ -239,15 +296,105 @@
       "text": "我对海鲜过敏。",
       "phonetic": "Wǒ duì hǎixiān guòmǐn."
     },
-    "where_coffee": { "text": "请问，咖啡馆在哪里？", "phonetic": "Qǐngwèn, kāfēi guǎn zài nǎlǐ?" },
-    "where_water": { "text": "哪里可以买水？", "phonetic": "Nǎlǐ kěyǐ mǎi shuǐ?" },
-    "like_seafood": { "text": "我想要海鲜。", "phonetic": "Wǒ xiǎng yào hǎixiān." },
-    "like_vegetarian": { "text": "我希望能吃素食。", "phonetic": "Wǒ xīwàng néng chī sùshí." },
-    "have_water": { "text": "你们有水吗？", "phonetic": "Nǐmen yǒu shuǐ ma?" },
-    "have_beer": { "text": "你们有啤酒吗？", "phonetic": "Nǐmen yǒu píjiǔ ma?" },
-    "have_wine": { "text": "请问你们这儿有没有葡萄酒？", "phonetic": "Qǐng wèn nǐmen zhèr yǒu méiyǒu pútaojiǔ?" },
-    "cost_wifi": { "text": "WiFi多少钱？", "phonetic": "WiFi duōshǎo qián?" },
-    "cost_water": { "text": "请问这瓶水的价格是多少？", "phonetic": "Qǐng wèn zhè píng shuǐ de jiàgé shì duōshǎo?" },
-    "cost_seafood": { "text": "请问海鲜的价格是多少？", "phonetic": "Qǐngwèn hǎixiān de jiàgé shì duōshǎo?" }
+    "where_coffee": {
+      "text": "请问，咖啡馆在哪里？",
+      "phonetic": "Qǐngwèn, kāfēi guǎn zài nǎlǐ?"
+    },
+    "where_water": {
+      "text": "哪里可以买水？",
+      "phonetic": "Nǎlǐ kěyǐ mǎi shuǐ?"
+    },
+    "like_seafood": {
+      "text": "我想要海鲜。",
+      "phonetic": "Wǒ xiǎng yào hǎixiān."
+    },
+    "like_vegetarian": {
+      "text": "我希望能吃素食。",
+      "phonetic": "Wǒ xīwàng néng chī sùshí."
+    },
+    "have_water": {
+      "text": "你们有水吗？",
+      "phonetic": "Nǐmen yǒu shuǐ ma?"
+    },
+    "have_beer": {
+      "text": "你们有啤酒吗？",
+      "phonetic": "Nǐmen yǒu píjiǔ ma?"
+    },
+    "have_wine": {
+      "text": "请问你们这儿有没有葡萄酒？",
+      "phonetic": "Qǐng wèn nǐmen zhèr yǒu méiyǒu pútaojiǔ?"
+    },
+    "cost_wifi": {
+      "text": "WiFi多少钱？",
+      "phonetic": "WiFi duōshǎo qián?"
+    },
+    "cost_water": {
+      "text": "请问这瓶水的价格是多少？",
+      "phonetic": "Qǐng wèn zhè píng shuǐ de jiàgé shì duōshǎo?"
+    },
+    "cost_seafood": {
+      "text": "请问海鲜的价格是多少？",
+      "phonetic": "Qǐngwèn hǎixiān de jiàgé shì duōshǎo?"
+    },
+    "where_bus": {
+      "text": "公共汽车在哪里？",
+      "phonetic": "Gōnggòng qìchē zài nǎlǐ?"
+    },
+    "where_entrance": {
+      "text": "入口在哪里？",
+      "phonetic": "Rùkǒu zài nǎlǐ?"
+    },
+    "where_exit": {
+      "text": "出口在哪里？",
+      "phonetic": "Chūkǒu zài nǎlǐ?"
+    },
+    "where_key": {
+      "text": "钥匙在哪里？",
+      "phonetic": "Yàoshi zài nǎlǐ?"
+    },
+    "like_room": {
+      "text": "我想要一个房间。",
+      "phonetic": "Wǒ xiǎng yào yīgè fángjiān."
+    },
+    "like_receipt": {
+      "text": "我想要收据。",
+      "phonetic": "Wǒ xiǎng yào shōujù."
+    },
+    "like_ice": {
+      "text": "我想要一些冰块。",
+      "phonetic": "wo xiang yao yi xie bing kuai"
+    },
+    "have_map": {
+      "text": "你有地图吗？",
+      "phonetic": "Nǐ yǒu dìtú ma?"
+    },
+    "have_sugar": {
+      "text": "你有糖吗？",
+      "phonetic": "Nǐ yǒu táng ma?"
+    },
+    "cost_bus": {
+      "text": "公共汽车多少钱？",
+      "phonetic": "Gōnggòng qìchē duōshǎo qián?"
+    },
+    "allergic_gluten": {
+      "text": "我对麸质过敏。",
+      "phonetic": "Wǒ duì fūzhì guòmǐn."
+    },
+    "allergic_dairy": {
+      "text": "我对奶制品过敏。",
+      "phonetic": "Wo dui nai zhi pin guo min."
+    },
+    "allergic_nuts": {
+      "text": "我对坚果过敏。",
+      "phonetic": "Wǒ duì jiānguǒ guòmǐn."
+    },
+    "allergic_eggs": {
+      "text": "我对卵蛋过敏。",
+      "phonetic": "wǒ duì luǎn dàn guò mǐn."
+    },
+    "allergic_soy": {
+      "text": "我对大豆过敏。",
+      "phonetic": "Wǒ duì dàdòu guòmǐn."
+    }
   }
 }

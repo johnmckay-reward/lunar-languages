@@ -185,6 +185,22 @@ export class DataService {
     // Leisure / Shopping
     { id: 'beach', type: 'noun', category: 'Leisure', english: 'The Beach' },
     { id: 'supermarket', type: 'noun', category: 'Shopping', english: 'The Supermarket' },
+    { id: 'map', type: 'noun', category: 'Leisure', english: 'A Map' },
+    { id: 'receipt', type: 'noun', category: 'Shopping', english: 'The Receipt' },
+
+    // New General Nouns
+    { id: 'bus', type: 'noun', category: 'Transport', english: 'The Bus' },
+    { id: 'entrance', type: 'noun', category: 'Transport', english: 'The Entrance' },
+    { id: 'exit', type: 'noun', category: 'Transport', english: 'The Exit' },
+    { id: 'ice', type: 'noun', category: 'Dining', english: 'Ice' },
+    { id: 'sugar', type: 'noun', category: 'Dining', english: 'Sugar' },
+
+    // Allergies
+    { id: 'gluten', type: 'noun', category: 'Health', english: 'Gluten' },
+    { id: 'dairy', type: 'noun', category: 'Health', english: 'Dairy' },
+    { id: 'nuts', type: 'noun', category: 'Health', english: 'Nuts' },
+    { id: 'eggs', type: 'noun', category: 'Health', english: 'Eggs' },
+    { id: 'soy', type: 'noun', category: 'Health', english: 'Soy' },
   ];
 
   // ============================================================
@@ -206,6 +222,10 @@ export class DataService {
     'where_beach': { english: 'Where is the beach?' },
     'where_coffee': { english: 'Where is a coffee shop?' },
     'where_water': { english: 'Where can I buy water?' },
+    'where_bus': { english: 'Where is the bus?' },
+    'where_entrance': { english: 'Where is the entrance?' },
+    'where_exit': { english: 'Where is the exit?' },
+    'where_key': { english: 'Where is the key?' },
 
     // --- I WOULD LIKE... ---
     'like_ticket': { english: 'I would like a ticket please.' },
@@ -218,6 +238,9 @@ export class DataService {
     'like_wine': { english: 'I would like a glass of wine.' },
     'like_seafood': { english: 'I would like the seafood.' },
     'like_vegetarian': { english: 'I would like the vegetarian option.' },
+    'like_room': { english: 'I would like a room.' },
+    'like_receipt': { english: 'I would like a receipt.' },
+    'like_ice': { english: 'I would like some ice.' },
 
     // --- DO YOU HAVE...? ---
     'have_wifi': { english: 'Do you have WiFi?' },
@@ -228,6 +251,8 @@ export class DataService {
     'have_water': { english: 'Do you have water?' },
     'have_beer': { english: 'Do you have beer?' },
     'have_wine': { english: 'Do you have wine?' },
+    'have_map': { english: 'Do you have a map?' },
+    'have_sugar': { english: 'Do you have sugar?' },
 
     // --- HOW MUCH IS...? ---
     'cost_ticket': { english: 'How much is a ticket?' },
@@ -239,10 +264,16 @@ export class DataService {
     'cost_wifi': { english: 'How much is the WiFi?' },
     'cost_water': { english: 'How much is the water?' },
     'cost_seafood': { english: 'How much is the seafood?' },
+    'cost_bus': { english: 'How much is the bus?' },
 
     // --- I AM ALLERGIC TO... ---
     'allergic_peanuts': { english: 'I am allergic to peanuts.' },
-  'allergic_seafood': { english: 'I am allergic to seafood.' },
+    'allergic_seafood': { english: 'I am allergic to seafood.' },
+    'allergic_gluten': { english: 'I am allergic to gluten.' },
+    'allergic_dairy': { english: 'I am allergic to dairy.' },
+    'allergic_nuts': { english: 'I am allergic to nuts.' },
+    'allergic_eggs': { english: 'I am allergic to eggs.' },
+    'allergic_soy': { english: 'I am allergic to soy.' },
     // Add other allergies here if you add nouns for seafood, etc.
   };
 

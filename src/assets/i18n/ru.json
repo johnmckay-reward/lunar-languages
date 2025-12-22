@@ -1,8 +1,17 @@
 {
   "essentials": {
-    "hello": { "text": "Привет", "phonetic": "Pree-VYET" },
-    "thanks": { "text": "Спасибо", "phonetic": "Spah-SEE-bah" },
-    "goodbye": { "text": "До свидания", "phonetic": "Dah svee-DAH-nyah" },
+    "hello": {
+      "text": "Привет",
+      "phonetic": "Pree-VYET"
+    },
+    "thanks": {
+      "text": "Спасибо",
+      "phonetic": "Spah-SEE-bah"
+    },
+    "goodbye": {
+      "text": "До свидания",
+      "phonetic": "Dah svee-DAH-nyah"
+    },
     "good_morning": {
       "text": "Доброе утро",
       "phonetic": "DOH-bray-eh OO-trah"
@@ -11,10 +20,22 @@
       "text": "Добрый вечер",
       "phonetic": "DOH-bryy VYEH-cher"
     },
-    "bathroom": { "text": "Где туалет?", "phonetic": "Gdyeh too-ah-LYET?" },
-    "yes": { "text": "Да", "phonetic": "Dah" },
-    "no": { "text": "Нет", "phonetic": "Nyet" },
-    "sorry": { "text": "Извините", "phonetic": "Eez-vee-NEE-tyeh" },
+    "bathroom": {
+      "text": "Где туалет?",
+      "phonetic": "Gdyeh too-ah-LYET?"
+    },
+    "yes": {
+      "text": "Да",
+      "phonetic": "Dah"
+    },
+    "no": {
+      "text": "Нет",
+      "phonetic": "Nyet"
+    },
+    "sorry": {
+      "text": "Извините",
+      "phonetic": "Eez-vee-NEE-tyeh"
+    },
     "no_understand": {
       "text": "Я не понимаю",
       "phonetic": "Ya nyeh pah-nee-MAH-yoo"
@@ -23,10 +44,22 @@
       "text": "Вы говорите по-английски?",
       "phonetic": "Vy gah-vah-REE-tyeh pah-an-GLEEY-skee?"
     },
-    "help": { "text": "Помогите!", "phonetic": "Pah-mah-GEE-tyeh!" },
-    "delicious": { "text": "Вкусно!", "phonetic": "VKOOS-nah!" },
-    "cheers": { "text": "За здоровье!", "phonetic": "Zah zdah-ROHV-yeh!" },
-    "wifi_pass": { "text": "Пароль от WiFi?", "phonetic": "Pah-ROHL ot WiFi?" },
+    "help": {
+      "text": "Помогите!",
+      "phonetic": "Pah-mah-GEE-tyeh!"
+    },
+    "delicious": {
+      "text": "Вкусно!",
+      "phonetic": "VKOOS-nah!"
+    },
+    "cheers": {
+      "text": "За здоровье!",
+      "phonetic": "Zah zdah-ROHV-yeh!"
+    },
+    "wifi_pass": {
+      "text": "Пароль от WiFi?",
+      "phonetic": "Pah-ROHL ot WiFi?"
+    },
     "slowly": {
       "text": "Говорите медленнее, пожалуйста",
       "phonetic": "Gah-vah-REE-tyeh MYED-lyeh-nyeh-yeh, pah-ZHAH-loo-stah"
@@ -135,7 +168,10 @@
     }
   },
   "combinations": {
-    "where_station": { "text": "Где вокзал?", "phonetic": "Gdyeh vahk-ZAHL?" },
+    "where_station": {
+      "text": "Где вокзал?",
+      "phonetic": "Gdyeh vahk-ZAHL?"
+    },
     "where_airport": {
       "text": "Где находится аэропорт?",
       "phonetic": "Gde nakhoditsya aeroport?"
@@ -148,7 +184,10 @@
       "text": "Где стоянка такси?",
       "phonetic": "Gdyeh stah-YAN-kah tahk-SEE?"
     },
-    "where_atm": { "text": "Где банкомат?", "phonetic": "Gdyeh ban-kah-MAT?" },
+    "where_atm": {
+      "text": "Где банкомат?",
+      "phonetic": "Gdyeh ban-kah-MAT?"
+    },
     "where_pharmacy": {
       "text": "Где аптека?",
       "phonetic": "Gdyeh ahp-TYEH-kah?"
@@ -257,15 +296,105 @@
       "text": "У меня аллергия на морепродукты.",
       "phonetic": "Oo mye-NYA ah-lyer-GHEE-yah nah moh-ryeh-proh-DOOK-tee."
     },
-    "where_coffee": { "text": "Где находится кофейня?", "phonetic": "Gde nakhoditsya kofeynya?" },
-    "where_water": { "text": "Где я могу купить воду?", "phonetic": "Gde ya mogu kupit' vodu?" },
-    "like_seafood": { "text": "Я бы хотел морепродукты.", "phonetic": "Ya by khotel moreprodukty." },
-    "like_vegetarian": { "text": "Я бы хотел вегетарианское блюдо.", "phonetic": "Ya by khotel vegetarianskoye blyudo." },
-    "have_water": { "text": "У вас есть вода?", "phonetic": "U vas yest' voda?" },
-    "have_beer": { "text": "У вас есть пиво?", "phonetic": "U vas yest' pivo?" },
-    "have_wine": { "text": "У вас есть вино?", "phonetic": "U vas yest' vino?" },
-    "cost_wifi": { "text": "Сколько стоит WiFi?", "phonetic": "Skol'ko stoit WiFi?" },
-    "cost_water": { "text": "Сколько стоит вода?", "phonetic": "Skol'ko stoit voda?" },
-    "cost_seafood": { "text": "Сколько стоят морепродукты?", "phonetic": "Skol'ko stoyat moreprodukty?" }
+    "where_coffee": {
+      "text": "Где находится кофейня?",
+      "phonetic": "Gde nakhoditsya kofeynya?"
+    },
+    "where_water": {
+      "text": "Где я могу купить воду?",
+      "phonetic": "Gde ya mogu kupit' vodu?"
+    },
+    "like_seafood": {
+      "text": "Я бы хотел морепродукты.",
+      "phonetic": "Ya by khotel moreprodukty."
+    },
+    "like_vegetarian": {
+      "text": "Я бы хотел вегетарианское блюдо.",
+      "phonetic": "Ya by khotel vegetarianskoye blyudo."
+    },
+    "have_water": {
+      "text": "У вас есть вода?",
+      "phonetic": "U vas yest' voda?"
+    },
+    "have_beer": {
+      "text": "У вас есть пиво?",
+      "phonetic": "U vas yest' pivo?"
+    },
+    "have_wine": {
+      "text": "У вас есть вино?",
+      "phonetic": "U vas yest' vino?"
+    },
+    "cost_wifi": {
+      "text": "Сколько стоит WiFi?",
+      "phonetic": "Skol'ko stoit WiFi?"
+    },
+    "cost_water": {
+      "text": "Сколько стоит вода?",
+      "phonetic": "Skol'ko stoit voda?"
+    },
+    "cost_seafood": {
+      "text": "Сколько стоят морепродукты?",
+      "phonetic": "Skol'ko stoyat moreprodukty?"
+    },
+    "where_bus": {
+      "text": "Где автобус?",
+      "phonetic": "Gde avtobus?"
+    },
+    "where_entrance": {
+      "text": "Где вход?",
+      "phonetic": "Gde vkhod?"
+    },
+    "where_exit": {
+      "text": "Где выход?",
+      "phonetic": "Gde vykhod?"
+    },
+    "where_key": {
+      "text": "Где ключ?",
+      "phonetic": "Gde klyuch?"
+    },
+    "like_room": {
+      "text": "Я хотел бы номер.",
+      "phonetic": "Ya khotel by nomer."
+    },
+    "like_receipt": {
+      "text": "Я хотел бы чек.",
+      "phonetic": "Ya khotel by chek."
+    },
+    "like_ice": {
+      "text": "Я хотел бы льда.",
+      "phonetic": "Ya khotel by l'da."
+    },
+    "have_map": {
+      "text": "У вас есть карта?",
+      "phonetic": "U vas yest' karta?"
+    },
+    "have_sugar": {
+      "text": "У вас есть сахар?",
+      "phonetic": "U vas yest' sakhar?"
+    },
+    "cost_bus": {
+      "text": "Сколько стоит автобус?",
+      "phonetic": "Skol'ko stoit avtobus?"
+    },
+    "allergic_gluten": {
+      "text": "У меня аллергия на глютен.",
+      "phonetic": "U menya allergiya na glyuten."
+    },
+    "allergic_dairy": {
+      "text": "У меня аллергия на молочные продукты.",
+      "phonetic": "U menya allergiya na molochnye produkty."
+    },
+    "allergic_nuts": {
+      "text": "У меня аллергия на орехи.",
+      "phonetic": "U menya allergiya na orekhi."
+    },
+    "allergic_eggs": {
+      "text": "У меня аллергия на яйца.",
+      "phonetic": "U menya allergiya na yaytsa."
+    },
+    "allergic_soy": {
+      "text": "У меня аллергия на сою.",
+      "phonetic": "U menya allergiya na soyu."
+    }
   }
 }

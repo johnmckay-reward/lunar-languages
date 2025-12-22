@@ -1,25 +1,61 @@
 {
   "essentials": {
-    "hello": { "text": "Olá", "phonetic": "oh-LAH" },
-    "thanks": { "text": "Obrigado", "phonetic": "oh-bree-GAH-doo" },
-    "goodbye": { "text": "Adeus", "phonetic": "ah-DEH-oosh" },
-    "good_morning": { "text": "Bom dia", "phonetic": "bom DEE-ah" },
-    "good_evening": { "text": "Boa noite", "phonetic": "BOH-ah NOY-teh" },
+    "hello": {
+      "text": "Olá",
+      "phonetic": "oh-LAH"
+    },
+    "thanks": {
+      "text": "Obrigado",
+      "phonetic": "oh-bree-GAH-doo"
+    },
+    "goodbye": {
+      "text": "Adeus",
+      "phonetic": "ah-DEH-oosh"
+    },
+    "good_morning": {
+      "text": "Bom dia",
+      "phonetic": "bom DEE-ah"
+    },
+    "good_evening": {
+      "text": "Boa noite",
+      "phonetic": "BOH-ah NOY-teh"
+    },
     "bathroom": {
       "text": "Onde fica a casa de banho?",
       "phonetic": "ON-deh FEE-kah ah KAH-zah deh BAHN-yoo?"
     },
-    "yes": { "text": "Certamente", "phonetic": "ser-tah-men-teh" },
-    "no": { "text": "Não", "phonetic": "Now" },
-    "sorry": { "text": "Desculpe", "phonetic": "des-KOOL-peh" },
-    "no_understand": { "text": "Não entendo", "phonetic": "now en-TEN-doo" },
+    "yes": {
+      "text": "Certamente",
+      "phonetic": "ser-tah-men-teh"
+    },
+    "no": {
+      "text": "Não",
+      "phonetic": "Now"
+    },
+    "sorry": {
+      "text": "Desculpe",
+      "phonetic": "des-KOOL-peh"
+    },
+    "no_understand": {
+      "text": "Não entendo",
+      "phonetic": "now en-TEN-doo"
+    },
     "speak_english": {
       "text": "Fala inglês?",
       "phonetic": "FAH-lah een-GLEHSH?"
     },
-    "help": { "text": "Socorro!", "phonetic": "so-KOR-ro" },
-    "delicious": { "text": "Delicioso!", "phonetic": "deh-lee-SYOH-zoo!" },
-    "cheers": { "text": "Saúde!", "phonetic": "sah-OO-deh!" },
+    "help": {
+      "text": "Socorro!",
+      "phonetic": "so-KOR-ro"
+    },
+    "delicious": {
+      "text": "Delicioso!",
+      "phonetic": "deh-lee-SYOH-zoo!"
+    },
+    "cheers": {
+      "text": "Saúde!",
+      "phonetic": "sah-OO-deh!"
+    },
     "wifi_pass": {
       "text": "Password do WiFi?",
       "phonetic": "PASS-word doo WiFi?"
@@ -29,7 +65,7 @@
       "phonetic": "FAH-leh mys deh-vah-GAR, poor fah-VOR"
     }
   },
-"starters": {
+  "starters": {
     "where": {
       "listenFor": [
         {
@@ -208,7 +244,10 @@
       "text": "Queria uma taça de vinho, por favor.",
       "phonetic": "keh-REE-ah OO-ma TAH-sah jeh VEE-nyoo, poor fah-VOR."
     },
-    "have_wifi": { "text": "Tem internet sem fio?", "phonetic": "tẽ in-ter-nét sêñ fí-o" },
+    "have_wifi": {
+      "text": "Tem internet sem fio?",
+      "phonetic": "tẽ in-ter-nét sêñ fí-o"
+    },
     "have_room": {
       "text": "Há um cômodo disponível?",
       "phonetic": "Ah oon kô-moh-doo dis-pon-í-vel?"
@@ -257,15 +296,105 @@
       "text": "Sou alérgico a frutos do mar.",
       "phonetic": "soh ah-LEHR-jee-koo ah FROO-toos doo mar."
     },
-    "where_coffee": { "text": "Onde fica uma cafeteria?", "phonetic": "Ondee feeka ooma kafetereea" },
-    "where_water": { "text": "Onde posso comprar água?", "phonetic": "Ondee posso komprar agwa" },
-    "like_seafood": { "text": "Eu gostaria dos frutos do mar.", "phonetic": "Eyoo gostareea doos frootos doo mar" },
-    "like_vegetarian": { "text": "Eu gostaria da opção vegetariana.", "phonetic": "Eyoo gostareea da opsown vejaytaryana" },
-    "have_water": { "text": "Você possui água?", "phonetic": "Vo-sê po-su-i á-gua?" },
-    "have_beer": { "text": "Você tem cerveja?", "phonetic": "Vosay taym servayzha" },
-    "have_wine": { "text": "Você tem vinho?", "phonetic": "Vosay taym veenyo" },
-    "cost_wifi": { "text": "Quanto custa o WiFi?", "phonetic": "Kwanto koosta oo WiFi" },
-    "cost_water": { "text": "Quanto custa a água?", "phonetic": "Kwanto koosta a agwa" },
-    "cost_seafood": { "text": "Quanto custam os frutos do mar?", "phonetic": "Kwanto koostam oos frootos doo mar" }
+    "where_coffee": {
+      "text": "Onde fica uma cafeteria?",
+      "phonetic": "Ondee feeka ooma kafetereea"
+    },
+    "where_water": {
+      "text": "Onde posso comprar água?",
+      "phonetic": "Ondee posso komprar agwa"
+    },
+    "like_seafood": {
+      "text": "Eu gostaria dos frutos do mar.",
+      "phonetic": "Eyoo gostareea doos frootos doo mar"
+    },
+    "like_vegetarian": {
+      "text": "Eu gostaria da opção vegetariana.",
+      "phonetic": "Eyoo gostareea da opsown vejaytaryana"
+    },
+    "have_water": {
+      "text": "Você possui água?",
+      "phonetic": "Vo-sê po-su-i á-gua?"
+    },
+    "have_beer": {
+      "text": "Você tem cerveja?",
+      "phonetic": "Vosay taym servayzha"
+    },
+    "have_wine": {
+      "text": "Você tem vinho?",
+      "phonetic": "Vosay taym veenyo"
+    },
+    "cost_wifi": {
+      "text": "Quanto custa o WiFi?",
+      "phonetic": "Kwanto koosta oo WiFi"
+    },
+    "cost_water": {
+      "text": "Quanto custa a água?",
+      "phonetic": "Kwanto koosta a agwa"
+    },
+    "cost_seafood": {
+      "text": "Quanto custam os frutos do mar?",
+      "phonetic": "Kwanto koostam oos frootos doo mar"
+    },
+    "where_bus": {
+      "text": "Onde está o ônibus?",
+      "phonetic": "On-jee es-tah oo oh-nee-boos"
+    },
+    "where_entrance": {
+      "text": "Onde é a entrada?",
+      "phonetic": "On-jee eh ah en-trah-dah"
+    },
+    "where_exit": {
+      "text": "Onde é a saída?",
+      "phonetic": "On-jee eh ah sah-ee-dah"
+    },
+    "where_key": {
+      "text": "Onde está a chave?",
+      "phonetic": "On-jee es-tah ah shah-vee"
+    },
+    "like_room": {
+      "text": "Eu gostaria de um quarto.",
+      "phonetic": "Eh-oo gos-ta-ree-ah jee oom kwar-too"
+    },
+    "like_receipt": {
+      "text": "Eu gostaria de um recibo.",
+      "phonetic": "Eh-oo gos-ta-ree-ah jee oom he-see-boo"
+    },
+    "like_ice": {
+      "text": "Eu gostaria de gelo.",
+      "phonetic": "Eh-oo gos-ta-ree-ah jee zheh-loo"
+    },
+    "have_map": {
+      "text": "Você tem um mapa?",
+      "phonetic": "Vo-seh teng oom mah-pah"
+    },
+    "have_sugar": {
+      "text": "Você tem açúcar?",
+      "phonetic": "Vo-seh teng ah-soo-kar"
+    },
+    "cost_bus": {
+      "text": "Quanto custa o ônibus?",
+      "phonetic": "Kwan-too koos-ta oo oh-nee-boos"
+    },
+    "allergic_gluten": {
+      "text": "Sou alérgico a glúten.",
+      "phonetic": "So ah-leh-jee-ko ah gloo-ten"
+    },
+    "allergic_dairy": {
+      "text": "Sou alérgico a laticínios.",
+      "phonetic": "So ah-leh-jee-ko ah la-chee-see-nee-os"
+    },
+    "allergic_nuts": {
+      "text": "Sou alérgico a nozes.",
+      "phonetic": "So ah-leh-jee-ko ah no-zes"
+    },
+    "allergic_eggs": {
+      "text": "Sou alérgico a ovos.",
+      "phonetic": "So ah-leh-jee-ko ah oh-vos"
+    },
+    "allergic_soy": {
+      "text": "Sou alérgico a soja.",
+      "phonetic": "So ah-leh-jee-ko ah so-zhah"
+    }
   }
 }

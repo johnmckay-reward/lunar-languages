@@ -1,17 +1,41 @@
 {
   "essentials": {
-    "hello": { "text": "Hallo", "phonetic": "HA-loh" },
-    "thanks": { "text": "Danke", "phonetic": "DAN-kuh" },
-    "goodbye": { "text": "Auf Wiedersehen", "phonetic": "owf VEE-der-zayn" },
-    "good_morning": { "text": "Guten Morgen", "phonetic": "GOO-ten MOR-gen" },
-    "good_evening": { "text": "Guten Abend", "phonetic": "GOO-ten AH-bent" },
+    "hello": {
+      "text": "Hallo",
+      "phonetic": "HA-loh"
+    },
+    "thanks": {
+      "text": "Danke",
+      "phonetic": "DAN-kuh"
+    },
+    "goodbye": {
+      "text": "Auf Wiedersehen",
+      "phonetic": "owf VEE-der-zayn"
+    },
+    "good_morning": {
+      "text": "Guten Morgen",
+      "phonetic": "GOO-ten MOR-gen"
+    },
+    "good_evening": {
+      "text": "Guten Abend",
+      "phonetic": "GOO-ten AH-bent"
+    },
     "bathroom": {
       "text": "Wo ist die Toilette?",
       "phonetic": "voh ist dee toy-LET-uh?"
     },
-    "yes": { "text": "Ja", "phonetic": "Yah" },
-    "no": { "text": "Nein", "phonetic": "Nine" },
-    "sorry": { "text": "Entschuldigung", "phonetic": "ent-SHOOL-dee-gung" },
+    "yes": {
+      "text": "Ja",
+      "phonetic": "Yah"
+    },
+    "no": {
+      "text": "Nein",
+      "phonetic": "Nine"
+    },
+    "sorry": {
+      "text": "Entschuldigung",
+      "phonetic": "ent-SHOOL-dee-gung"
+    },
     "no_understand": {
       "text": "Ich verstehe nicht",
       "phonetic": "ich fer-SHTAY-uh nicht"
@@ -20,9 +44,18 @@
       "text": "Sprechen Sie Englisch?",
       "phonetic": "SHPREH-khen zee ENG-lish?"
     },
-    "help": { "text": "Hilfe!", "phonetic": "HIL-fuh!" },
-    "delicious": { "text": "Lecker!", "phonetic": "LEH-ker!" },
-    "cheers": { "text": "Prost!", "phonetic": "Prohst!" },
+    "help": {
+      "text": "Hilfe!",
+      "phonetic": "HIL-fuh!"
+    },
+    "delicious": {
+      "text": "Lecker!",
+      "phonetic": "LEH-ker!"
+    },
+    "cheers": {
+      "text": "Prost!",
+      "phonetic": "Prohst!"
+    },
     "wifi_pass": {
       "text": "Internet-Passwort?",
       "phonetic": "IN-ter-net pass-vort?"
@@ -263,15 +296,105 @@
       "text": "Ich bin allergisch gegen Meeresfrüchte.",
       "phonetic": "ich bin ah-LER-gish gay-gen MAY-res-froo-teh."
     },
-    "where_coffee": { "text": "Wo ist ein Café?", "phonetic": "Vo ist ayn kafay" },
-    "where_water": { "text": "Wo kann ich Wasser kaufen?", "phonetic": "Vo kan ikh vaser kowfen" },
-    "like_seafood": { "text": "Ich hätte gerne die Meeresfrüchte.", "phonetic": "Ikh hette gairne dee maires-fruekhte" },
-    "like_vegetarian": { "text": "Ich hätte gerne die vegetarische Option.", "phonetic": "Ikh hette gairne dee vegetarishe opsyon" },
-    "have_water": { "text": "Haben Sie Wasser?", "phonetic": "Haben zee vaser" },
-    "have_beer": { "text": "Haben Sie Bier?", "phonetic": "Haben zee beer" },
-    "have_wine": { "text": "Haben Sie Wein?", "phonetic": "Haben zee vine" },
-    "cost_wifi": { "text": "Wie viel kostet das WLAN?", "phonetic": "Vee feel kostet das vay-lan" },
-    "cost_water": { "text": "Wie viel kostet das Wasser?", "phonetic": "Vee feel kostet das vaser" },
-    "cost_seafood": { "text": "Wie viel kosten die Meeresfrüchte?", "phonetic": "Vee feel kosten dee maires-fruekhte" }
+    "where_coffee": {
+      "text": "Wo ist ein Café?",
+      "phonetic": "Vo ist ayn kafay"
+    },
+    "where_water": {
+      "text": "Wo kann ich Wasser kaufen?",
+      "phonetic": "Vo kan ikh vaser kowfen"
+    },
+    "like_seafood": {
+      "text": "Ich hätte gerne die Meeresfrüchte.",
+      "phonetic": "Ikh hette gairne dee maires-fruekhte"
+    },
+    "like_vegetarian": {
+      "text": "Ich hätte gerne die vegetarische Option.",
+      "phonetic": "Ikh hette gairne dee vegetarishe opsyon"
+    },
+    "have_water": {
+      "text": "Haben Sie Wasser?",
+      "phonetic": "Haben zee vaser"
+    },
+    "have_beer": {
+      "text": "Haben Sie Bier?",
+      "phonetic": "Haben zee beer"
+    },
+    "have_wine": {
+      "text": "Haben Sie Wein?",
+      "phonetic": "Haben zee vine"
+    },
+    "cost_wifi": {
+      "text": "Wie viel kostet das WLAN?",
+      "phonetic": "Vee feel kostet das vay-lan"
+    },
+    "cost_water": {
+      "text": "Wie viel kostet das Wasser?",
+      "phonetic": "Vee feel kostet das vaser"
+    },
+    "cost_seafood": {
+      "text": "Wie viel kosten die Meeresfrüchte?",
+      "phonetic": "Vee feel kosten dee maires-fruekhte"
+    },
+    "where_bus": {
+      "text": "Wo ist der Bus?",
+      "phonetic": "Voh ist dehr boos"
+    },
+    "where_entrance": {
+      "text": "Wo ist der Eingang?",
+      "phonetic": "Voh ist dehr ayn-gahng"
+    },
+    "where_exit": {
+      "text": "Wo ist der Ausgang?",
+      "phonetic": "Voh ist dehr ows-gahng"
+    },
+    "where_key": {
+      "text": "Wo ist der Schlüssel?",
+      "phonetic": "Voh ist dehr shloo-sel"
+    },
+    "like_room": {
+      "text": "Ich möchte ein Zimmer.",
+      "phonetic": "Ikh merkh-te ayn tsim-mer"
+    },
+    "like_receipt": {
+      "text": "Ich möchte eine Quittung.",
+      "phonetic": "Ikh merkh-te ay-ne kvit-toong"
+    },
+    "like_ice": {
+      "text": "Ich möchte etwas Eis.",
+      "phonetic": "Ikh merkh-te et-vas ays"
+    },
+    "have_map": {
+      "text": "Haben Sie eine Karte?",
+      "phonetic": "Hah-ben zee ay-ne kar-te"
+    },
+    "have_sugar": {
+      "text": "Haben Sie Zucker?",
+      "phonetic": "Hah-ben zee tsoo-ker"
+    },
+    "cost_bus": {
+      "text": "Wie viel kostet der Bus?",
+      "phonetic": "Vee feel kos-tet dehr boos"
+    },
+    "allergic_gluten": {
+      "text": "Ich bin allergisch gegen Gluten.",
+      "phonetic": "Ikh bin ah-ler-gish gay-gen gloo-ten"
+    },
+    "allergic_dairy": {
+      "text": "Ich bin allergisch gegen Milchprodukte.",
+      "phonetic": "Ikh bin ah-ler-gish gay-gen milsh-pro-dook-te"
+    },
+    "allergic_nuts": {
+      "text": "Ich bin allergisch gegen Nüsse.",
+      "phonetic": "Ikh bin ah-ler-gish gay-gen noos-se"
+    },
+    "allergic_eggs": {
+      "text": "Ich bin allergisch gegen Eier.",
+      "phonetic": "Ikh bin ah-ler-gish gay-gen ay-er"
+    },
+    "allergic_soy": {
+      "text": "Ich bin allergisch gegen Soja.",
+      "phonetic": "Ikh bin ah-ler-gish gay-gen zoy-ah"
+    }
   }
 }

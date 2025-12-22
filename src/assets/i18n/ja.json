@@ -1,20 +1,41 @@
 {
   "essentials": {
-    "hello": { "text": "こんにちは", "phonetic": "Kon-nee-chee-wah" },
-    "thanks": { "text": "ありがとう", "phonetic": "Ah-ree-gah-toh" },
-    "goodbye": { "text": "さようなら", "phonetic": "Sah-yoh-nah-rah" },
+    "hello": {
+      "text": "こんにちは",
+      "phonetic": "Kon-nee-chee-wah"
+    },
+    "thanks": {
+      "text": "ありがとう",
+      "phonetic": "Ah-ree-gah-toh"
+    },
+    "goodbye": {
+      "text": "さようなら",
+      "phonetic": "Sah-yoh-nah-rah"
+    },
     "good_morning": {
       "text": "おはようございます",
       "phonetic": "Oh-hah-yoh go-zai-mass"
     },
-    "good_evening": { "text": "こんばんは", "phonetic": "Kon-ban-wah" },
+    "good_evening": {
+      "text": "こんばんは",
+      "phonetic": "Kon-ban-wah"
+    },
     "bathroom": {
       "text": "トイレはどこですか？",
       "phonetic": "Toy-reh wa doh-koh dess kah?"
     },
-    "yes": { "text": "はい", "phonetic": "Hi" },
-    "no": { "text": "いいえ", "phonetic": "Ee-eh" },
-    "sorry": { "text": "すみません", "phonetic": "Soo-mee-mah-sen" },
+    "yes": {
+      "text": "はい",
+      "phonetic": "Hi"
+    },
+    "no": {
+      "text": "いいえ",
+      "phonetic": "Ee-eh"
+    },
+    "sorry": {
+      "text": "すみません",
+      "phonetic": "Soo-mee-mah-sen"
+    },
     "no_understand": {
       "text": "理解できません",
       "phonetic": "りかいできません"
@@ -23,7 +44,10 @@
       "text": "英語を話せますか？",
       "phonetic": "Ey-go oh hah-nah-seh-mass kah?"
     },
-    "help": { "text": "助けてください！", "phonetic": "たすけてください" },
+    "help": {
+      "text": "助けてください！",
+      "phonetic": "たすけてください"
+    },
     "delicious": {
       "text": "これは美味しいですね！",
       "phonetic": "Kore wa oishii desu ne!"
@@ -272,15 +296,105 @@
       "text": "私は魚介類アレルギーです。",
       "phonetic": "Wah-tah-she wa gyo-kai-roo-ee ah-reh-roo-gee dess."
     },
-    "where_coffee": { "text": "カフェはどこですか？", "phonetic": "かふぇはどこですか？" },
-    "where_water": { "text": "水はどこで買えますか？", "phonetic": "Mizu wa doko de kaemasu ka?" },
-    "like_seafood": { "text": "シーフードをお願いします。", "phonetic": "Shiifoodo o onegaishimasu." },
-    "like_vegetarian": { "text": "ベジタリアンのオプションをお願いします。", "phonetic": "Bejitarian no opushon o onegaishimasu." },
-    "have_water": { "text": "水はありますか？", "phonetic": "Mizu wa arimasu ka?" },
-    "have_beer": { "text": "ビールはありますか？", "phonetic": "Biiru wa arimasu ka?" },
-    "have_wine": { "text": "ワインはありますか？", "phonetic": "Wain wa arimasu ka?" },
-    "cost_wifi": { "text": "WiFiはいくらですか？", "phonetic": "WiFi wa ikura desu ka?" },
-    "cost_water": { "text": "水はいくらですか？", "phonetic": "Mizu wa ikura desu ka?" },
-    "cost_seafood": { "text": "シーフードはいくらですか？", "phonetic": "Shiifoodo wa ikura desu ka?" }
+    "where_coffee": {
+      "text": "カフェはどこですか？",
+      "phonetic": "かふぇはどこですか？"
+    },
+    "where_water": {
+      "text": "水はどこで買えますか？",
+      "phonetic": "Mizu wa doko de kaemasu ka?"
+    },
+    "like_seafood": {
+      "text": "シーフードをお願いします。",
+      "phonetic": "Shiifoodo o onegaishimasu."
+    },
+    "like_vegetarian": {
+      "text": "ベジタリアンのオプションをお願いします。",
+      "phonetic": "Bejitarian no opushon o onegaishimasu."
+    },
+    "have_water": {
+      "text": "水はありますか？",
+      "phonetic": "Mizu wa arimasu ka?"
+    },
+    "have_beer": {
+      "text": "ビールはありますか？",
+      "phonetic": "Biiru wa arimasu ka?"
+    },
+    "have_wine": {
+      "text": "ワインはありますか？",
+      "phonetic": "Wain wa arimasu ka?"
+    },
+    "cost_wifi": {
+      "text": "WiFiはいくらですか？",
+      "phonetic": "WiFi wa ikura desu ka?"
+    },
+    "cost_water": {
+      "text": "水はいくらですか？",
+      "phonetic": "Mizu wa ikura desu ka?"
+    },
+    "cost_seafood": {
+      "text": "シーフードはいくらですか？",
+      "phonetic": "Shiifoodo wa ikura desu ka?"
+    },
+    "where_bus": {
+      "text": "その、バスの場所はどこですか？",
+      "phonetic": "Sono basu no basho wa doko desu ka?"
+    },
+    "where_entrance": {
+      "text": "入り口はどこですか？",
+      "phonetic": "Iriguchi wa doko desu ka?"
+    },
+    "where_exit": {
+      "text": "出口はどこですか？",
+      "phonetic": "Deguchi wa doko desu ka?"
+    },
+    "where_key": {
+      "text": "鍵はどこですか？",
+      "phonetic": "Kagi wa doko desu ka?"
+    },
+    "like_room": {
+      "text": "部屋をお願いします。",
+      "phonetic": "Heya o onegaishimasu."
+    },
+    "like_receipt": {
+      "text": "領収書をお願いします。",
+      "phonetic": "Ryoshusho o onegaishimasu."
+    },
+    "like_ice": {
+      "text": "氷をお願いします。",
+      "phonetic": "Koori o onegaishimasu."
+    },
+    "have_map": {
+      "text": "地図はありますか？",
+      "phonetic": "Chizu wa arimasu ka?"
+    },
+    "have_sugar": {
+      "text": "砂糖はありますか？",
+      "phonetic": "Satou wa arimasu ka?"
+    },
+    "cost_bus": {
+      "text": "バス代はいくらですか？",
+      "phonetic": "Basu dai wa ikura desu ka?"
+    },
+    "allergic_gluten": {
+      "text": "グルテンアレルギーです。",
+      "phonetic": "Guruten arerugii desu."
+    },
+    "allergic_dairy": {
+      "text": "乳製品アレルギーです。",
+      "phonetic": "Nyuuseihin arerugii desu."
+    },
+    "allergic_nuts": {
+      "text": "ナッツアレルギーです。",
+      "phonetic": "Nattsu arerugii desu."
+    },
+    "allergic_eggs": {
+      "text": "卵アレルギーです。",
+      "phonetic": "Tamago arerugii desu."
+    },
+    "allergic_soy": {
+      "text": "大豆アレルギーです。",
+      "phonetic": "Daizu arerugii desu."
+    }
   }
 }
