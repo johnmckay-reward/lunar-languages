@@ -4,13 +4,14 @@ const path = require('path');
 const OpenAI = require('openai');
 const levenshtein = require('fast-levenshtein');
 const inquirer = require('inquirer').default;
+const { pinyin } = require('pinyin-pro'); // 🆕 REQUIRED: npm install pinyin-pro
 
 // --- CONFIGURATION ---
 const I18N_DIR = path.join(__dirname, 'src/assets/i18n');
 const AUDIO_DIR = path.join(__dirname, 'src/assets/audio');
 
 const RETRY_LIMIT = 2;
-const SIMILARITY_THRESHOLD = 70;
+const SIMILARITY_THRESHOLD = 80; // ⬆️ Bumped slightly for higher quality
 const ENABLE_AI_REPAIR = true;
 
 const PRICE_PER_1K_CHARS = 0.030; // approx model pricing
@@ -19,7 +20,7 @@ const PRICE_PER_1K_CHARS = 0.030; // approx model pricing
 const VOICE_MAP = {
   de: 'onyx',    en: 'echo',    es: 'alloy',   fr: 'nova',    it: 'shimmer',
   ja: 'alloy',   pl: 'alloy',   pt: 'fable',   ru: 'onyx',    uk: 'nova',
-  zh: 'shimmer', default: 'echo'
+  zh: 'shimmer', ko: 'nova',    default: 'echo'
 };
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
@@ -30,8 +31,9 @@ const stats = { success: 0, failed: 0, repaired: 0 };
 function normalizeText(text) {
   if (!text) return "";
   return text.toLowerCase()
-    .replace(/[¡¿]/g, "")
-    .replace(/[.,/#!$%^&*;:{}=\-_`~()"?]/g, "")
+    // 🆕 Universal Punctuation Strip: Includes CJK (Chinese/Japanese) & Standard Symbols
+    .replace(/[.,/#!$%^&*;:{}=\-_`~()"?\u3000-\u303F\uFF00-\uFFEF\u2000-\u206F]/g, "")
+    // Remove diacritics (accents) for looser comparison in Latin langs
     .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
     .replace(/\s{2,}/g, " ")
     .trim();
@@ -45,15 +47,33 @@ function getScore(str1, str2) {
   return (1 - distance / maxLength) * 100;
 }
 
-function calculateSimilarity(original, transcribed) {
+/**
+ * 🧠 Intelligent Similarity Calculator
+ * Adapts comparison logic based on the language to avoid false negatives.
+ */
+function calculateSimilarity(original, transcribed, langCode = 'en') {
+
+  // 1. 🇨🇳 CHINESE SPECIALIST (Phonetic Comparison)
+  // Ignores character differences (Traditional vs Simplified) and focuses on sound (Pinyin).
+  if (langCode === 'zh') {
+    try {
+      const origPinyin = pinyin(original, { toneType: 'none', nonZh: 'consecutive' }).replace(/\s+/g, '');
+      const transPinyin = pinyin(transcribed, { toneType: 'none', nonZh: 'consecutive' }).replace(/\s+/g, '');
+      return getScore(origPinyin, transPinyin);
+    } catch (e) {
+      console.warn('      ⚠️ Pinyin conversion failed, falling back to standard text match.');
+    }
+  }
+
   const normOriginal = normalizeText(original);
   const normTranscribed = normalizeText(transcribed);
 
-  // 1. Direct comparison
+  // 2. 📄 Standard Text Comparison (Latin/Cyrillic)
   const standardScore = getScore(normOriginal, normTranscribed);
   if (standardScore >= SIMILARITY_THRESHOLD) return standardScore;
 
-  // 2. Squash comparison (ignoring spaces) useful for languages like Japanese/Chinese
+  // 3. 🍱 Squash Comparison (Japanese/Thai/Korean)
+  // Removes ALL spaces. Essential for languages where spaces are optional or non-existent.
   const squashOriginal = normOriginal.replace(/\s+/g, '');
   const squashTranscribed = normTranscribed.replace(/\s+/g, '');
   const squashScore = getScore(squashOriginal, squashTranscribed);
@@ -69,6 +89,7 @@ function updateSourceFile(fileName, section, key, newText, newPhonetic) {
 
     const replaceInKeyBlock = (content, targetKey, field, newValue) => {
       // Regex looks for "key": { ... "field": "OLD_VALUE" ... }
+      // Handles potential newlines/spaces between keys
       const regex = new RegExp(
         `("${targetKey}"\\s*:\\s*\\{[^}]*?"${field}"\\s*:\\s*")([^"]*)(")`,
         's'
@@ -97,7 +118,7 @@ function updateSourceFile(fileName, section, key, newText, newPhonetic) {
   }
 }
 
-// 🤖 AI REPAIR LOGIC (OPTIMIZED & CONTEXT AWARE)
+// 🤖 AI REPAIR LOGIC
 async function repairPhraseWithAI(item, currentText, failedTranscription, langCode) {
   console.log(`      🤖 AI Doctor analyzing failure...`);
   console.log(`         Expected: "${currentText}"`);
@@ -113,16 +134,18 @@ async function repairPhraseWithAI(item, currentText, failedTranscription, langCo
           content: `You are a linguistic engineer fixing TTS (Text-to-Speech) failures.
 
           CONTEXT:
-          We tried to generate audio for a phrase in '${langCode}', but the verification AI misheard it.
+          We generated audio for a phrase in '${langCode}', but the verification AI misheard it.
+
+          COMMON CAUSES:
+          - Homophones (words that sound the same but are written differently).
+          - Ambiguous pronunciation in short words.
+          - Numbers/Dates (TTS might say "twenty-two" vs "22").
 
           YOUR GOAL:
-          Rewrite the phrase in '${langCode}' so it is phonetically distinct and harder to misinterpret, while keeping the EXACT same meaning.
-
-          GUIDELINES:
-          1. Analyze the discrepancy between 'Original' and 'Heard'.
-          2. Avoid very short (1-2 syllable) words if possible; they are prone to failure. Prefer articulate synonyms.
-          3. Do NOT change the language. The result must be '${langCode}'.
-          4. If the error is minor, maybe just changing punctuation or spelling (if language allows) helps.
+          Rewrite the phrase in '${langCode}' so it is phonetically distinct and unambiguous.
+          1. Keep the EXACT meaning.
+          2. Use synonyms if the current word is causing phonetic confusion.
+          3. Add punctuation to force pauses if it helps clarity.
 
           Return JSON: { "text": "New Robust Phrase", "phonetic": "Optional Phonetic Guide" }`
         },
@@ -148,13 +171,15 @@ async function verifyAudio(filePath, originalText, langCode) {
       file: fs.createReadStream(filePath),
       model: "whisper-1",
       language: langCode,
+      // prompt: originalText // Optional: Guiding Whisper with original text sometimes improves accuracy too much (false positives), so we leave it off for strict checking.
     });
 
     const cleanTranscribed = transcription.text || "";
-    return {
-      score: calculateSimilarity(originalText, cleanTranscribed),
-      transcribedText: cleanTranscribed
-    };
+
+    // 🆕 Passing langCode to allow language-specific logic
+    const score = calculateSimilarity(originalText, cleanTranscribed, langCode);
+
+    return { score, transcribedText: cleanTranscribed };
   } catch (error) {
     console.error(`      Verify Error: ${error.message}`);
     return { score: 0, transcribedText: "" };
@@ -191,11 +216,10 @@ async function generateAudio(item, attempt = 1) {
         return generateAudio(item, attempt + 1);
       }
 
-      // B. AI Repair (With Context!)
+      // B. AI Repair
       else if (ENABLE_AI_REPAIR) {
         console.log(`   🛑 All retries failed.`);
 
-        // Pass the bad transcription so the AI knows what went wrong
         const correction = await repairPhraseWithAI(item, item.text, transcribedText, item.langCode);
 
         if (correction && correction.text) {
@@ -204,16 +228,13 @@ async function generateAudio(item, attempt = 1) {
 
           // --- TEST RUN START ---
           try {
-            // 1. Generate Audio for Suggestion
             const testMp3 = await openai.audio.speech.create({
               model: "tts-1-hd", voice: voice, input: correction.text
             });
             await fs.promises.writeFile(item.outputPath, Buffer.from(await testMp3.arrayBuffer()));
 
-            // 2. Verify Suggestion
             const testResult = await verifyAudio(item.outputPath, correction.text, item.langCode);
 
-            // 3. DECISION MOMENT
             if (testResult.score >= SIMILARITY_THRESHOLD) {
               console.log(`      ✅ Suggestion Verified (${testResult.score.toFixed(0)}%)! Committing changes...`);
 
@@ -240,7 +261,6 @@ async function generateAudio(item, attempt = 1) {
             stats.failed++;
         }
       } else {
-        // C. Ultimate Failure
         console.error(`      ❌ FAILED: Deleting file.`);
         try { await fs.promises.unlink(item.outputPath); } catch (e) {}
         stats.failed++;
@@ -264,7 +284,6 @@ function getTranslationEntries(filename) {
     const content = JSON.parse(fs.readFileSync(filePath, 'utf8'));
     const items = [];
 
-    // Recursive function to handle nested structures if your JSON grows
     const extract = (sectionName, sectionData) => {
       if (!sectionData) return;
       for (const [key, data] of Object.entries(sectionData)) {
@@ -280,7 +299,7 @@ function getTranslationEntries(filename) {
       }
     };
 
-    // Customize these keys based on your JSON structure
+    // Customize based on JSON structure
     if(content.essentials) extract('essentials', content.essentials);
     if(content.combinations) extract('combinations', content.combinations);
 
@@ -311,7 +330,6 @@ async function processQueue(queue) {
 async function main() {
   if (!fs.existsSync(AUDIO_DIR)) fs.mkdirSync(AUDIO_DIR, { recursive: true });
 
-  // Filter out non-JSON and usually English (source) files if necessary
   const allFiles = fs.readdirSync(I18N_DIR).filter(f => f.endsWith('.json') && f !== 'en.json');
 
   if (allFiles.length === 0) return console.log("No translation files found in src/assets/i18n.");

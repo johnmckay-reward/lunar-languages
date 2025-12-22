@@ -157,12 +157,12 @@
       "phonetic": "Qǐng wèn, yīyuàn de wèizhì zài nǎlǐ?"
     },
     "where_supermarket": {
-      "text": "超市在哪里？",
-      "phonetic": "Chāoshì zài nǎli?"
+      "text": "请问,超市在什么地方？",
+      "phonetic": "Qǐng wèn, chāo shì zài shén me dì fang?"
     },
     "where_beach": {
-      "text": "海滩在哪里？",
-      "phonetic": "Hǎitān zài nǎli?"
+      "text": "请问，海边在哪里？",
+      "phonetic": "Qǐng wèn, hǎibiān zài nǎlǐ?"
     },
     "like_ticket": {
       "text": "我想要一张票。",
