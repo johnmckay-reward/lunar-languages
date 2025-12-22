@@ -70,7 +70,7 @@ export class HomePage implements OnInit {
 
       // Auto-select first starter
       if (this.starters.length > 0) {
-        this.selectStarter(this.starters[0]);
+        this.selectStarter(this.starters[0], false);
       }
     });
   }
@@ -146,7 +146,7 @@ export class HomePage implements OnInit {
   // USER ACTIONS
   // ============================================
 
-  selectStarter(starter: Phrase) {
+  selectStarter(starter: Phrase, autoScroll: boolean = true) {
     Haptics.impact({ style: ImpactStyle.Light });
     this.selectedStarter = starter;
     this.selectedNoun = null;
@@ -157,13 +157,15 @@ export class HomePage implements OnInit {
 
     this.updateDisplay();
 
-    // Smooth scroll to the complete phrase section
-    setTimeout(() => {
-      const element = document.getElementById('complete-phrase-section');
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    }, 100);
+    if (autoScroll) {
+      // Smooth scroll to the complete phrase section
+      setTimeout(() => {
+        const element = document.getElementById('complete-phrase-section');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
+    }
   }
 
   selectNoun(noun: Phrase) {
