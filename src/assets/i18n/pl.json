@@ -603,6 +603,22 @@
     "no_meat": {
       "text": "Bez mięsa, proszę",
       "phonetic": "Bez mye-sa, pro-she"
+    },
+    "is_free_wifi": {
+      "text": "Czy WiFi jest darmowe?",
+      "phonetic": "chi wai-fai yest dar-mo-ve"
+    },
+    "is_free_water": {
+      "text": "Czy woda jest darmowa?",
+      "phonetic": "chi vo-da yest dar-mo-va"
+    },
+    "is_free_entrance": {
+      "text": "Czy wstęp jest darmowy?",
+      "phonetic": "chi fstemp yest dar-mo-vy"
+    },
+    "is_free_nuts": {
+      "text": "Czy te orzeszki są darmowe?",
+      "phonetic": "chi te o-zhesh-ki song dar-mo-ve"
     }
   }
 }

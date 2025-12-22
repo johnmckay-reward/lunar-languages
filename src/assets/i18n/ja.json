@@ -603,6 +603,22 @@
     "no_meat": {
       "text": "肉なしでお願いします",
       "phonetic": "Niku nashi de onegaishimasu"
+    },
+    "is_free_wifi": {
+      "text": "Wi-Fiは無料ですか？",
+      "phonetic": "Wi-Fi wa muryo desu ka?"
+    },
+    "is_free_water": {
+      "text": "水は無料ですか？",
+      "phonetic": "Mizu wa muryo desu ka?"
+    },
+    "is_free_entrance": {
+      "text": "入場は無料ですか？",
+      "phonetic": "Nyujo wa muryo desu ka?"
+    },
+    "is_free_nuts": {
+      "text": "このナッツは無料ですか？",
+      "phonetic": "Kono nattsu wa muryo desu ka?"
     }
   }
 }

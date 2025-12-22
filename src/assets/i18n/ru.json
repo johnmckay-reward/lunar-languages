@@ -603,6 +603,22 @@
     "no_meat": {
       "text": "Без мяса, пожалуйста",
       "phonetic": "Bez mya-sa, pozhaluysta"
+    },
+    "is_free_wifi": {
+      "text": "WiFi бесплатный?",
+      "phonetic": "WiFi bes-PLAT-nyy?"
+    },
+    "is_free_water": {
+      "text": "Вода бесплатная?",
+      "phonetic": "Vah-DA bes-PLAT-nah-ya?"
+    },
+    "is_free_entrance": {
+      "text": "Вход бесплатный?",
+      "phonetic": "Vkhod bes-PLAT-nyy?"
+    },
+    "is_free_nuts": {
+      "text": "Эти орешки бесплатные?",
+      "phonetic": "EH-tee ah-RYESH-kee bes-PLAT-ny-yeh?"
     }
   }
 }

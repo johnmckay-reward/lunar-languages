@@ -152,7 +152,8 @@ export class DataService {
     { id: 'call', type: 'starter', english: 'Please call...' },
     { id: 'another', type: 'starter', english: 'Another... please' },
     { id: 'share', type: 'starter', english: 'Let\'s share...' },
-    { id: 'no', type: 'starter', english: 'No... please' }
+    { id: 'no', type: 'starter', english: 'No... please' },
+    { id: 'is_free', type: 'starter', english: 'Is... free?' }
   ];
 
   // ============================================================
@@ -363,6 +364,12 @@ export class DataService {
     'no_dairy': { english: 'No dairy, please.' },
     'no_meat': { english: 'No meat, please.' },
     // Add other allergies here if you add nouns for seafood, etc.
+
+    // --- IS... FREE? ---
+    'is_free_wifi': { english: 'Is the WiFi free?' },
+    'is_free_water': { english: 'Is the water free?' },
+    'is_free_entrance': { english: 'Is the entrance free?' },
+    'is_free_nuts': { english: 'Are these nuts free?' },
   };
 
   constructor(private http: HttpClient) { }

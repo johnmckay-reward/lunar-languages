@@ -603,6 +603,22 @@
     "no_meat": {
       "text": "Pas de viande, s'il vous plaît",
       "phonetic": "pah duh vyand, seel voo pleh"
+    },
+    "is_free_wifi": {
+      "text": "Le WiFi est-il gratuit ?",
+      "phonetic": "luh wai-fai eh-teel gra-twee"
+    },
+    "is_free_water": {
+      "text": "L'eau est-elle gratuite ?",
+      "phonetic": "low eh-tel gra-tweet"
+    },
+    "is_free_entrance": {
+      "text": "L'entrée est-elle gratuite ?",
+      "phonetic": "lon-tray eh-tel gra-tweet"
+    },
+    "is_free_nuts": {
+      "text": "Ces cacahuètes sont-elles gratuites ?",
+      "phonetic": "say ka-ka-wet son-tel gra-tweet"
     }
   }
 }

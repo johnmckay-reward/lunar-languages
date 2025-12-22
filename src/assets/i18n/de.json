@@ -603,6 +603,22 @@
     "no_meat": {
       "text": "Kein Fleisch, bitte",
       "phonetic": "kine fly-sh, bit-te"
+    },
+    "is_free_wifi": {
+      "text": "Ist das WLAN kostenlos?",
+      "phonetic": "ist das vey-lan kos-ten-los"
+    },
+    "is_free_water": {
+      "text": "Ist das Wasser kostenlos?",
+      "phonetic": "ist das vas-er kos-ten-los"
+    },
+    "is_free_entrance": {
+      "text": "Ist der Eintritt kostenlos?",
+      "phonetic": "ist der ayn-trit kos-ten-los"
+    },
+    "is_free_nuts": {
+      "text": "Sind diese Nüsse kostenlos?",
+      "phonetic": "zint dee-ze nu-se kos-ten-los"
     }
   }
 }

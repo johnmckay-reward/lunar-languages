@@ -541,6 +541,22 @@
     "no_meat": {
       "text": "No meat, please.",
       "phonetic": ""
+    },
+    "is_free_wifi": {
+      "text": "Is the WiFi free?",
+      "phonetic": ""
+    },
+    "is_free_water": {
+      "text": "Is the water free?",
+      "phonetic": ""
+    },
+    "is_free_entrance": {
+      "text": "Is the entrance free?",
+      "phonetic": ""
+    },
+    "is_free_nuts": {
+      "text": "Are these nuts free?",
+      "phonetic": ""
     }
   }
 }

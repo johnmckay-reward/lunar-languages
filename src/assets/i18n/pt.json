@@ -603,6 +603,22 @@
     "no_meat": {
       "text": "Sem carne, por favor",
       "phonetic": "seng kar-neh, poor fah-vor"
+    },
+    "is_free_wifi": {
+      "text": "O WiFi é gratuito?",
+      "phonetic": "oo wai-fai eh gra-too-ee-too"
+    },
+    "is_free_water": {
+      "text": "A água é de graça?",
+      "phonetic": "Ah ah-gwa eh jeh grah-ssa?"
+    },
+    "is_free_entrance": {
+      "text": "A entrada é gratuita?",
+      "phonetic": "a en-tra-da eh gra-too-ee-ta"
+    },
+    "is_free_nuts": {
+      "text": "Estes amendoins são gratuitos?",
+      "phonetic": "es-tes a-men-do-eens sow gra-too-ee-toos"
     }
   }
 }

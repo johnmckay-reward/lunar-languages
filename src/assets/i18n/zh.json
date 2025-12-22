@@ -603,6 +603,22 @@
     "no_meat": {
       "text": "不要肉",
       "phonetic": "Bù yào ròu"
+    },
+    "is_free_wifi": {
+      "text": "WiFi是免费的吗？",
+      "phonetic": "WiFi shì miǎn fèi de ma?"
+    },
+    "is_free_water": {
+      "text": "水是免费的吗？",
+      "phonetic": "shuǐ shì miǎn fèi de ma?"
+    },
+    "is_free_entrance": {
+      "text": "入场是免费的吗？",
+      "phonetic": "rù chǎng shì miǎn fèi de ma?"
+    },
+    "is_free_nuts": {
+      "text": "这些坚果是免费的吗？",
+      "phonetic": "zhè xiē jiān guǒ shì miǎn fèi de ma?"
     }
   }
 }
