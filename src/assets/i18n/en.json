@@ -373,6 +373,46 @@
     "need_key": {
       "text": "I need the key.",
       "phonetic": ""
+    },
+    "use_wifi": {
+      "text": "Can I use the WiFi?",
+      "phonetic": ""
+    },
+    "use_charger": {
+      "text": "Can I use the charger?",
+      "phonetic": ""
+    },
+    "use_atm": {
+      "text": "Can I use the ATM?",
+      "phonetic": ""
+    },
+    "use_map": {
+      "text": "Can I use the map?",
+      "phonetic": ""
+    },
+    "use_ticket": {
+      "text": "Can I use this ticket?",
+      "phonetic": ""
+    },
+    "use_entrance": {
+      "text": "Can I use this entrance?",
+      "phonetic": ""
+    },
+    "use_exit": {
+      "text": "Can I use this exit?",
+      "phonetic": ""
+    },
+    "use_menu": {
+      "text": "Can I use the menu?",
+      "phonetic": ""
+    },
+    "use_bathroom": {
+      "text": "Can I use the bathroom?",
+      "phonetic": ""
+    },
+    "use_phone": {
+      "text": "Can I use your phone?",
+      "phonetic": ""
     }
   }
 }

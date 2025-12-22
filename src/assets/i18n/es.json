@@ -435,6 +435,46 @@
     "need_key": {
       "text": "Necesito la llave.",
       "phonetic": "Ne-ce-si-to la lla-ve"
+    },
+    "use_wifi": {
+      "text": "¿Puedo usar el WiFi?",
+      "phonetic": "Pweh-doh oo-sar el WiFi?"
+    },
+    "use_charger": {
+      "text": "¿Puedo usar el cargador?",
+      "phonetic": "Pweh-doh oo-sar el car-gah-dor?"
+    },
+    "use_atm": {
+      "text": "¿Puedo usar el cajero automático?",
+      "phonetic": "Pweh-doh oo-sar el kah-heh-roh ow-toh-mah-tee-koh?"
+    },
+    "use_map": {
+      "text": "¿Puedo usar el mapa?",
+      "phonetic": "Pweh-doh oo-sar el mah-pah?"
+    },
+    "use_ticket": {
+      "text": "¿Puedo usar este boleto?",
+      "phonetic": "Pweh-doh oo-sar es-teh boh-leh-toh?"
+    },
+    "use_entrance": {
+      "text": "¿Puedo usar esta entrada?",
+      "phonetic": "Pweh-doh oo-sar es-tah en-trah-dah?"
+    },
+    "use_exit": {
+      "text": "¿Puedo usar esta salida?",
+      "phonetic": "Pweh-doh oo-sar es-tah sah-lee-dah?"
+    },
+    "use_menu": {
+      "text": "¿Puedo usar el menú?",
+      "phonetic": "Pweh-doh oo-sar el meh-noo?"
+    },
+    "use_bathroom": {
+      "text": "¿Puedo usar el baño?",
+      "phonetic": "Pweh-doh oo-sar el bah-nyoh?"
+    },
+    "use_phone": {
+      "text": "¿Puedo usar tu teléfono?",
+      "phonetic": "Pweh-doh oo-sar too teh-leh-foh-noh?"
     }
   }
 }

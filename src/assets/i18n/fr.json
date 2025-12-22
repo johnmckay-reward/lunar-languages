@@ -435,6 +435,46 @@
     "need_key": {
       "text": "J'ai besoin de la clé.",
       "phonetic": "Jay buh-zwan duh la clay"
+    },
+    "use_wifi": {
+      "text": "Puis-je utiliser le WiFi ?",
+      "phonetic": "Pwee-zhuh oo-tee-lee-zay luh WiFi?"
+    },
+    "use_charger": {
+      "text": "Puis-je utiliser le chargeur ?",
+      "phonetic": "Pwee-zhuh oo-tee-lee-zay luh shar-zhur?"
+    },
+    "use_atm": {
+      "text": "Puis-je utiliser le distributeur ?",
+      "phonetic": "Pwee-zhuh oo-tee-lee-zay luh dees-tree-byu-tur?"
+    },
+    "use_map": {
+      "text": "Puis-je utiliser le plan ?",
+      "phonetic": "Pwee-zhuh oo-tee-lee-zay luh plahn?"
+    },
+    "use_ticket": {
+      "text": "Puis-je utiliser ce billet ?",
+      "phonetic": "Pwee-zhuh oo-tee-lee-zay suh bee-yay?"
+    },
+    "use_entrance": {
+      "text": "Puis-je utiliser cette entrée ?",
+      "phonetic": "Pwee-zhuh oo-tee-lee-zay set ahn-tray?"
+    },
+    "use_exit": {
+      "text": "Puis-je utiliser cette sortie ?",
+      "phonetic": "Pwee-zhuh oo-tee-lee-zay set sor-tee?"
+    },
+    "use_menu": {
+      "text": "Puis-je utiliser le menu ?",
+      "phonetic": "Pwee-zhuh oo-tee-lee-zay luh muh-noo?"
+    },
+    "use_bathroom": {
+      "text": "Puis-je utiliser les toilettes ?",
+      "phonetic": "Pwee-zhuh oo-tee-lee-zay lay twah-let?"
+    },
+    "use_phone": {
+      "text": "Puis-je utiliser votre téléphone ?",
+      "phonetic": "Pwee-zhuh oo-tee-lee-zay vo-truh tay-lay-fon?"
     }
   }
 }

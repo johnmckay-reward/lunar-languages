@@ -435,6 +435,46 @@
     "need_key": {
       "text": "我需要钥匙。",
       "phonetic": "Wǒ xūyào yàoshi"
+    },
+    "use_wifi": {
+      "text": "我可以用WiFi吗？",
+      "phonetic": "Wǒ kěyǐ yòng WiFi ma?"
+    },
+    "use_charger": {
+      "text": "我可以用充电器吗？",
+      "phonetic": "Wǒ kěyǐ yòng chōngdiànqì ma?"
+    },
+    "use_atm": {
+      "text": "我可以用自动取款机吗？",
+      "phonetic": "Wǒ kěyǐ yòng zìdòng qǔkuǎnjī ma?"
+    },
+    "use_map": {
+      "text": "我可以用地图吗？",
+      "phonetic": "Wǒ kěyǐ yòng dìtú ma?"
+    },
+    "use_ticket": {
+      "text": "我可以用这张票吗？",
+      "phonetic": "Wǒ kěyǐ yòng zhè zhāng piào ma?"
+    },
+    "use_entrance": {
+      "text": "我可以用这个入口吗？",
+      "phonetic": "Wǒ kěyǐ yòng zhège rùkǒu ma?"
+    },
+    "use_exit": {
+      "text": "我可以用这个出口吗？",
+      "phonetic": "Wǒ kěyǐ yòng zhège chūkǒu ma?"
+    },
+    "use_menu": {
+      "text": "我可以用菜单吗？",
+      "phonetic": "Wǒ kěyǐ yòng càidān ma?"
+    },
+    "use_bathroom": {
+      "text": "请问，我能使用卫生间吗？",
+      "phonetic": "Qǐng wèn, wǒ néng shǐyòng wèishēngjiān ma?"
+    },
+    "use_phone": {
+      "text": "请问，我能借用您的手机吗？",
+      "phonetic": "qǐng wèn, wǒ néng jiè yòng nín de shǒu jī ma?"
     }
   }
 }

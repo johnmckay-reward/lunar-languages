@@ -435,6 +435,46 @@
     "need_key": {
       "text": "Preciso da chave.",
       "phonetic": "Pre-si-zo da sha-ve"
+    },
+    "use_wifi": {
+      "text": "Posso usar o WiFi?",
+      "phonetic": "Pos-so oo-zar o WiFi?"
+    },
+    "use_charger": {
+      "text": "Posso usar o carregador?",
+      "phonetic": "Pos-so oo-zar o ka-he-ga-dor?"
+    },
+    "use_atm": {
+      "text": "Posso usar o caixa eletrônico?",
+      "phonetic": "Pos-so oo-zar o kai-sha e-le-tro-ni-ko?"
+    },
+    "use_map": {
+      "text": "Posso usar o mapa?",
+      "phonetic": "Pos-so oo-zar o ma-pa?"
+    },
+    "use_ticket": {
+      "text": "Posso usar este bilhete?",
+      "phonetic": "Pos-so oo-zar es-te bi-lye-te?"
+    },
+    "use_entrance": {
+      "text": "Posso usar esta entrada?",
+      "phonetic": "Pos-so oo-zar es-ta en-tra-da?"
+    },
+    "use_exit": {
+      "text": "Posso usar esta saída?",
+      "phonetic": "Pos-so oo-zar es-ta sa-i-da?"
+    },
+    "use_menu": {
+      "text": "Posso usar o menu?",
+      "phonetic": "Pos-so oo-zar o me-nu?"
+    },
+    "use_bathroom": {
+      "text": "Posso usar o banheiro?",
+      "phonetic": "Pos-so oo-zar o ba-nye-ro?"
+    },
+    "use_phone": {
+      "text": "Posso usar o seu telefone?",
+      "phonetic": "Pos-so oo-zar o se-oo te-le-fo-ne?"
     }
   }
 }

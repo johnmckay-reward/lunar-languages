@@ -435,6 +435,46 @@
     "need_key": {
       "text": "Ich brauche den Schlüssel.",
       "phonetic": "Ikh brow-khe den shlus-sel"
+    },
+    "use_wifi": {
+      "text": "Kann ich das WLAN benutzen?",
+      "phonetic": "Kan ikh das Vay-Lan be-noot-sen?"
+    },
+    "use_charger": {
+      "text": "Kann ich das Ladegerät benutzen?",
+      "phonetic": "Kan ikh das Lah-de-ge-rayt be-noot-sen?"
+    },
+    "use_atm": {
+      "text": "Kann ich den Geldautomaten benutzen?",
+      "phonetic": "Kan ikh den Gelt-ow-toh-mah-ten be-noot-sen?"
+    },
+    "use_map": {
+      "text": "Kann ich die Karte benutzen?",
+      "phonetic": "Kan ikh dee Kar-te be-noot-sen?"
+    },
+    "use_ticket": {
+      "text": "Kann ich dieses Ticket benutzen?",
+      "phonetic": "Kan ikh dee-zes Ti-ket be-noot-sen?"
+    },
+    "use_entrance": {
+      "text": "Kann ich diesen Eingang benutzen?",
+      "phonetic": "Kan ikh dee-zen Ayn-gang be-noot-sen?"
+    },
+    "use_exit": {
+      "text": "Kann ich diesen Ausgang benutzen?",
+      "phonetic": "Kan ikh dee-zen Ows-gang be-noot-sen?"
+    },
+    "use_menu": {
+      "text": "Kann ich das Menü benutzen?",
+      "phonetic": "Kan ikh das Me-nyu be-noot-sen?"
+    },
+    "use_bathroom": {
+      "text": "Kann ich die Toilette benutzen?",
+      "phonetic": "Kan ikh dee Toy-let-te be-noot-sen?"
+    },
+    "use_phone": {
+      "text": "Kann ich Ihr Telefon benutzen?",
+      "phonetic": "Kan ikh eer Te-le-fon be-noot-sen?"
     }
   }
 }

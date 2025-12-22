@@ -435,6 +435,46 @@
     "need_key": {
       "text": "鍵が必要です。",
       "phonetic": "Kagi ga hitsuyō desu"
+    },
+    "use_wifi": {
+      "text": "Wi-Fiを使ってもいいですか？",
+      "phonetic": "Wi-Fi o tsukatte mo ii desu ka?"
+    },
+    "use_charger": {
+      "text": "充電器を使ってもいいですか？",
+      "phonetic": "Juudenki o tsukatte mo ii desu ka?"
+    },
+    "use_atm": {
+      "text": "ATMを使ってもいいですか？",
+      "phonetic": "ATM o tsukatte mo ii desu ka?"
+    },
+    "use_map": {
+      "text": "地図を使ってもいいですか？",
+      "phonetic": "Chizu o tsukatte mo ii desu ka?"
+    },
+    "use_ticket": {
+      "text": "このチケットを使ってもいいですか？",
+      "phonetic": "Kono chiketto o tsukatte mo ii desu ka?"
+    },
+    "use_entrance": {
+      "text": "この入り口を使ってもいいですか？",
+      "phonetic": "Kono iriguchi o tsukatte mo ii desu ka?"
+    },
+    "use_exit": {
+      "text": "この出口を使ってもいいですか？",
+      "phonetic": "Kono deguchi o tsukatte mo ii desu ka?"
+    },
+    "use_menu": {
+      "text": "メニューを使ってもいいですか？",
+      "phonetic": "Menyuu o tsukatte mo ii desu ka?"
+    },
+    "use_bathroom": {
+      "text": "トイレを使ってもいいですか？",
+      "phonetic": "Toire o tsukatte mo ii desu ka?"
+    },
+    "use_phone": {
+      "text": "電話を使ってもいいですか？",
+      "phonetic": "Denwa o tsukatte mo ii desu ka?"
     }
   }
 }

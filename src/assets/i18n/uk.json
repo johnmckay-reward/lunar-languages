@@ -435,6 +435,46 @@
     "need_key": {
       "text": "Мені потрібен ключ.",
       "phonetic": "Meni potriben klyuch"
+    },
+    "use_wifi": {
+      "text": "Чи можу я скористатися WiFi?",
+      "phonetic": "Chy mozhu ya skorystatysya WiFi?"
+    },
+    "use_charger": {
+      "text": "Чи можу я скористатися зарядним пристроєм?",
+      "phonetic": "Chy mozhu ya skorystatysya zaryadnym prystroyem?"
+    },
+    "use_atm": {
+      "text": "Чи можу я скористатися банкоматом?",
+      "phonetic": "Chy mozhu ya skorystatysya bankomatom?"
+    },
+    "use_map": {
+      "text": "Чи можу я скористатися картою?",
+      "phonetic": "Chy mozhu ya skorystatysya kartoyu?"
+    },
+    "use_ticket": {
+      "text": "Чи можу я скористатися цим квитком?",
+      "phonetic": "Chy mozhu ya skorystatysya tsym kvytkom?"
+    },
+    "use_entrance": {
+      "text": "Чи можу я скористатися цим входом?",
+      "phonetic": "Chy mozhu ya skorystatysya tsym vkhodom?"
+    },
+    "use_exit": {
+      "text": "Чи можу я скористатися цим виходом?",
+      "phonetic": "Chy mozhu ya skorystatysya tsym vykhodom?"
+    },
+    "use_menu": {
+      "text": "Чи можу я скористатися меню?",
+      "phonetic": "Chy mozhu ya skorystatysya menyu?"
+    },
+    "use_bathroom": {
+      "text": "Чи можу я скористатися туалетом?",
+      "phonetic": "Chy mozhu ya skorystatysya tualetom?"
+    },
+    "use_phone": {
+      "text": "Чи можу я скористатися вашим телефоном?",
+      "phonetic": "Chy mozhu ya skorystatysya vashym telefonom?"
     }
   }
 }

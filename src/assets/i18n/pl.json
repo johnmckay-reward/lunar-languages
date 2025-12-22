@@ -435,6 +435,46 @@
     "need_key": {
       "text": "Potrzebuję klucza.",
       "phonetic": "Po-tshe-bu-ye klu-cha"
+    },
+    "use_wifi": {
+      "text": "Czy mogę skorzystać z WiFi?",
+      "phonetic": "Chi mo-ge sko-zhi-stach z WiFi?"
+    },
+    "use_charger": {
+      "text": "Czy mogę skorzystać z ładowarki?",
+      "phonetic": "Chi mo-ge sko-zhi-stach z wa-do-var-ki?"
+    },
+    "use_atm": {
+      "text": "Czy mogę skorzystać z bankomatu?",
+      "phonetic": "Chi mo-ge sko-zhi-stach z ban-ko-ma-tu?"
+    },
+    "use_map": {
+      "text": "Czy mogę skorzystać z mapy?",
+      "phonetic": "Chi mo-ge sko-zhi-stach z ma-pi?"
+    },
+    "use_ticket": {
+      "text": "Czy mogę skorzystać z tego biletu?",
+      "phonetic": "Chi mo-ge sko-zhi-stach z te-go bi-le-tu?"
+    },
+    "use_entrance": {
+      "text": "Czy mogę skorzystać z tego wejścia?",
+      "phonetic": "Chi mo-ge sko-zhi-stach z te-go vey-shcha?"
+    },
+    "use_exit": {
+      "text": "Czy mogę skorzystać z tego wyjścia?",
+      "phonetic": "Chi mo-ge sko-zhi-stach z te-go viy-shcha?"
+    },
+    "use_menu": {
+      "text": "Czy mogę skorzystać z menu?",
+      "phonetic": "Chi mo-ge sko-zhi-stach z me-nu?"
+    },
+    "use_bathroom": {
+      "text": "Czy mogę skorzystać z toalety?",
+      "phonetic": "Chi mo-ge sko-zhi-stach z to-a-le-ti?"
+    },
+    "use_phone": {
+      "text": "Czy mogę skorzystać z twojego telefonu?",
+      "phonetic": "Chi mo-ge sko-zhi-stach z tvo-ye-go te-le-fo-nu?"
     }
   }
 }

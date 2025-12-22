@@ -435,6 +435,46 @@
     "need_key": {
       "text": "Mi serve la chiave.",
       "phonetic": "Mee ser-vay lah kee-ah-veh."
+    },
+    "use_wifi": {
+      "text": "Posso usare il WiFi?",
+      "phonetic": "Pos-so oo-za-re il WiFi?"
+    },
+    "use_charger": {
+      "text": "Posso usare il caricabatterie?",
+      "phonetic": "Pos-so oo-za-re il ka-ri-ka-bat-te-rie?"
+    },
+    "use_atm": {
+      "text": "Posso usare il bancomat?",
+      "phonetic": "Pos-so oo-za-re il ban-ko-mat?"
+    },
+    "use_map": {
+      "text": "Posso, per favore, usare la mappa?",
+      "phonetic": "Posso, per fah-vo-reh, oo-zah-reh lah mahp-pah?"
+    },
+    "use_ticket": {
+      "text": "Posso usare questo biglietto?",
+      "phonetic": "Pos-so oo-za-re kwes-to bil-yet-to?"
+    },
+    "use_entrance": {
+      "text": "Posso usare questa entrata?",
+      "phonetic": "Pos-so oo-za-re kwes-ta en-tra-ta?"
+    },
+    "use_exit": {
+      "text": "Posso usare questa uscita?",
+      "phonetic": "Pos-so oo-za-re kwes-ta oo-shi-ta?"
+    },
+    "use_menu": {
+      "text": "Posso usare il menu?",
+      "phonetic": "Pos-so oo-za-re il me-nu?"
+    },
+    "use_bathroom": {
+      "text": "Posso usare il bagno?",
+      "phonetic": "Pos-so oo-za-re il ban-yo?"
+    },
+    "use_phone": {
+      "text": "Mi presti il tuo telefono?",
+      "phonetic": "Mee presti il tuoh telefone?"
     }
   }
 }

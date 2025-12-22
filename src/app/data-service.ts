@@ -144,7 +144,8 @@ export class DataService {
     { id: 'have', type: 'starter', english: 'Do you have...?' },
     { id: 'cost', type: 'starter', english: 'How much is...?' },
     { id: 'allergic', type: 'starter', english: 'I am allergic to...' },
-    { id: 'need', type: 'starter', english: 'I need...' }
+    { id: 'need', type: 'starter', english: 'I need...' },
+    { id: 'use', type: 'starter', english: 'Can I use...?' }
   ];
 
   // ============================================================
@@ -195,6 +196,8 @@ export class DataService {
     { id: 'exit', type: 'noun', category: 'Transport', english: 'The Exit' },
     { id: 'ice', type: 'noun', category: 'Dining', english: 'Ice' },
     { id: 'sugar', type: 'noun', category: 'Dining', english: 'Sugar' },
+    { id: 'bathroom', type: 'noun', category: 'Accommodation', english: 'The Bathroom' },
+    { id: 'phone', type: 'noun', category: 'Tech', english: 'Phone' },
 
     // Allergies
     { id: 'gluten', type: 'noun', category: 'Health', english: 'Gluten' },
@@ -286,6 +289,18 @@ export class DataService {
     'need_map': { english: 'I need a map.' },
     'need_receipt': { english: 'I need a receipt.' },
     'need_water': { english: 'I need water.' },
+
+    // --- CAN I USE...? ---
+    'use_wifi': { english: 'Can I use the WiFi?' },
+    'use_charger': { english: 'Can I use the charger?' },
+    'use_atm': { english: 'Can I use the ATM?' },
+    'use_map': { english: 'Can I use the map?' },
+    'use_ticket': { english: 'Can I use this ticket?' },
+    'use_entrance': { english: 'Can I use this entrance?' },
+    'use_exit': { english: 'Can I use this exit?' },
+    'use_menu': { english: 'Can I use the menu?' },
+    'use_bathroom': { english: 'Can I use the bathroom?' },
+    'use_phone': { english: 'Can I use your phone?' },
     'need_key': { english: 'I need the key.' },
     // Add other allergies here if you add nouns for seafood, etc.
   };

@@ -435,6 +435,46 @@
     "need_key": {
       "text": "Мне нужен ключ.",
       "phonetic": "Mne nuzhen klyuch"
+    },
+    "use_wifi": {
+      "text": "Могу я воспользоваться WiFi?",
+      "phonetic": "Mogu ya vospol'zovatsya WiFi?"
+    },
+    "use_charger": {
+      "text": "Могу я воспользоваться зарядкой?",
+      "phonetic": "Mogu ya vospol'zovatsya zaryadkoy?"
+    },
+    "use_atm": {
+      "text": "Могу я воспользоваться банкоматом?",
+      "phonetic": "Mogu ya vospol'zovatsya bankomatom?"
+    },
+    "use_map": {
+      "text": "Могу я воспользоваться картой?",
+      "phonetic": "Mogu ya vospol'zovatsya kartoy?"
+    },
+    "use_ticket": {
+      "text": "Могу я воспользоваться этим билетом?",
+      "phonetic": "Mogu ya vospol'zovatsya etim biletom?"
+    },
+    "use_entrance": {
+      "text": "Могу я воспользоваться этим входом?",
+      "phonetic": "Mogu ya vospol'zovatsya etim vkhodom?"
+    },
+    "use_exit": {
+      "text": "Могу я воспользоваться этим выходом?",
+      "phonetic": "Mogu ya vospol'zovatsya etim vykhodom?"
+    },
+    "use_menu": {
+      "text": "Могу я воспользоваться меню?",
+      "phonetic": "Mogu ya vospol'zovatsya menyu?"
+    },
+    "use_bathroom": {
+      "text": "Могу я воспользоваться туалетом?",
+      "phonetic": "Mogu ya vospol'zovatsya tualetom?"
+    },
+    "use_phone": {
+      "text": "Могу я воспользоваться вашим телефоном?",
+      "phonetic": "Mogu ya vospol'zovatsya vashim telefonom?"
     }
   }
 }
