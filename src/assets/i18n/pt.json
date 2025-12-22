@@ -256,6 +256,16 @@
     "allergic_seafood": {
       "text": "Sou alérgico a frutos do mar.",
       "phonetic": "soh ah-LEHR-jee-koo ah FROO-toos doo mar."
-    }
+    },
+    "where_coffee": { "text": "Onde fica uma cafeteria?", "phonetic": "Ondee feeka ooma kafetereea" },
+    "where_water": { "text": "Onde posso comprar água?", "phonetic": "Ondee posso komprar agwa" },
+    "like_seafood": { "text": "Eu gostaria dos frutos do mar.", "phonetic": "Eyoo gostareea doos frootos doo mar" },
+    "like_vegetarian": { "text": "Eu gostaria da opção vegetariana.", "phonetic": "Eyoo gostareea da opsown vejaytaryana" },
+    "have_water": { "text": "Você possui água?", "phonetic": "Vo-sê po-su-i á-gua?" },
+    "have_beer": { "text": "Você tem cerveja?", "phonetic": "Vosay taym servayzha" },
+    "have_wine": { "text": "Você tem vinho?", "phonetic": "Vosay taym veenyo" },
+    "cost_wifi": { "text": "Quanto custa o WiFi?", "phonetic": "Kwanto koosta oo WiFi" },
+    "cost_water": { "text": "Quanto custa a água?", "phonetic": "Kwanto koosta a agwa" },
+    "cost_seafood": { "text": "Quanto custam os frutos do mar?", "phonetic": "Kwanto koostam oos frootos doo mar" }
   }
 }

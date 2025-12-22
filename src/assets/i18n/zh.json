@@ -238,6 +238,16 @@
     "allergic_seafood": {
       "text": "我对海鲜过敏。",
       "phonetic": "Wǒ duì hǎixiān guòmǐn."
-    }
+    },
+    "where_coffee": { "text": "请问，咖啡馆在哪里？", "phonetic": "Qǐngwèn, kāfēi guǎn zài nǎlǐ?" },
+    "where_water": { "text": "哪里可以买水？", "phonetic": "Nǎlǐ kěyǐ mǎi shuǐ?" },
+    "like_seafood": { "text": "我想要海鲜。", "phonetic": "Wǒ xiǎng yào hǎixiān." },
+    "like_vegetarian": { "text": "我希望能吃素食。", "phonetic": "Wǒ xīwàng néng chī sùshí." },
+    "have_water": { "text": "你们有水吗？", "phonetic": "Nǐmen yǒu shuǐ ma?" },
+    "have_beer": { "text": "你们有啤酒吗？", "phonetic": "Nǐmen yǒu píjiǔ ma?" },
+    "have_wine": { "text": "请问你们这儿有没有葡萄酒？", "phonetic": "Qǐng wèn nǐmen zhèr yǒu méiyǒu pútaojiǔ?" },
+    "cost_wifi": { "text": "WiFi多少钱？", "phonetic": "WiFi duōshǎo qián?" },
+    "cost_water": { "text": "请问这瓶水的价格是多少？", "phonetic": "Qǐng wèn zhè píng shuǐ de jiàgé shì duōshǎo?" },
+    "cost_seafood": { "text": "请问海鲜的价格是多少？", "phonetic": "Qǐngwèn hǎixiān de jiàgé shì duōshǎo?" }
   }
 }

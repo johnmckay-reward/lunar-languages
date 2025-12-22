@@ -65,6 +65,16 @@
     "cost_beer": { "text": "How much is a beer?", "phonetic": "" },
     "cost_wine": { "text": "How much is a glass of wine?", "phonetic": "" },
     "allergic_peanuts": { "text": "I am allergic to peanuts.", "phonetic": "" },
-    "allergic_seafood": { "text": "I am allergic to seafood.", "phonetic": "" }
+    "allergic_seafood": { "text": "I am allergic to seafood.", "phonetic": "" },
+    "where_coffee": { "text": "Where is a coffee shop?", "phonetic": "" },
+    "where_water": { "text": "Where can I buy water?", "phonetic": "" },
+    "like_seafood": { "text": "I would like the seafood.", "phonetic": "" },
+    "like_vegetarian": { "text": "I would like the vegetarian option.", "phonetic": "" },
+    "have_water": { "text": "Do you have water?", "phonetic": "" },
+    "have_beer": { "text": "Do you have beer?", "phonetic": "" },
+    "have_wine": { "text": "Do you have wine?", "phonetic": "" },
+    "cost_wifi": { "text": "How much is the WiFi?", "phonetic": "" },
+    "cost_water": { "text": "How much is the water?", "phonetic": "" },
+    "cost_seafood": { "text": "How much is the seafood?", "phonetic": "" }
   }
 }

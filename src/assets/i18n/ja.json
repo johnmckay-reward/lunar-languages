@@ -271,6 +271,16 @@
     "allergic_seafood": {
       "text": "私は魚介類アレルギーです。",
       "phonetic": "Wah-tah-she wa gyo-kai-roo-ee ah-reh-roo-gee dess."
-    }
+    },
+    "where_coffee": { "text": "カフェはどこですか？", "phonetic": "かふぇはどこですか？" },
+    "where_water": { "text": "水はどこで買えますか？", "phonetic": "Mizu wa doko de kaemasu ka?" },
+    "like_seafood": { "text": "シーフードをお願いします。", "phonetic": "Shiifoodo o onegaishimasu." },
+    "like_vegetarian": { "text": "ベジタリアンのオプションをお願いします。", "phonetic": "Bejitarian no opushon o onegaishimasu." },
+    "have_water": { "text": "水はありますか？", "phonetic": "Mizu wa arimasu ka?" },
+    "have_beer": { "text": "ビールはありますか？", "phonetic": "Biiru wa arimasu ka?" },
+    "have_wine": { "text": "ワインはありますか？", "phonetic": "Wain wa arimasu ka?" },
+    "cost_wifi": { "text": "WiFiはいくらですか？", "phonetic": "WiFi wa ikura desu ka?" },
+    "cost_water": { "text": "水はいくらですか？", "phonetic": "Mizu wa ikura desu ka?" },
+    "cost_seafood": { "text": "シーフードはいくらですか？", "phonetic": "Shiifoodo wa ikura desu ka?" }
   }
 }

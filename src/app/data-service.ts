@@ -204,6 +204,8 @@ export class DataService {
     'where_hospital': { english: 'Where is the hospital?' },
     'where_supermarket': { english: 'Where is the supermarket?' },
     'where_beach': { english: 'Where is the beach?' },
+    'where_coffee': { english: 'Where is a coffee shop?' },
+    'where_water': { english: 'Where can I buy water?' },
 
     // --- I WOULD LIKE... ---
     'like_ticket': { english: 'I would like a ticket please.' },
@@ -214,6 +216,8 @@ export class DataService {
     'like_bill': { english: 'I would like the bill please.' },
     'like_beer': { english: 'I would like a beer.' },
     'like_wine': { english: 'I would like a glass of wine.' },
+    'like_seafood': { english: 'I would like the seafood.' },
+    'like_vegetarian': { english: 'I would like the vegetarian option.' },
 
     // --- DO YOU HAVE...? ---
     'have_wifi': { english: 'Do you have WiFi?' },
@@ -221,6 +225,9 @@ export class DataService {
     'have_charger': { english: 'Do you have a charger?' },
     'have_menu': { english: 'Do you have a menu in English?' }, // Context added
     'have_vegetarian': { english: 'Do you have any vegetarian options?' },
+    'have_water': { english: 'Do you have water?' },
+    'have_beer': { english: 'Do you have beer?' },
+    'have_wine': { english: 'Do you have wine?' },
 
     // --- HOW MUCH IS...? ---
     'cost_ticket': { english: 'How much is a ticket?' },
@@ -229,6 +236,9 @@ export class DataService {
     'cost_coffee': { english: 'How much is a coffee?' },
     'cost_beer': { english: 'How much is a beer?' },
     'cost_wine': { english: 'How much is a glass of wine?' },
+    'cost_wifi': { english: 'How much is the WiFi?' },
+    'cost_water': { english: 'How much is the water?' },
+    'cost_seafood': { english: 'How much is the seafood?' },
 
     // --- I AM ALLERGIC TO... ---
     'allergic_peanuts': { english: 'I am allergic to peanuts.' },

@@ -259,6 +259,16 @@
     "allergic_seafood": {
       "text": "Soy alérgico a los mariscos.",
       "phonetic": "Soy ah-LEHR-hee-koh ah los mah-REES-kos."
-    }
+    },
+    "where_coffee": { "text": "¿Dónde hay una cafetería?", "phonetic": "Donde ay una cafeteria" },
+    "where_water": { "text": "¿Dónde puedo comprar agua?", "phonetic": "Donde pwedo komprar agwa" },
+    "like_seafood": { "text": "Quisiera los mariscos.", "phonetic": "Kisyera los mariskos" },
+    "like_vegetarian": { "text": "Quisiera la opción vegetariana.", "phonetic": "Kisyera la opsyon vehetaryana" },
+    "have_water": { "text": "¿Tienen agua?", "phonetic": "Tyenen agwa" },
+    "have_beer": { "text": "¿Tienen cerveza?", "phonetic": "Tyenen servesa" },
+    "have_wine": { "text": "¿Tienen vino?", "phonetic": "Tyenen bino" },
+    "cost_wifi": { "text": "¿Cuánto cuesta el WiFi?", "phonetic": "Kwanto kwesta el WiFi" },
+    "cost_water": { "text": "¿Cuánto cuesta el agua?", "phonetic": "Kwanto kwesta el agwa" },
+    "cost_seafood": { "text": "¿Cuánto cuestan los mariscos?", "phonetic": "Kwanto kwestan los mariskos" }
   }
 }

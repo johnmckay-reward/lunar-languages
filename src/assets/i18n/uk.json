@@ -250,6 +250,16 @@
     "allergic_seafood": {
       "text": "У мене алергія на морепродукти.",
       "phonetic": "Oo MEH-neh ah-ler-HEE-ya na moh-reh-proh-DOOK-ty."
-    }
+    },
+    "where_coffee": { "text": "Де тут кав'ярня?", "phonetic": "De tut kavyarnya?" },
+    "where_water": { "text": "Де можна купити води?", "phonetic": "De mozhna kupyty vody?" },
+    "like_seafood": { "text": "Я хотів би морепродукти.", "phonetic": "Ya khotiv by moreprodukty." },
+    "like_vegetarian": { "text": "Я хотів би вегетаріанську страву.", "phonetic": "Ya khotiv by vegetarian'sku stravu." },
+    "have_water": { "text": "У вас є вода?", "phonetic": "U vas ye voda?" },
+    "have_beer": { "text": "У вас є пиво?", "phonetic": "U vas ye pyvo?" },
+    "have_wine": { "text": "У вас є вино?", "phonetic": "U vas ye vyno?" },
+    "cost_wifi": { "text": "Скільки коштує WiFi?", "phonetic": "Skil'ky koshtuye WiFi?" },
+    "cost_water": { "text": "Скільки коштує вода?", "phonetic": "Skil'ky koshtuye voda?" },
+    "cost_seafood": { "text": "Скільки коштують морепродукти?", "phonetic": "Skil'ky koshtuyut' moreprodukty?" }
   }
 }

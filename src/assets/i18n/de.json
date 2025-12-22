@@ -262,6 +262,16 @@
     "allergic_seafood": {
       "text": "Ich bin allergisch gegen Meeresfrüchte.",
       "phonetic": "ich bin ah-LER-gish gay-gen MAY-res-froo-teh."
-    }
+    },
+    "where_coffee": { "text": "Wo ist ein Café?", "phonetic": "Vo ist ayn kafay" },
+    "where_water": { "text": "Wo kann ich Wasser kaufen?", "phonetic": "Vo kan ikh vaser kowfen" },
+    "like_seafood": { "text": "Ich hätte gerne die Meeresfrüchte.", "phonetic": "Ikh hette gairne dee maires-fruekhte" },
+    "like_vegetarian": { "text": "Ich hätte gerne die vegetarische Option.", "phonetic": "Ikh hette gairne dee vegetarishe opsyon" },
+    "have_water": { "text": "Haben Sie Wasser?", "phonetic": "Haben zee vaser" },
+    "have_beer": { "text": "Haben Sie Bier?", "phonetic": "Haben zee beer" },
+    "have_wine": { "text": "Haben Sie Wein?", "phonetic": "Haben zee vine" },
+    "cost_wifi": { "text": "Wie viel kostet das WLAN?", "phonetic": "Vee feel kostet das vay-lan" },
+    "cost_water": { "text": "Wie viel kostet das Wasser?", "phonetic": "Vee feel kostet das vaser" },
+    "cost_seafood": { "text": "Wie viel kosten die Meeresfrüchte?", "phonetic": "Vee feel kosten dee maires-fruekhte" }
   }
 }

@@ -259,6 +259,16 @@
     "allergic_seafood": {
       "text": "Mam alergię na owoce morza.",
       "phonetic": "Mam ah-LER-gyeh nah oh-VO-tseh MOR-zhah."
-    }
+    },
+    "where_coffee": { "text": "Gdzie jest kawiarnia?", "phonetic": "Gdzhye yest kavyarnya" },
+    "where_water": { "text": "Gdzie mogę kupić wodę?", "phonetic": "Gdzhye mogeh kupich vodeh" },
+    "like_seafood": { "text": "Poproszę owoce morza.", "phonetic": "Poprosheh ovotseh mozha" },
+    "like_vegetarian": { "text": "Poproszę opcję wegetariańską.", "phonetic": "Poprosheh opsyeh vegetaryanskom" },
+    "have_water": { "text": "Czy macie wodę?", "phonetic": "Chy machye vodeh" },
+    "have_beer": { "text": "Czy macie piwo?", "phonetic": "Chy machye pivo" },
+    "have_wine": { "text": "Czy macie wino?", "phonetic": "Chy machye vino" },
+    "cost_wifi": { "text": "Ile kosztuje WiFi?", "phonetic": "Eeleh koshtuyeh WiFi" },
+    "cost_water": { "text": "Ile kosztuje woda?", "phonetic": "Eeleh koshtuyeh voda" },
+    "cost_seafood": { "text": "Ile kosztują owoce morza?", "phonetic": "Eeleh koshtuyom ovotseh mozha" }
   }
 }
