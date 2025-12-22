@@ -58,6 +58,22 @@
       "text": "Onde fica um médico?",
       "phonetic": "ON-deh FEE-kah oom MEH-dee-koo?"
     },
+    "where_restaurant": {
+      "text": "Onde fica um bom restaurante?",
+      "phonetic": "ON-deh FEE-kah oom bohñ hehs-taw-RAHN-chee?"
+    },
+    "where_hospital": {
+      "text": "Onde fica o hospital?",
+      "phonetic": "ON-deh FEE-kah oo osh-pee-TAHL?"
+    },
+    "where_supermarket": {
+      "text": "Onde fica o supermercado?",
+      "phonetic": "ON-deh FEE-kah oo soo-per-mar-KAH-doo?"
+    },
+    "where_beach": {
+      "text": "Onde fica a praia?",
+      "phonetic": "ON-deh FEE-kah ah PRY-ah?"
+    },
     "like_ticket": {
       "text": "Queria um bilhete, por favor.",
       "phonetic": "keh-REE-ah oom beel-YEH-teh, poor fah-VOR."
@@ -82,6 +98,14 @@
       "text": "A conta, por favor.",
       "phonetic": "ah KON-tah, poor fah-VOR."
     },
+    "like_beer": {
+      "text": "Queria uma cerveja, por favor.",
+      "phonetic": "keh-REE-ah OO-ma sehr-VEH-zhah, poor fah-VOR."
+    },
+    "like_wine": {
+      "text": "Queria uma taça de vinho, por favor.",
+      "phonetic": "keh-REE-ah OO-ma TAH-sah jeh VEE-nyoo, poor fah-VOR."
+    },
     "have_wifi": { "text": "Tem internet sem fio?", "phonetic": "tẽ in-ter-nét sêñ fí-o" },
     "have_room": {
       "text": "Há um cômodo disponível?",
@@ -94,6 +118,10 @@
     "have_menu": {
       "text": "Existe um cardápio em inglês?",
       "phonetic": "Eh-zis-che oon car-dah-pi-u em inglays?"
+    },
+    "have_vegetarian": {
+      "text": "Tem opções vegetarianas?",
+      "phonetic": "teñ op-SYOHNS veh-zheh-tah-ree-AH-nas?"
     },
     "cost_ticket": {
       "text": "Quanto custa um bilhete?",
@@ -111,9 +139,21 @@
       "text": "Quanto custa um café?",
       "phonetic": "KWAN-too KOOSH-tah oom kah-FEH?"
     },
+    "cost_beer": {
+      "text": "Quanto custa uma cerveja?",
+      "phonetic": "KWAN-too KOOSH-tah OO-ma sehr-VEH-zhah?"
+    },
+    "cost_wine": {
+      "text": "Quanto custa uma taça de vinho?",
+      "phonetic": "KWAN-too KOOSH-tah OO-ma TAH-sah jeh VEE-nyoo?"
+    },
     "allergic_peanuts": {
       "text": "Sou alérgico a amendoins.",
       "phonetic": "soh ah-LEHR-jee-koo ah ah-men-DOH-eens."
+    },
+    "allergic_seafood": {
+      "text": "Sou alérgico a frutos do mar.",
+      "phonetic": "soh ah-LEHR-jee-koo ah FROO-toos doo mar."
     }
   }
 }

@@ -61,6 +61,22 @@
       "text": "Gdzie jest lekarz?",
       "phonetic": "Gdjeh yest LEH-kash?"
     },
+    "where_restaurant": {
+      "text": "Gdzie jest dobra restauracja?",
+      "phonetic": "Gdjeh yest DOH-brah res-taw-RAH-tsya?"
+    },
+    "where_hospital": {
+      "text": "Gdzie jest szpital?",
+      "phonetic": "Gdjeh yest SHPEE-tal?"
+    },
+    "where_supermarket": {
+      "text": "Gdzie jest supermarket?",
+      "phonetic": "Gdjeh yest soo-per-MAR-ket?"
+    },
+    "where_beach": {
+      "text": "Gdzie jest plaża?",
+      "phonetic": "Gdjeh yest PLAH-zhah?"
+    },
     "like_ticket": {
       "text": "Poproszę bilet.",
       "phonetic": "Poh-PROH-sheh BEE-let."
@@ -85,6 +101,14 @@
       "text": "Poproszę rachunek.",
       "phonetic": "Poh-PROH-sheh rah-KHOO-nek."
     },
+    "like_beer": {
+      "text": "Poproszę piwo.",
+      "phonetic": "Poh-PROH-sheh PEE-vo."
+    },
+    "like_wine": {
+      "text": "Poproszę kieliszek wina.",
+      "phonetic": "Poh-PROH-sheh kyeh-LEE-shek VEE-nah."
+    },
     "have_wifi": { "text": "Czy jest WiFi?", "phonetic": "Chy yest WiFi?" },
     "have_room": {
       "text": "Czy jest wolny pokój?",
@@ -97,6 +121,10 @@
     "have_menu": {
       "text": "Czy jest menu po angielsku?",
       "phonetic": "Chy yest MEH-noo poh an-GYEL-skoo?"
+    },
+    "have_vegetarian": {
+      "text": "Czy macie dania wegetariańskie?",
+      "phonetic": "Chy MA-cheh DA-nyah veh-ge-tar-YAN-skie?"
     },
     "cost_ticket": {
       "text": "Ile kosztuje bilet?",
@@ -114,9 +142,21 @@
       "text": "Ile kosztuje kawa?",
       "phonetic": "EE-leh kosh-TOO-yeh KAH-vah?"
     },
+    "cost_beer": {
+      "text": "Ile kosztuje piwo?",
+      "phonetic": "EE-leh kosh-TOO-yeh PEE-vo?"
+    },
+    "cost_wine": {
+      "text": "Ile kosztuje kieliszek wina?",
+      "phonetic": "EE-leh kosh-TOO-yeh kyeh-LEE-shek VEE-nah?"
+    },
     "allergic_peanuts": {
       "text": "Mam alergię na orzeszki ziemne.",
       "phonetic": "Mam ah-LER-gyeh nah oh-ZHESH-kee ZHEM-neh."
+    },
+    "allergic_seafood": {
+      "text": "Mam alergię na owoce morza.",
+      "phonetic": "Mam ah-LER-gyeh nah oh-VO-tseh MOR-zhah."
     }
   }
 }

@@ -52,6 +52,22 @@
       "phonetic": "Gdyeh ahp-TYEH-kah?"
     },
     "where_doctor": { "text": "Можете сказать, где находится доктор?", "phonetic": "Mozhete skazat', gde nakhoditsya doktor?" },
+    "where_restaurant": {
+      "text": "Где хороший ресторан?",
+      "phonetic": "Gdyeh kha-ROH-shiy res-tah-RAHN?"
+    },
+    "where_hospital": {
+      "text": "Где находится больница?",
+      "phonetic": "Gdyeh nah-KHO-deet-sya bal-NEE-tsa?"
+    },
+    "where_supermarket": {
+      "text": "Где находится супермаркет?",
+      "phonetic": "Gdyeh nah-KHO-deet-sya soo-per-MAR-ket?"
+    },
+    "where_beach": {
+      "text": "Где пляж?",
+      "phonetic": "Gdyeh plyazh?"
+    },
     "like_ticket": {
       "text": "Я хотел бы билет, пожалуйста.",
       "phonetic": "Ya khah-TYEL by bee-LYET, pah-ZHAH-loo-stah."
@@ -76,6 +92,14 @@
       "text": "Счет, пожалуйста.",
       "phonetic": "Schyot, pah-ZHAH-loo-stah."
     },
+    "like_beer": {
+      "text": "Я хотел бы пиво, пожалуйста.",
+      "phonetic": "Ya khah-TYEL by PEE-vah, pah-ZHAH-loo-stah."
+    },
+    "like_wine": {
+      "text": "Я хотел бы бокал вина, пожалуйста.",
+      "phonetic": "Ya khah-TYEL by bah-KAL vee-NAH, pah-ZHAH-loo-stah."
+    },
     "have_wifi": {
       "text": "У вас есть WiFi?",
       "phonetic": "Oo vahs yest WiFi?"
@@ -91,6 +115,10 @@
     "have_menu": {
       "text": "У вас есть меню на английском?",
       "phonetic": "Oo vahs yest mye-NYU nah an-GLEEY-skahm?"
+    },
+    "have_vegetarian": {
+      "text": "У вас есть вегетарианские блюда?",
+      "phonetic": "Oo vahs yest veh-geh-tah-REE-ahn-skee-e BLYU-dah?"
     },
     "cost_ticket": {
       "text": "Сколько стоит билет?",
@@ -108,9 +136,21 @@
       "text": "Сколько стоит кофе?",
       "phonetic": "SKOL-kah STOH-eet KOH-fyeh?"
     },
+    "cost_beer": {
+      "text": "Сколько стоит пиво?",
+      "phonetic": "SKOL-kah STOH-eet PEE-vah?"
+    },
+    "cost_wine": {
+      "text": "Сколько стоит бокал вина?",
+      "phonetic": "SKOL-kah STOH-eet bah-KAL vee-NAH?"
+    },
     "allergic_peanuts": {
       "text": "У меня аллергия на арахис.",
       "phonetic": "Oo mye-NYA ah-lyer-GHEE-yah nah ah-RAH-khees."
+    },
+    "allergic_seafood": {
+      "text": "У меня аллергия на морепродукты.",
+      "phonetic": "Oo mye-NYA ah-lyer-GHEE-yah nah moh-ryeh-proh-DOOK-tee."
     }
   }
 }

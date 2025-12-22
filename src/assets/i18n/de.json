@@ -61,6 +61,22 @@
       "text": "Wo ist ein Arzt?",
       "phonetic": "voh ist ine Artst?"
     },
+    "where_restaurant": {
+      "text": "Wo ist ein gutes Restaurant?",
+      "phonetic": "voh ist ine GOO-tes res-tow-RAHN?"
+    },
+    "where_hospital": {
+      "text": "Wo ist das Krankenhaus?",
+      "phonetic": "voh ist das KRAHNK-en-hows?"
+    },
+    "where_supermarket": {
+      "text": "Wo ist der Supermarkt?",
+      "phonetic": "voh ist dair ZOO-per-markt?"
+    },
+    "where_beach": {
+      "text": "Wo ist der Strand?",
+      "phonetic": "voh ist dair SHTRAND?"
+    },
     "like_ticket": {
       "text": "Ich hätte gern ein Ticket, bitte.",
       "phonetic": "ich HET-uh gairn ine TIK-et, BIT-uh."
@@ -85,6 +101,14 @@
       "text": "Die Rechnung, bitte.",
       "phonetic": "dee REKH-nung, BIT-uh."
     },
+    "like_beer": {
+      "text": "Ich hätte gern ein Bier, bitte.",
+      "phonetic": "ich HET-uh gairn ine BEER, BIT-uh."
+    },
+    "like_wine": {
+      "text": "Ich hätte gern ein Glas Wein, bitte.",
+      "phonetic": "ich HET-uh gairn ine glahs VINE, BIT-uh."
+    },
     "have_wifi": {
       "text": "Haben Sie Internet?",
       "phonetic": "HA-ben zee IN-ter-net?"
@@ -100,6 +124,10 @@
     "have_menu": {
       "text": "Haben Sie eine Karte auf Englisch?",
       "phonetic": "HA-ben zee eye-nuh KAR-tuh owf ENG-lish?"
+    },
+    "have_vegetarian": {
+      "text": "Haben Sie vegetarische Optionen?",
+      "phonetic": "HA-ben zee vay-gay-TAH-rish-uh OHP-tsyo-nen?"
     },
     "cost_ticket": {
       "text": "Wie viel kostet ein Ticket?",
@@ -117,9 +145,21 @@
       "text": "Wie viel kostet ein Kaffee?",
       "phonetic": "vee feel KOS-tet ine KA-fay?"
     },
+    "cost_beer": {
+      "text": "Wie viel kostet ein Bier?",
+      "phonetic": "vee feel KOS-tet ine BEER?"
+    },
+    "cost_wine": {
+      "text": "Wie viel kostet ein Glas Wein?",
+      "phonetic": "vee feel KOS-tet ine glahs VINE?"
+    },
     "allergic_peanuts": {
       "text": "Ich bin allergisch gegen Erdnüsse.",
       "phonetic": "ich bin ah-LER-gish gay-gen ERD-noos-uh."
+    },
+    "allergic_seafood": {
+      "text": "Ich bin allergisch gegen Meeresfrüchte.",
+      "phonetic": "ich bin ah-LER-gish gay-gen MAY-res-froo-teh."
     }
   }
 }

@@ -46,6 +46,22 @@
       "phonetic": "Yàodiàn zài nǎli?"
     },
     "where_doctor": { "text": "这个地方有医生吗？", "phonetic": "Zhège dìfāng yǒu yīshēng ma?" },
+    "where_restaurant": {
+      "text": "附近有好的餐馆吗？",
+      "phonetic": "Fùjìn yǒu hǎo de cānguǎn ma?"
+    },
+    "where_hospital": {
+      "text": "医院在哪里？",
+      "phonetic": "Yīyuàn zài nǎli?"
+    },
+    "where_supermarket": {
+      "text": "超市在哪里？",
+      "phonetic": "Chāoshì zài nǎli?"
+    },
+    "where_beach": {
+      "text": "海滩在哪里？",
+      "phonetic": "Hǎitān zài nǎli?"
+    },
     "like_ticket": {
       "text": "我想要一张票。",
       "phonetic": "Wǒ xiǎng yào yī zhāng piào."
@@ -64,6 +80,14 @@
     },
     "like_menu": { "text": "请给我菜单。", "phonetic": "Qǐng gěi wǒ càidān." },
     "like_bill": { "text": "买单，谢谢。", "phonetic": "Mǎidān, xièxie." },
+    "like_beer": {
+      "text": "请给我一杯啤酒。",
+      "phonetic": "Qǐng gěi wǒ yì bēi píjiǔ."
+    },
+    "like_wine": {
+      "text": "请给我一杯红酒。",
+      "phonetic": "Qǐng gěi wǒ yì bēi hóngjiǔ."
+    },
     "have_wifi": { "text": "请问这里提供无线网络吗？", "phonetic": "Qǐng wèn zhè lǐ tí gōng wú xiàn wǎng luò ma?" },
     "have_room": {
       "text": "请问，你们这里还有空房间吗？",
@@ -76,6 +100,10 @@
     "have_menu": {
       "text": "你有英文菜单吗？",
       "phonetic": "Nǐ yǒu Yīngwén càidān ma?"
+    },
+    "have_vegetarian": {
+      "text": "你有素食的菜吗？",
+      "phonetic": "Nǐ yǒu sùshí de cài ma?"
     },
     "cost_ticket": {
       "text": "请问一张票的价格是多少？",
@@ -93,9 +121,21 @@
       "text": "一杯咖啡多少钱？",
       "phonetic": "Yī bēi kāfēi duōshao qián?"
     },
+    "cost_beer": {
+      "text": "一杯啤酒多少钱？",
+      "phonetic": "Yī bēi píjiǔ duōshao qián?"
+    },
+    "cost_wine": {
+      "text": "一杯红酒多少钱？",
+      "phonetic": "Yī bēi hóngjiǔ duōshao qián?"
+    },
     "allergic_peanuts": {
       "text": "我对花生过敏。",
       "phonetic": "Wǒ duì huāshēng guòmǐn."
+    },
+    "allergic_seafood": {
+      "text": "我对海鲜过敏。",
+      "phonetic": "Wǒ duì hǎixiān guòmǐn."
     }
   }
 }

@@ -52,6 +52,22 @@
     "where_atm": { "text": "Де банкомат?", "phonetic": "Deh ban-koh-MAT?" },
     "where_pharmacy": { "text": "Де аптека?", "phonetic": "Deh ap-TEH-kah?" },
     "where_doctor": { "text": "Де лікар?", "phonetic": "Deh LEE-kar?" },
+    "where_restaurant": {
+      "text": "Де хороший ресторан?",
+      "phonetic": "Deh ho-ROH-shee res-toh-RAN?"
+    },
+    "where_hospital": {
+      "text": "Де лікарня?",
+      "phonetic": "Deh lee-KAR-nya?"
+    },
+    "where_supermarket": {
+      "text": "Де супермаркет?",
+      "phonetic": "Deh soo-per-MAR-ket?"
+    },
+    "where_beach": {
+      "text": "Де пляж?",
+      "phonetic": "Deh plyazh?"
+    },
     "like_ticket": {
       "text": "Я хотів би квиток, будь ласка.",
       "phonetic": "Ya kho-TIV by kvy-TOK, bood LAS-kah."
@@ -76,6 +92,14 @@
       "text": "Рахунок, будь ласка.",
       "phonetic": "Rah-KHOO-nok, bood LAS-kah."
     },
+    "like_beer": {
+      "text": "Я хотів би пива, будь ласка.",
+      "phonetic": "Ya kho-TIV by PY-vah, bood LAS-kah."
+    },
+    "like_wine": {
+      "text": "Я хотів би келих вина, будь ласка.",
+      "phonetic": "Ya kho-TIV by KE-lykh vee-NAH, bood LAS-kah."
+    },
     "have_wifi": { "text": "Чи маєте ви бездротовий інтернет?", "phonetic": "Chy mayete vy bezdrotovyy internet?" },
     "have_room": {
       "text": "У вас є вільна кімната?",
@@ -88,6 +112,10 @@
     "have_menu": {
       "text": "У вас є меню англійською?",
       "phonetic": "Oo vas yeh meh-NYU an-HLYY-skoh-yoo?"
+    },
+    "have_vegetarian": {
+      "text": "У вас є вегетаріанські страви?",
+      "phonetic": "Oo vas yeh ve-heh-tah-ree-AHN-skee STRAH-vy?"
     },
     "cost_ticket": {
       "text": "Скільки коштує квиток?",
@@ -105,9 +133,21 @@
       "text": "Скільки коштує кава?",
       "phonetic": "SKIL-ky KOSH-too-yeh KAH-vah?"
     },
+    "cost_beer": {
+      "text": "Скільки коштує пиво?",
+      "phonetic": "SKIL-ky KOSH-too-yeh PY-vo?"
+    },
+    "cost_wine": {
+      "text": "Скільки коштує келих вина?",
+      "phonetic": "SKIL-ky KOSH-too-yeh KE-lykh vee-NAH?"
+    },
     "allergic_peanuts": {
       "text": "У мене алергія на арахіс.",
       "phonetic": "Oo MEH-neh ah-ler-HEE-ya na ah-RAH-khis."
+    },
+    "allergic_seafood": {
+      "text": "У мене алергія на морепродукти.",
+      "phonetic": "Oo MEH-neh ah-ler-HEE-ya na moh-reh-proh-DOOK-ty."
     }
   }
 }

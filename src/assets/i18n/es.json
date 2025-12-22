@@ -61,6 +61,22 @@
       "text": "¿Dónde hay un médico?",
       "phonetic": "DON-deh eye oon MEH-dee-koh?"
     },
+    "where_restaurant": {
+      "text": "¿Dónde hay un buen restaurante?",
+      "phonetic": "DON-deh eye oon BWEEN rehs-taw-RAHN-teh?"
+    },
+    "where_hospital": {
+      "text": "¿Dónde está el hospital?",
+      "phonetic": "DON-deh ehs-TAH el oh-spee-TAHL?"
+    },
+    "where_supermarket": {
+      "text": "¿Dónde está el supermercado?",
+      "phonetic": "DON-deh ehs-TAH el soo-per-mar-KAH-doh?"
+    },
+    "where_beach": {
+      "text": "¿Dónde está la playa?",
+      "phonetic": "DON-deh ehs-TAH lah PLAH-yah?"
+    },
     "like_ticket": {
       "text": "Quisiera un boleto, por favor.",
       "phonetic": "kee-SYEH-rah oon boh-LEH-toh, por fah-VOR."
@@ -85,6 +101,14 @@
       "text": "La cuenta, por favor.",
       "phonetic": "Lah KWEN-tah, por fah-VOR."
     },
+    "like_beer": {
+      "text": "Quisiera una cerveza, por favor.",
+      "phonetic": "kee-SYEH-rah OO-nah sehr-BEH-sah, por fah-VOR."
+    },
+    "like_wine": {
+      "text": "Quisiera una copa de vino, por favor.",
+      "phonetic": "kee-SYEH-rah OO-nah KOH-pah deh VEE-no, por fah-VOR."
+    },
     "have_wifi": { "text": "¿Tienen WiFi?", "phonetic": "TYEH-nehn WYE-fye?" },
     "have_room": {
       "text": "¿Tienen una habitación disponible?",
@@ -97,6 +121,10 @@
     "have_menu": {
       "text": "¿Tiene un menú en inglés?",
       "phonetic": "TYEH-neh oon meh-NOO ehn een-GLEHS?"
+    },
+    "have_vegetarian": {
+      "text": "¿Tiene opciones vegetarianas?",
+      "phonetic": "TYEH-neh op-SYOH-nes beh-heh-tah-ree-AH-nas?"
     },
     "cost_ticket": {
       "text": "¿Cuánto cuesta un boleto?",
@@ -114,9 +142,21 @@
       "text": "¿Cuánto cuesta un café?",
       "phonetic": "KWAN-toh KWEHS-tah oon kah-FEH?"
     },
+    "cost_beer": {
+      "text": "¿Cuánto cuesta una cerveza?",
+      "phonetic": "KWAN-toh KWEHS-tah OO-nah sehr-BEH-sah?"
+    },
+    "cost_wine": {
+      "text": "¿Cuánto cuesta una copa de vino?",
+      "phonetic": "KWAN-toh KWEHS-tah OO-nah KOH-pah deh VEE-no?"
+    },
     "allergic_peanuts": {
       "text": "Soy alérgico a los cacahuates.",
       "phonetic": "Soy ah-LEHR-hee-koh ah los kah-kah-WAH-tehs."
+    },
+    "allergic_seafood": {
+      "text": "Soy alérgico a los mariscos.",
+      "phonetic": "Soy ah-LEHR-hee-koh ah los mah-REES-kos."
     }
   }
 }

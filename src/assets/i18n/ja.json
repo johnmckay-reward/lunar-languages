@@ -64,6 +64,22 @@
       "text": "病院はどこですか？",
       "phonetic": "Byo-in wa doh-koh dess kah?"
     },
+    "where_restaurant": {
+      "text": "いいレストランはどこですか？",
+      "phonetic": "Ee re-su-to-ran wa doh-koh dess kah?"
+    },
+    "where_hospital": {
+      "text": "病院はどこですか？",
+      "phonetic": "Byo-in wa doh-koh dess kah?"
+    },
+    "where_supermarket": {
+      "text": "スーパーはどこですか？",
+      "phonetic": "Soo-pah wa doh-koh dess kah?"
+    },
+    "where_beach": {
+      "text": "ビーチはどこですか？",
+      "phonetic": "Bee-chee wa doh-koh dess kah?"
+    },
     "like_ticket": {
       "text": "切符をお願いします。",
       "phonetic": "きっぷをおねがいします。"
@@ -88,6 +104,14 @@
       "text": "お会計をお願いします。",
       "phonetic": "Oh-kah-ee-kay oh oh-neh-guy-she-mass."
     },
+    "like_beer": {
+      "text": "ビールをください。",
+      "phonetic": "Bee-roo oh koo-dah-sigh."
+    },
+    "like_wine": {
+      "text": "ワインをください。",
+      "phonetic": "Wah-in oh koo-dah-sigh."
+    },
     "have_wifi": {
       "text": "ワイヤレスインターネットはありますか？",
       "phonetic": "wireless internet wa arimasu ka?"
@@ -103,6 +127,10 @@
     "have_menu": {
       "text": "英語のメニューはありますか？",
       "phonetic": "Eh-go no men-yoo wa ah-ree-mass kah?"
+    },
+    "have_vegetarian": {
+      "text": "ベジタリアン料理はありますか？",
+      "phonetic": "Be-ji-tah-ree-an ryo-ree wa ah-ree-mass kah?"
     },
     "cost_ticket": {
       "text": "チケットはいくらですか？",
@@ -120,9 +148,21 @@
       "text": "コーヒーのお値段はどれくらいですか？",
       "phonetic": "コーヒー の おねだん は どれ くらい です か？"
     },
+    "cost_beer": {
+      "text": "ビールはいくらですか？",
+      "phonetic": "Bee-roo wa ee-koo-rah dess kah?"
+    },
+    "cost_wine": {
+      "text": "ワインはいくらですか？",
+      "phonetic": "Wah-in wa ee-koo-rah dess kah?"
+    },
     "allergic_peanuts": {
       "text": "私はピーナッツアレルギーです。",
       "phonetic": "Wah-tah-she wa pee-na-tsu ah-reh-roo-gee dess."
+    },
+    "allergic_seafood": {
+      "text": "私は魚介類アレルギーです。",
+      "phonetic": "Wah-tah-she wa gyo-kai-roo-ee ah-reh-roo-gee dess."
     }
   }
 }

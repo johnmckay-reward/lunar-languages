@@ -160,14 +160,24 @@ export class DataService {
     { id: 'coffee', type: 'noun', category: 'Dining', english: 'Coffee' },
     { id: 'menu', type: 'noun', category: 'Dining', english: 'The Menu' },
     { id: 'bill', type: 'noun', category: 'Dining', english: 'The Bill' },
+    { id: 'restaurant', type: 'noun', category: 'Dining', english: 'A Restaurant' },
+    { id: 'beer', type: 'noun', category: 'Dining', english: 'A Beer' },
+    { id: 'wine', type: 'noun', category: 'Dining', english: 'A Glass of Wine' },
+    { id: 'seafood', type: 'noun', category: 'Dining', english: 'Seafood' },
+    { id: 'vegetarian', type: 'noun', category: 'Dining', english: 'A Vegetarian Dish' },
 
     // Health / Safety
     { id: 'peanuts', type: 'noun', category: 'Health', english: 'Peanuts' },
     { id: 'doctor', type: 'noun', category: 'Health', english: 'A Doctor' },
     { id: 'pharmacy', type: 'noun', category: 'Health', english: 'Pharmacy' },
+    { id: 'hospital', type: 'noun', category: 'Health', english: 'The Hospital' },
 
     // Tech
     { id: 'charger', type: 'noun', category: 'Tech', english: 'Charger' },
+
+    // Leisure / Shopping
+    { id: 'beach', type: 'noun', category: 'Leisure', english: 'The Beach' },
+    { id: 'supermarket', type: 'noun', category: 'Shopping', english: 'The Supermarket' },
   ];
 
   // ============================================================
@@ -183,6 +193,10 @@ export class DataService {
     'where_atm': { english: 'Where is the ATM?' },
     'where_pharmacy': { english: 'Where is the pharmacy?' },
     'where_doctor': { english: 'Where is a doctor?' },
+    'where_restaurant': { english: 'Where is a good restaurant?' },
+    'where_hospital': { english: 'Where is the hospital?' },
+    'where_supermarket': { english: 'Where is the supermarket?' },
+    'where_beach': { english: 'Where is the beach?' },
 
     // --- I WOULD LIKE... ---
     'like_ticket': { english: 'I would like a ticket please.' },
@@ -191,21 +205,27 @@ export class DataService {
     'like_coffee': { english: 'I would like a coffee.' },
     'like_menu': { english: 'I would like the menu please.' },
     'like_bill': { english: 'I would like the bill please.' },
+    'like_beer': { english: 'I would like a beer.' },
+    'like_wine': { english: 'I would like a glass of wine.' },
 
     // --- DO YOU HAVE...? ---
     'have_wifi': { english: 'Do you have WiFi?' },
     'have_room': { english: 'Do you have a room available?' },
     'have_charger': { english: 'Do you have a charger?' },
     'have_menu': { english: 'Do you have a menu in English?' }, // Context added
+    'have_vegetarian': { english: 'Do you have any vegetarian options?' },
 
     // --- HOW MUCH IS...? ---
     'cost_ticket': { english: 'How much is a ticket?' },
     'cost_taxi': { english: 'How much is the taxi?' },
     'cost_room': { english: 'How much is the room?' },
     'cost_coffee': { english: 'How much is a coffee?' },
+    'cost_beer': { english: 'How much is a beer?' },
+    'cost_wine': { english: 'How much is a glass of wine?' },
 
     // --- I AM ALLERGIC TO... ---
     'allergic_peanuts': { english: 'I am allergic to peanuts.' },
+  'allergic_seafood': { english: 'I am allergic to seafood.' },
     // Add other allergies here if you add nouns for seafood, etc.
   };
 

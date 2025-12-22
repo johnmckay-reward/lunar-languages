@@ -61,6 +61,22 @@
       "text": "Où est un médecin ?",
       "phonetic": "oo eh uhn med-SAN?"
     },
+    "where_restaurant": {
+      "text": "Où est un bon restaurant ?",
+      "phonetic": "oo eh uhn bon res-toh-RAHN?"
+    },
+    "where_hospital": {
+      "text": "Où est l'hôpital ?",
+      "phonetic": "oo eh lo-pee-TAL?"
+    },
+    "where_supermarket": {
+      "text": "Où est le supermarché ?",
+      "phonetic": "oo eh luh su-per-mar-SHAY?"
+    },
+    "where_beach": {
+      "text": "Où est la plage ?",
+      "phonetic": "oo eh lah plahzh?"
+    },
     "like_ticket": {
       "text": "Je voudrais un billet, s'il vous plaît.",
       "phonetic": "zhuh voo-DRAY uhn bee-YAY, seel voo PLAY."
@@ -85,6 +101,14 @@
       "text": "L'addition, s'il vous plaît.",
       "phonetic": "la-dee-SYON, seel voo PLAY."
     },
+    "like_beer": {
+      "text": "Je voudrais une bière, s'il vous plaît.",
+      "phonetic": "zhuh voo-DRAY oon byair, seel voo PLAY."
+    },
+    "like_wine": {
+      "text": "Je voudrais un verre de vin, s'il vous plaît.",
+      "phonetic": "zhuh voo-DRAY uhn vair duh vin, seel voo PLAY."
+    },
     "have_wifi": {
       "text": "Avez-vous le WiFi ?",
       "phonetic": "ah-vay VOO luh wee-fee?"
@@ -100,6 +124,10 @@
     "have_menu": {
       "text": "Avez-vous un menu en anglais ?",
       "phonetic": "ah-vay VOO uhn meh-NOO ahn ahn-GLAY?"
+    },
+    "have_vegetarian": {
+      "text": "Avez-vous des options végétariennes ?",
+      "phonetic": "ah-vay VOO day zop-SYON vay-zhay-tah-RYEN?"
     },
     "cost_ticket": {
       "text": "Combien coûte un billet ?",
@@ -117,9 +145,21 @@
       "text": "Combien coûte un café ?",
       "phonetic": "kom-BYEN koot uhn ka-FAY?"
     },
+    "cost_beer": {
+      "text": "Combien coûte une bière ?",
+      "phonetic": "kom-BYEN koot oon byair?"
+    },
+    "cost_wine": {
+      "text": "Combien coûte un verre de vin ?",
+      "phonetic": "kom-BYEN koot uhn vair duh vin?"
+    },
     "allergic_peanuts": {
       "text": "Je suis sensible aux cacahuètes.",
       "phonetic": "ʒə sɥi sɑ̃sibl o kakaˈwɛt"
+    },
+    "allergic_seafood": {
+      "text": "Je suis allergique aux fruits de mer.",
+      "phonetic": "ʒə sɥi a-lair-ZHEEK o frwee duh mer"
     }
   }
 }

@@ -61,6 +61,22 @@
       "text": "Dov'è un dottore?",
       "phonetic": "doh-VEH oon dot-TOH-reh?"
     },
+    "where_restaurant": {
+      "text": "Dov'è un buon ristorante?",
+      "phonetic": "doh-VEH oon BWOHN ree-stoh-RAHN-teh?"
+    },
+    "where_hospital": {
+      "text": "Dov'è l'ospedale?",
+      "phonetic": "doh-VEH loh-speh-DAH-leh?"
+    },
+    "where_supermarket": {
+      "text": "Dov'è il supermercato?",
+      "phonetic": "doh-VEH eel soo-per-mer-KAH-toh?"
+    },
+    "where_beach": {
+      "text": "Dov'è la spiaggia?",
+      "phonetic": "doh-VEH lah SPYAH-jah?"
+    },
     "like_ticket": {
       "text": "Vorrei un biglietto, per favore.",
       "phonetic": "vor-RAY oon beel-YET-toh, per fah-VOH-reh."
@@ -85,6 +101,14 @@
       "text": "Il conto, per favore.",
       "phonetic": "eel KON-toh, per fah-VOH-reh."
     },
+    "like_beer": {
+      "text": "Vorrei una birra, per favore.",
+      "phonetic": "vor-RAY OO-nah BEER-rah, per fah-VOH-reh."
+    },
+    "like_wine": {
+      "text": "Vorrei un bicchiere di vino, per favore.",
+      "phonetic": "vor-RAY oon beek-YEH-reh dee VEE-no, per fah-VOH-reh."
+    },
     "have_wifi": {
       "text": "Avete il WiFi?",
       "phonetic": "ah-VEH-teh eel WiFi?"
@@ -100,6 +124,10 @@
     "have_menu": {
       "text": "Dispone di un menù in inglese?",
       "phonetic": "Dispoh-neh dee oon meh-noo een een-gleh-zeh?"
+    },
+    "have_vegetarian": {
+      "text": "Avete opzioni vegetariane?",
+      "phonetic": "ah-VEH-teh op-TSYO-nee veh-jeh-tah-ree-AH-neh?"
     },
     "cost_ticket": {
       "text": "Quanto costa un biglietto?",
@@ -117,9 +145,21 @@
       "text": "Quanto costa un caffè?",
       "phonetic": "KWAN-toh KOS-tah oon kah-FEH?"
     },
+    "cost_beer": {
+      "text": "Quanto costa una birra?",
+      "phonetic": "KWAN-toh KOS-tah OO-nah BEER-rah?"
+    },
+    "cost_wine": {
+      "text": "Quanto costa un bicchiere di vino?",
+      "phonetic": "KWAN-toh KOS-tah oon beek-YEH-reh dee VEE-no?"
+    },
     "allergic_peanuts": {
       "text": "Sono allergico alle arachidi.",
       "phonetic": "SOH-noh al-LEHR-jee-koh al-leh ah-RAH-kee-dee."
+    },
+    "allergic_seafood": {
+      "text": "Sono allergico ai frutti di mare.",
+      "phonetic": "SOH-noh al-LEHR-jee-koh ai FROOT-tee dee MAH-reh."
     }
   }
 }
