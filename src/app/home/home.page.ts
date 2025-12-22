@@ -67,11 +67,13 @@ export class HomePage implements OnInit {
       // Reset State
       this.selectedNoun = null;
       this.currentAudioId = null;
+      this.selectedStarter = null;
 
-      // Auto-select first starter
-      if (this.starters.length > 0) {
-        this.selectStarter(this.starters[0], false);
-      }
+      // Reset Display
+      this.displayEnglish = '';
+      this.displayNative = '';
+      this.displayPhonetic = '';
+      this.visibleNouns = [];
     });
   }
 
