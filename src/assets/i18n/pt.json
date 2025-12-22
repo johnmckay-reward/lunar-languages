@@ -29,6 +29,108 @@
       "phonetic": "FAH-leh mys deh-vah-GAR, poor fah-VOR"
     }
   },
+"starters": {
+    "where": {
+      "listenFor": [
+        {
+          "text": "À direita",
+          "phonetic": "ah dee-RAY-tah",
+          "meaning": "To the right"
+        },
+        {
+          "text": "À esquerda",
+          "phonetic": "ah sh-KER-dah",
+          "meaning": "To the left"
+        },
+        {
+          "text": "Sempre em frente",
+          "phonetic": "SEM-preh ayng FREN-teh",
+          "meaning": "Straight ahead"
+        },
+        {
+          "text": "Fica longe",
+          "phonetic": "FEE-kah LON-zh",
+          "meaning": "It is far"
+        }
+      ]
+    },
+    "like": {
+      "listenFor": [
+        {
+          "text": "Mais alguma coisa?",
+          "phonetic": "my-zh al-GOO-mah KOY-zah?",
+          "meaning": "Anything else?"
+        },
+        {
+          "text": "Para comer aqui?",
+          "phonetic": "pah-rah koo-MEHR ah-KEE?",
+          "meaning": "To eat here?"
+        },
+        {
+          "text": "Um momento",
+          "phonetic": "oong moo-MEN-too",
+          "meaning": "One moment"
+        }
+      ]
+    },
+    "have": {
+      "listenFor": [
+        {
+          "text": "Sim, temos",
+          "phonetic": "seeng, TEH-moosh",
+          "meaning": "Yes, we have"
+        },
+        {
+          "text": "Aqui tem",
+          "phonetic": "ah-KEE tayng",
+          "meaning": "Here you go"
+        },
+        {
+          "text": "Acabou",
+          "phonetic": "ah-kah-BOH",
+          "meaning": "It finished / Sold out"
+        }
+      ]
+    },
+    "cost": {
+      "listenFor": [
+        {
+          "text": "Multibanco?",
+          "phonetic": "mool-tee-BAN-koo?",
+          "meaning": "Card machine?"
+        },
+        {
+          "text": "Dinheiro vivo",
+          "phonetic": "dee-NYAY-roo VEE-voo",
+          "meaning": "Cash (Live money)"
+        },
+        {
+          "text": "São [Preço]",
+          "phonetic": "sowng [price]",
+          "meaning": "It is [Price]"
+        }
+      ]
+    },
+    "allergic": {
+      "listenFor": [
+        {
+          "text": "Sem problema",
+          "phonetic": "sayng pro-BLEH-mah",
+          "meaning": "No problem (Safe)"
+        },
+        {
+          "text": "Posso tirar",
+          "phonetic": "POS-soo tee-RAR",
+          "meaning": "I can remove it (Safe)"
+        },
+        {
+          "text": "Isto leva...",
+          "phonetic": "EESH-too LEH-vah...",
+          "meaning": "This takes/contains... (Danger)"
+        }
+      ]
+    }
+  },
   "combinations": {
     "where_station": {
       "text": "Onde fica a estação?",

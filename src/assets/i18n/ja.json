@@ -24,8 +24,14 @@
       "phonetic": "Ey-go oh hah-nah-seh-mass kah?"
     },
     "help": { "text": "助けてください！", "phonetic": "たすけてください" },
-    "delicious": { "text": "これは美味しいですね！", "phonetic": "Kore wa oishii desu ne!" },
-    "cheers": { "text": "お祝いの乾杯をしましょう！", "phonetic": "O-i-wa-i no Kan-pai o shi-ma-sho-u" },
+    "delicious": {
+      "text": "これは美味しいですね！",
+      "phonetic": "Kore wa oishii desu ne!"
+    },
+    "cheers": {
+      "text": "お祝いの乾杯をしましょう！",
+      "phonetic": "O-i-wa-i no Kan-pai o shi-ma-sho-u"
+    },
     "wifi_pass": {
       "text": "WiFiのパスワードは？",
       "phonetic": "WiFi no pah-soo-wah-doh wa?"
@@ -33,6 +39,108 @@
     "slowly": {
       "text": "もっとゆっくり話してください",
       "phonetic": "Motto yook-koo-ree hah-nah-she-teh koo-dah-sigh"
+    }
+  },
+  "starters": {
+    "where": {
+      "listenFor": [
+        {
+          "text": "Migi desu",
+          "phonetic": "mee-GEE deh-su",
+          "meaning": "It is to the right"
+        },
+        {
+          "text": "Hidari desu",
+          "phonetic": "hee-DAH-ree deh-su",
+          "meaning": "It is to the left"
+        },
+        {
+          "text": "Massugu desu",
+          "phonetic": "mas-SU-goo deh-su",
+          "meaning": "Straight ahead"
+        },
+        {
+          "text": "Chikaku desu",
+          "phonetic": "chee-KAH-koo deh-su",
+          "meaning": "It is close"
+        }
+      ]
+    },
+    "like": {
+      "listenFor": [
+        {
+          "text": "Hoka ni wa?",
+          "phonetic": "HOH-kah nee wah?",
+          "meaning": "Anything else?"
+        },
+        {
+          "text": "Tennai? Mochikaeri?",
+          "phonetic": "TEN-nigh? moh-chee-kye-REE?",
+          "meaning": "Eat in or Take out?"
+        },
+        {
+          "text": "Shoushou omachi kudasai",
+          "phonetic": "SHOW-show oh-MAH-chee koo-dah-SIGH",
+          "meaning": "Please wait a moment (Polite)"
+        }
+      ]
+    },
+    "have": {
+      "listenFor": [
+        {
+          "text": "Hai, arimasu",
+          "phonetic": "high, ah-ree-MAH-su",
+          "meaning": "Yes, we have it"
+        },
+        {
+          "text": "Urikire desu",
+          "phonetic": "oo-ree-KEE-reh deh-su",
+          "meaning": "It is sold out"
+        },
+        {
+          "text": "Moushiwake arimasen",
+          "phonetic": "moh-she-wah-keh ah-ree-mah-SEN",
+          "meaning": "I am terribly sorry (No)"
+        }
+      ]
+    },
+    "cost": {
+      "listenFor": [
+        {
+          "text": "Genkin nomi",
+          "phonetic": "GEN-keen NO-mee",
+          "meaning": "Cash only"
+        },
+        {
+          "text": "Kaado wa tsukaemasen",
+          "phonetic": "KAH-doh wah tsoo-kye-mah-SEN",
+          "meaning": "Cannot use card"
+        },
+        {
+          "text": "...En ni narimasu",
+          "phonetic": "...en nee nah-ree-MAH-su",
+          "meaning": "It becomes ... Yen"
+        }
+      ]
+    },
+    "allergic": {
+      "listenFor": [
+        {
+          "text": "Daijoubu desu",
+          "phonetic": "dye-JOH-boo deh-su",
+          "meaning": "It is okay (Safe)"
+        },
+        {
+          "text": "Nuki ni shimasu ka?",
+          "phonetic": "NOO-kee nee she-MAH-su kah?",
+          "meaning": "Shall I remove it? (Safe)"
+        },
+        {
+          "text": "Haitte imasu",
+          "phonetic": "HITE-teh ee-MAH-su",
+          "meaning": "It enters/contains... (Danger)"
+        }
+      ]
     }
   },
   "combinations": {

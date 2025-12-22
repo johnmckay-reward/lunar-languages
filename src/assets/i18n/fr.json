@@ -20,7 +20,10 @@
       "text": "Parlez-vous anglais ?",
       "phonetic": "par-lay voo ahn-GLAY?"
     },
-    "help": { "text": "Je vous en prie, aidez-moi s'il vous plaît !", "phonetic": "ʒə vuz ɑ̃ pri, ed-e mwa sil vu plɛ !" },
+    "help": {
+      "text": "Je vous en prie, aidez-moi s'il vous plaît !",
+      "phonetic": "ʒə vuz ɑ̃ pri, ed-e mwa sil vu plɛ !"
+    },
     "delicious": { "text": "Délicieux !", "phonetic": "day-lee-SYUH!" },
     "cheers": { "text": "Santé!", "phonetic": "sahn-TAY!" },
     "wifi_pass": {
@@ -30,6 +33,108 @@
     "slowly": {
       "text": "Parlez plus lentement, s'il vous plaît",
       "phonetic": "par-lay plew lahnt-mahn"
+    }
+  },
+  "starters": {
+    "where": {
+      "listenFor": [
+        {
+          "text": "À droite",
+          "phonetic": "ah drwaht",
+          "meaning": "To the right"
+        },
+        {
+          "text": "À gauche",
+          "phonetic": "ah gosh",
+          "meaning": "To the left"
+        },
+        {
+          "text": "Tout droit",
+          "phonetic": "too drwah",
+          "meaning": "Straight ahead"
+        },
+        {
+          "text": "C'est loin",
+          "phonetic": "say lwan",
+          "meaning": "It is far"
+        }
+      ]
+    },
+    "like": {
+      "listenFor": [
+        {
+          "text": "Avec ceci ?",
+          "phonetic": "ah-vek suh-SEE?",
+          "meaning": "Anything else? (With this?)"
+        },
+        {
+          "text": "Sur place ou à emporter ?",
+          "phonetic": "soor plas oo ah om-por-TAY?",
+          "meaning": "For here or to go?"
+        },
+        {
+          "text": "Un instant",
+          "phonetic": "un nas-TAHN",
+          "meaning": "One moment"
+        }
+      ]
+    },
+    "have": {
+      "listenFor": [
+        {
+          "text": "Oui, bien sûr",
+          "phonetic": "wee, byan soor",
+          "meaning": "Yes, of course"
+        },
+        {
+          "text": "Voilà",
+          "phonetic": "vwah-LAH",
+          "meaning": "Here you go"
+        },
+        {
+          "text": "C'est terminé",
+          "phonetic": "say tehr-mee-NAY",
+          "meaning": "It is finished / Sold out"
+        }
+      ]
+    },
+    "cost": {
+      "listenFor": [
+        {
+          "text": "Par carte ?",
+          "phonetic": "par kart?",
+          "meaning": "By card?"
+        },
+        {
+          "text": "En espèces",
+          "phonetic": "on es-PES",
+          "meaning": "In cash"
+        },
+        {
+          "text": "Ça fait [Prix]",
+          "phonetic": "sah fay...",
+          "meaning": "That comes to [Price]"
+        }
+      ]
+    },
+    "allergic": {
+      "listenFor": [
+        {
+          "text": "Pas de problème",
+          "phonetic": "pah duh pro-BLEM",
+          "meaning": "No problem (Safe)"
+        },
+        {
+          "text": "C'est sans...",
+          "phonetic": "say son...",
+          "meaning": "It is without... (Safe)"
+        },
+        {
+          "text": "Il y a du...",
+          "phonetic": "eel ee ah dew...",
+          "meaning": "There is some... (Danger)"
+        }
+      ]
     }
   },
   "combinations": {

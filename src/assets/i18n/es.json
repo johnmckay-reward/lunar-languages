@@ -32,6 +32,108 @@
       "phonetic": "AH-bleh mahs dehs-PAH-syo"
     }
   },
+  "starters": {
+    "where": {
+      "listenFor": [
+        {
+          "text": "A la derecha",
+          "phonetic": "ah lah deh-REH-chah",
+          "meaning": "To the right"
+        },
+        {
+          "text": "A la izquierda",
+          "phonetic": "ah lah ees-KYEHR-dah",
+          "meaning": "To the left"
+        },
+        {
+          "text": "Todo recto",
+          "phonetic": "TOH-doh REHK-toh",
+          "meaning": "Straight ahead"
+        },
+        {
+          "text": "Está lejos",
+          "phonetic": "ehs-TAH LEH-hos",
+          "meaning": "It is far"
+        }
+      ]
+    },
+    "like": {
+      "listenFor": [
+        {
+          "text": "¿Algo más?",
+          "phonetic": "AL-goh mahs?",
+          "meaning": "Anything else?"
+        },
+        {
+          "text": "¿Efectivo o tarjeta?",
+          "phonetic": "eh-fehk-TEE-voh oh tar-HEH-tah?",
+          "meaning": "Cash or card?"
+        },
+        {
+          "text": "Un momento",
+          "phonetic": "oon moh-MEN-toh",
+          "meaning": "One moment"
+        }
+      ]
+    },
+    "have": {
+      "listenFor": [
+        {
+          "text": "Sí, aquí tiene",
+          "phonetic": "See, ah-KEE TYEH-neh",
+          "meaning": "Yes, here you go"
+        },
+        {
+          "text": "Agotado",
+          "phonetic": "ah-goh-TAH-doh",
+          "meaning": "Sold out / Finished"
+        },
+        {
+          "text": "Lo siento, no",
+          "phonetic": "loh SYEN-toh, noh",
+          "meaning": "Sorry, no"
+        }
+      ]
+    },
+    "cost": {
+      "listenFor": [
+        {
+          "text": "Solo efectivo",
+          "phonetic": "SOH-loh eh-fehk-TEE-voh",
+          "meaning": "Cash only"
+        },
+        {
+          "text": "Es barato",
+          "phonetic": "ehs bah-RAH-toh",
+          "meaning": "It is cheap"
+        },
+        {
+          "text": "Es caro",
+          "phonetic": "ehs KAH-roh",
+          "meaning": "It is expensive"
+        }
+      ]
+    },
+    "allergic": {
+      "listenFor": [
+        {
+          "text": "Entendido",
+          "phonetic": "ehn-ten-DEE-doh",
+          "meaning": "Understood (Safe)"
+        },
+        {
+          "text": "Sin problema",
+          "phonetic": "seen proh-BLEH-mah",
+          "meaning": "No problem (Safe)"
+        },
+        {
+          "text": "Esto tiene...",
+          "phonetic": "EHS-toh TYEH-neh...",
+          "meaning": "This contains... (Danger)"
+        }
+      ]
+    }
+  },
   "combinations": {
     "where_station": {
       "text": "¿Dónde está la estación de tren?",

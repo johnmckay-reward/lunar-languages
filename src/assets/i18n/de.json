@@ -32,6 +32,108 @@
       "phonetic": "BIT-uh SHPREH-khen zee LANG-zah-mer"
     }
   },
+  "starters": {
+    "where": {
+      "listenFor": [
+        {
+          "text": "Nach rechts",
+          "phonetic": "nahkh rehkts",
+          "meaning": "To the right"
+        },
+        {
+          "text": "Nach links",
+          "phonetic": "nahkh links",
+          "meaning": "To the left"
+        },
+        {
+          "text": "Geradeaus",
+          "phonetic": "geh-RAH-deh-OWS",
+          "meaning": "Straight ahead"
+        },
+        {
+          "text": "Nicht weit",
+          "phonetic": "neekht vite",
+          "meaning": "Not far"
+        }
+      ]
+    },
+    "like": {
+      "listenFor": [
+        {
+          "text": "Sonst noch etwas?",
+          "phonetic": "zonst nohkh et-vas?",
+          "meaning": "Anything else?"
+        },
+        {
+          "text": "Bar oder Karte?",
+          "phonetic": "bar oh-der CAR-teh?",
+          "meaning": "Cash or card?"
+        },
+        {
+          "text": "Einen Moment",
+          "phonetic": "EYE-nen mo-MENT",
+          "meaning": "One moment"
+        }
+      ]
+    },
+    "have": {
+      "listenFor": [
+        {
+          "text": "Ja, bitte sehr",
+          "phonetic": "yah, BIT-teh zehr",
+          "meaning": "Yes, here you go"
+        },
+        {
+          "text": "Leider nein",
+          "phonetic": "LYE-der nine",
+          "meaning": "Unfortunately no"
+        },
+        {
+          "text": "Ausverkauft",
+          "phonetic": "OWS-fair-kowft",
+          "meaning": "Sold out"
+        }
+      ]
+    },
+    "cost": {
+      "listenFor": [
+        {
+          "text": "Nur Barzahlung",
+          "phonetic": "noor BAR-tsah-loong",
+          "meaning": "Cash only"
+        },
+        {
+          "text": "Das macht [Preise]",
+          "phonetic": "das makht [price]",
+          "meaning": "That comes to [Price]"
+        },
+        {
+          "text": "Zu teuer",
+          "phonetic": "tsoo TOY-er",
+          "meaning": "Too expensive"
+        }
+      ]
+    },
+    "allergic": {
+      "listenFor": [
+        {
+          "text": "Kein Problem",
+          "phonetic": "kine pro-BLEHM",
+          "meaning": "No problem (Safe)"
+        },
+        {
+          "text": "Alles klar",
+          "phonetic": "AH-les klahr",
+          "meaning": "All clear / Understood"
+        },
+        {
+          "text": "Das enthält...",
+          "phonetic": "das ent-HELT...",
+          "meaning": "This contains... (Danger)"
+        }
+      ]
+    }
+  },
   "combinations": {
     "where_station": {
       "text": "Wo ist der Bahnhof?",

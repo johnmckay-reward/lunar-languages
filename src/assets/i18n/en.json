@@ -17,6 +17,22 @@
     "wifi_pass": { "text": "WiFi Password?", "phonetic": "" },
     "slowly": { "text": "Please speak slowly", "phonetic": "" }
   },
+  "starters": {
+    "where": {
+      "listenFor": [
+        { "text": "Left", "phonetic": "", "meaning": "Left" },
+        { "text": "Right", "phonetic": "", "meaning": "Right" },
+        { "text": "Straight", "phonetic": "", "meaning": "Straight" }
+      ]
+    },
+    "cost": {
+      "listenFor": [
+        { "text": "Dollars", "phonetic": "", "meaning": "Dollars" },
+        { "text": "Expensive", "phonetic": "", "meaning": "Expensive" },
+        { "text": "Cheap", "phonetic": "", "meaning": "Cheap" }
+      ]
+    }
+  },
   "combinations": {
     "where_station": { "text": "Where is the train station?", "phonetic": "" },
     "where_airport": { "text": "Where is the airport?", "phonetic": "" },

@@ -35,6 +35,108 @@
       "phonetic": "Ho-voh-REET poh-vil-NEE-sheh, bood LAS-kah"
     }
   },
+"starters": {
+    "where": {
+      "listenFor": [
+        {
+          "text": "Праворуч",
+          "phonetic": "prah-VOH-rooch",
+          "meaning": "To the right"
+        },
+        {
+          "text": "Ліворуч",
+          "phonetic": "lee-VOH-rooch",
+          "meaning": "To the left"
+        },
+        {
+          "text": "Прямо",
+          "phonetic": "PRYAH-moh",
+          "meaning": "Straight ahead"
+        },
+        {
+          "text": "Близько",
+          "phonetic": "BLYZ-koh",
+          "meaning": "Close / Nearby"
+        }
+      ]
+    },
+    "like": {
+      "listenFor": [
+        {
+          "text": "Ще щось?",
+          "phonetic": "shcheh shchos?",
+          "meaning": "Anything else?"
+        },
+        {
+          "text": "Тут чи з собою?",
+          "phonetic": "toot chy zah-BOH-yoo?",
+          "meaning": "Here or to go?"
+        },
+        {
+          "text": "Хвилинку",
+          "phonetic": "hvy-LYN-koo",
+          "meaning": "One minute"
+        }
+      ]
+    },
+    "have": {
+      "listenFor": [
+        {
+          "text": "Так, звичайно",
+          "phonetic": "tak, zvy-CHY-noh",
+          "meaning": "Yes, of course"
+        },
+        {
+          "text": "Прошу",
+          "phonetic": "PROH-shoo",
+          "meaning": "Here you go / Please"
+        },
+        {
+          "text": "Закінчилось",
+          "phonetic": "zah-kin-CHY-los",
+          "meaning": "It is finished / Sold out"
+        }
+      ]
+    },
+    "cost": {
+      "listenFor": [
+        {
+          "text": "Лише готівка",
+          "phonetic": "ly-SHEH ho-TEEV-kah",
+          "meaning": "Cash only"
+        },
+        {
+          "text": "Можна карткою",
+          "phonetic": "MOZH-nah KART-koh-yoo",
+          "meaning": "Card is possible"
+        },
+        {
+          "text": "Це буде [Сума]",
+          "phonetic": "tseh BOO-deh...",
+          "meaning": "That will be [Amount]"
+        }
+      ]
+    },
+    "allergic": {
+      "listenFor": [
+        {
+          "text": "Без проблем",
+          "phonetic": "bez pro-BLEM",
+          "meaning": "No problem (Safe)"
+        },
+        {
+          "text": "Це безпечно",
+          "phonetic": "tseh bez-PECH-noh",
+          "meaning": "It is safe"
+        },
+        {
+          "text": "Там є...",
+          "phonetic": "tam yeh...",
+          "meaning": "There is... (Danger)"
+        }
+      ]
+    }
+  },
   "combinations": {
     "where_station": { "text": "Де вокзал?", "phonetic": "Deh vok-ZAL?" },
     "where_airport": {

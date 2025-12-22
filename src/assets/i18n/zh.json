@@ -23,6 +23,108 @@
     "wifi_pass": { "text": "无线路由器密码是什么？", "phonetic": "Wúxiàn lùyóuqì mìmǎ shì shénme?" },
     "slowly": { "text": "请说慢一点", "phonetic": "Qǐng shuō màn yīdiǎn" }
   },
+"starters": {
+    "where": {
+      "listenFor": [
+        {
+          "text": "右边",
+          "phonetic": "YOH byehn",
+          "meaning": "Right side"
+        },
+        {
+          "text": "左边",
+          "phonetic": "ZWOH byehn",
+          "meaning": "Left side"
+        },
+        {
+          "text": "直走",
+          "phonetic": "JRR zoh",
+          "meaning": "Walk straight"
+        },
+        {
+          "text": "很远",
+          "phonetic": "hen yoo-WEN",
+          "meaning": "It is very far"
+        }
+      ]
+    },
+    "like": {
+      "listenFor": [
+        {
+          "text": "还要别的吗？",
+          "phonetic": "HI yow byeh-deh mah?",
+          "meaning": "Want anything else?"
+        },
+        {
+          "text": "打包？",
+          "phonetic": "DAH bow?",
+          "meaning": "Take away? (Pack up)"
+        },
+        {
+          "text": "等一下",
+          "phonetic": "DUNG ee-shyah",
+          "meaning": "Wait a little"
+        }
+      ]
+    },
+    "have": {
+      "listenFor": [
+        {
+          "text": "有",
+          "phonetic": "YOH",
+          "meaning": "Yes (We have)"
+        },
+        {
+          "text": "给你",
+          "phonetic": "GAY nee",
+          "meaning": "Here you go (Give you)"
+        },
+        {
+          "text": "卖完了",
+          "phonetic": "MY wahn-luh",
+          "meaning": "Sold out"
+        }
+      ]
+    },
+    "cost": {
+      "listenFor": [
+        {
+          "text": "扫码？",
+          "phonetic": "sow mah?",
+          "meaning": "Scan code? (WeChat/Alipay)"
+        },
+        {
+          "text": "现金",
+          "phonetic": "SHYEN-jeen",
+          "meaning": "Cash"
+        },
+        {
+          "text": "。。。块",
+          "phonetic": "...kwye",
+          "meaning": "...Bucks (Currency unit)"
+        }
+      ]
+    },
+    "allergic": {
+      "listenFor": [
+        {
+          "text": "没问题",
+          "phonetic": "may wen-tee",
+          "meaning": "No problem (Safe)"
+        },
+        {
+          "text": "没有。。。 ",
+          "phonetic": "may-yoh...",
+          "meaning": "It does not have... (Safe)"
+        },
+        {
+          "text": "里面有。。。",
+          "phonetic": "lee-myan YOH...",
+          "meaning": "Inside there is... (Danger)"
+        }
+      ]
+    }
+  },
   "combinations": {
     "where_station": {
       "text": "请问火车站位置在哪儿？",

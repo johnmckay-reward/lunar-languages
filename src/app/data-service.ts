@@ -11,6 +11,12 @@ export interface Translation {
   audio?: string;
 }
 
+export interface ListenFor {
+  text: string;
+  phonetic: string;
+  meaning: string;
+}
+
 export interface LanguageInfo {
   code: string;
   name: string;
@@ -24,6 +30,7 @@ export interface Phrase {
   category?: string;
   english: string;
   translation?: Translation;
+  listenFor?: ListenFor[];
 }
 
 export interface CombinationMap {
@@ -280,7 +287,10 @@ export class DataService {
    * Get Sentence Starters
    */
   getStarters() {
-    return this.starters;
+    return this.starters.map(starter => ({
+      ...starter,
+      listenFor: this.currentTranslations.starters?.[starter.id]?.listenFor
+    }));
   }
 
   /**

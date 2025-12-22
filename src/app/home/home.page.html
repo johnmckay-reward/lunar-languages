@@ -62,6 +62,22 @@
         </ion-button>
       </div>
 
+      <div class="listen-for-box ion-margin-top" *ngIf="selectedStarter?.listenFor && selectedStarter!.listenFor!.length > 0">
+        <p class="listen-label">
+          <ion-icon name="ear-outline"></ion-icon>
+          Listen for...
+        </p>
+        <div class="listen-grid">
+          <div class="listen-item" *ngFor="let item of selectedStarter!.listenFor">
+            <div class="listen-main">
+              <span class="listen-native">{{ item.text }}</span>
+              <span class="listen-phonetic" *ngIf="item.phonetic">/ {{ item.phonetic }} /</span>
+            </div>
+            <div class="listen-meaning">{{ item.meaning }}</div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 

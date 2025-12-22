@@ -32,6 +32,108 @@
       "phonetic": "PROH-sheh MOO-veech VOL-nyey"
     }
   },
+  "starters": {
+    "where": {
+      "listenFor": [
+        {
+          "text": "W prawo",
+          "phonetic": "f-PRAH-voh",
+          "meaning": "To the right"
+        },
+        {
+          "text": "W lewo",
+          "phonetic": "f-LEH-voh",
+          "meaning": "To the left"
+        },
+        {
+          "text": "Prosto",
+          "phonetic": "PROS-toh",
+          "meaning": "Straight ahead"
+        },
+        {
+          "text": "Niedaleko",
+          "phonetic": "nyeh-dah-LEH-koh",
+          "meaning": "Not far / Close"
+        }
+      ]
+    },
+    "like": {
+      "listenFor": [
+        {
+          "text": "Coś jeszcze?",
+          "phonetic": "tsosh YESH-cheh?",
+          "meaning": "Anything else?"
+        },
+        {
+          "text": "Na miejscu?",
+          "phonetic": "nah MYAY-tsoo?",
+          "meaning": "Eat in? (On site)"
+        },
+        {
+          "text": "Chwileczkę",
+          "phonetic": "hvee-LECH-keh",
+          "meaning": "Just a moment (Little while)"
+        }
+      ]
+    },
+    "have": {
+      "listenFor": [
+        {
+          "text": "Tak, proszę",
+          "phonetic": "tack, PROH-sheh",
+          "meaning": "Yes, please/here"
+        },
+        {
+          "text": "Proszę bardzo",
+          "phonetic": "PROH-sheh BAR-dzoh",
+          "meaning": "Here you go (Very polite)"
+        },
+        {
+          "text": "Już nie ma",
+          "phonetic": "yoozh nyeh mah",
+          "meaning": "Already gone / Sold out"
+        }
+      ]
+    },
+    "cost": {
+      "listenFor": [
+        {
+          "text": "Kartą czy gotówką?",
+          "phonetic": "KAR-tom chih go-TOOF-kom?",
+          "meaning": "Card or cash?"
+        },
+        {
+          "text": "Drobne",
+          "phonetic": "DROB-neh",
+          "meaning": "Small change (Do you have?)"
+        },
+        {
+          "text": "To będzie [Kwota]",
+          "phonetic": "toh BEN-jeh...",
+          "meaning": "That will be [Amount]"
+        }
+      ]
+    },
+    "allergic": {
+      "listenFor": [
+        {
+          "text": "Bez problemu",
+          "phonetic": "bez pro-BLEH-moo",
+          "meaning": "No problem (Safe)"
+        },
+        {
+          "text": "Czyste",
+          "phonetic": "CHIS-teh",
+          "meaning": "Clean / Free from (Safe)"
+        },
+        {
+          "text": "To zawiera...",
+          "phonetic": "toh zah-VYEH-rah...",
+          "meaning": "It contains... (Danger)"
+        }
+      ]
+    }
+  },
   "combinations": {
     "where_station": {
       "text": "Gdzie jest dworzec kolejowy?",

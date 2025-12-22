@@ -1,0 +1,162 @@
+{
+  "es": [
+    {
+      "title": "Dialect: Latin America vs. Spain",
+      "content": "The Spanish provided here leans towards Latin American (Mexican) usage. For example, 'Boleto' (Ticket) is used instead of the Spain-standard 'Billete', and 'Cacahuates' (Peanuts) instead of 'Cacahuetes'. However, it will be understood perfectly in Spain."
+    }
+  ],
+  "de": [
+    {
+      "title": "\"Sonst noch etwas?\"",
+      "content": "You will hear this everywhere (bakeries, supermarkets). It is the standard way to ask if you are finished ordering."
+    },
+    {
+      "title": "Cash is King",
+      "content": "Unlike the UK or Scandinavia, many smaller German shops and restaurants still do not accept cards. If you see 'Nur Barzahlung', it means Cash Only."
+    },
+    {
+      "title": "The Polite No",
+      "content": "Germans are direct but polite. They often soften a refusal with the word 'Leider' (Unfortunately)."
+    }
+  ],
+  "fr": [
+    {
+      "title": "\"Avec ceci ?\"",
+      "content": "Literally 'With this?', this is the standard phrase in every boulangerie or shop to ask if you want to buy more things."
+    },
+    {
+      "title": "Stay or Go?",
+      "content": "You will often be asked 'Sur place ou à emporter ?' (On site or to take away?). Prices are sometimes higher if you sit down ('Sur place')."
+    },
+    {
+      "title": "\"Voilà\"",
+      "content": "French people use this constantly when handing you something (a menu, your change, your coffee). It signifies the completion of an action."
+    },
+    {
+      "title": "Sold Out",
+      "content": "If a bakery runs out of croissants, they won't usually say 'Sold out,' they will say 'C'est terminé' (It is finished)."
+    }
+  ],
+  "it": [
+    {
+      "title": "\"Nient'altro?\"",
+      "content": "In Italian delis or bars, they rarely ask 'Anything else?' Instead, they often ask 'Nothing else?' expecting a 'No' to confirm you are done."
+    },
+    {
+      "title": "\"Ecco a lei\"",
+      "content": "The magic phrase of Italian service. You will hear it every time a waiter sets down a plate or gives you change. It roughly means 'Here is [item] for you.'"
+    },
+    {
+      "title": "Bancomat",
+      "content": "In Italy, people rarely say 'Credit Card'. They usually refer to the card machine or the debit card generically as 'Bancomat'."
+    },
+    {
+      "title": "Directions",
+      "content": "'Sempre dritto' means 'Always straight', implying you should keep going straight for a while and not stop."
+    }
+  ],
+  "ja": [
+    {
+      "title": "Take Out",
+      "content": "In Japan, they rarely say 'Take away.' You will likely be asked 'Tennai?' (Inside store) or 'Mochikaeri?' (Take home)."
+    },
+    {
+      "title": "The Indirect No",
+      "content": "Staff will almost never say the direct word 'Iie' (No). Instead, they use 'Moushiwake arimasen' (I have no excuse / I am terribly sorry)."
+    },
+    {
+      "title": "Customizing Food",
+      "content": "Use the suffix 'nuki' to remove an ingredient. For example, 'Wasabi-nuki' means 'Without Wasabi'."
+    },
+    {
+      "title": "Cash Only",
+      "content": "While improving, many ramen shops and ticket machines still say 'Genkin Nomi' (Cash Only)."
+    }
+  ],
+  "pl": [
+    {
+      "title": "The Magic Word: \"Proszę\"",
+      "content": "This word is the WD-40 of Polish. It can mean: Please, Here you go, Go ahead, You're welcome, or Pardon me."
+    },
+    {
+      "title": "Out of Stock",
+      "content": "Polish has a specific way of saying something is gone: 'Już nie ma' (literally: 'Already no have')."
+    },
+    {
+      "title": "Card Payments",
+      "content": "Poland is extremely digital. Paying 'Kartą' (With card) is standard almost everywhere, even for small amounts."
+    },
+    {
+      "title": "\"Chwileczkę\"",
+      "content": "Poles use diminutives to be polite. Instead of 'Chwila' (Moment), they say 'Chwileczkę' (A tiny little moment) while making you wait."
+    }
+  ],
+  "pt": [
+    {
+      "title": "Multibanco",
+      "content": "In Portugal, you don't usually ask if they take 'card'. You ask for 'Multibanco', the specific name of their interbank network."
+    },
+    {
+      "title": "Sold Out",
+      "content": "Similar to French, if a bakery runs out of items, they will simply say 'Acabou' (It ended)."
+    },
+    {
+      "title": "Ingredients",
+      "content": "When describing ingredients, Portuguese speakers often use the verb 'levar' (to take/carry). E.g., 'This dish takes peanuts.'"
+    },
+    {
+      "title": "Pronunciation",
+      "content": "European Portuguese speakers often 'eat' their vowels. For example, 'Esquerda' sounds like 'sh-KER-dah' and 'Temos' sounds like 'TEH-moosh'."
+    }
+  ],
+  "ru": [
+    {
+      "title": "Take Away",
+      "content": "The standard way to ask for takeaway is 'S soboy?' (literally: With self?)."
+    },
+    {
+      "title": "Sold Out",
+      "content": "Russians rarely say 'We don't have it.' They say 'Zakonchilos' (It ended)."
+    },
+    {
+      "title": "\"Netu\"",
+      "content": "While 'Net' means No, in casual speech you will often hear 'Netu' to mean 'There isn't any/We don't have any'."
+    },
+    {
+      "title": "Waiting",
+      "content": "'Minutochku' is a diminutive 'tiny little minute,' used to politely ask you to wait."
+    }
+  ],
+  "uk": [
+    {
+      "title": "\"Proshu\"",
+      "content": "A versatile word used when handing something over ('Here you go'), saying 'You're welcome,' or asking someone to repeat themselves."
+    },
+    {
+      "title": "Cash Vocabulary",
+      "content": "Ukrainian uses 'Hotivka' for cash. If you see 'Lyshe hotivka', it means Cash Only."
+    },
+    {
+      "title": "Take Away",
+      "content": "Like other Slavic languages, takeout is referred to as taking the food 'Z soboyu' (with yourself)."
+    }
+  ],
+  "zh": [
+    {
+      "title": "Scan Code",
+      "content": "Cash is rare. Waiters will often point a scanner at you and say 'Saoma?' (Scan code?) for WeChat Pay or Alipay."
+    },
+    {
+      "title": "\"Da bao\"",
+      "content": "The universal phrase for 'Take away' or 'Pack up', whether ordering at a counter or boxing up leftovers."
+    },
+    {
+      "title": "Money Slang",
+      "content": "While the currency is the Yuan, in spoken street language, everyone uses 'Kuai' (similar to 'Bucks')."
+    },
+    {
+      "title": "Sold Out",
+      "content": "'Mai wan le' (Sold out) is definitive. You will hear this frequently for popular items."
+    }
+  ]
+}

@@ -32,6 +32,108 @@
       "phonetic": "Gah-vah-REE-tyeh MYED-lyeh-nyeh-yeh, pah-ZHAH-loo-stah"
     }
   },
+  "starters": {
+    "where": {
+      "listenFor": [
+        {
+          "text": "Направо",
+          "phonetic": "nah-PRAH-vah",
+          "meaning": "To the right"
+        },
+        {
+          "text": "Налево",
+          "phonetic": "nah-LYEH-vah",
+          "meaning": "To the left"
+        },
+        {
+          "text": "Прямо",
+          "phonetic": "PRYA-mah",
+          "meaning": "Straight ahead"
+        },
+        {
+          "text": "Рядом",
+          "phonetic": "RYA-dahm",
+          "meaning": "Nearby / Right next door"
+        }
+      ]
+    },
+    "like": {
+      "listenFor": [
+        {
+          "text": "Что-то ещё?",
+          "phonetic": "CHTOH-tah yeh-SHCHO?",
+          "meaning": "Anything else?"
+        },
+        {
+          "text": "С собой?",
+          "phonetic": "s sah-BOY?",
+          "meaning": "To go? (With self)"
+        },
+        {
+          "text": "Минуточку",
+          "phonetic": "mee-NOO-tach-koo",
+          "meaning": "One minute (Diminutive)"
+        }
+      ]
+    },
+    "have": {
+      "listenFor": [
+        {
+          "text": "Да, конечно",
+          "phonetic": "dah, kah-NYESH-nah",
+          "meaning": "Yes, of course"
+        },
+        {
+          "text": "Возьмите",
+          "phonetic": "vahz-MEE-tyeh",
+          "meaning": "Take it / Here"
+        },
+        {
+          "text": "Закончилось",
+          "phonetic": "zah-KON-chee-las",
+          "meaning": "It ran out / Finished"
+        }
+      ]
+    },
+    "cost": {
+      "listenFor": [
+        {
+          "text": "Наличные",
+          "phonetic": "nah-LEECH-ni-yeh",
+          "meaning": "Cash"
+        },
+        {
+          "text": "Картой можно",
+          "phonetic": "KAR-toy MOZH-nah",
+          "meaning": "Card is possible"
+        },
+        {
+          "text": "С вас [Сумма]",
+          "phonetic": "s vas [soom-mah]",
+          "meaning": "From you [Amount]"
+        }
+      ]
+    },
+    "allergic": {
+      "listenFor": [
+        {
+          "text": "Без проблем",
+          "phonetic": "bez prah-BLEM",
+          "meaning": "No problem (Safe)"
+        },
+        {
+          "text": "Можно убрать",
+          "phonetic": "MOZH-nah oo-BRAT",
+          "meaning": "We can remove it (Safe)"
+        },
+        {
+          "text": "Там есть...",
+          "phonetic": "tam yest...",
+          "meaning": "In there is... (Danger)"
+        }
+      ]
+    }
+  },
   "combinations": {
     "where_station": { "text": "Где вокзал?", "phonetic": "Gdyeh vahk-ZAHL?" },
     "where_airport": {
@@ -51,7 +153,10 @@
       "text": "Где аптека?",
       "phonetic": "Gdyeh ahp-TYEH-kah?"
     },
-    "where_doctor": { "text": "Можете сказать, где находится доктор?", "phonetic": "Mozhete skazat', gde nakhoditsya doktor?" },
+    "where_doctor": {
+      "text": "Можете сказать, где находится доктор?",
+      "phonetic": "Mozhete skazat', gde nakhoditsya doktor?"
+    },
     "where_restaurant": {
       "text": "Где хороший ресторан?",
       "phonetic": "Gdyeh kha-ROH-shiy res-tah-RAHN?"

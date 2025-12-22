@@ -21,7 +21,10 @@
       "phonetic": "PAR-lah een-GLEH-zeh?"
     },
     "help": { "text": "Aiuto!", "phonetic": "ah-YOO-toh!" },
-    "delicious": { "text": "Assolutamente delizioso!", "phonetic": "As-so-lu-ta-men-te de-li-zio-so" },
+    "delicious": {
+      "text": "Assolutamente delizioso!",
+      "phonetic": "As-so-lu-ta-men-te de-li-zio-so"
+    },
     "cheers": { "text": "Salute!", "phonetic": "sah-LOO-teh!" },
     "wifi_pass": {
       "text": "Password del WiFi?",
@@ -30,6 +33,108 @@
     "slowly": {
       "text": "Parli più lentamente, per favore",
       "phonetic": "PAR-lee pyoo len-tah-MEN-teh"
+    }
+  },
+  "starters": {
+    "where": {
+      "listenFor": [
+        {
+          "text": "A destra",
+          "phonetic": "ah DEH-strah",
+          "meaning": "To the right"
+        },
+        {
+          "text": "A sinistra",
+          "phonetic": "ah see-NEE-strah",
+          "meaning": "To the left"
+        },
+        {
+          "text": "Sempre dritto",
+          "phonetic": "SEM-preh DREE-toh",
+          "meaning": "Straight ahead (Keep going)"
+        },
+        {
+          "text": "È vicino",
+          "phonetic": "eh vee-CHEE-noh",
+          "meaning": "It is close"
+        }
+      ]
+    },
+    "like": {
+      "listenFor": [
+        {
+          "text": "Nient'altro?",
+          "phonetic": "nyent-AL-tro?",
+          "meaning": "Nothing else? (Finished?)"
+        },
+        {
+          "text": "Da portare via?",
+          "phonetic": "dah por-TAH-reh VEE-ah?",
+          "meaning": "To take away?"
+        },
+        {
+          "text": "Un attimo",
+          "phonetic": "oon AH-tee-moh",
+          "meaning": "One moment"
+        }
+      ]
+    },
+    "have": {
+      "listenFor": [
+        {
+          "text": "Certamente",
+          "phonetic": "cher-tah-MEN-teh",
+          "meaning": "Certainly / Of course"
+        },
+        {
+          "text": "Ecco a lei",
+          "phonetic": "EH-koh ah lay",
+          "meaning": "Here you go (Polite)"
+        },
+        {
+          "text": "È finito",
+          "phonetic": "eh fee-NEE-toh",
+          "meaning": "It is finished / Sold out"
+        }
+      ]
+    },
+    "cost": {
+      "listenFor": [
+        {
+          "text": "Solo contanti",
+          "phonetic": "SOH-loh con-TAN-tee",
+          "meaning": "Cash only"
+        },
+        {
+          "text": "Bancomat?",
+          "phonetic": "BAN-koh-mat?",
+          "meaning": "Debit card?"
+        },
+        {
+          "text": "Il conto è...",
+          "phonetic": "eel CON-toh eh...",
+          "meaning": "The bill is..."
+        }
+      ]
+    },
+    "allergic": {
+      "listenFor": [
+        {
+          "text": "Nessun problema",
+          "phonetic": "nehs-SOON pro-BLEH-mah",
+          "meaning": "No problem (Safe)"
+        },
+        {
+          "text": "Vado a chiedere",
+          "phonetic": "VAH-doh ah KYEH-deh-reh",
+          "meaning": "I will go ask"
+        },
+        {
+          "text": "Contiene...",
+          "phonetic": "con-TYEH-neh...",
+          "meaning": "It contains... (Danger)"
+        }
+      ]
     }
   },
   "combinations": {
