@@ -171,8 +171,8 @@
       "phonetic": "doh-VEH oon BWOHN ree-stoh-RAHN-teh?"
     },
     "where_hospital": {
-      "text": "Dov'è l'ospedale?",
-      "phonetic": "doh-VEH loh-speh-DAH-leh?"
+      "text": "Qual è la posizione dell'ospedale?",
+      "phonetic": "kwal ɛ la pozitsjone dell'ospedale"
     },
     "where_supermarket": {
       "text": "Dov'è il supermercato?",

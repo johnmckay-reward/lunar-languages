@@ -153,8 +153,8 @@
       "phonetic": "Fùjìn yǒu hǎo de cānguǎn ma?"
     },
     "where_hospital": {
-      "text": "医院在哪里？",
-      "phonetic": "Yīyuàn zài nǎli?"
+      "text": "请问，医院的位置在哪里？",
+      "phonetic": "Qǐng wèn, yīyuàn de wèizhì zài nǎlǐ?"
     },
     "where_supermarket": {
       "text": "超市在哪里？",
@@ -228,8 +228,8 @@
       "phonetic": "Yī bēi píjiǔ duōshao qián?"
     },
     "cost_wine": {
-      "text": "一杯红酒多少钱？",
-      "phonetic": "Yī bēi hóngjiǔ duōshao qián?"
+      "text": "一杯葡萄酒需要多少钱？",
+      "phonetic": "yī bēi pú táo jiǔ xū yào duō shǎo qián?"
     },
     "allergic_peanuts": {
       "text": "我对花生过敏。",
