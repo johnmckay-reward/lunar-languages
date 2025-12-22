@@ -523,6 +523,22 @@
     "use_phone": {
       "text": "¿Puedo usar tu teléfono?",
       "phonetic": "Pweh-doh oo-sar too teh-leh-foh-noh?"
+    },
+    "love_coffee": {
+      "text": "Me gusta este café",
+      "phonetic": "Meh GOOS-tah EHS-teh kah-FEH"
+    },
+    "love_wine": {
+      "text": "Me gusta este vino",
+      "phonetic": "Meh GOOS-tah EHS-teh VEE-noh"
+    },
+    "love_seafood": {
+      "text": "Me encantan los mariscos",
+      "phonetic": "Meh en-KAN-tan los mah-REES-kos"
+    },
+    "love_music": {
+      "text": "Me gusta esta música",
+      "phonetic": "Meh GOOS-tah EHS-tah MOO-see-kah"
     }
   }
 }

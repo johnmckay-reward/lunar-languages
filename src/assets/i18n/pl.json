@@ -168,6 +168,22 @@
     }
   },
   "combinations": {
+    "love_coffee": {
+      "translation": "Lubię tę kawę",
+      "phonetic": "LOO-byeh teh KAH-veh"
+    },
+    "love_wine": {
+      "translation": "Lubię to wino",
+      "phonetic": "LOO-byeh toh VEE-noh"
+    },
+    "love_seafood": {
+      "translation": "Uwielbiam owoce morza",
+      "phonetic": "Oo-VYEL-byam oh-VOH-tseh MOR-zhah"
+    },
+    "love_music": {
+      "translation": "Lubię tę muzykę",
+      "phonetic": "LOO-byeh teh moo-ZY-keh"
+    },
     "is_there_atm": {
       "text": "Czy jest tu w pobliżu bankomat?",
       "phonetic": "Chy yest too v pob-LEE-zhoo ban-KOH-mat?"

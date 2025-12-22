@@ -523,6 +523,22 @@
     "use_phone": {
       "text": "Puis-je utiliser votre téléphone ?",
       "phonetic": "Pwee-zhuh oo-tee-lee-zay vo-truh tay-lay-fon?"
+    },
+    "love_coffee": {
+      "text": "J'aime ce café",
+      "phonetic": "Zhem suh kah-FEH"
+    },
+    "love_wine": {
+      "text": "J'aime ce vin",
+      "phonetic": "Zhem suh van"
+    },
+    "love_seafood": {
+      "text": "J'adore les fruits de mer",
+      "phonetic": "Zha-DOR lay frwee duh mair"
+    },
+    "love_music": {
+      "text": "J'aime cette musique",
+      "phonetic": "Zhem set myoo-ZEEK"
     }
   }
 }

@@ -523,6 +523,22 @@
     "use_phone": {
       "text": "Mi presti il tuo telefono?",
       "phonetic": "Mee presti il tuoh telefone?"
+    },
+    "love_coffee": {
+      "text": "Mi piace questo caffè",
+      "phonetic": "Mee PYAH-cheh KWEH-stoh kah-FEH"
+    },
+    "love_wine": {
+      "text": "Mi piace questo vino",
+      "phonetic": "Mee PYAH-cheh KWEH-stoh VEE-noh"
+    },
+    "love_seafood": {
+      "text": "Adoro i frutti di mare",
+      "phonetic": "Ah-DOH-roh ee FROOT-tee dee MAH-reh"
+    },
+    "love_music": {
+      "text": "Mi piace questa musica",
+      "phonetic": "Mee PYAH-cheh KWEH-stah MOO-zee-kah"
     }
   }
 }

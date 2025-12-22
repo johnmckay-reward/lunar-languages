@@ -168,6 +168,22 @@
     }
   },
   "combinations": {
+    "love_coffee": {
+      "translation": "Eu gosto deste café",
+      "phonetic": "Eh-oo GOS-toh DEHS-teh kah-FEH"
+    },
+    "love_wine": {
+      "translation": "Eu gosto deste vinho",
+      "phonetic": "Eh-oo GOS-toh DEHS-teh VEEN-yoh"
+    },
+    "love_seafood": {
+      "translation": "Eu adoro frutos do mar",
+      "phonetic": "Eh-oo ah-DOH-roh FROO-tohs doh mar"
+    },
+    "love_music": {
+      "translation": "Eu gosto desta música",
+      "phonetic": "Eh-oo GOS-toh DEHS-tah MOO-zee-kah"
+    },
     "is_there_atm": {
       "text": "Tem um caixa eletrônico perto daqui?",
       "phonetic": "Tayng oom KY-shah eh-leh-TROH-nee-koo PEHR-too dah-KEE?"

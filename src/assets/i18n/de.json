@@ -523,6 +523,22 @@
     "use_phone": {
       "text": "Kann ich Ihr Telefon benutzen?",
       "phonetic": "Kan ikh eer Te-le-fon be-noot-sen?"
+    },
+    "love_coffee": {
+      "text": "Ich mag diesen Kaffee",
+      "phonetic": "Ikh mahg DEE-zen KAH-feh"
+    },
+    "love_wine": {
+      "text": "Ich mag diesen Wein",
+      "phonetic": "Ikh mahg DEE-zen vine"
+    },
+    "love_seafood": {
+      "text": "Ich liebe Meeresfrüchte",
+      "phonetic": "Ikh LEE-beh MEH-res-fryookh-teh"
+    },
+    "love_music": {
+      "text": "Ich mag diese Musik",
+      "phonetic": "Ikh mahg DEE-zeh MOO-zik"
     }
   }
 }

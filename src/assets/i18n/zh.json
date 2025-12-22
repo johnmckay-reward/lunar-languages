@@ -168,6 +168,22 @@
     }
   },
   "combinations": {
+    "love_coffee": {
+      "translation": "我喜欢这咖啡",
+      "phonetic": "Wǒ xǐhuān zhè kāfēi"
+    },
+    "love_wine": {
+      "translation": "我喜欢这酒",
+      "phonetic": "Wǒ xǐhuān zhè jiǔ"
+    },
+    "love_seafood": {
+      "translation": "我爱海鲜",
+      "phonetic": "Wǒ ài hǎixiān"
+    },
+    "love_music": {
+      "translation": "我喜欢这音乐",
+      "phonetic": "Wǒ xǐhuān zhè yīnyuè"
+    },
     "is_there_atm": {
       "text": "这附近有自动取款机吗？",
       "phonetic": "Zhè fùjìn yǒu zìdòng qǔkuǎnjī ma?"

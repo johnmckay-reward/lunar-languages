@@ -168,6 +168,22 @@
     }
   },
   "combinations": {
+    "love_coffee": {
+      "translation": "Мне нравится этот кофе",
+      "phonetic": "Mne nravitsya etot kofe"
+    },
+    "love_wine": {
+      "translation": "Мне нравится это вино",
+      "phonetic": "Mne nravitsya eto vino"
+    },
+    "love_seafood": {
+      "translation": "Я люблю морепродукты",
+      "phonetic": "Ya lyublyu moreprodukty"
+    },
+    "love_music": {
+      "translation": "Мне нравится эта музыка",
+      "phonetic": "Mne nravitsya eta muzyka"
+    },
     "is_there_atm": {
       "text": "Здесь есть поблизости банкомат?",
       "phonetic": "Zdyes yest pah-blee-ZOS-tee ban-kah-MAT?"

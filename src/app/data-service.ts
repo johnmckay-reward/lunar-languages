@@ -147,7 +147,8 @@ export class DataService {
     { id: 'need', type: 'starter', english: 'I need...' },
     { id: 'use', type: 'starter', english: 'Can I use...?' },
     { id: 'lost', type: 'starter', english: 'I lost...' },
-    { id: 'is_there', type: 'starter', english: 'Is there...?' }
+    { id: 'is_there', type: 'starter', english: 'Is there...?' },
+    { id: 'love', type: 'starter', english: 'I like...' }
   ];
 
   // ============================================================
@@ -203,6 +204,7 @@ export class DataService {
     { id: 'sugar', type: 'noun', category: 'Dining', english: 'Sugar' },
     { id: 'bathroom', type: 'noun', category: 'Accommodation', english: 'The Bathroom' },
     { id: 'phone', type: 'noun', category: 'Tech', english: 'Phone' },
+    { id: 'music', type: 'noun', category: 'Leisure', english: 'Music' },
 
     // Allergies
     { id: 'gluten', type: 'noun', category: 'Health', english: 'Gluten' },
@@ -322,6 +324,12 @@ export class DataService {
     'is_there_atm': { english: 'Is there an ATM near here?' },
     'is_there_pharmacy': { english: 'Is there a pharmacy nearby?' },
     'is_there_wifi': { english: 'Is there WiFi here?' },
+
+    // --- I LIKE... ---
+    'love_coffee': { english: 'I like this coffee.' },
+    'love_wine': { english: 'I like this wine.' },
+    'love_seafood': { english: 'I love seafood.' },
+    'love_music': { english: 'I like this music.' },
     'is_there_bus': { english: 'Is there a bus to the city?' },
     // Add other allergies here if you add nouns for seafood, etc.
   };

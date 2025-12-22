@@ -461,6 +461,22 @@
     "use_phone": {
       "text": "Can I use your phone?",
       "phonetic": ""
+    },
+    "love_coffee": {
+      "text": "I like this coffee.",
+      "phonetic": ""
+    },
+    "love_wine": {
+      "text": "I like this wine.",
+      "phonetic": ""
+    },
+    "love_seafood": {
+      "text": "I love seafood.",
+      "phonetic": ""
+    },
+    "love_music": {
+      "text": "I like this music.",
+      "phonetic": ""
     }
   }
 }

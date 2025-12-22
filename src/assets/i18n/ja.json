@@ -523,6 +523,22 @@
     "use_phone": {
       "text": "電話を使ってもいいですか？",
       "phonetic": "Denwa o tsukatte mo ii desu ka?"
+    },
+    "love_coffee": {
+      "text": "このコーヒーが好きです",
+      "phonetic": "Kono kōhī ga suki desu"
+    },
+    "love_wine": {
+      "text": "このワインが好きです",
+      "phonetic": "Kono wain ga suki desu"
+    },
+    "love_seafood": {
+      "text": "シーフードが大好きです",
+      "phonetic": "Shīfūdo ga daisuki desu"
+    },
+    "love_music": {
+      "text": "この音楽が好きです",
+      "phonetic": "Kono ongaku ga suki desu"
     }
   }
 }

@@ -168,6 +168,22 @@
     }
   },
   "combinations": {
+    "love_coffee": {
+      "translation": "Мені подобається ця кава",
+      "phonetic": "Meni podobayetsya tsya kava"
+    },
+    "love_wine": {
+      "translation": "Мені подобається це вино",
+      "phonetic": "Meni podobayetsya tse vyno"
+    },
+    "love_seafood": {
+      "translation": "Я люблю морепродукти",
+      "phonetic": "Ya lyublyu moreprodukty"
+    },
+    "love_music": {
+      "translation": "Мені подобається ця музика",
+      "phonetic": "Meni podobayetsya tsya muzyka"
+    },
     "is_there_atm": {
       "text": "Чи є тут поблизу банкомат?",
       "phonetic": "Chy yeh toot poh-BLY-zoo ban-koh-MAT?"
