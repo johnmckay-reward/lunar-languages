@@ -525,6 +525,22 @@
     "share_seafood": {
       "text": "Shall we share the seafood platter?",
       "phonetic": ""
+    },
+    "no_ice": {
+      "text": "No ice, please.",
+      "phonetic": ""
+    },
+    "no_sugar": {
+      "text": "No sugar, please.",
+      "phonetic": ""
+    },
+    "no_dairy": {
+      "text": "No dairy, please.",
+      "phonetic": ""
+    },
+    "no_meat": {
+      "text": "No meat, please.",
+      "phonetic": ""
     }
   }
 }

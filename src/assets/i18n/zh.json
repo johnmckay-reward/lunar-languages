@@ -587,6 +587,22 @@
     "share_seafood": {
       "text": "我们要共享海鲜拼盘吗？",
       "phonetic": "Wǒmen yào gòngxiǎng hǎixiān pīnpán ma?"
+    },
+    "no_ice": {
+      "text": "不要冰",
+      "phonetic": "Bù yào bīng"
+    },
+    "no_sugar": {
+      "text": "不要糖",
+      "phonetic": "Bù yào táng"
+    },
+    "no_dairy": {
+      "text": "不需要奶製品",
+      "phonetic": "bu xu yao nai zhi pin"
+    },
+    "no_meat": {
+      "text": "不要肉",
+      "phonetic": "Bù yào ròu"
     }
   }
 }

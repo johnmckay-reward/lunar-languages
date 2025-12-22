@@ -151,7 +151,8 @@ export class DataService {
     { id: 'love', type: 'starter', english: 'I like...' },
     { id: 'call', type: 'starter', english: 'Please call...' },
     { id: 'another', type: 'starter', english: 'Another... please' },
-    { id: 'share', type: 'starter', english: 'Let\'s share...' }
+    { id: 'share', type: 'starter', english: 'Let\'s share...' },
+    { id: 'no', type: 'starter', english: 'No... please' }
   ];
 
   // ============================================================
@@ -210,6 +211,7 @@ export class DataService {
     { id: 'music', type: 'noun', category: 'Leisure', english: 'Music' },
     { id: 'police', type: 'noun', category: 'Health', english: 'Police' },
     { id: 'hotel', type: 'noun', category: 'Accommodation', english: 'Hotel' },
+    { id: 'meat', type: 'noun', category: 'Dining', english: 'Meat' },
 
     // Allergies
     { id: 'gluten', type: 'noun', category: 'Health', english: 'Gluten' },
@@ -354,6 +356,12 @@ export class DataService {
     'share_wine': { english: 'Shall we share a bottle of wine?' },
     'share_bill': { english: 'Let\'s split the bill.' },
     'share_seafood': { english: 'Shall we share the seafood platter?' },
+
+    // --- NO... ---
+    'no_ice': { english: 'No ice, please.' },
+    'no_sugar': { english: 'No sugar, please.' },
+    'no_dairy': { english: 'No dairy, please.' },
+    'no_meat': { english: 'No meat, please.' },
     // Add other allergies here if you add nouns for seafood, etc.
   };
 

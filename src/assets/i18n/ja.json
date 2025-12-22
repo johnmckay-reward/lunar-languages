@@ -587,6 +587,22 @@
     "share_seafood": {
       "text": "シーフードの盛り合わせをシェアしませんか？",
       "phonetic": "Shīfūdo no moriawase o shea shimasen ka?"
+    },
+    "no_ice": {
+      "text": "氷なしでお願いします",
+      "phonetic": "Koori nashi de onegaishimasu"
+    },
+    "no_sugar": {
+      "text": "砂糖なしでお願いします",
+      "phonetic": "Satou nashi de onegaishimasu"
+    },
+    "no_dairy": {
+      "text": "乳製品なしでお願いします",
+      "phonetic": "Nyuuseihin nashi de onegaishimasu"
+    },
+    "no_meat": {
+      "text": "肉なしでお願いします",
+      "phonetic": "Niku nashi de onegaishimasu"
     }
   }
 }

@@ -587,6 +587,22 @@
     "share_seafood": {
       "text": "Podzielimy się talerzem owoców morza?",
       "phonetic": "po-jeh-LEE-my shyeh ta-LEH-zhem o-VO-tsoof MO-zha?"
+    },
+    "no_ice": {
+      "text": "Bez lodu, proszę",
+      "phonetic": "Bez lo-du, pro-she"
+    },
+    "no_sugar": {
+      "text": "Bez cukru, proszę",
+      "phonetic": "Bez tsu-kru, pro-she"
+    },
+    "no_dairy": {
+      "text": "Bez nabiału, proszę",
+      "phonetic": "Bez na-bya-wu, pro-she"
+    },
+    "no_meat": {
+      "text": "Bez mięsa, proszę",
+      "phonetic": "Bez mye-sa, pro-she"
     }
   }
 }

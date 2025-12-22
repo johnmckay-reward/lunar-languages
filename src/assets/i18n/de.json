@@ -587,6 +587,22 @@
     "share_seafood": {
       "text": "Wollen wir uns die Meeresfrüchteplatte teilen?",
       "phonetic": "VOL-en veer oons dee MEH-res-fruech-te-pla-te TY-len?"
+    },
+    "no_ice": {
+      "text": "Kein Eis, bitte",
+      "phonetic": "kine ice, bit-te"
+    },
+    "no_sugar": {
+      "text": "Kein Zucker, bitte",
+      "phonetic": "kine tsoo-ker, bit-te"
+    },
+    "no_dairy": {
+      "text": "Keine Milchprodukte, bitte",
+      "phonetic": "kine-uh milsh-pro-dook-te, bit-te"
+    },
+    "no_meat": {
+      "text": "Kein Fleisch, bitte",
+      "phonetic": "kine fly-sh, bit-te"
     }
   }
 }

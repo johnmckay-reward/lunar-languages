@@ -587,6 +587,22 @@
     "share_seafood": {
       "text": "Vamos dividir o prato de frutos do mar?",
       "phonetic": "VAH-moosh dee-vee-DEER oo PRAH-too deh FROO-toosh doo mar?"
+    },
+    "no_ice": {
+      "text": "Sem gelo, por favor",
+      "phonetic": "seng zheh-loo, poor fah-vor"
+    },
+    "no_sugar": {
+      "text": "Sem açúcar, por favor",
+      "phonetic": "seng ah-soo-kar, poor fah-vor"
+    },
+    "no_dairy": {
+      "text": "Sem laticínios, por favor",
+      "phonetic": "seng lah-tee-see-nee-oosh, poor fah-vor"
+    },
+    "no_meat": {
+      "text": "Sem carne, por favor",
+      "phonetic": "seng kar-neh, poor fah-vor"
     }
   }
 }

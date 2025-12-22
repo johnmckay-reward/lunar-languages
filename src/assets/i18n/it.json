@@ -569,8 +569,8 @@
       "phonetic": "per fa-vo-re kya-mi la po-li-tsia"
     },
     "call_hotel": {
-      "text": "Per favore, chiami il mio hotel.",
-      "phonetic": "per fa-vo-re kya-mi il mio o-tel"
+      "text": "Per cortesia, contatti il mio albergo.",
+      "phonetic": "Per kor-te-sia, kon-tatti il mio al-ber-go."
     },
     "share_taxi": {
       "text": "Dividiamo un taxi?",
@@ -587,6 +587,22 @@
     "share_seafood": {
       "text": "Dividiamo il piatto di frutti di mare?",
       "phonetic": "dee-vee-DYAH-moh eel PYAT-toh dee FROOT-tee dee MAH-reh?"
+    },
+    "no_ice": {
+      "text": "Niente ghiaccio, per favore",
+      "phonetic": "nyen-te gyah-cho, per fa-vo-re"
+    },
+    "no_sugar": {
+      "text": "Niente zucchero, per favore",
+      "phonetic": "nyen-te dzoo-ke-ro, per fa-vo-re"
+    },
+    "no_dairy": {
+      "text": "Niente latticini, per favore",
+      "phonetic": "nyen-te lat-ti-chi-ni, per fa-vo-re"
+    },
+    "no_meat": {
+      "text": "Niente carne, per favore",
+      "phonetic": "nyen-te kar-ne, per fa-vo-re"
     }
   }
 }

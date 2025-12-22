@@ -587,6 +587,22 @@
     "share_seafood": {
       "text": "Давайте візьмемо тарілку морепродуктів на двох?",
       "phonetic": "Da-VAY-te viz-ME-mo ta-RIL-ku mo-re-pro-DUK-tiv na dvokh?"
+    },
+    "no_ice": {
+      "text": "Без льоду, будь ласка",
+      "phonetic": "Bez lyo-du, bud laska"
+    },
+    "no_sugar": {
+      "text": "Без цукру, будь ласка",
+      "phonetic": "Bez tsu-kru, bud laska"
+    },
+    "no_dairy": {
+      "text": "Без молочних продуктів, будь ласка",
+      "phonetic": "Bez mo-loch-nykh pro-duk-tiv, bud laska"
+    },
+    "no_meat": {
+      "text": "Без м'яса, будь ласка",
+      "phonetic": "Bez mya-sa, bud laska"
     }
   }
 }

@@ -587,6 +587,22 @@
     "share_seafood": {
       "text": "¿Compartimos la mariscada?",
       "phonetic": "kom-par-TEE-mos lah mah-rees-KAH-dah?"
+    },
+    "no_ice": {
+      "text": "Sin hielo, por favor",
+      "phonetic": "seen YEH-loh, por fah-VOR"
+    },
+    "no_sugar": {
+      "text": "Sin azúcar, por favor",
+      "phonetic": "seen ah-SOO-kar, por fah-VOR"
+    },
+    "no_dairy": {
+      "text": "Sin lácteos, por favor",
+      "phonetic": "seen LAK-teh-os, por fah-VOR"
+    },
+    "no_meat": {
+      "text": "Sin carne, por favor",
+      "phonetic": "seen KAR-neh, por fah-VOR"
     }
   }
 }
