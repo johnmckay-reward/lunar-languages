@@ -3,10 +3,18 @@ import { ActionSheetController, IonContent } from '@ionic/angular';
 import { Haptics, ImpactStyle } from '@capacitor/haptics';
 import { DataService, Phrase, LanguageInfo } from '../data-service';
 import * as culturalNotesData from '../cultural-notes.json';
+import * as numbersData from '../numbers.json';
+import * as numbersGuidanceData from '../numbers-guidance.json';
 
 interface CulturalNote {
   title: string;
   content: string;
+}
+
+interface NumberItem {
+  value: string;
+  text: string;
+  phonetic: string;
 }
 
 @Component({
@@ -33,6 +41,8 @@ export class HomePage implements OnInit {
   currentLanguage: LanguageInfo | null = null;
   currentAudioId: string | null = null;
   currentNotes: CulturalNote[] = [];
+  currentNumbers: NumberItem[] = [];
+  currentNumberGuidance: CulturalNote[] = [];
 
   // --- Display State ---
   displayEnglish: string = '';
@@ -41,6 +51,7 @@ export class HomePage implements OnInit {
 
   isModalOpen = false;
   isNotesModalOpen = false;
+  isNumbersModalOpen = false;
   showWelcomeScreen = false;
 
   @ViewChild(IonContent) content!: IonContent;
@@ -56,6 +67,10 @@ export class HomePage implements OnInit {
 
   setNotesModalOpen(isOpen: boolean) {
     this.isNotesModalOpen = isOpen;
+  }
+
+  setNumbersModalOpen(isOpen: boolean) {
+    this.isNumbersModalOpen = isOpen;
   }
 
   ngOnInit() {
@@ -78,6 +93,10 @@ export class HomePage implements OnInit {
 
       // Load Notes
       this.currentNotes = (culturalNotesData as any)[code] || (culturalNotesData as any).default?.[code] || [];
+
+      // Load Numbers
+      this.currentNumbers = (numbersData as any)[code] || (numbersData as any).default?.[code] || [];
+      this.currentNumberGuidance = (numbersGuidanceData as any)[code] || (numbersGuidanceData as any).default?.[code] || [];
 
       // Reset State
       this.selectedNoun = null;

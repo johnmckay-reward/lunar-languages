@@ -82,37 +82,24 @@
   </div>
 
   <div class="ion-padding-start ion-padding-end ion-margin-bottom">
-    <ion-grid class="ion-no-padding">
-      <ion-row>
-        <ion-col>
-          <ion-button expand="block" color="secondary" shape="round" class="ion-margin-top" (click)="setModalOpen(true)">
-            <ion-icon name="flash" slot="start"></ion-icon>
-            Quick Phrases
-          </ion-button>
-        </ion-col>
-        <ion-col *ngIf="currentNotes.length > 0" size="auto">
-           <!-- Using size="auto" or just letting them share space.
-                If I want them 50/50, I should leave size unspecified on both cols.
-                But I want a gap. -->
-        </ion-col>
-      </ion-row>
-      <!-- Actually, let's just use two cols. If the second one is hidden, the first one takes full width?
-           No, ion-col defaults to equal width.
-           If I want the first one to be full width when the second is missing, I need to handle that.
-           But *ngIf on ion-col removes it from DOM, so the first one will take full width. Perfect.
-      -->
-    </ion-grid>
 
-    <!-- Let's retry the grid structure to be cleaner -->
-    <div style="display: flex; gap: 10px;">
-      <ion-button style="flex: 1;" expand="block" color="secondary" shape="round" class="ion-margin-top" (click)="setModalOpen(true)">
-        <ion-icon name="flash" slot="start"></ion-icon>
-        Quick Phrases
-      </ion-button>
 
-      <ion-button *ngIf="currentNotes.length > 0" style="flex: 1;" expand="block" color="tertiary" shape="round" class="ion-margin-top" (click)="setNotesModalOpen(true)">
+    <!-- Row 1: Quick Phrases -->
+    <ion-button expand="block" color="secondary" shape="round" class="ion-margin-top" (click)="setModalOpen(true)">
+      <ion-icon name="flash" slot="start"></ion-icon>
+      Quick Phrases
+    </ion-button>
+
+    <!-- Row 2: Culture & Numbers -->
+    <div style="display: flex; gap: 10px; margin-top: 10px;" *ngIf="currentNotes.length > 0 || currentNumbers.length > 0">
+      <ion-button *ngIf="currentNotes.length > 0" style="flex: 1;" expand="block" color="tertiary" shape="round" (click)="setNotesModalOpen(true)">
         <ion-icon name="book-outline" slot="start"></ion-icon>
         Culture
+      </ion-button>
+
+      <ion-button *ngIf="currentNumbers.length > 0" style="flex: 1;" expand="block" color="medium" shape="round" (click)="setNumbersModalOpen(true)">
+        <ion-icon name="calculator-outline" slot="start"></ion-icon>
+        Numbers
       </ion-button>
     </div>
   </div>
@@ -157,6 +144,42 @@
           <h3 class="note-title">{{ note.title }}</h3>
           <p class="note-content">{{ note.content }}</p>
         </div>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+  <ion-modal [isOpen]="isNumbersModalOpen" (didDismiss)="setNumbersModalOpen(false)" [initialBreakpoint]="0.75" [breakpoints]="[0, 0.75]">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Numbers</ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="setNumbersModalOpen(false)">Close</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+
+        <!-- Guidance Section -->
+        <div *ngIf="currentNumberGuidance.length > 0" class="ion-margin-bottom">
+          <div *ngFor="let guide of currentNumberGuidance" class="note-card ion-margin-bottom" >
+            <h3 class="note-title" style="color: var(--ion-color-medium-shade)">
+              <ion-icon name="bulb-outline" style="vertical-align: middle; margin-right: 4px;"></ion-icon>
+              {{ guide.title }}
+            </h3>
+            <p class="note-content" style="color: var(--ion-color-dark)">{{ guide.content }}</p>
+          </div>
+        </div>
+
+        <ion-list lines="none">
+          <ion-item *ngFor="let num of currentNumbers" class="number-item">
+            <div slot="start" class="number-badge">{{ num.value }}</div>
+            <ion-label>
+              <h2>{{ num.text }}</h2>
+              <p class="phonetic-text">{{ num.phonetic }}</p>
+            </ion-label>
+          </ion-item>
+        </ion-list>
       </ion-content>
     </ng-template>
   </ion-modal>

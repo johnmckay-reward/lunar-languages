@@ -374,7 +374,7 @@ ion-col {
   background: var(--ion-color-light);
   border-radius: 16px;
   padding: 16px;
-  
+
   .note-title {
     font-size: 1.1rem;
     font-weight: 700;
@@ -390,3 +390,39 @@ ion-col {
     margin: 0;
   }
 }
+
+/* Numbers Modal */
+.number-item {
+  --padding-start: 0;
+  --inner-padding-end: 0;
+  margin-bottom: 8px;
+  border-radius: 12px;
+  --background: var(--ion-color-light);
+
+  .number-badge {
+    background: var(--ion-color-medium);
+    color: var(--ion-color-medium-contrast);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.1rem;
+    margin: 8px 16px;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--ion-color-dark);
+  }
+
+  .phonetic-text {
+    font-size: 0.9rem;
+    color: var(--ion-color-medium);
+    font-style: italic;
+  }
+}
+

@@ -1,0 +1,98 @@
+{
+  "es": [
+    {
+      "title": "\"Un\" vs \"Uno\"",
+      "content": "When counting, you say 'Uno'. But when asking for ONE of something, you usually drop the 'o'. Example: 'Un boleto' (One ticket), not 'Uno boleto'."
+    },
+    {
+      "title": "Decimal Commas",
+      "content": "In prices, Spanish uses a comma where English uses a dot. €1.50 is written as 1,50€."
+    }
+  ],
+  "de": [
+    {
+      "title": "The Switch (21+)",
+      "content": "German swaps the ones and tens. 21 is not 'twenty-one', it is 'einundzwanzig' (one-and-twenty). 35 is 'fünfunddreißig' (five-and-thirty). Listen for the last number to get the 'tens' value."
+    },
+    {
+      "title": "Writing Prices",
+      "content": "Handwritten prices often use a dash instead of '00'. 5,– means 5 Euros exactly."
+    }
+  ],
+  "fr": [
+    {
+      "title": "The Math of 70-99",
+      "content": "French gets complicated after 69. 70 is 'soixante-dix' (sixty-ten). 80 is 'quatre-vingts' (four-twenties). 90 is 'quatre-vingt-dix' (four-twenty-ten)."
+    },
+    {
+      "title": "The Comma",
+      "content": "Like most of Europe, French uses a comma for decimals. 10,50€ is ten euros and fifty cents."
+    }
+  ],
+  "it": [
+    {
+      "title": "Euro is Invariant",
+      "content": "You don't usually pluralize 'Euro' in Italian. It is 'Un Euro' and 'Dieci Euro' (not Euros)."
+    },
+    {
+      "title": "Gesturing 1",
+      "content": "When counting with fingers, Italians start with the thumb for '1'. If you hold up your index finger, they might think you mean something else."
+    }
+  ],
+  "ja": [
+    {
+      "title": "The 10,000 Unit",
+      "content": "Big numbers are grouped by 10,000 (Man), not 1,000. 20,000 yen is '2 Man'. 50,000 is '5 Man'. This is the standard way to discuss prices for hotels or electronics."
+    },
+    {
+      "title": "Counting Objects",
+      "content": "Japanese has different counters for different shapes (long things, flat things). Don't worry about this for travel; using the basic numbers (Ichi, Ni, San) is perfectly understood."
+    }
+  ],
+  "zh": [
+    {
+      "title": "Hand Gestures (6-10)",
+      "content": "In China, you can count from 1 to 10 using one hand. Numbers 6, 7, 8, 9, and 10 have specific gestures that look nothing like the Western method. Learn these for bargaining!"
+    },
+    {
+      "title": "Two vs. Pair",
+      "content": "For the number 2, use 'Er' when counting (1, 2, 3). But use 'Liang' when quantifying things (Two beers = 'Liang' ping pijiu)."
+    }
+  ],
+  "pl": [
+    {
+      "title": "Morphing Endings",
+      "content": "Polish numbers change based on grammar (1 piwo, 2 piwa, 5 piw). Don't panic! Just say the base number from the list; locals will understand you perfectly."
+    },
+    {
+      "title": "The Separator",
+      "content": "Poland uses a comma for decimals. 12,50 zł means 12 zloty and 50 groszy."
+    }
+  ],
+  "ru": [
+    {
+      "title": "The 'One' Gender",
+      "content": "The number 1 changes gender. 'Odin' (masculine), 'Odna' (feminine). If you are just counting or giving a price, 'Odin' is safe."
+    },
+    {
+      "title": "Writing 1 and 7",
+      "content": "In handwriting, a '1' looks like a steep mountain peak. A '7' often has a horizontal crossbar to distinguish it."
+    }
+  ],
+  "uk": [
+    {
+      "title": "Changing Endings",
+      "content": "Like other Slavic languages, the noun ending changes after numbers 2, 3, and 4. 'One coffee' is kava, 'Two coffees' is kavy. As a tourist, using the singular is fine."
+    }
+  ],
+  "pt": [
+    {
+      "title": "One and Two Gender",
+      "content": "Numbers 1 and 2 have genders. 'Um/Uma' and 'Dois/Duas'. 'Uma cerveja' (One beer - fem), 'Um café' (One coffee - masc)."
+    },
+    {
+      "title": "1,000 Dot",
+      "content": "Portuguese uses a dot to separate thousands (1.000) and a comma for decimals (2,50). It is the opposite of the US/UK system."
+    }
+  ]
+}

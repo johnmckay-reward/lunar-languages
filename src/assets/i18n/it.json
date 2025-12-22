@@ -231,7 +231,7 @@
       "phonetic": "Dispoh-neh dee oon meh-noo een een-gleh-zeh?"
     },
     "have_vegetarian": {
-      "text": "Avete opzioni vegetariane?",
+      "text": "Offrite delle opzioni vegetariane?",
       "phonetic": "ah-VEH-teh op-TSYO-nee veh-jeh-tah-ree-AH-neh?"
     },
     "cost_ticket": {
@@ -251,8 +251,8 @@
       "phonetic": "KWAN-toh KOS-tah oon kah-FEH?"
     },
     "cost_beer": {
-      "text": "Quanto costa una birra?",
-      "phonetic": "KWAN-toh KOS-tah OO-nah BEER-rah?"
+      "text": "Qual è il prezzo di una birra?",
+      "phonetic": "kwal è il pret.tso dee oona beer.ra"
     },
     "cost_wine": {
       "text": "Quanto costa un bicchiere di vino?",
