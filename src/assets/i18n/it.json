@@ -539,6 +539,22 @@
     "love_music": {
       "text": "Mi piace questa musica",
       "phonetic": "Mee PYAH-cheh KWEH-stah MOO-zee-kah"
+    },
+    "call_taxi": {
+      "text": "Per cortesia, chiama un taxi.",
+      "phonetic": "per kor-'tes-ia, 'kja-ma un 'tak-si"
+    },
+    "call_doctor": {
+      "text": "Per favore, chiami un dottore.",
+      "phonetic": "per fa-vo-re kya-mi un dot-to-re"
+    },
+    "call_police": {
+      "text": "Per favore, chiami la polizia.",
+      "phonetic": "per fa-vo-re kya-mi la po-li-tsia"
+    },
+    "call_hotel": {
+      "text": "Per favore, chiami il mio hotel.",
+      "phonetic": "per fa-vo-re kya-mi il mio o-tel"
     }
   }
 }

@@ -539,6 +539,22 @@
     "use_phone": {
       "text": "Чи можу я скористатися вашим телефоном?",
       "phonetic": "Chy mozhu ya skorystatysya vashym telefonom?"
+    },
+    "call_taxi": {
+      "text": "Будь ласка, викличте таксі.",
+      "phonetic": "bud laska vyklychte taksi"
+    },
+    "call_doctor": {
+      "text": "Будь ласка, викличте лікаря.",
+      "phonetic": "bud laska vyklychte likarya"
+    },
+    "call_police": {
+      "text": "Будь ласка, викличте поліцію.",
+      "phonetic": "bud laska vyklychte politsiyu"
+    },
+    "call_hotel": {
+      "text": "Будь ласка, зателефонуйте в мій готель.",
+      "phonetic": "bud laska zatelefonuyte v miy hotel"
     }
   }
 }

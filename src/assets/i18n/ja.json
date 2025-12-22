@@ -539,6 +539,22 @@
     "love_music": {
       "text": "この音楽が好きです",
       "phonetic": "Kono ongaku ga suki desu"
+    },
+    "call_taxi": {
+      "text": "タクシーを呼んでください。",
+      "phonetic": "takushī o yonde kudasai"
+    },
+    "call_doctor": {
+      "text": "医者を呼んでください。",
+      "phonetic": "isha o yonde kudasai"
+    },
+    "call_police": {
+      "text": "警察を呼んでください。",
+      "phonetic": "keisatsu o yonde kudasai"
+    },
+    "call_hotel": {
+      "text": "私のホテルに電話してください。",
+      "phonetic": "watashi no hoteru ni denwa shite kudasai"
     }
   }
 }

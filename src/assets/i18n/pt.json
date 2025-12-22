@@ -539,6 +539,22 @@
     "use_phone": {
       "text": "Posso usar o seu telefone?",
       "phonetic": "Pos-so oo-zar o se-oo te-le-fo-ne?"
+    },
+    "call_taxi": {
+      "text": "Por favor, chame um táxi.",
+      "phonetic": "por fa-vor sha-mi um tak-si"
+    },
+    "call_doctor": {
+      "text": "Por favor, chame um médico.",
+      "phonetic": "por fa-vor sha-mi um me-di-ku"
+    },
+    "call_police": {
+      "text": "Por gentileza, ligue para a polícia.",
+      "phonetic": "pohr zhentchee-leh-zah, lee-geh pah-rah ah poh-lee-see-ah"
+    },
+    "call_hotel": {
+      "text": "Por favor, ligue para o meu hotel.",
+      "phonetic": "por fa-vor li-gi pa-ra u meu o-tel"
     }
   }
 }

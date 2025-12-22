@@ -539,6 +539,22 @@
     "use_phone": {
       "text": "Могу я воспользоваться вашим телефоном?",
       "phonetic": "Mogu ya vospol'zovatsya vashim telefonom?"
+    },
+    "call_taxi": {
+      "text": "Пожалуйста, вызовите такси.",
+      "phonetic": "pazhaluysta vyzovite taksi"
+    },
+    "call_doctor": {
+      "text": "Пожалуйста, вызовите врача.",
+      "phonetic": "pazhaluysta vyzovite vracha"
+    },
+    "call_police": {
+      "text": "Пожалуйста, вызовите полицию.",
+      "phonetic": "pazhaluysta vyzovite politsiyu"
+    },
+    "call_hotel": {
+      "text": "Пожалуйста, позвоните в мой отель.",
+      "phonetic": "pazhaluysta pozvonite v moy otel"
     }
   }
 }

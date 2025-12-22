@@ -148,7 +148,8 @@ export class DataService {
     { id: 'use', type: 'starter', english: 'Can I use...?' },
     { id: 'lost', type: 'starter', english: 'I lost...' },
     { id: 'is_there', type: 'starter', english: 'Is there...?' },
-    { id: 'love', type: 'starter', english: 'I like...' }
+    { id: 'love', type: 'starter', english: 'I like...' },
+    { id: 'call', type: 'starter', english: 'Please call...' }
   ];
 
   // ============================================================
@@ -205,6 +206,8 @@ export class DataService {
     { id: 'bathroom', type: 'noun', category: 'Accommodation', english: 'The Bathroom' },
     { id: 'phone', type: 'noun', category: 'Tech', english: 'Phone' },
     { id: 'music', type: 'noun', category: 'Leisure', english: 'Music' },
+    { id: 'police', type: 'noun', category: 'Health', english: 'Police' },
+    { id: 'hotel', type: 'noun', category: 'Accommodation', english: 'Hotel' },
 
     // Allergies
     { id: 'gluten', type: 'noun', category: 'Health', english: 'Gluten' },
@@ -331,6 +334,12 @@ export class DataService {
     'love_seafood': { english: 'I love seafood.' },
     'love_music': { english: 'I like this music.' },
     'is_there_bus': { english: 'Is there a bus to the city?' },
+
+    // --- PLEASE CALL... ---
+    'call_taxi': { english: 'Please call a taxi.' },
+    'call_doctor': { english: 'Please call a doctor.' },
+    'call_police': { english: 'Please call the police.' },
+    'call_hotel': { english: 'Please call my hotel.' },
     // Add other allergies here if you add nouns for seafood, etc.
   };
 

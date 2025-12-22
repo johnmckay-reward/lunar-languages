@@ -477,6 +477,22 @@
     "love_music": {
       "text": "I like this music.",
       "phonetic": ""
+    },
+    "call_taxi": {
+      "text": "Please call a taxi.",
+      "phonetic": ""
+    },
+    "call_doctor": {
+      "text": "Please call a doctor.",
+      "phonetic": ""
+    },
+    "call_police": {
+      "text": "Please call the police.",
+      "phonetic": ""
+    },
+    "call_hotel": {
+      "text": "Please call my hotel.",
+      "phonetic": ""
     }
   }
 }

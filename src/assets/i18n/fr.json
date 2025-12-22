@@ -539,6 +539,22 @@
     "love_music": {
       "text": "J'aime cette musique",
       "phonetic": "Zhem set myoo-ZEEK"
+    },
+    "call_taxi": {
+      "text": "S'il vous plaît, appelez un taxi.",
+      "phonetic": "sil vu ple a-pe-le un tak-si"
+    },
+    "call_doctor": {
+      "text": "S'il vous plaît, contactez un docteur.",
+      "phonetic": "seel voo pleh, kon-tak-teh uh dok-tur."
+    },
+    "call_police": {
+      "text": "S'il vous plaît, téléphonez à la police.",
+      "phonetic": "Sil vous play, téléphonez a la poliss."
+    },
+    "call_hotel": {
+      "text": "S'il vous plaît, appelez mon hôtel.",
+      "phonetic": "sil vu ple a-pe-le mon o-tel"
     }
   }
 }

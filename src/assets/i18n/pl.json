@@ -539,6 +539,22 @@
     "use_phone": {
       "text": "Czy mogę skorzystać z twojego telefonu?",
       "phonetic": "Chi mo-ge sko-zhi-stach z tvo-ye-go te-le-fo-nu?"
+    },
+    "call_taxi": {
+      "text": "Proszę wezwać taksówkę.",
+      "phonetic": "pro-she vez-vach tak-suv-ke"
+    },
+    "call_doctor": {
+      "text": "Proszę wezwać lekarza.",
+      "phonetic": "pro-she vez-vach le-ka-zha"
+    },
+    "call_police": {
+      "text": "Proszę wezwać policję.",
+      "phonetic": "pro-she vez-vach po-li-tsye"
+    },
+    "call_hotel": {
+      "text": "Proszę zadzwonić do mojego hotelu.",
+      "phonetic": "pro-she za-dzvo-nich do mo-ye-go ho-te-lu"
     }
   }
 }

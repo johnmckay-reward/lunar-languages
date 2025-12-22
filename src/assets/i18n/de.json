@@ -539,6 +539,22 @@
     "love_music": {
       "text": "Ich mag diese Musik",
       "phonetic": "Ikh mahg DEE-zeh MOO-zik"
+    },
+    "call_taxi": {
+      "text": "Bitte rufen Sie ein Taxi.",
+      "phonetic": "bi-te ru-fen zi ain tak-si"
+    },
+    "call_doctor": {
+      "text": "Bitte rufen Sie einen Arzt.",
+      "phonetic": "bi-te ru-fen zi ai-nen artst"
+    },
+    "call_police": {
+      "text": "Bitte rufen Sie die Polizei.",
+      "phonetic": "bi-te ru-fen zi di po-li-tsai"
+    },
+    "call_hotel": {
+      "text": "Bitte rufen Sie mein Hotel an.",
+      "phonetic": "bi-te ru-fen zi main ho-tel an"
     }
   }
 }

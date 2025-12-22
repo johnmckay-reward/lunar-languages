@@ -539,6 +539,22 @@
     "use_phone": {
       "text": "请问，我能借用您的手机吗？",
       "phonetic": "qǐng wèn, wǒ néng jiè yòng nín de shǒu jī ma?"
+    },
+    "call_taxi": {
+      "text": "请叫一辆出租车。",
+      "phonetic": "qǐng jiào yī liàng chū zū chē"
+    },
+    "call_doctor": {
+      "text": "请叫医生。",
+      "phonetic": "qǐng jiào yī shēng"
+    },
+    "call_police": {
+      "text": "请叫警察。",
+      "phonetic": "qǐng jiào jǐng chá"
+    },
+    "call_hotel": {
+      "text": "请给我的酒店打电话。",
+      "phonetic": "qǐng gěi wǒ de jiǔ diàn dǎ diàn huà"
     }
   }
 }
