@@ -168,6 +168,22 @@
     }
   },
   "combinations": {
+    "is_there_atm": {
+      "text": "这附近有自动取款机吗？",
+      "phonetic": "Zhè fùjìn yǒu zìdòng qǔkuǎnjī ma?"
+    },
+    "is_there_pharmacy": {
+      "text": "附近有药店吗？",
+      "phonetic": "Fùjìn yǒu yàodiàn ma?"
+    },
+    "is_there_wifi": {
+      "text": "这里有无线网吗？",
+      "phonetic": "Zhèlǐ yǒu wúxiànwǎng ma?"
+    },
+    "is_there_bus": {
+      "text": "有去市区的公交车吗？",
+      "phonetic": "Yǒu qù shìqū de gōngjiāochē ma?"
+    },
     "lost_ticket": {
       "text": "我丢了票。",
       "phonetic": "Wǒ diūle piào."
@@ -441,8 +457,8 @@
       "phonetic": "wǒ jí xū yī wèi yīshēng"
     },
     "need_pharmacy": {
-      "text": "我需要药店。",
-      "phonetic": "Wǒ xūyào yàodiàn"
+      "text": "我需要去药店。",
+      "phonetic": "wǒ xūyào qù yàodiàn"
     },
     "need_hospital": {
       "text": "我需要去医院。",

@@ -106,6 +106,22 @@
     }
   },
   "combinations": {
+    "is_there_atm": {
+      "text": "Is there an ATM near here?",
+      "phonetic": ""
+    },
+    "is_there_pharmacy": {
+      "text": "Is there a pharmacy nearby?",
+      "phonetic": ""
+    },
+    "is_there_wifi": {
+      "text": "Is there WiFi here?",
+      "phonetic": ""
+    },
+    "is_there_bus": {
+      "text": "Is there a bus to the city?",
+      "phonetic": ""
+    },
     "lost_ticket": {
       "text": "I lost my ticket.",
       "phonetic": ""

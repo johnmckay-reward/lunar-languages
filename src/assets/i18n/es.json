@@ -168,37 +168,53 @@
     }
   },
   "combinations": {
+    "is_there_atm": {
+      "text": "¿Hay un cajero automático cerca de aquí?",
+      "phonetic": "Eye oon kah-HEH-roh ow-toh-MAH-tee-koh SEHR-kah deh ah-KEE?"
+    },
+    "is_there_pharmacy": {
+      "text": "¿Hay una farmacia cerca?",
+      "phonetic": "Eye OO-nah far-MAH-syah SEHR-kah?"
+    },
+    "is_there_wifi": {
+      "text": "¿Hay WiFi aquí?",
+      "phonetic": "Eye WiFi ah-KEE?"
+    },
+    "is_there_bus": {
+      "text": "¿Hay un autobús a la ciudad?",
+      "phonetic": "Eye oon ow-toh-BOOS ah lah syoo-DAD?"
+    },
     "lost_ticket": {
       "text": "Perdí mi boleto.",
-      "phonetic": ""
+      "phonetic": "Per-DEE mee boh-LEH-toh."
     },
     "lost_key": {
       "text": "Perdí mi llave.",
-      "phonetic": ""
+      "phonetic": "Per-DEE mee YAH-veh."
     },
     "lost_phone": {
       "text": "Perdí mi teléfono.",
-      "phonetic": ""
+      "phonetic": "Per-DEE mee teh-LEH-foh-noh."
     },
     "lost_wallet": {
       "text": "Perdí mi billetera.",
-      "phonetic": ""
+      "phonetic": "Per-DEE mee bee-yeh-TEH-rah."
     },
     "lost_passport": {
       "text": "Perdí mi pasaporte.",
-      "phonetic": ""
+      "phonetic": "Per-DEE mee pah-sah-POR-teh."
     },
     "lost_bag": {
       "text": "Perdí mi bolso.",
-      "phonetic": ""
+      "phonetic": "Per-DEE mee BOL-soh."
     },
     "lost_map": {
       "text": "Perdí mi mapa.",
-      "phonetic": ""
+      "phonetic": "Per-DEE mee MAH-pah."
     },
     "lost_receipt": {
       "text": "Perdí mi recibo.",
-      "phonetic": ""
+      "phonetic": "Per-DEE mee reh-SEE-boh."
     },
     "where_station": {
       "text": "¿Dónde está la estación de tren?",

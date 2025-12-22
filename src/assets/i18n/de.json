@@ -168,37 +168,53 @@
     }
   },
   "combinations": {
+    "is_there_atm": {
+      "text": "Gibt es hier in der Nähe einen Geldautomaten?",
+      "phonetic": "Gipt es heer in dair NAY-uh eye-nen GELT-ow-toh-mah-ten?"
+    },
+    "is_there_pharmacy": {
+      "text": "Gibt es eine Apotheke in der Nähe?",
+      "phonetic": "Gipt es eye-nuh ah-poh-TAY-kuh in dair NAY-uh?"
+    },
+    "is_there_wifi": {
+      "text": "Gibt es hier WLAN?",
+      "phonetic": "Gipt es heer VAY-lahn?"
+    },
+    "is_there_bus": {
+      "text": "Gibt es einen Bus in die Stadt?",
+      "phonetic": "Gipt es eye-nen Boos in dee Shtat?"
+    },
     "lost_ticket": {
       "text": "Ich habe mein Ticket verloren.",
-      "phonetic": ""
+      "phonetic": "Ikh hah-buh mine TIK-et fer-LOH-ren."
     },
     "lost_key": {
       "text": "Ich habe meinen Schlüssel verloren.",
-      "phonetic": ""
+      "phonetic": "Ikh hah-buh my-nen SHLUE-sel fer-LOH-ren."
     },
     "lost_phone": {
       "text": "Ich habe mein Handy verloren.",
-      "phonetic": ""
+      "phonetic": "Ikh hah-buh mine HEN-dee fer-LOH-ren."
     },
     "lost_wallet": {
       "text": "Ich habe meine Brieftasche verloren.",
-      "phonetic": ""
+      "phonetic": "Ikh hah-buh my-nuh BREEF-tah-shuh fer-LOH-ren."
     },
     "lost_passport": {
       "text": "Ich habe meinen Reisepass verloren.",
-      "phonetic": ""
+      "phonetic": "Ikh hah-buh my-nen RY-ze-pass fer-LOH-ren."
     },
     "lost_bag": {
       "text": "Ich habe meine Tasche verloren.",
-      "phonetic": ""
+      "phonetic": "Ikh hah-buh my-nuh TAH-shuh fer-LOH-ren."
     },
     "lost_map": {
       "text": "Ich habe meine Karte verloren.",
-      "phonetic": ""
+      "phonetic": "Ikh hah-buh my-nuh KAR-tuh fer-LOH-ren."
     },
     "lost_receipt": {
       "text": "Ich habe meine Quittung verloren.",
-      "phonetic": ""
+      "phonetic": "Ikh hah-buh my-nuh KVIT-tung fer-LOH-ren."
     },
     "where_station": {
       "text": "Wo ist der Bahnhof?",

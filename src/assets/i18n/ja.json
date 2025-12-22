@@ -168,6 +168,22 @@
     }
   },
   "combinations": {
+    "is_there_atm": {
+      "text": "この近くにATMはありますか？",
+      "phonetic": "Kono chikaku ni ATM wa arimasu ka?"
+    },
+    "is_there_pharmacy": {
+      "text": "近くに薬局はありますか？",
+      "phonetic": "Chikaku ni yakkyoku wa arimasu ka?"
+    },
+    "is_there_wifi": {
+      "text": "ここにWi-Fiはありますか？",
+      "phonetic": "Koko ni Wi-Fi wa arimasu ka?"
+    },
+    "is_there_bus": {
+      "text": "市内行きのバスはありますか？",
+      "phonetic": "Shinai iki no basu wa arimasu ka?"
+    },
     "lost_ticket": {
       "text": "チケットをなくしました。",
       "phonetic": "Chiketto o nakushimashita."

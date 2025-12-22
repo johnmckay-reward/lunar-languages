@@ -168,37 +168,53 @@
     }
   },
   "combinations": {
+    "is_there_atm": {
+      "text": "Y a-t-il un distributeur automatique près d'ici ?",
+      "phonetic": "ee ah-TEEL uhn dees-tree-bue-TUR oh-toh-mah-TEEK preh dee-SEE?"
+    },
+    "is_there_pharmacy": {
+      "text": "Y a-t-il une pharmacie à proximité ?",
+      "phonetic": "ee ah-TEEL ewn far-mah-SEE ah prok-see-mee-TAY?"
+    },
+    "is_there_wifi": {
+      "text": "Est-ce qu'il y a une connexion WiFi ici ?",
+      "phonetic": "Ess k'il ya une connexion Wi-Fi ici"
+    },
+    "is_there_bus": {
+      "text": "Y a-t-il un bus pour la ville ?",
+      "phonetic": "ee ah-TEEL uhn boos poor lah VEEL?"
+    },
     "lost_ticket": {
       "text": "J'ai perdu mon billet.",
-      "phonetic": ""
+      "phonetic": "zhay pair-DEW mohn bee-YAY."
     },
     "lost_key": {
       "text": "J'ai perdu ma clé.",
-      "phonetic": ""
+      "phonetic": "zhay pair-DEW mah KLAY."
     },
     "lost_phone": {
       "text": "J'ai perdu mon téléphone.",
-      "phonetic": ""
+      "phonetic": "zhay pair-DEW mohn tay-lay-FON."
     },
     "lost_wallet": {
       "text": "J'ai perdu mon portefeuille.",
-      "phonetic": ""
+      "phonetic": "zhay pair-DEW mohn port-FUI."
     },
     "lost_passport": {
       "text": "J'ai perdu mon passeport.",
-      "phonetic": ""
+      "phonetic": "zhay pair-DEW mohn pahs-POR."
     },
     "lost_bag": {
       "text": "J'ai perdu mon sac.",
-      "phonetic": ""
+      "phonetic": "zhay pair-DEW mohn SAK."
     },
     "lost_map": {
       "text": "J'ai perdu ma carte.",
-      "phonetic": ""
+      "phonetic": "zhay pair-DEW mah KART."
     },
     "lost_receipt": {
       "text": "J'ai perdu mon reçu.",
-      "phonetic": ""
+      "phonetic": "zhay pair-DEW mohn ruh-SEW."
     },
     "where_station": {
       "text": "Où est la gare ?",

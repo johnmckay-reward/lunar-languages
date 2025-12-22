@@ -168,37 +168,53 @@
     }
   },
   "combinations": {
+    "is_there_atm": {
+      "text": "C'è un bancomat qui vicino?",
+      "phonetic": "Cheh oon BAN-koh-mat kwee vee-CHEE-noh?"
+    },
+    "is_there_pharmacy": {
+      "text": "C'è una farmacia nelle vicinanze?",
+      "phonetic": "Cheh OO-nah far-mah-CHEE-ah nel-leh vee-chee-NAN-tseh?"
+    },
+    "is_there_wifi": {
+      "text": "C'è il WiFi qui?",
+      "phonetic": "Cheh eel WiFi kwee?"
+    },
+    "is_there_bus": {
+      "text": "C'è un autobus per la città?",
+      "phonetic": "Cheh oon OW-toh-boos per lah cheet-TAH?"
+    },
     "lost_ticket": {
       "text": "Ho perso il mio biglietto.",
-      "phonetic": ""
+      "phonetic": "Oh PER-soh eel MEE-oh beel-YET-toh."
     },
     "lost_key": {
       "text": "Ho perso la mia chiave.",
-      "phonetic": ""
+      "phonetic": "Oh PER-soh lah MEE-ah KYAH-veh."
     },
     "lost_phone": {
       "text": "Ho perso il mio telefono.",
-      "phonetic": ""
+      "phonetic": "Oh PER-soh eel MEE-oh teh-LEH-foh-noh."
     },
     "lost_wallet": {
       "text": "Ho perso il mio portafoglio.",
-      "phonetic": ""
+      "phonetic": "Oh PER-soh eel MEE-oh por-tah-FOL-yoh."
     },
     "lost_passport": {
       "text": "Ho perso il mio passaporto.",
-      "phonetic": ""
+      "phonetic": "Oh PER-soh eel MEE-oh pas-sah-POR-toh."
     },
     "lost_bag": {
       "text": "Ho perso la mia borsa.",
-      "phonetic": ""
+      "phonetic": "Oh PER-soh lah MEE-ah BOR-sah."
     },
     "lost_map": {
       "text": "Ho perso la mia mappa.",
-      "phonetic": ""
+      "phonetic": "Oh PER-soh lah MEE-ah MAP-pah."
     },
     "lost_receipt": {
       "text": "Ho perso la mia ricevuta.",
-      "phonetic": ""
+      "phonetic": "Oh PER-soh lah MEE-ah ree-cheh-VOO-tah."
     },
     "where_station": {
       "text": "Dov'è la stazione?",

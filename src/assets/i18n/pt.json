@@ -168,37 +168,53 @@
     }
   },
   "combinations": {
+    "is_there_atm": {
+      "text": "Tem um caixa eletrônico perto daqui?",
+      "phonetic": "Tayng oom KY-shah eh-leh-TROH-nee-koo PEHR-too dah-KEE?"
+    },
+    "is_there_pharmacy": {
+      "text": "Tem uma farmácia por perto?",
+      "phonetic": "Tayng OO-mah far-MAH-syah poor PEHR-too?"
+    },
+    "is_there_wifi": {
+      "text": "Tem WiFi aqui?",
+      "phonetic": "Tayng WiFi ah-KEE?"
+    },
+    "is_there_bus": {
+      "text": "Tem ônibus para a cidade?",
+      "phonetic": "Tayng OH-nee-boos pah-rah ah see-DAH-jee?"
+    },
     "lost_ticket": {
       "text": "Perdi meu bilhete.",
-      "phonetic": ""
+      "phonetic": "Pehr-JEE meh-oo beel-YEH-teh."
     },
     "lost_key": {
       "text": "Perdi minha chave.",
-      "phonetic": ""
+      "phonetic": "Pehr-JEE MEEN-yah SHAH-veh."
     },
     "lost_phone": {
       "text": "Perdi meu telefone.",
-      "phonetic": ""
+      "phonetic": "Pehr-JEE meh-oo teh-leh-FOH-neh."
     },
     "lost_wallet": {
       "text": "Perdi minha carteira.",
-      "phonetic": ""
+      "phonetic": "Pehr-JEE MEEN-yah kar-TAY-rah."
     },
     "lost_passport": {
       "text": "Perdi meu passaporte.",
-      "phonetic": ""
+      "phonetic": "Pehr-JEE meh-oo pas-sah-POR-teh."
     },
     "lost_bag": {
       "text": "Eu perdi a minha bolsa.",
-      "phonetic": "eu per-jee a minha bowl-sa"
+      "phonetic": "Eh-oo pehr-JEE ah MEEN-yah BOL-sah."
     },
     "lost_map": {
       "text": "Perdi meu mapa.",
-      "phonetic": ""
+      "phonetic": "Pehr-JEE meh-oo MAH-pah."
     },
     "lost_receipt": {
       "text": "Perdi meu recibo.",
-      "phonetic": ""
+      "phonetic": "Pehr-JEE meh-oo reh-SEE-boh."
     },
     "where_station": {
       "text": "Onde fica a estação?",

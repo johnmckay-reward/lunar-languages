@@ -168,37 +168,53 @@
     }
   },
   "combinations": {
+    "is_there_atm": {
+      "text": "Czy jest tu w pobliżu bankomat?",
+      "phonetic": "Chy yest too v pob-LEE-zhoo ban-KOH-mat?"
+    },
+    "is_there_pharmacy": {
+      "text": "Czy jest w pobliżu apteka?",
+      "phonetic": "Chy yest v pob-LEE-zhoo ap-TEH-kah?"
+    },
+    "is_there_wifi": {
+      "text": "Czy jest tu WiFi?",
+      "phonetic": "Chy yest too WiFi?"
+    },
+    "is_there_bus": {
+      "text": "Czy jest autobus do miasta?",
+      "phonetic": "Chy yest ow-TOH-boos doh MYAS-tah?"
+    },
     "lost_ticket": {
       "text": "Zgubiłem bilet.",
-      "phonetic": ""
+      "phonetic": "Zgoo-BEE-wem BEE-let."
     },
     "lost_key": {
       "text": "Zgubiłem klucz.",
-      "phonetic": ""
+      "phonetic": "Zgoo-BEE-wem klooch."
     },
     "lost_phone": {
       "text": "Zgubiłem telefon.",
-      "phonetic": ""
+      "phonetic": "Zgoo-BEE-wem teh-LEH-fon."
     },
     "lost_wallet": {
       "text": "Zgubiłem portfel.",
-      "phonetic": ""
+      "phonetic": "Zgoo-BEE-wem PORT-fel."
     },
     "lost_passport": {
       "text": "Zgubiłem paszport.",
-      "phonetic": ""
+      "phonetic": "Zgoo-BEE-wem PASH-port."
     },
     "lost_bag": {
       "text": "Zgubiłem torbę.",
-      "phonetic": ""
+      "phonetic": "Zgoo-BEE-wem TOR-beh."
     },
     "lost_map": {
       "text": "Zgubiłem mapę.",
-      "phonetic": ""
+      "phonetic": "Zgoo-BEE-wem MAH-peh."
     },
     "lost_receipt": {
       "text": "Zgubiłem paragon.",
-      "phonetic": ""
+      "phonetic": "Zgoo-BEE-wem pah-RAH-gon."
     },
     "where_station": {
       "text": "Gdzie jest dworzec kolejowy?",

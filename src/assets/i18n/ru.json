@@ -168,37 +168,53 @@
     }
   },
   "combinations": {
+    "is_there_atm": {
+      "text": "Здесь есть поблизости банкомат?",
+      "phonetic": "Zdyes yest pah-blee-ZOS-tee ban-kah-MAT?"
+    },
+    "is_there_pharmacy": {
+      "text": "Здесь есть поблизости аптека?",
+      "phonetic": "Zdyes yest pah-blee-ZOS-tee ap-TEH-kah?"
+    },
+    "is_there_wifi": {
+      "text": "Здесь у вас есть Wi-Fi?",
+      "phonetic": "Zdyes' u vas yest' Wi-Fi?"
+    },
+    "is_there_bus": {
+      "text": "Здесь есть автобус до города?",
+      "phonetic": "Zdyes yest av-TOH-boos doh GOH-rah-dah?"
+    },
     "lost_ticket": {
       "text": "Я потерял билет.",
-      "phonetic": "Ya poteryal bilet."
+      "phonetic": "Ya pah-teer-YAL bee-LYET."
     },
     "lost_key": {
       "text": "Я потерял ключ.",
-      "phonetic": "Ya poteryal klyuch."
+      "phonetic": "Ya pah-teer-YAL klyuch."
     },
     "lost_phone": {
       "text": "Я потерял телефон.",
-      "phonetic": "Ya poteryal telefon."
+      "phonetic": "Ya pah-teer-YAL teh-leh-FON."
     },
     "lost_wallet": {
       "text": "Я потерял кошелек.",
-      "phonetic": "Ya poteryal koshelek."
+      "phonetic": "Ya pah-teer-YAL kah-sheh-LYOK."
     },
     "lost_passport": {
       "text": "Я потерял паспорт.",
-      "phonetic": "Ya poteryal pasport."
+      "phonetic": "Ya pah-teer-YAL PAS-port."
     },
     "lost_bag": {
       "text": "Я потерял сумку.",
-      "phonetic": "Ya poteryal sumku."
+      "phonetic": "Ya pah-teer-YAL SOOM-koo."
     },
     "lost_map": {
       "text": "Я потерял карту.",
-      "phonetic": "Ya poteryal kartu."
+      "phonetic": "Ya pah-teer-YAL KAR-too."
     },
     "lost_receipt": {
       "text": "Я потерял чек.",
-      "phonetic": "Ya poteryal chek."
+      "phonetic": "Ya pah-teer-YAL chek."
     },
     "where_station": {
       "text": "Где вокзал?",

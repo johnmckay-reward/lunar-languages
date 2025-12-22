@@ -146,7 +146,8 @@ export class DataService {
     { id: 'allergic', type: 'starter', english: 'I am allergic to...' },
     { id: 'need', type: 'starter', english: 'I need...' },
     { id: 'use', type: 'starter', english: 'Can I use...?' },
-    { id: 'lost', type: 'starter', english: 'I lost...' }
+    { id: 'lost', type: 'starter', english: 'I lost...' },
+    { id: 'is_there', type: 'starter', english: 'Is there...?' }
   ];
 
   // ============================================================
@@ -316,6 +317,12 @@ export class DataService {
     'lost_bag': { english: 'I lost my bag.' },
     'lost_map': { english: 'I lost my map.' },
     'lost_receipt': { english: 'I lost my receipt.' },
+
+    // --- IS THERE...? ---
+    'is_there_atm': { english: 'Is there an ATM near here?' },
+    'is_there_pharmacy': { english: 'Is there a pharmacy nearby?' },
+    'is_there_wifi': { english: 'Is there WiFi here?' },
+    'is_there_bus': { english: 'Is there a bus to the city?' },
     // Add other allergies here if you add nouns for seafood, etc.
   };
 
