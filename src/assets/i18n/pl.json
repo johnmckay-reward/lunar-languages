@@ -168,6 +168,22 @@
     }
   },
   "combinations": {
+    "another_beer": {
+      "text": "Jeszcze jedno piwo...",
+      "phonetic": "YESH-che YED-no PEE-vo..."
+    },
+    "another_wine": {
+      "text": "Jeszcze jeden kieliszek wina...",
+      "phonetic": "YESH-che YE-den kye-LEE-shek VEE-na..."
+    },
+    "another_coffee": {
+      "text": "Jeszcze jedną kawę...",
+      "phonetic": "YESH-che YED-non KA-ve..."
+    },
+    "another_bill": {
+      "text": "Czy mogę prosić o jeszcze jedną kopię rachunku?",
+      "phonetic": "chy MO-ge PRO-shich o YESH-che YED-non KO-pye ra-KHUN-ku?"
+    },
     "love_coffee": {
       "translation": "Lubię tę kawę",
       "phonetic": "LOO-byeh teh KAH-veh"

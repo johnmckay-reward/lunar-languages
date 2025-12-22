@@ -168,6 +168,22 @@
     }
   },
   "combinations": {
+    "another_beer": {
+      "text": "Mais uma cerveja...",
+      "phonetic": "mays oo-mah ser-VEH-zhah..."
+    },
+    "another_wine": {
+      "text": "Mais um copo de vinho...",
+      "phonetic": "mays oom KOH-poo deh VEE-nyoo..."
+    },
+    "another_coffee": {
+      "text": "Mais um café...",
+      "phonetic": "mays oom kah-FEH..."
+    },
+    "another_bill": {
+      "text": "Posso ter outra cópia da conta?",
+      "phonetic": "POS-soo tehr OH-trah KOH-pyah dah KON-tah?"
+    },
     "love_coffee": {
       "translation": "Eu gosto deste café",
       "phonetic": "Eh-oo GOS-toh DEHS-teh kah-FEH"

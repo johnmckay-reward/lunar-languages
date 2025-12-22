@@ -168,6 +168,22 @@
     }
   },
   "combinations": {
+    "another_beer": {
+      "text": "Noch ein Bier...",
+      "phonetic": "nokh ayn beer..."
+    },
+    "another_wine": {
+      "text": "Noch ein Glas Wein...",
+      "phonetic": "nokh ayn glahs vayn..."
+    },
+    "another_coffee": {
+      "text": "Noch einen Kaffee...",
+      "phonetic": "nokh ay-nen kah-feh..."
+    },
+    "another_bill": {
+      "text": "Kann ich noch eine Kopie der Rechnung haben?",
+      "phonetic": "kahn ikh nokh ay-nuh koh-pee dehr rekh-noong hah-ben"
+    },
     "is_there_atm": {
       "text": "Gibt es hier in der Nähe einen Geldautomaten?",
       "phonetic": "Gipt es heer in dair NAY-uh eye-nen GELT-ow-toh-mah-ten?"
@@ -555,6 +571,22 @@
     "call_hotel": {
       "text": "Bitte rufen Sie mein Hotel an.",
       "phonetic": "bi-te ru-fen zi main ho-tel an"
+    },
+    "another_beer": {
+      "text": "Noch ein Bier, bitte",
+      "phonetic": "nokh ayn beer, bi-te"
+    },
+    "another_wine": {
+      "text": "Noch ein Glas Wein, bitte",
+      "phonetic": "nokh ayn glahs vine, bi-te"
+    },
+    "another_coffee": {
+      "text": "Noch einen Kaffee, bitte",
+      "phonetic": "nokh ay-nen kah-feh, bi-te"
+    },
+    "another_bill": {
+      "text": "Kann ich noch eine Kopie der Rechnung haben?",
+      "phonetic": "kan ikh nokh ay-ne ko-pee der rekh-nung ha-ben?"
     }
   }
 }

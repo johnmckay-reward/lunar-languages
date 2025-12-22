@@ -168,6 +168,22 @@
     }
   },
   "combinations": {
+    "another_beer": {
+      "text": "Ще одне пиво...",
+      "phonetic": "shche od-NE py-vo..."
+    },
+    "another_wine": {
+      "text": "Ще один келих вина...",
+      "phonetic": "shche o-DYN ke-lykh vy-NA..."
+    },
+    "another_coffee": {
+      "text": "Ще одну каву...",
+      "phonetic": "shche od-NU ka-vu..."
+    },
+    "another_bill": {
+      "text": "Можна мені ще одну копію рахунку?",
+      "phonetic": "MOZH-na me-NI shche od-NU ko-pi-yu ra-KHUN-ku?"
+    },
     "love_coffee": {
       "translation": "Мені подобається ця кава",
       "phonetic": "Meni podobayetsya tsya kava"

@@ -106,6 +106,22 @@
     }
   },
   "combinations": {
+    "another_beer": {
+      "text": "Another beer, please!",
+      "phonetic": ""
+    },
+    "another_wine": {
+      "text": "Another glass of wine, please.",
+      "phonetic": ""
+    },
+    "another_coffee": {
+      "text": "Another coffee, please.",
+      "phonetic": ""
+    },
+    "another_bill": {
+      "text": "Can I have another copy of the bill?",
+      "phonetic": ""
+    },
     "is_there_atm": {
       "text": "Is there an ATM near here?",
       "phonetic": ""

@@ -168,6 +168,22 @@
     }
   },
   "combinations": {
+    "another_beer": {
+      "text": "Un'altra birra...",
+      "phonetic": "oon-AL-trah BEER-rah..."
+    },
+    "another_wine": {
+      "text": "Un altro bicchiere di vino...",
+      "phonetic": "oon AL-troh beek-KYEH-reh dee VEE-noh..."
+    },
+    "another_coffee": {
+      "text": "Un altro caffè...",
+      "phonetic": "oon AL-troh kahf-FEH..."
+    },
+    "another_bill": {
+      "text": "Posso avere un'altra copia del conto?",
+      "phonetic": "POS-soh ah-VEH-reh oon-AL-trah KOH-pyah del KON-toh?"
+    },
     "is_there_atm": {
       "text": "C'è un bancomat qui vicino?",
       "phonetic": "Cheh oon BAN-koh-mat kwee vee-CHEE-noh?"

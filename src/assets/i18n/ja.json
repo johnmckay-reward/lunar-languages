@@ -168,6 +168,22 @@
     }
   },
   "combinations": {
+    "another_beer": {
+      "text": "ビールをもう一杯...",
+      "phonetic": "biiru o mou ippai..."
+    },
+    "another_wine": {
+      "text": "ワインをもう一杯...",
+      "phonetic": "wain o mou ippai..."
+    },
+    "another_coffee": {
+      "text": "コーヒーをもう一杯...",
+      "phonetic": "koohii o mou ippai..."
+    },
+    "another_bill": {
+      "text": "請求書の控えをもう一枚いただけますか？",
+      "phonetic": "seikyuusho no hikae o mou ichimai itadakemasuka?"
+    },
     "is_there_atm": {
       "text": "この近くにATMはありますか？",
       "phonetic": "Kono chikaku ni ATM wa arimasu ka?"

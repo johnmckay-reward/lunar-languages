@@ -168,6 +168,22 @@
     }
   },
   "combinations": {
+    "another_beer": {
+      "text": "再来一杯啤酒",
+      "phonetic": "Zài lái yī bēi píjiǔ"
+    },
+    "another_wine": {
+      "text": "再来一杯红酒",
+      "phonetic": "Zài lái yī bēi hóngjiǔ"
+    },
+    "another_coffee": {
+      "text": "再来一杯咖啡",
+      "phonetic": "Zài lái yī bēi kāfēi"
+    },
+    "another_bill": {
+      "text": "可以再给我一张账单吗？",
+      "phonetic": "Kěyǐ zài gěi wǒ yī zhāng zhàngdān ma?"
+    },
     "love_coffee": {
       "translation": "我喜欢这咖啡",
       "phonetic": "Wǒ xǐhuān zhè kāfēi"

@@ -168,6 +168,22 @@
     }
   },
   "combinations": {
+    "another_beer": {
+      "text": "Une autre bière...",
+      "phonetic": "ewn oh-truh byehr..."
+    },
+    "another_wine": {
+      "text": "Un autre verre de vin...",
+      "phonetic": "uhn oh-truh vehr duh van..."
+    },
+    "another_coffee": {
+      "text": "Un autre café...",
+      "phonetic": "uhn oh-truh kah-feh..."
+    },
+    "another_bill": {
+      "text": "Puis-je avoir une autre copie de l'addition ?",
+      "phonetic": "pwee zhuh ah-vwar ewn oh-truh koh-pee duh lah-dee-syon"
+    },
     "is_there_atm": {
       "text": "Y a-t-il un distributeur automatique près d'ici ?",
       "phonetic": "ee ah-TEEL uhn dees-tree-bue-TUR oh-toh-mah-TEEK preh dee-SEE?"
@@ -555,6 +571,22 @@
     "call_hotel": {
       "text": "S'il vous plaît, appelez mon hôtel.",
       "phonetic": "sil vu ple a-pe-le mon o-tel"
+    },
+    "another_beer": {
+      "text": "Une autre bière, s'il vous plaît",
+      "phonetic": "ewn oh-truh byehr, seel voo pleh"
+    },
+    "another_wine": {
+      "text": "Un autre verre de vin, s'il vous plaît",
+      "phonetic": "uhn oh-truh vehr duh van, seel voo pleh"
+    },
+    "another_coffee": {
+      "text": "Un autre café, s'il vous plaît",
+      "phonetic": "uhn oh-truh kah-feh, seel voo pleh"
+    },
+    "another_bill": {
+      "text": "Puis-je avoir une autre copie de l'addition ?",
+      "phonetic": "pwee zhuh ah-vwar ewn oh-truh koh-pee duh lah-dee-syon?"
     }
   }
 }

@@ -149,7 +149,8 @@ export class DataService {
     { id: 'lost', type: 'starter', english: 'I lost...' },
     { id: 'is_there', type: 'starter', english: 'Is there...?' },
     { id: 'love', type: 'starter', english: 'I like...' },
-    { id: 'call', type: 'starter', english: 'Please call...' }
+    { id: 'call', type: 'starter', english: 'Please call...' },
+    { id: 'another', type: 'starter', english: 'Another... please' }
   ];
 
   // ============================================================
@@ -340,6 +341,12 @@ export class DataService {
     'call_doctor': { english: 'Please call a doctor.' },
     'call_police': { english: 'Please call the police.' },
     'call_hotel': { english: 'Please call my hotel.' },
+
+    // --- ANOTHER... ---
+    'another_beer': { english: 'Another beer, please!' },
+    'another_wine': { english: 'Another glass of wine, please.' },
+    'another_coffee': { english: 'Another coffee, please.' },
+    'another_bill': { english: 'Can I have another copy of the bill?' },
     // Add other allergies here if you add nouns for seafood, etc.
   };
 
