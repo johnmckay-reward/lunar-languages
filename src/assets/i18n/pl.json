@@ -165,6 +165,196 @@
           "meaning": "It contains... (Danger)"
         }
       ]
+    },
+    "need": {
+      "listenFor": [
+        {
+          "text": "",
+          "phonetic": "",
+          "meaning": "Right away"
+        },
+        {
+          "text": "",
+          "phonetic": "",
+          "meaning": "Let me check"
+        },
+        {
+          "text": "",
+          "phonetic": "",
+          "meaning": "We don't have that"
+        }
+      ]
+    },
+    "use": {
+      "listenFor": [
+        {
+          "text": "",
+          "phonetic": "",
+          "meaning": "Yes, go ahead"
+        },
+        {
+          "text": "",
+          "phonetic": "",
+          "meaning": "Sorry, it's private"
+        },
+        {
+          "text": "",
+          "phonetic": "",
+          "meaning": "For customers only"
+        }
+      ]
+    },
+    "lost": {
+      "listenFor": [
+        {
+          "text": "",
+          "phonetic": "",
+          "meaning": "Where did you lose it?"
+        },
+        {
+          "text": "",
+          "phonetic": "",
+          "meaning": "Let's check lost and found"
+        },
+        {
+          "text": "",
+          "phonetic": "",
+          "meaning": "Describe it please"
+        }
+      ]
+    },
+    "is_there": {
+      "listenFor": [
+        {
+          "text": "",
+          "phonetic": "",
+          "meaning": "Yes, nearby"
+        },
+        {
+          "text": "",
+          "phonetic": "",
+          "meaning": "No, not here"
+        },
+        {
+          "text": "",
+          "phonetic": "",
+          "meaning": "Turn left/right"
+        }
+      ]
+    },
+    "love": {
+      "listenFor": [
+        {
+          "text": "",
+          "phonetic": "",
+          "meaning": "I'm glad you like it"
+        },
+        {
+          "text": "",
+          "phonetic": "",
+          "meaning": "It's popular"
+        },
+        {
+          "text": "",
+          "phonetic": "",
+          "meaning": "Thank you"
+        }
+      ]
+    },
+    "call": {
+      "listenFor": [
+        {
+          "text": "",
+          "phonetic": "",
+          "meaning": "Calling now"
+        },
+        {
+          "text": "",
+          "phonetic": "",
+          "meaning": "What is the number?"
+        },
+        {
+          "text": "",
+          "phonetic": "",
+          "meaning": "One moment"
+        }
+      ]
+    },
+    "another": {
+      "listenFor": [
+        {
+          "text": "",
+          "phonetic": "",
+          "meaning": "Coming right up"
+        },
+        {
+          "text": "",
+          "phonetic": "",
+          "meaning": "Certainly"
+        },
+        {
+          "text": "",
+          "phonetic": "",
+          "meaning": "Anything else?"
+        }
+      ]
+    },
+    "share": {
+      "listenFor": [
+        {
+          "text": "",
+          "phonetic": "",
+          "meaning": "Okay"
+        },
+        {
+          "text": "",
+          "phonetic": "",
+          "meaning": "Good idea"
+        },
+        {
+          "text": "",
+          "phonetic": "",
+          "meaning": "I'll bring plates"
+        }
+      ]
+    },
+    "no": {
+      "listenFor": [
+        {
+          "text": "",
+          "phonetic": "",
+          "meaning": "Okay, removed"
+        },
+        {
+          "text": "",
+          "phonetic": "",
+          "meaning": "Understood"
+        },
+        {
+          "text": "",
+          "phonetic": "",
+          "meaning": "No problem"
+        }
+      ]
+    },
+    "is_free": {
+      "listenFor": [
+        {
+          "text": "",
+          "phonetic": "",
+          "meaning": "Yes, it's free"
+        },
+        {
+          "text": "",
+          "phonetic": "",
+          "meaning": "No, it costs..."
+        },
+        {
+          "text": "",
+          "phonetic": "",
+          "meaning": "Included"
+        }
+      ]
     }
   },
   "combinations": {
@@ -185,20 +375,20 @@
       "phonetic": "chy MO-ge PRO-shich o YESH-che YED-non KO-pye ra-KHUN-ku?"
     },
     "love_coffee": {
-      "translation": "Lubię tę kawę",
-      "phonetic": "LOO-byeh teh KAH-veh"
+      "phonetic": "Bar-dzo loo-bye tAe kA-weh",
+      "text": "Bardzo lubię tę kawę."
     },
     "love_wine": {
-      "translation": "Lubię to wino",
-      "phonetic": "LOO-byeh toh VEE-noh"
+      "phonetic": "LOO-byeh toh VEE-noh",
+      "text": "Lubię to wino"
     },
     "love_seafood": {
-      "translation": "Uwielbiam owoce morza",
-      "phonetic": "Oo-VYEL-byam oh-VOH-tseh MOR-zhah"
+      "phonetic": "Oo-VYEL-byam oh-VOH-tseh MOR-zhah",
+      "text": "Uwielbiam owoce morza"
     },
     "love_music": {
-      "translation": "Lubię tę muzykę",
-      "phonetic": "LOO-byeh teh moo-ZY-keh"
+      "phonetic": "LOO-byeh teh moo-ZY-keh",
+      "text": "Lubię tę muzykę"
     },
     "is_there_atm": {
       "text": "Czy jest tu w pobliżu bankomat?",

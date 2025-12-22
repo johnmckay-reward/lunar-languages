@@ -103,6 +103,251 @@
           "meaning": "Cheap"
         }
       ]
+    },
+    "like": {
+      "listenFor": [
+        {
+          "text": "Anything else?",
+          "phonetic": "",
+          "meaning": "Anything else?"
+        },
+        {
+          "text": "Cash or card?",
+          "phonetic": "",
+          "meaning": "Cash or card?"
+        },
+        {
+          "text": "One moment",
+          "phonetic": "",
+          "meaning": "One moment"
+        }
+      ]
+    },
+    "have": {
+      "listenFor": [
+        {
+          "text": "Yes, here you go",
+          "phonetic": "",
+          "meaning": "Yes, here you go"
+        },
+        {
+          "text": "Unfortunately no",
+          "phonetic": "",
+          "meaning": "Unfortunately no"
+        },
+        {
+          "text": "Sold out",
+          "phonetic": "",
+          "meaning": "Sold out"
+        }
+      ]
+    },
+    "allergic": {
+      "listenFor": [
+        {
+          "text": "No problem",
+          "phonetic": "",
+          "meaning": "No problem (Safe)"
+        },
+        {
+          "text": "Understood",
+          "phonetic": "",
+          "meaning": "All clear / Understood"
+        },
+        {
+          "text": "This contains...",
+          "phonetic": "",
+          "meaning": "This contains... (Danger)"
+        }
+      ]
+    },
+    "need": {
+      "listenFor": [
+        {
+          "text": "Right away",
+          "phonetic": "",
+          "meaning": "Right away"
+        },
+        {
+          "text": "Let me check",
+          "phonetic": "",
+          "meaning": "Let me check"
+        },
+        {
+          "text": "We don't have that",
+          "phonetic": "",
+          "meaning": "We don't have that"
+        }
+      ]
+    },
+    "use": {
+      "listenFor": [
+        {
+          "text": "Yes, go ahead",
+          "phonetic": "",
+          "meaning": "Yes, go ahead"
+        },
+        {
+          "text": "Sorry, it's private",
+          "phonetic": "",
+          "meaning": "Sorry, it's private"
+        },
+        {
+          "text": "For customers only",
+          "phonetic": "",
+          "meaning": "For customers only"
+        }
+      ]
+    },
+    "lost": {
+      "listenFor": [
+        {
+          "text": "Where did you lose it?",
+          "phonetic": "",
+          "meaning": "Where did you lose it?"
+        },
+        {
+          "text": "Let's check lost and found",
+          "phonetic": "",
+          "meaning": "Let's check lost and found"
+        },
+        {
+          "text": "Describe it please",
+          "phonetic": "",
+          "meaning": "Describe it please"
+        }
+      ]
+    },
+    "is_there": {
+      "listenFor": [
+        {
+          "text": "Yes, nearby",
+          "phonetic": "",
+          "meaning": "Yes, nearby"
+        },
+        {
+          "text": "No, not here",
+          "phonetic": "",
+          "meaning": "No, not here"
+        },
+        {
+          "text": "Turn left/right",
+          "phonetic": "",
+          "meaning": "Turn left/right"
+        }
+      ]
+    },
+    "love": {
+      "listenFor": [
+        {
+          "text": "I'm glad you like it",
+          "phonetic": "",
+          "meaning": "I'm glad you like it"
+        },
+        {
+          "text": "It's popular",
+          "phonetic": "",
+          "meaning": "It's popular"
+        },
+        {
+          "text": "Thank you",
+          "phonetic": "",
+          "meaning": "Thank you"
+        }
+      ]
+    },
+    "call": {
+      "listenFor": [
+        {
+          "text": "Calling now",
+          "phonetic": "",
+          "meaning": "Calling now"
+        },
+        {
+          "text": "What is the number?",
+          "phonetic": "",
+          "meaning": "What is the number?"
+        },
+        {
+          "text": "One moment",
+          "phonetic": "",
+          "meaning": "One moment"
+        }
+      ]
+    },
+    "another": {
+      "listenFor": [
+        {
+          "text": "Coming right up",
+          "phonetic": "",
+          "meaning": "Coming right up"
+        },
+        {
+          "text": "Certainly",
+          "phonetic": "",
+          "meaning": "Certainly"
+        },
+        {
+          "text": "Anything else?",
+          "phonetic": "",
+          "meaning": "Anything else?"
+        }
+      ]
+    },
+    "share": {
+      "listenFor": [
+        {
+          "text": "Okay",
+          "phonetic": "",
+          "meaning": "Okay"
+        },
+        {
+          "text": "Good idea",
+          "phonetic": "",
+          "meaning": "Good idea" },
+        {
+          "text": "I'll bring plates",
+          "phonetic": "",
+          "meaning": "I'll bring plates"
+        }
+      ]
+    },
+    "no": {
+      "listenFor": [
+        {
+          "text": "Okay, removed",
+          "phonetic": "",
+          "meaning": "Okay, removed"
+        },
+        {
+          "text": "Understood",
+          "phonetic": "",
+          "meaning": "Understood"
+        },
+        {
+          "text": "No problem",
+          "phonetic": "",
+          "meaning": "No problem"
+        }
+      ]
+    },
+    "is_free": {
+      "listenFor": [
+        {
+          "text": "Yes, it's free",
+          "phonetic": "",
+          "meaning": "Yes, it's free"
+        },
+        {
+          "text": "No, it costs...",
+          "phonetic": "",
+          "meaning": "No, it costs..." },
+        {
+          "text": "Included",
+          "phonetic": "",
+          "meaning": "Included"
+        }
+      ]
     }
   },
   "combinations": {
