@@ -71,4 +71,6 @@ Thumbs.db
 
 # Environment Variables
 .env
+lunar-key
+*.jks
 
