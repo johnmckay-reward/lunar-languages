@@ -168,6 +168,38 @@
     }
   },
   "combinations": {
+    "lost_ticket": {
+      "text": "J'ai perdu mon billet.",
+      "phonetic": ""
+    },
+    "lost_key": {
+      "text": "J'ai perdu ma clé.",
+      "phonetic": ""
+    },
+    "lost_phone": {
+      "text": "J'ai perdu mon téléphone.",
+      "phonetic": ""
+    },
+    "lost_wallet": {
+      "text": "J'ai perdu mon portefeuille.",
+      "phonetic": ""
+    },
+    "lost_passport": {
+      "text": "J'ai perdu mon passeport.",
+      "phonetic": ""
+    },
+    "lost_bag": {
+      "text": "J'ai perdu mon sac.",
+      "phonetic": ""
+    },
+    "lost_map": {
+      "text": "J'ai perdu ma carte.",
+      "phonetic": ""
+    },
+    "lost_receipt": {
+      "text": "J'ai perdu mon reçu.",
+      "phonetic": ""
+    },
     "where_station": {
       "text": "Où est la gare ?",
       "phonetic": "oo eh lah gar?"

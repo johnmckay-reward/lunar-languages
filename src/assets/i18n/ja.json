@@ -168,6 +168,38 @@
     }
   },
   "combinations": {
+    "lost_ticket": {
+      "text": "チケットをなくしました。",
+      "phonetic": "Chiketto o nakushimashita."
+    },
+    "lost_key": {
+      "text": "鍵をなくしました。",
+      "phonetic": "Kagi o nakushimashita."
+    },
+    "lost_phone": {
+      "text": "電話をなくしました。",
+      "phonetic": "Denwa o nakushimashita."
+    },
+    "lost_wallet": {
+      "text": "財布をなくしました。",
+      "phonetic": "Saifu o nakushimashita."
+    },
+    "lost_passport": {
+      "text": "パスポートをなくしました。",
+      "phonetic": "Pasupōto o nakushimashita."
+    },
+    "lost_bag": {
+      "text": "鞄をなくしました。",
+      "phonetic": "Kaban o nakushimashita."
+    },
+    "lost_map": {
+      "text": "地図をなくしました。",
+      "phonetic": "Chizu o nakushimashita."
+    },
+    "lost_receipt": {
+      "text": "領収書を紛失しました。",
+      "phonetic": "りょうしゅうしょをふんしつしました。"
+    },
     "where_station": {
       "text": "駅はどこですか？",
       "phonetic": "Eh-key wa doh-koh dess kah?"

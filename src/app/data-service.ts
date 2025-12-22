@@ -145,7 +145,8 @@ export class DataService {
     { id: 'cost', type: 'starter', english: 'How much is...?' },
     { id: 'allergic', type: 'starter', english: 'I am allergic to...' },
     { id: 'need', type: 'starter', english: 'I need...' },
-    { id: 'use', type: 'starter', english: 'Can I use...?' }
+    { id: 'use', type: 'starter', english: 'Can I use...?' },
+    { id: 'lost', type: 'starter', english: 'I lost...' }
   ];
 
   // ============================================================
@@ -188,6 +189,9 @@ export class DataService {
     { id: 'beach', type: 'noun', category: 'Leisure', english: 'The Beach' },
     { id: 'supermarket', type: 'noun', category: 'Shopping', english: 'The Supermarket' },
     { id: 'map', type: 'noun', category: 'Leisure', english: 'A Map' },
+    { id: 'wallet', type: 'noun', category: 'Shopping', english: 'Wallet' },
+    { id: 'bag', type: 'noun', category: 'Transport', english: 'Bag' },
+    { id: 'passport', type: 'noun', category: 'Transport', english: 'Passport' },
     { id: 'receipt', type: 'noun', category: 'Shopping', english: 'The Receipt' },
 
     // New General Nouns
@@ -289,6 +293,7 @@ export class DataService {
     'need_map': { english: 'I need a map.' },
     'need_receipt': { english: 'I need a receipt.' },
     'need_water': { english: 'I need water.' },
+    'need_key': { english: 'I need the key.' },
 
     // --- CAN I USE...? ---
     'use_wifi': { english: 'Can I use the WiFi?' },
@@ -301,7 +306,16 @@ export class DataService {
     'use_menu': { english: 'Can I use the menu?' },
     'use_bathroom': { english: 'Can I use the bathroom?' },
     'use_phone': { english: 'Can I use your phone?' },
-    'need_key': { english: 'I need the key.' },
+
+    // --- I LOST... ---
+    'lost_ticket': { english: 'I lost my ticket.' },
+    'lost_key': { english: 'I lost my key.' },
+    'lost_phone': { english: 'I lost my phone.' },
+    'lost_wallet': { english: 'I lost my wallet.' },
+    'lost_passport': { english: 'I lost my passport.' },
+    'lost_bag': { english: 'I lost my bag.' },
+    'lost_map': { english: 'I lost my map.' },
+    'lost_receipt': { english: 'I lost my receipt.' },
     // Add other allergies here if you add nouns for seafood, etc.
   };
 

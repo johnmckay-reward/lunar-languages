@@ -106,6 +106,38 @@
     }
   },
   "combinations": {
+    "lost_ticket": {
+      "text": "I lost my ticket.",
+      "phonetic": ""
+    },
+    "lost_key": {
+      "text": "I lost my key.",
+      "phonetic": ""
+    },
+    "lost_phone": {
+      "text": "I lost my phone.",
+      "phonetic": ""
+    },
+    "lost_wallet": {
+      "text": "I lost my wallet.",
+      "phonetic": ""
+    },
+    "lost_passport": {
+      "text": "I lost my passport.",
+      "phonetic": ""
+    },
+    "lost_bag": {
+      "text": "I lost my bag.",
+      "phonetic": ""
+    },
+    "lost_map": {
+      "text": "I lost my map.",
+      "phonetic": ""
+    },
+    "lost_receipt": {
+      "text": "I lost my receipt.",
+      "phonetic": ""
+    },
     "where_station": {
       "text": "Where is the train station?",
       "phonetic": ""

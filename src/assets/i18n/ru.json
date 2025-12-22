@@ -168,6 +168,38 @@
     }
   },
   "combinations": {
+    "lost_ticket": {
+      "text": "Я потерял билет.",
+      "phonetic": "Ya poteryal bilet."
+    },
+    "lost_key": {
+      "text": "Я потерял ключ.",
+      "phonetic": "Ya poteryal klyuch."
+    },
+    "lost_phone": {
+      "text": "Я потерял телефон.",
+      "phonetic": "Ya poteryal telefon."
+    },
+    "lost_wallet": {
+      "text": "Я потерял кошелек.",
+      "phonetic": "Ya poteryal koshelek."
+    },
+    "lost_passport": {
+      "text": "Я потерял паспорт.",
+      "phonetic": "Ya poteryal pasport."
+    },
+    "lost_bag": {
+      "text": "Я потерял сумку.",
+      "phonetic": "Ya poteryal sumku."
+    },
+    "lost_map": {
+      "text": "Я потерял карту.",
+      "phonetic": "Ya poteryal kartu."
+    },
+    "lost_receipt": {
+      "text": "Я потерял чек.",
+      "phonetic": "Ya poteryal chek."
+    },
     "where_station": {
       "text": "Где вокзал?",
       "phonetic": "Gdyeh vahk-ZAHL?"

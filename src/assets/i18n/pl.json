@@ -168,6 +168,38 @@
     }
   },
   "combinations": {
+    "lost_ticket": {
+      "text": "Zgubiłem bilet.",
+      "phonetic": ""
+    },
+    "lost_key": {
+      "text": "Zgubiłem klucz.",
+      "phonetic": ""
+    },
+    "lost_phone": {
+      "text": "Zgubiłem telefon.",
+      "phonetic": ""
+    },
+    "lost_wallet": {
+      "text": "Zgubiłem portfel.",
+      "phonetic": ""
+    },
+    "lost_passport": {
+      "text": "Zgubiłem paszport.",
+      "phonetic": ""
+    },
+    "lost_bag": {
+      "text": "Zgubiłem torbę.",
+      "phonetic": ""
+    },
+    "lost_map": {
+      "text": "Zgubiłem mapę.",
+      "phonetic": ""
+    },
+    "lost_receipt": {
+      "text": "Zgubiłem paragon.",
+      "phonetic": ""
+    },
     "where_station": {
       "text": "Gdzie jest dworzec kolejowy?",
       "phonetic": "Gdjeh yest DVOH-zhets koh-leh-YOH-vy?"

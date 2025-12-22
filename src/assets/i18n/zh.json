@@ -168,6 +168,38 @@
     }
   },
   "combinations": {
+    "lost_ticket": {
+      "text": "我丢了票。",
+      "phonetic": "Wǒ diūle piào."
+    },
+    "lost_key": {
+      "text": "我丢了钥匙。",
+      "phonetic": "Wǒ diūle yàoshi."
+    },
+    "lost_phone": {
+      "text": "我的手机丢了。",
+      "phonetic": "wǒ de shǒu jī diū le"
+    },
+    "lost_wallet": {
+      "text": "我丢了钱包。",
+      "phonetic": "Wǒ diūle qiánbāo."
+    },
+    "lost_passport": {
+      "text": "我丢了护照。",
+      "phonetic": "Wǒ diūle hùzhào."
+    },
+    "lost_bag": {
+      "text": "我丢了包。",
+      "phonetic": "Wǒ diūle bāo."
+    },
+    "lost_map": {
+      "text": "我丢了地图。",
+      "phonetic": "Wǒ diūle dìtú."
+    },
+    "lost_receipt": {
+      "text": "我丢了收据。",
+      "phonetic": "Wǒ diūle shōujù."
+    },
     "where_station": {
       "text": "请问火车站位置在哪儿？",
       "phonetic": "Qǐng wèn huǒ chē zhàn wèi zhì zài nǎr?"
@@ -405,8 +437,8 @@
       "phonetic": "Wǒ xūyào yī liàng chūzū chē"
     },
     "need_doctor": {
-      "text": "我需要医生。",
-      "phonetic": "Wǒ xūyào yīshēng"
+      "text": "我急需一位医生。",
+      "phonetic": "wǒ jí xū yī wèi yīshēng"
     },
     "need_pharmacy": {
       "text": "我需要药店。",

@@ -168,6 +168,38 @@
     }
   },
   "combinations": {
+    "lost_ticket": {
+      "text": "Ich habe mein Ticket verloren.",
+      "phonetic": ""
+    },
+    "lost_key": {
+      "text": "Ich habe meinen Schlüssel verloren.",
+      "phonetic": ""
+    },
+    "lost_phone": {
+      "text": "Ich habe mein Handy verloren.",
+      "phonetic": ""
+    },
+    "lost_wallet": {
+      "text": "Ich habe meine Brieftasche verloren.",
+      "phonetic": ""
+    },
+    "lost_passport": {
+      "text": "Ich habe meinen Reisepass verloren.",
+      "phonetic": ""
+    },
+    "lost_bag": {
+      "text": "Ich habe meine Tasche verloren.",
+      "phonetic": ""
+    },
+    "lost_map": {
+      "text": "Ich habe meine Karte verloren.",
+      "phonetic": ""
+    },
+    "lost_receipt": {
+      "text": "Ich habe meine Quittung verloren.",
+      "phonetic": ""
+    },
     "where_station": {
       "text": "Wo ist der Bahnhof?",
       "phonetic": "voh ist dair BAHN-hof?"
