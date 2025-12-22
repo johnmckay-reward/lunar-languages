@@ -182,7 +182,7 @@
     },
     "another_bill": {
       "text": "¿Me puede dar otra copia de la cuenta?",
-      "phonetic": "meh PWEH-deh dar OH-trah KOH-pyah deh lah KWEHN-tah"
+      "phonetic": "meh PWEH-deh dar OH-trah KOH-pyah deh lah KWEHN-tah?"
     },
     "is_there_atm": {
       "text": "¿Hay un cajero automático cerca de aquí?",
@@ -572,21 +572,21 @@
       "text": "Por favor, llame a mi hotel.",
       "phonetic": "por fa-vor ya-me a mi o-tel"
     },
-    "another_beer": {
-      "text": "Otra cerveza, por favor",
-      "phonetic": "OH-trah sehr-VEH-sah, por fah-VOR"
+    "share_taxi": {
+      "text": "¿Compartimos un taxi?",
+      "phonetic": "kom-par-TEE-mos oon TAK-see?"
     },
-    "another_wine": {
-      "text": "Otra copa de vino, por favor",
-      "phonetic": "OH-trah KOH-pah deh VEE-noh, por fah-VOR"
+    "share_wine": {
+      "text": "¿Compartimos una botella de vino?",
+      "phonetic": "kom-par-TEE-mos OO-nah bo-TEH-yah deh VEE-noh?"
     },
-    "another_coffee": {
-      "text": "Otro café, por favor",
-      "phonetic": "OH-troh kah-FEH, por fah-VOR"
+    "share_bill": {
+      "text": "Dividamos la cuenta.",
+      "phonetic": "dee-vee-DAH-mos lah KWEN-tah."
     },
-    "another_bill": {
-      "text": "¿Me puede dar otra copia de la cuenta?",
-      "phonetic": "meh PWEH-deh dar OH-trah KOH-pyah deh lah KWEHN-tah?"
+    "share_seafood": {
+      "text": "¿Compartimos la mariscada?",
+      "phonetic": "kom-par-TEE-mos lah mah-rees-KAH-dah?"
     }
   }
 }

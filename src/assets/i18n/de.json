@@ -169,20 +169,20 @@
   },
   "combinations": {
     "another_beer": {
-      "text": "Noch ein Bier...",
-      "phonetic": "nokh ayn beer..."
+      "text": "Noch ein Bier, bitte",
+      "phonetic": "nokh ayn beer, bi-te"
     },
     "another_wine": {
-      "text": "Noch ein Glas Wein...",
-      "phonetic": "nokh ayn glahs vayn..."
+      "text": "Noch ein Glas Wein, bitte",
+      "phonetic": "nokh ayn glahs vine, bi-te"
     },
     "another_coffee": {
-      "text": "Noch einen Kaffee...",
-      "phonetic": "nokh ay-nen kah-feh..."
+      "text": "Noch einen Kaffee, bitte",
+      "phonetic": "nokh ay-nen kah-feh, bi-te"
     },
     "another_bill": {
       "text": "Kann ich noch eine Kopie der Rechnung haben?",
-      "phonetic": "kahn ikh nokh ay-nuh koh-pee dehr rekh-noong hah-ben"
+      "phonetic": "kan ikh nokh ay-ne ko-pee der rekh-nung ha-ben?"
     },
     "is_there_atm": {
       "text": "Gibt es hier in der Nähe einen Geldautomaten?",
@@ -572,21 +572,21 @@
       "text": "Bitte rufen Sie mein Hotel an.",
       "phonetic": "bi-te ru-fen zi main ho-tel an"
     },
-    "another_beer": {
-      "text": "Noch ein Bier, bitte",
-      "phonetic": "nokh ayn beer, bi-te"
+    "share_taxi": {
+      "text": "Wollen wir uns ein Taxi teilen?",
+      "phonetic": "VOL-en veer oons ayn TAK-see TY-len?"
     },
-    "another_wine": {
-      "text": "Noch ein Glas Wein, bitte",
-      "phonetic": "nokh ayn glahs vine, bi-te"
+    "share_wine": {
+      "text": "Wollen wir uns eine Flasche Wein teilen?",
+      "phonetic": "VOL-en veer oons AY-neh FLAS-sheh vayn TY-len?"
     },
-    "another_coffee": {
-      "text": "Noch einen Kaffee, bitte",
-      "phonetic": "nokh ay-nen kah-feh, bi-te"
+    "share_bill": {
+      "text": "Lass uns die Rechnung teilen.",
+      "phonetic": "las oons dee RECH-noong TY-len."
     },
-    "another_bill": {
-      "text": "Kann ich noch eine Kopie der Rechnung haben?",
-      "phonetic": "kan ikh nokh ay-ne ko-pee der rekh-nung ha-ben?"
+    "share_seafood": {
+      "text": "Wollen wir uns die Meeresfrüchteplatte teilen?",
+      "phonetic": "VOL-en veer oons dee MEH-res-fruech-te-pla-te TY-len?"
     }
   }
 }

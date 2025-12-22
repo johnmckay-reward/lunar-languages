@@ -150,7 +150,8 @@ export class DataService {
     { id: 'is_there', type: 'starter', english: 'Is there...?' },
     { id: 'love', type: 'starter', english: 'I like...' },
     { id: 'call', type: 'starter', english: 'Please call...' },
-    { id: 'another', type: 'starter', english: 'Another... please' }
+    { id: 'another', type: 'starter', english: 'Another... please' },
+    { id: 'share', type: 'starter', english: 'Let\'s share...' }
   ];
 
   // ============================================================
@@ -347,6 +348,12 @@ export class DataService {
     'another_wine': { english: 'Another glass of wine, please.' },
     'another_coffee': { english: 'Another coffee, please.' },
     'another_bill': { english: 'Can I have another copy of the bill?' },
+
+    // --- LET'S SHARE... ---
+    'share_taxi': { english: 'Shall we share a taxi?' },
+    'share_wine': { english: 'Shall we share a bottle of wine?' },
+    'share_bill': { english: 'Let\'s split the bill.' },
+    'share_seafood': { english: 'Shall we share the seafood platter?' },
     // Add other allergies here if you add nouns for seafood, etc.
   };
 

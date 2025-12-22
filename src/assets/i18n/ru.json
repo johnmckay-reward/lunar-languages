@@ -571,6 +571,22 @@
     "call_hotel": {
       "text": "Пожалуйста, позвоните в мой отель.",
       "phonetic": "pazhaluysta pozvonite v moy otel"
+    },
+    "share_taxi": {
+      "text": "Давайте возьмем такси вместе?",
+      "phonetic": "Da-VAY-te voz-MEM tak-SI VMES-te?"
+    },
+    "share_wine": {
+      "text": "Давайте возьмем бутылку вина на двоих?",
+      "phonetic": "Da-VAY-te voz-MEM bu-TYL-ku vi-NA na dvo-IKH?"
+    },
+    "share_bill": {
+      "text": "Давайте разделим счет.",
+      "phonetic": "Da-VAY-te raz-DE-lim shchet."
+    },
+    "share_seafood": {
+      "text": "Давайте возьмем тарелку морепродуктов на двоих?",
+      "phonetic": "Da-VAY-te voz-MEM ta-REL-ku mo-re-pro-DUK-tov na dvo-IKH?"
     }
   }
 }

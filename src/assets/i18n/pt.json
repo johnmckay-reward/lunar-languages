@@ -571,6 +571,22 @@
     "call_hotel": {
       "text": "Por favor, ligue para o meu hotel.",
       "phonetic": "por fa-vor li-gi pa-ra u meu o-tel"
+    },
+    "share_taxi": {
+      "text": "Vamos dividir um táxi?",
+      "phonetic": "VAH-moosh dee-vee-DEER oom TAH-ksee?"
+    },
+    "share_wine": {
+      "text": "Vamos dividir uma garrafa de vinho?",
+      "phonetic": "VAH-moosh dee-vee-DEER OO-mah gah-HAH-fah deh VEEN-yoh?"
+    },
+    "share_bill": {
+      "text": "Vamos dividir a conta.",
+      "phonetic": "VAH-moosh dee-vee-DEER ah KON-tah."
+    },
+    "share_seafood": {
+      "text": "Vamos dividir o prato de frutos do mar?",
+      "phonetic": "VAH-moosh dee-vee-DEER oo PRAH-too deh FROO-toosh doo mar?"
     }
   }
 }

@@ -571,6 +571,22 @@
     "call_hotel": {
       "text": "私のホテルに電話してください。",
       "phonetic": "watashi no hoteru ni denwa shite kudasai"
+    },
+    "share_taxi": {
+      "text": "タクシーを相乗りしませんか？",
+      "phonetic": "Takushī o ainori shimasen ka?"
+    },
+    "share_wine": {
+      "text": "ワインのボトルをシェアしませんか？",
+      "phonetic": "Wain no botoru o shea shimasen ka?"
+    },
+    "share_bill": {
+      "text": "割り勘にしましょう。",
+      "phonetic": "Warikan ni shimashō."
+    },
+    "share_seafood": {
+      "text": "シーフードの盛り合わせをシェアしませんか？",
+      "phonetic": "Shīfūdo no moriawase o shea shimasen ka?"
     }
   }
 }

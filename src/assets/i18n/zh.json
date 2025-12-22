@@ -571,6 +571,22 @@
     "call_hotel": {
       "text": "请给我的酒店打电话。",
       "phonetic": "qǐng gěi wǒ de jiǔ diàn dǎ diàn huà"
+    },
+    "share_taxi": {
+      "text": "我们一起搭计程车好吗？",
+      "phonetic": "wǒ men yì qǐ dā jì chéng chē hǎo ma？"
+    },
+    "share_wine": {
+      "text": "我们要共享一瓶酒吗？",
+      "phonetic": "Wǒmen yào gòngxiǎng yī píng jiǔ ma?"
+    },
+    "share_bill": {
+      "text": "我们分摊账单吧。",
+      "phonetic": "Wǒmen fēntān zhàngdān ba."
+    },
+    "share_seafood": {
+      "text": "我们要共享海鲜拼盘吗？",
+      "phonetic": "Wǒmen yào gòngxiǎng hǎixiān pīnpán ma?"
     }
   }
 }

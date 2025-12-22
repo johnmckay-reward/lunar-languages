@@ -571,6 +571,22 @@
     "call_hotel": {
       "text": "Per favore, chiami il mio hotel.",
       "phonetic": "per fa-vo-re kya-mi il mio o-tel"
+    },
+    "share_taxi": {
+      "text": "Dividiamo un taxi?",
+      "phonetic": "dee-vee-DYAH-moh oon TAK-see?"
+    },
+    "share_wine": {
+      "text": "Dividiamo una bottiglia di vino?",
+      "phonetic": "dee-vee-DYAH-moh OO-nah bot-TEEL-yah dee VEE-noh?"
+    },
+    "share_bill": {
+      "text": "Dividiamo il conto.",
+      "phonetic": "dee-vee-DYAH-moh eel KON-toh."
+    },
+    "share_seafood": {
+      "text": "Dividiamo il piatto di frutti di mare?",
+      "phonetic": "dee-vee-DYAH-moh eel PYAT-toh dee FROOT-tee dee MAH-reh?"
     }
   }
 }

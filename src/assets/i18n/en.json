@@ -509,6 +509,22 @@
     "call_hotel": {
       "text": "Please call my hotel.",
       "phonetic": ""
+    },
+    "share_taxi": {
+      "text": "Shall we share a taxi?",
+      "phonetic": ""
+    },
+    "share_wine": {
+      "text": "Shall we share a bottle of wine?",
+      "phonetic": ""
+    },
+    "share_bill": {
+      "text": "Let's split the bill.",
+      "phonetic": ""
+    },
+    "share_seafood": {
+      "text": "Shall we share the seafood platter?",
+      "phonetic": ""
     }
   }
 }

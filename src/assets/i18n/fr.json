@@ -169,20 +169,20 @@
   },
   "combinations": {
     "another_beer": {
-      "text": "Une autre bière...",
-      "phonetic": "ewn oh-truh byehr..."
+      "text": "Une autre bière, s'il vous plaît",
+      "phonetic": "ewn oh-truh byehr, seel voo pleh"
     },
     "another_wine": {
-      "text": "Un autre verre de vin...",
-      "phonetic": "uhn oh-truh vehr duh van..."
+      "text": "Un autre verre de vin, s'il vous plaît",
+      "phonetic": "uhn oh-truh vehr duh van, seel voo pleh"
     },
     "another_coffee": {
-      "text": "Un autre café...",
-      "phonetic": "uhn oh-truh kah-feh..."
+      "text": "Un autre café, s'il vous plaît",
+      "phonetic": "uhn oh-truh kah-feh, seel voo pleh"
     },
     "another_bill": {
       "text": "Puis-je avoir une autre copie de l'addition ?",
-      "phonetic": "pwee zhuh ah-vwar ewn oh-truh koh-pee duh lah-dee-syon"
+      "phonetic": "pwee zhuh ah-vwar ewn oh-truh koh-pee duh lah-dee-syon?"
     },
     "is_there_atm": {
       "text": "Y a-t-il un distributeur automatique près d'ici ?",
@@ -572,21 +572,21 @@
       "text": "S'il vous plaît, appelez mon hôtel.",
       "phonetic": "sil vu ple a-pe-le mon o-tel"
     },
-    "another_beer": {
-      "text": "Une autre bière, s'il vous plaît",
-      "phonetic": "ewn oh-truh byehr, seel voo pleh"
+    "share_taxi": {
+      "text": "On partage un taxi ?",
+      "phonetic": "on par-TAZH un tak-SEE ?"
     },
-    "another_wine": {
-      "text": "Un autre verre de vin, s'il vous plaît",
-      "phonetic": "uhn oh-truh vehr duh van, seel voo pleh"
+    "share_wine": {
+      "text": "On partage une bouteille de vin ?",
+      "phonetic": "on par-TAZH oon boo-TAY deh van ?"
     },
-    "another_coffee": {
-      "text": "Un autre café, s'il vous plaît",
-      "phonetic": "uhn oh-truh kah-feh, seel voo pleh"
+    "share_bill": {
+      "text": "On partage l'addition.",
+      "phonetic": "on par-TAZH la-dee-SYON."
     },
-    "another_bill": {
-      "text": "Puis-je avoir une autre copie de l'addition ?",
-      "phonetic": "pwee zhuh ah-vwar ewn oh-truh koh-pee duh lah-dee-syon?"
+    "share_seafood": {
+      "text": "On partage le plateau de fruits de mer ?",
+      "phonetic": "on par-TAZH luh pla-TOH duh frwee duh mehr ?"
     }
   }
 }
