@@ -395,6 +395,46 @@
     "allergic_soy": {
       "text": "Mam alergię na soję.",
       "phonetic": "Mam a-ler-gyeh na so-yeh"
+    },
+    "need_ticket": {
+      "text": "Potrzebuję biletu.",
+      "phonetic": "Po-tshe-bu-ye bi-le-tu"
+    },
+    "need_taxi": {
+      "text": "Potrzebuję taksówki.",
+      "phonetic": "Po-tshe-bu-ye tak-suv-ki"
+    },
+    "need_doctor": {
+      "text": "Potrzebuję lekarza.",
+      "phonetic": "Po-tshe-bu-ye le-ka-zha"
+    },
+    "need_pharmacy": {
+      "text": "Potrzebuję apteki.",
+      "phonetic": "Po-tshe-bu-ye ap-te-ki"
+    },
+    "need_hospital": {
+      "text": "Potrzebuję szpitala.",
+      "phonetic": "Po-tshe-bu-ye shpi-ta-la"
+    },
+    "need_charger": {
+      "text": "Potrzebuję ładowarki.",
+      "phonetic": "Po-tshe-bu-ye wa-do-var-ki"
+    },
+    "need_map": {
+      "text": "Potrzebuję mapy.",
+      "phonetic": "Po-tshe-bu-ye ma-py"
+    },
+    "need_receipt": {
+      "text": "Potrzebuję paragonu.",
+      "phonetic": "Po-tshe-bu-ye pa-ra-go-nu"
+    },
+    "need_water": {
+      "text": "Potrzebuję wody.",
+      "phonetic": "Po-tshe-bu-ye vo-dy"
+    },
+    "need_key": {
+      "text": "Potrzebuję klucza.",
+      "phonetic": "Po-tshe-bu-ye klu-cha"
     }
   }
 }

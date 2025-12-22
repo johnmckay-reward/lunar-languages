@@ -395,6 +395,46 @@
     "allergic_soy": {
       "text": "Ich bin allergisch gegen Soja.",
       "phonetic": "Ikh bin ah-ler-gish gay-gen zoy-ah"
+    },
+    "need_ticket": {
+      "text": "Ich brauche ein Ticket.",
+      "phonetic": "Ikh brow-khe ayn ti-ket"
+    },
+    "need_taxi": {
+      "text": "Ich brauche ein Taxi.",
+      "phonetic": "Ikh brow-khe ayn tak-see"
+    },
+    "need_doctor": {
+      "text": "Ich brauche einen Arzt.",
+      "phonetic": "Ikh brow-khe ay-nen artst"
+    },
+    "need_pharmacy": {
+      "text": "Ich brauche eine Apotheke.",
+      "phonetic": "Ikh brow-khe ay-ne a-po-te-ke"
+    },
+    "need_hospital": {
+      "text": "Ich brauche ein Krankenhaus.",
+      "phonetic": "Ikh brow-khe ayn krank-en-hows"
+    },
+    "need_charger": {
+      "text": "Ich brauche ein Ladegerät.",
+      "phonetic": "Ikh brow-khe ayn la-de-ge-rayt"
+    },
+    "need_map": {
+      "text": "Ich brauche eine Karte.",
+      "phonetic": "Ikh brow-khe ay-ne kar-te"
+    },
+    "need_receipt": {
+      "text": "Ich brauche eine Quittung.",
+      "phonetic": "Ikh brow-khe ay-ne kvi-tung"
+    },
+    "need_water": {
+      "text": "Ich brauche Wasser.",
+      "phonetic": "Ikh brow-khe vas-ser"
+    },
+    "need_key": {
+      "text": "Ich brauche den Schlüssel.",
+      "phonetic": "Ikh brow-khe den shlus-sel"
     }
   }
 }

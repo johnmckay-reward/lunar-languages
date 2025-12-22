@@ -395,6 +395,46 @@
     "allergic_soy": {
       "text": "У мене алергія на сою.",
       "phonetic": "U mene alerhiya na soyu."
+    },
+    "need_ticket": {
+      "text": "Мені потрібен квиток.",
+      "phonetic": "Meni potriben kvytok"
+    },
+    "need_taxi": {
+      "text": "Мені потрібне таксі.",
+      "phonetic": "Meni potribne taksi"
+    },
+    "need_doctor": {
+      "text": "Мені потрібен лікар.",
+      "phonetic": "Meni potriben likar"
+    },
+    "need_pharmacy": {
+      "text": "Мені потрібна аптека.",
+      "phonetic": "Meni potribna apteka"
+    },
+    "need_hospital": {
+      "text": "Мені потрібна лікарня.",
+      "phonetic": "Meni potribna likarnya"
+    },
+    "need_charger": {
+      "text": "Мені потрібна зарядка.",
+      "phonetic": "Meni potribna zaryadka"
+    },
+    "need_map": {
+      "text": "Мені потрібна карта.",
+      "phonetic": "Meni potribna karta"
+    },
+    "need_receipt": {
+      "text": "Мені потрібен чек.",
+      "phonetic": "Meni potriben chek"
+    },
+    "need_water": {
+      "text": "Мені потрібна вода.",
+      "phonetic": "Meni potribna voda"
+    },
+    "need_key": {
+      "text": "Мені потрібен ключ.",
+      "phonetic": "Meni potriben klyuch"
     }
   }
 }

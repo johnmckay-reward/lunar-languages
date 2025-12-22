@@ -395,6 +395,46 @@
     "allergic_soy": {
       "text": "Je suis allergique au soja.",
       "phonetic": "Zhuh swee zah-lair-zheek oh so-zhah"
+    },
+    "need_ticket": {
+      "text": "J'ai besoin d'un billet.",
+      "phonetic": "Jay buh-zwan dun bee-yay"
+    },
+    "need_taxi": {
+      "text": "J'ai besoin d'un taxi.",
+      "phonetic": "Jay buh-zwan dun tak-see"
+    },
+    "need_doctor": {
+      "text": "J'ai besoin d'un docteur.",
+      "phonetic": "J'ai bu-zoin d'un dok-teur."
+    },
+    "need_pharmacy": {
+      "text": "J'ai besoin d'une pharmacie.",
+      "phonetic": "Jay buh-zwan dune far-ma-see"
+    },
+    "need_hospital": {
+      "text": "J'ai besoin d'un hôpital.",
+      "phonetic": "Jay buh-zwan dun o-pee-tal"
+    },
+    "need_charger": {
+      "text": "J'ai besoin d'un chargeur.",
+      "phonetic": "Jay buh-zwan dun shar-jur"
+    },
+    "need_map": {
+      "text": "J'ai besoin d'une carte.",
+      "phonetic": "Jay buh-zwan dune cart"
+    },
+    "need_receipt": {
+      "text": "J'ai besoin d'un reçu.",
+      "phonetic": "Jay buh-zwan dun ruh-su"
+    },
+    "need_water": {
+      "text": "J'ai besoin d'eau.",
+      "phonetic": "Jay buh-zwan do"
+    },
+    "need_key": {
+      "text": "J'ai besoin de la clé.",
+      "phonetic": "Jay buh-zwan duh la clay"
     }
   }
 }

@@ -395,6 +395,46 @@
     "allergic_soy": {
       "text": "Soy alérgico a la soja.",
       "phonetic": "Soy ah-lehr-hee-koh ah lah soh-hah"
+    },
+    "need_ticket": {
+      "text": "Necesito un billete.",
+      "phonetic": "Ne-ce-si-to un bi-lle-te"
+    },
+    "need_taxi": {
+      "text": "Necesito un taxi.",
+      "phonetic": "Ne-ce-si-to un tak-si"
+    },
+    "need_doctor": {
+      "text": "Necesito un médico.",
+      "phonetic": "Ne-ce-si-to un me-di-co"
+    },
+    "need_pharmacy": {
+      "text": "Necesito una farmacia.",
+      "phonetic": "Ne-ce-si-to u-na far-ma-cia"
+    },
+    "need_hospital": {
+      "text": "Necesito un hospital.",
+      "phonetic": "Ne-ce-si-to un os-pi-tal"
+    },
+    "need_charger": {
+      "text": "Necesito un cargador.",
+      "phonetic": "Ne-ce-si-to un car-ga-dor"
+    },
+    "need_map": {
+      "text": "Necesito un mapa.",
+      "phonetic": "Ne-ce-si-to un ma-pa"
+    },
+    "need_receipt": {
+      "text": "Necesito un recibo.",
+      "phonetic": "Ne-ce-si-to un re-ci-bo"
+    },
+    "need_water": {
+      "text": "Necesito agua.",
+      "phonetic": "Ne-ce-si-to a-gua"
+    },
+    "need_key": {
+      "text": "Necesito la llave.",
+      "phonetic": "Ne-ce-si-to la lla-ve"
     }
   }
 }

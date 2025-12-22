@@ -289,8 +289,8 @@
       "phonetic": "yī bēi pú táo jiǔ xū yào duō shǎo qián?"
     },
     "allergic_peanuts": {
-      "text": "我对花生过敏。",
-      "phonetic": "Wǒ duì huāshēng guòmǐn."
+      "text": "因为我有花生过敏的情况。",
+      "phonetic": "Yīnwèi wǒ yǒu huāshēng guòmǐn de qíngkuàng."
     },
     "allergic_seafood": {
       "text": "我对海鲜过敏。",
@@ -325,8 +325,8 @@
       "phonetic": "Qǐng wèn nǐmen zhèr yǒu méiyǒu pútaojiǔ?"
     },
     "cost_wifi": {
-      "text": "WiFi多少钱？",
-      "phonetic": "WiFi duōshǎo qián?"
+      "text": "无线网络多少钱？",
+      "phonetic": "Wu xian wang luo duo shao qian?"
     },
     "cost_water": {
       "text": "请问这瓶水的价格是多少？",
@@ -395,6 +395,46 @@
     "allergic_soy": {
       "text": "我对大豆过敏。",
       "phonetic": "Wǒ duì dàdòu guòmǐn."
+    },
+    "need_ticket": {
+      "text": "我需要一张票。",
+      "phonetic": "Wǒ xūyào yī zhāng piào"
+    },
+    "need_taxi": {
+      "text": "我需要一辆出租车。",
+      "phonetic": "Wǒ xūyào yī liàng chūzū chē"
+    },
+    "need_doctor": {
+      "text": "我需要医生。",
+      "phonetic": "Wǒ xūyào yīshēng"
+    },
+    "need_pharmacy": {
+      "text": "我需要药店。",
+      "phonetic": "Wǒ xūyào yàodiàn"
+    },
+    "need_hospital": {
+      "text": "我需要去医院。",
+      "phonetic": "wǒ xū yào qù yī yuàn。"
+    },
+    "need_charger": {
+      "text": "我需要充电器。",
+      "phonetic": "Wǒ xūyào chōngdiàn qì"
+    },
+    "need_map": {
+      "text": "我需要地图。",
+      "phonetic": "Wǒ xūyào dìtú"
+    },
+    "need_receipt": {
+      "text": "我要一张收据。",
+      "phonetic": "Wǒ yào yī zhāng shōujù."
+    },
+    "need_water": {
+      "text": "我需要水。",
+      "phonetic": "Wǒ xūyào shuǐ"
+    },
+    "need_key": {
+      "text": "我需要钥匙。",
+      "phonetic": "Wǒ xūyào yàoshi"
     }
   }
 }

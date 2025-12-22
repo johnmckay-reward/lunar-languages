@@ -143,7 +143,8 @@ export class DataService {
     { id: 'like', type: 'starter', english: 'I would like...' },
     { id: 'have', type: 'starter', english: 'Do you have...?' },
     { id: 'cost', type: 'starter', english: 'How much is...?' },
-    { id: 'allergic', type: 'starter', english: 'I am allergic to...' }
+    { id: 'allergic', type: 'starter', english: 'I am allergic to...' },
+    { id: 'need', type: 'starter', english: 'I need...' }
   ];
 
   // ============================================================
@@ -274,6 +275,18 @@ export class DataService {
     'allergic_nuts': { english: 'I am allergic to nuts.' },
     'allergic_eggs': { english: 'I am allergic to eggs.' },
     'allergic_soy': { english: 'I am allergic to soy.' },
+
+    // --- I NEED... ---
+    'need_ticket': { english: 'I need a ticket.' },
+    'need_taxi': { english: 'I need a taxi.' },
+    'need_doctor': { english: 'I need a doctor.' },
+    'need_pharmacy': { english: 'I need a pharmacy.' },
+    'need_hospital': { english: 'I need a hospital.' },
+    'need_charger': { english: 'I need a charger.' },
+    'need_map': { english: 'I need a map.' },
+    'need_receipt': { english: 'I need a receipt.' },
+    'need_water': { english: 'I need water.' },
+    'need_key': { english: 'I need the key.' },
     // Add other allergies here if you add nouns for seafood, etc.
   };
 

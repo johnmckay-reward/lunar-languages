@@ -333,6 +333,46 @@
     "allergic_soy": {
       "text": "I am allergic to soy.",
       "phonetic": ""
+    },
+    "need_ticket": {
+      "text": "I need a ticket.",
+      "phonetic": ""
+    },
+    "need_taxi": {
+      "text": "I need a taxi.",
+      "phonetic": ""
+    },
+    "need_doctor": {
+      "text": "I need a doctor.",
+      "phonetic": ""
+    },
+    "need_pharmacy": {
+      "text": "I need a pharmacy.",
+      "phonetic": ""
+    },
+    "need_hospital": {
+      "text": "I need a hospital.",
+      "phonetic": ""
+    },
+    "need_charger": {
+      "text": "I need a charger.",
+      "phonetic": ""
+    },
+    "need_map": {
+      "text": "I need a map.",
+      "phonetic": ""
+    },
+    "need_receipt": {
+      "text": "I need a receipt.",
+      "phonetic": ""
+    },
+    "need_water": {
+      "text": "I need water.",
+      "phonetic": ""
+    },
+    "need_key": {
+      "text": "I need the key.",
+      "phonetic": ""
     }
   }
 }

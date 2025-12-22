@@ -395,6 +395,46 @@
     "allergic_soy": {
       "text": "大豆アレルギーです。",
       "phonetic": "Daizu arerugii desu."
+    },
+    "need_ticket": {
+      "text": "チケットが必要です。",
+      "phonetic": "Chiketto ga hitsuyō desu"
+    },
+    "need_taxi": {
+      "text": "タクシーが必要です。",
+      "phonetic": "Takushī ga hitsuyō desu"
+    },
+    "need_doctor": {
+      "text": "医者が必要です。",
+      "phonetic": "Isha ga hitsuyō desu"
+    },
+    "need_pharmacy": {
+      "text": "薬局が必要です。",
+      "phonetic": "Yakkyoku ga hitsuyō desu"
+    },
+    "need_hospital": {
+      "text": "病院が必要です。",
+      "phonetic": "Byōin ga hitsuyō desu"
+    },
+    "need_charger": {
+      "text": "充電器が必要です。",
+      "phonetic": "Jūdenki ga hitsuyō desu"
+    },
+    "need_map": {
+      "text": "地図が、いるんです。",
+      "phonetic": "ちずが、いるんです。"
+    },
+    "need_receipt": {
+      "text": "領収書が必要です。",
+      "phonetic": "Ryōshūsho ga hitsuyō desu"
+    },
+    "need_water": {
+      "text": "水が必要です。",
+      "phonetic": "Mizu ga hitsuyō desu"
+    },
+    "need_key": {
+      "text": "鍵が必要です。",
+      "phonetic": "Kagi ga hitsuyō desu"
     }
   }
 }

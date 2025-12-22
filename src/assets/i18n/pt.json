@@ -297,8 +297,8 @@
       "phonetic": "soh ah-LEHR-jee-koo ah FROO-toos doo mar."
     },
     "where_coffee": {
-      "text": "Onde fica uma cafeteria?",
-      "phonetic": "Ondee feeka ooma kafetereea"
+      "text": "Em qual local está uma cafeteria?",
+      "phonetic": "Em kwal loh-kal es-tah uma café-te-ria?"
     },
     "where_water": {
       "text": "Onde posso comprar água?",
@@ -395,6 +395,46 @@
     "allergic_soy": {
       "text": "Sou alérgico a soja.",
       "phonetic": "So ah-leh-jee-ko ah so-zhah"
+    },
+    "need_ticket": {
+      "text": "Preciso de um bilhete.",
+      "phonetic": "Pre-si-zo de um bi-lye-te"
+    },
+    "need_taxi": {
+      "text": "Preciso de um táxi.",
+      "phonetic": "Pre-si-zo de um tak-si"
+    },
+    "need_doctor": {
+      "text": "Preciso de um médico.",
+      "phonetic": "Pre-si-zo de um me-di-co"
+    },
+    "need_pharmacy": {
+      "text": "Preciso de uma farmácia.",
+      "phonetic": "Pre-si-zo de u-ma far-ma-sia"
+    },
+    "need_hospital": {
+      "text": "Preciso de um hospital.",
+      "phonetic": "Pre-si-zo de um os-pi-tal"
+    },
+    "need_charger": {
+      "text": "Preciso de um carregador.",
+      "phonetic": "Pre-si-zo de um car-re-ga-dor"
+    },
+    "need_map": {
+      "text": "Preciso de um mapa.",
+      "phonetic": "Pre-si-zo de um ma-pa"
+    },
+    "need_receipt": {
+      "text": "Preciso de um recibo.",
+      "phonetic": "Pre-si-zo de um re-si-bo"
+    },
+    "need_water": {
+      "text": "Preciso de água.",
+      "phonetic": "Pre-si-zo de a-gua"
+    },
+    "need_key": {
+      "text": "Preciso da chave.",
+      "phonetic": "Pre-si-zo da sha-ve"
     }
   }
 }

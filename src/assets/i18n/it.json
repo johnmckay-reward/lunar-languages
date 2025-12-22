@@ -395,6 +395,46 @@
     "allergic_soy": {
       "text": "Sono allergico alla soia.",
       "phonetic": "So-no al-ler-jee-ko al-la soy-ah"
+    },
+    "need_ticket": {
+      "text": "Ho bisogno di un biglietto.",
+      "phonetic": "O bi-zo-nyo di un bi-lyet-to"
+    },
+    "need_taxi": {
+      "text": "Ho bisogno di un taxi.",
+      "phonetic": "O bi-zo-nyo di un tak-si"
+    },
+    "need_doctor": {
+      "text": "Ho bisogno di un medico.",
+      "phonetic": "O bi-zo-nyo di un me-di-co"
+    },
+    "need_pharmacy": {
+      "text": "Ho bisogno di una farmacia.",
+      "phonetic": "O bi-zo-nyo di u-na far-ma-cha"
+    },
+    "need_hospital": {
+      "text": "Ho bisogno di un ospedale.",
+      "phonetic": "O bi-zo-nyo di un os-pe-da-le"
+    },
+    "need_charger": {
+      "text": "Ho bisogno di un caricabatterie.",
+      "phonetic": "O bi-zo-nyo di un ca-ri-ca-bat-te-rie"
+    },
+    "need_map": {
+      "text": "Ho bisogno di una mappa.",
+      "phonetic": "O bi-zo-nyo di u-na map-pa"
+    },
+    "need_receipt": {
+      "text": "Ho bisogno di una ricevuta.",
+      "phonetic": "O bi-zo-nyo di u-na ri-ce-vu-ta"
+    },
+    "need_water": {
+      "text": "Ho bisogno di acqua.",
+      "phonetic": "O bi-zo-nyo di ac-qua"
+    },
+    "need_key": {
+      "text": "Mi serve la chiave.",
+      "phonetic": "Mee ser-vay lah kee-ah-veh."
     }
   }
 }

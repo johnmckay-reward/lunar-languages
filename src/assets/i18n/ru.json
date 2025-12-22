@@ -395,6 +395,46 @@
     "allergic_soy": {
       "text": "У меня аллергия на сою.",
       "phonetic": "U menya allergiya na soyu."
+    },
+    "need_ticket": {
+      "text": "Мне нужен билет.",
+      "phonetic": "Mne nuzhen bilet"
+    },
+    "need_taxi": {
+      "text": "Мне нужно такси.",
+      "phonetic": "Mne nuzhno taksi"
+    },
+    "need_doctor": {
+      "text": "Мне нужен врач.",
+      "phonetic": "Mne nuzhen vrach"
+    },
+    "need_pharmacy": {
+      "text": "Мне нужна аптека.",
+      "phonetic": "Mne nuzhna apteka"
+    },
+    "need_hospital": {
+      "text": "Мне нужна больница.",
+      "phonetic": "Mne nuzhna bolnitsa"
+    },
+    "need_charger": {
+      "text": "Мне нужна зарядка.",
+      "phonetic": "Mne nuzhna zaryadka"
+    },
+    "need_map": {
+      "text": "Мне нужна карта.",
+      "phonetic": "Mne nuzhna karta"
+    },
+    "need_receipt": {
+      "text": "Мне нужен чек.",
+      "phonetic": "Mne nuzhen chek"
+    },
+    "need_water": {
+      "text": "Мне нужна вода.",
+      "phonetic": "Mne nuzhna voda"
+    },
+    "need_key": {
+      "text": "Мне нужен ключ.",
+      "phonetic": "Mne nuzhen klyuch"
     }
   }
 }
