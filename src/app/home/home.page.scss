@@ -426,3 +426,94 @@ ion-col {
   }
 }
 
+
+/* =========================================
+   5. ANIMATIONS
+   ========================================= */
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#complete-phrase-section {
+  animation: slideUpFade 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+@keyframes pulse-soft {
+  0% { transform: scale(1); opacity: 0.4; }
+  50% { transform: scale(1.05); opacity: 0.6; }
+  100% { transform: scale(1); opacity: 0.4; }
+}
+
+.placeholder-content ion-icon {
+  animation: pulse-soft 3s infinite ease-in-out;
+}
+
+/* Soften the Listen Buttons */
+.btn-listen {
+  --box-shadow: 0 4px 12px rgba(var(--ion-color-secondary-rgb), 0.3);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Staggered Entrance for Language Cards */
+@keyframes cardEntrance {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.language-card {
+  opacity: 0; /* Start hidden */
+  animation: cardEntrance 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.language-card:nth-child(1) { animation-delay: 0.1s; }
+.language-card:nth-child(2) { animation-delay: 0.2s; }
+.language-card:nth-child(3) { animation-delay: 0.3s; }
+.language-card:nth-child(4) { animation-delay: 0.4s; }
+.language-card:nth-child(5) { animation-delay: 0.5s; }
+.language-card:nth-child(6) { animation-delay: 0.6s; }
+
+/* Refined Phrase Item */
+.phrase-item {
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.phrase-item:active {
+  transform: scale(0.98);
+  box-shadow: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .phrase-item {
+    border: 1px solid rgba(255,255,255,0.05);
+  }
+}
+
+/* Refined Number Badge */
+.number-item .number-badge {
+  background: var(--ion-color-primary);
+  color: var(--ion-color-primary-contrast);
+  box-shadow: 0 4px 10px rgba(var(--ion-color-primary-rgb), 0.3);
+}
+
+@media (prefers-color-scheme: dark) {
+  .number-item .number-badge {
+    background: var(--ion-color-secondary);
+    color: var(--ion-color-secondary-contrast);
+  }
+}
