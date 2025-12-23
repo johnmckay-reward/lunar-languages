@@ -169,18 +169,18 @@
     "need": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "すぐに",
+          "phonetic": "Soo-goo-nee",
           "meaning": "Right away"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "確認します",
+          "phonetic": "Kah-koo-nin she-mass",
           "meaning": "Let me check"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "それはありません",
+          "phonetic": "Soh-reh wa ah-ree-mah-sen",
           "meaning": "We don't have that"
         }
       ]
@@ -188,18 +188,18 @@
     "use": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "はい、どうぞ",
+          "phonetic": "Hai, doh-zoh",
           "meaning": "Yes, go ahead"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "すみません、私有地です",
+          "phonetic": "Soo-mee-mah-sen, she-yoo-chee dess",
           "meaning": "Sorry, it's private"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "お客様専用です",
+          "phonetic": "Oh-kyaku-sama sen-yoh dess",
           "meaning": "For customers only"
         }
       ]
@@ -207,18 +207,18 @@
     "lost": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "どこでなくしましたか？",
+          "phonetic": "Doh-koh deh nah-koo-she-mash-tah kah?",
           "meaning": "Where did you lose it?"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "遺失物係を確認しましょう",
+          "phonetic": "Ee-shitsu-butsu-gakari oh kah-koo-nin she-mah-show",
           "meaning": "Let's check lost and found"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "特徴を教えてください",
+          "phonetic": "Toku-choh oh oh-she-eh-teh koo-dah-sai",
           "meaning": "Describe it please"
         }
       ]
@@ -226,18 +226,18 @@
     "is_there": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "はい、近くにあります",
+          "phonetic": "Hai, chee-kah-koo nee ah-ree-mass",
           "meaning": "Yes, nearby"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "いいえ、ここではありません",
+          "phonetic": "Ee-eh, koh-koh deh wa ah-ree-mah-sen",
           "meaning": "No, not here"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "左／右に曲がってください",
+          "phonetic": "Hi-dah-ree/Mee-ghee nee mah-gat-teh koo-dah-sai",
           "meaning": "Turn left/right"
         }
       ]
@@ -245,18 +245,18 @@
     "love": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "気に入っていただけて嬉しいです",
+          "phonetic": "Kee-nee-it-teh ee-tah-dah-keh-teh oo-reh-shee dess",
           "meaning": "I'm glad you like it"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "人気があります",
+          "phonetic": "Nin-ki gah ah-ree-mass",
           "meaning": "It's popular"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "ありがとうございます",
+          "phonetic": "Ah-ree-gah-toh go-zai-mass",
           "meaning": "Thank you"
         }
       ]
@@ -264,18 +264,18 @@
     "call": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "今電話します",
+          "phonetic": "Ee-mah den-wah she-mass",
           "meaning": "Calling now"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "番号は何番ですか？",
+          "phonetic": "Ban-goh wa nan-ban dess kah?",
           "meaning": "What is the number?"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "少々お待ちください",
+          "phonetic": "Sho-sho oh-mah-chee koo-dah-sai",
           "meaning": "One moment"
         }
       ]
@@ -283,18 +283,18 @@
     "another": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "すぐにお持ちします",
+          "phonetic": "Soo-goo nee oh-mo-chee she-mass",
           "meaning": "Coming right up"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "かしこまりました",
+          "phonetic": "Kah-she-koh-mah-ree-mash-tah",
           "meaning": "Certainly"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "他にご注文は？",
+          "phonetic": "Hoh-kah nee go-choo-mon wa?",
           "meaning": "Anything else?"
         }
       ]
@@ -302,18 +302,18 @@
     "share": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "はい",
+          "phonetic": "Hai",
           "meaning": "Okay"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "いい考えですね",
+          "phonetic": "Ee kan-gah-eh dess neh",
           "meaning": "Good idea"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "お皿をお持ちします",
+          "phonetic": "Oh-sah-rah oh oh-mo-chee she-mass",
           "meaning": "I'll bring plates"
         }
       ]
@@ -321,18 +321,18 @@
     "no": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "はい、下げます",
+          "phonetic": "Hai, sah-gheh-mass",
           "meaning": "Okay, removed"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "分かりました",
+          "phonetic": "Wah-kah-ree-mash-tah",
           "meaning": "Understood"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "問題ありません",
+          "phonetic": "Mon-dai ah-ree-mah-sen",
           "meaning": "No problem"
         }
       ]
@@ -340,18 +340,18 @@
     "is_free": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "はい、無料です",
+          "phonetic": "Hai, moo-ryoh dess",
           "meaning": "Yes, it's free"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "いいえ、有料です...",
+          "phonetic": "Ee-eh, yoo-ryoh dess...",
           "meaning": "No, it costs..."
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "含まれています",
+          "phonetic": "Foo-koo-mah-reh-teh ee-mass",
           "meaning": "Included"
         }
       ]

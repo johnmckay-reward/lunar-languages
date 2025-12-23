@@ -169,18 +169,18 @@
     "need": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Już się robi",
+          "phonetic": "Yoosh shyeh ROH-bee",
           "meaning": "Right away"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Sprawdzę",
+          "phonetic": "SPRAV-dzeh",
           "meaning": "Let me check"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Nie mamy tego",
+          "phonetic": "Nyeh MAH-my TEH-goh",
           "meaning": "We don't have that"
         }
       ]
@@ -188,18 +188,18 @@
     "use": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Tak, proszę",
+          "phonetic": "Tak, PROH-sheh",
           "meaning": "Yes, go ahead"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Przepraszam, to prywatne",
+          "phonetic": "Psheh-PRAH-sham, toh pry-VAT-neh",
           "meaning": "Sorry, it's private"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Tylko dla klientów",
+          "phonetic": "TYL-koh dlah klyen-TOOF",
           "meaning": "For customers only"
         }
       ]
@@ -207,18 +207,18 @@
     "lost": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Gdzie to zgubiłeś?",
+          "phonetic": "Gdjeh toh zgoo-BEE-wesh?",
           "meaning": "Where did you lose it?"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Sprawdźmy w biurze rzeczy znalezionych",
+          "phonetic": "SPRAVDZ-my v BYOO-zheh ZHEH-chy znah-leh-ZYO-nych",
           "meaning": "Let's check lost and found"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Proszę to opisać",
+          "phonetic": "PROH-sheh toh oh-PEE-sach",
           "meaning": "Describe it please"
         }
       ]
@@ -226,18 +226,18 @@
     "is_there": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Tak, w pobliżu",
+          "phonetic": "Tak, v poh-BLEE-zhoo",
           "meaning": "Yes, nearby"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Nie, nie tutaj",
+          "phonetic": "Nyeh, nyeh TOO-tay",
           "meaning": "No, not here"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Skręć w lewo/prawo",
+          "phonetic": "Skrench v LEH-voh/PRAH-voh",
           "meaning": "Turn left/right"
         }
       ]
@@ -245,18 +245,18 @@
     "love": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Cieszę się, że ci się podoba",
+          "phonetic": "CHEH-sheh shyeh, zheh chee shyeh poh-DOH-bah",
           "meaning": "I'm glad you like it"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "To jest popularne",
+          "phonetic": "Toh yest poh-poo-LAR-neh",
           "meaning": "It's popular"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Dziękuję",
+          "phonetic": "Jen-KOO-yeh",
           "meaning": "Thank you"
         }
       ]
@@ -264,18 +264,18 @@
     "call": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Dzwonię",
+          "phonetic": "DZVOH-nyeh",
           "meaning": "Calling now"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Jaki jest numer?",
+          "phonetic": "YAH-kee yest NOO-mer?",
           "meaning": "What is the number?"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Chwileczkę",
+          "phonetic": "Hvee-LECH-keh",
           "meaning": "One moment"
         }
       ]
@@ -283,18 +283,18 @@
     "another": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Już podaję",
+          "phonetic": "Yoosh poh-DAH-yeh",
           "meaning": "Coming right up"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Oczywiście",
+          "phonetic": "Oh-chy-VEES-chyeh",
           "meaning": "Certainly"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Coś jeszcze?",
+          "phonetic": "Tsosh YESH-cheh?",
           "meaning": "Anything else?"
         }
       ]
@@ -302,18 +302,18 @@
     "share": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Dobrze",
+          "phonetic": "DOB-zheh",
           "meaning": "Okay"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Dobry pomysł",
+          "phonetic": "DOB-ry POH-mysw",
           "meaning": "Good idea"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Przyniosę talerze",
+          "phonetic": "Pshy-NYO-seh tah-LEH-zheh",
           "meaning": "I'll bring plates"
         }
       ]
@@ -321,18 +321,18 @@
     "no": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Dobrze, zabrane",
+          "phonetic": "DOB-zheh, zah-BRAH-neh",
           "meaning": "Okay, removed"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Zrozumiałem",
+          "phonetic": "Zroh-zoo-MYA-wem",
           "meaning": "Understood"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Nie ma problemu",
+          "phonetic": "Nyeh mah pro-BLEH-moo",
           "meaning": "No problem"
         }
       ]
@@ -340,18 +340,18 @@
     "is_free": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Tak, to jest darmowe",
+          "phonetic": "Tak, toh yest dar-MOH-veh",
           "meaning": "Yes, it's free"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Nie, to kosztuje...",
+          "phonetic": "Nyeh, toh kosh-TOO-yeh...",
           "meaning": "No, it costs..."
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Wliczone",
+          "phonetic": "Vlee-CHOH-neh",
           "meaning": "Included"
         }
       ]

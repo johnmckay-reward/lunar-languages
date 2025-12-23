@@ -169,18 +169,18 @@
     "need": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "马上",
+          "phonetic": "Mǎshàng",
           "meaning": "Right away"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "让我查一下",
+          "phonetic": "Ràng wǒ chá yīxià",
           "meaning": "Let me check"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "我们没有那个",
+          "phonetic": "Wǒmen méiyǒu nàge",
           "meaning": "We don't have that"
         }
       ]
@@ -188,18 +188,18 @@
     "use": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "好的，请便",
+          "phonetic": "Hǎo de, qǐngbiàn",
           "meaning": "Yes, go ahead"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "抱歉，这是私人的",
+          "phonetic": "Bàoqiàn, zhè shì sīrén de",
           "meaning": "Sorry, it's private"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "仅限顾客",
+          "phonetic": "Jǐn xiàn gùkè",
           "meaning": "For customers only"
         }
       ]
@@ -207,18 +207,18 @@
     "lost": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "你在哪里丢的？",
+          "phonetic": "Nǐ zài nǎlǐ diū de?",
           "meaning": "Where did you lose it?"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "我们查一下失物招领",
+          "phonetic": "Wǒmen chá yīxià shīwù zhāolǐng",
           "meaning": "Let's check lost and found"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "请描述一下",
+          "phonetic": "Qǐng miáoshù yīxià",
           "meaning": "Describe it please"
         }
       ]
@@ -226,18 +226,18 @@
     "is_there": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "是的，就在附近",
+          "phonetic": "Shì de, jiù zài fùjìn",
           "meaning": "Yes, nearby"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "不，不在这里",
+          "phonetic": "Bù, bù zài zhèlǐ",
           "meaning": "No, not here"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "左转/右转",
+          "phonetic": "Zuǒ zhuǎn/Yòu zhuǎn",
           "meaning": "Turn left/right"
         }
       ]
@@ -245,18 +245,18 @@
     "love": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "很高兴你喜欢",
+          "phonetic": "Hěn gāoxìng nǐ xǐhuān",
           "meaning": "I'm glad you like it"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "这很受欢迎",
+          "phonetic": "Zhè hěn shòu huānyíng",
           "meaning": "It's popular"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "谢谢",
+          "phonetic": "Xièxiè",
           "meaning": "Thank you"
         }
       ]
@@ -264,18 +264,18 @@
     "call": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "正在拨打",
+          "phonetic": "Zhèngzài bōdǎ",
           "meaning": "Calling now"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "号码是多少？",
+          "phonetic": "Hàomǎ shì duōshǎo?",
           "meaning": "What is the number?"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "稍等",
+          "phonetic": "Shāoděng",
           "meaning": "One moment"
         }
       ]
@@ -283,18 +283,18 @@
     "another": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "马上就来",
+          "phonetic": "Mǎshàng jiù lái",
           "meaning": "Coming right up"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "当然",
+          "phonetic": "Dāngrán",
           "meaning": "Certainly"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "还要别的吗？",
+          "phonetic": "Hái yào bié de ma?",
           "meaning": "Anything else?"
         }
       ]
@@ -302,18 +302,18 @@
     "share": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "好的",
+          "phonetic": "Hǎo de",
           "meaning": "Okay"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "好主意",
+          "phonetic": "Hǎo zhǔyì",
           "meaning": "Good idea"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "我去拿盘子",
+          "phonetic": "Wǒ qù ná pánzi",
           "meaning": "I'll bring plates"
         }
       ]
@@ -321,18 +321,18 @@
     "no": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "好的，拿走了",
+          "phonetic": "Hǎo de, ná zǒu le",
           "meaning": "Okay, removed"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "明白了",
+          "phonetic": "Míngbái le",
           "meaning": "Understood"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "没问题",
+          "phonetic": "Méi wèntí",
           "meaning": "No problem"
         }
       ]
@@ -340,18 +340,18 @@
     "is_free": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "是的，免费",
+          "phonetic": "Shì de, miǎnfèi",
           "meaning": "Yes, it's free"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "不，这需要...",
+          "phonetic": "Bù, zhè xūyào...",
           "meaning": "No, it costs..."
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "包含在内",
+          "phonetic": "Bāohán zài nèi",
           "meaning": "Included"
         }
       ]

@@ -169,18 +169,18 @@
     "need": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Сию минуту",
+          "phonetic": "See-yoo mee-NOO-too",
           "meaning": "Right away"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Я проверю",
+          "phonetic": "Ya prah-VYEH-ryoo",
           "meaning": "Let me check"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "У нас этого нет",
+          "phonetic": "Oo nas EH-tah-vah nyet",
           "meaning": "We don't have that"
         }
       ]
@@ -188,18 +188,18 @@
     "use": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Да, пожалуйста",
+          "phonetic": "Dah, pah-ZHAH-loo-stah",
           "meaning": "Yes, go ahead"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Извините, это частное",
+          "phonetic": "Eez-vee-NEE-tyeh, EH-tah CHAST-nah-yeh",
           "meaning": "Sorry, it's private"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Только для клиентов",
+          "phonetic": "TOL-kah dlya klee-YEN-tov",
           "meaning": "For customers only"
         }
       ]
@@ -207,18 +207,18 @@
     "lost": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Где вы это потеряли?",
+          "phonetic": "Gdyeh vy EH-tah pah-teh-RYA-lee?",
           "meaning": "Where did you lose it?"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Давайте проверим в бюро находок",
+          "phonetic": "Dah-VYE-tyeh prah-VYEH-reem v byoo-ROH nah-KHOH-dok",
           "meaning": "Let's check lost and found"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Опишите это, пожалуйста",
+          "phonetic": "Ah-pee-SHY-tyeh EH-tah, pah-ZHAH-loo-stah",
           "meaning": "Describe it please"
         }
       ]
@@ -226,18 +226,18 @@
     "is_there": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Да, рядом",
+          "phonetic": "Dah, RYA-dom",
           "meaning": "Yes, nearby"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Нет, не здесь",
+          "phonetic": "Nyet, nyeh zdyes",
           "meaning": "No, not here"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Поверните налево/направо",
+          "phonetic": "Pah-ver-NEE-tyeh nah-LYE-vah/nah-PRAH-vah",
           "meaning": "Turn left/right"
         }
       ]
@@ -245,18 +245,18 @@
     "love": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Рад, что вам нравится",
+          "phonetic": "Rad, chto vam NRAH-vee-tsah",
           "meaning": "I'm glad you like it"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Это популярно",
+          "phonetic": "EH-tah pah-poo-LYAR-nah",
           "meaning": "It's popular"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Спасибо",
+          "phonetic": "Spah-SEE-bah",
           "meaning": "Thank you"
         }
       ]
@@ -264,18 +264,18 @@
     "call": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Звоню",
+          "phonetic": "Zvah-NYOO",
           "meaning": "Calling now"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Какой номер?",
+          "phonetic": "Kah-KOY NOH-mer?",
           "meaning": "What is the number?"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Один момент",
+          "phonetic": "Ah-DEEN mah-MYENT",
           "meaning": "One moment"
         }
       ]
@@ -283,18 +283,18 @@
     "another": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Сейчас будет",
+          "phonetic": "See-CHAS BOO-dyet",
           "meaning": "Coming right up"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Конечно",
+          "phonetic": "Kah-NYECH-nah",
           "meaning": "Certainly"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Что-нибудь еще?",
+          "phonetic": "Chto-nee-BOOD yeh-SHCHYO?",
           "meaning": "Anything else?"
         }
       ]
@@ -302,18 +302,18 @@
     "share": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Хорошо",
+          "phonetic": "Hah-rah-SHOH",
           "meaning": "Okay"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Хорошая идея",
+          "phonetic": "Hah-ROH-shah-yah ee-DYE-yah",
           "meaning": "Good idea"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Я принесу тарелки",
+          "phonetic": "Ya pree-neh-SOO tah-RYEL-kee",
           "meaning": "I'll bring plates"
         }
       ]
@@ -321,18 +321,18 @@
     "no": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Хорошо, убрал",
+          "phonetic": "Hah-rah-SHOH, oo-BRAL",
           "meaning": "Okay, removed"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Понятно",
+          "phonetic": "Pah-NYAT-nah",
           "meaning": "Understood"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Без проблем",
+          "phonetic": "Bez prah-BLEM",
           "meaning": "No problem"
         }
       ]
@@ -340,18 +340,18 @@
     "is_free": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Да, это бесплатно",
+          "phonetic": "Dah, EH-tah bes-PLAT-nah",
           "meaning": "Yes, it's free"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Нет, это стоит...",
+          "phonetic": "Nyet, EH-tah STOH-eet...",
           "meaning": "No, it costs..."
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Включено",
+          "phonetic": "Vklyoo-cheh-NOH",
           "meaning": "Included"
         }
       ]

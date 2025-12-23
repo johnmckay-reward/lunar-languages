@@ -169,18 +169,18 @@
     "need": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Sofort",
+          "phonetic": "zo-FORT",
           "meaning": "Right away"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Ich schaue nach",
+          "phonetic": "ich show-uh nahkh",
           "meaning": "Let me check"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Das haben wir nicht",
+          "phonetic": "das hah-ben veer nicht",
           "meaning": "We don't have that"
         }
       ]
@@ -188,18 +188,18 @@
     "use": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Ja, bitte",
+          "phonetic": "yah, BIT-tuh",
           "meaning": "Yes, go ahead"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Entschuldigung, das ist privat",
+          "phonetic": "ent-SHOOL-dee-gung, das ist pree-VAHT",
           "meaning": "Sorry, it's private"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Nur für Kunden",
+          "phonetic": "noor fyur KOON-den",
           "meaning": "For customers only"
         }
       ]
@@ -207,18 +207,18 @@
     "lost": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Wo haben Sie es verloren?",
+          "phonetic": "voh hah-ben zee es fer-LOH-ren?",
           "meaning": "Where did you lose it?"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Schauen wir im Fundbüro nach",
+          "phonetic": "show-en veer im FOOND-byoo-roh nahkh",
           "meaning": "Let's check lost and found"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Beschreiben Sie es bitte",
+          "phonetic": "be-SHRY-ben zee es BIT-tuh",
           "meaning": "Describe it please"
         }
       ]
@@ -226,18 +226,18 @@
     "is_there": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Ja, in der Nähe",
+          "phonetic": "yah, in dehr NAY-uh",
           "meaning": "Yes, nearby"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Nein, nicht hier",
+          "phonetic": "nine, nicht heer",
           "meaning": "No, not here"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Links/Rechts abbiegen",
+          "phonetic": "links/rechts AB-bee-gen",
           "meaning": "Turn left/right"
         }
       ]
@@ -245,18 +245,18 @@
     "love": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Es freut mich, dass es Ihnen gefällt",
+          "phonetic": "es froyt mich, das es EE-nen ge-FELT",
           "meaning": "I'm glad you like it"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Es ist beliebt",
+          "phonetic": "es ist be-LEEBT",
           "meaning": "It's popular"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Danke",
+          "phonetic": "DAN-kuh",
           "meaning": "Thank you"
         }
       ]
@@ -264,18 +264,18 @@
     "call": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Ich rufe jetzt an",
+          "phonetic": "ich ROO-fuh yetst an",
           "meaning": "Calling now"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Wie ist die Nummer?",
+          "phonetic": "vee ist dee NOO-mer?",
           "meaning": "What is the number?"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Einen Moment",
+          "phonetic": "EYE-nen mo-MENT",
           "meaning": "One moment"
         }
       ]
@@ -283,18 +283,18 @@
     "another": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Kommt sofort",
+          "phonetic": "komt zo-FORT",
           "meaning": "Coming right up"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Sicherlich",
+          "phonetic": "ZI-cher-lich",
           "meaning": "Certainly"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Sonst noch etwas?",
+          "phonetic": "zonst nokh ET-vas?",
           "meaning": "Anything else?"
         }
       ]
@@ -302,18 +302,18 @@
     "share": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Okay",
+          "phonetic": "okay",
           "meaning": "Okay"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Gute Idee",
+          "phonetic": "GOO-tuh ee-DEH",
           "meaning": "Good idea"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Ich bringe Teller",
+          "phonetic": "ich BRING-uh TEL-ler",
           "meaning": "I'll bring plates"
         }
       ]
@@ -321,18 +321,18 @@
     "no": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Okay, entfernt",
+          "phonetic": "okay, ent-FERNT",
           "meaning": "Okay, removed"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Verstanden",
+          "phonetic": "fer-SHTAN-den",
           "meaning": "Understood"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Kein Problem",
+          "phonetic": "kine pro-BLEM",
           "meaning": "No problem"
         }
       ]
@@ -340,18 +340,18 @@
     "is_free": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Ja, es ist kostenlos",
+          "phonetic": "yah, es ist KOS-ten-los",
           "meaning": "Yes, it's free"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Nein, es kostet...",
+          "phonetic": "nine, es KOS-tet...",
           "meaning": "No, it costs..."
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Inbegriffen",
+          "phonetic": "in-be-GRIF-fen",
           "meaning": "Included"
         }
       ]

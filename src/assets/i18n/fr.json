@@ -169,18 +169,18 @@
     "need": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Tout de suite",
+          "phonetic": "too duh sweet",
           "meaning": "Right away"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Laissez-moi vérifier",
+          "phonetic": "leh-say mwa veh-ree-fyay",
           "meaning": "Let me check"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Nous n'avons pas cela",
+          "phonetic": "noo na-von pah suh-lah",
           "meaning": "We don't have that"
         }
       ]
@@ -188,18 +188,18 @@
     "use": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Oui, allez-y",
+          "phonetic": "wee, ah-lay zee",
           "meaning": "Yes, go ahead"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Désolé, c'est privé",
+          "phonetic": "deh-zo-lay, say pree-vay",
           "meaning": "Sorry, it's private"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Réservé aux clients",
+          "phonetic": "reh-zehr-vay oh klee-on",
           "meaning": "For customers only"
         }
       ]
@@ -207,18 +207,18 @@
     "lost": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Où l'avez-vous perdu ?",
+          "phonetic": "oo lah-vay voo pehr-doo?",
           "meaning": "Where did you lose it?"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Vérifions les objets trouvés",
+          "phonetic": "veh-ree-fyon lay zob-zhay troo-vay",
           "meaning": "Let's check lost and found"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Décrivez-le s'il vous plaît",
+          "phonetic": "deh-kree-vay luh seel voo play",
           "meaning": "Describe it please"
         }
       ]
@@ -226,18 +226,18 @@
     "is_there": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Oui, tout près",
+          "phonetic": "wee, too preh",
           "meaning": "Yes, nearby"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Non, pas ici",
+          "phonetic": "non, pah ee-see",
           "meaning": "No, not here"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Tournez à gauche/droite",
+          "phonetic": "toor-nay ah gosh/drwat",
           "meaning": "Turn left/right"
         }
       ]
@@ -245,18 +245,18 @@
     "love": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Je suis content que ça vous plaise",
+          "phonetic": "zhuh swee kon-ton kuh sah voo plehz",
           "meaning": "I'm glad you like it"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "C'est populaire",
+          "phonetic": "say po-pyoo-lehr",
           "meaning": "It's popular"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Merci",
+          "phonetic": "mehr-see",
           "meaning": "Thank you"
         }
       ]
@@ -264,18 +264,18 @@
     "call": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "J'appelle maintenant",
+          "phonetic": "zhah-pel man-tuh-non",
           "meaning": "Calling now"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Quel est le numéro ?",
+          "phonetic": "kel eh luh nyoo-meh-ro?",
           "meaning": "What is the number?"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Un instant",
+          "phonetic": "un nan-ston",
           "meaning": "One moment"
         }
       ]
@@ -283,18 +283,18 @@
     "another": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Ça arrive tout de suite",
+          "phonetic": "sah ah-reev too duh sweet",
           "meaning": "Coming right up"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Certainement",
+          "phonetic": "sehr-ten-mon",
           "meaning": "Certainly"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Autre chose ?",
+          "phonetic": "oh-truh shoz?",
           "meaning": "Anything else?"
         }
       ]
@@ -302,18 +302,18 @@
     "share": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "D'accord",
+          "phonetic": "dah-kor",
           "meaning": "Okay"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Bonne idée",
+          "phonetic": "bon ee-day",
           "meaning": "Good idea"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "J'apporte des assiettes",
+          "phonetic": "zhah-port day zah-syet",
           "meaning": "I'll bring plates"
         }
       ]
@@ -321,18 +321,18 @@
     "no": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "D'accord, enlevé",
+          "phonetic": "dah-kor, on-luh-vay",
           "meaning": "Okay, removed"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Compris",
+          "phonetic": "kom-pree",
           "meaning": "Understood"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Pas de problème",
+          "phonetic": "pah duh pro-blem",
           "meaning": "No problem"
         }
       ]
@@ -340,18 +340,18 @@
     "is_free": {
       "listenFor": [
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Oui, c'est gratuit",
+          "phonetic": "wee, say grah-twee",
           "meaning": "Yes, it's free"
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Non, ça coûte...",
+          "phonetic": "non, sah koot...",
           "meaning": "No, it costs..."
         },
         {
-          "text": "",
-          "phonetic": "",
+          "text": "Inclus",
+          "phonetic": "an-kloo",
           "meaning": "Included"
         }
       ]
