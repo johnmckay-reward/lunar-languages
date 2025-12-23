@@ -268,6 +268,13 @@ ion-col {
     color: var(--ion-color-dark);
     font-size: 1rem;
   }
+
+  .sub-name {
+    font-size: 0.85rem;
+    color: var(--ion-color-medium);
+    margin-top: 4px;
+    font-weight: 500;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

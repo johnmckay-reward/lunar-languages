@@ -239,7 +239,8 @@
         *ngFor="let lang of availableLanguages"
         (click)="selectInitialLanguage(lang.code)">
         <div class="flag">{{ lang.flag }}</div>
-        <div class="name">{{ lang.name }}</div>
+        <div class="name">{{ lang.location }}</div>
+        <div class="sub-name">{{ lang.name }}</div>
       </div>
     </div>
   </div>
