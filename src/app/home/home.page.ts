@@ -54,6 +54,7 @@ export class HomePage implements OnInit {
   isNotesModalOpen = false;
   isNumbersModalOpen = false;
   showWelcomeScreen = false;
+  showIntroModal = false;
 
   @ViewChild(IonContent) content!: IonContent;
 
@@ -74,7 +75,18 @@ export class HomePage implements OnInit {
     this.isNumbersModalOpen = isOpen;
   }
 
+  dismissIntroModal() {
+    this.showIntroModal = false;
+    localStorage.setItem('hasSeenIntro', 'true');
+  }
+
   ngOnInit() {
+    // Check for first time launch
+    const hasSeenIntro = localStorage.getItem('hasSeenIntro');
+    if (!hasSeenIntro) {
+      this.showIntroModal = true;
+    }
+
     // Subscribe to language changes
     this.dataService.getCurrentLanguage().subscribe(lang => {
       this.currentLanguage = lang;

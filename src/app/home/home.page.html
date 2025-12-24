@@ -81,3 +81,8 @@
   [availableLanguages]="availableLanguages"
   (languageSelected)="selectInitialLanguage($event)">
 </app-welcome-screen>
+
+<app-intro-modal
+  *ngIf="showIntroModal"
+  (dismiss)="dismissIntroModal()">
+</app-intro-modal>

@@ -1,0 +1,49 @@
+<ion-modal [isOpen]="true" [backdropDismiss]="false" class="intro-modal">
+  <ng-template>
+    <ion-content class="ion-padding">
+      <div class="intro-container">
+        <div class="intro-header">
+          <ion-icon name="planet-outline" class="intro-icon"></ion-icon>
+          <h1>Welcome to Lunar Languages</h1>
+        </div>
+
+        <div class="intro-body">
+          <p class="intro-lead">Your essential, privacy-focused travel companion.</p>
+
+          <div class="feature-list">
+            <div class="feature-item">
+              <ion-icon name="airplane-outline"></ion-icon>
+              <div class="feature-text">
+                <h3>100% Offline</h3>
+                <p>No data required. Works in the subway, mountains, or airplane mode.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <ion-icon name="shield-checkmark-outline"></ion-icon>
+              <div class="feature-text">
+                <h3>Privacy First</h3>
+                <p>No ads, no tracking, no accounts. Your journey is yours alone.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <ion-icon name="volume-high-outline"></ion-icon>
+              <div class="feature-text">
+                <h3>Native-Quality Audio</h3>
+                <p>Crystal-clear pronunciation with phonetic guides for every phrase.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="intro-footer">
+          <ion-button expand="block" shape="round" (click)="onDismiss()" class="get-started-btn">
+            Get Started
+            <ion-icon slot="end" name="arrow-forward"></ion-icon>
+          </ion-button>
+        </div>
+      </div>
+    </ion-content>
+  </ng-template>
+</ion-modal>

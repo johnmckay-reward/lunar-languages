@@ -11,6 +11,7 @@ import { QuickPhrasesModalComponent } from '../components/quick-phrases-modal/qu
 import { CulturalNotesModalComponent } from '../components/cultural-notes-modal/cultural-notes-modal.component';
 import { NumbersModalComponent } from '../components/numbers-modal/numbers-modal.component';
 import { SentenceBuilderComponent } from '../components/sentence-builder/sentence-builder.component';
+import { IntroModalComponent } from '../components/intro-modal/intro-modal.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { SentenceBuilderComponent } from '../components/sentence-builder/sentenc
     QuickPhrasesModalComponent,
     CulturalNotesModalComponent,
     NumbersModalComponent,
-    SentenceBuilderComponent
+    SentenceBuilderComponent,
+    IntroModalComponent
   ]
 })
 export class HomePageModule {}
