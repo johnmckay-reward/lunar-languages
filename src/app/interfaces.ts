@@ -25,6 +25,7 @@ export interface Phrase {
   english: string;
   translation?: Translation;
   listenFor?: ListenFor[];
+  isPro?: boolean;
 }
 
 export interface CombinationMap {

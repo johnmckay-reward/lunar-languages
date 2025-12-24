@@ -3,6 +3,316 @@
     "like_champagne": {
       "text": "シャンパンをお願いします",
       "phonetic": "shan-pan o oh-neh-guy-she-mas"
+    },
+    "another_beer": {
+      "text": "ビールをもう一杯...",
+      "phonetic": "biiru o mou ippai..."
+    },
+    "another_wine": {
+      "text": "ワインをもう一杯...",
+      "phonetic": "wain o mou ippai..."
+    },
+    "another_coffee": {
+      "text": "コーヒーをもう一杯...",
+      "phonetic": "koohii o mou ippai..."
+    },
+    "another_bill": {
+      "text": "請求書の控えをもう一枚いただけますか？",
+      "phonetic": "seikyuusho no hikae o mou ichimai itadakemasuka?"
+    },
+    "is_there_atm": {
+      "text": "この近くにATMはありますか？",
+      "phonetic": "Kono chikaku ni ATM wa arimasu ka?"
+    },
+    "is_there_pharmacy": {
+      "text": "近くに薬局はありますか？",
+      "phonetic": "Chikaku ni yakkyoku wa arimasu ka?"
+    },
+    "is_there_wifi": {
+      "text": "ここにWi-Fiはありますか？",
+      "phonetic": "Koko ni Wi-Fi wa arimasu ka?"
+    },
+    "is_there_bus": {
+      "text": "市内行きのバスはありますか？",
+      "phonetic": "Shinai iki no basu wa arimasu ka?"
+    },
+    "lost_receipt": {
+      "text": "領収書を紛失しました。",
+      "phonetic": "りょうしゅうしょをふんしつしました。"
+    },
+    "where_supermarket": {
+      "text": "スーパーはどこですか？",
+      "phonetic": "Soo-pah wa doh-koh dess kah?"
+    },
+    "where_beach": {
+      "text": "ビーチはどこですか？",
+      "phonetic": "Bee-chee wa doh-koh dess kah?"
+    },
+    "like_ticket": {
+      "text": "切符をお願いします。",
+      "phonetic": "きっぷをおねがいします。"
+    },
+    "like_taxi": {
+      "text": "タクシーをお願いします。",
+      "phonetic": "Tah-koo-she oh oh-neh-guy-she-mass."
+    },
+    "like_water": {
+      "text": "お水をください。",
+      "phonetic": "Oh-mee-zoo oh koo-dah-sigh."
+    },
+    "like_coffee": {
+      "text": "コーヒーをください。",
+      "phonetic": "Koh-hee oh koo-dah-sigh."
+    },
+    "like_menu": {
+      "text": "メニューをください。",
+      "phonetic": "Men-yoo oh koo-dah-sigh."
+    },
+    "like_bill": {
+      "text": "お会計をお願いします。",
+      "phonetic": "Oh-kah-ee-kay oh oh-neh-guy-she-mass."
+    },
+    "like_beer": {
+      "text": "ビールをください。",
+      "phonetic": "Bee-roo oh koo-dah-sigh."
+    },
+    "like_wine": {
+      "text": "ワインをください。",
+      "phonetic": "Wah-in oh koo-dah-sigh."
+    },
+    "have_vegetarian": {
+      "text": "ベジタリアン料理はありますか？",
+      "phonetic": "Be-ji-tah-ree-an ryo-ree wa ah-ree-mass kah?"
+    },
+    "cost_coffee": {
+      "text": "コーヒーのお値段はどれくらいですか？",
+      "phonetic": "コーヒー の おねだん は どれ くらい です か？"
+    },
+    "cost_beer": {
+      "text": "ビールはいくらですか？",
+      "phonetic": "Bee-roo wa ee-koo-rah dess kah?"
+    },
+    "cost_wine": {
+      "text": "ワインはいくらですか？",
+      "phonetic": "Wah-in wa ee-koo-rah dess kah?"
+    },
+    "where_coffee": {
+      "text": "カフェはどこですか？",
+      "phonetic": "かふぇはどこですか？"
+    },
+    "like_seafood": {
+      "text": "シーフードをお願いします。",
+      "phonetic": "Shiifoodo o onegaishimasu."
+    },
+    "like_vegetarian": {
+      "text": "ベジタリアンのオプションをお願いします。",
+      "phonetic": "Bejitarian no opushon o onegaishimasu."
+    },
+    "have_beer": {
+      "text": "ビールはありますか？",
+      "phonetic": "Biiru wa arimasu ka?"
+    },
+    "have_wine": {
+      "text": "ワインはありますか？",
+      "phonetic": "Wain wa arimasu ka?"
+    },
+    "like_room": {
+      "text": "部屋をお願いします。",
+      "phonetic": "Heya o onegaishimasu."
+    },
+    "like_receipt": {
+      "text": "領収書をお願いします。",
+      "phonetic": "Ryoshusho o onegaishimasu."
+    },
+    "like_ice": {
+      "text": "氷をお願いします。",
+      "phonetic": "Koori o onegaishimasu."
+    },
+    "need_receipt": {
+      "text": "領収書が必要です。",
+      "phonetic": "Ryōshūsho ga hitsuyō desu"
+    },
+    "love_coffee": {
+      "text": "このコーヒーが好きです",
+      "phonetic": "Kono kōhī ga suki desu"
+    },
+    "love_wine": {
+      "text": "このワインが好きです",
+      "phonetic": "Kono wain ga suki desu"
+    },
+    "love_seafood": {
+      "text": "シーフードが大好きです",
+      "phonetic": "Shīfūdo ga daisuki desu"
+    },
+    "love_music": {
+      "text": "この音楽が好きです",
+      "phonetic": "Kono ongaku ga suki desu"
+    },
+    "share_taxi": {
+      "text": "タクシーを相乗りしませんか？",
+      "phonetic": "Takushī o ainori shimasen ka?"
+    },
+    "share_wine": {
+      "text": "ワインのボトルをシェアしませんか？",
+      "phonetic": "Wain no botoru o shea shimasen ka?"
+    },
+    "share_bill": {
+      "text": "割り勘にしましょう。",
+      "phonetic": "Warikan ni shimashō."
+    },
+    "share_seafood": {
+      "text": "シーフードの盛り合わせをシェアしませんか？",
+      "phonetic": "Shīfūdo no moriawase o shea shimasen ka?"
+    },
+    "is_free_wifi": {
+      "text": "Wi-Fiは無料ですか？",
+      "phonetic": "Wi-Fi wa muryo desu ka?"
+    },
+    "is_free_water": {
+      "text": "水は無料ですか？",
+      "phonetic": "Mizu wa muryo desu ka?"
+    },
+    "is_free_entrance": {
+      "text": "入場は無料ですか？",
+      "phonetic": "Nyujo wa muryo desu ka?"
+    },
+    "is_free_nuts": {
+      "text": "このナッツ、タダですか？",
+      "phonetic": "このナッツ、タダ ですか？"
+    }
+  },
+  "starters": {
+    "like": {
+      "listenFor": [
+        {
+          "text": "Hoka ni wa?",
+          "phonetic": "HOH-kah nee wah?",
+          "meaning": "Anything else?"
+        },
+        {
+          "text": "Tennai? Mochikaeri?",
+          "phonetic": "TEN-nigh? moh-chee-kye-REE?",
+          "meaning": "Eat in or Take out?"
+        },
+        {
+          "text": "Shoushou omachi kudasai",
+          "phonetic": "SHOW-show oh-MAH-chee koo-dah-SIGH",
+          "meaning": "Please wait a moment (Polite)"
+        }
+      ]
+    },
+    "is_there": {
+      "listenFor": [
+        {
+          "text": "はい、近くにあります",
+          "phonetic": "Hai, chee-kah-koo nee ah-ree-mass",
+          "meaning": "Yes, nearby"
+        },
+        {
+          "text": "いいえ、ここではありません",
+          "phonetic": "Ee-eh, koh-koh deh wa ah-ree-mah-sen",
+          "meaning": "No, not here"
+        },
+        {
+          "text": "左／右に曲がってください",
+          "phonetic": "Hi-dah-ree/Mee-ghee nee mah-gat-teh koo-dah-sai",
+          "meaning": "Turn left/right"
+        }
+      ]
+    },
+    "love": {
+      "listenFor": [
+        {
+          "text": "気に入っていただけて嬉しいです",
+          "phonetic": "Kee-nee-it-teh ee-tah-dah-keh-teh oo-reh-shee dess",
+          "meaning": "I'm glad you like it"
+        },
+        {
+          "text": "人気があります",
+          "phonetic": "Nin-ki gah ah-ree-mass",
+          "meaning": "It's popular"
+        },
+        {
+          "text": "ありがとうございます",
+          "phonetic": "Ah-ree-gah-toh go-zai-mass",
+          "meaning": "Thank you"
+        }
+      ]
+    },
+    "another": {
+      "listenFor": [
+        {
+          "text": "すぐにお持ちします",
+          "phonetic": "Soo-goo nee oh-mo-chee she-mass",
+          "meaning": "Coming right up"
+        },
+        {
+          "text": "かしこまりました",
+          "phonetic": "Kah-she-koh-mah-ree-mash-tah",
+          "meaning": "Certainly"
+        },
+        {
+          "text": "他にご注文は？",
+          "phonetic": "Hoh-kah nee go-choo-mon wa?",
+          "meaning": "Anything else?"
+        }
+      ]
+    },
+    "share": {
+      "listenFor": [
+        {
+          "text": "はい",
+          "phonetic": "Hai",
+          "meaning": "Okay"
+        },
+        {
+          "text": "いい考えですね",
+          "phonetic": "Ee kan-gah-eh dess neh",
+          "meaning": "Good idea"
+        },
+        {
+          "text": "お皿をお持ちします",
+          "phonetic": "Oh-sah-rah oh oh-mo-chee she-mass",
+          "meaning": "I'll bring plates"
+        }
+      ]
+    },
+    "is_free": {
+      "listenFor": [
+        {
+          "text": "はい、無料です",
+          "phonetic": "Hai, moo-ryoh dess",
+          "meaning": "Yes, it's free"
+        },
+        {
+          "text": "いいえ、有料です...",
+          "phonetic": "Ee-eh, yoo-ryoh dess...",
+          "meaning": "No, it costs..."
+        },
+        {
+          "text": "含まれています",
+          "phonetic": "Foo-koo-mah-reh-teh ee-mass",
+          "meaning": "Included"
+        }
+      ]
+    }
+  },
+  "essentials": {
+    "delicious": {
+      "text": "これは美味しいですね！",
+      "phonetic": "Kore wa oishii desu ne!"
+    },
+    "cheers": {
+      "text": "お祝いの乾杯をしましょう！",
+      "phonetic": "O-i-wa-i no Kan-pai o shi-ma-sho-u"
+    },
+    "good_morning": {
+      "text": "おはようございます",
+      "phonetic": "Oh-hah-yoh go-zai-mass"
+    },
+    "good_evening": {
+      "text": "こんばんは",
+      "phonetic": "Kon-ban-wah"
     }
   }
 }

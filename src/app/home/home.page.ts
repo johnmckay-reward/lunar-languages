@@ -39,6 +39,7 @@ export class HomePage implements OnInit {
   // --- Selection State ---
   selectedStarter: Phrase | null = null;
   selectedNoun: Phrase | null = null;
+  pendingProSelection: { type: 'starter' | 'noun' | 'essential', item: Phrase } | null = null;
   currentLanguage: LanguageInfo | null = null;
   currentAudioId: string | null = null;
   currentNotes: CulturalNote[] = [];
@@ -51,6 +52,7 @@ export class HomePage implements OnInit {
   displayPhonetic: string = '';
 
   isPro$ = this.dataService.isPro;
+  isProUser = false;
 
   isModalOpen = false;
   isNotesModalOpen = false;
@@ -97,6 +99,10 @@ export class HomePage implements OnInit {
     // Subscribe to language changes
     this.dataService.getCurrentLanguage().subscribe(lang => {
       this.currentLanguage = lang;
+    });
+
+    this.dataService.isPro.subscribe(isPro => {
+      this.isProUser = isPro;
     });
 
     const savedLang = this.dataService.getSavedLanguage();
@@ -180,6 +186,23 @@ export class HomePage implements OnInit {
     } else {
       this.loadData();
     }
+
+    // Resume pending selection if any
+    if (this.pendingProSelection) {
+      const { type, item } = this.pendingProSelection;
+      this.pendingProSelection = null;
+
+      // Small delay to allow data to reload/UI to update
+      setTimeout(() => {
+        if (type === 'starter') {
+          this.selectStarter(item);
+        } else if (type === 'noun') {
+          this.selectNoun(item);
+        } else if (type === 'essential') {
+          this.selectEssential(item);
+        }
+      }, 100);
+    }
   }
 
   loadData() {
@@ -213,6 +236,12 @@ export class HomePage implements OnInit {
   // ============================================
 
   selectStarter(starter: Phrase, autoScroll: boolean = true) {
+    if (starter.isPro && !this.isProUser) {
+      this.pendingProSelection = { type: 'starter', item: starter };
+      this.setUpgradeModalOpen(true);
+      return;
+    }
+
     Haptics.impact({ style: ImpactStyle.Light });
     this.selectedStarter = starter;
     this.selectedNoun = null;
@@ -235,6 +264,12 @@ export class HomePage implements OnInit {
   }
 
   selectNoun(noun: Phrase) {
+    if (noun.isPro && !this.isProUser) {
+      this.pendingProSelection = { type: 'noun', item: noun };
+      this.setUpgradeModalOpen(true);
+      return;
+    }
+
     Haptics.impact({ style: ImpactStyle.Light });
     this.content.scrollToTop(500);
     this.selectedNoun = noun;
@@ -242,6 +277,12 @@ export class HomePage implements OnInit {
   }
 
   selectEssential(phrase: Phrase) {
+    if (phrase.isPro && !this.isProUser) {
+      this.pendingProSelection = { type: 'essential', item: phrase };
+      this.setUpgradeModalOpen(true);
+      return;
+    }
+
     Haptics.impact({ style: ImpactStyle.Medium });
     this.selectedStarter = null;
     this.selectedNoun = null;
@@ -285,9 +326,15 @@ export class HomePage implements OnInit {
   playAudio(speed: number = 1.0) {
     if (!this.currentLanguage || !this.currentAudioId) return;
 
+    const isProAudio = this.dataService.isProAudio(this.currentAudioId);
+    if (isProAudio && !this.isProUser) {
+      this.setUpgradeModalOpen(true);
+      return;
+    }
+
     Haptics.impact({ style: ImpactStyle.Light });
 
-    const tier = this.dataService.isProAudio(this.currentAudioId) ? 'pro' : 'free';
+    const tier = isProAudio ? 'pro' : 'free';
     const path = `assets/audio/${tier}/${this.currentLanguage.code}/${this.currentAudioId}.mp3`;
     const audio = new Audio(path);
     audio.playbackRate = speed;

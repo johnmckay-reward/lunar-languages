@@ -3,6 +3,316 @@
     "like_champagne": {
       "text": "Vorrei dello champagne",
       "phonetic": "vor-RAY del-loh sham-PAN-yeh"
+    },
+    "another_beer": {
+      "text": "Un'altra birra...",
+      "phonetic": "oon-AL-trah BEER-rah..."
+    },
+    "another_wine": {
+      "text": "Un altro bicchiere di vino...",
+      "phonetic": "oon AL-troh beek-KYEH-reh dee VEE-noh..."
+    },
+    "another_coffee": {
+      "text": "Un altro caffè...",
+      "phonetic": "oon AL-troh kahf-FEH..."
+    },
+    "another_bill": {
+      "text": "Posso avere un'altra copia del conto?",
+      "phonetic": "POS-soh ah-VEH-reh oon-AL-trah KOH-pyah del KON-toh?"
+    },
+    "is_there_atm": {
+      "text": "C'è un bancomat qui vicino?",
+      "phonetic": "Cheh oon BAN-koh-mat kwee vee-CHEE-noh?"
+    },
+    "is_there_pharmacy": {
+      "text": "C'è una farmacia nelle vicinanze?",
+      "phonetic": "Cheh OO-nah far-mah-CHEE-ah nel-leh vee-chee-NAN-tseh?"
+    },
+    "is_there_wifi": {
+      "text": "C'è il WiFi qui?",
+      "phonetic": "Cheh eel WiFi kwee?"
+    },
+    "is_there_bus": {
+      "text": "C'è un autobus per la città?",
+      "phonetic": "Cheh oon OW-toh-boos per lah cheet-TAH?"
+    },
+    "lost_receipt": {
+      "text": "Ho perso la mia ricevuta.",
+      "phonetic": "Oh PER-soh lah MEE-ah ree-cheh-VOO-tah."
+    },
+    "where_supermarket": {
+      "text": "Dov'è il supermercato?",
+      "phonetic": "doh-VEH eel soo-per-mer-KAH-toh?"
+    },
+    "where_beach": {
+      "text": "Dov'è la spiaggia?",
+      "phonetic": "doh-VEH lah SPYAH-jah?"
+    },
+    "like_ticket": {
+      "text": "Vorrei un biglietto, per favore.",
+      "phonetic": "vor-RAY oon beel-YET-toh, per fah-VOH-reh."
+    },
+    "like_taxi": {
+      "text": "Vorrei un taxi, per favore.",
+      "phonetic": "vor-RAY oon TAK-see, per fah-VOH-reh."
+    },
+    "like_water": {
+      "text": "Vorrei dell'acqua, per favore.",
+      "phonetic": "vor-RAY del-LAH-kwah, per fah-VOH-reh."
+    },
+    "like_coffee": {
+      "text": "Vorrei un caffè.",
+      "phonetic": "vor-RAY oon kah-FEH."
+    },
+    "like_menu": {
+      "text": "Vorrei il menù, per favore.",
+      "phonetic": "vor-RAY eel meh-NOO, per fah-VOH-reh."
+    },
+    "like_bill": {
+      "text": "Il conto, per favore.",
+      "phonetic": "eel KON-toh, per fah-VOH-reh."
+    },
+    "like_beer": {
+      "text": "Vorrei una birra, per favore.",
+      "phonetic": "vor-RAY OO-nah BEER-rah, per fah-VOH-reh."
+    },
+    "like_wine": {
+      "text": "Vorrei un bicchiere di vino, per favore.",
+      "phonetic": "vor-RAY oon beek-YEH-reh dee VEE-no, per fah-VOH-reh."
+    },
+    "have_vegetarian": {
+      "text": "Offrite delle opzioni vegetariane?",
+      "phonetic": "ah-VEH-teh op-TSYO-nee veh-jeh-tah-ree-AH-neh?"
+    },
+    "cost_coffee": {
+      "text": "Quanto costa un caffè?",
+      "phonetic": "KWAN-toh KOS-tah oon kah-FEH?"
+    },
+    "cost_beer": {
+      "text": "Qual è il prezzo di una birra?",
+      "phonetic": "kwal è il pret.tso dee oona beer.ra"
+    },
+    "cost_wine": {
+      "text": "Quanto costa un bicchiere di vino?",
+      "phonetic": "KWAN-toh KOS-tah oon beek-YEH-reh dee VEE-no?"
+    },
+    "where_coffee": {
+      "text": "Dov'è una caffetteria?",
+      "phonetic": "Dov-ay oona kaffettereea"
+    },
+    "like_seafood": {
+      "text": "Desidero i frutti di mare.",
+      "phonetic": "deh-see-deh-roh ee froo-tee dee mah-reh"
+    },
+    "like_vegetarian": {
+      "text": "Vorrei l'opzione vegetariana.",
+      "phonetic": "Vor-ray lopsyonay vejaytaryana"
+    },
+    "have_beer": {
+      "text": "Avete della birra?",
+      "phonetic": "Ah-ve-teh della bee-rra"
+    },
+    "have_wine": {
+      "text": "Avete vino?",
+      "phonetic": "Avaytay veeno"
+    },
+    "like_room": {
+      "text": "Vorrei una camera.",
+      "phonetic": "Vor-ray oo-na kah-meh-rah"
+    },
+    "like_receipt": {
+      "text": "Vorrei una ricevuta.",
+      "phonetic": "Vor-ray oo-na ree-che-voo-ta"
+    },
+    "like_ice": {
+      "text": "Vorrei del ghiaccio.",
+      "phonetic": "Vor-ray del gyah-cho"
+    },
+    "need_receipt": {
+      "text": "Ho bisogno di una ricevuta.",
+      "phonetic": "O bi-zo-nyo di u-na ri-ce-vu-ta"
+    },
+    "love_coffee": {
+      "text": "Mi piace questo caffè",
+      "phonetic": "Mee PYAH-cheh KWEH-stoh kah-FEH"
+    },
+    "love_wine": {
+      "text": "Mi piace questo vino",
+      "phonetic": "Mee PYAH-cheh KWEH-stoh VEE-noh"
+    },
+    "love_seafood": {
+      "text": "Adoro i frutti di mare",
+      "phonetic": "Ah-DOH-roh ee FROOT-tee dee MAH-reh"
+    },
+    "love_music": {
+      "text": "Mi piace questa musica",
+      "phonetic": "Mee PYAH-cheh KWEH-stah MOO-zee-kah"
+    },
+    "share_taxi": {
+      "text": "Dividiamo un taxi?",
+      "phonetic": "dee-vee-DYAH-moh oon TAK-see?"
+    },
+    "share_wine": {
+      "text": "Dividiamo una bottiglia di vino?",
+      "phonetic": "dee-vee-DYAH-moh OO-nah bot-TEEL-yah dee VEE-noh?"
+    },
+    "share_bill": {
+      "text": "Dividiamo il conto.",
+      "phonetic": "dee-vee-DYAH-moh eel KON-toh."
+    },
+    "share_seafood": {
+      "text": "Dividiamo il piatto di frutti di mare?",
+      "phonetic": "dee-vee-DYAH-moh eel PYAT-toh dee FROOT-tee dee MAH-reh?"
+    },
+    "is_free_wifi": {
+      "text": "Il WiFi è gratuito?",
+      "phonetic": "eel wai-fai eh gra-too-ee-to"
+    },
+    "is_free_water": {
+      "text": "L'acqua è gratis?",
+      "phonetic": "L'akwa eh grah-tees?"
+    },
+    "is_free_entrance": {
+      "text": "L'ingresso è gratuito?",
+      "phonetic": "lin-gres-so eh gra-too-ee-to"
+    },
+    "is_free_nuts": {
+      "text": "Queste noccioline sono gratuite?",
+      "phonetic": "kwes-te no-cho-lee-ne so-no gra-too-ee-te"
+    }
+  },
+  "starters": {
+    "like": {
+      "listenFor": [
+        {
+          "text": "Nient'altro?",
+          "phonetic": "nyent-AL-tro?",
+          "meaning": "Nothing else? (Finished?)"
+        },
+        {
+          "text": "Da portare via?",
+          "phonetic": "dah por-TAH-reh VEE-ah?",
+          "meaning": "To take away?"
+        },
+        {
+          "text": "Un attimo",
+          "phonetic": "oon AH-tee-moh",
+          "meaning": "One moment"
+        }
+      ]
+    },
+    "is_there": {
+      "listenFor": [
+        {
+          "text": "Sì, qui vicino",
+          "phonetic": "see, kwee vee-CHEE-noh",
+          "meaning": "Yes, nearby"
+        },
+        {
+          "text": "No, non qui",
+          "phonetic": "noh, non kwee",
+          "meaning": "No, not here"
+        },
+        {
+          "text": "Gira a sinistra/destra",
+          "phonetic": "JEE-rah ah see-NEE-strah/DEH-strah",
+          "meaning": "Turn left/right"
+        }
+      ]
+    },
+    "love": {
+      "listenFor": [
+        {
+          "text": "Sono contento che ti piaccia",
+          "phonetic": "SOH-noh kon-TEN-toh keh tee PYAH-chah",
+          "meaning": "I'm glad you like it"
+        },
+        {
+          "text": "È popolare",
+          "phonetic": "eh poh-poh-LAH-reh",
+          "meaning": "It's popular"
+        },
+        {
+          "text": "Grazie",
+          "phonetic": "GRAH-tsee-eh",
+          "meaning": "Thank you"
+        }
+      ]
+    },
+    "another": {
+      "listenFor": [
+        {
+          "text": "Arriva subito",
+          "phonetic": "ar-REE-vah SOO-bee-toh",
+          "meaning": "Coming right up"
+        },
+        {
+          "text": "Certamente",
+          "phonetic": "cher-tah-MEN-teh",
+          "meaning": "Certainly"
+        },
+        {
+          "text": "Altro?",
+          "phonetic": "AL-troh?",
+          "meaning": "Anything else?"
+        }
+      ]
+    },
+    "share": {
+      "listenFor": [
+        {
+          "text": "Va bene",
+          "phonetic": "vah BEH-neh",
+          "meaning": "Okay"
+        },
+        {
+          "text": "Buona idea",
+          "phonetic": "BWO-nah ee-DEH-ah",
+          "meaning": "Good idea"
+        },
+        {
+          "text": "Porto i piatti",
+          "phonetic": "POR-toh ee PYAT-tee",
+          "meaning": "I'll bring plates"
+        }
+      ]
+    },
+    "is_free": {
+      "listenFor": [
+        {
+          "text": "Sì, è gratis",
+          "phonetic": "see, eh GRAH-tees",
+          "meaning": "Yes, it's free"
+        },
+        {
+          "text": "No, costa...",
+          "phonetic": "noh, KOS-tah...",
+          "meaning": "No, it costs..."
+        },
+        {
+          "text": "Incluso",
+          "phonetic": "een-KLOO-zoh",
+          "meaning": "Included"
+        }
+      ]
+    }
+  },
+  "essentials": {
+    "delicious": {
+      "text": "Assolutamente delizioso!",
+      "phonetic": "As-so-lu-ta-men-te de-li-zio-so"
+    },
+    "cheers": {
+      "text": "Salute!",
+      "phonetic": "sah-LOO-teh!"
+    },
+    "good_morning": {
+      "text": "Buongiorno",
+      "phonetic": "bwon-JOR-noh"
+    },
+    "good_evening": {
+      "text": "Buonasera",
+      "phonetic": "bwo-nah-SEH-rah"
     }
   }
 }

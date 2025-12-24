@@ -2,6 +2,316 @@
   "combinations": {
     "like_champagne": {
       "text": "I would like Champagne"
+    },
+    "another_beer": {
+      "text": "Another beer, please!",
+      "phonetic": ""
+    },
+    "another_wine": {
+      "text": "Another glass of wine, please.",
+      "phonetic": ""
+    },
+    "another_coffee": {
+      "text": "Another coffee, please.",
+      "phonetic": ""
+    },
+    "another_bill": {
+      "text": "Can I have another copy of the bill?",
+      "phonetic": ""
+    },
+    "is_there_atm": {
+      "text": "Is there an ATM near here?",
+      "phonetic": ""
+    },
+    "is_there_pharmacy": {
+      "text": "Is there a pharmacy nearby?",
+      "phonetic": ""
+    },
+    "is_there_wifi": {
+      "text": "Is there WiFi here?",
+      "phonetic": ""
+    },
+    "is_there_bus": {
+      "text": "Is there a bus to the city?",
+      "phonetic": ""
+    },
+    "lost_receipt": {
+      "text": "I lost my receipt.",
+      "phonetic": ""
+    },
+    "where_supermarket": {
+      "text": "Where is the supermarket?",
+      "phonetic": ""
+    },
+    "where_beach": {
+      "text": "Where is the beach?",
+      "phonetic": ""
+    },
+    "like_ticket": {
+      "text": "I would like a ticket please.",
+      "phonetic": ""
+    },
+    "like_taxi": {
+      "text": "I would like a taxi please.",
+      "phonetic": ""
+    },
+    "like_water": {
+      "text": "I would like some water.",
+      "phonetic": ""
+    },
+    "like_coffee": {
+      "text": "I would like a coffee.",
+      "phonetic": ""
+    },
+    "like_menu": {
+      "text": "I would like the menu please.",
+      "phonetic": ""
+    },
+    "like_bill": {
+      "text": "I would like the bill please.",
+      "phonetic": ""
+    },
+    "like_beer": {
+      "text": "I would like a beer.",
+      "phonetic": ""
+    },
+    "like_wine": {
+      "text": "I would like a glass of wine.",
+      "phonetic": ""
+    },
+    "have_vegetarian": {
+      "text": "Do you have any vegetarian options?",
+      "phonetic": ""
+    },
+    "cost_coffee": {
+      "text": "How much is a coffee?",
+      "phonetic": ""
+    },
+    "cost_beer": {
+      "text": "How much is a beer?",
+      "phonetic": ""
+    },
+    "cost_wine": {
+      "text": "How much is a glass of wine?",
+      "phonetic": ""
+    },
+    "where_coffee": {
+      "text": "Where is a coffee shop?",
+      "phonetic": ""
+    },
+    "like_seafood": {
+      "text": "I would like the seafood.",
+      "phonetic": ""
+    },
+    "like_vegetarian": {
+      "text": "I would like the vegetarian option.",
+      "phonetic": ""
+    },
+    "have_beer": {
+      "text": "Do you have beer?",
+      "phonetic": ""
+    },
+    "have_wine": {
+      "text": "Do you have wine?",
+      "phonetic": ""
+    },
+    "like_room": {
+      "text": "I would like a room.",
+      "phonetic": ""
+    },
+    "like_receipt": {
+      "text": "I would like a receipt.",
+      "phonetic": ""
+    },
+    "like_ice": {
+      "text": "I would like some ice.",
+      "phonetic": ""
+    },
+    "need_receipt": {
+      "text": "I need a receipt.",
+      "phonetic": ""
+    },
+    "love_coffee": {
+      "text": "I like this coffee.",
+      "phonetic": ""
+    },
+    "love_wine": {
+      "text": "I like this wine.",
+      "phonetic": ""
+    },
+    "love_seafood": {
+      "text": "I love seafood.",
+      "phonetic": ""
+    },
+    "love_music": {
+      "text": "I like this music.",
+      "phonetic": ""
+    },
+    "share_taxi": {
+      "text": "Shall we share a taxi?",
+      "phonetic": ""
+    },
+    "share_wine": {
+      "text": "Shall we share a bottle of wine?",
+      "phonetic": ""
+    },
+    "share_bill": {
+      "text": "Let's split the bill.",
+      "phonetic": ""
+    },
+    "share_seafood": {
+      "text": "Shall we share the seafood platter?",
+      "phonetic": ""
+    },
+    "is_free_wifi": {
+      "text": "Is the WiFi free?",
+      "phonetic": ""
+    },
+    "is_free_water": {
+      "text": "Is the water free?",
+      "phonetic": ""
+    },
+    "is_free_entrance": {
+      "text": "Is the entrance free?",
+      "phonetic": ""
+    },
+    "is_free_nuts": {
+      "text": "Are these nuts free?",
+      "phonetic": ""
+    }
+  },
+  "starters": {
+    "like": {
+      "listenFor": [
+        {
+          "text": "Anything else?",
+          "phonetic": "",
+          "meaning": "Anything else?"
+        },
+        {
+          "text": "Cash or card?",
+          "phonetic": "",
+          "meaning": "Cash or card?"
+        },
+        {
+          "text": "One moment",
+          "phonetic": "",
+          "meaning": "One moment"
+        }
+      ]
+    },
+    "is_there": {
+      "listenFor": [
+        {
+          "text": "Yes, nearby",
+          "phonetic": "",
+          "meaning": "Yes, nearby"
+        },
+        {
+          "text": "No, not here",
+          "phonetic": "",
+          "meaning": "No, not here"
+        },
+        {
+          "text": "Turn left/right",
+          "phonetic": "",
+          "meaning": "Turn left/right"
+        }
+      ]
+    },
+    "love": {
+      "listenFor": [
+        {
+          "text": "I'm glad you like it",
+          "phonetic": "",
+          "meaning": "I'm glad you like it"
+        },
+        {
+          "text": "It's popular",
+          "phonetic": "",
+          "meaning": "It's popular"
+        },
+        {
+          "text": "Thank you",
+          "phonetic": "",
+          "meaning": "Thank you"
+        }
+      ]
+    },
+    "another": {
+      "listenFor": [
+        {
+          "text": "Coming right up",
+          "phonetic": "",
+          "meaning": "Coming right up"
+        },
+        {
+          "text": "Certainly",
+          "phonetic": "",
+          "meaning": "Certainly"
+        },
+        {
+          "text": "Anything else?",
+          "phonetic": "",
+          "meaning": "Anything else?"
+        }
+      ]
+    },
+    "share": {
+      "listenFor": [
+        {
+          "text": "Okay",
+          "phonetic": "",
+          "meaning": "Okay"
+        },
+        {
+          "text": "Good idea",
+          "phonetic": "",
+          "meaning": "Good idea"
+        },
+        {
+          "text": "I'll bring plates",
+          "phonetic": "",
+          "meaning": "I'll bring plates"
+        }
+      ]
+    },
+    "is_free": {
+      "listenFor": [
+        {
+          "text": "Yes, it's free",
+          "phonetic": "",
+          "meaning": "Yes, it's free"
+        },
+        {
+          "text": "No, it costs...",
+          "phonetic": "",
+          "meaning": "No, it costs..."
+        },
+        {
+          "text": "Included",
+          "phonetic": "",
+          "meaning": "Included"
+        }
+      ]
+    }
+  },
+  "essentials": {
+    "delicious": {
+      "text": "Delicious!",
+      "phonetic": ""
+    },
+    "cheers": {
+      "text": "Cheers!",
+      "phonetic": ""
+    },
+    "good_morning": {
+      "text": "Good morning",
+      "phonetic": ""
+    },
+    "good_evening": {
+      "text": "Good evening",
+      "phonetic": ""
     }
   }
 }

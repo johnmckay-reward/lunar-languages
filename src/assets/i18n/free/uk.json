@@ -12,14 +12,6 @@
       "text": "До побачення",
       "phonetic": "Doh poh-BAH-chen-nya"
     },
-    "good_morning": {
-      "text": "Доброго ранку",
-      "phonetic": "DOH-bro-ho RAN-koo"
-    },
-    "good_evening": {
-      "text": "Добрий вечір",
-      "phonetic": "DOH-bryy VEH-cheer"
-    },
     "bathroom": {
       "text": "Де туалет?",
       "phonetic": "Deh too-ah-LET?"
@@ -47,14 +39,6 @@
     "help": {
       "text": "Допоможіть!",
       "phonetic": "Doh-poh-moh-ZHEET!"
-    },
-    "delicious": {
-      "text": "Смачно!",
-      "phonetic": "SMACH-noh!"
-    },
-    "cheers": {
-      "text": "Будьмо!",
-      "phonetic": "BOOD-moh!"
     },
     "wifi_pass": {
       "text": "Пароль від WiFi?",
@@ -87,25 +71,6 @@
           "text": "Близько",
           "phonetic": "BLYZ-koh",
           "meaning": "Close / Nearby"
-        }
-      ]
-    },
-    "like": {
-      "listenFor": [
-        {
-          "text": "Ще щось?",
-          "phonetic": "shcheh shchos?",
-          "meaning": "Anything else?"
-        },
-        {
-          "text": "Тут чи з собою?",
-          "phonetic": "toot chy zah-BOH-yoo?",
-          "meaning": "Here or to go?"
-        },
-        {
-          "text": "Хвилинку",
-          "phonetic": "hvy-LYN-koo",
-          "meaning": "One minute"
         }
       ]
     },
@@ -223,44 +188,6 @@
         }
       ]
     },
-    "is_there": {
-      "listenFor": [
-        {
-          "text": "Так, поруч",
-          "phonetic": "Tak, POH-rooch",
-          "meaning": "Yes, nearby"
-        },
-        {
-          "text": "Ні, не тут",
-          "phonetic": "Nee, neh toot",
-          "meaning": "No, not here"
-        },
-        {
-          "text": "Поверніть ліворуч/праворуч",
-          "phonetic": "Poh-ver-NEET lee-VOH-rooch/prah-VOH-rooch",
-          "meaning": "Turn left/right"
-        }
-      ]
-    },
-    "love": {
-      "listenFor": [
-        {
-          "text": "Радий, що вам подобається",
-          "phonetic": "RAH-dyy, shcho vam poh-DOH-bah-yet-sya",
-          "meaning": "I'm glad you like it"
-        },
-        {
-          "text": "Це популярно",
-          "phonetic": "Tseh poh-poo-LYAR-noh",
-          "meaning": "It's popular"
-        },
-        {
-          "text": "Дякую",
-          "phonetic": "DYA-koo-yoo",
-          "meaning": "Thank you"
-        }
-      ]
-    },
     "call": {
       "listenFor": [
         {
@@ -277,44 +204,6 @@
           "text": "Один момент",
           "phonetic": "Oh-DYN moh-MENT",
           "meaning": "One moment"
-        }
-      ]
-    },
-    "another": {
-      "listenFor": [
-        {
-          "text": "Зараз буде",
-          "phonetic": "ZAH-raz BOO-deh",
-          "meaning": "Coming right up"
-        },
-        {
-          "text": "Звичайно",
-          "phonetic": "Zvy-CHAY-noh",
-          "meaning": "Certainly"
-        },
-        {
-          "text": "Щось ще?",
-          "phonetic": "Shchos shche?",
-          "meaning": "Anything else?"
-        }
-      ]
-    },
-    "share": {
-      "listenFor": [
-        {
-          "text": "Гаразд",
-          "phonetic": "Hah-RAZD",
-          "meaning": "Okay"
-        },
-        {
-          "text": "Гарна ідея",
-          "phonetic": "HAR-nah ee-DEH-ya",
-          "meaning": "Good idea"
-        },
-        {
-          "text": "Я принесу тарілки",
-          "phonetic": "Ya pry-neh-SOO tah-REEL-ky",
-          "meaning": "I'll bring plates"
         }
       ]
     },
@@ -336,76 +225,9 @@
           "meaning": "No problem"
         }
       ]
-    },
-    "is_free": {
-      "listenFor": [
-        {
-          "text": "Так, це безкоштовно",
-          "phonetic": "Tak, tseh bez-kosh-TOV-noh",
-          "meaning": "Yes, it's free"
-        },
-        {
-          "text": "Ні, це коштує...",
-          "phonetic": "Nee, tseh kosh-TOO-yeh...",
-          "meaning": "No, it costs..."
-        },
-        {
-          "text": "Включено",
-          "phonetic": "Vklyoo-cheh-NOH",
-          "meaning": "Included"
-        }
-      ]
     }
   },
   "combinations": {
-    "another_beer": {
-      "text": "Ще одне пиво...",
-      "phonetic": "shche od-NE py-vo..."
-    },
-    "another_wine": {
-      "text": "Ще один келих вина...",
-      "phonetic": "shche o-DYN ke-lykh vy-NA..."
-    },
-    "another_coffee": {
-      "text": "Ще одну каву...",
-      "phonetic": "shche od-NU ka-vu..."
-    },
-    "another_bill": {
-      "text": "Можна мені ще одну копію рахунку?",
-      "phonetic": "MOZH-na me-NI shche od-NU ko-pi-yu ra-KHUN-ku?"
-    },
-    "love_coffee": {
-      "phonetic": "Meni podobayetsya tsya kava",
-      "text": "Мені подобається ця кава"
-    },
-    "love_wine": {
-      "phonetic": "Meni podobayetsya tse vyno",
-      "text": "Мені подобається це вино"
-    },
-    "love_seafood": {
-      "phonetic": "Ya lyublyu moreprodukty",
-      "text": "Я люблю морепродукти"
-    },
-    "love_music": {
-      "phonetic": "Meni podobayetsya tsya muzyka",
-      "text": "Мені подобається ця музика"
-    },
-    "is_there_atm": {
-      "text": "Чи є тут поблизу банкомат?",
-      "phonetic": "Chy yeh toot poh-BLY-zoo ban-koh-MAT?"
-    },
-    "is_there_pharmacy": {
-      "text": "Чи є поблизу аптека?",
-      "phonetic": "Chy yeh poh-BLY-zoo ap-TEH-kah?"
-    },
-    "is_there_wifi": {
-      "text": "Чи є тут Wi-Fi?",
-      "phonetic": "Chy yeh toot Wi-Fi?"
-    },
-    "is_there_bus": {
-      "text": "Чи є автобус до міста?",
-      "phonetic": "Chy yeh av-TOH-boos doh MIS-tah?"
-    },
     "lost_ticket": {
       "text": "Я загубив квиток.",
       "phonetic": "Ya zah-hoo-BYV kvy-TOK."
@@ -433,10 +255,6 @@
     "lost_map": {
       "text": "Я загубив карту.",
       "phonetic": "Ya zah-hoo-BYV KAR-too."
-    },
-    "lost_receipt": {
-      "text": "Я загубив чек.",
-      "phonetic": "Ya zah-hoo-BYV chek."
     },
     "where_station": {
       "text": "Де вокзал?",
@@ -474,46 +292,6 @@
       "text": "Де лікарня?",
       "phonetic": "Deh lee-KAR-nya?"
     },
-    "where_supermarket": {
-      "text": "Де супермаркет?",
-      "phonetic": "Deh soo-per-MAR-ket?"
-    },
-    "where_beach": {
-      "text": "Де знаходиться пляж?",
-      "phonetic": "De znakhodytsia pliazh?"
-    },
-    "like_ticket": {
-      "text": "Я хотів би квиток, будь ласка.",
-      "phonetic": "Ya kho-TIV by kvy-TOK, bood LAS-kah."
-    },
-    "like_taxi": {
-      "text": "Я хотів би таксі, будь ласка.",
-      "phonetic": "Ya kho-TIV by tak-SEE, bood LAS-kah."
-    },
-    "like_water": {
-      "text": "Я хотів би води, будь ласка.",
-      "phonetic": "Ya kho-TIV by voh-DY, bood LAS-kah."
-    },
-    "like_coffee": {
-      "text": "Я хотів би кави.",
-      "phonetic": "Ya kho-TIV by KAH-vy."
-    },
-    "like_menu": {
-      "text": "Я хотів би меню, будь ласка.",
-      "phonetic": "Ya kho-TIV by meh-NYU, bood LAS-kah."
-    },
-    "like_bill": {
-      "text": "Рахунок, будь ласка.",
-      "phonetic": "Rah-KHOO-nok, bood LAS-kah."
-    },
-    "like_beer": {
-      "text": "Я хотів би пива, будь ласка.",
-      "phonetic": "Ya kho-TIV by PY-vah, bood LAS-kah."
-    },
-    "like_wine": {
-      "text": "Я хотів би келих вина, будь ласка.",
-      "phonetic": "Ya kho-TIV by KE-lykh vee-NAH, bood LAS-kah."
-    },
     "have_wifi": {
       "text": "Чи маєте ви бездротовий інтернет?",
       "phonetic": "Chy mayete vy bezdrotovyy internet?"
@@ -530,10 +308,6 @@
       "text": "У вас є меню англійською?",
       "phonetic": "Oo vas yeh meh-NYU an-HLYY-skoh-yoo?"
     },
-    "have_vegetarian": {
-      "text": "У вас є вегетаріанські страви?",
-      "phonetic": "Oo vas yeh ve-heh-tah-ree-AHN-skee STRAH-vy?"
-    },
     "cost_ticket": {
       "text": "Скільки коштує квиток?",
       "phonetic": "SKIL-ky KOSH-too-yeh kvy-TOK?"
@@ -546,53 +320,17 @@
       "text": "Скільки коштує кімната?",
       "phonetic": "SKIL-ky KOSH-too-yeh kim-NAH-tah?"
     },
-    "cost_coffee": {
-      "text": "Скільки коштує кава?",
-      "phonetic": "SKIL-ky KOSH-too-yeh KAH-vah?"
-    },
-    "cost_beer": {
-      "text": "Скільки коштує пиво?",
-      "phonetic": "SKIL-ky KOSH-too-yeh PY-vo?"
-    },
-    "cost_wine": {
-      "text": "Скільки коштує келих вина?",
-      "phonetic": "SKIL-ky KOSH-too-yeh KE-lykh vee-NAH?"
-    },
     "allergic_peanuts": {
       "text": "У мене алергія на арахіс.",
       "phonetic": "Oo MEH-neh ah-ler-HEE-ya na ah-RAH-khis."
-    },
-    "allergic_seafood": {
-      "text": "У мене алергія на морепродукти.",
-      "phonetic": "Oo MEH-neh ah-ler-HEE-ya na moh-reh-proh-DOOK-ty."
-    },
-    "where_coffee": {
-      "text": "Де тут кав'ярня?",
-      "phonetic": "De tut kavyarnya?"
     },
     "where_water": {
       "text": "Де можна купити води?",
       "phonetic": "De mozhna kupyty vody?"
     },
-    "like_seafood": {
-      "text": "Я хотів би морепродукти.",
-      "phonetic": "Ya khotiv by moreprodukty."
-    },
-    "like_vegetarian": {
-      "text": "Я хотів би вегетаріанську страву.",
-      "phonetic": "Ya khotiv by vegetarian'sku stravu."
-    },
     "have_water": {
       "text": "У вас є вода?",
       "phonetic": "U vas ye voda?"
-    },
-    "have_beer": {
-      "text": "У вас є пиво?",
-      "phonetic": "U vas ye pyvo?"
-    },
-    "have_wine": {
-      "text": "У вас є вино?",
-      "phonetic": "U vas ye vyno?"
     },
     "cost_wifi": {
       "text": "Скільки коштує WiFi?",
@@ -601,10 +339,6 @@
     "cost_water": {
       "text": "Скільки коштує вода?",
       "phonetic": "Skil'ky koshtuye voda?"
-    },
-    "cost_seafood": {
-      "text": "Скільки коштують морепродукти?",
-      "phonetic": "Skil'ky koshtuyut' moreprodukty?"
     },
     "where_bus": {
       "text": "Де автобус?",
@@ -622,25 +356,9 @@
       "text": "Де ключ?",
       "phonetic": "De klyuch?"
     },
-    "like_room": {
-      "text": "Я хотів би кімнату.",
-      "phonetic": "Ya khotiv by kimnatu."
-    },
-    "like_receipt": {
-      "text": "Я хотів би чек.",
-      "phonetic": "Ya khotiv by chek."
-    },
-    "like_ice": {
-      "text": "Я хотів би льоду.",
-      "phonetic": "Ya khotiv by lodu."
-    },
     "have_map": {
       "text": "У вас є карта?",
       "phonetic": "U vas ye karta?"
-    },
-    "have_sugar": {
-      "text": "У вас є цукор?",
-      "phonetic": "U vas ye tsukor?"
     },
     "cost_bus": {
       "text": "Скільки коштує автобус?",
@@ -693,10 +411,6 @@
     "need_map": {
       "text": "Мені потрібна карта.",
       "phonetic": "Meni potribna karta"
-    },
-    "need_receipt": {
-      "text": "Мені потрібен чек.",
-      "phonetic": "Meni potriben chek"
     },
     "need_water": {
       "text": "Мені потрібна вода.",
@@ -762,21 +476,13 @@
       "text": "Будь ласка, зателефонуйте в мій готель.",
       "phonetic": "bud laska zatelefonuyte v miy hotel"
     },
-    "share_taxi": {
-      "text": "Давайте візьмемо таксі разом?",
-      "phonetic": "Da-VAY-te viz-ME-mo tak-SI ra-ZOM?"
+    "no_dairy": {
+      "text": "Без молочних продуктів, будь ласка",
+      "phonetic": "Bez mo-loch-nykh pro-duk-tiv, bud laska"
     },
-    "share_wine": {
-      "text": "Давайте візьмемо пляшку вина на двох?",
-      "phonetic": "Da-VAY-te viz-ME-mo PLYASH-ku vy-NA na dvokh?"
-    },
-    "share_bill": {
-      "text": "Давайте розділимо рахунок.",
-      "phonetic": "Da-VAY-te roz-DI-ly-mo ra-KHU-nok."
-    },
-    "share_seafood": {
-      "text": "Давайте візьмемо тарілку морепродуктів на двох?",
-      "phonetic": "Da-VAY-te viz-ME-mo ta-RIL-ku mo-re-pro-DUK-tiv na dvokh?"
+    "have_sugar": {
+      "text": "У вас є цукор?",
+      "phonetic": "U vas ye tsukor?"
     },
     "no_ice": {
       "text": "Без льоду, будь ласка",
@@ -786,29 +492,17 @@
       "text": "Без цукру, будь ласка",
       "phonetic": "Bez tsu-kru, bud laska"
     },
-    "no_dairy": {
-      "text": "Без молочних продуктів, будь ласка",
-      "phonetic": "Bez mo-loch-nykh pro-duk-tiv, bud laska"
+    "allergic_seafood": {
+      "text": "У мене алергія на морепродукти.",
+      "phonetic": "Oo MEH-neh ah-ler-HEE-ya na moh-reh-proh-DOOK-ty."
+    },
+    "cost_seafood": {
+      "text": "Скільки коштують морепродукти?",
+      "phonetic": "Skil'ky koshtuyut' moreprodukty?"
     },
     "no_meat": {
       "text": "Без м'яса, будь ласка",
       "phonetic": "Bez mya-sa, bud laska"
-    },
-    "is_free_wifi": {
-      "text": "Wi-Fi безкоштовний?",
-      "phonetic": "Wi-Fi bez-kosh-tov-nyy"
-    },
-    "is_free_water": {
-      "text": "Вода безкоштовна?",
-      "phonetic": "vo-da bez-kosh-tov-na"
-    },
-    "is_free_entrance": {
-      "text": "Вхід безкоштовний?",
-      "phonetic": "vkhid bez-kosh-tov-nyy"
-    },
-    "is_free_nuts": {
-      "text": "Ці горішки безкоштовні?",
-      "phonetic": "tsi ho-rish-ky bez-kosh-tov-ni"
     }
   }
 }

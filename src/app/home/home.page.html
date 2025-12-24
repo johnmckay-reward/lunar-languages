@@ -58,6 +58,7 @@
   <app-quick-phrases-modal
     [isOpen]="isModalOpen"
     [essentials]="essentials"
+    [isProUser]="isProUser"
     (didDismiss)="setModalOpen(false)"
     (phraseSelected)="selectEssential($event)">
   </app-quick-phrases-modal>
@@ -80,6 +81,7 @@
     [visibleNouns]="visibleNouns"
     [selectedStarter]="selectedStarter"
     [selectedNoun]="selectedNoun"
+    [isProUser]="isProUser"
     (starterSelected)="selectStarter($event)"
     (nounSelected)="selectNoun($event)">
   </app-sentence-builder>

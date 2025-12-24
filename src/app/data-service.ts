@@ -28,11 +28,18 @@ export class DataService {
   // ============================================================
   // 1. ESSENTIALS (Standalone phrases - Always available)
   // ============================================================
-  private essentials: Phrase[] = Object.entries(enData.essentials).map(([key, value]) => ({
-    id: key,
-    type: 'essential',
-    english: (value as any).text
-  }));
+  private essentials: Phrase[] = [
+    ...Object.entries(enData.essentials).map(([key, value]) => ({
+      id: key,
+      type: 'essential' as const,
+      english: (value as any).text
+    })),
+    ...Object.entries((proEnData as any).essentials || {}).map(([key, value]) => ({
+      id: key,
+      type: 'essential' as const,
+      english: (value as any).text
+    }))
+  ];
 
   // ============================================================
   // 4. COMBINATIONS (The Sentence Lookup Logic)
@@ -66,15 +73,15 @@ export class DataService {
   }
 
   private get supportedLanguages(): LanguageInfo[] {
-    return this.isProSubject.value ? proSupportedLanguages : freeSupportedLanguages;
+    return proSupportedLanguages;
   }
 
   private get starters(): Phrase[] {
-    return this.isProSubject.value ? proStarters : freeStarters;
+    return proStarters;
   }
 
   private get nouns(): Phrase[] {
-    return this.isProSubject.value ? proNouns : freeNouns;
+    return proNouns;
   }
 
 
@@ -102,16 +109,11 @@ export class DataService {
     }
 
     const free$ = this.http.get(`assets/i18n/free/${lang}.json`);
-    let request$: Observable<any>;
+    const pro$ = this.http.get(`assets/i18n/pro/${lang}.json`);
 
-    if (this.isProSubject.value) {
-      const pro$ = this.http.get(`assets/i18n/pro/${lang}.json`);
-      request$ = forkJoin([free$, pro$]).pipe(
-        map(([free, pro]) => this.mergeTranslations(free, pro))
-      );
-    } else {
-      request$ = free$;
-    }
+    const request$ = forkJoin([free$, pro$]).pipe(
+      map(([free, pro]) => this.mergeTranslations(free, pro))
+    );
 
     return request$.pipe(
       tap(data => {
@@ -145,6 +147,19 @@ export class DataService {
     return this.proAudioIds.has(id);
   }
 
+  isProItem(id: string, type: 'essential' | 'starter' | 'noun'): boolean {
+    if (type === 'essential') {
+      return !enData.essentials.hasOwnProperty(id);
+    }
+    if (type === 'starter') {
+      return !freeStarters.some(s => s.id === id);
+    }
+    if (type === 'noun') {
+      return !freeNouns.some(n => n.id === id);
+    }
+    return false;
+  }
+
   get isLanguageLoaded() {
     return this.languageLoaded.asObservable();
   }
@@ -155,7 +170,8 @@ export class DataService {
   getEssentials(): Phrase[] {
     return this.essentials.map(item => ({
       ...item,
-      translation: this.currentTranslations.essentials?.[item.id]
+      translation: this.currentTranslations.essentials?.[item.id],
+      isPro: this.isProItem(item.id, 'essential')
     }));
   }
 
@@ -165,7 +181,8 @@ export class DataService {
   getStarters() {
     return this.starters.map(starter => ({
       ...starter,
-      listenFor: this.currentTranslations.starters?.[starter.id]?.listenFor
+      listenFor: this.currentTranslations.starters?.[starter.id]?.listenFor,
+      isPro: this.isProItem(starter.id, 'starter')
     }));
   }
 
@@ -173,10 +190,14 @@ export class DataService {
    * Get Nouns, optionally filtered by category
    */
   getNouns(category: string = 'All') {
-    if (category === 'All') {
-      return this.nouns;
+    let nouns = this.nouns;
+    if (category !== 'All') {
+      nouns = nouns.filter(n => n.category === category);
     }
-    return this.nouns.filter(n => n.category === category);
+    return nouns.map(n => ({
+      ...n,
+      isPro: this.isProItem(n.id, 'noun')
+    }));
   }
 
   /**

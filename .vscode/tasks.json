@@ -21,6 +21,20 @@
 			"command": "echo \"\\n.upgrade-button {\\n  --background: #FFD700;\\n  --background-hover: #FFC107;\\n  --background-activated: #FFB300;\\n  --color: #000000;\\n  --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);\\n  font-weight: 800;\\n}\" >> /Users/johnmckay/Code/lunar-languages-full/lunar-languages/src/app/components/upgrade-modal/upgrade-modal.component.scss",
 			"args": [],
 			"group": "build"
+		},
+		{
+			"label": "append_locked_styles",
+			"type": "shell",
+			"command": "echo \"\\n.builder-btn.locked {\\n  opacity: 0.7;\\n  background: var(--ion-color-light);\\n  color: var(--ion-color-medium-tint);\\n  position: relative;\\n}\\n\\n.lock-icon {\\n  margin-right: 6px;\\n  font-size: 1.1em;\\n  color: var(--ion-color-medium);\\n}\" >> /Users/johnmckay/Code/lunar-languages-full/lunar-languages/src/app/components/sentence-builder/sentence-builder.component.scss",
+			"args": [],
+			"group": "build"
+		},
+		{
+			"label": "append_modal_locked_styles",
+			"type": "shell",
+			"command": "echo \"\\n.phrase-item.locked {\\n  opacity: 0.7;\\n  --background: var(--ion-color-light-shade);\\n  \\n  h2 {\\n    color: var(--ion-color-medium);\\n  }\\n  \\n  .native-text, .phonetic-text {\\n    filter: blur(3px);\\n    user-select: none;\\n  }\\n}\" >> /Users/johnmckay/Code/lunar-languages-full/lunar-languages/src/app/components/quick-phrases-modal/quick-phrases-modal.component.scss",
+			"args": [],
+			"group": "build"
 		}
 	]
 }

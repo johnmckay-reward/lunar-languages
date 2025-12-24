@@ -7,7 +7,9 @@
         <button
           class="builder-btn"
           [class.active]="selectedStarter?.id === starter.id"
+          [class.locked]="starter.isPro && !isProUser"
           (click)="onSelectStarter(starter)">
+          <ion-icon *ngIf="starter.isPro && !isProUser" name="lock-closed" class="lock-icon"></ion-icon>
           {{ starter.english }}
         </button>
       </ion-col>
@@ -25,7 +27,9 @@
         <button
           class="builder-btn"
           [class.active]="selectedNoun?.id === noun.id"
+          [class.locked]="noun.isPro && !isProUser"
           (click)="onSelectNoun(noun)">
+          <ion-icon *ngIf="noun.isPro && !isProUser" name="lock-closed" class="lock-icon"></ion-icon>
           {{ noun.english }}
         </button>
       </ion-col>

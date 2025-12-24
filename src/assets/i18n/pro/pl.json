@@ -3,6 +3,316 @@
     "like_champagne": {
       "text": "Poproszę szampana",
       "phonetic": "po-PRO-sheh sham-PA-na"
+    },
+    "another_beer": {
+      "text": "Jeszcze jedno piwo...",
+      "phonetic": "YESH-che YED-no PEE-vo..."
+    },
+    "another_wine": {
+      "text": "Jeszcze jeden kieliszek wina...",
+      "phonetic": "YESH-che YE-den kye-LEE-shek VEE-na..."
+    },
+    "another_coffee": {
+      "text": "Jeszcze jedną kawę...",
+      "phonetic": "YESH-che YED-non KA-ve..."
+    },
+    "another_bill": {
+      "text": "Czy mogę prosić o jeszcze jedną kopię rachunku?",
+      "phonetic": "chy MO-ge PRO-shich o YESH-che YED-non KO-pye ra-KHUN-ku?"
+    },
+    "love_coffee": {
+      "phonetic": "Bar-dzo loo-bye tAe kA-weh",
+      "text": "Bardzo lubię tę kawę."
+    },
+    "love_wine": {
+      "phonetic": "LOO-byeh toh VEE-noh",
+      "text": "Lubię to wino"
+    },
+    "love_seafood": {
+      "phonetic": "Oo-VYEL-byam oh-VOH-tseh MOR-zhah",
+      "text": "Uwielbiam owoce morza"
+    },
+    "love_music": {
+      "phonetic": "LOO-byeh teh moo-ZY-keh",
+      "text": "Lubię tę muzykę"
+    },
+    "is_there_atm": {
+      "text": "Czy jest tu w pobliżu bankomat?",
+      "phonetic": "Chy yest too v pob-LEE-zhoo ban-KOH-mat?"
+    },
+    "is_there_pharmacy": {
+      "text": "Czy jest w pobliżu apteka?",
+      "phonetic": "Chy yest v pob-LEE-zhoo ap-TEH-kah?"
+    },
+    "is_there_wifi": {
+      "text": "Czy jest tu WiFi?",
+      "phonetic": "Chy yest too WiFi?"
+    },
+    "is_there_bus": {
+      "text": "Czy jest autobus do miasta?",
+      "phonetic": "Chy yest ow-TOH-boos doh MYAS-tah?"
+    },
+    "lost_receipt": {
+      "text": "Zgubiłem paragon.",
+      "phonetic": "Zgoo-BEE-wem pah-RAH-gon."
+    },
+    "where_supermarket": {
+      "text": "Gdzie jest supermarket?",
+      "phonetic": "Gdjeh yest soo-per-MAR-ket?"
+    },
+    "where_beach": {
+      "text": "Gdzie jest plaża?",
+      "phonetic": "Gdjeh yest PLAH-zhah?"
+    },
+    "like_ticket": {
+      "text": "Poproszę bilet.",
+      "phonetic": "Poh-PROH-sheh BEE-let."
+    },
+    "like_taxi": {
+      "text": "Poproszę taksówkę.",
+      "phonetic": "Poh-PROH-sheh tak-SOOV-keh."
+    },
+    "like_water": {
+      "text": "Poproszę wodę.",
+      "phonetic": "Poh-PROH-sheh VOH-deh."
+    },
+    "like_coffee": {
+      "text": "Poproszę kawę.",
+      "phonetic": "Poh-PROH-sheh KAH-veh."
+    },
+    "like_menu": {
+      "text": "Poproszę menu.",
+      "phonetic": "Poh-PROH-sheh MEH-noo."
+    },
+    "like_bill": {
+      "text": "Poproszę rachunek.",
+      "phonetic": "Poh-PROH-sheh rah-KHOO-nek."
+    },
+    "like_beer": {
+      "text": "Poproszę piwo.",
+      "phonetic": "Poh-PROH-sheh PEE-vo."
+    },
+    "like_wine": {
+      "text": "Poproszę kieliszek wina.",
+      "phonetic": "Poh-PROH-sheh kyeh-LEE-shek VEE-nah."
+    },
+    "have_vegetarian": {
+      "text": "Czy macie dania wegetariańskie?",
+      "phonetic": "Chy MA-cheh DA-nyah veh-ge-tar-YAN-skie?"
+    },
+    "cost_coffee": {
+      "text": "Ile kosztuje kawa?",
+      "phonetic": "EE-leh kosh-TOO-yeh KAH-vah?"
+    },
+    "cost_beer": {
+      "text": "Ile kosztuje piwo?",
+      "phonetic": "EE-leh kosh-TOO-yeh PEE-vo?"
+    },
+    "cost_wine": {
+      "text": "Ile kosztuje kieliszek wina?",
+      "phonetic": "EE-leh kosh-TOO-yeh kyeh-LEE-shek VEE-nah?"
+    },
+    "where_coffee": {
+      "text": "Gdzie jest kawiarnia?",
+      "phonetic": "Gdzhye yest kavyarnya"
+    },
+    "like_seafood": {
+      "text": "Poproszę owoce morza.",
+      "phonetic": "Poprosheh ovotseh mozha"
+    },
+    "like_vegetarian": {
+      "text": "Poproszę opcję wegetariańską.",
+      "phonetic": "Poprosheh opsyeh vegetaryanskom"
+    },
+    "have_beer": {
+      "text": "Czy macie piwo?",
+      "phonetic": "Chy machye pivo"
+    },
+    "have_wine": {
+      "text": "Czy macie wino?",
+      "phonetic": "Chy machye vino"
+    },
+    "like_room": {
+      "text": "Chciałbym pokój.",
+      "phonetic": "Hchow-bym poh-kooy"
+    },
+    "like_receipt": {
+      "text": "Chciałbym paragon.",
+      "phonetic": "Hchow-bym pa-ra-gon"
+    },
+    "like_ice": {
+      "text": "Chciałbym lodu.",
+      "phonetic": "Hchow-bym lo-doo"
+    },
+    "need_receipt": {
+      "text": "Potrzebuję paragonu.",
+      "phonetic": "Po-tshe-bu-ye pa-ra-go-nu"
+    },
+    "share_taxi": {
+      "text": "Podzielimy się taksówką?",
+      "phonetic": "po-jeh-LEE-my shyeh tak-SOOF-kohm?"
+    },
+    "share_wine": {
+      "text": "Podzielimy się butelką wina?",
+      "phonetic": "po-jeh-LEE-my shyeh boo-TEL-kohm VEE-na?"
+    },
+    "share_bill": {
+      "text": "Podzielmy się rachunkiem.",
+      "phonetic": "po-JEL-my shyeh ra-HOON-kyem."
+    },
+    "share_seafood": {
+      "text": "Podzielimy się talerzem owoców morza?",
+      "phonetic": "po-jeh-LEE-my shyeh ta-LEH-zhem o-VO-tsoof MO-zha?"
+    },
+    "is_free_wifi": {
+      "text": "Czy WiFi jest darmowe?",
+      "phonetic": "chi wai-fai yest dar-mo-ve"
+    },
+    "is_free_water": {
+      "text": "Czy woda jest darmowa?",
+      "phonetic": "chi vo-da yest dar-mo-va"
+    },
+    "is_free_entrance": {
+      "text": "Czy wstęp jest darmowy?",
+      "phonetic": "chi fstemp yest dar-mo-vy"
+    },
+    "is_free_nuts": {
+      "text": "Czy te orzeszki są darmowe?",
+      "phonetic": "chi te o-zhesh-ki song dar-mo-ve"
+    }
+  },
+  "starters": {
+    "like": {
+      "listenFor": [
+        {
+          "text": "Coś jeszcze?",
+          "phonetic": "tsosh YESH-cheh?",
+          "meaning": "Anything else?"
+        },
+        {
+          "text": "Na miejscu?",
+          "phonetic": "nah MYAY-tsoo?",
+          "meaning": "Eat in? (On site)"
+        },
+        {
+          "text": "Chwileczkę",
+          "phonetic": "hvee-LECH-keh",
+          "meaning": "Just a moment (Little while)"
+        }
+      ]
+    },
+    "is_there": {
+      "listenFor": [
+        {
+          "text": "Tak, w pobliżu",
+          "phonetic": "Tak, v poh-BLEE-zhoo",
+          "meaning": "Yes, nearby"
+        },
+        {
+          "text": "Nie, nie tutaj",
+          "phonetic": "Nyeh, nyeh TOO-tay",
+          "meaning": "No, not here"
+        },
+        {
+          "text": "Skręć w lewo/prawo",
+          "phonetic": "Skrench v LEH-voh/PRAH-voh",
+          "meaning": "Turn left/right"
+        }
+      ]
+    },
+    "love": {
+      "listenFor": [
+        {
+          "text": "Cieszę się, że ci się podoba",
+          "phonetic": "CHEH-sheh shyeh, zheh chee shyeh poh-DOH-bah",
+          "meaning": "I'm glad you like it"
+        },
+        {
+          "text": "To jest popularne",
+          "phonetic": "Toh yest poh-poo-LAR-neh",
+          "meaning": "It's popular"
+        },
+        {
+          "text": "Dziękuję",
+          "phonetic": "Jen-KOO-yeh",
+          "meaning": "Thank you"
+        }
+      ]
+    },
+    "another": {
+      "listenFor": [
+        {
+          "text": "Już podaję",
+          "phonetic": "Yoosh poh-DAH-yeh",
+          "meaning": "Coming right up"
+        },
+        {
+          "text": "Oczywiście",
+          "phonetic": "Oh-chy-VEES-chyeh",
+          "meaning": "Certainly"
+        },
+        {
+          "text": "Coś jeszcze?",
+          "phonetic": "Tsosh YESH-cheh?",
+          "meaning": "Anything else?"
+        }
+      ]
+    },
+    "share": {
+      "listenFor": [
+        {
+          "text": "Dobrze",
+          "phonetic": "DOB-zheh",
+          "meaning": "Okay"
+        },
+        {
+          "text": "Dobry pomysł",
+          "phonetic": "DOB-ry POH-mysw",
+          "meaning": "Good idea"
+        },
+        {
+          "text": "Przyniosę talerze",
+          "phonetic": "Pshy-NYO-seh tah-LEH-zheh",
+          "meaning": "I'll bring plates"
+        }
+      ]
+    },
+    "is_free": {
+      "listenFor": [
+        {
+          "text": "Tak, to jest darmowe",
+          "phonetic": "Tak, toh yest dar-MOH-veh",
+          "meaning": "Yes, it's free"
+        },
+        {
+          "text": "Nie, to kosztuje...",
+          "phonetic": "Nyeh, toh kosh-TOO-yeh...",
+          "meaning": "No, it costs..."
+        },
+        {
+          "text": "Wliczone",
+          "phonetic": "Vlee-CHOH-neh",
+          "meaning": "Included"
+        }
+      ]
+    }
+  },
+  "essentials": {
+    "delicious": {
+      "text": "Pyszne!",
+      "phonetic": "PYSH-neh!"
+    },
+    "cheers": {
+      "text": "Na zdrowie!",
+      "phonetic": "Nah ZDROH-vyeh!"
+    },
+    "good_morning": {
+      "text": "Dzień dobry",
+      "phonetic": "Jen DOB-ry"
+    },
+    "good_evening": {
+      "text": "Dobry wieczór",
+      "phonetic": "DOB-ry VYEH-choor"
     }
   }
 }

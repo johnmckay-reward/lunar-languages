@@ -46,3 +46,17 @@
     border: 1px solid rgba(255,255,255,0.05);
   }
 }
+
+.phrase-item.locked {
+  opacity: 0.7;
+  --background: var(--ion-color-light-shade);
+  
+  h2 {
+    color: var(--ion-color-medium);
+  }
+  
+  .native-text, .phonetic-text {
+    filter: blur(3px);
+    user-select: none;
+  }
+}

@@ -12,14 +12,6 @@
       "text": "再见",
       "phonetic": "Zàijiàn"
     },
-    "good_morning": {
-      "text": "早上好",
-      "phonetic": "Zǎoshang hǎo"
-    },
-    "good_evening": {
-      "text": "晚上好",
-      "phonetic": "Wǎnshàng hǎo"
-    },
     "bathroom": {
       "text": "洗手间在哪里？",
       "phonetic": "Xǐshǒujiān zài nǎli?"
@@ -47,14 +39,6 @@
     "help": {
       "text": "帮帮我!",
       "phonetic": "Bāng bāng wǒ!"
-    },
-    "delicious": {
-      "text": "好吃!",
-      "phonetic": "Hǎochī!"
-    },
-    "cheers": {
-      "text": "干杯!",
-      "phonetic": "Gānbēi!"
     },
     "wifi_pass": {
       "text": "无线路由器密码是什么？",
@@ -87,25 +71,6 @@
           "text": "很远",
           "phonetic": "hen yoo-WEN",
           "meaning": "It is very far"
-        }
-      ]
-    },
-    "like": {
-      "listenFor": [
-        {
-          "text": "还要别的吗？",
-          "phonetic": "HI yow byeh-deh mah?",
-          "meaning": "Want anything else?"
-        },
-        {
-          "text": "打包？",
-          "phonetic": "DAH bow?",
-          "meaning": "Take away? (Pack up)"
-        },
-        {
-          "text": "等一下",
-          "phonetic": "DUNG ee-shyah",
-          "meaning": "Wait a little"
         }
       ]
     },
@@ -223,44 +188,6 @@
         }
       ]
     },
-    "is_there": {
-      "listenFor": [
-        {
-          "text": "是的，就在附近",
-          "phonetic": "Shì de, jiù zài fùjìn",
-          "meaning": "Yes, nearby"
-        },
-        {
-          "text": "不，不在这里",
-          "phonetic": "Bù, bù zài zhèlǐ",
-          "meaning": "No, not here"
-        },
-        {
-          "text": "左转/右转",
-          "phonetic": "Zuǒ zhuǎn/Yòu zhuǎn",
-          "meaning": "Turn left/right"
-        }
-      ]
-    },
-    "love": {
-      "listenFor": [
-        {
-          "text": "很高兴你喜欢",
-          "phonetic": "Hěn gāoxìng nǐ xǐhuān",
-          "meaning": "I'm glad you like it"
-        },
-        {
-          "text": "这很受欢迎",
-          "phonetic": "Zhè hěn shòu huānyíng",
-          "meaning": "It's popular"
-        },
-        {
-          "text": "谢谢",
-          "phonetic": "Xièxiè",
-          "meaning": "Thank you"
-        }
-      ]
-    },
     "call": {
       "listenFor": [
         {
@@ -277,44 +204,6 @@
           "text": "稍等",
           "phonetic": "Shāoděng",
           "meaning": "One moment"
-        }
-      ]
-    },
-    "another": {
-      "listenFor": [
-        {
-          "text": "马上就来",
-          "phonetic": "Mǎshàng jiù lái",
-          "meaning": "Coming right up"
-        },
-        {
-          "text": "当然",
-          "phonetic": "Dāngrán",
-          "meaning": "Certainly"
-        },
-        {
-          "text": "还要别的吗？",
-          "phonetic": "Hái yào bié de ma?",
-          "meaning": "Anything else?"
-        }
-      ]
-    },
-    "share": {
-      "listenFor": [
-        {
-          "text": "好的",
-          "phonetic": "Hǎo de",
-          "meaning": "Okay"
-        },
-        {
-          "text": "好主意",
-          "phonetic": "Hǎo zhǔyì",
-          "meaning": "Good idea"
-        },
-        {
-          "text": "我去拿盘子",
-          "phonetic": "Wǒ qù ná pánzi",
-          "meaning": "I'll bring plates"
         }
       ]
     },
@@ -336,76 +225,9 @@
           "meaning": "No problem"
         }
       ]
-    },
-    "is_free": {
-      "listenFor": [
-        {
-          "text": "是的，免费",
-          "phonetic": "Shì de, miǎnfèi",
-          "meaning": "Yes, it's free"
-        },
-        {
-          "text": "不，这需要...",
-          "phonetic": "Bù, zhè xūyào...",
-          "meaning": "No, it costs..."
-        },
-        {
-          "text": "包含在内",
-          "phonetic": "Bāohán zài nèi",
-          "meaning": "Included"
-        }
-      ]
     }
   },
   "combinations": {
-    "another_beer": {
-      "text": "再来一杯啤酒",
-      "phonetic": "Zài lái yī bēi píjiǔ"
-    },
-    "another_wine": {
-      "text": "再来一杯红酒",
-      "phonetic": "Zài lái yī bēi hóngjiǔ"
-    },
-    "another_coffee": {
-      "text": "再来一杯咖啡",
-      "phonetic": "Zài lái yī bēi kāfēi"
-    },
-    "another_bill": {
-      "text": "可以再给我一张账单吗？",
-      "phonetic": "Kěyǐ zài gěi wǒ yī zhāng zhàngdān ma?"
-    },
-    "love_coffee": {
-      "phonetic": "Wǒ xǐhuān zhè kāfēi",
-      "text": "我喜欢这咖啡"
-    },
-    "love_wine": {
-      "phonetic": "Wǒ xǐhuān zhè jiǔ",
-      "text": "我喜欢这酒"
-    },
-    "love_seafood": {
-      "phonetic": "Wǒ ài hǎixiān",
-      "text": "我爱海鲜"
-    },
-    "love_music": {
-      "phonetic": "Wǒ fēicháng xǐhuān zhè shǒu yīnyuè.",
-      "text": "我非常喜欢这首音乐。"
-    },
-    "is_there_atm": {
-      "text": "这附近有自动取款机吗？",
-      "phonetic": "Zhè fùjìn yǒu zìdòng qǔkuǎnjī ma?"
-    },
-    "is_there_pharmacy": {
-      "text": "附近有药店吗？",
-      "phonetic": "Fùjìn yǒu yàodiàn ma?"
-    },
-    "is_there_wifi": {
-      "text": "这里有无线网吗？",
-      "phonetic": "Zhèlǐ yǒu wúxiànwǎng ma?"
-    },
-    "is_there_bus": {
-      "text": "有去市区的公交车吗？",
-      "phonetic": "Yǒu qù shìqū de gōngjiāochē ma?"
-    },
     "lost_ticket": {
       "text": "我丢了票。",
       "phonetic": "Wǒ diūle piào."
@@ -433,10 +255,6 @@
     "lost_map": {
       "text": "我丢了地图。",
       "phonetic": "Wǒ diūle dìtú."
-    },
-    "lost_receipt": {
-      "text": "我丢了收据。",
-      "phonetic": "Wǒ diūle shōujù."
     },
     "where_station": {
       "text": "请问火车站位置在哪儿？",
@@ -474,46 +292,6 @@
       "text": "请问，医院的位置在哪里？",
       "phonetic": "Qǐng wèn, yīyuàn de wèizhì zài nǎlǐ?"
     },
-    "where_supermarket": {
-      "text": "请问,超市在什么地方？",
-      "phonetic": "Qǐng wèn, chāo shì zài shén me dì fang?"
-    },
-    "where_beach": {
-      "text": "请问，海边在哪里？",
-      "phonetic": "Qǐng wèn, hǎibiān zài nǎlǐ?"
-    },
-    "like_ticket": {
-      "text": "我想要一张票。",
-      "phonetic": "Wǒ xiǎng yào yī zhāng piào."
-    },
-    "like_taxi": {
-      "text": "我想要一辆出租车。",
-      "phonetic": "Wǒ xiǎng yào yī liàng chūzūchē."
-    },
-    "like_water": {
-      "text": "我想要一点水。",
-      "phonetic": "Wǒ xiǎng yào yīdiǎn shuǐ."
-    },
-    "like_coffee": {
-      "text": "我想要一杯咖啡。",
-      "phonetic": "Wǒ xiǎng yào yī bēi kāfēi."
-    },
-    "like_menu": {
-      "text": "请给我菜单。",
-      "phonetic": "Qǐng gěi wǒ càidān."
-    },
-    "like_bill": {
-      "text": "买单，谢谢。",
-      "phonetic": "Mǎidān, xièxie."
-    },
-    "like_beer": {
-      "text": "请给我一杯啤酒。",
-      "phonetic": "Qǐng gěi wǒ yì bēi píjiǔ."
-    },
-    "like_wine": {
-      "text": "请给我一杯红酒。",
-      "phonetic": "Qǐng gěi wǒ yì bēi hóngjiǔ."
-    },
     "have_wifi": {
       "text": "请问这里提供无线网络吗？",
       "phonetic": "Qǐng wèn zhè lǐ tí gōng wú xiàn wǎng luò ma?"
@@ -530,10 +308,6 @@
       "text": "你有英文菜单吗？",
       "phonetic": "Nǐ yǒu Yīngwén càidān ma?"
     },
-    "have_vegetarian": {
-      "text": "你有素食的菜吗？",
-      "phonetic": "Nǐ yǒu sùshí de cài ma?"
-    },
     "cost_ticket": {
       "text": "请问一张票的价格是多少？",
       "phonetic": "Qǐng wèn yī zhāng piào de jià gé shì duō shǎo?"
@@ -546,53 +320,17 @@
       "text": "房间多少钱？",
       "phonetic": "Fángjiān duōshao qián?"
     },
-    "cost_coffee": {
-      "text": "一杯咖啡多少钱？",
-      "phonetic": "Yī bēi kāfēi duōshao qián?"
-    },
-    "cost_beer": {
-      "text": "一杯啤酒多少钱？",
-      "phonetic": "Yī bēi píjiǔ duōshao qián?"
-    },
-    "cost_wine": {
-      "text": "一杯葡萄酒需要多少钱？",
-      "phonetic": "yī bēi pú táo jiǔ xū yào duō shǎo qián?"
-    },
     "allergic_peanuts": {
       "text": "因为我有花生过敏的情况。",
       "phonetic": "Yīnwèi wǒ yǒu huāshēng guòmǐn de qíngkuàng."
-    },
-    "allergic_seafood": {
-      "text": "我对海鲜过敏。",
-      "phonetic": "Wǒ duì hǎixiān guòmǐn."
-    },
-    "where_coffee": {
-      "text": "请问，咖啡馆在哪里？",
-      "phonetic": "Qǐngwèn, kāfēi guǎn zài nǎlǐ?"
     },
     "where_water": {
       "text": "哪里可以买水？",
       "phonetic": "Nǎlǐ kěyǐ mǎi shuǐ?"
     },
-    "like_seafood": {
-      "text": "我想要海鲜。",
-      "phonetic": "Wǒ xiǎng yào hǎixiān."
-    },
-    "like_vegetarian": {
-      "text": "我希望能吃素食。",
-      "phonetic": "Wǒ xīwàng néng chī sùshí."
-    },
     "have_water": {
       "text": "你们有水吗？",
       "phonetic": "Nǐmen yǒu shuǐ ma?"
-    },
-    "have_beer": {
-      "text": "你们有啤酒吗？",
-      "phonetic": "Nǐmen yǒu píjiǔ ma?"
-    },
-    "have_wine": {
-      "text": "请问你们这儿有没有葡萄酒？",
-      "phonetic": "Qǐng wèn nǐmen zhèr yǒu méiyǒu pútaojiǔ?"
     },
     "cost_wifi": {
       "text": "无线网络多少钱？",
@@ -601,10 +339,6 @@
     "cost_water": {
       "text": "请问这瓶水的价格是多少？",
       "phonetic": "Qǐng wèn zhè píng shuǐ de jiàgé shì duōshǎo?"
-    },
-    "cost_seafood": {
-      "text": "请问海鲜的价格是多少？",
-      "phonetic": "Qǐngwèn hǎixiān de jiàgé shì duōshǎo?"
     },
     "where_bus": {
       "text": "公共汽车在哪里？",
@@ -622,25 +356,9 @@
       "text": "钥匙在哪里？",
       "phonetic": "Yàoshi zài nǎlǐ?"
     },
-    "like_room": {
-      "text": "我想要一个房间。",
-      "phonetic": "Wǒ xiǎng yào yīgè fángjiān."
-    },
-    "like_receipt": {
-      "text": "我想要收据。",
-      "phonetic": "Wǒ xiǎng yào shōujù."
-    },
-    "like_ice": {
-      "text": "我想要一些冰块。",
-      "phonetic": "wo xiang yao yi xie bing kuai"
-    },
     "have_map": {
       "text": "你有地图吗？",
       "phonetic": "Nǐ yǒu dìtú ma?"
-    },
-    "have_sugar": {
-      "text": "你有糖吗？",
-      "phonetic": "Nǐ yǒu táng ma?"
     },
     "cost_bus": {
       "text": "公共汽车多少钱？",
@@ -693,10 +411,6 @@
     "need_map": {
       "text": "我需要地图。",
       "phonetic": "Wǒ xūyào dìtú"
-    },
-    "need_receipt": {
-      "text": "我要一张收据。",
-      "phonetic": "Wǒ yào yī zhāng shōujù."
     },
     "need_water": {
       "text": "我需要水。",
@@ -762,21 +476,13 @@
       "text": "麻烦帮我联系我的饭店。",
       "phonetic": "Máfán bāng wǒ liánxì wǒ de fàndiàn."
     },
-    "share_taxi": {
-      "text": "我们一起搭计程车好吗？",
-      "phonetic": "wǒ men yì qǐ dā jì chéng chē hǎo ma？"
+    "no_dairy": {
+      "text": "不需要奶製品",
+      "phonetic": "bu xu yao nai zhi pin"
     },
-    "share_wine": {
-      "text": "我们要共享一瓶酒吗？",
-      "phonetic": "Wǒmen yào gòngxiǎng yī píng jiǔ ma?"
-    },
-    "share_bill": {
-      "text": "我们分摊账单吧。",
-      "phonetic": "Wǒmen fēntān zhàngdān ba."
-    },
-    "share_seafood": {
-      "text": "我们要共享海鲜拼盘吗？",
-      "phonetic": "Wǒmen yào gòngxiǎng hǎixiān pīnpán ma?"
+    "have_sugar": {
+      "text": "你有糖吗？",
+      "phonetic": "Nǐ yǒu táng ma?"
     },
     "no_ice": {
       "text": "不要冰",
@@ -786,29 +492,17 @@
       "text": "不要糖",
       "phonetic": "Bù yào táng"
     },
-    "no_dairy": {
-      "text": "不需要奶製品",
-      "phonetic": "bu xu yao nai zhi pin"
+    "allergic_seafood": {
+      "text": "我对海鲜过敏。",
+      "phonetic": "Wǒ duì hǎixiān guòmǐn."
+    },
+    "cost_seafood": {
+      "text": "请问海鲜的价格是多少？",
+      "phonetic": "Qǐngwèn hǎixiān de jiàgé shì duōshǎo?"
     },
     "no_meat": {
       "text": "不要肉",
       "phonetic": "Bù yào ròu"
-    },
-    "is_free_wifi": {
-      "text": "WiFi是免费的吗？",
-      "phonetic": "WiFi shì miǎn fèi de ma?"
-    },
-    "is_free_water": {
-      "text": "水是免费的吗？",
-      "phonetic": "shuǐ shì miǎn fèi de ma?"
-    },
-    "is_free_entrance": {
-      "text": "入场是免费的吗？",
-      "phonetic": "rù chǎng shì miǎn fèi de ma?"
-    },
-    "is_free_nuts": {
-      "text": "这些坚果是免费的吗？",
-      "phonetic": "zhè xiē jiān guǒ shì miǎn fèi de ma?"
     }
   }
 }

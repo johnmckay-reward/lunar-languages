@@ -10,6 +10,7 @@ import { Phrase } from '../../interfaces';
 export class QuickPhrasesModalComponent {
   @Input() isOpen: boolean = false;
   @Input() essentials: Phrase[] = [];
+  @Input() isProUser: boolean = false;
   @Output() didDismiss = new EventEmitter<void>();
   @Output() phraseSelected = new EventEmitter<Phrase>();
 

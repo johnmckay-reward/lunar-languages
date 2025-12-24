@@ -12,14 +12,6 @@
       "text": "Au revoir",
       "phonetic": "oh ruh-VWAR"
     },
-    "good_morning": {
-      "text": "Bonjour",
-      "phonetic": "bon-ZHOOR"
-    },
-    "good_evening": {
-      "text": "Bonsoir",
-      "phonetic": "bon-SWAHR"
-    },
     "bathroom": {
       "text": "Où sont les toilettes ?",
       "phonetic": "oo sohn lay twa-LET?"
@@ -47,14 +39,6 @@
     "help": {
       "text": "Je vous en prie, aidez-moi s'il vous plaît !",
       "phonetic": "ʒə vuz ɑ̃ pri, ed-e mwa sil vu plɛ !"
-    },
-    "delicious": {
-      "text": "Délicieux !",
-      "phonetic": "day-lee-SYUH!"
-    },
-    "cheers": {
-      "text": "Santé!",
-      "phonetic": "sahn-TAY!"
     },
     "wifi_pass": {
       "text": "Mot de passe WiFi ?",
@@ -87,25 +71,6 @@
           "text": "C'est loin",
           "phonetic": "say lwan",
           "meaning": "It is far"
-        }
-      ]
-    },
-    "like": {
-      "listenFor": [
-        {
-          "text": "Avec ceci ?",
-          "phonetic": "ah-vek suh-SEE?",
-          "meaning": "Anything else? (With this?)"
-        },
-        {
-          "text": "Sur place ou à emporter ?",
-          "phonetic": "soor plas oo ah om-por-TAY?",
-          "meaning": "For here or to go?"
-        },
-        {
-          "text": "Un instant",
-          "phonetic": "un nas-TAHN",
-          "meaning": "One moment"
         }
       ]
     },
@@ -223,44 +188,6 @@
         }
       ]
     },
-    "is_there": {
-      "listenFor": [
-        {
-          "text": "Oui, tout près",
-          "phonetic": "wee, too preh",
-          "meaning": "Yes, nearby"
-        },
-        {
-          "text": "Non, pas ici",
-          "phonetic": "non, pah ee-see",
-          "meaning": "No, not here"
-        },
-        {
-          "text": "Tournez à gauche/droite",
-          "phonetic": "toor-nay ah gosh/drwat",
-          "meaning": "Turn left/right"
-        }
-      ]
-    },
-    "love": {
-      "listenFor": [
-        {
-          "text": "Je suis content que ça vous plaise",
-          "phonetic": "zhuh swee kon-ton kuh sah voo plehz",
-          "meaning": "I'm glad you like it"
-        },
-        {
-          "text": "C'est populaire",
-          "phonetic": "say po-pyoo-lehr",
-          "meaning": "It's popular"
-        },
-        {
-          "text": "Merci",
-          "phonetic": "mehr-see",
-          "meaning": "Thank you"
-        }
-      ]
-    },
     "call": {
       "listenFor": [
         {
@@ -277,44 +204,6 @@
           "text": "Un instant",
           "phonetic": "un nan-ston",
           "meaning": "One moment"
-        }
-      ]
-    },
-    "another": {
-      "listenFor": [
-        {
-          "text": "Ça arrive tout de suite",
-          "phonetic": "sah ah-reev too duh sweet",
-          "meaning": "Coming right up"
-        },
-        {
-          "text": "Certainement",
-          "phonetic": "sehr-ten-mon",
-          "meaning": "Certainly"
-        },
-        {
-          "text": "Autre chose ?",
-          "phonetic": "oh-truh shoz?",
-          "meaning": "Anything else?"
-        }
-      ]
-    },
-    "share": {
-      "listenFor": [
-        {
-          "text": "D'accord",
-          "phonetic": "dah-kor",
-          "meaning": "Okay"
-        },
-        {
-          "text": "Bonne idée",
-          "phonetic": "bon ee-day",
-          "meaning": "Good idea"
-        },
-        {
-          "text": "J'apporte des assiettes",
-          "phonetic": "zhah-port day zah-syet",
-          "meaning": "I'll bring plates"
         }
       ]
     },
@@ -336,60 +225,9 @@
           "meaning": "No problem"
         }
       ]
-    },
-    "is_free": {
-      "listenFor": [
-        {
-          "text": "Oui, c'est gratuit",
-          "phonetic": "wee, say grah-twee",
-          "meaning": "Yes, it's free"
-        },
-        {
-          "text": "Non, ça coûte...",
-          "phonetic": "non, sah koot...",
-          "meaning": "No, it costs..."
-        },
-        {
-          "text": "Inclus",
-          "phonetic": "an-kloo",
-          "meaning": "Included"
-        }
-      ]
     }
   },
   "combinations": {
-    "another_beer": {
-      "text": "Une autre bière, s'il vous plaît",
-      "phonetic": "ewn oh-truh byehr, seel voo pleh"
-    },
-    "another_wine": {
-      "text": "Un autre verre de vin, s'il vous plaît",
-      "phonetic": "uhn oh-truh vehr duh van, seel voo pleh"
-    },
-    "another_coffee": {
-      "text": "Un autre café, s'il vous plaît",
-      "phonetic": "uhn oh-truh kah-feh, seel voo pleh"
-    },
-    "another_bill": {
-      "text": "Puis-je avoir une autre copie de l'addition ?",
-      "phonetic": "pwee zhuh ah-vwar ewn oh-truh koh-pee duh lah-dee-syon?"
-    },
-    "is_there_atm": {
-      "text": "Y a-t-il un distributeur automatique près d'ici ?",
-      "phonetic": "ee ah-TEEL uhn dees-tree-bue-TUR oh-toh-mah-TEEK preh dee-SEE?"
-    },
-    "is_there_pharmacy": {
-      "text": "Y a-t-il une pharmacie à proximité ?",
-      "phonetic": "ee ah-TEEL ewn far-mah-SEE ah prok-see-mee-TAY?"
-    },
-    "is_there_wifi": {
-      "text": "Est-ce qu'il y a une connexion WiFi ici ?",
-      "phonetic": "Ess k'il ya une connexion Wi-Fi ici"
-    },
-    "is_there_bus": {
-      "text": "Y a-t-il un bus pour la ville ?",
-      "phonetic": "ee ah-TEEL uhn boos poor lah VEEL?"
-    },
     "lost_ticket": {
       "text": "J'ai perdu mon billet.",
       "phonetic": "zhay pair-DEW mohn bee-YAY."
@@ -417,10 +255,6 @@
     "lost_map": {
       "text": "J'ai perdu ma carte.",
       "phonetic": "zhay pair-DEW mah KART."
-    },
-    "lost_receipt": {
-      "text": "J'ai perdu mon reçu.",
-      "phonetic": "zhay pair-DEW mohn ruh-SEW."
     },
     "where_station": {
       "text": "Où est la gare ?",
@@ -458,46 +292,6 @@
       "text": "Où est l'hôpital ?",
       "phonetic": "oo eh lo-pee-TAL?"
     },
-    "where_supermarket": {
-      "text": "Où est le supermarché ?",
-      "phonetic": "oo eh luh su-per-mar-SHAY?"
-    },
-    "where_beach": {
-      "text": "Où est la plage ?",
-      "phonetic": "oo eh lah plahzh?"
-    },
-    "like_ticket": {
-      "text": "Je voudrais un billet, s'il vous plaît.",
-      "phonetic": "zhuh voo-DRAY uhn bee-YAY, seel voo PLAY."
-    },
-    "like_taxi": {
-      "text": "Je voudrais un taxi, s'il vous plaît.",
-      "phonetic": "zhuh voo-DRAY uhn tak-SEE, seel voo PLAY."
-    },
-    "like_water": {
-      "text": "Je voudrais de l'eau, s'il vous plaît.",
-      "phonetic": "zhuh voo-DRAY duh lo, seel voo PLAY."
-    },
-    "like_coffee": {
-      "text": "Je voudrais un café.",
-      "phonetic": "zhuh voo-DRAY uhn ka-FAY."
-    },
-    "like_menu": {
-      "text": "Je voudrais le menu, s'il vous plaît.",
-      "phonetic": "zhuh voo-DRAY luh meh-NOO, seel voo PLAY."
-    },
-    "like_bill": {
-      "text": "L'addition, s'il vous plaît.",
-      "phonetic": "la-dee-SYON, seel voo PLAY."
-    },
-    "like_beer": {
-      "text": "Je voudrais une bière, s'il vous plaît.",
-      "phonetic": "zhuh voo-DRAY oon byair, seel voo PLAY."
-    },
-    "like_wine": {
-      "text": "Je voudrais un verre de vin, s'il vous plaît.",
-      "phonetic": "zhuh voo-DRAY uhn vair duh vin, seel voo PLAY."
-    },
     "have_wifi": {
       "text": "Avez-vous le WiFi ?",
       "phonetic": "ah-vay VOO luh wee-fee?"
@@ -514,10 +308,6 @@
       "text": "Avez-vous un menu en anglais ?",
       "phonetic": "ah-vay VOO uhn meh-NOO ahn ahn-GLAY?"
     },
-    "have_vegetarian": {
-      "text": "Avez-vous des options végétariennes ?",
-      "phonetic": "ah-vay VOO day zop-SYON vay-zhay-tah-RYEN?"
-    },
     "cost_ticket": {
       "text": "Combien coûte un billet ?",
       "phonetic": "kom-BYEN koot uhn bee-YAY?"
@@ -530,53 +320,17 @@
       "text": "Combien coûte la chambre ?",
       "phonetic": "kom-BYEN koot lah sham-br?"
     },
-    "cost_coffee": {
-      "text": "Combien coûte un café ?",
-      "phonetic": "kom-BYEN koot uhn ka-FAY?"
-    },
-    "cost_beer": {
-      "text": "Combien coûte une bière ?",
-      "phonetic": "kom-BYEN koot oon byair?"
-    },
-    "cost_wine": {
-      "text": "Combien coûte un verre de vin ?",
-      "phonetic": "kom-BYEN koot uhn vair duh vin?"
-    },
     "allergic_peanuts": {
       "text": "Je suis sensible aux cacahuètes.",
       "phonetic": "ʒə sɥi sɑ̃sibl o kakaˈwɛt"
-    },
-    "allergic_seafood": {
-      "text": "Je suis allergique aux fruits de mer.",
-      "phonetic": "ʒə sɥi a-lair-ZHEEK o frwee duh mer"
-    },
-    "where_coffee": {
-      "text": "Où est un café ?",
-      "phonetic": "Oo ay un kafay"
     },
     "where_water": {
       "text": "Où puis-je acheter de l'eau ?",
       "phonetic": "Oo pweezh ashetay de lo"
     },
-    "like_seafood": {
-      "text": "Je voudrais les fruits de mer.",
-      "phonetic": "Zhuh voodray lay frwee duh mair"
-    },
-    "like_vegetarian": {
-      "text": "Je voudrais l'option végétarienne.",
-      "phonetic": "Zhuh voodray lopsyon vejaytaryen"
-    },
     "have_water": {
       "text": "Avez-vous de l'eau ?",
       "phonetic": "Avay voo duh lo"
-    },
-    "have_beer": {
-      "text": "Avez-vous de la bière ?",
-      "phonetic": "Avay voo duh la byair"
-    },
-    "have_wine": {
-      "text": "Avez-vous du vin ?",
-      "phonetic": "Avay voo doo van"
     },
     "cost_wifi": {
       "text": "Combien coûte le WiFi ?",
@@ -585,10 +339,6 @@
     "cost_water": {
       "text": "Combien coûte l'eau ?",
       "phonetic": "Kombyen koot lo"
-    },
-    "cost_seafood": {
-      "text": "Combien coûtent les fruits de mer ?",
-      "phonetic": "Kombyen koot lay frwee duh mair"
     },
     "where_bus": {
       "text": "Où est le bus ?",
@@ -606,25 +356,9 @@
       "text": "Où est la clé ?",
       "phonetic": "Oo eh lah klay"
     },
-    "like_room": {
-      "text": "Je voudrais une chambre.",
-      "phonetic": "Zhuh voo-dray zoon sham-bruh"
-    },
-    "like_receipt": {
-      "text": "Je voudrais un reçu.",
-      "phonetic": "Zhuh voo-dray zun ruh-soo"
-    },
-    "like_ice": {
-      "text": "Je voudrais des glaçons.",
-      "phonetic": "Zhuh voo-dray day glah-son"
-    },
     "have_map": {
       "text": "Avez-vous une carte ?",
       "phonetic": "Ah-vay voo zoon kart"
-    },
-    "have_sugar": {
-      "text": "Avez-vous du sucre ?",
-      "phonetic": "Ah-vay voo doo sook-ruh"
     },
     "cost_bus": {
       "text": "Combien coûte le bus ?",
@@ -678,10 +412,6 @@
       "text": "J'ai besoin d'une carte.",
       "phonetic": "Jay buh-zwan dune cart"
     },
-    "need_receipt": {
-      "text": "J'ai besoin d'un reçu.",
-      "phonetic": "Jay buh-zwan dun ruh-su"
-    },
     "need_water": {
       "text": "J'ai besoin d'eau.",
       "phonetic": "Jay buh-zwan do"
@@ -730,22 +460,6 @@
       "text": "Puis-je utiliser votre téléphone ?",
       "phonetic": "Pwee-zhuh oo-tee-lee-zay vo-truh tay-lay-fon?"
     },
-    "love_coffee": {
-      "text": "J'aime ce café",
-      "phonetic": "Zhem suh kah-FEH"
-    },
-    "love_wine": {
-      "text": "J'aime ce vin",
-      "phonetic": "Zhem suh van"
-    },
-    "love_seafood": {
-      "text": "J'adore les fruits de mer",
-      "phonetic": "Zha-DOR lay frwee duh mair"
-    },
-    "love_music": {
-      "text": "J'aime cette musique",
-      "phonetic": "Zhem set myoo-ZEEK"
-    },
     "call_taxi": {
       "text": "S'il vous plaît, appelez un taxi.",
       "phonetic": "sil vu ple a-pe-le un tak-si"
@@ -762,21 +476,13 @@
       "text": "S'il vous plaît, appelez mon hôtel.",
       "phonetic": "sil vu ple a-pe-le mon o-tel"
     },
-    "share_taxi": {
-      "text": "On partage un taxi ?",
-      "phonetic": "on par-TAZH un tak-SEE ?"
+    "no_dairy": {
+      "text": "Pas de produits laitiers, s'il vous plaît",
+      "phonetic": "pah duh pro-dwee lay-tyay, seel voo pleh"
     },
-    "share_wine": {
-      "text": "On partage une bouteille de vin ?",
-      "phonetic": "on par-TAZH oon boo-TAY deh van ?"
-    },
-    "share_bill": {
-      "text": "On partage l'addition.",
-      "phonetic": "on par-TAZH la-dee-SYON."
-    },
-    "share_seafood": {
-      "text": "On partage le plateau de fruits de mer ?",
-      "phonetic": "on par-TAZH luh pla-TOH duh frwee duh mehr ?"
+    "have_sugar": {
+      "text": "Avez-vous du sucre ?",
+      "phonetic": "Ah-vay voo doo sook-ruh"
     },
     "no_ice": {
       "text": "Pas de glace, s'il vous plaît",
@@ -786,29 +492,17 @@
       "text": "Pas de sucre, s'il vous plaît",
       "phonetic": "pah duh sook-ruh, seel voo pleh"
     },
-    "no_dairy": {
-      "text": "Pas de produits laitiers, s'il vous plaît",
-      "phonetic": "pah duh pro-dwee lay-tyay, seel voo pleh"
+    "allergic_seafood": {
+      "text": "Je suis allergique aux fruits de mer.",
+      "phonetic": "ʒə sɥi a-lair-ZHEEK o frwee duh mer"
+    },
+    "cost_seafood": {
+      "text": "Combien coûtent les fruits de mer ?",
+      "phonetic": "Kombyen koot lay frwee duh mair"
     },
     "no_meat": {
       "text": "Pas de viande, s'il vous plaît",
       "phonetic": "pah duh vyand, seel voo pleh"
-    },
-    "is_free_wifi": {
-      "text": "Le WiFi est-il gratuit ?",
-      "phonetic": "luh wai-fai eh-teel gra-twee"
-    },
-    "is_free_water": {
-      "text": "L'eau est-elle gratuite ?",
-      "phonetic": "low eh-tel gra-tweet"
-    },
-    "is_free_entrance": {
-      "text": "L'entrée est-elle gratuite ?",
-      "phonetic": "lon-tray eh-tel gra-tweet"
-    },
-    "is_free_nuts": {
-      "text": "Ces cacahuètes sont-elles gratuites ?",
-      "phonetic": "say ka-ka-wet son-tel gra-tweet"
     }
   }
 }

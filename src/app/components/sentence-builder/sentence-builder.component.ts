@@ -12,6 +12,7 @@ export class SentenceBuilderComponent {
   @Input() visibleNouns: Phrase[] = [];
   @Input() selectedStarter: Phrase | null = null;
   @Input() selectedNoun: Phrase | null = null;
+  @Input() isProUser: boolean = false;
 
   @Output() starterSelected = new EventEmitter<Phrase>();
   @Output() nounSelected = new EventEmitter<Phrase>();

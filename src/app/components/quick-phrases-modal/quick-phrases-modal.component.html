@@ -10,13 +10,17 @@
     </ion-header>
     <ion-content class="ion-padding">
       <ion-list lines="none">
-        <ion-item *ngFor="let item of essentials" (click)="selectPhrase(item)" button detail="false" class="phrase-item">
+        <ion-item *ngFor="let item of essentials" (click)="selectPhrase(item)" button detail="false" class="phrase-item" [class.locked]="item.isPro && !isProUser">
           <ion-label>
-            <h2>{{ item.english }}</h2>
+            <h2>
+              <ion-icon *ngIf="item.isPro && !isProUser" name="lock-closed" style="vertical-align: middle; margin-right: 4px; font-size: 0.9em; color: var(--ion-color-medium);"></ion-icon>
+              {{ item.english }}
+            </h2>
             <p *ngIf="item.translation" class="native-text">{{ item.translation.text }}</p>
             <p *ngIf="item.translation" class="phonetic-text">{{ item.translation.phonetic }}</p>
           </ion-label>
-          <ion-icon name="chevron-forward" slot="end" color="medium"></ion-icon>
+          <ion-icon name="chevron-forward" slot="end" color="medium" *ngIf="!item.isPro || isProUser"></ion-icon>
+          <ion-icon name="lock-closed" slot="end" color="medium" *ngIf="item.isPro && !isProUser"></ion-icon>
         </ion-item>
       </ion-list>
     </ion-content>
