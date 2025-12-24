@@ -1,10 +1,11 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActionSheetController, IonContent } from '@ionic/angular';
 import { Haptics, ImpactStyle } from '@capacitor/haptics';
-import { DataService, Phrase, LanguageInfo } from '../data-service';
+import { DataService } from '../data-service';
 import * as culturalNotesData from '../cultural-notes.json';
 import * as numbersData from '../numbers.json';
 import * as numbersGuidanceData from '../numbers-guidance.json';
+import { LanguageInfo, Phrase } from '../interfaces';
 
 interface CulturalNote {
   title: string;

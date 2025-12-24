@@ -3,44 +3,10 @@ import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
 import enData from '../assets/i18n/en.json';
-
-// --- INTERFACES ---
-
-export interface Translation {
-  text: string;
-  phonetic: string;
-  audio?: string;
-}
-
-export interface ListenFor {
-  text: string;
-  phonetic: string;
-  meaning: string;
-}
-
-export interface LanguageInfo {
-  code: string;
-  name: string;
-  location: string;
-  flag: string;
-  phoneticGuide: string;
-}
-
-export interface Phrase {
-  id: string;
-  type: 'essential' | 'starter' | 'noun';
-  category?: string;
-  english: string;
-  translation?: Translation;
-  listenFor?: ListenFor[];
-}
-
-export interface CombinationMap {
-  [key: string]: {
-    english: string;
-    translation?: Translation;
-  };
-}
+import { LanguageInfo, Phrase } from './interfaces';
+import { supportedLanguages } from './data/supported-languages';
+import { starters } from './data/starters';
+import { nouns } from './data/nouns';
 
 @Injectable({
   providedIn: 'root'
@@ -52,78 +18,7 @@ export class DataService {
   private languageLoaded = new BehaviorSubject<boolean>(false);
   private currentLanguage = new BehaviorSubject<LanguageInfo | null>(null);
 
-  private supportedLanguages: LanguageInfo[] = [
-    {
-      code: 'zh',
-      name: 'Mandarin',
-      location: 'China',
-      flag: '🇨🇳',
-      phoneticGuide: 'Mandarin uses tones. Pay attention to the rising and falling marks (ā, á, ǎ, à) as they change the meaning.'
-    },
-    {
-      code: 'es',
-      name: 'Spanish',
-      location: 'Spain',
-      flag: '🇪🇸',
-      phoneticGuide: 'Spanish vowels are short and crisp (a, e, i, o, u). The "r" is often rolled.'
-    },
-    {
-      code: 'fr',
-      name: 'French',
-      location: 'France',
-      flag: '🇫🇷',
-      phoneticGuide: 'French flows smoothly. Many final consonants are silent. "R" is pronounced in the back of the throat.'
-    },
-    {
-      code: 'de',
-      name: 'German',
-      location: 'Germany',
-      flag: '🇩🇪',
-      phoneticGuide: 'German is phonetic but crisp. "W" sounds like English "V". "V" sounds like English "F".'
-    },
-    {
-      code: 'ja',
-      name: 'Japanese',
-      location: 'Japan',
-      flag: '🇯🇵',
-      phoneticGuide: 'Japanese syllables are equal length. Vowels are pure (ah, ee, oo, eh, oh). No stress accents.'
-    },
-    {
-      code: 'it',
-      name: 'Italian',
-      location: 'Italy',
-      flag: '🇮🇹',
-      phoneticGuide: 'Italian is rhythmic and melodic. Vowels are clear and open. Double consonants are pronounced longer.'
-    },
-    {
-      code: 'pt',
-      name: 'Portuguese',
-      location: 'Portugal',
-      flag: '🇵🇹',
-      phoneticGuide: 'Portuguese is nasal and smooth. Vowels can be open or closed. "S" at the end of words often sounds like "sh".'
-    },
-    {
-      code: 'uk',
-      name: 'Ukrainian',
-      location: 'Ukraine',
-      flag: '🇺🇦',
-      phoneticGuide: 'Ukrainian is melodic. "H" is soft (like hotel). "Y" is like "i" in bit. Stress is dynamic.'
-    },
-    {
-      code: 'ru',
-      name: 'Russian',
-      location: 'Russia',
-      flag: '🇷🇺',
-      phoneticGuide: 'Russian is stress-timed. Unstressed "o" sounds like "a". Consonants can be hard or soft.'
-    },
-    {
-      code: 'pl',
-      name: 'Polish',
-      location: 'Poland',
-      flag: '🇵🇱',
-      phoneticGuide: 'Polish has complex consonant clusters. "Sz" is like "sh", "cz" like "ch". Stress is usually on the second-to-last syllable.'
-    }
-  ];
+  private supportedLanguages: LanguageInfo[] = supportedLanguages;
 
   // ============================================================
   // 1. ESSENTIALS (Standalone phrases - Always available)
@@ -137,89 +32,12 @@ export class DataService {
   // ============================================================
   // 2. STARTERS (The "Operators")
   // ============================================================
-  private starters: Phrase[] = [
-    { id: 'where', type: 'starter', english: 'Where is...?' },
-    { id: 'like', type: 'starter', english: 'I would like...' },
-    { id: 'have', type: 'starter', english: 'Do you have...?' },
-    { id: 'cost', type: 'starter', english: 'How much is...?' },
-    { id: 'allergic', type: 'starter', english: 'I am allergic to...' },
-    { id: 'need', type: 'starter', english: 'I need...' },
-    { id: 'use', type: 'starter', english: 'Can I use...?' },
-    { id: 'lost', type: 'starter', english: 'I lost...' },
-    { id: 'is_there', type: 'starter', english: 'Is there...?' },
-    { id: 'love', type: 'starter', english: 'I like...' },
-    { id: 'call', type: 'starter', english: 'Please call...' },
-    { id: 'another', type: 'starter', english: 'Another... please' },
-    { id: 'share', type: 'starter', english: 'Let\'s share...' },
-    { id: 'no', type: 'starter', english: 'No... please' },
-    { id: 'is_free', type: 'starter', english: 'Is... free?' }
-  ];
+  private starters: Phrase[] = starters;
 
   // ============================================================
   // 3. NOUNS (The "Fillers")
   // ============================================================
-  private nouns: Phrase[] = [
-    // Transport
-    { id: 'station', type: 'noun', category: 'Transport', english: 'The Station' },
-    { id: 'airport', type: 'noun', category: 'Transport', english: 'The Airport' },
-    { id: 'ticket', type: 'noun', category: 'Transport', english: 'A Ticket' },
-    { id: 'taxi', type: 'noun', category: 'Transport', english: 'A Taxi' },
-    { id: 'atm', type: 'noun', category: 'Transport', english: 'The ATM' },
-
-    // Accommodation
-    { id: 'wifi', type: 'noun', category: 'Accommodation', english: 'WiFi' },
-    { id: 'key', type: 'noun', category: 'Accommodation', english: 'The Key' },
-    { id: 'room', type: 'noun', category: 'Accommodation', english: 'A Room' },
-
-    // Dining
-    { id: 'water', type: 'noun', category: 'Dining', english: 'Water' },
-    { id: 'coffee', type: 'noun', category: 'Dining', english: 'Coffee' },
-    { id: 'menu', type: 'noun', category: 'Dining', english: 'The Menu' },
-    { id: 'bill', type: 'noun', category: 'Dining', english: 'The Bill' },
-    { id: 'restaurant', type: 'noun', category: 'Dining', english: 'A Restaurant' },
-    { id: 'beer', type: 'noun', category: 'Dining', english: 'A Beer' },
-    { id: 'wine', type: 'noun', category: 'Dining', english: 'A Glass of Wine' },
-    { id: 'seafood', type: 'noun', category: 'Dining', english: 'Seafood' },
-    { id: 'vegetarian', type: 'noun', category: 'Dining', english: 'A Vegetarian Dish' },
-
-    // Health / Safety
-    { id: 'peanuts', type: 'noun', category: 'Health', english: 'Peanuts' },
-    { id: 'doctor', type: 'noun', category: 'Health', english: 'A Doctor' },
-    { id: 'pharmacy', type: 'noun', category: 'Health', english: 'Pharmacy' },
-    { id: 'hospital', type: 'noun', category: 'Health', english: 'The Hospital' },
-
-    // Tech
-    { id: 'charger', type: 'noun', category: 'Tech', english: 'Charger' },
-
-    // Leisure / Shopping
-    { id: 'beach', type: 'noun', category: 'Leisure', english: 'The Beach' },
-    { id: 'supermarket', type: 'noun', category: 'Shopping', english: 'The Supermarket' },
-    { id: 'map', type: 'noun', category: 'Leisure', english: 'A Map' },
-    { id: 'wallet', type: 'noun', category: 'Shopping', english: 'Wallet' },
-    { id: 'bag', type: 'noun', category: 'Transport', english: 'Bag' },
-    { id: 'passport', type: 'noun', category: 'Transport', english: 'Passport' },
-    { id: 'receipt', type: 'noun', category: 'Shopping', english: 'The Receipt' },
-
-    // New General Nouns
-    { id: 'bus', type: 'noun', category: 'Transport', english: 'The Bus' },
-    { id: 'entrance', type: 'noun', category: 'Transport', english: 'The Entrance' },
-    { id: 'exit', type: 'noun', category: 'Transport', english: 'The Exit' },
-    { id: 'ice', type: 'noun', category: 'Dining', english: 'Ice' },
-    { id: 'sugar', type: 'noun', category: 'Dining', english: 'Sugar' },
-    { id: 'bathroom', type: 'noun', category: 'Accommodation', english: 'The Bathroom' },
-    { id: 'phone', type: 'noun', category: 'Tech', english: 'Phone' },
-    { id: 'music', type: 'noun', category: 'Leisure', english: 'Music' },
-    { id: 'police', type: 'noun', category: 'Health', english: 'Police' },
-    { id: 'hotel', type: 'noun', category: 'Accommodation', english: 'Hotel' },
-    { id: 'meat', type: 'noun', category: 'Dining', english: 'Meat' },
-
-    // Allergies
-    { id: 'gluten', type: 'noun', category: 'Health', english: 'Gluten' },
-    { id: 'dairy', type: 'noun', category: 'Health', english: 'Dairy' },
-    { id: 'nuts', type: 'noun', category: 'Health', english: 'Nuts' },
-    { id: 'eggs', type: 'noun', category: 'Health', english: 'Eggs' },
-    { id: 'soy', type: 'noun', category: 'Health', english: 'Soy' },
-  ];
+  private nouns: Phrase[] = nouns;
 
   // ============================================================
   // 4. COMBINATIONS (The Sentence Lookup Logic)
