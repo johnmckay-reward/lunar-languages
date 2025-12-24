@@ -1,0 +1,18 @@
+<ion-modal [isOpen]="isOpen" (didDismiss)="close()" [initialBreakpoint]="1" [breakpoints]="[0, 0.75, 1]">
+  <ng-template>
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Cultural Notes</ion-title>
+        <ion-buttons slot="end">
+          <ion-button (click)="close()">Close</ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <div *ngFor="let note of notes" class="note-card ion-margin-bottom">
+        <h3 class="note-title">{{ note.title }}</h3>
+        <p class="note-content">{{ note.content }}</p>
+      </div>
+    </ion-content>
+  </ng-template>
+</ion-modal>

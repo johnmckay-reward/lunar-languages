@@ -12,78 +12,17 @@
 
 <ion-content [fullscreen]="false" *ngIf="!showWelcomeScreen">
 
-  <div class="display-wrapper ion-padding">
-    <div class="glass-panel ion-padding ion-text-center">
-
-      <ng-container *ngIf="displayNative; else placeholder">
-        <p class="ion-text-uppercase ion-text-small text-muted ion-no-margin">
-          {{ displayEnglish }}
-        </p>
-
-        <h1 class="text-hero-native">{{ displayNative }}</h1>
-
-        <p class="text-phonetic">{{ displayPhonetic }}</p>
-      </ng-container>
-
-      <ng-template #placeholder>
-        <div class="placeholder-content ion-padding-top ion-padding-bottom">
-          <ion-icon name="chatbubbles-outline" style="font-size: 48px; color: var(--ion-color-medium); opacity: 0.4;"></ion-icon>
-          <p class="ion-text-muted ion-margin-top" style="font-size: 0.9rem;">
-            Select an option below to start
-          </p>
-        </div>
-      </ng-template>
-
-      <div class="phonetic-guide-box" *ngIf="currentLanguage">
-        <p>{{ currentLanguage.phoneticGuide }}</p>
-      </div>
-
-      <div class="ion-margin-top" *ngIf="currentAudioId">
-        <ion-button
-          fill="solid"
-          shape="round"
-          color="secondary"
-          size="default"
-          class="btn-listen"
-          (click)="playAudio(1.0)">
-          <ion-icon name="volume-high" slot="start"></ion-icon>
-          Listen
-        </ion-button>
-
-        <ion-button
-          fill="outline"
-          shape="round"
-          color="secondary"
-          size="default"
-          class="ion-margin-start"
-          (click)="playAudio(0.6)">
-          <ion-icon name="hourglass-outline" slot="start"></ion-icon>
-          Slow
-        </ion-button>
-      </div>
-
-      <div class="listen-for-box ion-margin-top" *ngIf="selectedStarter?.listenFor && selectedStarter!.listenFor!.length > 0">
-        <p class="listen-label">
-          <ion-icon name="ear-outline"></ion-icon>
-          Listen for...
-        </p>
-        <div class="listen-grid">
-          <div class="listen-item" *ngFor="let item of selectedStarter!.listenFor">
-            <div class="listen-main">
-              <span class="listen-native">{{ item.text }}</span>
-              <span class="listen-phonetic" *ngIf="item.phonetic">/ {{ item.phonetic }} /</span>
-            </div>
-            <div class="listen-meaning" [class.danger]="item.meaning.includes('Danger')">{{ item.meaning }}</div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
+  <app-display-panel
+    [displayEnglish]="displayEnglish"
+    [displayNative]="displayNative"
+    [displayPhonetic]="displayPhonetic"
+    [currentLanguage]="currentLanguage"
+    [currentAudioId]="currentAudioId"
+    [selectedStarter]="selectedStarter"
+    (playAudio)="playAudio($event)">
+  </app-display-panel>
 
   <div class="ion-padding-start ion-padding-end ion-margin-bottom">
-
-
     <!-- Row 1: Quick Phrases -->
     <ion-button expand="block" color="secondary" shape="round" (click)="setModalOpen(true)">
       <ion-icon name="flash" slot="start"></ion-icon>
@@ -104,144 +43,41 @@
     </div>
   </div>
 
-  <ion-modal [isOpen]="isModalOpen" (didDismiss)="setModalOpen(false)" [initialBreakpoint]="0.75" [breakpoints]="[0, 0.75, 1]">
-    <ng-template>
-      <ion-header>
-        <ion-toolbar>
-          <ion-title>Quick Phrases</ion-title>
-          <ion-buttons slot="end">
-            <ion-button (click)="setModalOpen(false)">Close</ion-button>
-          </ion-buttons>
-        </ion-toolbar>
-      </ion-header>
-      <ion-content class="ion-padding">
-        <ion-list lines="none">
-          <ion-item *ngFor="let item of essentials" (click)="selectEssential(item)" button detail="false" class="phrase-item">
-            <ion-label>
-              <h2>{{ item.english }}</h2>
-              <p *ngIf="item.translation" class="native-text">{{ item.translation.text }}</p>
-              <p *ngIf="item.translation" class="phonetic-text">{{ item.translation.phonetic }}</p>
-            </ion-label>
-            <ion-icon name="chevron-forward" slot="end" color="medium"></ion-icon>
-          </ion-item>
-        </ion-list>
-      </ion-content>
-    </ng-template>
-  </ion-modal>
+  <app-quick-phrases-modal
+    [isOpen]="isModalOpen"
+    [essentials]="essentials"
+    (didDismiss)="setModalOpen(false)"
+    (phraseSelected)="selectEssential($event)">
+  </app-quick-phrases-modal>
 
-  <ion-modal [isOpen]="isNotesModalOpen" (didDismiss)="setNotesModalOpen(false)" [initialBreakpoint]="1" [breakpoints]="[0, 0.75, 1]">
-    <ng-template>
-      <ion-header>
-        <ion-toolbar>
-          <ion-title>Cultural Notes</ion-title>
-          <ion-buttons slot="end">
-            <ion-button (click)="setNotesModalOpen(false)">Close</ion-button>
-          </ion-buttons>
-        </ion-toolbar>
-      </ion-header>
-      <ion-content class="ion-padding">
-        <div *ngFor="let note of currentNotes" class="note-card ion-margin-bottom">
-          <h3 class="note-title">{{ note.title }}</h3>
-          <p class="note-content">{{ note.content }}</p>
-        </div>
-      </ion-content>
-    </ng-template>
-  </ion-modal>
+  <app-cultural-notes-modal
+    [isOpen]="isNotesModalOpen"
+    [notes]="currentNotes"
+    (didDismiss)="setNotesModalOpen(false)">
+  </app-cultural-notes-modal>
 
-  <ion-modal [isOpen]="isNumbersModalOpen" (didDismiss)="setNumbersModalOpen(false)" [initialBreakpoint]="1" [breakpoints]="[0, 0.75, 1]">
-    <ng-template>
-      <ion-header>
-        <ion-toolbar>
-          <ion-title>Numbers</ion-title>
-          <ion-buttons slot="end">
-            <ion-button (click)="setNumbersModalOpen(false)">Close</ion-button>
-          </ion-buttons>
-        </ion-toolbar>
-      </ion-header>
-      <ion-content class="ion-padding">
+  <app-numbers-modal
+    [isOpen]="isNumbersModalOpen"
+    [numbers]="currentNumbers"
+    [guidance]="currentNumberGuidance"
+    (didDismiss)="setNumbersModalOpen(false)">
+  </app-numbers-modal>
 
-        <!-- Guidance Section -->
-        <div *ngIf="currentNumberGuidance.length > 0" class="ion-margin-bottom">
-          <div *ngFor="let guide of currentNumberGuidance" class="note-card ion-margin-bottom" >
-            <h3 class="note-title" style="color: var(--ion-color-medium-shade)">
-              <ion-icon name="bulb-outline" style="vertical-align: middle; margin-right: 4px;"></ion-icon>
-              {{ guide.title }}
-            </h3>
-            <p class="note-content" style="color: var(--ion-color-dark)">{{ guide.content }}</p>
-          </div>
-        </div>
-
-        <ion-list lines="none">
-          <ion-item *ngFor="let num of currentNumbers" class="number-item">
-            <div slot="start" class="number-badge">{{ num.value }}</div>
-            <ion-label>
-              <h2>{{ num.text }}</h2>
-              <p class="phonetic-text">{{ num.phonetic }}</p>
-            </ion-label>
-          </ion-item>
-        </ion-list>
-      </ion-content>
-    </ng-template>
-  </ion-modal>
-
-  <div class="ion-padding-start ion-padding-end">
-    <p class="section-label">1. Start Sentence</p>
-
-    <ion-grid class="ion-no-padding">
-      <ion-row>
-        <ion-col size="6" size-md="4" *ngFor="let starter of starters">
-          <button
-            class="builder-btn"
-            [class.active]="selectedStarter?.id === starter.id"
-            (click)="selectStarter(starter)">
-            {{ starter.english }}
-          </button>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </div>
-
-  <div class="ion-padding-start ion-padding-end ion-margin-top" *ngIf="selectedStarter" id="complete-phrase-section">
-
-    <p class="section-label">2. Complete Phrase</p>
-
-    <ion-grid class="ion-no-padding">
-      <ion-row>
-        <ion-col size="6" size-md="4" *ngFor="let noun of visibleNouns">
-          <button
-            class="builder-btn"
-            [class.active]="selectedNoun?.id === noun.id"
-            (click)="selectNoun(noun)">
-            {{ noun.english }}
-          </button>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-
-    <div class="ion-padding-bottom ion-margin-bottom"></div>
-  </div>
+  <app-sentence-builder
+    [starters]="starters"
+    [visibleNouns]="visibleNouns"
+    [selectedStarter]="selectedStarter"
+    [selectedNoun]="selectedNoun"
+    (starterSelected)="selectStarter($event)"
+    (nounSelected)="selectNoun($event)">
+  </app-sentence-builder>
 
   <div class="spacer-bottom"></div>
 
 </ion-content>
 
-<!-- WELCOME SCREEN OVERLAY -->
-<div class="welcome-overlay" *ngIf="showWelcomeScreen">
-  <div class="welcome-content">
-    <div class="ion-text-center ion-margin-bottom">
-      <h1 class="welcome-title">Lunar Languages</h1>
-      <p class="welcome-subtitle">Choose your destination</p>
-    </div>
-
-    <div class="language-grid">
-      <div
-        class="language-card"
-        *ngFor="let lang of availableLanguages"
-        (click)="selectInitialLanguage(lang.code)">
-        <div class="flag">{{ lang.flag }}</div>
-        <div class="name">{{ lang.location }}</div>
-        <div class="sub-name">{{ lang.name }}</div>
-      </div>
-    </div>
-  </div>
-</div>
+<app-welcome-screen
+  *ngIf="showWelcomeScreen"
+  [availableLanguages]="availableLanguages"
+  (languageSelected)="selectInitialLanguage($event)">
+</app-welcome-screen>

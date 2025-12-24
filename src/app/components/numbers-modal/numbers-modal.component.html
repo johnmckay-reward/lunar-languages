@@ -1,0 +1,35 @@
+<ion-modal [isOpen]="isOpen" (didDismiss)="close()" [initialBreakpoint]="1" [breakpoints]="[0, 0.75, 1]">
+  <ng-template>
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Numbers</ion-title>
+        <ion-buttons slot="end">
+          <ion-button (click)="close()">Close</ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+
+      <!-- Guidance Section -->
+      <div *ngIf="guidance.length > 0" class="ion-margin-bottom">
+        <div *ngFor="let guide of guidance" class="note-card ion-margin-bottom" >
+          <h3 class="note-title" style="color: var(--ion-color-medium-shade)">
+            <ion-icon name="bulb-outline" style="vertical-align: middle; margin-right: 4px;"></ion-icon>
+            {{ guide.title }}
+          </h3>
+          <p class="note-content" style="color: var(--ion-color-dark)">{{ guide.content }}</p>
+        </div>
+      </div>
+
+      <ion-list lines="none">
+        <ion-item *ngFor="let num of numbers" class="number-item">
+          <div slot="start" class="number-badge">{{ num.value }}</div>
+          <ion-label>
+            <h2>{{ num.text }}</h2>
+            <p class="phonetic-text">{{ num.phonetic }}</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ng-template>
+</ion-modal>

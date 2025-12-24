@@ -1,0 +1,68 @@
+<div class="display-wrapper ion-padding">
+  <div class="glass-panel ion-padding ion-text-center">
+
+    <ng-container *ngIf="displayNative; else placeholder">
+      <p class="ion-text-uppercase ion-text-small text-muted ion-no-margin">
+        {{ displayEnglish }}
+      </p>
+
+      <h1 class="text-hero-native">{{ displayNative }}</h1>
+
+      <p class="text-phonetic">{{ displayPhonetic }}</p>
+    </ng-container>
+
+    <ng-template #placeholder>
+      <div class="placeholder-content ion-padding-top ion-padding-bottom">
+        <ion-icon name="chatbubbles-outline" style="font-size: 48px; color: var(--ion-color-medium); opacity: 0.4;"></ion-icon>
+        <p class="ion-text-muted ion-margin-top" style="font-size: 0.9rem;">
+          Select an option below to start
+        </p>
+      </div>
+    </ng-template>
+
+    <div class="phonetic-guide-box" *ngIf="currentLanguage">
+      <p>{{ currentLanguage.phoneticGuide }}</p>
+    </div>
+
+    <div class="ion-margin-top" *ngIf="currentAudioId">
+      <ion-button
+        fill="solid"
+        shape="round"
+        color="secondary"
+        size="default"
+        class="btn-listen"
+        (click)="onPlayAudio(1.0)">
+        <ion-icon name="volume-high" slot="start"></ion-icon>
+        Listen
+      </ion-button>
+
+      <ion-button
+        fill="outline"
+        shape="round"
+        color="secondary"
+        size="default"
+        class="ion-margin-start"
+        (click)="onPlayAudio(0.6)">
+        <ion-icon name="hourglass-outline" slot="start"></ion-icon>
+        Slow
+      </ion-button>
+    </div>
+
+    <div class="listen-for-box ion-margin-top" *ngIf="selectedStarter?.listenFor && selectedStarter!.listenFor!.length > 0">
+      <p class="listen-label">
+        <ion-icon name="ear-outline"></ion-icon>
+        Listen for...
+      </p>
+      <div class="listen-grid">
+        <div class="listen-item" *ngFor="let item of selectedStarter!.listenFor">
+          <div class="listen-main">
+            <span class="listen-native">{{ item.text }}</span>
+            <span class="listen-phonetic" *ngIf="item.phonetic">/ {{ item.phonetic }} /</span>
+          </div>
+          <div class="listen-meaning" [class.danger]="item.meaning.includes('Danger')">{{ item.meaning }}</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

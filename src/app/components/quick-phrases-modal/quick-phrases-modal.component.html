@@ -1,0 +1,24 @@
+<ion-modal [isOpen]="isOpen" (didDismiss)="close()" [initialBreakpoint]="0.75" [breakpoints]="[0, 0.75, 1]">
+  <ng-template>
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Quick Phrases</ion-title>
+        <ion-buttons slot="end">
+          <ion-button (click)="close()">Close</ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-list lines="none">
+        <ion-item *ngFor="let item of essentials" (click)="selectPhrase(item)" button detail="false" class="phrase-item">
+          <ion-label>
+            <h2>{{ item.english }}</h2>
+            <p *ngIf="item.translation" class="native-text">{{ item.translation.text }}</p>
+            <p *ngIf="item.translation" class="phonetic-text">{{ item.translation.phonetic }}</p>
+          </ion-label>
+          <ion-icon name="chevron-forward" slot="end" color="medium"></ion-icon>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ng-template>
+</ion-modal>

@@ -5,6 +5,12 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
+import { WelcomeScreenComponent } from '../components/welcome-screen/welcome-screen.component';
+import { DisplayPanelComponent } from '../components/display-panel/display-panel.component';
+import { QuickPhrasesModalComponent } from '../components/quick-phrases-modal/quick-phrases-modal.component';
+import { CulturalNotesModalComponent } from '../components/cultural-notes-modal/cultural-notes-modal.component';
+import { NumbersModalComponent } from '../components/numbers-modal/numbers-modal.component';
+import { SentenceBuilderComponent } from '../components/sentence-builder/sentence-builder.component';
 
 
 @NgModule({
@@ -14,6 +20,14 @@ import { HomePageRoutingModule } from './home-routing.module';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [
+    HomePage,
+    WelcomeScreenComponent,
+    DisplayPanelComponent,
+    QuickPhrasesModalComponent,
+    CulturalNotesModalComponent,
+    NumbersModalComponent,
+    SentenceBuilderComponent
+  ]
 })
 export class HomePageModule {}

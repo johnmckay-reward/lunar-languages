@@ -1,0 +1,31 @@
+.phrase-item {
+  --padding-start: 0;
+  --inner-padding-end: 0;
+  margin-bottom: 12px;
+  border-radius: 16px;
+  --background: var(--ion-color-light);
+
+  ion-label {
+    margin: 16px;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--ion-color-dark);
+    margin-bottom: 4px;
+  }
+
+  .native-text {
+    font-size: 1.2rem;
+    color: var(--ion-color-primary);
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+
+  .phonetic-text {
+    font-size: 0.9rem;
+    color: var(--ion-color-medium);
+    font-style: italic;
+  }
+}

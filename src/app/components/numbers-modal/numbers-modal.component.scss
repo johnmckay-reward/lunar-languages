@@ -1,0 +1,67 @@
+.note-card {
+  background: var(--ion-card-background);
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.note-title {
+  margin-top: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ion-color-primary);
+  margin-bottom: 8px;
+}
+
+.note-content {
+  margin-bottom: 0;
+  line-height: 1.5;
+  color: var(--ion-color-medium-shade);
+}
+
+.number-item {
+  --padding-start: 0;
+  --inner-padding-end: 0;
+  margin-bottom: 8px;
+  border-radius: 12px;
+  --background: transparent;
+
+  ion-label {
+    margin-left: 16px;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--ion-color-dark);
+  }
+
+  .phonetic-text {
+    font-size: 0.95rem;
+    color: var(--ion-color-medium);
+    font-style: italic;
+  }
+}
+
+.number-badge {
+  background: var(--ion-color-light);
+  color: var(--ion-color-primary);
+  font-weight: 800;
+  font-size: 1.1rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  .note-card {
+    border: 1px solid rgba(255,255,255,0.05);
+  }
+  .number-badge {
+    background: var(--ion-color-step-100);
+    color: var(--ion-color-light);
+  }
+}

@@ -1,0 +1,19 @@
+<div class="welcome-overlay">
+  <div class="welcome-content">
+    <div class="ion-text-center ion-margin-bottom">
+      <h1 class="welcome-title">Lunar Languages</h1>
+      <p class="welcome-subtitle">Choose your destination</p>
+    </div>
+
+    <div class="language-grid">
+      <div
+        class="language-card"
+        *ngFor="let lang of availableLanguages"
+        (click)="selectLanguage(lang.code)">
+        <div class="flag">{{ lang.flag }}</div>
+        <div class="name">{{ lang.location }}</div>
+        <div class="sub-name">{{ lang.name }}</div>
+      </div>
+    </div>
+  </div>
+</div>

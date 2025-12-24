@@ -1,0 +1,36 @@
+<div class="ion-padding-start ion-padding-end">
+  <p class="section-label">1. Start Sentence</p>
+
+  <ion-grid class="ion-no-padding">
+    <ion-row>
+      <ion-col size="6" size-md="4" *ngFor="let starter of starters">
+        <button
+          class="builder-btn"
+          [class.active]="selectedStarter?.id === starter.id"
+          (click)="onSelectStarter(starter)">
+          {{ starter.english }}
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
+
+<div class="ion-padding-start ion-padding-end ion-margin-top" *ngIf="selectedStarter" id="complete-phrase-section">
+
+  <p class="section-label">2. Complete Phrase</p>
+
+  <ion-grid class="ion-no-padding">
+    <ion-row>
+      <ion-col size="6" size-md="4" *ngFor="let noun of visibleNouns">
+        <button
+          class="builder-btn"
+          [class.active]="selectedNoun?.id === noun.id"
+          (click)="onSelectNoun(noun)">
+          {{ noun.english }}
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="ion-padding-bottom ion-margin-bottom"></div>
+</div>

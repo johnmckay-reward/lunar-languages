@@ -1,0 +1,128 @@
+.display-wrapper {
+  background: linear-gradient(
+    180deg,
+    rgba(92, 107, 192, 0.08) 0%,
+    rgba(92, 107, 192, 0.02) 100%
+  );
+
+  padding-top: 20px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .display-wrapper {
+    background: linear-gradient(
+      180deg,
+      rgba(92, 107, 192, 0.15) 0%,
+      rgba(92, 107, 192, 0.05) 100%
+    );
+  }
+}
+
+.text-phonetic {
+  font-size: 1.2rem;
+  color: var(--ion-color-medium);
+  margin: 0;
+}
+
+.phonetic-guide-box {
+  margin-top: 16px;
+  padding: 8px 12px;
+  background: rgba(var(--ion-color-primary-rgb), 0.08);
+  border-radius: 12px;
+  display: inline-block;
+  max-width: 90%;
+
+  p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--ion-color-medium);
+    font-style: italic;
+    line-height: 1.4;
+  }
+}
+
+.listen-for-box {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+  padding: 16px;
+  border: 1px solid rgba(var(--ion-color-primary-rgb), 0.1);
+  text-align: left;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+.listen-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--ion-color-primary);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.listen-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.listen-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px dashed rgba(0,0,0,0.1);
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.listen-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.listen-native {
+  font-weight: 600;
+  color: var(--ion-color-dark);
+  font-size: 1rem;
+}
+
+.listen-phonetic {
+  font-size: 0.8rem;
+  color: var(--ion-color-medium);
+  font-style: italic;
+}
+
+.listen-meaning {
+  font-size: 0.9rem;
+  color: var(--ion-color-medium-shade);
+  font-weight: 500;
+  text-align: right;
+}
+
+.listen-meaning.danger {
+  color: var(--ion-color-danger);
+  font-weight: 700;
+}
+
+@media (prefers-color-scheme: dark) {
+  .listen-for-box {
+    background: rgba(30, 30, 40, 0.6);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .listen-native {
+    color: var(--ion-color-light);
+  }
+
+  .listen-item {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+  }
+}

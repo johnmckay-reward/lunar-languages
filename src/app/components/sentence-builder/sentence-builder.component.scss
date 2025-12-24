@@ -1,0 +1,53 @@
+.builder-btn {
+  width: 100%;
+  background: #ffffff;
+  color: var(--ion-color-medium);
+  padding: 16px 12px;
+  border-radius: 16px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.builder-btn.active {
+  background: var(--ion-color-primary);
+  color: #ffffff;
+  border-color: var(--ion-color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(var(--ion-color-primary-rgb), 0.3);
+}
+
+.section-label {
+  margin-left: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--ion-color-medium);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .builder-btn {
+    background: var(--ion-color-step-50);
+    border-color: transparent;
+    color: var(--ion-color-step-400);
+  }
+
+  .builder-btn.active {
+    background: var(--ion-color-primary);
+    color: #ffffff;
+  }
+}
