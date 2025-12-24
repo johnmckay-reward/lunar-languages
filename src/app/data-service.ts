@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
+import enData from '../assets/i18n/en.json';
 
 // --- INTERFACES ---
 
@@ -127,24 +128,11 @@ export class DataService {
   // ============================================================
   // 1. ESSENTIALS (Standalone phrases - Always available)
   // ============================================================
-  private essentials: Phrase[] = [
-    { id: 'hello', type: 'essential', english: 'Hello' },
-    { id: 'thanks', type: 'essential', english: 'Thank you' },
-    { id: 'goodbye', type: 'essential', english: 'Goodbye' },
-    { id: 'good_morning', type: 'essential', english: 'Good morning' },
-    { id: 'good_evening', type: 'essential', english: 'Good evening' },
-    { id: 'bathroom', type: 'essential', english: 'Where is the bathroom?' },
-    { id: 'yes', type: 'essential', english: 'Yes' },
-    { id: 'no', type: 'essential', english: 'No' },
-    { id: 'sorry', type: 'essential', english: 'Excuse me / Sorry' },
-    { id: 'no_understand', type: 'essential', english: 'I don\'t understand' },
-    { id: 'speak_english', type: 'essential', english: 'Do you speak English?' },
-    { id: 'help', type: 'essential', english: 'Help!' },
-    { id: 'delicious', type: 'essential', english: 'Delicious!' },
-    { id: 'cheers', type: 'essential', english: 'Cheers!' },
-    { id: 'wifi_pass', type: 'essential', english: 'WiFi Password?' },
-    { id: 'slowly', type: 'essential', english: 'Please speak slowly' }
-  ];
+  private essentials: Phrase[] = Object.entries(enData.essentials).map(([key, value]) => ({
+    id: key,
+    type: 'essential',
+    english: (value as any).text
+  }));
 
   // ============================================================
   // 2. STARTERS (The "Operators")
@@ -237,151 +225,10 @@ export class DataService {
   // 4. COMBINATIONS (The Sentence Lookup Logic)
   // Format: "starterId_nounId"
   // ============================================================
-  private combinations: { [key: string]: { english: string } } = {
-    // --- WHERE IS...? ---
-    'where_station': { english: 'Where is the train station?' },
-    'where_airport': { english: 'Where is the airport?' },
-    'where_ticket': { english: 'Where can I buy a ticket?' }, // Context adjusted
-    'where_taxi': { english: 'Where is the taxi stand?' },
-    'where_atm': { english: 'Where is the ATM?' },
-    'where_pharmacy': { english: 'Where is the pharmacy?' },
-    'where_doctor': { english: 'Where is a doctor?' },
-    'where_restaurant': { english: 'Where is a good restaurant?' },
-    'where_hospital': { english: 'Where is the hospital?' },
-    'where_supermarket': { english: 'Where is the supermarket?' },
-    'where_beach': { english: 'Where is the beach?' },
-    'where_coffee': { english: 'Where is a coffee shop?' },
-    'where_water': { english: 'Where can I buy water?' },
-    'where_bus': { english: 'Where is the bus?' },
-    'where_entrance': { english: 'Where is the entrance?' },
-    'where_exit': { english: 'Where is the exit?' },
-    'where_key': { english: 'Where is the key?' },
-
-    // --- I WOULD LIKE... ---
-    'like_ticket': { english: 'I would like a ticket please.' },
-    'like_taxi': { english: 'I would like a taxi please.' },
-    'like_water': { english: 'I would like some water.' },
-    'like_coffee': { english: 'I would like a coffee.' },
-    'like_menu': { english: 'I would like the menu please.' },
-    'like_bill': { english: 'I would like the bill please.' },
-    'like_beer': { english: 'I would like a beer.' },
-    'like_wine': { english: 'I would like a glass of wine.' },
-    'like_seafood': { english: 'I would like the seafood.' },
-    'like_vegetarian': { english: 'I would like the vegetarian option.' },
-    'like_room': { english: 'I would like a room.' },
-    'like_receipt': { english: 'I would like a receipt.' },
-    'like_ice': { english: 'I would like some ice.' },
-
-    // --- DO YOU HAVE...? ---
-    'have_wifi': { english: 'Do you have WiFi?' },
-    'have_room': { english: 'Do you have a room available?' },
-    'have_charger': { english: 'Do you have a charger?' },
-    'have_menu': { english: 'Do you have a menu in English?' }, // Context added
-    'have_vegetarian': { english: 'Do you have any vegetarian options?' },
-    'have_water': { english: 'Do you have water?' },
-    'have_beer': { english: 'Do you have beer?' },
-    'have_wine': { english: 'Do you have wine?' },
-    'have_map': { english: 'Do you have a map?' },
-    'have_sugar': { english: 'Do you have sugar?' },
-
-    // --- HOW MUCH IS...? ---
-    'cost_ticket': { english: 'How much is a ticket?' },
-    'cost_taxi': { english: 'How much is the taxi?' },
-    'cost_room': { english: 'How much is the room?' },
-    'cost_coffee': { english: 'How much is a coffee?' },
-    'cost_beer': { english: 'How much is a beer?' },
-    'cost_wine': { english: 'How much is a glass of wine?' },
-    'cost_wifi': { english: 'How much is the WiFi?' },
-    'cost_water': { english: 'How much is the water?' },
-    'cost_seafood': { english: 'How much is the seafood?' },
-    'cost_bus': { english: 'How much is the bus?' },
-
-    // --- I AM ALLERGIC TO... ---
-    'allergic_peanuts': { english: 'I am allergic to peanuts.' },
-    'allergic_seafood': { english: 'I am allergic to seafood.' },
-    'allergic_gluten': { english: 'I am allergic to gluten.' },
-    'allergic_dairy': { english: 'I am allergic to dairy.' },
-    'allergic_nuts': { english: 'I am allergic to nuts.' },
-    'allergic_eggs': { english: 'I am allergic to eggs.' },
-    'allergic_soy': { english: 'I am allergic to soy.' },
-
-    // --- I NEED... ---
-    'need_ticket': { english: 'I need a ticket.' },
-    'need_taxi': { english: 'I need a taxi.' },
-    'need_doctor': { english: 'I need a doctor.' },
-    'need_pharmacy': { english: 'I need a pharmacy.' },
-    'need_hospital': { english: 'I need a hospital.' },
-    'need_charger': { english: 'I need a charger.' },
-    'need_map': { english: 'I need a map.' },
-    'need_receipt': { english: 'I need a receipt.' },
-    'need_water': { english: 'I need water.' },
-    'need_key': { english: 'I need the key.' },
-
-    // --- CAN I USE...? ---
-    'use_wifi': { english: 'Can I use the WiFi?' },
-    'use_charger': { english: 'Can I use the charger?' },
-    'use_atm': { english: 'Can I use the ATM?' },
-    'use_map': { english: 'Can I use the map?' },
-    'use_ticket': { english: 'Can I use this ticket?' },
-    'use_entrance': { english: 'Can I use this entrance?' },
-    'use_exit': { english: 'Can I use this exit?' },
-    'use_menu': { english: 'Can I use the menu?' },
-    'use_bathroom': { english: 'Can I use the bathroom?' },
-    'use_phone': { english: 'Can I use your phone?' },
-
-    // --- I LOST... ---
-    'lost_ticket': { english: 'I lost my ticket.' },
-    'lost_key': { english: 'I lost my key.' },
-    'lost_phone': { english: 'I lost my phone.' },
-    'lost_wallet': { english: 'I lost my wallet.' },
-    'lost_passport': { english: 'I lost my passport.' },
-    'lost_bag': { english: 'I lost my bag.' },
-    'lost_map': { english: 'I lost my map.' },
-    'lost_receipt': { english: 'I lost my receipt.' },
-
-    // --- IS THERE...? ---
-    'is_there_atm': { english: 'Is there an ATM near here?' },
-    'is_there_pharmacy': { english: 'Is there a pharmacy nearby?' },
-    'is_there_wifi': { english: 'Is there WiFi here?' },
-
-    // --- I LIKE... ---
-    'love_coffee': { english: 'I like this coffee.' },
-    'love_wine': { english: 'I like this wine.' },
-    'love_seafood': { english: 'I love seafood.' },
-    'love_music': { english: 'I like this music.' },
-    'is_there_bus': { english: 'Is there a bus to the city?' },
-
-    // --- PLEASE CALL... ---
-    'call_taxi': { english: 'Please call a taxi.' },
-    'call_doctor': { english: 'Please call a doctor.' },
-    'call_police': { english: 'Please call the police.' },
-    'call_hotel': { english: 'Please call my hotel.' },
-
-    // --- ANOTHER... ---
-    'another_beer': { english: 'Another beer, please!' },
-    'another_wine': { english: 'Another glass of wine, please.' },
-    'another_coffee': { english: 'Another coffee, please.' },
-    'another_bill': { english: 'Can I have another copy of the bill?' },
-
-    // --- LET'S SHARE... ---
-    'share_taxi': { english: 'Shall we share a taxi?' },
-    'share_wine': { english: 'Shall we share a bottle of wine?' },
-    'share_bill': { english: 'Let\'s split the bill.' },
-    'share_seafood': { english: 'Shall we share the seafood platter?' },
-
-    // --- NO... ---
-    'no_ice': { english: 'No ice, please.' },
-    'no_sugar': { english: 'No sugar, please.' },
-    'no_dairy': { english: 'No dairy, please.' },
-    'no_meat': { english: 'No meat, please.' },
-    // Add other allergies here if you add nouns for seafood, etc.
-
-    // --- IS... FREE? ---
-    'is_free_wifi': { english: 'Is the WiFi free?' },
-    'is_free_water': { english: 'Is the water free?' },
-    'is_free_entrance': { english: 'Is the entrance free?' },
-    'is_free_nuts': { english: 'Are these nuts free?' },
-  };
+  private combinations: { [key: string]: { english: string } } = Object.entries(enData.combinations).reduce((acc, [key, value]) => {
+    acc[key] = { english: (value as any).text };
+    return acc;
+  }, {} as { [key: string]: { english: string } });
 
   constructor(private http: HttpClient) { }
 

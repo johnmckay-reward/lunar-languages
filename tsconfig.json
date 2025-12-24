@@ -19,6 +19,8 @@
     "target": "es2022",
     "module": "es2020",
     "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
     "lib": [
       "es2018",
       "dom"
