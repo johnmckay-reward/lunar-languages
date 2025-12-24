@@ -12,7 +12,7 @@
     <ion-content class="ion-padding">
       <div class="upgrade-content">
         <div class="icon-container">
-          <ion-icon name="rocket" color="dark"></ion-icon>
+          <ion-icon name="rocket"></ion-icon>
         </div>
 
         <h2 *ngIf="!hasPendingSelection">Unlock Pro</h2>
@@ -46,8 +46,11 @@
         </ion-list>
 
         <div class="action-area">
-          <ion-button expand="block" class="upgrade-button" size="large" shape="round" (click)="onUpgrade()">
+          <ion-button expand="block" class="upgrade-button" size="large" shape="round" (click)="onUpgrade()" [disabled]="priceDisplay === 'Loading...'">
             <strong>Upgrade for {{ priceDisplay }}</strong>
+          </ion-button>
+          <ion-button fill="clear" size="small" color="medium" (click)="onRestore()" style="margin-top: 8px; font-size: 0.9rem; opacity: 0.8;">
+            Restore Purchases
           </ion-button>
           <p class="ion-text-center ion-text-small text-muted">One-time purchase. No subscriptions.</p>
         </div>
