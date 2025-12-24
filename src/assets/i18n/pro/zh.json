@@ -1,1 +1,8 @@
-{}
+{
+  "combinations": {
+    "like_champagne": {
+      "text": "我想要香槟",
+      "phonetic": "wo xiang yao xiang-bin"
+    }
+  }
+}

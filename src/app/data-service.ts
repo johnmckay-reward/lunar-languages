@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, Observable, forkJoin } from 'rxjs';
 import { tap, map } from 'rxjs/operators';
 import enData from '../assets/i18n/free/en.json';
+import proEnData from '../assets/i18n/pro/en.json';
 import { LanguageInfo, Phrase } from './interfaces';
 import { supportedLanguages as freeSupportedLanguages } from './data/free/supported-languages';
 import { starters as freeStarters } from './data/free/starters';
@@ -37,10 +38,16 @@ export class DataService {
   // 4. COMBINATIONS (The Sentence Lookup Logic)
   // Format: "starterId_nounId"
   // ============================================================
-  private combinations: { [key: string]: { english: string } } = Object.entries(enData.combinations).reduce((acc, [key, value]) => {
-    acc[key] = { english: (value as any).text };
-    return acc;
-  }, {} as { [key: string]: { english: string } });
+  private combinations: { [key: string]: { english: string } } = {
+    ...Object.entries(enData.combinations).reduce((acc, [key, value]) => {
+      acc[key] = { english: (value as any).text };
+      return acc;
+    }, {} as { [key: string]: { english: string } }),
+    ...Object.entries((proEnData as any).combinations || {}).reduce((acc, [key, value]) => {
+      acc[key] = { english: (value as any).text };
+      return acc;
+    }, {} as { [key: string]: { english: string } })
+  };
 
   constructor(private http: HttpClient) {
     const savedPro = localStorage.getItem(this.PRO_KEY);

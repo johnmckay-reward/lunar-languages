@@ -1,1 +1,8 @@
-{}
+{
+  "combinations": {
+    "like_champagne": {
+      "text": "Je voudrais du champagne",
+      "phonetic": "zhuh voo-DRAY doo sham-PAN-yuh"
+    }
+  }
+}

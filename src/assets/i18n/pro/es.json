@@ -1,1 +1,8 @@
-{}
+{
+  "combinations": {
+    "like_champagne": {
+      "text": "Me gustaría champán",
+      "phonetic": "meh goos-tah-REE-ah cham-PAN"
+    }
+  }
+}
