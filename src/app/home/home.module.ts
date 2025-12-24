@@ -12,6 +12,7 @@ import { CulturalNotesModalComponent } from '../components/cultural-notes-modal/
 import { NumbersModalComponent } from '../components/numbers-modal/numbers-modal.component';
 import { SentenceBuilderComponent } from '../components/sentence-builder/sentence-builder.component';
 import { IntroModalComponent } from '../components/intro-modal/intro-modal.component';
+import { UpgradeModalComponent } from '../components/upgrade-modal/upgrade-modal.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { IntroModalComponent } from '../components/intro-modal/intro-modal.compo
     CulturalNotesModalComponent,
     NumbersModalComponent,
     SentenceBuilderComponent,
-    IntroModalComponent
+    IntroModalComponent,
+    UpgradeModalComponent
   ]
 })
 export class HomePageModule {}

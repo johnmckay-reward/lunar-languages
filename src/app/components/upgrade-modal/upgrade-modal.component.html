@@ -1,0 +1,54 @@
+<ion-modal [isOpen]="isOpen" (didDismiss)="onDismiss()">
+  <ng-template>
+    <ion-header class="ion-no-border">
+      <ion-toolbar>
+        <ion-buttons slot="end">
+          <ion-button (click)="onDismiss()">
+            <ion-icon name="close-outline"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <div class="upgrade-content">
+        <div class="icon-container">
+          <ion-icon name="rocket" color="dark"></ion-icon>
+        </div>
+
+        <h2>Unlock Pro</h2>
+        <p class="subtitle">Take your language learning to the next level with Lunar Languages Pro.</p>
+
+        <ion-list lines="none">
+          <ion-item>
+            <ion-icon name="checkmark-circle" slot="start" class="check-icon"></ion-icon>
+            <ion-label class="ion-text-wrap">
+              <h3>More Phrases</h3>
+              <p>Access hundreds of additional combinations.</p>
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="checkmark-circle" slot="start" class="check-icon"></ion-icon>
+            <ion-label class="ion-text-wrap">
+              <h3>Advanced Topics</h3>
+              <p>Business, Medical, and specialized vocabulary.</p>
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="checkmark-circle" slot="start" class="check-icon"></ion-icon>
+            <ion-label class="ion-text-wrap">
+              <h3>Support Development</h3>
+              <p>Help us add more languages and features.</p>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+
+        <div class="action-area">
+          <ion-button expand="block" class="upgrade-button" size="large" shape="round" (click)="onUpgrade()">
+            <strong>Upgrade for {{ priceDisplay }}</strong>
+          </ion-button>
+          <p class="ion-text-center ion-text-small text-muted">One-time purchase. No subscriptions.</p>
+        </div>
+      </div>
+    </ion-content>
+  </ng-template>
+</ion-modal>

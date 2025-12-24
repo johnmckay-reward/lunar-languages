@@ -41,6 +41,18 @@
         Numbers
       </ion-button>
     </div>
+
+    <!-- Row 3: Upgrade CTA -->
+    <div class="ion-padding-top" *ngIf="(isPro$ | async) === false">
+      <ion-button
+        expand="block"
+        class="upgrade-cta"
+        shape="round"
+        (click)="setUpgradeModalOpen(true)">
+        <ion-icon slot="start" name="rocket"></ion-icon>
+        GO PRO
+      </ion-button>
+    </div>
   </div>
 
   <app-quick-phrases-modal
@@ -86,3 +98,10 @@
   *ngIf="showIntroModal"
   (dismiss)="dismissIntroModal()">
 </app-intro-modal>
+
+<app-upgrade-modal
+  [isOpen]="isUpgradeModalOpen"
+  (didDismiss)="setUpgradeModalOpen(false)"
+  (upgradeTriggered)="upgradeToPro()">
+</app-upgrade-modal>
+

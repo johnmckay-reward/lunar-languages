@@ -1,4 +1,4 @@
-import { Phrase } from '../interfaces';
+import { Phrase } from '../../interfaces';
 
 export const starters: Phrase[] = [
   { id: 'where', type: 'starter', english: 'Where is...?' },

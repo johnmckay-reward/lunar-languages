@@ -16,3 +16,22 @@ ion-col {
   width: 100%;
 }
 
+
+.upgrade-cta {
+  --background: #FFD700;
+  --background-hover: #FFC107;
+  --background-activated: #FFB300;
+  --color: #000000;
+  --border-radius: 16px;
+  --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  font-weight: 800;
+  height: 48px;
+  letter-spacing: 1px;
+  margin: 0;
+
+  ion-icon {
+    font-size: 20px;
+    margin-right: 8px;
+  }
+}

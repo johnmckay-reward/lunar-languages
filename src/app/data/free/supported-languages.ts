@@ -1,4 +1,4 @@
-import { LanguageInfo } from '../interfaces';
+import { LanguageInfo } from '../../interfaces';
 
 export const supportedLanguages: LanguageInfo[] = [
   {

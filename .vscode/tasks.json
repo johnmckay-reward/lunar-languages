@@ -7,6 +7,20 @@
 			"command": "echo \"/* Modal Styles */\n.phrase-item {\n  --padding-start: 0;\n  --inner-padding-end: 0;\n  margin-bottom: 12px;\n  border-radius: 16px;\n  --background: var(--ion-color-light);\n  \n  ion-label {\n    margin: 16px;\n  }\n\n  h2 {\n    font-weight: 700;\n    font-size: 1.1rem;\n    color: var(--ion-color-dark);\n    margin-bottom: 4px;\n  }\n\n  .native-text {\n    font-size: 1.2rem;\n    color: var(--ion-color-primary);\n    font-weight: 600;\n    margin-bottom: 2px;\n  }\n\n  .phonetic-text {\n    font-size: 0.9rem;\n    color: var(--ion-color-medium);\n    font-style: italic;\n  }\n}\" >> /Users/johnmckay/Code/lunar-languages/src/app/home/home.page.scss",
 			"args": [],
 			"group": "build"
+		},
+		{
+			"label": "append_styles",
+			"type": "shell",
+			"command": "echo \"\\n.upgrade-cta {\\n  --box-shadow: 0 2px 8px rgba(var(--ion-color-tertiary-rgb), 0.4);\\n  font-weight: 700;\\n  margin-right: 8px;\\n  height: 32px;\\n  --padding-start: 12px;\\n  --padding-end: 12px;\\n  \\n  ion-icon {\\n    font-size: 16px;\\n  }\\n}\" >> /Users/johnmckay/Code/lunar-languages-full/lunar-languages/src/app/home/home.page.scss",
+			"args": [],
+			"group": "build"
+		},
+		{
+			"label": "append_modal_styles",
+			"type": "shell",
+			"command": "echo \"\\n.upgrade-button {\\n  --background: #FFD700;\\n  --background-hover: #FFC107;\\n  --background-activated: #FFB300;\\n  --color: #000000;\\n  --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);\\n  font-weight: 800;\\n}\" >> /Users/johnmckay/Code/lunar-languages-full/lunar-languages/src/app/components/upgrade-modal/upgrade-modal.component.scss",
+			"args": [],
+			"group": "build"
 		}
 	]
 }

@@ -82,8 +82,8 @@ function calculateSimilarity(original, transcribed, langCode = 'en') {
 }
 
 // 🩹 SURGICAL UPDATE (Regex-based)
-function updateSourceFile(fileName, section, key, newText, newPhonetic) {
-  const filePath = path.join(I18N_DIR, fileName);
+function updateSourceFile(fileName, tier, section, key, newText, newPhonetic) {
+  const filePath = path.join(I18N_DIR, tier, fileName);
   try {
     let fileContent = fs.readFileSync(filePath, 'utf8');
 
@@ -240,7 +240,7 @@ async function generateAudio(item, attempt = 1) {
 
               const section = item.id.split('.')[0];
               const key = item.id.split('.')[1];
-              updateSourceFile(item.fileName, section, key, correction.text, correction.phonetic);
+              updateSourceFile(item.fileName, item.tier, section, key, correction.text, correction.phonetic);
 
               stats.repaired++;
             } else {
@@ -277,8 +277,8 @@ async function generateAudio(item, attempt = 1) {
 
 // --- QUEUE & MENU LOGIC ---
 
-function getTranslationEntries(filename) {
-  const filePath = path.join(I18N_DIR, filename);
+function getTranslationEntries(filename, tier) {
+  const filePath = path.join(I18N_DIR, tier, filename);
   const langCode = path.basename(filename, '.json');
   try {
     const content = JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -292,8 +292,9 @@ function getTranslationEntries(filename) {
             id: `${sectionName}.${key}`,
             text: data.text,
             langCode: langCode,
-            outputPath: path.join(AUDIO_DIR, langCode, `${key}.mp3`),
-            fileName: filename
+            outputPath: path.join(AUDIO_DIR, tier, langCode, `${key}.mp3`),
+            fileName: filename,
+            tier: tier
           });
         }
       }
@@ -330,9 +331,20 @@ async function processQueue(queue) {
 async function main() {
   if (!fs.existsSync(AUDIO_DIR)) fs.mkdirSync(AUDIO_DIR, { recursive: true });
 
-  const allFiles = fs.readdirSync(I18N_DIR).filter(f => f.endsWith('.json') && f !== 'en.json');
+  const tiers = ['free', 'pro'];
+  let allFiles = [];
 
-  if (allFiles.length === 0) return console.log("No translation files found in src/assets/i18n.");
+  for (const tier of tiers) {
+    const tierDir = path.join(I18N_DIR, tier);
+    if (fs.existsSync(tierDir)) {
+      const files = fs.readdirSync(tierDir)
+        .filter(f => f.endsWith('.json') && f !== 'en.json')
+        .map(f => ({ filename: f, tier: tier }));
+      allFiles.push(...files);
+    }
+  }
+
+  if (allFiles.length === 0) return console.log("No translation files found in src/assets/i18n/free or /pro.");
 
   const { mode } = await inquirer.prompt([{
     type: 'list', name: 'mode', message: 'Select Task:',
@@ -345,15 +357,16 @@ async function main() {
   let queue = [];
 
   if (mode === 'analyze') {
-    for (const file of allFiles) {
-      const entries = getTranslationEntries(file);
+    for (const fileObj of allFiles) {
+      const entries = getTranslationEntries(fileObj.filename, fileObj.tier);
       const missing = entries.filter(i => !fs.existsSync(i.outputPath));
+      const label = `${fileObj.tier.toUpperCase()} - ${path.basename(fileObj.filename, '.json').toUpperCase()}`;
 
       if (missing.length) {
-        console.log(`❌ ${path.basename(file, '.json').toUpperCase()}: ${missing.length} missing audio files.`);
+        console.log(`❌ ${label}: ${missing.length} missing audio files.`);
         queue.push(...missing);
       } else {
-        console.log(`✅ ${path.basename(file, '.json').toUpperCase()}: 100% Coverage.`);
+        console.log(`✅ ${label}: 100% Coverage.`);
       }
     }
 
@@ -371,15 +384,20 @@ async function main() {
     if (selectionType === 'select') {
       const { sel } = await inquirer.prompt([{
         type: 'checkbox', name: 'sel', message: 'Pick languages:',
-        choices: allFiles.map(f => ({name: path.basename(f, '.json').toUpperCase(), value: f}))
+        choices: allFiles.map(f => ({
+          name: `${f.tier.toUpperCase()} - ${path.basename(f.filename, '.json').toUpperCase()}`,
+          value: f
+        }))
       }]);
       selectedFiles = sel;
     }
 
-    for (const file of selectedFiles) {
-      const items = getTranslationEntries(file);
+    for (const fileObj of selectedFiles) {
+      const items = getTranslationEntries(fileObj.filename, fileObj.tier);
+      const label = `${fileObj.tier.toUpperCase()} - ${path.basename(fileObj.filename, '.json').toUpperCase()}`;
+
       const { scope } = await inquirer.prompt([{
-        type: 'list', name: 'scope', message: `For ${path.basename(file, '.json').toUpperCase()}:`,
+        type: 'list', name: 'scope', message: `For ${label}:`,
         choices: [{name: 'All Items', value: 'all'}, {name: 'Pick Specific Items', value: 'pick'}]
       }]);
 

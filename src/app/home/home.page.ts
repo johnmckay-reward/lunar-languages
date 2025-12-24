@@ -50,9 +50,12 @@ export class HomePage implements OnInit {
   displayNative: string = '';
   displayPhonetic: string = '';
 
+  isPro$ = this.dataService.isPro;
+
   isModalOpen = false;
   isNotesModalOpen = false;
   isNumbersModalOpen = false;
+  isUpgradeModalOpen = false;
   showWelcomeScreen = false;
   showIntroModal = false;
 
@@ -73,6 +76,10 @@ export class HomePage implements OnInit {
 
   setNumbersModalOpen(isOpen: boolean) {
     this.isNumbersModalOpen = isOpen;
+  }
+
+  setUpgradeModalOpen(isOpen: boolean) {
+    this.isUpgradeModalOpen = isOpen;
   }
 
   dismissIntroModal() {
@@ -163,6 +170,16 @@ export class HomePage implements OnInit {
     Haptics.impact({ style: ImpactStyle.Medium });
     this.dataService.saveLanguagePreference(code);
     this.loadLanguage(code);
+  }
+
+  upgradeToPro() {
+    this.dataService.setPro(true);
+    const currentLang = this.currentLanguage?.code;
+    if (currentLang) {
+      this.loadLanguage(currentLang);
+    } else {
+      this.loadData();
+    }
   }
 
   loadData() {
@@ -270,7 +287,8 @@ export class HomePage implements OnInit {
 
     Haptics.impact({ style: ImpactStyle.Light });
 
-    const path = `assets/audio/${this.currentLanguage.code}/${this.currentAudioId}.mp3`;
+    const tier = this.dataService.isProAudio(this.currentAudioId) ? 'pro' : 'free';
+    const path = `assets/audio/${tier}/${this.currentLanguage.code}/${this.currentAudioId}.mp3`;
     const audio = new Audio(path);
     audio.playbackRate = speed;
     audio.play().catch(e => console.error('Error playing audio:', e));

@@ -1,12 +1,15 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { BehaviorSubject, Observable } from 'rxjs';
-import { tap } from 'rxjs/operators';
-import enData from '../assets/i18n/en.json';
+import { BehaviorSubject, Observable, forkJoin } from 'rxjs';
+import { tap, map } from 'rxjs/operators';
+import enData from '../assets/i18n/free/en.json';
 import { LanguageInfo, Phrase } from './interfaces';
-import { supportedLanguages } from './data/supported-languages';
-import { starters } from './data/starters';
-import { nouns } from './data/nouns';
+import { supportedLanguages as freeSupportedLanguages } from './data/free/supported-languages';
+import { starters as freeStarters } from './data/free/starters';
+import { nouns as freeNouns } from './data/free/nouns';
+import { supportedLanguages as proSupportedLanguages } from './data/pro/supported-languages';
+import { starters as proStarters } from './data/pro/starters';
+import { nouns as proNouns } from './data/pro/nouns';
 
 @Injectable({
   providedIn: 'root'
@@ -14,11 +17,12 @@ import { nouns } from './data/nouns';
 export class DataService {
 
   private readonly STORAGE_KEY = 'lunar_language';
+  private readonly PRO_KEY = 'lunar_pro_status';
   private currentTranslations: any = {};
+  private proAudioIds = new Set<string>();
   private languageLoaded = new BehaviorSubject<boolean>(false);
   private currentLanguage = new BehaviorSubject<LanguageInfo | null>(null);
-
-  private supportedLanguages: LanguageInfo[] = supportedLanguages;
+  private isProSubject = new BehaviorSubject<boolean>(false);
 
   // ============================================================
   // 1. ESSENTIALS (Standalone phrases - Always available)
@@ -30,16 +34,6 @@ export class DataService {
   }));
 
   // ============================================================
-  // 2. STARTERS (The "Operators")
-  // ============================================================
-  private starters: Phrase[] = starters;
-
-  // ============================================================
-  // 3. NOUNS (The "Fillers")
-  // ============================================================
-  private nouns: Phrase[] = nouns;
-
-  // ============================================================
   // 4. COMBINATIONS (The Sentence Lookup Logic)
   // Format: "starterId_nounId"
   // ============================================================
@@ -48,7 +42,34 @@ export class DataService {
     return acc;
   }, {} as { [key: string]: { english: string } });
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+    const savedPro = localStorage.getItem(this.PRO_KEY);
+    if (savedPro === 'true') {
+      this.isProSubject.next(true);
+    }
+  }
+
+  get isPro() {
+    return this.isProSubject.asObservable();
+  }
+
+  setPro(isPro: boolean) {
+    this.isProSubject.next(isPro);
+    localStorage.setItem(this.PRO_KEY, String(isPro));
+  }
+
+  private get supportedLanguages(): LanguageInfo[] {
+    return this.isProSubject.value ? proSupportedLanguages : freeSupportedLanguages;
+  }
+
+  private get starters(): Phrase[] {
+    return this.isProSubject.value ? proStarters : freeStarters;
+  }
+
+  private get nouns(): Phrase[] {
+    return this.isProSubject.value ? proNouns : freeNouns;
+  }
+
 
   saveLanguagePreference(code: string) {
     localStorage.setItem(this.STORAGE_KEY, code);
@@ -73,12 +94,48 @@ export class DataService {
       this.currentLanguage.next(selectedLang);
     }
 
-    return this.http.get(`assets/i18n/${lang}.json`).pipe(
+    const free$ = this.http.get(`assets/i18n/free/${lang}.json`);
+    let request$: Observable<any>;
+
+    if (this.isProSubject.value) {
+      const pro$ = this.http.get(`assets/i18n/pro/${lang}.json`);
+      request$ = forkJoin([free$, pro$]).pipe(
+        map(([free, pro]) => this.mergeTranslations(free, pro))
+      );
+    } else {
+      request$ = free$;
+    }
+
+    return request$.pipe(
       tap(data => {
         this.currentTranslations = data;
         this.languageLoaded.next(true);
       })
     );
+  }
+
+  private mergeTranslations(free: any, pro: any): any {
+    this.proAudioIds.clear();
+
+    const registerProIds = (obj: any) => {
+      if (!obj) return;
+      Object.keys(obj).forEach(key => this.proAudioIds.add(key));
+    };
+
+    registerProIds(pro.essentials);
+    registerProIds(pro.starters);
+    registerProIds(pro.combinations);
+
+    return {
+      ...free,
+      essentials: { ...free.essentials, ...pro.essentials },
+      starters: { ...free.starters, ...pro.starters },
+      combinations: { ...free.combinations, ...pro.combinations }
+    };
+  }
+
+  isProAudio(id: string): boolean {
+    return this.proAudioIds.has(id);
   }
 
   get isLanguageLoaded() {
