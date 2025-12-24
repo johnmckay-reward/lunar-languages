@@ -29,3 +29,20 @@
     font-style: italic;
   }
 }
+
+/* Refined Phrase Item */
+.phrase-item {
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.phrase-item:active {
+  transform: scale(0.98);
+  box-shadow: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .phrase-item {
+    border: 1px solid rgba(255,255,255,0.05);
+  }
+}

@@ -23,4 +23,10 @@ export class SentenceBuilderComponent {
   onSelectNoun(noun: Phrase) {
     this.nounSelected.emit(noun);
   }
+
+  getCategoryClass(category?: string): string {
+    if (!category) return '';
+    const cat = category.toLowerCase();
+    return `cat-${cat}`;
+  }
 }

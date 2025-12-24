@@ -44,8 +44,8 @@
 }
 
 .number-badge {
-  background: var(--ion-color-light);
-  color: var(--ion-color-primary);
+  background: var(--ion-color-primary);
+  color: var(--ion-color-primary-contrast);
   font-weight: 800;
   font-size: 1.1rem;
   width: 48px;
@@ -54,6 +54,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 4px 10px rgba(var(--ion-color-primary-rgb), 0.3);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -61,7 +62,7 @@
     border: 1px solid rgba(255,255,255,0.05);
   }
   .number-badge {
-    background: var(--ion-color-step-100);
-    color: var(--ion-color-light);
+    background: var(--ion-color-secondary);
+    color: var(--ion-color-secondary-contrast);
   }
 }

@@ -76,6 +76,18 @@
   --radius-lg: 24px;
 }
 
+/* ==============================================
+   2. GLOBAL LAYOUT UTILITIES
+   ============================================= */
+
+ion-grid {
+  padding-inline: 10px;
+}
+
+ion-col {
+  padding: 8px;
+}
+
 /* --- DARK MODE ("Deep Space") --- */
 @media (prefers-color-scheme: dark) {
   :root {
