@@ -103,6 +103,7 @@
 
 <app-upgrade-modal
   [isOpen]="isUpgradeModalOpen"
+  [hasPendingSelection]="pendingProSelection !== null"
   (didDismiss)="setUpgradeModalOpen(false)"
   (upgradeTriggered)="upgradeToPro()">
 </app-upgrade-modal>

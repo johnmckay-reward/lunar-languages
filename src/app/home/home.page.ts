@@ -82,6 +82,9 @@ export class HomePage implements OnInit {
 
   setUpgradeModalOpen(isOpen: boolean) {
     this.isUpgradeModalOpen = isOpen;
+    if (!isOpen) {
+      this.pendingProSelection = null;
+    }
   }
 
   dismissIntroModal() {

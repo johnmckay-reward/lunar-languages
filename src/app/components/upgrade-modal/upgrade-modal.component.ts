@@ -8,6 +8,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class UpgradeModalComponent implements OnInit {
   @Input() isOpen = false;
+  @Input() hasPendingSelection = false;
   @Output() didDismiss = new EventEmitter<void>();
   @Output() upgradeTriggered = new EventEmitter<void>();
 

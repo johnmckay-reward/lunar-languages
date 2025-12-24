@@ -15,8 +15,11 @@
           <ion-icon name="rocket" color="dark"></ion-icon>
         </div>
 
-        <h2>Unlock Pro</h2>
-        <p class="subtitle">Take your language learning to the next level with Lunar Languages Pro.</p>
+        <h2 *ngIf="!hasPendingSelection">Unlock Pro</h2>
+        <h2 *ngIf="hasPendingSelection">Unlock this Item</h2>
+
+        <p class="subtitle" *ngIf="!hasPendingSelection">Take your language learning to the next level with Lunar Languages Pro.</p>
+        <p class="subtitle" *ngIf="hasPendingSelection">Get access to this phrase and hundreds more with Lunar Languages Pro.</p>
 
         <ion-list lines="none">
           <ion-item>
